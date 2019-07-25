@@ -1,0 +1,85 @@
+{
+    "Discussion":
+    [
+        {
+            "Theme": "SocialPro",
+            "Statement": "But most immigrants have integrated well into this village and make a real contribution to village life."
+        },
+        {
+            "Theme": "SocialAnti",
+            "Statement": "That's so not true! Most of them hang around with the people they came with and don't even try to learn English."
+        },
+        {
+            "Theme": "EnvironmentPro",
+            "Statement": "The EU has done a lot to tackle climate change."
+        },
+        {
+            "Theme": "EnvironmentAnti",
+            "Statement": "If the EU were effective we wouldn't need extinction revolution."
+        },
+        {
+            "Theme": "RightsResponsibilitiesPro",
+            "Statement": "Being a member of the EU has provided fabulous opportunities for students to travel and study abroad to anyone who wants to take them."
+        },
+        {
+            "Theme": "RightsResponsibilitiesAnti",
+            "Statement": "You must be kidding - that is what Brexit is all about! There are no opportunities for us ordinary folk, the opportunities are only for those who have money."
+        },
+        {
+            "Theme": "SafetySecurityPro",
+            "Statement": "For me, one of the main benefits of EU membership has been to prevent war between the nations of Europe."
+        },
+        {
+            "Theme": "SafetySecurityAnti",
+            "Statement": "But there's still lots of tensions between nations of Europe. It's only a matter of time before serious trouble kicks off somewhere."
+        },
+        {
+            "Theme": "EmotionalPro",
+            "Statement": "I'm really worried about leaving the EU. It feels like we're turning our backs on the rest of the world."
+        },
+        {
+            "Theme": "EmotionalAnti",
+            "Statement": "All the people I know are really pleased about leaving Europe. We're planning a street party for when we go."
+        },
+        {
+            "Theme": "EconomicPro",
+            "Statement": "After Brexit, the UK economy could be around 6% smaller by 2030 and that would mean a loss of income equivalent to £4,300 a year for every British household."
+        },
+        {
+            "Theme": "EconomicAnti",
+            "Statement": "But once we've left the EU we'll be able to strike deals with the rest of the world so we'll be fine."
+        },
+        {
+            "Theme": "PoliticalPro",
+            "Statement": "Would you not rather have the Brussels elite in charge than UKIP and Nigel Farage?"
+        },
+        {
+            "Theme": "PoliticalAnti",
+            "Statement": "Brussels is far too remote - we need to be making our own laws back here in the UK."
+        },
+        {
+            "Theme": "HistoricPro",
+            "Statement": "The people who want to go back in time have very poor knowledge of European history."
+        },
+        {
+            "Theme": "HistoricAnti",
+            "Statement": "The UK has always felt the need to defend itself, which is why the UK doesn't feel very 'European'."
+        },
+        {
+            "Theme": "CulturePro",
+            "Statement": "EU grants have funded many projects that contribute to a shared European cultural identity."
+        },
+        {
+            "Theme": "CultureAnti",
+            "Statement": "The European Union represents an unattractive homogenisation of European cultures."
+        },
+        {
+            "Theme": "GeographyPro",
+            "Statement": "I have no trouble in thinking of myself as both British and European."
+        },
+        {
+            "Theme": "GeographyAnti",
+            "Statement": "Being British is much more important to me than being European - I really want a British passport!"
+        }
+    ]
+}

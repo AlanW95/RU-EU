@@ -1031,7 +1031,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 2080806672}
-        m_MethodName: Geography
+        m_MethodName: CounterDown
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -1059,6 +1059,17 @@ MonoBehaviour:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 50
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 2080806672}
+        m_MethodName: Geography
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
@@ -2839,7 +2850,6 @@ MonoBehaviour:
   geographyButton: {fileID: 90857347}
   interviewCounter: 0
   secondCounter: 0
-  proInterview: ProInterview
   chosenTextDisplay: {fileID: 1555891835}
 --- !u!4 &290242460
 Transform:
@@ -3123,7 +3133,6 @@ MonoBehaviour:
   geographyButton: {fileID: 90857347}
   interviewCounter: 0
   secondCounter: 0
-  proInterview: ProInterview
   chosenTextDisplay: {fileID: 1555891835}
 --- !u!1 &349310080
 GameObject:
@@ -3653,7 +3662,6 @@ MonoBehaviour:
   geographyButton: {fileID: 90857347}
   interviewCounter: 0
   secondCounter: 0
-  proInterview: ProInterview
   chosenTextDisplay: {fileID: 1555891835}
 --- !u!4 &374528314
 Transform:
@@ -4745,7 +4753,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 1727027246}
-        m_MethodName: Culture
+        m_MethodName: CounterDown
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -4773,6 +4781,17 @@ MonoBehaviour:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 50
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1727027246}
+        m_MethodName: Culture
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
@@ -6157,7 +6176,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 1010829894}
-        m_MethodName: Social
+        m_MethodName: CounterDown
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -6185,6 +6204,17 @@ MonoBehaviour:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 50
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1010829894}
+        m_MethodName: Social
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
@@ -7644,7 +7674,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 374528313}
-        m_MethodName: Political
+        m_MethodName: CounterDown
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -7672,6 +7702,17 @@ MonoBehaviour:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 50
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 374528313}
+        m_MethodName: Political
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
@@ -8888,7 +8929,6 @@ MonoBehaviour:
   geographyButton: {fileID: 90857347}
   interviewCounter: 0
   secondCounter: 0
-  proInterview: ProInterview
   chosenTextDisplay: {fileID: 1555891835}
 --- !u!1 &1028577365
 GameObject:
@@ -11250,7 +11290,6 @@ MonoBehaviour:
   geographyButton: {fileID: 90857347}
   interviewCounter: 0
   secondCounter: 0
-  proInterview: ProInterview
   chosenTextDisplay: {fileID: 1555891835}
 --- !u!4 &1339411153
 Transform:
@@ -11669,7 +11708,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 1339411152}
-        m_MethodName: Emotional
+        m_MethodName: CounterDown
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -11697,6 +11736,17 @@ MonoBehaviour:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 50
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1339411152}
+        m_MethodName: Emotional
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
@@ -12159,7 +12209,6 @@ MonoBehaviour:
   geographyButton: {fileID: 90857347}
   interviewCounter: 0
   secondCounter: 0
-  proInterview: ProInterview
   chosenTextDisplay: {fileID: 1555891835}
 --- !u!4 &1433238507
 Transform:
@@ -12845,7 +12894,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 290242459}
-        m_MethodName: Historic
+        m_MethodName: CounterDown
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -12873,6 +12922,17 @@ MonoBehaviour:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 50
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 290242459}
+        m_MethodName: Historic
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
@@ -13996,7 +14056,6 @@ MonoBehaviour:
   geographyButton: {fileID: 90857347}
   interviewCounter: 0
   secondCounter: 0
-  proInterview: ProInterview
   chosenTextDisplay: {fileID: 1555891835}
 --- !u!4 &1683432097
 Transform:
@@ -14621,7 +14680,6 @@ MonoBehaviour:
   geographyButton: {fileID: 90857347}
   interviewCounter: 0
   secondCounter: 0
-  proInterview: ProInterview
   chosenTextDisplay: {fileID: 1555891835}
 --- !u!4 &1727027247
 Transform:
@@ -15270,7 +15328,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 1433238506}
-        m_MethodName: Civil
+        m_MethodName: CounterDown
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -15298,6 +15356,17 @@ MonoBehaviour:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 50
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1433238506}
+        m_MethodName: Civil
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
@@ -15604,7 +15673,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 2092788522}
-        m_MethodName: Economic
+        m_MethodName: CounterDown
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -15632,6 +15701,17 @@ MonoBehaviour:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 50
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 2092788522}
+        m_MethodName: Economic
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
@@ -17669,7 +17749,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 325038439}
-        m_MethodName: Environment
+        m_MethodName: CounterDown
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -17697,6 +17777,17 @@ MonoBehaviour:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 50
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 325038439}
+        m_MethodName: Environment
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
@@ -18215,7 +18306,6 @@ MonoBehaviour:
   geographyButton: {fileID: 90857347}
   interviewCounter: 0
   secondCounter: 0
-  proInterview: ProInterview
   chosenTextDisplay: {fileID: 1555891835}
 --- !u!1 &2092788521
 GameObject:
@@ -18273,7 +18363,6 @@ MonoBehaviour:
   geographyButton: {fileID: 90857347}
   interviewCounter: 0
   secondCounter: 0
-  proInterview: ProInterview
   chosenTextDisplay: {fileID: 1555891835}
 --- !u!4 &2092788523
 Transform:
@@ -18888,7 +18977,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 1683432096}
-        m_MethodName: SafetySecurity
+        m_MethodName: CounterDown
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -18916,6 +19005,17 @@ MonoBehaviour:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 50
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1683432096}
+        m_MethodName: SafetySecurity
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0

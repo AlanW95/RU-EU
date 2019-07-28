@@ -48,7 +48,7 @@ public class ProInterview : MonoBehaviour {
     public int secondCounter;
 
     //PlayerPrefs
-    public string proInterview = "ProInterview";
+    //public string proInterview = "ProInterview";
     //public static string proInterviewStatements;
     public TextMeshProUGUI chosenTextDisplay;
 
@@ -121,12 +121,13 @@ public class ProInterview : MonoBehaviour {
 
         scoreCanvas.SetActive(true);
         feedbackCanvas.SetActive(true);
-        chosenTextDisplay.text = PlayerPrefs.GetString(proInterview);
-        Debug.Log(PlayerPrefs.GetString(proInterview).ToString());
+        chosenTextDisplay.text = PlayerPrefs.GetString("ProInterview1");
+        Debug.Log(PlayerPrefs.GetString("ProInterview1").ToString());
     }
 
     public void CounterDown() {
         interviewCounter--;
+        Debug.Log(interviewCounter);
     }
 
     IEnumerator Type() {
@@ -134,7 +135,7 @@ public class ProInterview : MonoBehaviour {
             textDisplay.text += letter; //letter by letter type animation of the text, more animations can be added via the Animate tab
 
             //Setting of PlayerPrefs----------------------------
-            PlayerPrefs.SetString(proInterview, sentences[index]);
+            //PlayerPrefs.SetString("ProInterview", sentences[index]);
             //------------------------------------------------
             
             yield return new WaitForSeconds(typingSpeed);
@@ -181,43 +182,43 @@ public class ProInterview : MonoBehaviour {
 
         //interviewCounter--;
         if (interviewCounter == 9) {
-            PlayerPrefs.SetString(proInterview + 1, "Freedom of movement has helped to create a much richer and more diverse society.");
+            PlayerPrefs.SetString("ProInterview1", "Freedom of movement has helped to create a much richer and more diverse society.");
         }
 
         if (interviewCounter == 8) {
-            PlayerPrefs.SetString(proInterview + 2, "Freedom of movement has helped to create a much richer and more diverse society.");
+            PlayerPrefs.SetString("ProInterview2", "Freedom of movement has helped to create a much richer and more diverse society.");
         }
 
         if (interviewCounter == 7) {
-            PlayerPrefs.SetString(proInterview + 3, "Freedom of movement has helped to create a much richer and more diverse society.");
+            PlayerPrefs.SetString("ProInterview3", "Freedom of movement has helped to create a much richer and more diverse society.");
         }
 
         if (interviewCounter == 6) {
-            PlayerPrefs.SetString(proInterview + 4, "Freedom of movement has helped to create a much richer and more diverse society.");
+            PlayerPrefs.SetString("ProInterview4", "Freedom of movement has helped to create a much richer and more diverse society.");
         }
 
         if (interviewCounter == 5) {
-            PlayerPrefs.SetString(proInterview + 5, "Freedom of movement has helped to create a much richer and more diverse society.");
+            PlayerPrefs.SetString("ProInterview5", "Freedom of movement has helped to create a much richer and more diverse society.");
         }
 
         if (interviewCounter == 4) {
-            PlayerPrefs.SetString(proInterview + 6, "Freedom of movement has helped to create a much richer and more diverse society.");
+            PlayerPrefs.SetString("ProInterview6", "Freedom of movement has helped to create a much richer and more diverse society.");
         }
 
         if (interviewCounter == 3) {
-            PlayerPrefs.SetString(proInterview + 7, "Freedom of movement has helped to create a much richer and more diverse society.");
+            PlayerPrefs.SetString("ProInterview7", "Freedom of movement has helped to create a much richer and more diverse society.");
         }
 
         if (interviewCounter == 2) {
-            PlayerPrefs.SetString(proInterview + 8, "Freedom of movement has helped to create a much richer and more diverse society.");
+            PlayerPrefs.SetString("ProInterview8", "Freedom of movement has helped to create a much richer and more diverse society.");
         }
 
         if (interviewCounter == 1) {
-            PlayerPrefs.SetString(proInterview + 9, "Freedom of movement has helped to create a much richer and more diverse society.");
+            PlayerPrefs.SetString("ProInterview9", "Freedom of movement has helped to create a much richer and more diverse society.");
         }
 
         if (interviewCounter == 0) {
-            PlayerPrefs.SetString(proInterview + 10, "Freedom of movement has helped to create a much richer and more diverse society.");
+            PlayerPrefs.SetString("ProInterview10", "Freedom of movement has helped to create a much richer and more diverse society.");
         }
 
         StartCoroutine(Type());
@@ -230,43 +231,43 @@ public class ProInterview : MonoBehaviour {
         remainerCanvas.SetActive(true);
 
         if (interviewCounter == 9) {
-            PlayerPrefs.SetString(proInterview + 1, "The EU has introduced very effective standard for caring for the environment.");
+            PlayerPrefs.SetString("ProInterview1", "The EU has introduced very effective standard for caring for the environment.");
         }
 
         if (interviewCounter == 8) {
-            PlayerPrefs.SetString(proInterview + 2, "The EU has introduced very effective standard for caring for the environment.");
+            PlayerPrefs.SetString("ProInterview2", "The EU has introduced very effective standard for caring for the environment.");
         }
 
         if (interviewCounter == 7) {
-            PlayerPrefs.SetString(proInterview + 3, "The EU has introduced very effective standard for caring for the environment.");
+            PlayerPrefs.SetString("ProInterview3", "The EU has introduced very effective standard for caring for the environment.");
         }
 
         if (interviewCounter == 6) {
-            PlayerPrefs.SetString(proInterview + 4, "The EU has introduced very effective standard for caring for the environment.");
+            PlayerPrefs.SetString("ProInterview4", "The EU has introduced very effective standard for caring for the environment.");
         }
 
         if (interviewCounter == 5) {
-            PlayerPrefs.SetString(proInterview + 5, "The EU has introduced very effective standard for caring for the environment.");
+            PlayerPrefs.SetString("ProInterview5", "The EU has introduced very effective standard for caring for the environment.");
         }
 
         if (interviewCounter == 4) {
-            PlayerPrefs.SetString(proInterview + 6, "The EU has introduced very effective standard for caring for the environment.");
+            PlayerPrefs.SetString("ProInterview6", "The EU has introduced very effective standard for caring for the environment.");
         }
 
         if (interviewCounter == 3) {
-            PlayerPrefs.SetString(proInterview + 7, "The EU has introduced very effective standard for caring for the environment.");
+            PlayerPrefs.SetString("ProInterview7", "The EU has introduced very effective standard for caring for the environment.");
         }
 
         if (interviewCounter == 2) {
-            PlayerPrefs.SetString(proInterview + 8, "The EU has introduced very effective standard for caring for the environment.");
+            PlayerPrefs.SetString("ProInterview8", "The EU has introduced very effective standard for caring for the environment.");
         }
 
         if (interviewCounter == 1) {
-            PlayerPrefs.SetString(proInterview + 9, "The EU has introduced very effective standard for caring for the environment.");
+            PlayerPrefs.SetString("ProInterview9", "The EU has introduced very effective standard for caring for the environment.");
         }
 
         if (interviewCounter == 0) {
-            PlayerPrefs.SetString(proInterview + 10, "The EU has introduced very effective standard for caring for the environment.");
+            PlayerPrefs.SetString("ProInterview1", "The EU has introduced very effective standard for caring for the environment.");
         }
 
         StartCoroutine(Type());
@@ -279,43 +280,43 @@ public class ProInterview : MonoBehaviour {
         remainerCanvas.SetActive(true);
 
         if (interviewCounter == 9) {
-            PlayerPrefs.SetString(proInterview + 1, "The EU provides rigorous standards for fair treatment and EU citizens really appreciate that.");
+            PlayerPrefs.SetString("ProInterview1", "The EU provides rigorous standards for fair treatment and EU citizens really appreciate that.");
         }
 
         if (interviewCounter == 8) {
-            PlayerPrefs.SetString(proInterview + 2, "The EU provides rigorous standards for fair treatment and EU citizens really appreciate that.");
+            PlayerPrefs.SetString("ProInterview2", "The EU provides rigorous standards for fair treatment and EU citizens really appreciate that.");
         }
 
         if (interviewCounter == 7) {
-            PlayerPrefs.SetString(proInterview + 3, "The EU provides rigorous standards for fair treatment and EU citizens really appreciate that.");
+            PlayerPrefs.SetString("ProInterview3", "The EU provides rigorous standards for fair treatment and EU citizens really appreciate that.");
         }
 
         if (interviewCounter == 6) {
-            PlayerPrefs.SetString(proInterview + 4, "The EU provides rigorous standards for fair treatment and EU citizens really appreciate that.");
+            PlayerPrefs.SetString("ProInterview4", "The EU provides rigorous standards for fair treatment and EU citizens really appreciate that.");
         }
 
         if (interviewCounter == 5) {
-            PlayerPrefs.SetString(proInterview + 5, "The EU provides rigorous standards for fair treatment and EU citizens really appreciate that.");
+            PlayerPrefs.SetString("ProInterview5", "The EU provides rigorous standards for fair treatment and EU citizens really appreciate that.");
         }
 
         if (interviewCounter == 4) {
-            PlayerPrefs.SetString(proInterview + 6, "The EU provides rigorous standards for fair treatment and EU citizens really appreciate that.");
+            PlayerPrefs.SetString("ProInterview6", "The EU provides rigorous standards for fair treatment and EU citizens really appreciate that.");
         }
 
         if (interviewCounter == 3) {
-            PlayerPrefs.SetString(proInterview + 7, "The EU provides rigorous standards for fair treatment and EU citizens really appreciate that.");
+            PlayerPrefs.SetString("ProInterview7", "The EU provides rigorous standards for fair treatment and EU citizens really appreciate that.");
         }
 
         if (interviewCounter == 2) {
-            PlayerPrefs.SetString(proInterview + 8, "The EU provides rigorous standards for fair treatment and EU citizens really appreciate that.");
+            PlayerPrefs.SetString("ProInterview8", "The EU provides rigorous standards for fair treatment and EU citizens really appreciate that.");
         }
 
         if (interviewCounter == 1) {
-            PlayerPrefs.SetString(proInterview + 9, "The EU provides rigorous standards for fair treatment and EU citizens really appreciate that.");
+            PlayerPrefs.SetString("ProInterview9", "The EU provides rigorous standards for fair treatment and EU citizens really appreciate that.");
         }
 
         if (interviewCounter == 0) {
-            PlayerPrefs.SetString(proInterview + 10, "The EU provides rigorous standards for fair treatment and EU citizens really appreciate that.");
+            PlayerPrefs.SetString("ProInterview1", "The EU provides rigorous standards for fair treatment and EU citizens really appreciate that.");
         }
 
         StartCoroutine(Type());
@@ -328,43 +329,43 @@ public class ProInterview : MonoBehaviour {
         remainerCanvas.SetActive(true);
 
         if (interviewCounter == 9) {
-            PlayerPrefs.SetString(proInterview + 1, "The EU provides rigorous standards for defending the safety and security of the country.");
+            PlayerPrefs.SetString("ProInterview1", "The EU provides rigorous standards for defending the safety and security of the country.");
         }
 
         if (interviewCounter == 8) {
-            PlayerPrefs.SetString(proInterview + 2, "The EU provides rigorous standards for defending the safety and security of the country.");
+            PlayerPrefs.SetString("ProInterview2", "The EU provides rigorous standards for defending the safety and security of the country.");
         }
 
         if (interviewCounter == 7) {
-            PlayerPrefs.SetString(proInterview + 3, "The EU provides rigorous standards for defending the safety and security of the country.");
+            PlayerPrefs.SetString("ProInterview3", "The EU provides rigorous standards for defending the safety and security of the country.");
         }
 
         if (interviewCounter == 6) {
-            PlayerPrefs.SetString(proInterview + 4, "The EU provides rigorous standards for defending the safety and security of the country.");
+            PlayerPrefs.SetString("ProInterview4", "The EU provides rigorous standards for defending the safety and security of the country.");
         }
 
         if (interviewCounter == 5) {
-            PlayerPrefs.SetString(proInterview + 5, "The EU provides rigorous standards for defending the safety and security of the country.");
+            PlayerPrefs.SetString("ProInterview5", "The EU provides rigorous standards for defending the safety and security of the country.");
         }
 
         if (interviewCounter == 4) {
-            PlayerPrefs.SetString(proInterview + 6, "The EU provides rigorous standards for defending the safety and security of the country.");
+            PlayerPrefs.SetString("ProInterview6", "The EU provides rigorous standards for defending the safety and security of the country.");
         }
 
         if (interviewCounter == 3) {
-            PlayerPrefs.SetString(proInterview + 7, "The EU provides rigorous standards for defending the safety and security of the country.");
+            PlayerPrefs.SetString("ProInterview7", "The EU provides rigorous standards for defending the safety and security of the country.");
         }
 
         if (interviewCounter == 2) {
-            PlayerPrefs.SetString(proInterview + 8, "The EU provides rigorous standards for defending the safety and security of the country.");
+            PlayerPrefs.SetString("ProInterview8", "The EU provides rigorous standards for defending the safety and security of the country.");
         }
 
         if (interviewCounter == 1) {
-            PlayerPrefs.SetString(proInterview + 9, "The EU provides rigorous standards for defending the safety and security of the country.");
+            PlayerPrefs.SetString("ProInterview9", "The EU provides rigorous standards for defending the safety and security of the country.");
         }
 
         if (interviewCounter == 0) {
-            PlayerPrefs.SetString(proInterview + 10, "The EU provides rigorous standards for defending the safety and security of the country.");
+            PlayerPrefs.SetString("ProInterview1", "The EU provides rigorous standards for defending the safety and security of the country.");
         }
 
         StartCoroutine(Type());
@@ -377,43 +378,43 @@ public class ProInterview : MonoBehaviour {
         remainerCanvas.SetActive(true);
 
         if (interviewCounter == 9) {
-            PlayerPrefs.SetString(proInterview + 1, "I would be absolutely devastated if my country voted to leave the EU.");
+            PlayerPrefs.SetString("ProInterview1", "I would be absolutely devastated if my country voted to leave the EU.");
         }
 
         if (interviewCounter == 8) {
-            PlayerPrefs.SetString(proInterview + 2, "I would be absolutely devastated if my country voted to leave the EU.");
+            PlayerPrefs.SetString("ProInterview2", "I would be absolutely devastated if my country voted to leave the EU.");
         }
 
         if (interviewCounter == 7) {
-            PlayerPrefs.SetString(proInterview + 3, "I would be absolutely devastated if my country voted to leave the EU.");
+            PlayerPrefs.SetString("ProInterview3", "I would be absolutely devastated if my country voted to leave the EU.");
         }
 
         if (interviewCounter == 6) {
-            PlayerPrefs.SetString(proInterview + 4, "I would be absolutely devastated if my country voted to leave the EU.");
+            PlayerPrefs.SetString("ProInterview4", "I would be absolutely devastated if my country voted to leave the EU.");
         }
 
         if (interviewCounter == 5) {
-            PlayerPrefs.SetString(proInterview + 5, "I would be absolutely devastated if my country voted to leave the EU.");
+            PlayerPrefs.SetString("ProInterview5", "I would be absolutely devastated if my country voted to leave the EU.");
         }
 
         if (interviewCounter == 4) {
-            PlayerPrefs.SetString(proInterview + 6, "I would be absolutely devastated if my country voted to leave the EU.");
+            PlayerPrefs.SetString("ProInterview6", "I would be absolutely devastated if my country voted to leave the EU.");
         }
 
         if (interviewCounter == 3) {
-            PlayerPrefs.SetString(proInterview + 7, "I would be absolutely devastated if my country voted to leave the EU.");
+            PlayerPrefs.SetString("ProInterview7", "I would be absolutely devastated if my country voted to leave the EU.");
         }
 
         if (interviewCounter == 2) {
-            PlayerPrefs.SetString(proInterview + 8, "I would be absolutely devastated if my country voted to leave the EU.");
+            PlayerPrefs.SetString("ProInterview8", "I would be absolutely devastated if my country voted to leave the EU.");
         }
 
         if (interviewCounter == 1) {
-            PlayerPrefs.SetString(proInterview + 9, "I would be absolutely devastated if my country voted to leave the EU.");
+            PlayerPrefs.SetString("ProInterview9", "I would be absolutely devastated if my country voted to leave the EU.");
         }
 
         if (interviewCounter == 0) {
-            PlayerPrefs.SetString(proInterview + 10, "I would be absolutely devastated if my country voted to leave the EU.");
+            PlayerPrefs.SetString("ProInterview1", "I would be absolutely devastated if my country voted to leave the EU.");
         }
 
         StartCoroutine(Type());
@@ -426,43 +427,43 @@ public class ProInterview : MonoBehaviour {
         remainerCanvas.SetActive(true);
 
         if (interviewCounter == 9) {
-            PlayerPrefs.SetString(proInterview + 1, "Being a member of the EU has had a huge positive impact on the economy of our country.");
+            PlayerPrefs.SetString("ProInterview1", "Being a member of the EU has had a huge positive impact on the economy of our country.");
         }
 
         if (interviewCounter == 8) {
-            PlayerPrefs.SetString(proInterview + 2, "Being a member of the EU has had a huge positive impact on the economy of our country.");
+            PlayerPrefs.SetString("ProInterview2", "Being a member of the EU has had a huge positive impact on the economy of our country.");
         }
 
         if (interviewCounter == 7) {
-            PlayerPrefs.SetString(proInterview + 3, "Being a member of the EU has had a huge positive impact on the economy of our country.");
+            PlayerPrefs.SetString("ProInterview3", "Being a member of the EU has had a huge positive impact on the economy of our country.");
         }
 
         if (interviewCounter == 6) {
-            PlayerPrefs.SetString(proInterview + 4, "Being a member of the EU has had a huge positive impact on the economy of our country.");
+            PlayerPrefs.SetString("ProInterview4", "Being a member of the EU has had a huge positive impact on the economy of our country.");
         }
 
         if (interviewCounter == 5) {
-            PlayerPrefs.SetString(proInterview + 5, "Being a member of the EU has had a huge positive impact on the economy of our country.");
+            PlayerPrefs.SetString("ProInterview5", "Being a member of the EU has had a huge positive impact on the economy of our country.");
         }
 
         if (interviewCounter == 4) {
-            PlayerPrefs.SetString(proInterview + 6, "Being a member of the EU has had a huge positive impact on the economy of our country.");
+            PlayerPrefs.SetString("ProInterview6", "Being a member of the EU has had a huge positive impact on the economy of our country.");
         }
 
         if (interviewCounter == 3) {
-            PlayerPrefs.SetString(proInterview + 7, "Being a member of the EU has had a huge positive impact on the economy of our country.");
+            PlayerPrefs.SetString("ProInterview7", "Being a member of the EU has had a huge positive impact on the economy of our country.");
         }
 
         if (interviewCounter == 2) {
-            PlayerPrefs.SetString(proInterview + 8, "Being a member of the EU has had a huge positive impact on the economy of our country.");
+            PlayerPrefs.SetString("ProInterview8", "Being a member of the EU has had a huge positive impact on the economy of our country.");
         }
 
         if (interviewCounter == 1) {
-            PlayerPrefs.SetString(proInterview + 9, "Being a member of the EU has had a huge positive impact on the economy of our country.");
+            PlayerPrefs.SetString("ProInterview9", "Being a member of the EU has had a huge positive impact on the economy of our country.");
         }
 
         if (interviewCounter == 0) {
-            PlayerPrefs.SetString(proInterview + 10, "Being a member of the EU has had a huge positive impact on the economy of our country.");
+            PlayerPrefs.SetString("ProInterview1", "Being a member of the EU has had a huge positive impact on the economy of our country.");
         }
 
         StartCoroutine(Type());
@@ -475,43 +476,43 @@ public class ProInterview : MonoBehaviour {
         remainerCanvas.SetActive(true);
 
         if (interviewCounter == 9) {
-            PlayerPrefs.SetString(proInterview + 1, "The 4 freedoms of the EU have been beneficial for our country.");
+            PlayerPrefs.SetString("ProInterview1", "The 4 freedoms of the EU have been beneficial for our country.");
         }
 
         if (interviewCounter == 8) {
-            PlayerPrefs.SetString(proInterview + 2, "The 4 freedoms of the EU have been beneficial for our country.");
+            PlayerPrefs.SetString("ProInterview2", "The 4 freedoms of the EU have been beneficial for our country.");
         }
 
         if (interviewCounter == 7) {
-            PlayerPrefs.SetString(proInterview + 3, "The 4 freedoms of the EU have been beneficial for our country.");
+            PlayerPrefs.SetString("ProInterview3", "The 4 freedoms of the EU have been beneficial for our country.");
         }
 
         if (interviewCounter == 6) {
-            PlayerPrefs.SetString(proInterview + 4, "The 4 freedoms of the EU have been beneficial for our country.");
+            PlayerPrefs.SetString("ProInterview4", "The 4 freedoms of the EU have been beneficial for our country.");
         }
 
         if (interviewCounter == 5) {
-            PlayerPrefs.SetString(proInterview + 5, "The 4 freedoms of the EU have been beneficial for our country.");
+            PlayerPrefs.SetString("ProInterview5", "The 4 freedoms of the EU have been beneficial for our country.");
         }
 
         if (interviewCounter == 4) {
-            PlayerPrefs.SetString(proInterview + 6, "The 4 freedoms of the EU have been beneficial for our country.");
+            PlayerPrefs.SetString("ProInterview6", "The 4 freedoms of the EU have been beneficial for our country.");
         }
 
         if (interviewCounter == 3) {
-            PlayerPrefs.SetString(proInterview + 7, "The 4 freedoms of the EU have been beneficial for our country.");
+            PlayerPrefs.SetString("ProInterview7", "The 4 freedoms of the EU have been beneficial for our country.");
         }
 
         if (interviewCounter == 2) {
-            PlayerPrefs.SetString(proInterview + 8, "The 4 freedoms of the EU have been beneficial for our country.");
+            PlayerPrefs.SetString("ProInterview8", "The 4 freedoms of the EU have been beneficial for our country.");
         }
 
         if (interviewCounter == 1) {
-            PlayerPrefs.SetString(proInterview + 9, "The 4 freedoms of the EU have been beneficial for our country.");
+            PlayerPrefs.SetString("ProInterview9", "The 4 freedoms of the EU have been beneficial for our country.");
         }
 
         if (interviewCounter == 0) {
-            PlayerPrefs.SetString(proInterview + 10, "The 4 freedoms of the EU have been beneficial for our country.");
+            PlayerPrefs.SetString("ProInterview1", "The 4 freedoms of the EU have been beneficial for our country.");
         }
 
         StartCoroutine(Type());
@@ -525,43 +526,43 @@ public class ProInterview : MonoBehaviour {
         remainerCanvas.SetActive(true);
 
         if (interviewCounter == 9) {
-            PlayerPrefs.SetString(proInterview + 1, "For all of us Europeans - our shared history matters. We do not want to repeat the mistakes of the past.");
+            PlayerPrefs.SetString("ProInterview1", "For all of us Europeans - our shared history matters. We do not want to repeat the mistakes of the past.");
         }
 
         if (interviewCounter == 8) {
-            PlayerPrefs.SetString(proInterview + 2, "For all of us Europeans - our shared history matters. We do not want to repeat the mistakes of the past.");
+            PlayerPrefs.SetString("ProInterview2", "For all of us Europeans - our shared history matters. We do not want to repeat the mistakes of the past.");
         }
 
         if (interviewCounter == 7) {
-            PlayerPrefs.SetString(proInterview + 3, "For all of us Europeans - our shared history matters. We do not want to repeat the mistakes of the past.");
+            PlayerPrefs.SetString("ProInterview3", "For all of us Europeans - our shared history matters. We do not want to repeat the mistakes of the past.");
         }
 
         if (interviewCounter == 6) {
-            PlayerPrefs.SetString(proInterview + 4, "For all of us Europeans - our shared history matters. We do not want to repeat the mistakes of the past.");
+            PlayerPrefs.SetString("ProInterview4", "For all of us Europeans - our shared history matters. We do not want to repeat the mistakes of the past.");
         }
 
         if (interviewCounter == 5) {
-            PlayerPrefs.SetString(proInterview + 5, "For all of us Europeans - our shared history matters. We do not want to repeat the mistakes of the past.");
+            PlayerPrefs.SetString("ProInterview5", "For all of us Europeans - our shared history matters. We do not want to repeat the mistakes of the past.");
         }
 
         if (interviewCounter == 4) {
-            PlayerPrefs.SetString(proInterview + 6, "For all of us Europeans - our shared history matters. We do not want to repeat the mistakes of the past.");
+            PlayerPrefs.SetString("ProInterview6", "For all of us Europeans - our shared history matters. We do not want to repeat the mistakes of the past.");
         }
 
         if (interviewCounter == 3) {
-            PlayerPrefs.SetString(proInterview + 7, "For all of us Europeans - our shared history matters. We do not want to repeat the mistakes of the past.");
+            PlayerPrefs.SetString("ProInterview7", "For all of us Europeans - our shared history matters. We do not want to repeat the mistakes of the past.");
         }
 
         if (interviewCounter == 2) {
-            PlayerPrefs.SetString(proInterview + 8, "For all of us Europeans - our shared history matters. We do not want to repeat the mistakes of the past.");
+            PlayerPrefs.SetString("ProInterview8", "For all of us Europeans - our shared history matters. We do not want to repeat the mistakes of the past.");
         }
 
         if (interviewCounter == 1) {
-            PlayerPrefs.SetString(proInterview + 9, "For all of us Europeans - our shared history matters. We do not want to repeat the mistakes of the past.");
+            PlayerPrefs.SetString("ProInterview9", "For all of us Europeans - our shared history matters. We do not want to repeat the mistakes of the past.");
         }
 
         if (interviewCounter == 0) {
-            PlayerPrefs.SetString(proInterview + 10, "For all of us Europeans - our shared history matters. We do not want to repeat the mistakes of the past.");
+            PlayerPrefs.SetString("ProInterview1", "For all of us Europeans - our shared history matters. We do not want to repeat the mistakes of the past.");
         }
 
         StartCoroutine(Type());
@@ -574,43 +575,43 @@ public class ProInterview : MonoBehaviour {
         remainerCanvas.SetActive(true);
 
         if (interviewCounter == 9) {
-            PlayerPrefs.SetString(proInterview + 1, "The EU has helped to create a shared cultural identity.");
+            PlayerPrefs.SetString("ProInterview1", "The EU has helped to create a shared cultural identity.");
         }
 
         if (interviewCounter == 8) {
-            PlayerPrefs.SetString(proInterview + 2, "The EU has helped to create a shared cultural identity.");
+            PlayerPrefs.SetString("ProInterview2", "The EU has helped to create a shared cultural identity.");
         }
 
         if (interviewCounter == 7) {
-            PlayerPrefs.SetString(proInterview + 3, "The EU has helped to create a shared cultural identity.");
+            PlayerPrefs.SetString("ProInterview3", "The EU has helped to create a shared cultural identity.");
         }
 
         if (interviewCounter == 6) {
-            PlayerPrefs.SetString(proInterview + 4, "The EU has helped to create a shared cultural identity.");
+            PlayerPrefs.SetString("ProInterview4", "The EU has helped to create a shared cultural identity.");
         }
 
         if (interviewCounter == 5) {
-            PlayerPrefs.SetString(proInterview + 5, "The EU has helped to create a shared cultural identity.");
+            PlayerPrefs.SetString("ProInterview5", "The EU has helped to create a shared cultural identity.");
         }
 
         if (interviewCounter == 4) {
-            PlayerPrefs.SetString(proInterview + 6, "The EU has helped to create a shared cultural identity.");
+            PlayerPrefs.SetString("ProInterview6", "The EU has helped to create a shared cultural identity.");
         }
 
         if (interviewCounter == 3) {
-            PlayerPrefs.SetString(proInterview + 7, "The EU has helped to create a shared cultural identity.");
+            PlayerPrefs.SetString("ProInterview7", "The EU has helped to create a shared cultural identity.");
         }
 
         if (interviewCounter == 2) {
-            PlayerPrefs.SetString(proInterview + 8, "The EU has helped to create a shared cultural identity.");
+            PlayerPrefs.SetString("ProInterview8", "The EU has helped to create a shared cultural identity.");
         }
 
         if (interviewCounter == 1) {
-            PlayerPrefs.SetString(proInterview + 9, "The EU has helped to create a shared cultural identity.");
+            PlayerPrefs.SetString("ProInterview9", "The EU has helped to create a shared cultural identity.");
         }
 
         if (interviewCounter == 0) {
-            PlayerPrefs.SetString(proInterview + 10, "The EU has helped to create a shared cultural identity.");
+            PlayerPrefs.SetString("ProInterview1", "The EU has helped to create a shared cultural identity.");
         }
 
         StartCoroutine(Type());
@@ -623,43 +624,43 @@ public class ProInterview : MonoBehaviour {
         remainerCanvas.SetActive(true);
 
         if (interviewCounter == 9) {
-            PlayerPrefs.SetString(proInterview + 1, "European identity means that where you are born does not matter.");
+            PlayerPrefs.SetString("ProInterview1", "European identity means that where you are born does not matter.");
         }
 
         if (interviewCounter == 8) {
-            PlayerPrefs.SetString(proInterview + 2, "European identity means that where you are born does not matter.");
+            PlayerPrefs.SetString("ProInterview2", "European identity means that where you are born does not matter.");
         }
 
         if (interviewCounter == 7) {
-            PlayerPrefs.SetString(proInterview + 3, "European identity means that where you are born does not matter.");
+            PlayerPrefs.SetString("ProInterview3", "European identity means that where you are born does not matter.");
         }
 
         if (interviewCounter == 6) {
-            PlayerPrefs.SetString(proInterview + 4, "European identity means that where you are born does not matter.");
+            PlayerPrefs.SetString("ProInterview4", "European identity means that where you are born does not matter.");
         }
 
         if (interviewCounter == 5) {
-            PlayerPrefs.SetString(proInterview + 5, "European identity means that where you are born does not matter.");
+            PlayerPrefs.SetString("ProInterview5", "European identity means that where you are born does not matter.");
         }
 
         if (interviewCounter == 4) {
-            PlayerPrefs.SetString(proInterview + 6, "European identity means that where you are born does not matter.");
+            PlayerPrefs.SetString("ProInterview6", "European identity means that where you are born does not matter.");
         }
 
         if (interviewCounter == 3) {
-            PlayerPrefs.SetString(proInterview + 7, "European identity means that where you are born does not matter.");
+            PlayerPrefs.SetString("ProInterview7", "European identity means that where you are born does not matter.");
         }
 
         if (interviewCounter == 2) {
-            PlayerPrefs.SetString(proInterview + 8, "European identity means that where you are born does not matter.");
+            PlayerPrefs.SetString("ProInterview8", "European identity means that where you are born does not matter.");
         }
 
         if (interviewCounter == 1) {
-            PlayerPrefs.SetString(proInterview + 9, "European identity means that where you are born does not matter.");
+            PlayerPrefs.SetString("ProInterview9", "European identity means that where you are born does not matter.");
         }
 
         if (interviewCounter == 0) {
-            PlayerPrefs.SetString(proInterview + 10, "European identity means that where you are born does not matter.");
+            PlayerPrefs.SetString("ProInterview1", "European identity means that where you are born does not matter.");
         }
 
         StartCoroutine(Type());

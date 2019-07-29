@@ -27,8 +27,8 @@ public class Notebook : MonoBehaviour
         interview1TextDisplay[0].text = PlayerPrefs.GetString("ProInterview1");
         interview1TextDisplay[1].text = PlayerPrefs.GetString("ProInterview2");
         interview1TextDisplay[2].text = PlayerPrefs.GetString("ProInterview3");
-        /*interview1TextDisplay[3].text = PlayerPrefs.GetString("ProInterview4");
-        interview1TextDisplay[4].text = PlayerPrefs.GetString("ProInterview5");
+        interview1TextDisplay[3].text = PlayerPrefs.GetString("ProInterview4");
+        /*interview1TextDisplay[4].text = PlayerPrefs.GetString("ProInterview5");
         interview1TextDisplay[5].text = PlayerPrefs.GetString("ProInterview6");
         interview1TextDisplay[6].text = PlayerPrefs.GetString("ProInterview7");
         interview1TextDisplay[7].text = PlayerPrefs.GetString("ProInterview8");
@@ -39,8 +39,8 @@ public class Notebook : MonoBehaviour
         interview2TextDisplay[0].text = PlayerPrefs.GetString("AntiInterview1");
         interview2TextDisplay[1].text = PlayerPrefs.GetString("AntiInterview2");
         interview2TextDisplay[2].text = PlayerPrefs.GetString("AntiInterview3");
-        /*interview2TextDisplay[3].text = PlayerPrefs.GetString("AntiInterview4");
-        interview2TextDisplay[4].text = PlayerPrefs.GetString("AntiInterview5");
+        interview2TextDisplay[3].text = PlayerPrefs.GetString("AntiInterview4");
+        /*interview2TextDisplay[4].text = PlayerPrefs.GetString("AntiInterview5");
         interview2TextDisplay[5].text = PlayerPrefs.GetString("AntiInterview6");
         interview2TextDisplay[6].text = PlayerPrefs.GetString("AntiInterview7");
         interview2TextDisplay[7].text = PlayerPrefs.GetString("AntiInterview8");

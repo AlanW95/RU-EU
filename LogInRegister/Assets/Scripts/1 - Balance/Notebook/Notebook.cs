@@ -10,7 +10,11 @@ public class Notebook : MonoBehaviour
 
     public GameObject[] notebook;
 
-    public TextMeshProUGUI[] interview1TextDisplay;
+    //public TextMeshProUGUI[] interview1TextDisplay;
+    public TextMeshProUGUI interview1TextDisplay1;
+    public TextMeshProUGUI interview1TextDisplay2;
+    public TextMeshProUGUI interview1TextDisplay3;
+    public TextMeshProUGUI interview1TextDisplay4;
     public TextMeshProUGUI[] interview2TextDisplay;
     public TextMeshProUGUI[] discussionTextDisplay;
 
@@ -24,11 +28,15 @@ public class Notebook : MonoBehaviour
     void Update()
     {
         //Interview 1
-        interview1TextDisplay[0].text = PlayerPrefs.GetString("ProInterview1");
+        interview1TextDisplay1.text = PlayerPrefs.GetString("ProInterview1");
+        interview1TextDisplay2.text = PlayerPrefs.GetString("ProInterview2");
+        interview1TextDisplay3.text = PlayerPrefs.GetString("ProInterview3");
+        interview1TextDisplay4.text = PlayerPrefs.GetString("ProInterview4");
+        /*interview1TextDisplay[0].text = PlayerPrefs.GetString("ProInterview1");
         interview1TextDisplay[1].text = PlayerPrefs.GetString("ProInterview2");
         interview1TextDisplay[2].text = PlayerPrefs.GetString("ProInterview3");
         interview1TextDisplay[3].text = PlayerPrefs.GetString("ProInterview4");
-        /*interview1TextDisplay[4].text = PlayerPrefs.GetString("ProInterview5");
+        interview1TextDisplay[4].text = PlayerPrefs.GetString("ProInterview5");
         interview1TextDisplay[5].text = PlayerPrefs.GetString("ProInterview6");
         interview1TextDisplay[6].text = PlayerPrefs.GetString("ProInterview7");
         interview1TextDisplay[7].text = PlayerPrefs.GetString("ProInterview8");

@@ -9,6 +9,10 @@ public class FinalAssignment : MonoBehaviour {
 
     public GameObject[] tools;
 
+    public GameObject interview1S1, interview1S2, interview1S3, interview1S4;
+    public GameObject interview1S1Empty, interview1S2Empty, interview1S3Empty, interview1S4Empty;
+    Vector2 interview1S1InitialPos, interview1S2InitialPos, interview1S3InitialPos, interview1S4InitialPos;
+
     // Start is called before the first frame update
     void Start() {
         Interview1Tab();
@@ -17,6 +21,10 @@ public class FinalAssignment : MonoBehaviour {
     // Update is called once per frame
     void Update() {
 
+    }
+
+    public void ReturnToWorkplace() {
+        SceneManager.LoadScene("Journalist");
     }
 
     public void Interview1Tab() {
@@ -37,7 +45,7 @@ public class FinalAssignment : MonoBehaviour {
         tools[0].SetActive(false); //Interview 1
         tools[1].SetActive(false); //Interview 2
         tools[2].SetActive(true); //Discussion
-        tools[3].SetActive(false); //Newsflash}
+        tools[3].SetActive(false); //Newsflash
     }
 
     public void NewsflashTab() {

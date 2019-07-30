@@ -8,7 +8,7 @@ public class InterviewCH : MonoBehaviour
     public GameObject interviewTool;
 
     void OnMouseDown() {
-        SceneManager.LoadScene("ProInterview");    
+        SceneManager.LoadScene("RemainInterview");    
     }
 
     void OnMouseOver() {

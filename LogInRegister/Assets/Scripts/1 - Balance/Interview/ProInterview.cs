@@ -121,7 +121,7 @@ public class ProInterview : MonoBehaviour {
         rankingCanvas.SetActive(false);
         themeSelectionCanvas.SetActive(true);
 
-        secondCounter -= 1;
+        secondCounter--;
     }
 
     public void ScoreAndFeedback()
@@ -191,11 +191,35 @@ public class ProInterview : MonoBehaviour {
 
         remainerCanvas.SetActive(true);
 
-        secondCounter--;
+        //secondCounter--;
         //interviewCounter--;
         statement1Selected = false;
 
-        if (interviewCounter == 9 && secondCounter == 3 && statement1Selected == false && statement2Selected == false && statement3Selected == false && statement4Selected == false) {
+        if (!PlayerPrefs.HasKey("Prointerview1")) {
+            PlayerPrefs.SetString("ProInterview1", "Freedom of movement has helped to create a much richer and more diverse society.");
+            Debug.Log(PlayerPrefs.GetString("ProInterview1"));
+            PlayerPrefs.Save();
+        } else {
+            if (!PlayerPrefs.HasKey("ProInterview2")) {
+                PlayerPrefs.SetString("ProInterview2", "Freedom of movement has helped to create a much richer and more diverse society.");
+                Debug.Log(PlayerPrefs.GetString("ProInterview2"));
+                PlayerPrefs.Save();
+            } else {
+                if (!PlayerPrefs.HasKey("ProInterview3")) {
+                    PlayerPrefs.SetString("ProInterview3", "Freedom of movement has helped to create a much richer and more diverse society.");
+                    Debug.Log(PlayerPrefs.GetString("ProInterview3"));
+                    PlayerPrefs.Save();
+                } else {
+                    if (!PlayerPrefs.HasKey("ProInterview4")) {
+                        PlayerPrefs.SetString("ProInterview4", "Freedom of movement has helped to create a much richer and more diverse society.");
+                        Debug.Log(PlayerPrefs.GetString("ProInterview4"));
+                        PlayerPrefs.Save();
+                    }
+                }
+            }
+        }
+
+        /*if (interviewCounter == 9 && secondCounter == 3 && statement1Selected == false && statement2Selected == false && statement3Selected == false && statement4Selected == false) {
             PlayerPrefs.SetString("ProInterview1", "Freedom of movement has helped to create a much richer and more diverse society.");
             Debug.Log(PlayerPrefs.GetString("ProInterview1"));
             statement1Selected = true;
@@ -219,7 +243,7 @@ public class ProInterview : MonoBehaviour {
             statement4Selected = true;
         }
 
-        /*if (interviewCounter == 5) {
+        if (interviewCounter == 5) {
             PlayerPrefs.SetString("ProInterview5", "Freedom of movement has helped to create a much richer and more diverse society.");
             Debug.Log(PlayerPrefs.GetString("ProInterview5"));
         }
@@ -258,10 +282,37 @@ public class ProInterview : MonoBehaviour {
 
         remainerCanvas.SetActive(true);
 
-        secondCounter--;
+        //secondCounter--;
         statement1Selected = false;
 
-        if (interviewCounter == 9 && secondCounter == 3 && statement1Selected == false && statement2Selected == false && statement3Selected == false && statement4Selected == false) {
+        if (!PlayerPrefs.HasKey("Prointerview1")) {
+            PlayerPrefs.SetString("ProInterview1", "The EU has introduced very effective standard for caring for the environment.");
+            Debug.Log(PlayerPrefs.GetString("ProInterview1"));
+            PlayerPrefs.Save();
+        }
+        else {
+            if (!PlayerPrefs.HasKey("ProInterview2")) {
+                PlayerPrefs.SetString("ProInterview2", "The EU has introduced very effective standard for caring for the environment.");
+                Debug.Log(PlayerPrefs.GetString("ProInterview2"));
+                PlayerPrefs.Save();
+            }
+            else {
+                if (!PlayerPrefs.HasKey("ProInterview3")) {
+                    PlayerPrefs.SetString("ProInterview3", "The EU has introduced very effective standard for caring for the environment.");
+                    Debug.Log(PlayerPrefs.GetString("ProInterview3"));
+                    PlayerPrefs.Save();
+                }
+                else {
+                    if (!PlayerPrefs.HasKey("ProInterview4")) {
+                        PlayerPrefs.SetString("ProInterview4", "The EU has introduced very effective standard for caring for the environment.");
+                        Debug.Log(PlayerPrefs.GetString("ProInterview4"));
+                        PlayerPrefs.Save();
+                    }
+                }
+            }
+        }
+
+        /* (interviewCounter == 9 && secondCounter == 3 && statement1Selected == false && statement2Selected == false && statement3Selected == false && statement4Selected == false) {
             PlayerPrefs.SetString("ProInterview1", "The EU has introduced very effective standard for caring for the environment.");
             Debug.Log(PlayerPrefs.GetString("ProInterview1"));
             statement1Selected = true;
@@ -285,7 +336,7 @@ public class ProInterview : MonoBehaviour {
             statement4Selected = true;
         }
 
-        /*if (interviewCounter == 5) {
+        if (interviewCounter == 5) {
             PlayerPrefs.SetString("ProInterview5", "The EU has introduced very effective standard for caring for the environment.");
             Debug.Log(PlayerPrefs.GetString("ProInterview5"));
         }
@@ -324,10 +375,37 @@ public class ProInterview : MonoBehaviour {
 
         remainerCanvas.SetActive(true);
 
-        secondCounter--;
+        //secondCounter--;
         statement1Selected = false;
 
-        if (interviewCounter == 9 && secondCounter == 3 && statement1Selected == false && statement2Selected == false && statement3Selected == false && statement4Selected == false) {
+        if (!PlayerPrefs.HasKey("Prointerview1")) {
+            PlayerPrefs.SetString("ProInterview1", "The EU provides rigorous standards for fair treatment and EU citizens really appreciate that.");
+            Debug.Log(PlayerPrefs.GetString("ProInterview1"));
+            PlayerPrefs.Save();
+        }
+        else {
+            if (!PlayerPrefs.HasKey("ProInterview2")) {
+                PlayerPrefs.SetString("ProInterview2", "The EU provides rigorous standards for fair treatment and EU citizens really appreciate that.");
+                Debug.Log(PlayerPrefs.GetString("ProInterview2"));
+                PlayerPrefs.Save();
+            }
+            else {
+                if (!PlayerPrefs.HasKey("ProInterview3")) {
+                    PlayerPrefs.SetString("ProInterview3", "The EU provides rigorous standards for fair treatment and EU citizens really appreciate that.");
+                    Debug.Log(PlayerPrefs.GetString("ProInterview3"));
+                    PlayerPrefs.Save();
+                }
+                else {
+                    if (!PlayerPrefs.HasKey("ProInterview4")) {
+                        PlayerPrefs.SetString("ProInterview4", "The EU provides rigorous standards for fair treatment and EU citizens really appreciate that.");
+                        Debug.Log(PlayerPrefs.GetString("ProInterview4"));
+                        PlayerPrefs.Save();
+                    }
+                }
+            }
+        }
+
+        /*if (interviewCounter == 9 && secondCounter == 3 && statement1Selected == false && statement2Selected == false && statement3Selected == false && statement4Selected == false) {
             PlayerPrefs.SetString("ProInterview1", "The EU provides rigorous standards for fair treatment and EU citizens really appreciate that.");
             Debug.Log(PlayerPrefs.GetString("ProInterview1"));
             statement1Selected = true;
@@ -351,7 +429,7 @@ public class ProInterview : MonoBehaviour {
             statement4Selected = true;
         }
 
-        /*if (interviewCounter == 5) {
+        if (interviewCounter == 5) {
             PlayerPrefs.SetString("ProInterview5", "The EU provides rigorous standards for fair treatment and EU citizens really appreciate that.");
             Debug.Log(PlayerPrefs.GetString("ProInterview5"));
         }
@@ -390,10 +468,37 @@ public class ProInterview : MonoBehaviour {
 
         remainerCanvas.SetActive(true);
 
-        secondCounter--;
+        //secondCounter--;
         statement1Selected = false;
 
-        if (interviewCounter == 9 && secondCounter == 3 && statement1Selected == false && statement2Selected == false && statement3Selected == false && statement4Selected == false) {
+        if (!PlayerPrefs.HasKey("Prointerview1")) {
+            PlayerPrefs.SetString("ProInterview1", "The EU provides rigorous standards for defending the safety and security of the country.");
+            Debug.Log(PlayerPrefs.GetString("ProInterview1"));
+            PlayerPrefs.Save();
+        }
+        else {
+            if (!PlayerPrefs.HasKey("ProInterview2")) {
+                PlayerPrefs.SetString("ProInterview2", "The EU provides rigorous standards for defending the safety and security of the country.");
+                Debug.Log(PlayerPrefs.GetString("ProInterview2"));
+                PlayerPrefs.Save();
+            }
+            else {
+                if (!PlayerPrefs.HasKey("ProInterview3")) {
+                    PlayerPrefs.SetString("ProInterview3", "The EU provides rigorous standards for defending the safety and security of the country.");
+                    Debug.Log(PlayerPrefs.GetString("ProInterview3"));
+                    PlayerPrefs.Save();
+                }
+                else {
+                    if (!PlayerPrefs.HasKey("ProInterview4")) {
+                        PlayerPrefs.SetString("ProInterview4", "The EU provides rigorous standards for defending the safety and security of the country.");
+                        Debug.Log(PlayerPrefs.GetString("ProInterview4"));
+                        PlayerPrefs.Save();
+                    }
+                }
+            }
+        }
+
+        /*if (interviewCounter == 9 && secondCounter == 3 && statement1Selected == false && statement2Selected == false && statement3Selected == false && statement4Selected == false) {
             PlayerPrefs.SetString("ProInterview1", "The EU provides rigorous standards for defending the safety and security of the country.");
             Debug.Log(PlayerPrefs.GetString("ProInterview1"));
             statement1Selected = true;
@@ -417,7 +522,7 @@ public class ProInterview : MonoBehaviour {
             statement4Selected = true;
         }
 
-        /*if (interviewCounter == 5) {
+        if (interviewCounter == 5) {
             PlayerPrefs.SetString("ProInterview5", "The EU provides rigorous standards for defending the safety and security of the country.");
             Debug.Log(PlayerPrefs.GetString("ProInterview5"));
         }
@@ -456,10 +561,37 @@ public class ProInterview : MonoBehaviour {
 
         remainerCanvas.SetActive(true);
 
-        secondCounter--;
+        //secondCounter--;
         statement1Selected = false;
 
-        if (interviewCounter == 9 && secondCounter == 3 && statement1Selected == false && statement2Selected == false && statement3Selected == false && statement4Selected == false) {
+        if (!PlayerPrefs.HasKey("Prointerview1")) {
+            PlayerPrefs.SetString("ProInterview1", "I would be absolutely devastated if my country voted to leave the EU.");
+            Debug.Log(PlayerPrefs.GetString("ProInterview1"));
+            PlayerPrefs.Save();
+        }
+        else {
+            if (!PlayerPrefs.HasKey("ProInterview2")) {
+                PlayerPrefs.SetString("ProInterview2", "I would be absolutely devastated if my country voted to leave the EU.");
+                Debug.Log(PlayerPrefs.GetString("ProInterview2"));
+                PlayerPrefs.Save();
+            }
+            else {
+                if (!PlayerPrefs.HasKey("ProInterview3")) {
+                    PlayerPrefs.SetString("ProInterview3", "I would be absolutely devastated if my country voted to leave the EU.");
+                    Debug.Log(PlayerPrefs.GetString("ProInterview3"));
+                    PlayerPrefs.Save();
+                }
+                else {
+                    if (!PlayerPrefs.HasKey("ProInterview4")) {
+                        PlayerPrefs.SetString("ProInterview4", "I would be absolutely devastated if my country voted to leave the EU.");
+                        Debug.Log(PlayerPrefs.GetString("ProInterview4"));
+                        PlayerPrefs.Save();
+                    }
+                }
+            }
+        }
+
+        /*if (interviewCounter == 9 && secondCounter == 3 && statement1Selected == false && statement2Selected == false && statement3Selected == false && statement4Selected == false) {
             PlayerPrefs.SetString("ProInterview1", "I would be absolutely devastated if my country voted to leave the EU.");
             Debug.Log(PlayerPrefs.GetString("ProInterview1"));
             statement1Selected = true;
@@ -483,7 +615,7 @@ public class ProInterview : MonoBehaviour {
             statement4Selected = true;
         }
 
-        /*if (interviewCounter == 5) {
+        if (interviewCounter == 5) {
             PlayerPrefs.SetString("ProInterview5", "I would be absolutely devastated if my country voted to leave the EU.");
             Debug.Log(PlayerPrefs.GetString("ProInterview5"));
         }
@@ -522,10 +654,37 @@ public class ProInterview : MonoBehaviour {
 
         remainerCanvas.SetActive(true);
 
-        secondCounter--;
+        //secondCounter--;
         statement1Selected = false;
 
-        if (interviewCounter == 9 && secondCounter == 3 && statement1Selected == false && statement2Selected == false && statement3Selected == false && statement4Selected == false) {
+        if (!PlayerPrefs.HasKey("Prointerview1")) {
+            PlayerPrefs.SetString("ProInterview1", "Being a member of the EU has had a huge positive impact on the economy of our country.");
+            Debug.Log(PlayerPrefs.GetString("ProInterview1"));
+            PlayerPrefs.Save();
+        }
+        else {
+            if (!PlayerPrefs.HasKey("ProInterview2")) {
+                PlayerPrefs.SetString("ProInterview2", "Being a member of the EU has had a huge positive impact on the economy of our country.");
+                Debug.Log(PlayerPrefs.GetString("ProInterview2"));
+                PlayerPrefs.Save();
+            }
+            else {
+                if (!PlayerPrefs.HasKey("ProInterview3")) {
+                    PlayerPrefs.SetString("ProInterview3", "Being a member of the EU has had a huge positive impact on the economy of our country.");
+                    Debug.Log(PlayerPrefs.GetString("ProInterview3"));
+                    PlayerPrefs.Save();
+                }
+                else {
+                    if (!PlayerPrefs.HasKey("ProInterview4")) {
+                        PlayerPrefs.SetString("ProInterview4", "Being a member of the EU has had a huge positive impact on the economy of our country.");
+                        Debug.Log(PlayerPrefs.GetString("ProInterview4"));
+                        PlayerPrefs.Save();
+                    }
+                }
+            }
+        }
+
+        /*if (interviewCounter == 9 && secondCounter == 3 && statement1Selected == false && statement2Selected == false && statement3Selected == false && statement4Selected == false) {
             PlayerPrefs.SetString("ProInterview1", "Being a member of the EU has had a huge positive impact on the economy of our country.");
             Debug.Log(PlayerPrefs.GetString("ProInterview1"));
             statement1Selected = true;
@@ -549,7 +708,7 @@ public class ProInterview : MonoBehaviour {
             statement4Selected = true;
         }
 
-        /*if (interviewCounter == 5) {
+        if (interviewCounter == 5) {
             PlayerPrefs.SetString("ProInterview5", "Being a member of the EU has had a huge positive impact on the economy of our country.");
             Debug.Log(PlayerPrefs.GetString("ProInterview5"));
         }
@@ -588,10 +747,37 @@ public class ProInterview : MonoBehaviour {
 
         remainerCanvas.SetActive(true);
 
-        secondCounter--;
+        //secondCounter--;
         statement1Selected = false;
 
-        if (interviewCounter == 9 && secondCounter == 3 && statement1Selected == false && statement2Selected == false && statement3Selected == false && statement4Selected == false) {
+        if (!PlayerPrefs.HasKey("Prointerview1")) {
+            PlayerPrefs.SetString("ProInterview1", "The 4 freedoms of the EU have been beneficial for our country.");
+            Debug.Log(PlayerPrefs.GetString("ProInterview1"));
+            PlayerPrefs.Save();
+        }
+        else {
+            if (!PlayerPrefs.HasKey("ProInterview2")) {
+                PlayerPrefs.SetString("ProInterview2", "The 4 freedoms of the EU have been beneficial for our country.");
+                Debug.Log(PlayerPrefs.GetString("ProInterview2"));
+                PlayerPrefs.Save();
+            }
+            else {
+                if (!PlayerPrefs.HasKey("ProInterview3")) {
+                    PlayerPrefs.SetString("ProInterview3", "The 4 freedoms of the EU have been beneficial for our country.");
+                    Debug.Log(PlayerPrefs.GetString("ProInterview3"));
+                    PlayerPrefs.Save();
+                }
+                else {
+                    if (!PlayerPrefs.HasKey("ProInterview4")) {
+                        PlayerPrefs.SetString("ProInterview4", "The 4 freedoms of the EU have been beneficial for our country.");
+                        Debug.Log(PlayerPrefs.GetString("ProInterview4"));
+                        PlayerPrefs.Save();
+                    }
+                }
+            }
+        }
+
+        /*if (interviewCounter == 9 && secondCounter == 3 && statement1Selected == false && statement2Selected == false && statement3Selected == false && statement4Selected == false) {
             PlayerPrefs.SetString("ProInterview1", "The 4 freedoms of the EU have been beneficial for our country.");
             Debug.Log(PlayerPrefs.GetString("ProInterview1"));
             statement1Selected = true;
@@ -615,7 +801,7 @@ public class ProInterview : MonoBehaviour {
             statement4Selected = true;
         }
 
-        /*if (interviewCounter == 5) {
+        if (interviewCounter == 5) {
             PlayerPrefs.SetString("ProInterview5", "The 4 freedoms of the EU have been beneficial for our country.");
             Debug.Log(PlayerPrefs.GetString("ProInterview5"));
         }
@@ -655,10 +841,37 @@ public class ProInterview : MonoBehaviour {
 
         remainerCanvas.SetActive(true);
 
-        secondCounter--;
+        //secondCounter--;
         statement1Selected = false;
 
-        if (interviewCounter == 9 && secondCounter == 3 && statement1Selected == false && statement2Selected == false && statement3Selected == false && statement4Selected == false) {
+        if (!PlayerPrefs.HasKey("Prointerview1")) {
+            PlayerPrefs.SetString("ProInterview1", "For all of us Europeans - our shared history matters. We do not want to repeat the mistakes of the past.");
+            Debug.Log(PlayerPrefs.GetString("ProInterview1"));
+            PlayerPrefs.Save();
+        }
+        else {
+            if (!PlayerPrefs.HasKey("ProInterview2")) {
+                PlayerPrefs.SetString("ProInterview2", "For all of us Europeans - our shared history matters. We do not want to repeat the mistakes of the past.");
+                Debug.Log(PlayerPrefs.GetString("ProInterview2"));
+                PlayerPrefs.Save();
+            }
+            else {
+                if (!PlayerPrefs.HasKey("ProInterview3")) {
+                    PlayerPrefs.SetString("ProInterview3", "For all of us Europeans - our shared history matters. We do not want to repeat the mistakes of the past.");
+                    Debug.Log(PlayerPrefs.GetString("ProInterview3"));
+                    PlayerPrefs.Save();
+                }
+                else {
+                    if (!PlayerPrefs.HasKey("ProInterview4")) {
+                        PlayerPrefs.SetString("ProInterview4", "For all of us Europeans - our shared history matters. We do not want to repeat the mistakes of the past.");
+                        Debug.Log(PlayerPrefs.GetString("ProInterview4"));
+                        PlayerPrefs.Save();
+                    }
+                }
+            }
+        }
+
+        /*if (interviewCounter == 9 && secondCounter == 3 && statement1Selected == false && statement2Selected == false && statement3Selected == false && statement4Selected == false) {
             PlayerPrefs.SetString("ProInterview1", "For all of us Europeans - our shared history matters. We do not want to repeat the mistakes of the past.");
             Debug.Log(PlayerPrefs.GetString("ProInterview1"));
             statement1Selected = true;
@@ -682,7 +895,7 @@ public class ProInterview : MonoBehaviour {
             statement4Selected = true;
         }
 
-        /*if (interviewCounter == 5) {
+        if (interviewCounter == 5) {
             PlayerPrefs.SetString("ProInterview5", "For all of us Europeans - our shared history matters. We do not want to repeat the mistakes of the past.");
             Debug.Log(PlayerPrefs.GetString("ProInterview5"));
         }
@@ -721,10 +934,37 @@ public class ProInterview : MonoBehaviour {
 
         remainerCanvas.SetActive(true);
 
-        secondCounter--;
+        //secondCounter--;
         statement1Selected = false;
 
-        if (interviewCounter == 9 && secondCounter == 3 && statement1Selected == false && statement2Selected == false && statement3Selected == false && statement4Selected == false) {
+        if (!PlayerPrefs.HasKey("Prointerview1")) {
+            PlayerPrefs.SetString("ProInterview1", "The EU has helped to create a shared cultural identity.");
+            Debug.Log(PlayerPrefs.GetString("ProInterview1"));
+            PlayerPrefs.Save();
+        }
+        else {
+            if (!PlayerPrefs.HasKey("ProInterview2")) {
+                PlayerPrefs.SetString("ProInterview2", "The EU has helped to create a shared cultural identity.");
+                Debug.Log(PlayerPrefs.GetString("ProInterview2"));
+                PlayerPrefs.Save();
+            }
+            else {
+                if (!PlayerPrefs.HasKey("ProInterview3")) {
+                    PlayerPrefs.SetString("ProInterview3", "The EU has helped to create a shared cultural identity.");
+                    Debug.Log(PlayerPrefs.GetString("ProInterview3"));
+                    PlayerPrefs.Save();
+                }
+                else {
+                    if (!PlayerPrefs.HasKey("ProInterview4")) {
+                        PlayerPrefs.SetString("ProInterview4", "The EU has helped to create a shared cultural identity.");
+                        Debug.Log(PlayerPrefs.GetString("ProInterview4"));
+                        PlayerPrefs.Save();
+                    }
+                }
+            }
+        }
+
+        /*if (interviewCounter == 9 && secondCounter == 3 && statement1Selected == false && statement2Selected == false && statement3Selected == false && statement4Selected == false) {
             PlayerPrefs.SetString("ProInterview1", "The EU has helped to create a shared cultural identity.");
             Debug.Log(PlayerPrefs.GetString("ProInterview1"));
             statement1Selected = true;
@@ -748,7 +988,7 @@ public class ProInterview : MonoBehaviour {
             statement4Selected = true;
         }
 
-        /*if (interviewCounter == 5) {
+        if (interviewCounter == 5) {
             PlayerPrefs.SetString("ProInterview5", "The EU has helped to create a shared cultural identity.");
             Debug.Log(PlayerPrefs.GetString("ProInterview5"));
         }
@@ -788,10 +1028,37 @@ public class ProInterview : MonoBehaviour {
         remainerCanvas.SetActive(true);
 
         //interviewCounter--;
-        secondCounter--;
+        //secondCounter--;
         statement1Selected = false;
 
-        if (interviewCounter == 9 && secondCounter == 3 && statement1Selected == false && statement2Selected == false && statement3Selected == false && statement4Selected == false) {
+        if (!PlayerPrefs.HasKey("Prointerview1")) {
+            PlayerPrefs.SetString("ProInterview1", "European identity means that where you are born does not matter.");
+            Debug.Log(PlayerPrefs.GetString("ProInterview1"));
+            PlayerPrefs.Save();
+        }
+        else {
+            if (!PlayerPrefs.HasKey("ProInterview2")) {
+                PlayerPrefs.SetString("ProInterview2", "European identity means that where you are born does not matter.");
+                Debug.Log(PlayerPrefs.GetString("ProInterview2"));
+                PlayerPrefs.Save();
+            }
+            else {
+                if (!PlayerPrefs.HasKey("ProInterview3")) {
+                    PlayerPrefs.SetString("ProInterview3", "European identity means that where you are born does not matter.");
+                    Debug.Log(PlayerPrefs.GetString("ProInterview3"));
+                    PlayerPrefs.Save();
+                }
+                else {
+                    if (!PlayerPrefs.HasKey("ProInterview4")) {
+                        PlayerPrefs.SetString("ProInterview4", "European identity means that where you are born does not matter.");
+                        Debug.Log(PlayerPrefs.GetString("ProInterview4"));
+                        PlayerPrefs.Save();
+                    }
+                }
+            }
+        }
+
+        /*if (interviewCounter == 9 && secondCounter == 3 && statement1Selected == false && statement2Selected == false && statement3Selected == false && statement4Selected == false) {
             PlayerPrefs.SetString("ProInterview1", "European identity means that where you are born does not matter.");
             Debug.Log(PlayerPrefs.GetString("ProInterview1"));
             statement1Selected = true;
@@ -815,7 +1082,7 @@ public class ProInterview : MonoBehaviour {
             statement4Selected = true;
         }
 
-        /*if (interviewCounter == 5) {
+        if (interviewCounter == 5) {
             PlayerPrefs.SetString("ProInterview5", "European identity means that where you are born does not matter.");
             Debug.Log(PlayerPrefs.GetString("ProInterview5"));
         }

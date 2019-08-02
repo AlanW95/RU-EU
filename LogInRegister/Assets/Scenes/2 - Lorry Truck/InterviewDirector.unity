@@ -3088,7 +3088,7 @@ MonoBehaviour:
   interviewCanvas: {fileID: 1408915861}
   textDisplay: {fileID: 1940251443}
   sentences:
-  - '[enter statement here]'
+  - The number of controllers has diminished last years.
   feedbackCanvas: {fileID: 1271130292}
   scoreCanvas: {fileID: 1810696522}
   rankingCanvas: {fileID: 732463104}
@@ -5486,6 +5486,77 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 659621869}
   m_CullTransparentMesh: 0
+--- !u!1 &688658197
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 688658198}
+  - component: {fileID: 688658199}
+  m_Layer: 0
+  m_Name: Theme11
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &688658198
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 688658197}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -5980.7183, y: -3027.899, z: -0.36818197}
+  m_LocalScale: {x: 2.4242337, y: 2.4242337, z: 2.4242337}
+  m_Children: []
+  m_Father: {fileID: 1203854742}
+  m_RootOrder: 10
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &688658199
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 688658197}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ff4c57dde36f488489e790dd48333d16, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  startCanvas: {fileID: 255141318}
+  themeSelectionCanvas: {fileID: 828039753}
+  themeSelectionContinueButton: {fileID: 1490615297}
+  themeDefinitionCanvas: {fileID: 1116076909}
+  interviewCanvas: {fileID: 1408915861}
+  textDisplay: {fileID: 1940251443}
+  sentences:
+  - '[enter statement here]'
+  feedbackCanvas: {fileID: 1271130292}
+  scoreCanvas: {fileID: 1810696522}
+  rankingCanvas: {fileID: 732463104}
+  statementText: {fileID: 1555891835}
+  typingSpeed: 0
+  continueButton: {fileID: 0}
+  theme1Button: {fileID: 812172401}
+  theme2Button: {fileID: 2045473912}
+  theme3Button: {fileID: 1816605703}
+  theme4Button: {fileID: 2127831658}
+  theme5Button: {fileID: 1404177938}
+  theme6Button: {fileID: 1866768032}
+  theme7Button: {fileID: 920621000}
+  theme8Button: {fileID: 1518050577}
+  theme9Button: {fileID: 510580116}
+  theme10Button: {fileID: 90857347}
+  interviewCounter: 0
+  secondCounter: 0
+  proInterview: ProInterview
+  chosenTextDisplay: {fileID: 1555891835}
 --- !u!1 &719602870
 GameObject:
   m_ObjectHideFlags: 0
@@ -8828,7 +8899,7 @@ GameObject:
   - component: {fileID: 1010829893}
   - component: {fileID: 1010829894}
   m_Layer: 0
-  m_Name: Theme1Pro
+  m_Name: Statement1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -8867,8 +8938,8 @@ MonoBehaviour:
   interviewCanvas: {fileID: 1408915861}
   textDisplay: {fileID: 1940251443}
   sentences:
-  - Dishonest competition again, no European agreements on exchanging license plate
-    information for violations of environmental zones.
+  - Dishonest competition. No European agreements on exchanging license plate information
+    for violations of environmental zones.
   feedbackCanvas: {fileID: 1271130292}
   scoreCanvas: {fileID: 1810696522}
   rankingCanvas: {fileID: 732463104}
@@ -10125,6 +10196,7 @@ RectTransform:
   - {fileID: 290242460}
   - {fileID: 1727027247}
   - {fileID: 2080806671}
+  - {fileID: 688658198}
   m_Father: {fileID: 0}
   m_RootOrder: 10
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -11230,7 +11302,7 @@ MonoBehaviour:
   interviewCanvas: {fileID: 1408915861}
   textDisplay: {fileID: 1940251443}
   sentences:
-  - '[enter statement here]'
+  - 
   feedbackCanvas: {fileID: 1271130292}
   scoreCanvas: {fileID: 1810696522}
   rankingCanvas: {fileID: 732463104}
@@ -12138,7 +12210,8 @@ MonoBehaviour:
   interviewCanvas: {fileID: 1408915861}
   textDisplay: {fileID: 1940251443}
   sentences:
-  - '[enter statement here]'
+  - I don't look at what a driver earns, but at what he costs. With a Dutch driver,
+    you talk about 25 to 26 euros per hour. A Hungarian or Romanian costs half.
   feedbackCanvas: {fileID: 1271130292}
   scoreCanvas: {fileID: 1810696522}
   rankingCanvas: {fileID: 732463104}
@@ -13974,7 +14047,11 @@ MonoBehaviour:
   interviewCanvas: {fileID: 1408915861}
   textDisplay: {fileID: 1940251443}
   sentences:
-  - '[enter statement here]'
+  - We don't want to take money from anyone. You need to find a position where an
+    employer is able to pay everyone a wage that is normal in terms of the conditions
+    in their country of residence. I wonder whether you have to pay six times as much
+    as a Hungarian or Romanian earns in their own country when you are working in
+    Europe. We want to keep our company afloat.
   feedbackCanvas: {fileID: 1271130292}
   scoreCanvas: {fileID: 1810696522}
   rankingCanvas: {fileID: 732463104}

@@ -3063,7 +3063,7 @@ GameObject:
   - component: {fileID: 325038438}
   - component: {fileID: 325038437}
   m_Layer: 0
-  m_Name: Theme2Pro
+  m_Name: Statement2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -12185,7 +12185,7 @@ GameObject:
   - component: {fileID: 1433238507}
   - component: {fileID: 1433238506}
   m_Layer: 0
-  m_Name: Theme3Pro
+  m_Name: Statement3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

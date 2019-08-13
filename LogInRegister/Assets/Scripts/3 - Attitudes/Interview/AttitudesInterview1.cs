@@ -7,6 +7,8 @@ using TMPro;
 
 public class AttitudesInterview1 : MonoBehaviour
 {
+    //random comment code
+
     //initial starting canvas
     public GameObject startCanvas;
 

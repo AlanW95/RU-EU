@@ -41,8 +41,8 @@ public class AttitudesInterview1 : MonoBehaviour
     public Button theme6Button;
     public Button theme7Button;
     public Button theme8Button;
-    public Button theme9Button;
-    public Button theme10Button;
+    /*public Button theme9Button;
+    public Button theme10Button;*/
 
     //each time a continue button is pressed the counter goes down
     public int interviewCounter;
@@ -127,7 +127,7 @@ public class AttitudesInterview1 : MonoBehaviour
     }
 
     IEnumerator Type() {
-        foreach (char letter in sentences[index].ToCharArray()) {
+        foreach (char letter in sentences[index].ToCharArray()) {   //sentences[index = Random.Range(0, 2)].ToCharArray()) {   //random item of array
             textDisplay.text += letter; //letter by letter type animation of the text, more animations can be added via the Animate tab
 
             //Setting of PlayerPrefs----------------------------
@@ -244,7 +244,8 @@ public class AttitudesInterview1 : MonoBehaviour
         StartCoroutine(Type());
     }
 
-    public void Theme9() {
+    //Only 8 themes being used for this interview tool
+    /*public void Theme9() {
         theme9Button.interactable = false;
         themeSelectionCanvas.SetActive(false);
 
@@ -260,5 +261,5 @@ public class AttitudesInterview1 : MonoBehaviour
         interviewCanvas.SetActive(true);
 
         StartCoroutine(Type());
-    }
+    }*/
 }

@@ -168,4 +168,84 @@ public class Newsflash : MonoBehaviour
             }
         }
     }*/
+
+    public void DragGeography() {
+
+    }
+    
+    public void DropGeography() {
+
+    }
+
+    public void DragPolitical() {
+
+    }
+
+    public void DropPolitical() {
+
+    }
+
+    public void DragEconomy() {
+
+    }
+
+    public void DropEconomy() {
+
+    }
+
+    public void DragEmotions() {
+
+    }
+
+    public void DropEmotions() {
+
+    }
+
+    public void DragCulture() {
+
+    }
+
+    public void DropCulture() {
+
+    }
+
+    public void DragHistory() {
+
+    }
+
+    public void DropHistory() {
+
+    }
+
+    public void DragEnvironment() {
+
+    }
+
+    public void DropEnvironment() {
+
+    }
+
+    public void DragTechnology() {
+
+    }
+
+    public void DropTechnology() {
+
+    }
+
+    public void DragRightsResponsibilities() {
+
+    }
+
+    public void DropRightsResponsibilities() {
+
+    }
+
+    public void DragJobsEconomy() {
+
+    }
+
+    public void DropJobsEconomy() {
+
+    }
 }

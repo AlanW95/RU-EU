@@ -201,7 +201,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 1010829894}
+      - m_Target: {fileID: 374528313}
         m_MethodName: CounterDown
         m_Mode: 1
         m_Arguments:
@@ -2474,7 +2474,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 290242458}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: df024b917049aa34c8b5f303d0d57e87, type: 3}
+  m_Script: {fileID: 11500000, guid: cd3d71faf33377041bdb16c397cc5914, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   startCanvas: {fileID: 255141318}
@@ -2484,11 +2484,9 @@ MonoBehaviour:
   interviewCanvas: {fileID: 1408915861}
   textDisplay: {fileID: 1940251443}
   sentences:
-  - 'Older generations who survived the war are more appreciative of the EU. '
-  - 'The crisis in the last 5 years made the Greeks consider EU as a strange and unfriendly
-    institution. '
-  - 'The refugee crisis demonstrated how some members of the EU refused to act as
-    a union which was very sad. '
+  - '[enter statement here]'
+  - '[enter statement here]'
+  - '[enter statement here]'
   feedbackCanvas: {fileID: 1271130292}
   scoreCanvas: {fileID: 1810696522}
   rankingCanvas: {fileID: 732463104}
@@ -2505,7 +2503,7 @@ MonoBehaviour:
   theme8Button: {fileID: 1518050577}
   interviewCounter: 0
   secondCounter: 0
-  proInterview: ProInterview
+  antiInterview: AntiInterview
   chosenTextDisplay: {fileID: 1555891835}
 --- !u!4 &290242460
 Transform:
@@ -3219,7 +3217,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 374528312}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: df024b917049aa34c8b5f303d0d57e87, type: 3}
+  m_Script: {fileID: 11500000, guid: cd3d71faf33377041bdb16c397cc5914, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   startCanvas: {fileID: 255141318}
@@ -3229,11 +3227,9 @@ MonoBehaviour:
   interviewCanvas: {fileID: 1408915861}
   textDisplay: {fileID: 1940251443}
   sentences:
-  - 'Peoples perception of EU is mostly dominated by the media portrayal of the EU
-    laws and European directives. '
-  - 'EU politics regarding accepting refugees was a disgrace to its ideals. '
-  - 'Political atmosphere in Europe is resulting in a tendency towards right-wing
-    populism. '
+  - '[enter statement here]'
+  - '[enter statement here]'
+  - '[enter statement here]'
   feedbackCanvas: {fileID: 1271130292}
   scoreCanvas: {fileID: 1810696522}
   rankingCanvas: {fileID: 732463104}
@@ -3250,7 +3246,7 @@ MonoBehaviour:
   theme8Button: {fileID: 1518050577}
   interviewCounter: 0
   secondCounter: 0
-  proInterview: ProInterview
+  antiInterview: AntiInterview
   chosenTextDisplay: {fileID: 1555891835}
 --- !u!4 &374528314
 Transform:
@@ -3815,7 +3811,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 1010829894}
+      - m_Target: {fileID: 1339411152}
         m_MethodName: CounterDown
         m_Mode: 1
         m_Arguments:
@@ -5093,7 +5089,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 1010829894}
+      - m_Target: {fileID: 1433238506}
         m_MethodName: CounterDown
         m_Mode: 1
         m_Arguments:
@@ -7410,7 +7406,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 1010829894}
+      - m_Target: {fileID: 290242459}
         m_MethodName: CounterDown
         m_Mode: 1
         m_Arguments:
@@ -7538,7 +7534,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1010829894}
+      - m_Target: {fileID: 0}
         m_MethodName: ReturnToMobileWorkplace
         m_Mode: 1
         m_Arguments:
@@ -8037,7 +8033,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1010829892}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: df024b917049aa34c8b5f303d0d57e87, type: 3}
+  m_Script: {fileID: 11500000, guid: cd3d71faf33377041bdb16c397cc5914, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   startCanvas: {fileID: 255141318}
@@ -8047,11 +8043,9 @@ MonoBehaviour:
   interviewCanvas: {fileID: 1408915861}
   textDisplay: {fileID: 1940251443}
   sentences:
-  - 'Preservation of peace, help for poor member states in traning and education has
-    been very helpful. '
-  - 'People are scared that small nations will lose their national identity. '
-  - 'EU does not have direct impact on people''s day to day life so it is not important
-    for regular people to discuss about EU identity. '
+  - '[enter statement here]'
+  - '[enter statement here]'
+  - '[enter statement here]'
   feedbackCanvas: {fileID: 1271130292}
   scoreCanvas: {fileID: 1810696522}
   rankingCanvas: {fileID: 732463104}
@@ -8068,7 +8062,7 @@ MonoBehaviour:
   theme8Button: {fileID: 1518050577}
   interviewCounter: 0
   secondCounter: 0
-  proInterview: ProInterview
+  antiInterview: AntiInterview
   chosenTextDisplay: {fileID: 1555891835}
 --- !u!1 &1028577365
 GameObject:
@@ -9916,7 +9910,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1339411151}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: df024b917049aa34c8b5f303d0d57e87, type: 3}
+  m_Script: {fileID: 11500000, guid: cd3d71faf33377041bdb16c397cc5914, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   startCanvas: {fileID: 255141318}
@@ -9926,10 +9920,9 @@ MonoBehaviour:
   interviewCanvas: {fileID: 1408915861}
   textDisplay: {fileID: 1940251443}
   sentences:
-  - 'EU does not have direct impact on people''s day to day life so it is not important
-    for regular people to discuss about EU identity. '
-  - 'EU is good enough as people do not feel the urge to leave it yet. '
-  - Citizens of EU should be more open and tolerant towards their neighbour countries.
+  - '[enter statement here]'
+  - '[enter statement here]'
+  - '[enter statement here]'
   feedbackCanvas: {fileID: 1271130292}
   scoreCanvas: {fileID: 1810696522}
   rankingCanvas: {fileID: 732463104}
@@ -9946,7 +9939,7 @@ MonoBehaviour:
   theme8Button: {fileID: 1518050577}
   interviewCounter: 0
   secondCounter: 0
-  proInterview: ProInterview
+  antiInterview: AntiInterview
   chosenTextDisplay: {fileID: 1555891835}
 --- !u!4 &1339411153
 Transform:
@@ -10684,7 +10677,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1433238505}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: df024b917049aa34c8b5f303d0d57e87, type: 3}
+  m_Script: {fileID: 11500000, guid: cd3d71faf33377041bdb16c397cc5914, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   startCanvas: {fileID: 255141318}
@@ -10694,12 +10687,9 @@ MonoBehaviour:
   interviewCanvas: {fileID: 1408915861}
   textDisplay: {fileID: 1940251443}
   sentences:
-  - 'All members of EU has to follow the rules and there is no exception. This is
-    equal treatment to achieve a collective goal. '
-  - 'People feel less positive about EU because of the conservative and neoliberal
-    policies. '
-  - 'Peoples perception of EU is mostly dominated by the media portrayal of the EU
-    laws and European directives. '
+  - '[enter statement here]'
+  - '[enter statement here]'
+  - '[enter statement here]'
   feedbackCanvas: {fileID: 1271130292}
   scoreCanvas: {fileID: 1810696522}
   rankingCanvas: {fileID: 732463104}
@@ -10716,7 +10706,7 @@ MonoBehaviour:
   theme8Button: {fileID: 1518050577}
   interviewCounter: 0
   secondCounter: 0
-  proInterview: ProInterview
+  antiInterview: AntiInterview
   chosenTextDisplay: {fileID: 1555891835}
 --- !u!4 &1433238507
 Transform:
@@ -10963,7 +10953,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 1010829894}
+      - m_Target: {fileID: 2092788522}
         m_MethodName: CounterDown
         m_Mode: 1
         m_Arguments:
@@ -12523,7 +12513,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1683432095}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: df024b917049aa34c8b5f303d0d57e87, type: 3}
+  m_Script: {fileID: 11500000, guid: cd3d71faf33377041bdb16c397cc5914, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   startCanvas: {fileID: 255141318}
@@ -12533,9 +12523,9 @@ MonoBehaviour:
   interviewCanvas: {fileID: 1408915861}
   textDisplay: {fileID: 1940251443}
   sentences:
-  - 'Common currency, freedom of travel and security are the positives of EU. '
-  - 'Some rules or laws are a bit too restrictive and they end up hindering innovation. '
-  - There are some limitations in EU policies but overall it is postive.
+  - '[enter statement here]'
+  - '[enter statement here]'
+  - '[enter statement here]'
   feedbackCanvas: {fileID: 1271130292}
   scoreCanvas: {fileID: 1810696522}
   rankingCanvas: {fileID: 732463104}
@@ -12552,7 +12542,7 @@ MonoBehaviour:
   theme8Button: {fileID: 1518050577}
   interviewCounter: 0
   secondCounter: 0
-  proInterview: ProInterview
+  antiInterview: AntiInterview
   chosenTextDisplay: {fileID: 1555891835}
 --- !u!4 &1683432097
 Transform:
@@ -13072,7 +13062,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1727027245}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: df024b917049aa34c8b5f303d0d57e87, type: 3}
+  m_Script: {fileID: 11500000, guid: cd3d71faf33377041bdb16c397cc5914, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   startCanvas: {fileID: 255141318}
@@ -13082,11 +13072,9 @@ MonoBehaviour:
   interviewCanvas: {fileID: 1408915861}
   textDisplay: {fileID: 1940251443}
   sentences:
-  - 'Citizens of EU should enjoy the cultural diversity it offers and take advantages
-    that comes with it. '
-  - 'After being informed about EU, many are becoming more pro-EU. '
-  - 'People are becoming Eurosceptic because of the rise in the nationalistic tendencies
-    in different regions. '
+  - '[enter statement here]'
+  - '[enter statement here]'
+  - '[enter statement here]'
   feedbackCanvas: {fileID: 1271130292}
   scoreCanvas: {fileID: 1810696522}
   rankingCanvas: {fileID: 732463104}
@@ -13103,7 +13091,7 @@ MonoBehaviour:
   theme8Button: {fileID: 1518050577}
   interviewCounter: 0
   secondCounter: 0
-  proInterview: ProInterview
+  antiInterview: AntiInterview
   chosenTextDisplay: {fileID: 1555891835}
 --- !u!4 &1727027247
 Transform:
@@ -14352,7 +14340,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 1010829894}
+      - m_Target: {fileID: 1727027246}
         m_MethodName: CounterDown
         m_Mode: 1
         m_Arguments:
@@ -16278,7 +16266,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 1010829894}
+      - m_Target: {fileID: 1683432096}
         m_MethodName: CounterDown
         m_Mode: 1
         m_Arguments:
@@ -16515,7 +16503,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 2092788521}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: df024b917049aa34c8b5f303d0d57e87, type: 3}
+  m_Script: {fileID: 11500000, guid: cd3d71faf33377041bdb16c397cc5914, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   startCanvas: {fileID: 255141318}
@@ -16525,11 +16513,9 @@ MonoBehaviour:
   interviewCanvas: {fileID: 1408915861}
   textDisplay: {fileID: 1940251443}
   sentences:
-  - 'It is absolutely important to have EU to economically thrive against other big
-    economically powerful countries. '
-  - 'Identity is different than economic impact - Brexit is a latent example of this. '
-  - 'With unemployment and economic crisis, Greek people do not see much strategies
-    planned towards the betterment of the citizens. '
+  - '[enter statement here]'
+  - '[enter statement here]'
+  - '[enter statement here]'
   feedbackCanvas: {fileID: 1271130292}
   scoreCanvas: {fileID: 1810696522}
   rankingCanvas: {fileID: 732463104}
@@ -16546,7 +16532,7 @@ MonoBehaviour:
   theme8Button: {fileID: 1518050577}
   interviewCounter: 0
   secondCounter: 0
-  proInterview: ProInterview
+  antiInterview: AntiInterview
   chosenTextDisplay: {fileID: 1555891835}
 --- !u!4 &2092788523
 Transform:

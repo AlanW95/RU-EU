@@ -287,7 +287,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 0}
   m_AnchorMax: {x: 1, y: 0}
-  m_AnchoredPosition: {x: -85, y: 0}
+  m_AnchoredPosition: {x: -26, y: -62}
   m_SizeDelta: {x: 1000, y: 330}
   m_Pivot: {x: 1, y: 0}
 --- !u!114 &17882524
@@ -806,7 +806,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &68816128
 RectTransform:
   m_ObjectHideFlags: 0
@@ -1170,7 +1170,7 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_Sprite: {fileID: 21300000, guid: c454c42d649661f4e86a57dcf46bc416, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 686d3fc2ff102ca4a94623067ebda42a, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -1204,7 +1204,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &154026987
 RectTransform:
   m_ObjectHideFlags: 0
@@ -1526,7 +1526,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &222026082
 RectTransform:
   m_ObjectHideFlags: 0
@@ -1827,7 +1827,7 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_Sprite: {fileID: 21300000, guid: 9abe7ae7e99df60479808edcd4ac313f, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 39916e6f444f1d24b9cc66d5f6abb04b, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -1880,7 +1880,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &235960743
 RectTransform:
   m_ObjectHideFlags: 0
@@ -2304,7 +2304,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &289018226
 RectTransform:
   m_ObjectHideFlags: 0
@@ -2484,7 +2484,8 @@ MonoBehaviour:
   interviewCanvas: {fileID: 1408915861}
   textDisplay: {fileID: 1940251443}
   sentences:
-  - '[enter statement here]'
+  - 'EU citizens and the EU institutions need to get a better idea of what EU really
+    is and why it is important. '
   - '[enter statement here]'
   - '[enter statement here]'
   feedbackCanvas: {fileID: 1271130292}
@@ -2669,7 +2670,7 @@ RectTransform:
   m_GameObject: {fileID: 307899349}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 1.19, y: 0.99, z: 1.16}
   m_Children:
   - {fileID: 874046617}
   - {fileID: 1871510732}
@@ -2678,8 +2679,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 0}
-  m_AnchoredPosition: {x: 0, y: 100}
-  m_SizeDelta: {x: -500, y: 210}
+  m_AnchoredPosition: {x: 5, y: 100.59}
+  m_SizeDelta: {x: -570, y: 210}
   m_Pivot: {x: 0.5, y: 0}
 --- !u!114 &307899351
 MonoBehaviour:
@@ -3047,7 +3048,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &356176517
 RectTransform:
   m_ObjectHideFlags: 0
@@ -3227,9 +3228,10 @@ MonoBehaviour:
   interviewCanvas: {fileID: 1408915861}
   textDisplay: {fileID: 1940251443}
   sentences:
-  - '[enter statement here]'
-  - '[enter statement here]'
-  - '[enter statement here]'
+  - 'EU being a practical entiry and the practical implementations of EU are two different
+    things. '
+  - 'EU politics regarding accepting refugees was a disgrace to its ideals. '
+  - 'United states of Europe is a promising idea in this competitive world. '
   feedbackCanvas: {fileID: 1271130292}
   scoreCanvas: {fileID: 1810696522}
   rankingCanvas: {fileID: 732463104}
@@ -3279,7 +3281,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &384764075
 RectTransform:
   m_ObjectHideFlags: 0
@@ -5318,7 +5320,7 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_Sprite: {fileID: 21300000, guid: 9b7fcf9c772e0ae4c90eaeff9dd27889, type: 3}
+  m_Sprite: {fileID: 21300000, guid: ee9f2b161e469d743a6fc06c8c1f3a55, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -6271,7 +6273,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &874046617
 RectTransform:
   m_ObjectHideFlags: 0
@@ -6288,7 +6290,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 79.26, y: 645.00006}
+  m_AnchoredPosition: {x: 62, y: 689}
   m_SizeDelta: {x: 336.62, y: 73.7}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &874046618
@@ -7849,7 +7851,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1000957012
 RectTransform:
   m_ObjectHideFlags: 0
@@ -8043,9 +8045,12 @@ MonoBehaviour:
   interviewCanvas: {fileID: 1408915861}
   textDisplay: {fileID: 1940251443}
   sentences:
-  - '[enter statement here]'
-  - '[enter statement here]'
-  - '[enter statement here]'
+  - 'Peoples perception of EU is mostly dominated by the media portrayal of the EU
+    laws and European directives. '
+  - 'EU must become more strategic and put more effort into European integration with
+    a definite perspective. '
+  - 'EU is a very important achievement for Europe and European societies, after the
+    2nd World War '
   feedbackCanvas: {fileID: 1271130292}
   scoreCanvas: {fileID: 1810696522}
   rankingCanvas: {fileID: 732463104}
@@ -8299,7 +8304,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1066207106
 RectTransform:
   m_ObjectHideFlags: 0
@@ -8797,7 +8802,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1123680310
 RectTransform:
   m_ObjectHideFlags: 0
@@ -8958,7 +8963,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1132733492
 RectTransform:
   m_ObjectHideFlags: 0
@@ -9920,9 +9925,10 @@ MonoBehaviour:
   interviewCanvas: {fileID: 1408915861}
   textDisplay: {fileID: 1940251443}
   sentences:
-  - '[enter statement here]'
-  - '[enter statement here]'
-  - '[enter statement here]'
+  - 'Brexit has strengthened the sense of European identity. '
+  - 'It is possible to be pro-EU while being Eurosceptic on different issues. '
+  - 'Even the concept of unification is there, the people of Europe are diverging
+    because of economic and refugee crisis. '
   feedbackCanvas: {fileID: 1271130292}
   scoreCanvas: {fileID: 1810696522}
   rankingCanvas: {fileID: 732463104}
@@ -9972,7 +9978,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1349107785
 RectTransform:
   m_ObjectHideFlags: 0
@@ -10687,9 +10693,11 @@ MonoBehaviour:
   interviewCanvas: {fileID: 1408915861}
   textDisplay: {fileID: 1940251443}
   sentences:
-  - '[enter statement here]'
-  - '[enter statement here]'
-  - '[enter statement here]'
+  - 'It is a big issue to find a balance between a member state''s laws and EU laws '
+  - 'Elected state governments are bound to accommodate EU laws and it makes the citizens
+    unhappy '
+  - 'The political side of Europe along the line of implementating new laws and regulations
+    is perceived as forced by some members. '
   feedbackCanvas: {fileID: 1271130292}
   scoreCanvas: {fileID: 1810696522}
   rankingCanvas: {fileID: 732463104}
@@ -11586,7 +11594,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1530627945
 RectTransform:
   m_ObjectHideFlags: 0
@@ -12523,9 +12531,11 @@ MonoBehaviour:
   interviewCanvas: {fileID: 1408915861}
   textDisplay: {fileID: 1940251443}
   sentences:
-  - '[enter statement here]'
-  - '[enter statement here]'
-  - '[enter statement here]'
+  - 'Europe is a rather stable part compared with the rest of the world with higher
+    living standards and peace in the region. '
+  - 'Advantages for the citizens, contribution to national wealth and regional peace
+    are the most treasured benefits at this moment. '
+  - 'Older generations who survived the war are more appreciative of the EU. '
   feedbackCanvas: {fileID: 1271130292}
   scoreCanvas: {fileID: 1810696522}
   rankingCanvas: {fileID: 732463104}
@@ -13072,8 +13082,8 @@ MonoBehaviour:
   interviewCanvas: {fileID: 1408915861}
   textDisplay: {fileID: 1940251443}
   sentences:
-  - '[enter statement here]'
-  - '[enter statement here]'
+  - 'EU gives the freedom to act internationally and gain international understanding. '
+  - 'Shared ideals across different countries are the essence of European identity. '
   - '[enter statement here]'
   feedbackCanvas: {fileID: 1271130292}
   scoreCanvas: {fileID: 1810696522}
@@ -14578,7 +14588,7 @@ RectTransform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1894523649}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: -89}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1408915862}
@@ -14586,7 +14596,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 0}
   m_AnchorMax: {x: 1, y: 0}
-  m_AnchoredPosition: {x: -385, y: 75}
+  m_AnchoredPosition: {x: -385, y: 64}
   m_SizeDelta: {x: 150, y: 100}
   m_Pivot: {x: 1, y: 0}
 --- !u!114 &1894523651
@@ -14858,7 +14868,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1908800124
 RectTransform:
   m_ObjectHideFlags: 0
@@ -15256,7 +15266,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1952967394
 RectTransform:
   m_ObjectHideFlags: 0
@@ -16333,7 +16343,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &2066262224
 RectTransform:
   m_ObjectHideFlags: 0
@@ -16513,9 +16523,11 @@ MonoBehaviour:
   interviewCanvas: {fileID: 1408915861}
   textDisplay: {fileID: 1940251443}
   sentences:
-  - '[enter statement here]'
-  - '[enter statement here]'
-  - '[enter statement here]'
+  - 'All European countried should be subjected to development and be recognized along
+    with their individuality '
+  - 'People who migrated to other EU countries for different reasons are more appreciative
+    of the EU. '
+  - 'After being informed about EU benefits, many are becoming pro-EU. '
   feedbackCanvas: {fileID: 1271130292}
   scoreCanvas: {fileID: 1810696522}
   rankingCanvas: {fileID: 732463104}

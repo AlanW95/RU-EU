@@ -8046,9 +8046,9 @@ MonoBehaviour:
   interviewCanvas: {fileID: 1408915861}
   textDisplay: {fileID: 1940251443}
   sentences:
-  - 'Open borders makes it easy to plan and go on vacations and/or work. '
-  - 'Education sector in Greece has benefitted largely due to their participation
-    in EU. '
+  - Open borders makes it easy to plan and go on vacations and/or work.
+  - Education sector in Greece has benefitted largely due to their participation in
+    EU.
   - 'EU does not have direct impact on people''s day to day life so it is not important
     for regular people to discuss about EU identity. '
   feedbackCanvas: {fileID: 1271130292}

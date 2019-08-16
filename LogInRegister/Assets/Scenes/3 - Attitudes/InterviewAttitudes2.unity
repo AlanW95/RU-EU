@@ -2484,8 +2484,8 @@ MonoBehaviour:
   interviewCanvas: {fileID: 1408915861}
   textDisplay: {fileID: 1940251443}
   sentences:
-  - 'EU citizens and the EU institutions need to get a better idea of what EU really
-    is and why it is important. '
+  - EU citizens and the EU institutions need to get a better idea of what EU really
+    is and why it is important.
   - '[enter statement here]'
   - '[enter statement here]'
   feedbackCanvas: {fileID: 1271130292}
@@ -3228,10 +3228,10 @@ MonoBehaviour:
   interviewCanvas: {fileID: 1408915861}
   textDisplay: {fileID: 1940251443}
   sentences:
-  - 'EU being a practical entiry and the practical implementations of EU are two different
-    things. '
-  - 'EU politics regarding accepting refugees was a disgrace to its ideals. '
-  - 'United states of Europe is a promising idea in this competitive world. '
+  - EU being a practical entiry and the practical implementations of EU are two different
+    things.
+  - EU politics regarding accepting refugees was a disgrace to its ideals.
+  - United states of Europe is a promising idea in this competitive world.
   feedbackCanvas: {fileID: 1271130292}
   scoreCanvas: {fileID: 1810696522}
   rankingCanvas: {fileID: 732463104}
@@ -8045,12 +8045,12 @@ MonoBehaviour:
   interviewCanvas: {fileID: 1408915861}
   textDisplay: {fileID: 1940251443}
   sentences:
-  - 'Peoples perception of EU is mostly dominated by the media portrayal of the EU
-    laws and European directives. '
-  - 'EU must become more strategic and put more effort into European integration with
-    a definite perspective. '
-  - 'EU is a very important achievement for Europe and European societies, after the
-    2nd World War '
+  - Peoples perception of EU is mostly dominated by the media portrayal of the EU
+    laws and European directives.
+  - EU must become more strategic and put more effort into European integration with
+    a definite perspective.
+  - EU is a very important achievement for Europe and European societies, after the
+    2nd World War.
   feedbackCanvas: {fileID: 1271130292}
   scoreCanvas: {fileID: 1810696522}
   rankingCanvas: {fileID: 732463104}
@@ -9925,10 +9925,10 @@ MonoBehaviour:
   interviewCanvas: {fileID: 1408915861}
   textDisplay: {fileID: 1940251443}
   sentences:
-  - 'Brexit has strengthened the sense of European identity. '
-  - 'It is possible to be pro-EU while being Eurosceptic on different issues. '
-  - 'Even the concept of unification is there, the people of Europe are diverging
-    because of economic and refugee crisis. '
+  - Brexit has strengthened the sense of European identity.
+  - It is possible to be pro-EU while being Eurosceptic on different issues.
+  - Even the concept of unification is there, the people of Europe are diverging because
+    of economic and refugee crisis.
   feedbackCanvas: {fileID: 1271130292}
   scoreCanvas: {fileID: 1810696522}
   rankingCanvas: {fileID: 732463104}
@@ -10693,11 +10693,11 @@ MonoBehaviour:
   interviewCanvas: {fileID: 1408915861}
   textDisplay: {fileID: 1940251443}
   sentences:
-  - 'It is a big issue to find a balance between a member state''s laws and EU laws '
-  - 'Elected state governments are bound to accommodate EU laws and it makes the citizens
-    unhappy '
-  - 'The political side of Europe along the line of implementating new laws and regulations
-    is perceived as forced by some members. '
+  - It is a big issue to find a balance between a member state's laws and EU laws.
+  - Elected state governments are bound to accommodate EU laws and it makes the citizens
+    unhappy.
+  - The political side of Europe along the line of implementating new laws and regulations
+    is perceived as forced by some members.
   feedbackCanvas: {fileID: 1271130292}
   scoreCanvas: {fileID: 1810696522}
   rankingCanvas: {fileID: 732463104}
@@ -12531,11 +12531,11 @@ MonoBehaviour:
   interviewCanvas: {fileID: 1408915861}
   textDisplay: {fileID: 1940251443}
   sentences:
-  - 'Europe is a rather stable part compared with the rest of the world with higher
-    living standards and peace in the region. '
-  - 'Advantages for the citizens, contribution to national wealth and regional peace
-    are the most treasured benefits at this moment. '
-  - 'Older generations who survived the war are more appreciative of the EU. '
+  - Europe is a rather stable part compared with the rest of the world with higher
+    living standards and peace in the region.
+  - Advantages for the citizens, contribution to national wealth and regional peace
+    are the most treasured benefits at this moment.
+  - Older generations who survived the war are more appreciative of the EU.
   feedbackCanvas: {fileID: 1271130292}
   scoreCanvas: {fileID: 1810696522}
   rankingCanvas: {fileID: 732463104}
@@ -13082,8 +13082,8 @@ MonoBehaviour:
   interviewCanvas: {fileID: 1408915861}
   textDisplay: {fileID: 1940251443}
   sentences:
-  - 'EU gives the freedom to act internationally and gain international understanding. '
-  - 'Shared ideals across different countries are the essence of European identity. '
+  - EU gives the freedom to act internationally and gain international understanding.
+  - Shared ideals across different countries are the essence of European identity.
   - '[enter statement here]'
   feedbackCanvas: {fileID: 1271130292}
   scoreCanvas: {fileID: 1810696522}
@@ -16523,11 +16523,11 @@ MonoBehaviour:
   interviewCanvas: {fileID: 1408915861}
   textDisplay: {fileID: 1940251443}
   sentences:
-  - 'All European countried should be subjected to development and be recognized along
-    with their individuality '
-  - 'People who migrated to other EU countries for different reasons are more appreciative
-    of the EU. '
-  - 'After being informed about EU benefits, many are becoming pro-EU. '
+  - All European countried should be subjected to development and be recognized along
+    with their individuality.
+  - People who migrated to other EU countries for different reasons are more appreciative
+    of the EU.
+  - After being informed about EU benefits, many are becoming pro-EU.
   feedbackCanvas: {fileID: 1271130292}
   scoreCanvas: {fileID: 1810696522}
   rankingCanvas: {fileID: 732463104}

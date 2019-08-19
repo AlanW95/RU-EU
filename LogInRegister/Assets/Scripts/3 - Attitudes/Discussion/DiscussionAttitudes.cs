@@ -5,11 +5,12 @@ using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 using TMPro;
 
-public class ImmigrationDiscussion1 : MonoBehaviour
+public class DiscussionAttitudes : MonoBehaviour
 {
+
     public TextMeshProUGUI statementTextDisplay;
 
-    //Task 2 (previously)
+    //Discussion text  
     public string[] discussion2;
     private int index;
 
@@ -18,20 +19,16 @@ public class ImmigrationDiscussion1 : MonoBehaviour
 
     public GameObject continueButton;
 
-    //pub scene background
+    //background
     public GameObject toolBG;
 
-    //3 main characters that will be seen throughout the discussion
-    public GameObject proCharacter;
-    public GameObject antiCharacter;
-    public GameObject undecidedCharacter;
-
-    //public GameObject contextProCharacter;
+    //3 characters for discussion tool
+    public GameObject proCharacter, antiCharacter, undecidedCharacter;
 
     public Animator animPro, animAnti, animUndecided;
     public Animator animText;
 
-    //interview style response boxes
+    //interview style response box
     public GameObject responseBox;
 
     //Dialogue Bool Finish
@@ -46,18 +43,18 @@ public class ImmigrationDiscussion1 : MonoBehaviour
     private bool isTheme9Finished = false;
     private bool isTheme10Finished = false;
 
-    //Dialogue Context (before dialogue begins)
+    //Dialogue Context (before the dialogue begins)
     public GameObject contextTheme1, contextTheme2, contextTheme3, contextTheme4, contextTheme5, contextTheme6, contextTheme7, contextTheme8, contextTheme9, contextTheme10;
-    
+
     public GameObject playerSelection;
     public GameObject[] proText, antiText;
     public TextMeshProUGUI theme1Pro, theme2Pro, theme3Pro, theme4Pro, theme5Pro, theme6Pro, theme7Pro, theme8Pro, theme9Pro, theme10Pro;
     public TextMeshProUGUI theme1Anti, theme2Anti, theme3Anti, theme4Anti, theme5Anti, theme6Anti, theme7Anti, theme8Anti, theme9Anti, theme10Anti;
     private bool hasPlayerSelected = false;
-    
+
     private bool isDialogueFinished = false;
 
-    // For bottom
+    //For Bottom
     private bool proDiscussion1, antiDiscussion1 = false;
     private bool proDiscussion2, antiDiscussion2 = false;
     private bool proDiscussion3, antiDiscussion3 = false;
@@ -81,7 +78,7 @@ public class ImmigrationDiscussion1 : MonoBehaviour
     void Start()
     {
         startCanvas.SetActive(true);
-        
+
         FloatingTextController.Initialize();
     }
 

@@ -338,7 +338,7 @@ GameObject:
   - component: {fileID: 56066960}
   - component: {fileID: 56066961}
   m_Layer: 0
-  m_Name: Theme2
+  m_Name: Economic
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -372,12 +372,14 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   statementTextDisplay: {fileID: 1394089434}
   discussion2:
-  - '[enter question]'
-  - '[enter pro response]'
-  - '[enter anti response]'
-  - '[enter neutral/ undecided response]'
+  - 'How do you think the single currency has impacted the European economy?   '
+  - 'A European economic and monetary union with 1 single currency is essential for
+    keeping EU competitive. '
+  - "The Euro and a monetary union is not advantageous for the Europ\xE9. "
+  - 'Regarding if a single monetary union with a single currency is good or not, is
+    not so easy to say per se, since so many factors play a role.  '
   typingSpeed: 0
-  continueButton: {fileID: 763336593}
+  continueButton: {fileID: 229275081}
   toolBG: {fileID: 1968638422}
   proCharacter: {fileID: 523651170}
   antiCharacter: {fileID: 1236020478}
@@ -577,7 +579,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 0}
-  m_AnchoredPosition: {x: -2.8007812, y: 145.75}
+  m_AnchoredPosition: {x: -94, y: 140}
   m_SizeDelta: {x: -598, y: 116.7}
   m_Pivot: {x: 0.5, y: 0}
 --- !u!114 &89239116
@@ -845,7 +847,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &100686419
 RectTransform:
   m_ObjectHideFlags: 0
@@ -1243,7 +1245,7 @@ GameObject:
   - component: {fileID: 183241755}
   - component: {fileID: 183241756}
   m_Layer: 0
-  m_Name: Theme1
+  m_Name: Social
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1277,12 +1279,15 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   statementTextDisplay: {fileID: 1394089434}
   discussion2:
-  - '[enter question]'
-  - '[enter pro response]'
-  - '[enter anti response]'
-  - '[enter neutral/ undecided response]'
+  - 'How do you feel about your European identity and rights?   '
+  - 'I actually feel that i am an European citizen and that i have enough information
+    about my rights.  '
+  - 'I am British, and not European and i have no need to learn more about my rights
+    as EU citizens. '
+  - 'I am first of all Greek, but i would like to be better informed about my rights
+    as an EU citizen. '
   typingSpeed: 0
-  continueButton: {fileID: 1093933578}
+  continueButton: {fileID: 763336593}
   toolBG: {fileID: 1968638422}
   proCharacter: {fileID: 523651170}
   antiCharacter: {fileID: 1236020478}
@@ -1606,7 +1611,7 @@ GameObject:
   - component: {fileID: 229275084}
   - component: {fileID: 229275083}
   m_Layer: 5
-  m_Name: Theme3Continue
+  m_Name: EconomicContinue
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1671,8 +1676,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1858266113}
-        m_MethodName: Theme3NextSentence
+      - m_Target: {fileID: 56066959}
+        m_MethodName: 
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -1960,7 +1965,7 @@ GameObject:
   - component: {fileID: 290620612}
   - component: {fileID: 290620610}
   m_Layer: 5
-  m_Name: Theme5AntiText
+  m_Name: HistoricalAntiText
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2670,7 +2675,7 @@ GameObject:
   - component: {fileID: 387591822}
   - component: {fileID: 387591821}
   m_Layer: 5
-  m_Name: Theme4Context
+  m_Name: SafetySecurityContext
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2992,7 +2997,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 461413361}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
   m_Name: 
@@ -3296,7 +3301,7 @@ GameObject:
   - component: {fileID: 490525870}
   - component: {fileID: 490525869}
   m_Layer: 5
-  m_Name: Theme1Context
+  m_Name: SocialContext
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3522,7 +3527,7 @@ GameObject:
   - component: {fileID: 504398791}
   - component: {fileID: 504398789}
   m_Layer: 5
-  m_Name: Theme6ProText
+  m_Name: EnvironmentalProText
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3759,7 +3764,7 @@ GameObject:
   - component: {fileID: 511520101}
   - component: {fileID: 511520103}
   m_Layer: 5
-  m_Name: Theme1AntiText
+  m_Name: SocialAntiText
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4088,7 +4093,7 @@ GameObject:
   - component: {fileID: 523651172}
   - component: {fileID: 523651174}
   m_Layer: 5
-  m_Name: ProCharacter
+  m_Name: Colleague 1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4110,8 +4115,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 82, y: 469.1}
-  m_SizeDelta: {x: 593.94, y: 937.2}
+  m_AnchoredPosition: {x: 219.02, y: 403.25}
+  m_SizeDelta: {x: 1403.4, y: 2160.6}
   m_Pivot: {x: 0, y: 0.5}
 --- !u!114 &523651172
 MonoBehaviour:
@@ -4133,7 +4138,7 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_Sprite: {fileID: 21300000, guid: c53540bf714b89d42b67fd066512b680, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 9f76633c96c0fd24ba8115e13b7aa2cd, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -4160,7 +4165,7 @@ Animator:
   m_GameObject: {fileID: 523651170}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 20a02e30b3366514694c61cce390ba90, type: 2}
+  m_Controller: {fileID: 9100000, guid: 8d54174db30a8864ba026d6583dba7a9, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -4515,7 +4520,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 543611264}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
   m_Name: 
@@ -4887,7 +4892,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &604569175
 RectTransform:
   m_ObjectHideFlags: 0
@@ -4927,7 +4932,7 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_Sprite: {fileID: 21300000, guid: 659adf6d2b483b144ae83e9a14995cdf, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 51df1a63b4ab71e40bd12bb8dcdb3ce5, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -5095,7 +5100,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 38, y: 57}
+  m_AnchoredPosition: {x: 27, y: 320}
   m_SizeDelta: {x: 690.5, y: 230.2}
   m_Pivot: {x: 0, y: 0}
 --- !u!114 &633812764
@@ -5721,7 +5726,7 @@ GameObject:
   - component: {fileID: 725022522}
   - component: {fileID: 725022520}
   m_Layer: 5
-  m_Name: Theme6AntiText
+  m_Name: EnvironmentalAntiText
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -6173,7 +6178,7 @@ GameObject:
   - component: {fileID: 763336596}
   - component: {fileID: 763336595}
   m_Layer: 5
-  m_Name: Theme2Continue
+  m_Name: SocialContinue
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -6238,8 +6243,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 56066961}
-        m_MethodName: Theme2NextSentence
+      - m_Target: {fileID: 183241754}
+        m_MethodName: 
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -6312,7 +6317,7 @@ GameObject:
   - component: {fileID: 846032289}
   - component: {fileID: 846032287}
   m_Layer: 5
-  m_Name: Theme4ProText
+  m_Name: SafetySecurityProText
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -6774,7 +6779,7 @@ GameObject:
   - component: {fileID: 915110334}
   - component: {fileID: 915110336}
   m_Layer: 5
-  m_Name: UndecidedCharacter
+  m_Name: Colleague 2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -6796,8 +6801,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0}
   m_AnchorMax: {x: 0.5, y: 0}
-  m_AnchoredPosition: {x: -25, y: 451.3}
-  m_SizeDelta: {x: 644.2, y: 912.1}
+  m_AnchoredPosition: {x: 519.2, y: 412.7}
+  m_SizeDelta: {x: 1939.2, y: 2141.7}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &915110334
 MonoBehaviour:
@@ -6819,7 +6824,7 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_Sprite: {fileID: 21300000, guid: a316de51782e2f7499c617c72432d2fe, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 48ab181704e5545408f421148ab75b84, type: 3}
   m_Type: 0
   m_PreserveAspect: 1
   m_FillCenter: 1
@@ -6846,7 +6851,7 @@ Animator:
   m_GameObject: {fileID: 915110332}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: c65aa0284d688d14a9afd8e2aa389129, type: 2}
+  m_Controller: {fileID: 9100000, guid: 278fe958add1b094aba1fb3b21c00b61, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -7551,7 +7556,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1001454521
 RectTransform:
   m_ObjectHideFlags: 0
@@ -7591,7 +7596,7 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_Sprite: {fileID: 21300000, guid: c53540bf714b89d42b67fd066512b680, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 48ab181704e5545408f421148ab75b84, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -7693,7 +7698,7 @@ GameObject:
   - component: {fileID: 1046536572}
   - component: {fileID: 1046536573}
   m_Layer: 0
-  m_Name: Theme6
+  m_Name: Environmental
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -7727,12 +7732,16 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   statementTextDisplay: {fileID: 1394089434}
   discussion2:
-  - '[enter question]'
-  - '[enter pro response]'
-  - '[enter anti response]'
-  - '[enter neutral/ undecided response]'
+  - 'Do you think EU is putting enough attention to the environmental concerns for
+    a better future?   '
+  - 'The Dutch government as well as European commission should focus more on environmental
+    and climate change issues. '
+  - 'We have surely more important problems to solve than using more resources on
+    environmental and climate changes. '
+  - 'A common energy policy among EU member states is very important as it is for
+    Germany. '
   typingSpeed: 0
-  continueButton: {fileID: 1290602529}
+  continueButton: {fileID: 1972205700}
   toolBG: {fileID: 1968638422}
   proCharacter: {fileID: 523651170}
   antiCharacter: {fileID: 1236020478}
@@ -7875,8 +7884,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 183241756}
-        m_MethodName: Theme1NextSentence
+      - m_Target: {fileID: 1093933578}
+        m_MethodName: 
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -8363,7 +8372,7 @@ GameObject:
   - component: {fileID: 1144134546}
   - component: {fileID: 1144134545}
   m_Layer: 5
-  m_Name: Theme6Context
+  m_Name: EnvironmentalContext
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -8472,7 +8481,7 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_text: Discussion on the topic of Economic...
+  m_text: Discussion on the topic of Environment
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: c300450777ecabf47af9601b674f38f5, type: 2}
   m_sharedMaterial: {fileID: 21166231041172900, guid: c300450777ecabf47af9601b674f38f5,
@@ -8589,7 +8598,7 @@ GameObject:
   - component: {fileID: 1154856034}
   - component: {fileID: 1154856032}
   m_Layer: 5
-  m_Name: Theme3AntiText
+  m_Name: PoliticalAntiText
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -8985,7 +8994,7 @@ GameObject:
   - component: {fileID: 1190927748}
   - component: {fileID: 1190927746}
   m_Layer: 5
-  m_Name: Theme2AntiText
+  m_Name: EconomicAntiText
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -9222,7 +9231,7 @@ GameObject:
   - component: {fileID: 1231161833}
   - component: {fileID: 1231161832}
   m_Layer: 5
-  m_Name: Theme4Continue
+  m_Name: PoliticalContinue
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -9287,8 +9296,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 2147377591}
-        m_MethodName: Theme4NextSentence
+      - m_Target: {fileID: 1858266111}
+        m_MethodName: 
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -9361,7 +9370,7 @@ GameObject:
   - component: {fileID: 1236020480}
   - component: {fileID: 1236020482}
   m_Layer: 5
-  m_Name: AntiCharacter
+  m_Name: Journalist
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -9383,8 +9392,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 0}
   m_AnchorMax: {x: 1, y: 0}
-  m_AnchoredPosition: {x: -169.75, y: 453.8}
-  m_SizeDelta: {x: 604.75, y: 917.1}
+  m_AnchoredPosition: {x: -412, y: 414.91}
+  m_SizeDelta: {x: 2809.4, y: 2228.8}
   m_Pivot: {x: 1, y: 0.5}
 --- !u!114 &1236020480
 MonoBehaviour:
@@ -9406,7 +9415,7 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_Sprite: {fileID: 21300000, guid: 659adf6d2b483b144ae83e9a14995cdf, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 51df1a63b4ab71e40bd12bb8dcdb3ce5, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -9433,7 +9442,7 @@ Animator:
   m_GameObject: {fileID: 1236020478}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: a584f4c43db24fa409171d866623cf1d, type: 2}
+  m_Controller: {fileID: 9100000, guid: 278fe958add1b094aba1fb3b21c00b61, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -9455,7 +9464,7 @@ GameObject:
   - component: {fileID: 1259109600}
   - component: {fileID: 1259109599}
   m_Layer: 5
-  m_Name: Theme3Context
+  m_Name: PoliticalContext
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -9564,7 +9573,7 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_text: Discussion on the topic of Civic...
+  m_text: Discussion on the topic Politics...
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: c300450777ecabf47af9601b674f38f5, type: 2}
   m_sharedMaterial: {fileID: 21166231041172900, guid: c300450777ecabf47af9601b674f38f5,
@@ -10445,7 +10454,7 @@ GameObject:
   - component: {fileID: 1290602532}
   - component: {fileID: 1290602531}
   m_Layer: 5
-  m_Name: Theme6Continue
+  m_Name: HistoricalContinue
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -10510,8 +10519,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1046536573}
-        m_MethodName: Theme6NextSentence
+      - m_Target: {fileID: 1682258672}
+        m_MethodName: 
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -10733,7 +10742,7 @@ GameObject:
   - component: {fileID: 1379542270}
   - component: {fileID: 1379542269}
   m_Layer: 5
-  m_Name: Theme5Context
+  m_Name: HistoricalContext
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -10842,7 +10851,7 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_text: Discussion on the topic of Emotional...
+  m_text: Discussion on the topic of History
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: c300450777ecabf47af9601b674f38f5, type: 2}
   m_sharedMaterial: {fileID: 21166231041172900, guid: c300450777ecabf47af9601b674f38f5,
@@ -10920,11 +10929,11 @@ MonoBehaviour:
     lineCount: 1
     pageCount: 1
     materialCount: 1
-  m_havePropertiesChanged: 0
+  m_havePropertiesChanged: 1
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_spriteAnimator: {fileID: 0}
-  m_isInputParsingRequired: 0
+  m_isInputParsingRequired: 1
   m_inputSource: 0
   m_hasFontAssetChanged: 0
   m_subTextObjects:
@@ -11577,7 +11586,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1434946004
 RectTransform:
   m_ObjectHideFlags: 0
@@ -11617,7 +11626,7 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_Sprite: {fileID: 21300000, guid: a316de51782e2f7499c617c72432d2fe, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 9f76633c96c0fd24ba8115e13b7aa2cd, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -11647,7 +11656,7 @@ GameObject:
   - component: {fileID: 1463285664}
   - component: {fileID: 1463285663}
   m_Layer: 5
-  m_Name: Theme2Context
+  m_Name: EconomicContext
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -11756,7 +11765,7 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_text: Discussion on the topic of Environment...
+  m_text: Discussion on the topic of Economic..
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: c300450777ecabf47af9601b674f38f5, type: 2}
   m_sharedMaterial: {fileID: 21166231041172900, guid: c300450777ecabf47af9601b674f38f5,
@@ -11873,7 +11882,7 @@ GameObject:
   - component: {fileID: 1470800756}
   - component: {fileID: 1470800755}
   m_Layer: 5
-  m_Name: Theme5Continue
+  m_Name: SafetySecurityContinue
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -11938,8 +11947,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1682258674}
-        m_MethodName: Theme5NextSentence
+      - m_Target: {fileID: 2147377589}
+        m_MethodName: 
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -12012,7 +12021,7 @@ GameObject:
   - component: {fileID: 1481102906}
   - component: {fileID: 1481102904}
   m_Layer: 5
-  m_Name: Theme2ProText
+  m_Name: EconomicProText
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -12539,7 +12548,7 @@ GameObject:
   - component: {fileID: 1535444548}
   - component: {fileID: 1535444550}
   m_Layer: 5
-  m_Name: Theme1ProText
+  m_Name: SocialProText
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -12872,7 +12881,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1547133955}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
   m_Name: 
@@ -13901,7 +13910,7 @@ GameObject:
   - component: {fileID: 1682258673}
   - component: {fileID: 1682258674}
   m_Layer: 0
-  m_Name: Theme5
+  m_Name: Historical
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -13935,12 +13944,16 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   statementTextDisplay: {fileID: 1394089434}
   discussion2:
-  - '[enter question]'
-  - '[enter pro response]'
-  - '[enter anti response]'
-  - '[enter neutral/ undecided response]'
+  - 'Do you think the EU has contributed into changing the war infested hisory of
+    the region?   '
+  - "Throughout the history of the EC and EU the peacekeeping aspect has been very
+    important and beneficial for the prosperity of Europ\xE9. "
+  - 'Throughout the history of the EC and EU the peacekeeping aspect deserves recognition.
+    " '
+  - "The relevance of peacekeeping function of EC/EU in Europ\xE9 is exaggerated,
+    and should not be compared with that of NATO. "
   typingSpeed: 0
-  continueButton: {fileID: 1470800753}
+  continueButton: {fileID: 1290602529}
   toolBG: {fileID: 1968638422}
   proCharacter: {fileID: 523651170}
   antiCharacter: {fileID: 1236020478}
@@ -14024,7 +14037,7 @@ GameObject:
   - component: {fileID: 1727001787}
   - component: {fileID: 1727001785}
   m_Layer: 5
-  m_Name: Theme3ProText
+  m_Name: PoliticalProText
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -14356,7 +14369,7 @@ GameObject:
   - component: {fileID: 1741286134}
   - component: {fileID: 1741286132}
   m_Layer: 5
-  m_Name: Theme4AntiText
+  m_Name: SafetySecurityAntiText
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -14637,7 +14650,7 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_Sprite: {fileID: 21300000, guid: 076bf682a56b029448997334476231b8, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 529f225e3627fbd4184543d0cb76b5e3, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -15082,7 +15095,7 @@ GameObject:
   - component: {fileID: 1858266112}
   - component: {fileID: 1858266113}
   m_Layer: 0
-  m_Name: Theme3
+  m_Name: Political
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -15116,12 +15129,14 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   statementTextDisplay: {fileID: 1394089434}
   discussion2:
-  - '[enter question]'
-  - '[enter pro response]'
-  - '[enter anti response]'
-  - '[enter neutral/ undecided response]'
+  - 'Do you think that EU is to be trusted with the welfare of the citizens?   '
+  - 'We can take for sure that the EU is trustworthy and work for the good of the
+    EU citizen. '
+  - 'Other than the bureaucracy, EU is mostly trustworthy and is trying to work for
+    the good of the EU citizen. '
+  - 'The EU is not very trustworthy and is not working for the good of all EU citizen. '
   typingSpeed: 0
-  continueButton: {fileID: 229275081}
+  continueButton: {fileID: 1231161830}
   toolBG: {fileID: 1968638422}
   proCharacter: {fileID: 523651170}
   antiCharacter: {fileID: 1236020478}
@@ -15243,7 +15258,7 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_Sprite: {fileID: 21300000, guid: 076bf682a56b029448997334476231b8, type: 3}
+  m_Sprite: {fileID: 21300000, guid: a1c3ec16c91bb55498ea4064671c0562, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -15273,7 +15288,7 @@ GameObject:
   - component: {fileID: 1972205703}
   - component: {fileID: 1972205702}
   m_Layer: 5
-  m_Name: Theme7Continue
+  m_Name: EnvironmentalContinue
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -15338,8 +15353,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 605564994}
-        m_MethodName: Theme7NextSentence
+      - m_Target: {fileID: 1046536571}
+        m_MethodName: 
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -15803,7 +15818,7 @@ GameObject:
   - component: {fileID: 2037030794}
   - component: {fileID: 2037030792}
   m_Layer: 5
-  m_Name: Theme5ProText
+  m_Name: HistoricalProText
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -16085,7 +16100,7 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_Sprite: {fileID: 21300000, guid: c53540bf714b89d42b67fd066512b680, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 9f76633c96c0fd24ba8115e13b7aa2cd, type: 3}
   m_Type: 0
   m_PreserveAspect: 1
   m_FillCenter: 1
@@ -16467,7 +16482,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2088860303}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
   m_Name: 
@@ -17246,7 +17261,7 @@ GameObject:
   - component: {fileID: 2147377590}
   - component: {fileID: 2147377591}
   m_Layer: 0
-  m_Name: Theme4
+  m_Name: SafetySecurity
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -17280,12 +17295,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   statementTextDisplay: {fileID: 1394089434}
   discussion2:
-  - '[enter question]'
-  - '[enter pro response]'
-  - '[enter anti response]'
-  - '[enter neutral/ undecided response]'
+  - 'Do you think a common policy on migration is necessary for EU members?     '
+  - 'A common EU policy on migration would benefit Greece very much. '
+  - 'It is essential that EU have one common policy on migration. '
+  - 'A common EU policy on migration is not necessary and not of good for UK. '
   typingSpeed: 0
-  continueButton: {fileID: 1231161830}
+  continueButton: {fileID: 1470800753}
   toolBG: {fileID: 1968638422}
   proCharacter: {fileID: 523651170}
   antiCharacter: {fileID: 1236020478}

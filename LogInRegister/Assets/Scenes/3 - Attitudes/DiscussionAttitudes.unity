@@ -379,7 +379,7 @@ MonoBehaviour:
   - 'Regarding if a single monetary union with a single currency is good or not, is
     not so easy to say per se, since so many factors play a role.  '
   typingSpeed: 0
-  continueButton: {fileID: 229275081}
+  continueButton: {fileID: 763336593}
   toolBG: {fileID: 1968638422}
   proCharacter: {fileID: 523651170}
   antiCharacter: {fileID: 1236020478}
@@ -1287,7 +1287,7 @@ MonoBehaviour:
   - 'I am first of all Greek, but i would like to be better informed about my rights
     as an EU citizen. '
   typingSpeed: 0
-  continueButton: {fileID: 763336593}
+  continueButton: {fileID: 1093933578}
   toolBG: {fileID: 1968638422}
   proCharacter: {fileID: 523651170}
   antiCharacter: {fileID: 1236020478}
@@ -1611,7 +1611,7 @@ GameObject:
   - component: {fileID: 229275084}
   - component: {fileID: 229275083}
   m_Layer: 5
-  m_Name: EconomicContinue
+  m_Name: PoliticalContinue
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1676,8 +1676,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 56066959}
-        m_MethodName: 
+      - m_Target: {fileID: 1858266113}
+        m_MethodName: Theme3NextSentence
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -6178,7 +6178,7 @@ GameObject:
   - component: {fileID: 763336596}
   - component: {fileID: 763336595}
   m_Layer: 5
-  m_Name: SocialContinue
+  m_Name: EconomicContinue
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -6243,8 +6243,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 183241754}
-        m_MethodName: 
+      - m_Target: {fileID: 56066961}
+        m_MethodName: Theme2NextSentence
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -7741,7 +7741,7 @@ MonoBehaviour:
   - 'A common energy policy among EU member states is very important as it is for
     Germany. '
   typingSpeed: 0
-  continueButton: {fileID: 1972205700}
+  continueButton: {fileID: 1290602529}
   toolBG: {fileID: 1968638422}
   proCharacter: {fileID: 523651170}
   antiCharacter: {fileID: 1236020478}
@@ -7819,7 +7819,7 @@ GameObject:
   - component: {fileID: 1093933581}
   - component: {fileID: 1093933580}
   m_Layer: 5
-  m_Name: Theme1Continue
+  m_Name: SocialContinue
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -7884,8 +7884,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1093933578}
-        m_MethodName: 
+      - m_Target: {fileID: 183241756}
+        m_MethodName: Theme1NextSentence
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -9231,7 +9231,7 @@ GameObject:
   - component: {fileID: 1231161833}
   - component: {fileID: 1231161832}
   m_Layer: 5
-  m_Name: PoliticalContinue
+  m_Name: SafetySecurityContinue
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -9296,8 +9296,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1858266111}
-        m_MethodName: 
+      - m_Target: {fileID: 2147377591}
+        m_MethodName: Theme4NextSentence
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -10454,7 +10454,7 @@ GameObject:
   - component: {fileID: 1290602532}
   - component: {fileID: 1290602531}
   m_Layer: 5
-  m_Name: HistoricalContinue
+  m_Name: EnvironmentalContinue
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -10519,8 +10519,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1682258672}
-        m_MethodName: 
+      - m_Target: {fileID: 1046536573}
+        m_MethodName: Theme6NextSentence
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -11882,7 +11882,7 @@ GameObject:
   - component: {fileID: 1470800756}
   - component: {fileID: 1470800755}
   m_Layer: 5
-  m_Name: SafetySecurityContinue
+  m_Name: HistoricalContinue
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -11947,8 +11947,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 2147377589}
-        m_MethodName: 
+      - m_Target: {fileID: 1682258674}
+        m_MethodName: Theme5NextSentence
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -13953,7 +13953,7 @@ MonoBehaviour:
   - "The relevance of peacekeeping function of EC/EU in Europ\xE9 is exaggerated,
     and should not be compared with that of NATO. "
   typingSpeed: 0
-  continueButton: {fileID: 1290602529}
+  continueButton: {fileID: 1470800753}
   toolBG: {fileID: 1968638422}
   proCharacter: {fileID: 523651170}
   antiCharacter: {fileID: 1236020478}
@@ -15136,7 +15136,7 @@ MonoBehaviour:
     the good of the EU citizen. '
   - 'The EU is not very trustworthy and is not working for the good of all EU citizen. '
   typingSpeed: 0
-  continueButton: {fileID: 1231161830}
+  continueButton: {fileID: 229275081}
   toolBG: {fileID: 1968638422}
   proCharacter: {fileID: 523651170}
   antiCharacter: {fileID: 1236020478}
@@ -15288,7 +15288,7 @@ GameObject:
   - component: {fileID: 1972205703}
   - component: {fileID: 1972205702}
   m_Layer: 5
-  m_Name: EnvironmentalContinue
+  m_Name: Theme7Continue
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -17300,7 +17300,7 @@ MonoBehaviour:
   - 'It is essential that EU have one common policy on migration. '
   - 'A common EU policy on migration is not necessary and not of good for UK. '
   typingSpeed: 0
-  continueButton: {fileID: 1470800753}
+  continueButton: {fileID: 1231161830}
   toolBG: {fileID: 1968638422}
   proCharacter: {fileID: 523651170}
   antiCharacter: {fileID: 1236020478}

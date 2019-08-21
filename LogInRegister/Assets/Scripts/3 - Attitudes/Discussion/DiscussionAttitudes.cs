@@ -38,18 +38,15 @@ public class DiscussionAttitudes : MonoBehaviour
     private bool isTheme4Finished = false;
     private bool isTheme5Finished = false;
     private bool isTheme6Finished = false;
-    private bool isTheme7Finished = false;
-    private bool isTheme8Finished = false;
-    private bool isTheme9Finished = false;
-    private bool isTheme10Finished = false;
 
     //Dialogue Context (before the dialogue begins)
-    public GameObject contextTheme1, contextTheme2, contextTheme3, contextTheme4, contextTheme5, contextTheme6, contextTheme7, contextTheme8, contextTheme9, contextTheme10;
+    public GameObject contextTheme1, contextTheme2, contextTheme3, contextTheme4, contextTheme5, contextTheme6;
 
     public GameObject playerSelection;
-    public GameObject[] proText, antiText;
-    public TextMeshProUGUI theme1Pro, theme2Pro, theme3Pro, theme4Pro, theme5Pro, theme6Pro, theme7Pro, theme8Pro, theme9Pro, theme10Pro;
-    public TextMeshProUGUI theme1Anti, theme2Anti, theme3Anti, theme4Anti, theme5Anti, theme6Anti, theme7Anti, theme8Anti, theme9Anti, theme10Anti;
+    public GameObject[] character1Text, character2Text, character3Text;
+    public TextMeshProUGUI theme1Character1, theme2Character1, theme3Character1, theme4Character1, theme5Character1, theme6Character1;
+    public TextMeshProUGUI theme1Character2, theme2Character2, theme3Character2, theme4Character2, theme5Character2, theme6Character2;
+    public TextMeshProUGUI theme1Character3, theme2Character3, theme3Character3, theme4Character3, theme5Character3, theme6Character3;
     private bool hasPlayerSelected = false;
 
     private bool isDialogueFinished = false;
@@ -61,16 +58,12 @@ public class DiscussionAttitudes : MonoBehaviour
     private bool proDiscussion4, antiDiscussion4 = false;
     private bool proDiscussion5, antiDiscussion5 = false;
     private bool proDiscussion6, antiDiscussion6 = false;
-    private bool proDiscussion7, antiDiscussion7 = false;
-    private bool proDiscussion8, antiDiscussion8 = false;
-    private bool proDiscussion9, antiDiscussion9 = false;
-    private bool proDiscussion10, antiDiscussion10 = false;
 
     public GameObject task3;
 
     private int discussionCount = 0;
 
-    private int countdown = 10;
+    private int countdown = 6;
 
     public GameObject startCanvas;
 
@@ -149,17 +142,13 @@ public class DiscussionAttitudes : MonoBehaviour
         contextTheme4.SetActive(false);
         contextTheme5.SetActive(false);
         contextTheme6.SetActive(false);
-        contextTheme7.SetActive(false);
-        contextTheme8.SetActive(false);
-        contextTheme9.SetActive(false);
-        contextTheme10.SetActive(false);
 
         //animText.SetTrigger("Change"); //for player if added later on
     }
 
     public void IfFinished() {
         //if either or are finished - go back to the screen
-        if (isDialogueFinished) {
+        /*if (isDialogueFinished) {
 
             toolBG.SetActive(false);
         }
@@ -170,14 +159,14 @@ public class DiscussionAttitudes : MonoBehaviour
             //this is placement at the moment
             //task2FullCanvas.SetActive(false);
             //task3.SetActive(true);
-            Debug.Log("Both dialogues have been complete!");
+            Debug.Log("Discussion has been complete!");
             task3.SetActive(true);
 
             toolBG.SetActive(false);
-        }
+        }*/
 
         if (countdown == 0) {
-            Debug.Log("Discussion been complete!");
+            Debug.Log("Discussion has been complete!");
             task3.SetActive(true);
             toolBG.SetActive(false);
         }
@@ -201,13 +190,13 @@ public class DiscussionAttitudes : MonoBehaviour
 
             StartCoroutine(Type());
 
-            if (index == 0) {
+            if (index == 1) {
                 animUndecided.SetTrigger("Idle");
                 animPro.SetTrigger("Triggered");
                 //proAnimationBubble.SetActive(true);
             }
 
-            if (index == 1) {
+            if (index == 2) {
                 animPro.SetTrigger("Idle");
                 animAnti.SetTrigger("Triggered");
 
@@ -215,7 +204,7 @@ public class DiscussionAttitudes : MonoBehaviour
                 //antiAnimationBubble.SetActive(true);
             }
 
-            if (index == 2) {
+            if (index == 3) {
                 animAnti.SetTrigger("Idle");
                 animUndecided.SetTrigger("Triggered");
 
@@ -249,10 +238,12 @@ public class DiscussionAttitudes : MonoBehaviour
                 playerSelection.SetActive(true);
 
 
-                proText[0].SetActive(true);
-                antiText[0].SetActive(true);
-                theme1Pro.text = "Our country would not have the fantastic social mix it has today without migration.";
-                theme1Anti.text = "The Bureaucrats in Brussels have no idea about the type of migrants we get here - and no idea how it impacts on our society - we have to live with them, they don't.";
+                character1Text[0].SetActive(true);
+                character2Text[0].SetActive(true);
+                character3Text[0].SetActive(true);
+                theme1Character1.text = "I actually feel that i am an European citizen and that i have enough information about my rights.";
+                theme1Character2.text = "I am British, and not European and i have no need to learn more about my rights as EU citizens.";
+                theme1Character3.text = "I am first of all Greek, but i would like to be better informed about my rights as an EU citizen.";
 
                 proCharacter.SetActive(true);
                 antiCharacter.SetActive(true);
@@ -270,8 +261,9 @@ public class DiscussionAttitudes : MonoBehaviour
     public void Theme1Selected() {
         if (hasPlayerSelected == true) {
             hasPlayerSelected = false;
-            proText[0].SetActive(false);
-            antiText[0].SetActive(false);
+            character1Text[0].SetActive(false);
+            character2Text[0].SetActive(false);
+            character3Text[0].SetActive(false);
             playerSelection.SetActive(false);
             proCharacter.SetActive(false);
             antiCharacter.SetActive(false);
@@ -299,13 +291,13 @@ public class DiscussionAttitudes : MonoBehaviour
 
             StartCoroutine(Type());
 
-            if (index == 0) {
+            if (index == 1) {
                 animUndecided.SetTrigger("Idle");
                 animPro.SetTrigger("Triggered");
                 //proAnimationBubble.SetActive(true);
             }
 
-            if (index == 1) {
+            if (index == 2) {
                 animPro.SetTrigger("Idle");
                 animAnti.SetTrigger("Triggered");
 
@@ -313,7 +305,7 @@ public class DiscussionAttitudes : MonoBehaviour
                 //antiAnimationBubble.SetActive(true);
             }
 
-            if (index == 2) {
+            if (index == 3) {
                 animAnti.SetTrigger("Idle");
                 animUndecided.SetTrigger("Triggered");
 
@@ -343,11 +335,13 @@ public class DiscussionAttitudes : MonoBehaviour
 
                 //we want to give the player the option to choose between options
                 playerSelection.SetActive(true);
-                proText[1].SetActive(true);
-                antiText[1].SetActive(true);
+                character1Text[1].SetActive(true);
+                character2Text[1].SetActive(true);
+                character3Text[1].SetActive(true);
 
-                theme2Pro.text = "Climate change is not an issue for only one country - we need to work together - irerspective of where we live.";
-                theme2Anti.text = "Migrants cause overpopualtion, too much rubbish, and damage to the environment.";
+                theme2Character1.text = "A European economic and monetary union with 1 single currency is essential for keeping EU competitive.";
+                theme2Character2.text = "The Euro and a monetary union is not advantageous for the Europé.";
+                theme2Character3.text = "Regarding if a single monetary union with a single currency is good or not, is not so easy to say per se, since so many factors play a role.";
 
                 proCharacter.SetActive(true);
                 antiCharacter.SetActive(true);
@@ -363,8 +357,9 @@ public class DiscussionAttitudes : MonoBehaviour
     public void Theme2Selected() {
         if (hasPlayerSelected == true) {
             hasPlayerSelected = false;
-            proText[1].SetActive(false);
-            antiText[1].SetActive(false);
+            character1Text[1].SetActive(false);
+            character2Text[1].SetActive(false);
+            character3Text[1].SetActive(false);
             playerSelection.SetActive(false);
             proCharacter.SetActive(false);
             antiCharacter.SetActive(false);
@@ -391,13 +386,13 @@ public class DiscussionAttitudes : MonoBehaviour
 
             StartCoroutine(Type());
 
-            if (index == 0) {
+            if (index == 1) {
                 animUndecided.SetTrigger("Idle");
                 animPro.SetTrigger("Triggered");
                 //proAnimationBubble.SetActive(true);
             }
 
-            if (index == 1) {
+            if (index == 2) {
                 animPro.SetTrigger("Idle");
                 animAnti.SetTrigger("Triggered");
 
@@ -405,7 +400,7 @@ public class DiscussionAttitudes : MonoBehaviour
                 //antiAnimationBubble.SetActive(true);
             }
 
-            if (index == 2) {
+            if (index == 3) {
                 animAnti.SetTrigger("Idle");
                 animUndecided.SetTrigger("Triggered");
 
@@ -434,11 +429,13 @@ public class DiscussionAttitudes : MonoBehaviour
 
                 //we want to give the player the option to choose between options
                 playerSelection.SetActive(true);
-                proText[2].SetActive(true);
-                antiText[2].SetActive(true);
+                character1Text[2].SetActive(true);
+                character2Text[2].SetActive(true);
+                character3Text[2].SetActive(true);
 
-                theme3Pro.text = "Immigrants should have all the rights and the responsibilities that other EU citizens have.";
-                theme3Anti.text = "I can understand why people in certain areas feel threatened by immigration - they feel the immigrants have more rights than they do.";
+                theme3Character1.text = "We can take for sure that the EU is trustworthy and work for the good of the EU citizen.";
+                theme3Character2.text = "Other than the bureaucracy, EU is mostly trustworthy and is trying to work for the good of the EU citizen.";
+                theme3Character3.text = "The EU is not very trustworthy and is not working for the good of all EU citizen.";
 
                 proCharacter.SetActive(true);
                 antiCharacter.SetActive(true);
@@ -454,8 +451,9 @@ public class DiscussionAttitudes : MonoBehaviour
     public void Theme3Selected() {
         if (hasPlayerSelected == true) {
             hasPlayerSelected = false;
-            proText[2].SetActive(false);
-            antiText[2].SetActive(false);
+            character1Text[2].SetActive(false);
+            character2Text[2].SetActive(false);
+            character3Text[2].SetActive(false);
             playerSelection.SetActive(false);
             proCharacter.SetActive(false);
             antiCharacter.SetActive(false);
@@ -482,13 +480,13 @@ public class DiscussionAttitudes : MonoBehaviour
 
             StartCoroutine(Type());
 
-            if (index == 0) {
+            if (index == 1) {
                 animUndecided.SetTrigger("Idle");
                 animPro.SetTrigger("Triggered");
                 //proAnimationBubble.SetActive(true);
             }
 
-            if (index == 1) {
+            if (index == 2) {
                 animPro.SetTrigger("Idle");
                 animAnti.SetTrigger("Triggered");
 
@@ -496,7 +494,7 @@ public class DiscussionAttitudes : MonoBehaviour
                 //antiAnimationBubble.SetActive(true);
             }
 
-            if (index == 2) {
+            if (index == 3) {
                 animAnti.SetTrigger("Idle");
                 animUndecided.SetTrigger("Triggered");
 
@@ -525,11 +523,13 @@ public class DiscussionAttitudes : MonoBehaviour
 
                 //we want to give the player the option to choose between options
                 playerSelection.SetActive(true);
-                proText[3].SetActive(true);
-                antiText[3].SetActive(true);
+                character1Text[3].SetActive(true);
+                character2Text[3].SetActive(true);
+                character3Text[3].SetActive(true);
 
-                theme4Pro.text = "The EU is winning the battle against illegal migration and the problems it causes.";
-                theme4Anti.text = "Immigrants threaten our safety, our property, and the quality of life in general. The government should protect our people and close the borders.";
+                theme4Character1.text = "A common EU policy on migration would benefit Greece very much.";
+                theme4Character2.text = "It is essential that EU have one common policy on migration.";
+                theme4Character3.text = "A common EU policy on migration is not necessary and not of good for UK.";
 
                 proCharacter.SetActive(true);
                 antiCharacter.SetActive(true);
@@ -545,8 +545,9 @@ public class DiscussionAttitudes : MonoBehaviour
     public void Theme4Selected() {
         if (hasPlayerSelected == true) {
             hasPlayerSelected = false;
-            proText[3].SetActive(false);
-            antiText[3].SetActive(false);
+            character1Text[3].SetActive(false);
+            character2Text[3].SetActive(false);
+            character3Text[3].SetActive(false);
             playerSelection.SetActive(false);
             proCharacter.SetActive(false);
             antiCharacter.SetActive(false);
@@ -575,13 +576,13 @@ public class DiscussionAttitudes : MonoBehaviour
 
             StartCoroutine(Type());
 
-            if (index == 0) {
+            if (index == 1) {
                 animUndecided.SetTrigger("Idle");
                 animPro.SetTrigger("Triggered");
                 //proAnimationBubble.SetActive(true);
             }
 
-            if (index == 1) {
+            if (index == 2) {
                 animPro.SetTrigger("Idle");
                 animAnti.SetTrigger("Triggered");
 
@@ -589,7 +590,7 @@ public class DiscussionAttitudes : MonoBehaviour
                 //antiAnimationBubble.SetActive(true);
             }
 
-            if (index == 2) {
+            if (index == 3) {
                 animAnti.SetTrigger("Idle");
                 animUndecided.SetTrigger("Triggered");
 
@@ -618,11 +619,13 @@ public class DiscussionAttitudes : MonoBehaviour
 
                 //we want to give the player the option to choose between options
                 playerSelection.SetActive(true);
-                proText[4].SetActive(true);
-                antiText[4].SetActive(true);
+                character1Text[4].SetActive(true);
+                character2Text[4].SetActive(true);
+                character3Text[4].SetActive(true);
 
-                theme5Pro.text = "When I see immigrants I feel sad, empathetic, and compassionate.";
-                theme5Anti.text = "When I see immigrants I can't help feeling angry, resentful, hatred, disgust and contempt.";
+                theme5Character1.text = "Throughout the history of the EC and EU the peacekeeping aspect has been very important and beneficial for the prosperity of Europé.";
+                theme5Character2.text = "Throughout the history of the EC and EU the peacekeeping aspect deserves recognition.";
+                theme5Character3.text = "The relevance of peacekeeping function of EC/EU in Europé is exaggerated, and should not be compared with that of NATO.";
 
                 proCharacter.SetActive(true);
                 antiCharacter.SetActive(true);
@@ -638,8 +641,9 @@ public class DiscussionAttitudes : MonoBehaviour
     public void Theme5Selected() {
         if (hasPlayerSelected == true) {
             hasPlayerSelected = false;
-            proText[4].SetActive(false);
-            antiText[4].SetActive(false);
+            character1Text[4].SetActive(false);
+            character2Text[4].SetActive(false);
+            character3Text[4].SetActive(false);
             playerSelection.SetActive(false);
             proCharacter.SetActive(false);
             antiCharacter.SetActive(false);
@@ -670,13 +674,13 @@ public class DiscussionAttitudes : MonoBehaviour
 
             StartCoroutine(Type());
 
-            if (index == 0) {
+            if (index == 1) {
                 animUndecided.SetTrigger("Idle");
                 animPro.SetTrigger("Triggered");
                 //proAnimationBubble.SetActive(true);
             }
 
-            if (index == 1) {
+            if (index == 2) {
                 animPro.SetTrigger("Idle");
                 animAnti.SetTrigger("Triggered");
 
@@ -684,7 +688,7 @@ public class DiscussionAttitudes : MonoBehaviour
                 //antiAnimationBubble.SetActive(true);
             }
 
-            if (index == 2) {
+            if (index == 3) {
                 animAnti.SetTrigger("Idle");
                 animUndecided.SetTrigger("Triggered");
 
@@ -716,11 +720,13 @@ public class DiscussionAttitudes : MonoBehaviour
 
                 //we want to give the player the option to choose between options
                 playerSelection.SetActive(true);
-                proText[5].SetActive(true);
-                antiText[5].SetActive(true);
+                character1Text[5].SetActive(true);
+                character2Text[5].SetActive(true);
+                character3Text[5].SetActive(true);
 
-                theme6Pro.text = "Migrants is a key driver of economic growth in the country; they are more likely to pay taxes than claiming benefits.";
-                theme6Anti.text = "There are a lot of social inequalities in European countries because immigrants are taking many good jobs.";
+                theme6Character1.text = "The Dutch government as well as European commission should focus more on environmental and climate change issues.";
+                theme6Character2.text = "We have surely more important problems to solve than using more resources on environmental and climate changes.";
+                theme6Character3.text = "A common energy policy among EU member states is very important as it is for Germany.";
 
                 proCharacter.SetActive(true);
                 antiCharacter.SetActive(true);
@@ -736,8 +742,9 @@ public class DiscussionAttitudes : MonoBehaviour
     public void Theme6Selected() {
         if (hasPlayerSelected == true) {
             hasPlayerSelected = false;
-            proText[5].SetActive(false);
-            antiText[5].SetActive(false);
+            character1Text[5].SetActive(false);
+            character2Text[5].SetActive(false);
+            character3Text[5].SetActive(false);
             playerSelection.SetActive(false);
             proCharacter.SetActive(false);
             antiCharacter.SetActive(false);
@@ -745,390 +752,6 @@ public class DiscussionAttitudes : MonoBehaviour
 
             //store data
             //put into Unity Analytics when available
-            contextTheme7.SetActive(true);
-        }
-    }
-
-    public void Theme7NextSentence() {
-        continueButton.SetActive(false);
-
-        if (index < discussion2.Length - 1) {
-            index++;
-            statementTextDisplay.text = "";
-
-            responseBox.SetActive(true);
-
-            proCharacter.SetActive(true);
-            antiCharacter.SetActive(true);
-            undecidedCharacter.SetActive(true);
-
-            StartCoroutine(Type());
-
-            if (index == 0) {
-                animUndecided.SetTrigger("Idle");
-                animPro.SetTrigger("Triggered");
-                //proAnimationBubble.SetActive(true);
-            }
-
-            if (index == 1) {
-                animPro.SetTrigger("Idle");
-                animAnti.SetTrigger("Triggered");
-
-                //proAnimationBubble.SetActive(false);
-                //antiAnimationBubble.SetActive(true);
-            }
-
-            if (index == 2) {
-                animAnti.SetTrigger("Idle");
-                animUndecided.SetTrigger("Triggered");
-
-                //antiAnimationBubble.SetActive(false);
-                //undecidedAnimationBubble.SetActive(true);
-            }
-
-        }
-        else {
-            statementTextDisplay.text = "";
-            continueButton.SetActive(false);
-
-            responseBox.SetActive(false);
-
-            //proAnimationBubble.SetActive(false);
-            //antiAnimationBubble.SetActive(false);
-            //undecidedAnimationBubble.SetActive(false);
-
-            proCharacter.SetActive(false);
-            antiCharacter.SetActive(false);
-            undecidedCharacter.SetActive(false);
-
-            isTheme7Finished = true;
-
-            if (isTheme7Finished == true) {
-                contextTheme7.SetActive(false);
-
-                //contextEnvironment.SetActive(true); //move this to SocialSelected()
-
-                //we want to give the player the option to choose between options
-                playerSelection.SetActive(true);
-                proText[6].SetActive(true);
-                antiText[6].SetActive(true);
-
-                theme7Pro.text = "We need to appreciate more of the achievements and the power we have as European countries. There is no real reason to be afraid of refugees and immigrants.";
-                theme7Anti.text = "Immigrants are different to you and me. As immigration increases so does the rise of far right parties across Europe.";
-
-                proCharacter.SetActive(true);
-                antiCharacter.SetActive(true);
-                undecidedCharacter.SetActive(false);
-
-                hasPlayerSelected = true; //when the player clicks on the appropriate text it will trigger it to store the information and progress
-                animPro.SetTrigger("Triggered");
-                animAnti.SetTrigger("Triggered");
-            }
-        }
-    }
-
-    public void Theme7Selected() {
-        if (hasPlayerSelected == true) {
-            hasPlayerSelected = false;
-            proText[6].SetActive(false);
-            antiText[6].SetActive(false);
-            playerSelection.SetActive(false);
-            proCharacter.SetActive(false);
-            antiCharacter.SetActive(false);
-            undecidedCharacter.SetActive(false);
-
-            //store data
-            //put into Unity Analytics when available
-            contextTheme8.SetActive(true);
-        }
-    }
-
-    public void Theme8NextSentence() {
-        continueButton.SetActive(false);
-
-        if (index < discussion2.Length - 1) {
-            index++;
-            statementTextDisplay.text = "";
-
-            responseBox.SetActive(true);
-
-            proCharacter.SetActive(true);
-            antiCharacter.SetActive(true);
-            undecidedCharacter.SetActive(true);
-
-            StartCoroutine(Type());
-
-            if (index == 0) {
-                animUndecided.SetTrigger("Idle");
-                animPro.SetTrigger("Triggered");
-                //proAnimationBubble.SetActive(true);
-            }
-
-            if (index == 1) {
-                animPro.SetTrigger("Idle");
-                animAnti.SetTrigger("Triggered");
-
-                //proAnimationBubble.SetActive(false);
-                //antiAnimationBubble.SetActive(true);
-            }
-
-            if (index == 2) {
-                animAnti.SetTrigger("Idle");
-                animUndecided.SetTrigger("Triggered");
-
-                //antiAnimationBubble.SetActive(false);
-                //undecidedAnimationBubble.SetActive(true);
-            }
-
-        }
-        else {
-            statementTextDisplay.text = "";
-            continueButton.SetActive(false);
-
-            responseBox.SetActive(false);
-
-            //proAnimationBubble.SetActive(false);
-            //antiAnimationBubble.SetActive(false);
-            //undecidedAnimationBubble.SetActive(false);
-
-            proCharacter.SetActive(false);
-            antiCharacter.SetActive(false);
-            undecidedCharacter.SetActive(false);
-
-            isTheme8Finished = true;
-
-            if (isTheme8Finished == true) {
-                contextTheme8.SetActive(false);
-
-                //contextEnvironment.SetActive(true); //move this to SocialSelected()
-
-                //we want to give the player the option to choose between options
-                playerSelection.SetActive(true);
-                proText[7].SetActive(true);
-                antiText[7].SetActive(true);
-
-                theme8Pro.text = "My grandparents were refugees. They taught me to love and appreciate this country.";
-                theme8Anti.text = "The common history and the common future of Europeans is an ideological construct.";
-
-                proCharacter.SetActive(true);
-                antiCharacter.SetActive(true);
-                undecidedCharacter.SetActive(false);
-
-                hasPlayerSelected = true; //when the player clicks on the appropriate text it will trigger it to store the information and progress
-                animPro.SetTrigger("Triggered");
-                animAnti.SetTrigger("Triggered");
-            }
-        }
-    }
-
-    public void Theme8Selected() {
-        if (hasPlayerSelected == true) {
-            hasPlayerSelected = false;
-            proText[7].SetActive(false);
-            antiText[7].SetActive(false);
-            playerSelection.SetActive(false);
-            proCharacter.SetActive(false);
-            antiCharacter.SetActive(false);
-            undecidedCharacter.SetActive(false);
-
-            //store data
-            //put into Unity Analytics when available
-            contextTheme9.SetActive(true);
-        }
-    }
-
-    public void Theme9NextSentence() {
-        continueButton.SetActive(false);
-
-        if (index < discussion2.Length - 1) {
-            index++;
-            statementTextDisplay.text = "";
-
-            responseBox.SetActive(true);
-
-            proCharacter.SetActive(true);
-            antiCharacter.SetActive(true);
-            undecidedCharacter.SetActive(true);
-
-            StartCoroutine(Type());
-
-            if (index == 0) {
-                animUndecided.SetTrigger("Idle");
-                animPro.SetTrigger("Triggered");
-                //proAnimationBubble.SetActive(true);
-            }
-
-            if (index == 1) {
-                animPro.SetTrigger("Idle");
-                animAnti.SetTrigger("Triggered");
-
-                //proAnimationBubble.SetActive(false);
-                //antiAnimationBubble.SetActive(true);
-            }
-
-            if (index == 2) {
-                animAnti.SetTrigger("Idle");
-                animUndecided.SetTrigger("Triggered");
-
-                //antiAnimationBubble.SetActive(false);
-                //undecidedAnimationBubble.SetActive(true);
-            }
-
-        }
-        else {
-            statementTextDisplay.text = "";
-            continueButton.SetActive(false);
-
-            responseBox.SetActive(false);
-
-            //proAnimationBubble.SetActive(false);
-            //antiAnimationBubble.SetActive(false);
-            //undecidedAnimationBubble.SetActive(false);
-
-            proCharacter.SetActive(false);
-            antiCharacter.SetActive(false);
-            undecidedCharacter.SetActive(false);
-
-            isTheme9Finished = true;
-
-            if (isTheme9Finished == true) {
-                contextTheme9.SetActive(false);
-
-                //contextEnvironment.SetActive(true); //move this to SocialSelected()
-
-                //we want to give the player the option to choose between options
-                playerSelection.SetActive(true);
-                proText[8].SetActive(true);
-                antiText[8].SetActive(true);
-
-                theme9Pro.text = "I really like the fact that having people from lots of different countries makes our country a more interesting and lively place to live.";
-                theme9Anti.text = "Refugees and immigrants are far away from our culture. They don't really try to integrate well into our communities.";
-
-                proCharacter.SetActive(true);
-                antiCharacter.SetActive(true);
-                undecidedCharacter.SetActive(false);
-
-                hasPlayerSelected = true; //when the player clicks on the appropriate text it will trigger it to store the information and progress
-                animPro.SetTrigger("Triggered");
-                animAnti.SetTrigger("Triggered");
-            }
-        }
-    }
-
-    public void Theme9Selected() {
-        if (hasPlayerSelected == true) {
-            hasPlayerSelected = false;
-            proText[8].SetActive(false);
-            antiText[8].SetActive(false);
-            playerSelection.SetActive(false);
-            proCharacter.SetActive(false);
-            antiCharacter.SetActive(false);
-            undecidedCharacter.SetActive(false);
-
-            //store data
-            //put into Unity Analytics when available
-            contextTheme10.SetActive(true);
-        }
-    }
-
-    public void Theme10NextSentence() {
-        continueButton.SetActive(false);
-
-        if (index < discussion2.Length - 1) {
-            index++;
-            statementTextDisplay.text = "";
-
-            responseBox.SetActive(true);
-
-            proCharacter.SetActive(true);
-            antiCharacter.SetActive(true);
-            undecidedCharacter.SetActive(true);
-
-            StartCoroutine(Type());
-
-            if (index == 0) {
-                animUndecided.SetTrigger("Idle");
-                animPro.SetTrigger("Triggered");
-                //proAnimationBubble.SetActive(true);
-            }
-
-            if (index == 1) {
-                animPro.SetTrigger("Idle");
-                animAnti.SetTrigger("Triggered");
-
-                //proAnimationBubble.SetActive(false);
-                //antiAnimationBubble.SetActive(true);
-            }
-
-            if (index == 2) {
-                animAnti.SetTrigger("Idle");
-                animUndecided.SetTrigger("Triggered");
-
-                //antiAnimationBubble.SetActive(false);
-                //undecidedAnimationBubble.SetActive(true);
-            }
-
-        }
-        else {
-            statementTextDisplay.text = "";
-            continueButton.SetActive(false);
-
-            responseBox.SetActive(false);
-
-            //proAnimationBubble.SetActive(false);
-            //antiAnimationBubble.SetActive(false);
-            //undecidedAnimationBubble.SetActive(false);
-
-            proCharacter.SetActive(false);
-            antiCharacter.SetActive(false);
-            undecidedCharacter.SetActive(false);
-
-            isTheme10Finished = true;
-
-            if (isTheme10Finished == true) {
-                contextTheme10.SetActive(false);
-
-                //contextEnvironment.SetActive(true); //move this to SocialSelected()
-
-                //we want to give the player the option to choose between options
-                playerSelection.SetActive(true);
-                proText[9].SetActive(true);
-                antiText[9].SetActive(true);
-
-                theme10Pro.text = "The EU is like a football team. We are not perfect but it is the best idea to stay together and sort out the difficult problems of the 21st century.";
-                theme10Anti.text = "The way to keep Europe strong is to prevent non-European people to cross the borders.";
-
-                proCharacter.SetActive(true);
-                antiCharacter.SetActive(true);
-                undecidedCharacter.SetActive(false);
-
-                hasPlayerSelected = true; //when the player clicks on the appropriate text it will trigger it to store the information and progress
-                animPro.SetTrigger("Triggered");
-                animAnti.SetTrigger("Triggered");
-
-                isDialogueFinished = true;
-            }
-        }
-    }
-
-    public void Theme10Selected() {
-        if (hasPlayerSelected == true) {
-            hasPlayerSelected = false;
-            proText[9].SetActive(false);
-            antiText[9].SetActive(false);
-            playerSelection.SetActive(false);
-            proCharacter.SetActive(false);
-            antiCharacter.SetActive(false);
-            undecidedCharacter.SetActive(false);
-            toolBG.SetActive(false);
-
-            //StartTask3();
-            isDialogueFinished = true;
-
-            //store data
-            //put into Unity Analytics when available
-
-            //instead of moving on to the next area, we will give the player feedback at this stage, with a final tool feedback screen.
         }
     }
 
@@ -1216,156 +839,14 @@ public class DiscussionAttitudes : MonoBehaviour
         StartCoroutine(Type());
     }
 
-    public void Theme7() {
-        contextTheme7.SetActive(false);
-
-        responseBox.SetActive(true);
-
-        proCharacter.SetActive(true);
-        antiCharacter.SetActive(true);
-        undecidedCharacter.SetActive(true);
-
-        StartCoroutine(Type());
-    }
-
-    public void Theme8() {
-        contextTheme8.SetActive(false);
-
-        responseBox.SetActive(true);
-
-        proCharacter.SetActive(true);
-        antiCharacter.SetActive(true);
-        undecidedCharacter.SetActive(true);
-
-        StartCoroutine(Type());
-    }
-
-    public void Theme9() {
-        contextTheme9.SetActive(false);
-
-        responseBox.SetActive(true);
-
-        proCharacter.SetActive(true);
-        antiCharacter.SetActive(true);
-        undecidedCharacter.SetActive(true);
-
-        StartCoroutine(Type());
-    }
-
-    public void Theme10() {
-        contextTheme10.SetActive(false);
-
-        responseBox.SetActive(true);
-
-        proCharacter.SetActive(true);
-        antiCharacter.SetActive(true);
-        undecidedCharacter.SetActive(true);
-
-        StartCoroutine(Type());
-    }
-
     //-------------------------------------------------------------------
 
-    //Add these to the Continue button then it takes
-    public void ProTheme1Selected() {
-        PlayerPrefs.SetString("AttitudesDiscussion1", "Our country would not have the fantastic social mix it has today without migration.");
-        Debug.Log(PlayerPrefs.GetString("ImmigrationDiscussion1"));
-
-        discussionCount++;
-        Debug.Log(discussionCount);
-        countdown = 9;
-        Debug.Log("countdown: " + countdown);
-    }
+        //Discussion Theme 1 - SOCIAL
 
     //Add these to the Continue button then it takes
-    public void AntiTheme1Selected() {
-
-        PlayerPrefs.SetString("ImmigrationDiscussion1", "The Bureaucrats in Brussels have no idea about the type of migrants we get here - and no idea how it impacts on our society - we have to live with them, they don't.");
-        Debug.Log(PlayerPrefs.GetString("ImmigrationDiscussion1"));
-
-        discussionCount++;
-        Debug.Log(discussionCount);
-        countdown = 9;
-        Debug.Log("countdown: " + countdown);
-    }
-
-    //Add these to the Continue button then it takes
-    public void ProTheme2Selected() {
-
-        PlayerPrefs.SetString("ImmigrationDiscussion2", "Climate change is not an issue for only one country - we need to work together - irerspective of where we live.");
-        Debug.Log(PlayerPrefs.GetString("ImmigrationDiscussion2"));
-
-        discussionCount++;
-        Debug.Log(discussionCount);
-        countdown = 8;
-        Debug.Log("countdown: " + countdown);
-    }
-
-    //Add these to the Continue button then it takes
-    public void AntiTheme2Selected() {
-
-        PlayerPrefs.SetString("ImmigrationDiscussion2", "Migrants cause overpopualtion, too much rubbish, and damage to the environment.");
-        Debug.Log(PlayerPrefs.GetString("ImmigrationDiscussion2"));
-
-        discussionCount++;
-        Debug.Log(discussionCount);
-        countdown = 8;
-        Debug.Log("countdown: " + countdown);
-    }
-
-    //Add these to the Continue button then it takes
-    public void ProTheme3Selected() {
-
-        PlayerPrefs.SetString("ImmigrationDiscussion3", "Immigrants should have all the rights and the responsibilities that other EU citizens have.");
-        Debug.Log(PlayerPrefs.GetString("ImmigrationDiscussion3"));
-
-        discussionCount++;
-        Debug.Log(discussionCount);
-        countdown = 7;
-        Debug.Log("countdown: " + countdown);
-    }
-
-    //Add these to the Continue button then it takes
-    public void AntiTheme3Selected() {
-
-        PlayerPrefs.SetString("ImmigrationDiscussion3", "I can understand why people in certain areas feel threatened by immigration - they feel the immigrants have more rights than they do.");
-        Debug.Log(PlayerPrefs.GetString("ImmigrationDiscussion3"));
-
-        discussionCount++;
-        Debug.Log(discussionCount);
-        countdown = 7;
-        Debug.Log("countdown: " + countdown);
-    }
-
-    //Add these to the Continue button then it takes
-    public void ProTheme4Selected() {
-
-        PlayerPrefs.SetString("ImmigrationDiscussion4", "The EU is winning the battle against illegal migration and the problems it causes.");
-        Debug.Log(PlayerPrefs.GetString("ImmigrationDiscussion4"));
-
-        discussionCount++;
-        Debug.Log(discussionCount);
-        countdown = 6;
-        Debug.Log("countdown: " + countdown);
-    }
-
-    //Add these to the Continue button then it takes
-    public void AntiTheme4Selected() {
-
-        PlayerPrefs.SetString("ImmigrationDiscussion4", "Immigrants threaten our safety, our property, and the quality of life in general. The government should protect our people and close the borders.");
-        Debug.Log(PlayerPrefs.GetString("ImmigrationDiscussion4"));
-
-        discussionCount++;
-        Debug.Log(discussionCount);
-        countdown = 6;
-        Debug.Log("countdown: " + countdown);
-    }
-
-    //Add these to the Continue button then it takes
-    public void ProTheme5Selected() {
-
-        PlayerPrefs.SetString("ImmigrationDiscussion5", "When I see immigrants I feel sad, empathetic, and compassionate.");
-        Debug.Log(PlayerPrefs.GetString("ImmigrationDiscussion5"));
+    public void Person1Theme1Selected() {
+        PlayerPrefs.SetString("AttitudesDiscussion1", "I actually feel that i am an European citizen and that i have enough information about my rights.");
+        Debug.Log(PlayerPrefs.GetString("AttitudesDiscussion1"));
 
         discussionCount++;
         Debug.Log(discussionCount);
@@ -1374,10 +855,9 @@ public class DiscussionAttitudes : MonoBehaviour
     }
 
     //Add these to the Continue button then it takes
-    public void AntiTheme5Selected() {
-
-        PlayerPrefs.SetString("ImmigrationDiscussion5", "When I see immigrants I can't help feeling angry, resentful, hatred, disgust and contempt.");
-        Debug.Log(PlayerPrefs.GetString("ImmigrationDiscussion5"));
+    public void Person2Theme1Selected() {
+        PlayerPrefs.SetString("AttitudesDiscussion1", "I am British, and not European and i have no need to learn more about my rights as EU citizens.");
+        Debug.Log(PlayerPrefs.GetString("AttitudesDiscussion1"));
 
         discussionCount++;
         Debug.Log(discussionCount);
@@ -1385,11 +865,25 @@ public class DiscussionAttitudes : MonoBehaviour
         Debug.Log("countdown: " + countdown);
     }
 
-    //Add these to the Continue button then it takes
-    public void ProTheme6Selected() {
+    public void Person3Theme1Selected() {
+        PlayerPrefs.SetString("AttitudesDiscussion1", "I am first of all Greek, but i would like to be better informed about my rights as an EU citizen.");
+        Debug.Log(PlayerPrefs.GetString("AttitudesDiscussion1"));
 
-        PlayerPrefs.SetString("ImmigrationDiscussion6", "Migrants is a key driver of economic growth in the country; they are more likely to pay taxes than claiming benefits.");
-        Debug.Log(PlayerPrefs.GetString("ImmigrationDiscussion6"));
+        discussionCount++;
+        Debug.Log(discussionCount);
+        countdown = 5;
+        Debug.Log("countdown: " + countdown);
+    }
+
+    //--------------------------------------------------------------
+
+        //Discussion Theme 2 - ECONOMIC
+
+    //Add these to the Continue button then it takes
+    public void Person1Theme2Selected() {
+
+        PlayerPrefs.SetString("AttitudesDiscussion2", "A European economic and monetary union with 1 single currency is essential for keeping EU competitive. ");
+        Debug.Log(PlayerPrefs.GetString("AttitudesDiscussion2"));
 
         discussionCount++;
         Debug.Log(discussionCount);
@@ -1398,10 +892,10 @@ public class DiscussionAttitudes : MonoBehaviour
     }
 
     //Add these to the Continue button then it takes
-    public void AntiTheme6Selected() {
+    public void Person2Theme2Selected() {
 
-        PlayerPrefs.SetString("ImmigrationDiscussion6", "There are a lot of social inequalities in European countries because immigrants are taking many good jobs.");
-        Debug.Log(PlayerPrefs.GetString("ImmigrationDiscussion6"));
+        PlayerPrefs.SetString("AttitudesDiscussion2", "The Euro and a monetary union is not advantageous for the Europé.");
+        Debug.Log(PlayerPrefs.GetString("AttitudesDiscussion2"));
 
         discussionCount++;
         Debug.Log(discussionCount);
@@ -1410,10 +904,26 @@ public class DiscussionAttitudes : MonoBehaviour
     }
 
     //Add these to the Continue button then it takes
-    public void ProTheme7Selected() {
+    public void Person3Theme2Selected() {
 
-        PlayerPrefs.SetString("ImmigrationDiscussion7", "We need to appreciate more of the achievements and the power we have as European countries. There is no real reason to be afraid of refugees and immigrants.");
-        Debug.Log(PlayerPrefs.GetString("ImmigrationDiscussion7"));
+        PlayerPrefs.SetString("AttitudesDiscussion2", "Regarding if a single monetary union with a single currency is good or not, is not so easy to say per se, since so many factors play a role.");
+        Debug.Log(PlayerPrefs.GetString("AttitudesDiscussion2"));
+
+        discussionCount++;
+        Debug.Log(discussionCount);
+        countdown = 4;
+        Debug.Log("countdown: " + countdown);
+    }
+
+    //--------------------------------------------------------------
+
+        //Discussion Theme 3 - POLITICAL
+
+    //Add these to the Continue button then it takes
+    public void Person1Theme3Selected() {
+
+        PlayerPrefs.SetString("AttitudesDiscussion3", "We can take for sure that the EU is trustworthy and work for the good of the EU citizen.");
+        Debug.Log(PlayerPrefs.GetString("AttitudesDiscussion3"));
 
         discussionCount++;
         Debug.Log(discussionCount);
@@ -1422,10 +932,10 @@ public class DiscussionAttitudes : MonoBehaviour
     }
 
     //Add these to the Continue button then it takes
-    public void AntiTheme7Selected() {
+    public void Person2Theme3Selected() {
 
-        PlayerPrefs.SetString("ImmigrationDiscussion7", "Immigrants are different to you and me. As immigration increases so does the rise of far right parties across Europe.");
-        Debug.Log(PlayerPrefs.GetString("ImmigrationDiscussion7"));
+        PlayerPrefs.SetString("AttitudesDiscussion3", "Other than the bureaucracy, EU is mostly trustworthy and is trying to work for the good of the EU citizen.");
+        Debug.Log(PlayerPrefs.GetString("AttitudesDiscussion3"));
 
         discussionCount++;
         Debug.Log(discussionCount);
@@ -1434,10 +944,26 @@ public class DiscussionAttitudes : MonoBehaviour
     }
 
     //Add these to the Continue button then it takes
-    public void ProTheme8Selected() {
+    public void Person3Theme3Selected() {
 
-        PlayerPrefs.SetString("ImmigrationDiscussion8", "My grandparents were refugees. They taught me to love and appreciate this country.");
-        Debug.Log(PlayerPrefs.GetString("ImmigrationDiscussion8"));
+        PlayerPrefs.SetString("AttitudesDiscussion3", "The EU is not very trustworthy and is not working for the good of all EU citizen.");
+        Debug.Log(PlayerPrefs.GetString("AttitudesDiscussion3"));
+
+        discussionCount++;
+        Debug.Log(discussionCount);
+        countdown = 3;
+        Debug.Log("countdown: " + countdown);
+    }
+
+    //--------------------------------------------------------------------
+
+        //Discussion Theme 4 - SAFETY & SECURITY
+
+    //Add these to the Continue button then it takes
+    public void Person1Theme4Selected() {
+
+        PlayerPrefs.SetString("AttitudesDiscussion4", "A common EU policy on migration would benefit Greece very much.");
+        Debug.Log(PlayerPrefs.GetString("AttitudesDiscussion4"));
 
         discussionCount++;
         Debug.Log(discussionCount);
@@ -1446,10 +972,10 @@ public class DiscussionAttitudes : MonoBehaviour
     }
 
     //Add these to the Continue button then it takes
-    public void AntiTheme8Selected() {
+    public void Person2Theme4Selected() {
 
-        PlayerPrefs.SetString("ImmigrationDiscussion8", "The common history and the common future of Europeans is an ideological construct.");
-        Debug.Log(PlayerPrefs.GetString("ImmigrationDiscussion8"));
+        PlayerPrefs.SetString("AttitudesDiscussion4", "It is essential that EU have one common policy on migration.");
+        Debug.Log(PlayerPrefs.GetString("AttitudesDiscussion4"));
 
         discussionCount++;
         Debug.Log(discussionCount);
@@ -1458,10 +984,26 @@ public class DiscussionAttitudes : MonoBehaviour
     }
 
     //Add these to the Continue button then it takes
-    public void ProTheme9Selected() {
+    public void Person3Theme4Selected() {
 
-        PlayerPrefs.SetString("ImmigrationDiscussion9", "I really like the fact that having people from lots of different countries makes our country a more interesting and lively place to live.");
-        Debug.Log(PlayerPrefs.GetString("ImmigrationDiscussion9"));
+        PlayerPrefs.SetString("AttitudesDiscussion4", "A common EU policy on migration is not necessary and not of good for UK. ");
+        Debug.Log(PlayerPrefs.GetString("AttitudesDiscussion4"));
+
+        discussionCount++;
+        Debug.Log(discussionCount);
+        countdown = 2;
+        Debug.Log("countdown: " + countdown);
+    }
+
+    //--------------------------------------------------------------------------------------
+
+        //Discussion Theme 5 - HISTORICAL
+
+    //Add these to the Continue button then it takes
+    public void Person1Theme5Selected() {
+
+        PlayerPrefs.SetString("AttitudesDiscussion5", "Throughout the history of the EC and EU the peacekeeping aspect has been very important and beneficial for the prosperity of Europé.");
+        Debug.Log(PlayerPrefs.GetString("AttitudesDiscussion5"));
 
         discussionCount++;
         Debug.Log(discussionCount);
@@ -1470,10 +1012,10 @@ public class DiscussionAttitudes : MonoBehaviour
     }
 
     //Add these to the Continue button then it takes
-    public void AntiTheme9Selected() {
+    public void Person2Theme5Selected() {
 
-        PlayerPrefs.SetString("ImmigrationDiscussion9", "Refugees and immigrants are far away from our culture. They don't really try to integrate well into our communities.");
-        Debug.Log(PlayerPrefs.GetString("ImmigrationDiscussion9"));
+        PlayerPrefs.SetString("AttitudesDiscussion5", "Throughout the history of the EC and EU the peacekeeping aspect deserves recognition.");
+        Debug.Log(PlayerPrefs.GetString("AttitudesDiscussion5"));
 
         discussionCount++;
         Debug.Log(discussionCount);
@@ -1482,30 +1024,56 @@ public class DiscussionAttitudes : MonoBehaviour
     }
 
     //Add these to the Continue button then it takes
-    public void ProTheme10Selected() {
+    public void Person3Theme5Selected() {
 
-        PlayerPrefs.SetString("ImmigrationDiscussion10", "The EU is like a football team. We are not perfect but it is the best idea to stay together and sort out the difficult problems of the 21st century.");
-        Debug.Log(PlayerPrefs.GetString("ImmigrationDiscussion10"));
+        PlayerPrefs.SetString("AttitudesDiscussion5", "The relevance of peacekeeping function of EC/EU in Europé is exaggerated, and should not be compared with that of NATO. ");
+        Debug.Log(PlayerPrefs.GetString("AttitudesDiscussion5"));
+
+        discussionCount++;
+        Debug.Log(discussionCount);
+        countdown = 1;
+        Debug.Log("countdown: " + countdown);
+    }
+
+    //---------------------------------------------------------------------------
+
+        //Discussion Theme 6 - ENVIRONMENTAL
+
+    //Add these to the Continue button then it takes
+    public void Person1Theme6Selected() {
+
+        PlayerPrefs.SetString("AttitudesDiscussion6", "The Dutch government as well as European commission should focus more on environmental and climate change issues.");
+        Debug.Log(PlayerPrefs.GetString("AttitudesDiscussion6"));
 
         discussionCount++;
         Debug.Log(discussionCount);
         countdown = 0;
         Debug.Log("countdown: " + countdown);
-
-        isDialogueFinished = true;
     }
 
     //Add these to the Continue button then it takes
-    public void AntiTheme10Selected() {
+    public void Person2Theme6Selected() {
 
-        PlayerPrefs.SetString("ImmigrationDiscussion10", "The way to keep Europe strong is to prevent non-European people to cross the borders.");
-        Debug.Log(PlayerPrefs.GetString("ImmigrationDiscussion10"));
+        PlayerPrefs.SetString("AttitudesDiscussion6", "We have surely more important problems to solve than using more resources on environmental and climate changes.");
+        Debug.Log(PlayerPrefs.GetString("AttitudesDiscussion6"));
 
         discussionCount++;
         Debug.Log(discussionCount);
         countdown = 0;
         Debug.Log("countdown: " + countdown);
-
-        isDialogueFinished = true;
     }
+
+    //Add these to the Continue button then it takes
+    public void Person3Theme6Selected() {
+
+        PlayerPrefs.SetString("AttitudesDiscussion6", "A common energy policy among EU member states is very important as it is for Germany.");
+        Debug.Log(PlayerPrefs.GetString("AttitudesDiscussion6"));
+
+        discussionCount++;
+        Debug.Log(discussionCount);
+        countdown = 0;
+        Debug.Log("countdown: " + countdown);
+    }
+
+    //----------------------------------------------------------------------------------------
 }

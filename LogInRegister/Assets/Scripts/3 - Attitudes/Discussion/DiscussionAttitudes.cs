@@ -1268,7 +1268,7 @@ public class DiscussionAttitudes : MonoBehaviour
 
     //Add these to the Continue button then it takes
     public void ProTheme1Selected() {
-        PlayerPrefs.SetString("ImmigrationDiscussion1", "Our country would not have the fantastic social mix it has today without migration.");
+        PlayerPrefs.SetString("AttitudesDiscussion1", "Our country would not have the fantastic social mix it has today without migration.");
         Debug.Log(PlayerPrefs.GetString("ImmigrationDiscussion1"));
 
         discussionCount++;

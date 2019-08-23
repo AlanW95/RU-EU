@@ -164,12 +164,12 @@ public class DiscussionSelectionAttitudes : MonoBehaviour
 
         if (predictorCounter == 1) {
             //add to new PlayerPrefs
-            PlayerPrefs.SetString("NewAttitudesDiscussion3", "");
+            PlayerPrefs.SetString("NewAttitudesDiscussion1", "");
         }
 
         if (predictorCounter == 0) {
             //add to new PlayerPrefs
-            PlayerPrefs.SetString("NewAttitudesDiscussion4", "");
+            PlayerPrefs.SetString("NewAttitudesDiscussion2", "");
         }
     }
 }

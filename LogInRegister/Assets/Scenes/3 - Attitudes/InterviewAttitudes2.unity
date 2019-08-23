@@ -2486,8 +2486,9 @@ MonoBehaviour:
   sentences:
   - EU citizens and the EU institutions need to get a better idea of what EU really
     is and why it is important.
-  - '[enter statement here]'
-  - '[enter statement here]'
+  - 'A person born in Europe with parents from countries outside will encounter difficulties. '
+  - 'Ancestry and ethnicity are not important, I know people from all parts of the
+    world, who are living in Europe and have a strong sense of European identity. '
   feedbackCanvas: {fileID: 1271130292}
   scoreCanvas: {fileID: 1810696522}
   rankingCanvas: {fileID: 732463104}
@@ -13084,7 +13085,8 @@ MonoBehaviour:
   sentences:
   - EU gives the freedom to act internationally and gain international understanding.
   - Shared ideals across different countries are the essence of European identity.
-  - '[enter statement here]'
+  - 'Education and upbringing are key factors when it comes to having a open and tolerant
+    outlook on different cultures. '
   feedbackCanvas: {fileID: 1271130292}
   scoreCanvas: {fileID: 1810696522}
   rankingCanvas: {fileID: 732463104}

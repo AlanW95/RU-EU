@@ -43,6 +43,7 @@ public class DirectorInterview : MonoBehaviour
     public Button theme8Button;
     public Button theme9Button;
     public Button theme10Button;
+    public Button decoy1Button, decoy2Button, decoy3Button, decoy4Button;
 
     //each time a continue button is pressed the counter goes down
     public int interviewCounter;
@@ -254,6 +255,42 @@ public class DirectorInterview : MonoBehaviour
 
     public void Theme10() {
         theme10Button.interactable = false;
+        themeSelectionCanvas.SetActive(false);
+
+        interviewCanvas.SetActive(true);
+
+        StartCoroutine(Type());
+    }
+
+    public void Decoy1() {
+        decoy1Button.interactable = false;
+        themeSelectionCanvas.SetActive(false);
+
+        interviewCanvas.SetActive(true);
+
+        StartCoroutine(Type());
+    }
+
+    public void Decoy2() {
+        decoy2Button.interactable = false;
+        themeSelectionCanvas.SetActive(false);
+
+        interviewCanvas.SetActive(true);
+
+        StartCoroutine(Type());
+    }
+
+    public void Decoy3() {
+        decoy3Button.interactable = false;
+        themeSelectionCanvas.SetActive(false);
+
+        interviewCanvas.SetActive(true);
+
+        StartCoroutine(Type());
+    }
+
+    public void Decoy4() {
+        decoy4Button.interactable = false;
         themeSelectionCanvas.SetActive(false);
 
         interviewCanvas.SetActive(true);

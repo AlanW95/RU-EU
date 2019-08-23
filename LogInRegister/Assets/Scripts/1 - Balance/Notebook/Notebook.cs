@@ -17,6 +17,7 @@ public class Notebook : MonoBehaviour
     public TextMeshProUGUI interview1TextDisplay4;
     public TextMeshProUGUI[] interview2TextDisplay;
     public TextMeshProUGUI[] discussionTextDisplay;
+    public TextMeshProUGUI discussionTextDisplay1, discussionTextDisplay2, discussionTextDisplay3, discussionTextDisplay4;
 
     // Start is called before the first frame update
     void Start()
@@ -61,10 +62,15 @@ public class Notebook : MonoBehaviour
         //PlayerPrefs.SetString("Discussion3", "Would you not rather have the Brussels elite in charge than UKIP and Nigel Farage?");
         //PlayerPrefs.SetString("Discussion4", "Would you not rather have the Brussels elite in charge than UKIP and Nigel Farage?");
 
-        discussionTextDisplay[0].text = PlayerPrefs.GetString("NewDiscussion1");
-        discussionTextDisplay[1].text = PlayerPrefs.GetString("NewDiscussion2");
-        discussionTextDisplay[2].text = PlayerPrefs.GetString("NewDiscussion3");
-        discussionTextDisplay[3].text = PlayerPrefs.GetString("NewDiscussion4");
+        //Balance Scenario
+        //discussionTextDisplay[0].text = PlayerPrefs.GetString("NewDiscussion1");
+        //discussionTextDisplay[1].text = PlayerPrefs.GetString("NewDiscussion2");
+        //discussionTextDisplay[2].text = PlayerPrefs.GetString("NewDiscussion3");
+        //discussionTextDisplay[3].text = PlayerPrefs.GetString("NewDiscussion4");
+
+        //Temp for Attitudes example
+        discussionTextDisplay1.text = PlayerPrefs.GetString("NewAttitudesDiscussion1");
+        discussionTextDisplay2.text = PlayerPrefs.GetString("NewAttitudesDiscussion2");
 
 
         //Newsflash

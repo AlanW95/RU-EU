@@ -49,8 +49,8 @@ public class Newsflash : MonoBehaviour
     }
     
     public void ReturnToJournalist() {
-        //Application.Quit();
-        SceneManager.LoadScene("Journalist");
+        Application.Quit();
+        //SceneManager.LoadScene("Journalist");
     }
 
     public void Statement1() { //this will appear when the start button is selected to start the tool

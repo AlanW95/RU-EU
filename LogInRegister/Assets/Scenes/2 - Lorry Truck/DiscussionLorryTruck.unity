@@ -123,7 +123,7 @@ GameObject:
   - component: {fileID: 56066960}
   - component: {fileID: 56066961}
   m_Layer: 0
-  m_Name: Economic
+  m_Name: Social
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -152,26 +152,28 @@ MonoBehaviour:
   m_GameObject: {fileID: 56066959}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7324cb723208c1243819611e97f71c57, type: 3}
+  m_Script: {fileID: 11500000, guid: 6dfde725582d3de4db5ee15b0acdf80d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   statementTextDisplay: {fileID: 1394089434}
   discussion2:
-  - 'How do you think the single currency has impacted the European economy?   '
-  - 'A European economic and monetary union with 1 single currency is essential for
-    keeping EU competitive. '
-  - "The Euro and a monetary union is not advantageous for the Europ\xE9. "
-  - 'Regarding if a single monetary union with a single currency is good or not, is
-    not so easy to say per se, since so many factors play a role.  '
+  - 'What''s the problem with having others do our hard work? Isn''t it the ultimate
+    dream to sit at home and do nothing? The only problem is that the government isn''t
+    able to make the national citizen profit. '
+  - 'Foreign drivers are being hosted. And what do you get if more drivers sit together?
+    They go out to drink and then start driving. '
+  - 'The company directors have their villas renovated by Polish workers who drive
+    in brand new mini vans, construction markets are crowded and even open on Sundays
+    for them. But who''s fault is that? '
   typingSpeed: 0
   continueButton: {fileID: 763336593}
   toolBG: {fileID: 1968638422}
   proCharacter: {fileID: 523651170}
-  antiCharacter: {fileID: 1236020478}
-  undecidedCharacter: {fileID: 915110332}
+  antiCharacter: {fileID: 915110332}
+  undecidedCharacter: {fileID: 1236020478}
   animPro: {fileID: 523651174}
-  animAnti: {fileID: 1236020482}
-  animUndecided: {fileID: 915110336}
+  animAnti: {fileID: 915110336}
+  animUndecided: {fileID: 1236020482}
   animText: {fileID: 1394089435}
   responseBox: {fileID: 1001931262}
   contextTheme1: {fileID: 490525867}
@@ -179,7 +181,6 @@ MonoBehaviour:
   contextTheme3: {fileID: 1259109597}
   contextTheme4: {fileID: 387591819}
   contextTheme5: {fileID: 1379542267}
-  contextTheme6: {fileID: 1144134543}
   playerSelection: {fileID: 1105663507}
   character1Text:
   - {fileID: 1535444546}
@@ -187,39 +188,33 @@ MonoBehaviour:
   - {fileID: 1727001783}
   - {fileID: 846032285}
   - {fileID: 2037030790}
-  - {fileID: 504398787}
   character2Text:
   - {fileID: 511520099}
   - {fileID: 1190927744}
   - {fileID: 1154856030}
   - {fileID: 1741286130}
   - {fileID: 290620608}
-  - {fileID: 725022518}
   character3Text:
   - {fileID: 1835748000}
   - {fileID: 1553907685}
   - {fileID: 163695663}
   - {fileID: 935932276}
   - {fileID: 1303799329}
-  - {fileID: 1778327790}
   theme1Character1: {fileID: 1535444548}
   theme2Character1: {fileID: 1481102906}
   theme3Character1: {fileID: 1727001787}
   theme4Character1: {fileID: 846032289}
   theme5Character1: {fileID: 2037030794}
-  theme6Character1: {fileID: 504398791}
   theme1Character2: {fileID: 511520101}
   theme2Character2: {fileID: 1190927748}
   theme3Character2: {fileID: 1154856034}
   theme4Character2: {fileID: 1741286134}
   theme5Character2: {fileID: 290620612}
-  theme6Character2: {fileID: 725022522}
   theme1Character3: {fileID: 1835748003}
   theme2Character3: {fileID: 1553907688}
   theme3Character3: {fileID: 163695666}
   theme4Character3: {fileID: 935932279}
   theme5Character3: {fileID: 1303799332}
-  theme6Character3: {fileID: 1778327793}
   task3: {fileID: 201300220}
   startCanvas: {fileID: 97389849}
 --- !u!1 &71923150
@@ -322,6 +317,168 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 0}
+--- !u!1 &76967830
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 76967831}
+  - component: {fileID: 76967833}
+  - component: {fileID: 76967832}
+  m_Layer: 5
+  m_Name: DescriptionText
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &76967831
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 76967830}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1523040179}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 1}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: -50, y: -50}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &76967832
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 76967830}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
+      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+  m_text: You are going to interview individuals having a discussion in a recruitment
+    office around lorry drivers.
+  m_isRightToLeft: 0
+  m_fontAsset: {fileID: 11400000, guid: bf071a21c75d5984182ca2896c24ba39, type: 2}
+  m_sharedMaterial: {fileID: 21445493198866178, guid: bf071a21c75d5984182ca2896c24ba39,
+    type: 2}
+  m_fontSharedMaterials: []
+  m_fontMaterial: {fileID: 0}
+  m_fontMaterials: []
+  m_fontColor32:
+    serializedVersion: 2
+    rgba: 4278190080
+  m_fontColor: {r: 0, g: 0, b: 0, a: 1}
+  m_enableVertexGradient: 0
+  m_colorMode: 3
+  m_fontColorGradient:
+    topLeft: {r: 1, g: 1, b: 1, a: 1}
+    topRight: {r: 1, g: 1, b: 1, a: 1}
+    bottomLeft: {r: 1, g: 1, b: 1, a: 1}
+    bottomRight: {r: 1, g: 1, b: 1, a: 1}
+  m_fontColorGradientPreset: {fileID: 0}
+  m_spriteAsset: {fileID: 0}
+  m_tintAllSprites: 0
+  m_overrideHtmlColors: 0
+  m_faceColor:
+    serializedVersion: 2
+    rgba: 4294967295
+  m_outlineColor:
+    serializedVersion: 2
+    rgba: 4278190080
+  m_fontSize: 50.25
+  m_fontSizeBase: 36
+  m_fontWeight: 400
+  m_enableAutoSizing: 1
+  m_fontSizeMin: 0
+  m_fontSizeMax: 72
+  m_fontStyle: 0
+  m_textAlignment: 514
+  m_isAlignmentEnumConverted: 1
+  m_characterSpacing: 0
+  m_wordSpacing: 0
+  m_lineSpacing: 0
+  m_lineSpacingMax: 0
+  m_paragraphSpacing: 0
+  m_charWidthMaxAdj: 0
+  m_enableWordWrapping: 1
+  m_wordWrappingRatios: 0.4
+  m_overflowMode: 0
+  m_firstOverflowCharacterIndex: -1
+  m_linkedTextComponent: {fileID: 0}
+  m_isLinkedTextComponent: 0
+  m_isTextTruncated: 0
+  m_enableKerning: 0
+  m_enableExtraPadding: 0
+  checkPaddingRequired: 0
+  m_isRichText: 1
+  m_parseCtrlCharacters: 1
+  m_isOrthographic: 1
+  m_isCullingEnabled: 0
+  m_ignoreRectMaskCulling: 0
+  m_ignoreCulling: 1
+  m_horizontalMapping: 0
+  m_verticalMapping: 0
+  m_uvLineOffset: 0
+  m_geometrySortingOrder: 0
+  m_firstVisibleCharacter: 0
+  m_useMaxVisibleDescender: 1
+  m_pageToDisplay: 1
+  m_margin: {x: 0, y: 0, z: 0, w: 0}
+  m_textInfo:
+    textComponent: {fileID: 0}
+    characterCount: 104
+    spriteCount: 0
+    spaceCount: 15
+    wordCount: 16
+    linkCount: 0
+    lineCount: 4
+    pageCount: 1
+    materialCount: 1
+  m_havePropertiesChanged: 0
+  m_isUsingLegacyAnimationComponent: 0
+  m_isVolumetricText: 0
+  m_spriteAnimator: {fileID: 0}
+  m_isInputParsingRequired: 0
+  m_inputSource: 0
+  m_hasFontAssetChanged: 0
+  m_subTextObjects:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  m_baseMaterial: {fileID: 0}
+  m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
+--- !u!222 &76967833
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 76967830}
+  m_CullTransparentMesh: 0
 --- !u!1 &89239114
 GameObject:
   m_ObjectHideFlags: 0
@@ -521,7 +678,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!114 &97389850
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -578,7 +735,7 @@ Canvas:
   m_OverrideSorting: 0
   m_OverridePixelPerfect: 0
   m_SortingBucketNormalizedSize: 0
-  m_AdditionalShaderChannelsFlag: 0
+  m_AdditionalShaderChannelsFlag: 25
   m_SortingLayerID: 0
   m_SortingOrder: 50
   m_TargetDisplay: 0
@@ -595,11 +752,13 @@ RectTransform:
   m_Children:
   - {fileID: 1766070616}
   - {fileID: 100686419}
-  - {fileID: 604569175}
   - {fileID: 1001454521}
   - {fileID: 1434946004}
+  - {fileID: 604569175}
   - {fileID: 633812763}
   - {fileID: 977348544}
+  - {fileID: 244404767}
+  - {fileID: 1523040179}
   m_Father: {fileID: 0}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -929,7 +1088,6 @@ Transform:
   - {fileID: 1858266112}
   - {fileID: 2147377590}
   - {fileID: 1682258673}
-  - {fileID: 1046536572}
   m_Father: {fileID: 0}
   m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -946,7 +1104,7 @@ GameObject:
   - component: {fileID: 163695666}
   - component: {fileID: 163695665}
   m_Layer: 5
-  m_Name: PoliticalCharacter3Text
+  m_Name: Economic2Character3Text
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1256,7 +1414,7 @@ GameObject:
   - component: {fileID: 183241755}
   - component: {fileID: 183241756}
   m_Layer: 0
-  m_Name: Social
+  m_Name: Economic1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1285,27 +1443,26 @@ MonoBehaviour:
   m_GameObject: {fileID: 183241754}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7324cb723208c1243819611e97f71c57, type: 3}
+  m_Script: {fileID: 11500000, guid: 6dfde725582d3de4db5ee15b0acdf80d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   statementTextDisplay: {fileID: 1394089434}
   discussion2:
-  - 'How do you feel about your European identity and rights?   '
-  - 'I actually feel that i am an European citizen and that i have enough information
-    about my rights.  '
-  - 'I am British, and not European and i have no need to learn more about my rights
-    as EU citizens. '
-  - 'I am first of all Greek, but i would like to be better informed about my rights
-    as an EU citizen. '
+  - 'Why select a national trucker with a big mouth demanding much and working little,
+    instead of a hard-working  driver from Eastern Europe that does not complain about
+    working over time? '
+  - 'Europe is very good for the happy few at the top of international companies,
+    but not for those who have to make their living in those companies. '
+  - 'Europe is good for profits of Mediamarkt, IKEA and LIDL. They bring work. '
   typingSpeed: 0
   continueButton: {fileID: 1093933578}
   toolBG: {fileID: 1968638422}
   proCharacter: {fileID: 523651170}
-  antiCharacter: {fileID: 1236020478}
-  undecidedCharacter: {fileID: 915110332}
+  antiCharacter: {fileID: 915110332}
+  undecidedCharacter: {fileID: 1236020478}
   animPro: {fileID: 523651174}
-  animAnti: {fileID: 1236020482}
-  animUndecided: {fileID: 915110336}
+  animAnti: {fileID: 915110336}
+  animUndecided: {fileID: 1236020482}
   animText: {fileID: 1394089435}
   responseBox: {fileID: 1001931262}
   contextTheme1: {fileID: 490525867}
@@ -1313,7 +1470,6 @@ MonoBehaviour:
   contextTheme3: {fileID: 1259109597}
   contextTheme4: {fileID: 387591819}
   contextTheme5: {fileID: 1379542267}
-  contextTheme6: {fileID: 1144134543}
   playerSelection: {fileID: 1105663507}
   character1Text:
   - {fileID: 1535444546}
@@ -1321,39 +1477,33 @@ MonoBehaviour:
   - {fileID: 1727001783}
   - {fileID: 846032285}
   - {fileID: 2037030790}
-  - {fileID: 504398787}
   character2Text:
   - {fileID: 511520099}
   - {fileID: 1190927744}
   - {fileID: 1154856030}
   - {fileID: 1741286130}
   - {fileID: 290620608}
-  - {fileID: 725022518}
   character3Text:
   - {fileID: 1835748000}
   - {fileID: 1553907685}
   - {fileID: 163695663}
   - {fileID: 935932276}
   - {fileID: 1303799329}
-  - {fileID: 1778327790}
   theme1Character1: {fileID: 1535444548}
   theme2Character1: {fileID: 1481102906}
   theme3Character1: {fileID: 1727001787}
   theme4Character1: {fileID: 846032289}
   theme5Character1: {fileID: 2037030794}
-  theme6Character1: {fileID: 504398791}
   theme1Character2: {fileID: 511520101}
   theme2Character2: {fileID: 1190927748}
   theme3Character2: {fileID: 1154856034}
   theme4Character2: {fileID: 1741286134}
   theme5Character2: {fileID: 290620612}
-  theme6Character2: {fileID: 725022522}
   theme1Character3: {fileID: 1835748003}
   theme2Character3: {fileID: 1553907688}
   theme3Character3: {fileID: 163695666}
   theme4Character3: {fileID: 935932279}
   theme5Character3: {fileID: 1303799332}
-  theme6Character3: {fileID: 1778327793}
   task3: {fileID: 201300220}
   startCanvas: {fileID: 97389849}
 --- !u!1 &201300220
@@ -1534,7 +1684,7 @@ GameObject:
   - component: {fileID: 229275084}
   - component: {fileID: 229275083}
   m_Layer: 5
-  m_Name: PoliticalContinue
+  m_Name: Economic2Continue
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1659,6 +1809,167 @@ CanvasRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 229275081}
+  m_CullTransparentMesh: 0
+--- !u!1 &244404766
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 244404767}
+  - component: {fileID: 244404769}
+  - component: {fileID: 244404768}
+  m_Layer: 5
+  m_Name: Title
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &244404767
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 244404766}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 97389853}
+  m_RootOrder: 7
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 1, y: 1}
+  m_AnchoredPosition: {x: 0, y: -75}
+  m_SizeDelta: {x: -1100, y: 100}
+  m_Pivot: {x: 0.5, y: 1}
+--- !u!114 &244404768
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 244404766}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
+      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+  m_text: Discussion
+  m_isRightToLeft: 0
+  m_fontAsset: {fileID: 11400000, guid: e22c8eeddeac64b4583e35e7834baaeb, type: 2}
+  m_sharedMaterial: {fileID: 21445493198866178, guid: e22c8eeddeac64b4583e35e7834baaeb,
+    type: 2}
+  m_fontSharedMaterials: []
+  m_fontMaterial: {fileID: 0}
+  m_fontMaterials: []
+  m_fontColor32:
+    serializedVersion: 2
+    rgba: 4294960075
+  m_fontColor: {r: 0.7960785, g: 0.89019614, b: 1, a: 1}
+  m_enableVertexGradient: 0
+  m_colorMode: 3
+  m_fontColorGradient:
+    topLeft: {r: 1, g: 1, b: 1, a: 1}
+    topRight: {r: 1, g: 1, b: 1, a: 1}
+    bottomLeft: {r: 1, g: 1, b: 1, a: 1}
+    bottomRight: {r: 1, g: 1, b: 1, a: 1}
+  m_fontColorGradientPreset: {fileID: 0}
+  m_spriteAsset: {fileID: 0}
+  m_tintAllSprites: 0
+  m_overrideHtmlColors: 0
+  m_faceColor:
+    serializedVersion: 2
+    rgba: 4294967295
+  m_outlineColor:
+    serializedVersion: 2
+    rgba: 4278190080
+  m_fontSize: 150
+  m_fontSizeBase: 150
+  m_fontWeight: 400
+  m_enableAutoSizing: 0
+  m_fontSizeMin: 18
+  m_fontSizeMax: 72
+  m_fontStyle: 5
+  m_textAlignment: 514
+  m_isAlignmentEnumConverted: 1
+  m_characterSpacing: 0
+  m_wordSpacing: 0
+  m_lineSpacing: 0
+  m_lineSpacingMax: 0
+  m_paragraphSpacing: 0
+  m_charWidthMaxAdj: 0
+  m_enableWordWrapping: 1
+  m_wordWrappingRatios: 0.4
+  m_overflowMode: 0
+  m_firstOverflowCharacterIndex: 0
+  m_linkedTextComponent: {fileID: 0}
+  m_isLinkedTextComponent: 0
+  m_isTextTruncated: 0
+  m_enableKerning: 1
+  m_enableExtraPadding: 0
+  checkPaddingRequired: 0
+  m_isRichText: 1
+  m_parseCtrlCharacters: 1
+  m_isOrthographic: 1
+  m_isCullingEnabled: 0
+  m_ignoreRectMaskCulling: 0
+  m_ignoreCulling: 1
+  m_horizontalMapping: 0
+  m_verticalMapping: 0
+  m_uvLineOffset: 0
+  m_geometrySortingOrder: 0
+  m_firstVisibleCharacter: 0
+  m_useMaxVisibleDescender: 1
+  m_pageToDisplay: 1
+  m_margin: {x: 0, y: 0, z: 0, w: 0}
+  m_textInfo:
+    textComponent: {fileID: 244404768}
+    characterCount: 10
+    spriteCount: 0
+    spaceCount: 0
+    wordCount: 1
+    linkCount: 0
+    lineCount: 1
+    pageCount: 1
+    materialCount: 1
+  m_havePropertiesChanged: 0
+  m_isUsingLegacyAnimationComponent: 0
+  m_isVolumetricText: 0
+  m_spriteAnimator: {fileID: 0}
+  m_isInputParsingRequired: 0
+  m_inputSource: 0
+  m_hasFontAssetChanged: 0
+  m_subTextObjects:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  m_baseMaterial: {fileID: 0}
+  m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
+--- !u!222 &244404769
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 244404766}
   m_CullTransparentMesh: 0
 --- !u!1 &286566571
 GameObject:
@@ -1862,7 +2173,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1651853233}
+      - m_Target: {fileID: 1651853232}
         m_MethodName: Statement2
         m_Mode: 1
         m_Arguments:
@@ -1888,7 +2199,7 @@ GameObject:
   - component: {fileID: 290620612}
   - component: {fileID: 290620610}
   m_Layer: 5
-  m_Name: HistoricalCharacter2Text
+  m_Name: Economic3Character2Text
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2286,7 +2597,7 @@ GameObject:
   - component: {fileID: 387591822}
   - component: {fileID: 387591821}
   m_Layer: 5
-  m_Name: SafetySecurityContext
+  m_Name: RightsResponsibilitiesContext
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2304,7 +2615,7 @@ RectTransform:
   m_LocalScale: {x: 1.0000125, y: 1.0000125, z: 1.0000125}
   m_Children: []
   m_Father: {fileID: 1767171690}
-  m_RootOrder: 18
+  m_RootOrder: 17
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 0}
@@ -2395,7 +2706,7 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_text: Discussion on the topic of Safety and Security...
+  m_text: The following discussion is based around the theme of Rights and Responsibilities.
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: c300450777ecabf47af9601b674f38f5, type: 2}
   m_sharedMaterial: {fileID: 21166231041172900, guid: c300450777ecabf47af9601b674f38f5,
@@ -2473,11 +2784,11 @@ MonoBehaviour:
     lineCount: 1
     pageCount: 1
     materialCount: 1
-  m_havePropertiesChanged: 0
+  m_havePropertiesChanged: 1
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_spriteAnimator: {fileID: 0}
-  m_isInputParsingRequired: 0
+  m_isInputParsingRequired: 1
   m_inputSource: 0
   m_hasFontAssetChanged: 0
   m_subTextObjects:
@@ -2686,7 +2997,7 @@ GameObject:
   - component: {fileID: 490525870}
   - component: {fileID: 490525869}
   m_Layer: 5
-  m_Name: SocialContext
+  m_Name: Economic1Context
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2704,7 +3015,7 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1767171690}
-  m_RootOrder: 15
+  m_RootOrder: 14
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 0}
@@ -2795,7 +3106,7 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_text: Discussion on the topic of Social...
+  m_text: The following discussion is based around the theme of Economic.
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: c300450777ecabf47af9601b674f38f5, type: 2}
   m_sharedMaterial: {fileID: 21166231041172900, guid: c300450777ecabf47af9601b674f38f5,
@@ -2899,243 +3210,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 490525867}
   m_CullTransparentMesh: 0
---- !u!1 &504398787
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 504398788}
-  - component: {fileID: 504398790}
-  - component: {fileID: 504398791}
-  - component: {fileID: 504398789}
-  m_Layer: 5
-  m_Name: EnvironmentalCharacter1Text
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 0
---- !u!224 &504398788
-RectTransform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 504398787}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 714098576}
-  m_RootOrder: 5
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 1, y: 0}
-  m_AnchoredPosition: {x: 0, y: 50}
-  m_SizeDelta: {x: -60, y: 290}
-  m_Pivot: {x: 0.5, y: 0}
---- !u!114 &504398789
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 504398787}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 1392445389, guid: f70555f144d8491a825f0804e09c671c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Navigation:
-    m_Mode: 3
-    m_SelectOnUp: {fileID: 0}
-    m_SelectOnDown: {fileID: 0}
-    m_SelectOnLeft: {fileID: 0}
-    m_SelectOnRight: {fileID: 0}
-  m_Transition: 1
-  m_Colors:
-    m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
-    m_HighlightedColor: {r: 0.03991636, g: 0.6509434, b: 0.16470441, a: 1}
-    m_PressedColor: {r: 0.013705952, g: 0.41509432, b: 0.09604202, a: 1}
-    m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
-    m_ColorMultiplier: 1
-    m_FadeDuration: 0.1
-  m_SpriteState:
-    m_HighlightedSprite: {fileID: 0}
-    m_PressedSprite: {fileID: 0}
-    m_DisabledSprite: {fileID: 0}
-  m_AnimationTriggers:
-    m_NormalTrigger: Normal
-    m_HighlightedTrigger: Highlighted
-    m_PressedTrigger: Pressed
-    m_DisabledTrigger: Disabled
-  m_Interactable: 1
-  m_TargetGraphic: {fileID: 504398791}
-  m_OnClick:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 1046536573}
-        m_MethodName: Theme6Selected
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 1046536573}
-        m_MethodName: IfFinished
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 1046536573}
-        m_MethodName: Person1Theme6Selected
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-    m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
-      Culture=neutral, PublicKeyToken=null
---- !u!222 &504398790
-CanvasRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 504398787}
-  m_CullTransparentMesh: 0
---- !u!114 &504398791
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 504398787}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_RaycastTarget: 1
-  m_OnCullStateChanged:
-    m_PersistentCalls:
-      m_Calls: []
-    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
-      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_text: 
-  m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: c300450777ecabf47af9601b674f38f5, type: 2}
-  m_sharedMaterial: {fileID: 21166231041172900, guid: c300450777ecabf47af9601b674f38f5,
-    type: 2}
-  m_fontSharedMaterials: []
-  m_fontMaterial: {fileID: 0}
-  m_fontMaterials: []
-  m_fontColor32:
-    serializedVersion: 2
-    rgba: 4294967295
-  m_fontColor: {r: 0.8, g: 0.5803922, b: 0, a: 1}
-  m_enableVertexGradient: 0
-  m_colorMode: 3
-  m_fontColorGradient:
-    topLeft: {r: 1, g: 1, b: 1, a: 1}
-    topRight: {r: 1, g: 1, b: 1, a: 1}
-    bottomLeft: {r: 1, g: 1, b: 1, a: 1}
-    bottomRight: {r: 1, g: 1, b: 1, a: 1}
-  m_fontColorGradientPreset: {fileID: 0}
-  m_spriteAsset: {fileID: 0}
-  m_tintAllSprites: 0
-  m_overrideHtmlColors: 0
-  m_faceColor:
-    serializedVersion: 2
-    rgba: 4294967295
-  m_outlineColor:
-    serializedVersion: 2
-    rgba: 4278190080
-  m_fontSize: 26
-  m_fontSizeBase: 26
-  m_fontWeight: 400
-  m_enableAutoSizing: 0
-  m_fontSizeMin: 18
-  m_fontSizeMax: 72
-  m_fontStyle: 0
-  m_textAlignment: 514
-  m_isAlignmentEnumConverted: 1
-  m_characterSpacing: 0
-  m_wordSpacing: 0
-  m_lineSpacing: 0
-  m_lineSpacingMax: 0
-  m_paragraphSpacing: 0
-  m_charWidthMaxAdj: 0
-  m_enableWordWrapping: 1
-  m_wordWrappingRatios: 0.4
-  m_overflowMode: 0
-  m_firstOverflowCharacterIndex: -1
-  m_linkedTextComponent: {fileID: 0}
-  m_isLinkedTextComponent: 0
-  m_isTextTruncated: 0
-  m_enableKerning: 1
-  m_enableExtraPadding: 0
-  checkPaddingRequired: 0
-  m_isRichText: 1
-  m_parseCtrlCharacters: 1
-  m_isOrthographic: 1
-  m_isCullingEnabled: 0
-  m_ignoreRectMaskCulling: 0
-  m_ignoreCulling: 1
-  m_horizontalMapping: 0
-  m_verticalMapping: 0
-  m_uvLineOffset: 0
-  m_geometrySortingOrder: 0
-  m_firstVisibleCharacter: 0
-  m_useMaxVisibleDescender: 1
-  m_pageToDisplay: 1
-  m_margin: {x: 0, y: 0, z: 0, w: 0}
-  m_textInfo:
-    textComponent: {fileID: 504398791}
-    characterCount: 0
-    spriteCount: 0
-    spaceCount: 0
-    wordCount: 0
-    linkCount: 0
-    lineCount: 0
-    pageCount: 0
-    materialCount: 1
-  m_havePropertiesChanged: 0
-  m_isUsingLegacyAnimationComponent: 0
-  m_isVolumetricText: 0
-  m_spriteAnimator: {fileID: 0}
-  m_isInputParsingRequired: 0
-  m_inputSource: 0
-  m_hasFontAssetChanged: 0
-  m_subTextObjects:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  m_baseMaterial: {fileID: 0}
-  m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
 --- !u!1 &511520099
 GameObject:
   m_ObjectHideFlags: 0
@@ -3149,7 +3223,7 @@ GameObject:
   - component: {fileID: 511520101}
   - component: {fileID: 511520103}
   m_Layer: 5
-  m_Name: SocialCharacter2Text
+  m_Name: Economic1Character2Text
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3478,7 +3552,7 @@ GameObject:
   - component: {fileID: 523651172}
   - component: {fileID: 523651174}
   m_Layer: 5
-  m_Name: Colleague 1
+  m_Name: Pro
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3523,7 +3597,7 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_Sprite: {fileID: 21300000, guid: 9f76633c96c0fd24ba8115e13b7aa2cd, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 369515ae8d4acd741a9c1b206fba08fe, type: 3}
   m_Type: 0
   m_PreserveAspect: 1
   m_FillCenter: 1
@@ -3675,7 +3749,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &604569175
 RectTransform:
   m_ObjectHideFlags: 0
@@ -3685,15 +3759,15 @@ RectTransform:
   m_GameObject: {fileID: 604569174}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1.000004, y: 1.000004, z: 1.000004}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 97389853}
-  m_RootOrder: 2
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 1329, y: 386}
-  m_SizeDelta: {x: 697, y: 1057}
+  m_AnchoredPosition: {x: 1260, y: 250}
+  m_SizeDelta: {x: 726, y: 1096.9}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &604569176
 MonoBehaviour:
@@ -3715,9 +3789,9 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_Sprite: {fileID: 21300000, guid: 51df1a63b4ab71e40bd12bb8dcdb3ce5, type: 3}
+  m_Sprite: {fileID: 21300000, guid: e7c9f221e4fc87746a6a58f809e90263, type: 3}
   m_Type: 0
-  m_PreserveAspect: 0
+  m_PreserveAspect: 1
   m_FillCenter: 1
   m_FillMethod: 4
   m_FillAmount: 1
@@ -3731,81 +3805,6 @@ CanvasRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 604569174}
-  m_CullTransparentMesh: 0
---- !u!1 &619548909
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 619548910}
-  - component: {fileID: 619548912}
-  - component: {fileID: 619548911}
-  m_Layer: 5
-  m_Name: TextBG6
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!224 &619548910
-RectTransform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 619548909}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children:
-  - {fileID: 1243935669}
-  m_Father: {fileID: 1432787641}
-  m_RootOrder: 7
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 1}
-  m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: -821.7}
-  m_SizeDelta: {x: -450, y: 175}
-  m_Pivot: {x: 0.5, y: 1}
---- !u!114 &619548911
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 619548909}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: -765806418, guid: f70555f144d8491a825f0804e09c671c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_RaycastTarget: 1
-  m_OnCullStateChanged:
-    m_PersistentCalls:
-      m_Calls: []
-    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
-      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_Sprite: {fileID: 21300000, guid: 8e5eb8083988223428e7faf135aa7687, type: 3}
-  m_Type: 0
-  m_PreserveAspect: 0
-  m_FillCenter: 1
-  m_FillMethod: 4
-  m_FillAmount: 1
-  m_FillClockwise: 1
-  m_FillOrigin: 0
-  m_UseSpriteMesh: 0
---- !u!222 &619548912
-CanvasRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 619548909}
   m_CullTransparentMesh: 0
 --- !u!1 &633812762
 GameObject:
@@ -4076,7 +4075,6 @@ RectTransform:
   - {fileID: 1727001784}
   - {fileID: 846032286}
   - {fileID: 2037030791}
-  - {fileID: 504398788}
   m_Father: {fileID: 1105663508}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -4122,243 +4120,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 714098575}
   m_CullTransparentMesh: 0
---- !u!1 &725022518
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 725022519}
-  - component: {fileID: 725022521}
-  - component: {fileID: 725022522}
-  - component: {fileID: 725022520}
-  m_Layer: 5
-  m_Name: EnvironmentalCharacter2Text
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 0
---- !u!224 &725022519
-RectTransform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 725022518}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 1103542024}
-  m_RootOrder: 5
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 1, y: 0}
-  m_AnchoredPosition: {x: 0, y: 50}
-  m_SizeDelta: {x: -60, y: 290}
-  m_Pivot: {x: 0.5, y: 0}
---- !u!114 &725022520
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 725022518}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 1392445389, guid: f70555f144d8491a825f0804e09c671c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Navigation:
-    m_Mode: 3
-    m_SelectOnUp: {fileID: 0}
-    m_SelectOnDown: {fileID: 0}
-    m_SelectOnLeft: {fileID: 0}
-    m_SelectOnRight: {fileID: 0}
-  m_Transition: 1
-  m_Colors:
-    m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
-    m_HighlightedColor: {r: 0.039215688, g: 0.6509804, b: 0.16470589, a: 1}
-    m_PressedColor: {r: 0.011764706, g: 0.41568628, b: 0.09411765, a: 1}
-    m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
-    m_ColorMultiplier: 1
-    m_FadeDuration: 0.1
-  m_SpriteState:
-    m_HighlightedSprite: {fileID: 0}
-    m_PressedSprite: {fileID: 0}
-    m_DisabledSprite: {fileID: 0}
-  m_AnimationTriggers:
-    m_NormalTrigger: Normal
-    m_HighlightedTrigger: Highlighted
-    m_PressedTrigger: Pressed
-    m_DisabledTrigger: Disabled
-  m_Interactable: 1
-  m_TargetGraphic: {fileID: 725022522}
-  m_OnClick:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 1046536573}
-        m_MethodName: Theme6Selected
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 1046536573}
-        m_MethodName: IfFinished
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 1046536573}
-        m_MethodName: Person2Theme6Selected
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-    m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
-      Culture=neutral, PublicKeyToken=null
---- !u!222 &725022521
-CanvasRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 725022518}
-  m_CullTransparentMesh: 0
---- !u!114 &725022522
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 725022518}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_RaycastTarget: 1
-  m_OnCullStateChanged:
-    m_PersistentCalls:
-      m_Calls: []
-    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
-      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_text: 
-  m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: c300450777ecabf47af9601b674f38f5, type: 2}
-  m_sharedMaterial: {fileID: 21166231041172900, guid: c300450777ecabf47af9601b674f38f5,
-    type: 2}
-  m_fontSharedMaterials: []
-  m_fontMaterial: {fileID: 0}
-  m_fontMaterials: []
-  m_fontColor32:
-    serializedVersion: 2
-    rgba: 4294967295
-  m_fontColor: {r: 0.8, g: 0.5803922, b: 0, a: 1}
-  m_enableVertexGradient: 0
-  m_colorMode: 3
-  m_fontColorGradient:
-    topLeft: {r: 1, g: 1, b: 1, a: 1}
-    topRight: {r: 1, g: 1, b: 1, a: 1}
-    bottomLeft: {r: 1, g: 1, b: 1, a: 1}
-    bottomRight: {r: 1, g: 1, b: 1, a: 1}
-  m_fontColorGradientPreset: {fileID: 0}
-  m_spriteAsset: {fileID: 0}
-  m_tintAllSprites: 0
-  m_overrideHtmlColors: 0
-  m_faceColor:
-    serializedVersion: 2
-    rgba: 4294967295
-  m_outlineColor:
-    serializedVersion: 2
-    rgba: 4278190080
-  m_fontSize: 26
-  m_fontSizeBase: 26
-  m_fontWeight: 400
-  m_enableAutoSizing: 0
-  m_fontSizeMin: 18
-  m_fontSizeMax: 72
-  m_fontStyle: 0
-  m_textAlignment: 514
-  m_isAlignmentEnumConverted: 1
-  m_characterSpacing: 0
-  m_wordSpacing: 0
-  m_lineSpacing: 0
-  m_lineSpacingMax: 0
-  m_paragraphSpacing: 0
-  m_charWidthMaxAdj: 0
-  m_enableWordWrapping: 1
-  m_wordWrappingRatios: 0.4
-  m_overflowMode: 0
-  m_firstOverflowCharacterIndex: -1
-  m_linkedTextComponent: {fileID: 0}
-  m_isLinkedTextComponent: 0
-  m_isTextTruncated: 0
-  m_enableKerning: 1
-  m_enableExtraPadding: 0
-  checkPaddingRequired: 0
-  m_isRichText: 1
-  m_parseCtrlCharacters: 1
-  m_isOrthographic: 1
-  m_isCullingEnabled: 0
-  m_ignoreRectMaskCulling: 0
-  m_ignoreCulling: 1
-  m_horizontalMapping: 0
-  m_verticalMapping: 0
-  m_uvLineOffset: 0
-  m_geometrySortingOrder: 0
-  m_firstVisibleCharacter: 0
-  m_useMaxVisibleDescender: 1
-  m_pageToDisplay: 1
-  m_margin: {x: 0, y: 0, z: 0, w: 0}
-  m_textInfo:
-    textComponent: {fileID: 725022522}
-    characterCount: 0
-    spriteCount: 0
-    spaceCount: 0
-    wordCount: 0
-    linkCount: 0
-    lineCount: 0
-    pageCount: 0
-    materialCount: 1
-  m_havePropertiesChanged: 0
-  m_isUsingLegacyAnimationComponent: 0
-  m_isVolumetricText: 0
-  m_spriteAnimator: {fileID: 0}
-  m_isInputParsingRequired: 0
-  m_inputSource: 0
-  m_hasFontAssetChanged: 0
-  m_subTextObjects:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  m_baseMaterial: {fileID: 0}
-  m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
 --- !u!1 &755796604
 GameObject:
   m_ObjectHideFlags: 0
@@ -4561,7 +4322,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1651853233}
+      - m_Target: {fileID: 1651853232}
         m_MethodName: Statement5
         m_Mode: 1
         m_Arguments:
@@ -4587,7 +4348,7 @@ GameObject:
   - component: {fileID: 763336596}
   - component: {fileID: 763336595}
   m_Layer: 5
-  m_Name: EconomicContinue
+  m_Name: SocialContinue
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4726,7 +4487,7 @@ GameObject:
   - component: {fileID: 846032289}
   - component: {fileID: 846032287}
   m_Layer: 5
-  m_Name: SafetySecurityCharacter1Text
+  m_Name: RightsResponsibilitiesCharacter1Text
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -5038,7 +4799,7 @@ GameObject:
   - component: {fileID: 915110334}
   - component: {fileID: 915110336}
   m_Layer: 5
-  m_Name: Colleague 2
+  m_Name: Anti
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -5060,7 +4821,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0}
   m_AnchorMax: {x: 0.5, y: 0}
-  m_AnchoredPosition: {x: 445.89, y: 461}
+  m_AnchoredPosition: {x: 538, y: 461}
   m_SizeDelta: {x: 891.79, y: 1118.3}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &915110334
@@ -5083,7 +4844,7 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_Sprite: {fileID: 21300000, guid: 48ab181704e5545408f421148ab75b84, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 34ec73f5bc9bfba408f009899ebdfbd8, type: 3}
   m_Type: 0
   m_PreserveAspect: 1
   m_FillCenter: 1
@@ -5132,7 +4893,7 @@ GameObject:
   - component: {fileID: 935932279}
   - component: {fileID: 935932278}
   m_Layer: 5
-  m_Name: SafetySecurityCharacter3Text
+  m_Name: RightsResponsibilitiesCharacter3Text
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -5434,7 +5195,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 183241756}
         m_MethodName: ReturnToTheMobileWorkplace
         m_Mode: 1
         m_Arguments:
@@ -5583,7 +5344,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &1001454521
 RectTransform:
   m_ObjectHideFlags: 0
@@ -5593,15 +5354,15 @@ RectTransform:
   m_GameObject: {fileID: 1001454520}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1.000004, y: 1.000004, z: 1.000004}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 97389853}
-  m_RootOrder: 3
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 959.7, y: 386}
-  m_SizeDelta: {x: 566.7, y: 894}
+  m_AnchoredPosition: {x: 1005, y: 340}
+  m_SizeDelta: {x: 736.4, y: 1111}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1001454522
 MonoBehaviour:
@@ -5623,9 +5384,9 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_Sprite: {fileID: 21300000, guid: 48ab181704e5545408f421148ab75b84, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 369515ae8d4acd741a9c1b206fba08fe, type: 3}
   m_Type: 0
-  m_PreserveAspect: 0
+  m_PreserveAspect: 1
   m_FillCenter: 1
   m_FillMethod: 4
   m_FillAmount: 1
@@ -5714,118 +5475,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1001931262}
   m_CullTransparentMesh: 0
---- !u!1 &1046536571
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1046536572}
-  - component: {fileID: 1046536573}
-  m_Layer: 0
-  m_Name: Environmental
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &1046536572
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1046536571}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 150076332}
-  m_RootOrder: 5
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1046536573
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1046536571}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7324cb723208c1243819611e97f71c57, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  statementTextDisplay: {fileID: 1394089434}
-  discussion2:
-  - 'Do you think EU is putting enough attention to the environmental concerns for
-    a better future?   '
-  - 'The Dutch government as well as European commission should focus more on environmental
-    and climate change issues. '
-  - 'We have surely more important problems to solve than using more resources on
-    environmental and climate changes. '
-  - 'A common energy policy among EU member states is very important as it is for
-    Germany. '
-  typingSpeed: 0
-  continueButton: {fileID: 1290602529}
-  toolBG: {fileID: 1968638422}
-  proCharacter: {fileID: 523651170}
-  antiCharacter: {fileID: 1236020478}
-  undecidedCharacter: {fileID: 915110332}
-  animPro: {fileID: 523651174}
-  animAnti: {fileID: 1236020482}
-  animUndecided: {fileID: 915110336}
-  animText: {fileID: 1394089435}
-  responseBox: {fileID: 1001931262}
-  contextTheme1: {fileID: 490525867}
-  contextTheme2: {fileID: 1463285661}
-  contextTheme3: {fileID: 1259109597}
-  contextTheme4: {fileID: 387591819}
-  contextTheme5: {fileID: 1379542267}
-  contextTheme6: {fileID: 1144134543}
-  playerSelection: {fileID: 1105663507}
-  character1Text:
-  - {fileID: 1535444546}
-  - {fileID: 1481102902}
-  - {fileID: 1727001783}
-  - {fileID: 846032285}
-  - {fileID: 2037030790}
-  - {fileID: 504398787}
-  character2Text:
-  - {fileID: 511520099}
-  - {fileID: 1190927744}
-  - {fileID: 1154856030}
-  - {fileID: 1741286130}
-  - {fileID: 290620608}
-  - {fileID: 725022518}
-  character3Text:
-  - {fileID: 1835748000}
-  - {fileID: 1553907685}
-  - {fileID: 163695663}
-  - {fileID: 935932276}
-  - {fileID: 1303799329}
-  - {fileID: 1778327790}
-  theme1Character1: {fileID: 1535444548}
-  theme2Character1: {fileID: 1481102906}
-  theme3Character1: {fileID: 1727001787}
-  theme4Character1: {fileID: 846032289}
-  theme5Character1: {fileID: 2037030794}
-  theme6Character1: {fileID: 504398791}
-  theme1Character2: {fileID: 511520101}
-  theme2Character2: {fileID: 1190927748}
-  theme3Character2: {fileID: 1154856034}
-  theme4Character2: {fileID: 1741286134}
-  theme5Character2: {fileID: 290620612}
-  theme6Character2: {fileID: 725022522}
-  theme1Character3: {fileID: 1835748003}
-  theme2Character3: {fileID: 1553907688}
-  theme3Character3: {fileID: 163695666}
-  theme4Character3: {fileID: 935932279}
-  theme5Character3: {fileID: 1303799332}
-  theme6Character3: {fileID: 1778327793}
-  task3: {fileID: 201300220}
-  startCanvas: {fileID: 97389849}
 --- !u!1 &1093933578
 GameObject:
   m_ObjectHideFlags: 0
@@ -5839,7 +5488,7 @@ GameObject:
   - component: {fileID: 1093933581}
   - component: {fileID: 1093933580}
   m_Layer: 5
-  m_Name: SocialContinue
+  m_Name: Economic1Continue
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -5999,7 +5648,6 @@ RectTransform:
   - {fileID: 1154856031}
   - {fileID: 1741286131}
   - {fileID: 290620609}
-  - {fileID: 725022519}
   m_Father: {fileID: 1105663508}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -6077,7 +5725,7 @@ RectTransform:
   - {fileID: 1978798693}
   - {fileID: 2005500102}
   m_Father: {fileID: 1767171690}
-  m_RootOrder: 21
+  m_RootOrder: 19
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0}
   m_AnchorMax: {x: 0.5, y: 0}
@@ -6161,232 +5809,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1111939341}
   m_CullTransparentMesh: 0
---- !u!1 &1144134543
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1144134544}
-  - component: {fileID: 1144134547}
-  - component: {fileID: 1144134546}
-  - component: {fileID: 1144134545}
-  m_Layer: 5
-  m_Name: EnvironmentalContext
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 0
---- !u!224 &1144134544
-RectTransform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1144134543}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 1767171690}
-  m_RootOrder: 20
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 1, y: 0}
-  m_AnchoredPosition: {x: 0, y: 100}
-  m_SizeDelta: {x: -240, y: 200}
-  m_Pivot: {x: 0.5, y: 0}
---- !u!114 &1144134545
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1144134543}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 1392445389, guid: f70555f144d8491a825f0804e09c671c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Navigation:
-    m_Mode: 3
-    m_SelectOnUp: {fileID: 0}
-    m_SelectOnDown: {fileID: 0}
-    m_SelectOnLeft: {fileID: 0}
-    m_SelectOnRight: {fileID: 0}
-  m_Transition: 1
-  m_Colors:
-    m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
-    m_HighlightedColor: {r: 0.13883945, g: 0.16095151, b: 0.4528302, a: 1}
-    m_PressedColor: {r: 0.04472231, g: 0.21061611, b: 0.6320754, a: 1}
-    m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
-    m_ColorMultiplier: 1
-    m_FadeDuration: 0.1
-  m_SpriteState:
-    m_HighlightedSprite: {fileID: 0}
-    m_PressedSprite: {fileID: 0}
-    m_DisabledSprite: {fileID: 0}
-  m_AnimationTriggers:
-    m_NormalTrigger: Normal
-    m_HighlightedTrigger: Highlighted
-    m_PressedTrigger: Pressed
-    m_DisabledTrigger: Disabled
-  m_Interactable: 1
-  m_TargetGraphic: {fileID: 1144134546}
-  m_OnClick:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 1046536573}
-        m_MethodName: Theme6
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 511536246}
-        m_MethodName: AddXPPoints
-        m_Mode: 3
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 10
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-    m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
-      Culture=neutral, PublicKeyToken=null
---- !u!114 &1144134546
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1144134543}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_RaycastTarget: 1
-  m_OnCullStateChanged:
-    m_PersistentCalls:
-      m_Calls: []
-    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
-      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_text: Discussion on the topic of Environment
-  m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: c300450777ecabf47af9601b674f38f5, type: 2}
-  m_sharedMaterial: {fileID: 21166231041172900, guid: c300450777ecabf47af9601b674f38f5,
-    type: 2}
-  m_fontSharedMaterials: []
-  m_fontMaterial: {fileID: 0}
-  m_fontMaterials: []
-  m_fontColor32:
-    serializedVersion: 2
-    rgba: 4294967295
-  m_fontColor: {r: 1, g: 1, b: 1, a: 1}
-  m_enableVertexGradient: 0
-  m_colorMode: 3
-  m_fontColorGradient:
-    topLeft: {r: 1, g: 1, b: 1, a: 1}
-    topRight: {r: 1, g: 1, b: 1, a: 1}
-    bottomLeft: {r: 1, g: 1, b: 1, a: 1}
-    bottomRight: {r: 1, g: 1, b: 1, a: 1}
-  m_fontColorGradientPreset: {fileID: 0}
-  m_spriteAsset: {fileID: 0}
-  m_tintAllSprites: 0
-  m_overrideHtmlColors: 0
-  m_faceColor:
-    serializedVersion: 2
-    rgba: 4294967295
-  m_outlineColor:
-    serializedVersion: 2
-    rgba: 4278190080
-  m_fontSize: 36
-  m_fontSizeBase: 36
-  m_fontWeight: 400
-  m_enableAutoSizing: 0
-  m_fontSizeMin: 18
-  m_fontSizeMax: 72
-  m_fontStyle: 1
-  m_textAlignment: 514
-  m_isAlignmentEnumConverted: 1
-  m_characterSpacing: 0
-  m_wordSpacing: 0
-  m_lineSpacing: 0
-  m_lineSpacingMax: 0
-  m_paragraphSpacing: 0
-  m_charWidthMaxAdj: 0
-  m_enableWordWrapping: 1
-  m_wordWrappingRatios: 0.4
-  m_overflowMode: 0
-  m_firstOverflowCharacterIndex: -1
-  m_linkedTextComponent: {fileID: 0}
-  m_isLinkedTextComponent: 0
-  m_isTextTruncated: 0
-  m_enableKerning: 1
-  m_enableExtraPadding: 0
-  checkPaddingRequired: 0
-  m_isRichText: 1
-  m_parseCtrlCharacters: 1
-  m_isOrthographic: 1
-  m_isCullingEnabled: 0
-  m_ignoreRectMaskCulling: 0
-  m_ignoreCulling: 1
-  m_horizontalMapping: 0
-  m_verticalMapping: 0
-  m_uvLineOffset: 0
-  m_geometrySortingOrder: 0
-  m_firstVisibleCharacter: 0
-  m_useMaxVisibleDescender: 1
-  m_pageToDisplay: 1
-  m_margin: {x: 0, y: 0, z: 0, w: 0}
-  m_textInfo:
-    textComponent: {fileID: 1144134546}
-    characterCount: 30
-    spriteCount: 0
-    spaceCount: 5
-    wordCount: 6
-    linkCount: 0
-    lineCount: 1
-    pageCount: 1
-    materialCount: 1
-  m_havePropertiesChanged: 1
-  m_isUsingLegacyAnimationComponent: 0
-  m_isVolumetricText: 0
-  m_spriteAnimator: {fileID: 0}
-  m_isInputParsingRequired: 1
-  m_inputSource: 0
-  m_hasFontAssetChanged: 0
-  m_subTextObjects:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  m_baseMaterial: {fileID: 0}
-  m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
---- !u!222 &1144134547
-CanvasRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1144134543}
-  m_CullTransparentMesh: 0
 --- !u!1 &1154856030
 GameObject:
   m_ObjectHideFlags: 0
@@ -6400,7 +5822,7 @@ GameObject:
   - component: {fileID: 1154856034}
   - component: {fileID: 1154856032}
   m_Layer: 5
-  m_Name: PoliticalCharacter2Text
+  m_Name: Economic2Character2Text
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -6796,7 +6218,7 @@ GameObject:
   - component: {fileID: 1190927748}
   - component: {fileID: 1190927746}
   m_Layer: 5
-  m_Name: EconomicCharacter2Text
+  m_Name: SocialCharacter2Text
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -7033,7 +6455,7 @@ GameObject:
   - component: {fileID: 1231161833}
   - component: {fileID: 1231161832}
   m_Layer: 5
-  m_Name: SafetySecurityContinue
+  m_Name: RightsResponsibilitiesContinue
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -7172,7 +6594,7 @@ GameObject:
   - component: {fileID: 1236020480}
   - component: {fileID: 1236020482}
   m_Layer: 5
-  m_Name: Journalist
+  m_Name: Neutral
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -7192,11 +6614,11 @@ RectTransform:
   m_Father: {fileID: 1767171690}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 1, y: 0}
-  m_AnchorMax: {x: 1, y: 0}
-  m_AnchoredPosition: {x: -206, y: 427.35}
-  m_SizeDelta: {x: 1436.3, y: 1051}
-  m_Pivot: {x: 1, y: 0.5}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: -94, y: -254}
+  m_SizeDelta: {x: 901.7, y: 1329.3}
+  m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1236020480
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7217,7 +6639,7 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_Sprite: {fileID: 21300000, guid: 51df1a63b4ab71e40bd12bb8dcdb3ce5, type: 3}
+  m_Sprite: {fileID: 21300000, guid: e7c9f221e4fc87746a6a58f809e90263, type: 3}
   m_Type: 0
   m_PreserveAspect: 1
   m_FillCenter: 1
@@ -7253,221 +6675,6 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
---- !u!1 &1243935668
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1243935669}
-  - component: {fileID: 1243935672}
-  - component: {fileID: 1243935671}
-  - component: {fileID: 1243935670}
-  m_Layer: 5
-  m_Name: Statement 6
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!224 &1243935669
-RectTransform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1243935668}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 619548910}
-  m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: -90, y: -90}
-  m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &1243935670
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1243935668}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 1392445389, guid: f70555f144d8491a825f0804e09c671c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Navigation:
-    m_Mode: 3
-    m_SelectOnUp: {fileID: 0}
-    m_SelectOnDown: {fileID: 0}
-    m_SelectOnLeft: {fileID: 0}
-    m_SelectOnRight: {fileID: 0}
-  m_Transition: 1
-  m_Colors:
-    m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
-    m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
-    m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
-    m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
-    m_ColorMultiplier: 1
-    m_FadeDuration: 0.1
-  m_SpriteState:
-    m_HighlightedSprite: {fileID: 0}
-    m_PressedSprite: {fileID: 0}
-    m_DisabledSprite: {fileID: 0}
-  m_AnimationTriggers:
-    m_NormalTrigger: Normal
-    m_HighlightedTrigger: Highlighted
-    m_PressedTrigger: Pressed
-    m_DisabledTrigger: Disabled
-  m_Interactable: 1
-  m_TargetGraphic: {fileID: 1243935671}
-  m_OnClick:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 1651853233}
-        m_MethodName: Statement6
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-    m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
-      Culture=neutral, PublicKeyToken=null
---- !u!114 &1243935671
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1243935668}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_RaycastTarget: 1
-  m_OnCullStateChanged:
-    m_PersistentCalls:
-      m_Calls: []
-    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
-      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_text: 
-  m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: bf071a21c75d5984182ca2896c24ba39, type: 2}
-  m_sharedMaterial: {fileID: 21445493198866178, guid: bf071a21c75d5984182ca2896c24ba39,
-    type: 2}
-  m_fontSharedMaterials: []
-  m_fontMaterial: {fileID: 0}
-  m_fontMaterials: []
-  m_fontColor32:
-    serializedVersion: 2
-    rgba: 4278228172
-  m_fontColor: {r: 0.8, g: 0.5803922, b: 0, a: 1}
-  m_enableVertexGradient: 0
-  m_colorMode: 3
-  m_fontColorGradient:
-    topLeft: {r: 1, g: 1, b: 1, a: 1}
-    topRight: {r: 1, g: 1, b: 1, a: 1}
-    bottomLeft: {r: 1, g: 1, b: 1, a: 1}
-    bottomRight: {r: 1, g: 1, b: 1, a: 1}
-  m_fontColorGradientPreset: {fileID: 0}
-  m_spriteAsset: {fileID: 0}
-  m_tintAllSprites: 0
-  m_overrideHtmlColors: 0
-  m_faceColor:
-    serializedVersion: 2
-    rgba: 4294967295
-  m_outlineColor:
-    serializedVersion: 2
-    rgba: 4278190080
-  m_fontSize: 36
-  m_fontSizeBase: 36
-  m_fontWeight: 400
-  m_enableAutoSizing: 0
-  m_fontSizeMin: 18
-  m_fontSizeMax: 72
-  m_fontStyle: 0
-  m_textAlignment: 514
-  m_isAlignmentEnumConverted: 1
-  m_characterSpacing: 0
-  m_wordSpacing: 0
-  m_lineSpacing: 0
-  m_lineSpacingMax: 0
-  m_paragraphSpacing: 0
-  m_charWidthMaxAdj: 0
-  m_enableWordWrapping: 1
-  m_wordWrappingRatios: 0.4
-  m_overflowMode: 0
-  m_firstOverflowCharacterIndex: -1
-  m_linkedTextComponent: {fileID: 0}
-  m_isLinkedTextComponent: 0
-  m_isTextTruncated: 0
-  m_enableKerning: 1
-  m_enableExtraPadding: 0
-  checkPaddingRequired: 0
-  m_isRichText: 1
-  m_parseCtrlCharacters: 1
-  m_isOrthographic: 1
-  m_isCullingEnabled: 0
-  m_ignoreRectMaskCulling: 0
-  m_ignoreCulling: 1
-  m_horizontalMapping: 0
-  m_verticalMapping: 0
-  m_uvLineOffset: 0
-  m_geometrySortingOrder: 0
-  m_firstVisibleCharacter: 0
-  m_useMaxVisibleDescender: 1
-  m_pageToDisplay: 1
-  m_margin: {x: 0, y: 0, z: 0, w: 0}
-  m_textInfo:
-    textComponent: {fileID: 1243935671}
-    characterCount: 0
-    spriteCount: 0
-    spaceCount: 0
-    wordCount: 0
-    linkCount: 0
-    lineCount: 0
-    pageCount: 0
-    materialCount: 1
-  m_havePropertiesChanged: 0
-  m_isUsingLegacyAnimationComponent: 0
-  m_isVolumetricText: 0
-  m_spriteAnimator: {fileID: 0}
-  m_isInputParsingRequired: 0
-  m_inputSource: 0
-  m_hasFontAssetChanged: 0
-  m_subTextObjects:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  m_baseMaterial: {fileID: 0}
-  m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
---- !u!222 &1243935672
-CanvasRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1243935668}
-  m_CullTransparentMesh: 0
 --- !u!1 &1259109597
 GameObject:
   m_ObjectHideFlags: 0
@@ -7481,7 +6688,7 @@ GameObject:
   - component: {fileID: 1259109600}
   - component: {fileID: 1259109599}
   m_Layer: 5
-  m_Name: PoliticalContext
+  m_Name: Economic2Context
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -7499,7 +6706,7 @@ RectTransform:
   m_LocalScale: {x: 1.0000125, y: 1.0000125, z: 1.0000125}
   m_Children: []
   m_Father: {fileID: 1767171690}
-  m_RootOrder: 17
+  m_RootOrder: 16
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 0}
@@ -7590,7 +6797,7 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_text: Discussion on the topic Politics...
+  m_text: The following discussion is based around the theme of Economic.
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: c300450777ecabf47af9601b674f38f5, type: 2}
   m_sharedMaterial: {fileID: 21166231041172900, guid: c300450777ecabf47af9601b674f38f5,
@@ -7769,145 +6976,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1269680195}
   m_CullTransparentMesh: 0
---- !u!1 &1290602529
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1290602530}
-  - component: {fileID: 1290602533}
-  - component: {fileID: 1290602532}
-  - component: {fileID: 1290602531}
-  m_Layer: 5
-  m_Name: EnvironmentalContinue
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 0
---- !u!224 &1290602530
-RectTransform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1290602529}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 1767171690}
-  m_RootOrder: 14
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 1, y: 0}
-  m_AnchorMax: {x: 1, y: 0}
-  m_AnchoredPosition: {x: -181, y: 80}
-  m_SizeDelta: {x: 150, y: 100}
-  m_Pivot: {x: 1, y: 0}
---- !u!114 &1290602531
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1290602529}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 1392445389, guid: f70555f144d8491a825f0804e09c671c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Navigation:
-    m_Mode: 3
-    m_SelectOnUp: {fileID: 0}
-    m_SelectOnDown: {fileID: 0}
-    m_SelectOnLeft: {fileID: 0}
-    m_SelectOnRight: {fileID: 0}
-  m_Transition: 1
-  m_Colors:
-    m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
-    m_HighlightedColor: {r: 0.10980392, g: 0.29803923, b: 0.7647059, a: 1}
-    m_PressedColor: {r: 0, g: 0.22745098, b: 0.83137256, a: 1}
-    m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
-    m_ColorMultiplier: 1
-    m_FadeDuration: 0.1
-  m_SpriteState:
-    m_HighlightedSprite: {fileID: 0}
-    m_PressedSprite: {fileID: 0}
-    m_DisabledSprite: {fileID: 0}
-  m_AnimationTriggers:
-    m_NormalTrigger: Normal
-    m_HighlightedTrigger: Highlighted
-    m_PressedTrigger: Pressed
-    m_DisabledTrigger: Disabled
-  m_Interactable: 1
-  m_TargetGraphic: {fileID: 1290602532}
-  m_OnClick:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 1046536573}
-        m_MethodName: Theme6NextSentence
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 511536246}
-        m_MethodName: AddXPPoints
-        m_Mode: 3
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 5
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-    m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
-      Culture=neutral, PublicKeyToken=null
---- !u!114 &1290602532
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1290602529}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: -765806418, guid: f70555f144d8491a825f0804e09c671c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_RaycastTarget: 1
-  m_OnCullStateChanged:
-    m_PersistentCalls:
-      m_Calls: []
-    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
-      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_Sprite: {fileID: 21300000, guid: a1ff88251db591b46b1132c28d22f1f5, type: 3}
-  m_Type: 0
-  m_PreserveAspect: 0
-  m_FillCenter: 1
-  m_FillMethod: 4
-  m_FillAmount: 1
-  m_FillClockwise: 1
-  m_FillOrigin: 0
-  m_UseSpriteMesh: 0
---- !u!222 &1290602533
-CanvasRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1290602529}
-  m_CullTransparentMesh: 0
 --- !u!1 &1294672651
 GameObject:
   m_ObjectHideFlags: 0
@@ -7996,7 +7064,7 @@ GameObject:
   - component: {fileID: 1303799332}
   - component: {fileID: 1303799331}
   m_Layer: 5
-  m_Name: HistoricalCharacter3Text
+  m_Name: Economic3Character3Text
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -8233,7 +7301,7 @@ GameObject:
   - component: {fileID: 1379542270}
   - component: {fileID: 1379542269}
   m_Layer: 5
-  m_Name: HistoricalContext
+  m_Name: Economic3Context
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -8251,7 +7319,7 @@ RectTransform:
   m_LocalScale: {x: 1.000001, y: 1.000001, z: 1.000001}
   m_Children: []
   m_Father: {fileID: 1767171690}
-  m_RootOrder: 19
+  m_RootOrder: 18
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 0}
@@ -8342,7 +7410,7 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_text: Discussion on the topic of History
+  m_text: The following discussion is based around the theme of Economic.
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: c300450777ecabf47af9601b674f38f5, type: 2}
   m_sharedMaterial: {fileID: 21166231041172900, guid: c300450777ecabf47af9601b674f38f5,
@@ -8663,7 +7731,6 @@ RectTransform:
   - {fileID: 476872907}
   - {fileID: 1269680196}
   - {fileID: 878551927}
-  - {fileID: 619548910}
   m_Father: {fileID: 1651853231}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -8726,7 +7793,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &1434946004
 RectTransform:
   m_ObjectHideFlags: 0
@@ -8736,15 +7803,15 @@ RectTransform:
   m_GameObject: {fileID: 1434946003}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1.000004, y: 1.000004, z: 1.000004}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 97389853}
-  m_RootOrder: 4
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 1667, y: 361.5}
-  m_SizeDelta: {x: 666, y: 943}
+  m_AnchoredPosition: {x: 1695, y: 387.85}
+  m_SizeDelta: {x: 802.3, y: 1015.3}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1434946005
 MonoBehaviour:
@@ -8766,9 +7833,9 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_Sprite: {fileID: 21300000, guid: 9f76633c96c0fd24ba8115e13b7aa2cd, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 34ec73f5bc9bfba408f009899ebdfbd8, type: 3}
   m_Type: 0
-  m_PreserveAspect: 0
+  m_PreserveAspect: 1
   m_FillCenter: 1
   m_FillMethod: 4
   m_FillAmount: 1
@@ -8796,7 +7863,7 @@ GameObject:
   - component: {fileID: 1463285664}
   - component: {fileID: 1463285663}
   m_Layer: 5
-  m_Name: EconomicContext
+  m_Name: SocialContext
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -8814,7 +7881,7 @@ RectTransform:
   m_LocalScale: {x: 1.0000125, y: 1.0000125, z: 1.0000125}
   m_Children: []
   m_Father: {fileID: 1767171690}
-  m_RootOrder: 16
+  m_RootOrder: 15
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 0}
@@ -8905,7 +7972,7 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_text: Discussion on the topic of Economic..
+  m_text: The following discussion is based around the theme of Social.
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: c300450777ecabf47af9601b674f38f5, type: 2}
   m_sharedMaterial: {fileID: 21166231041172900, guid: c300450777ecabf47af9601b674f38f5,
@@ -9022,7 +8089,7 @@ GameObject:
   - component: {fileID: 1470800756}
   - component: {fileID: 1470800755}
   m_Layer: 5
-  m_Name: HistoricalContinue
+  m_Name: Economic3Continue
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -9161,7 +8228,7 @@ GameObject:
   - component: {fileID: 1481102906}
   - component: {fileID: 1481102904}
   m_Layer: 5
-  m_Name: EconomicCharacter1Text
+  m_Name: SocialCharacter1Text
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -9587,7 +8654,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1651853233}
+      - m_Target: {fileID: 1651853232}
         m_MethodName: Statement4
         m_Mode: 1
         m_Arguments:
@@ -9600,6 +8667,81 @@ MonoBehaviour:
         m_CallState: 2
     m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
       Culture=neutral, PublicKeyToken=null
+--- !u!1 &1523040178
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1523040179}
+  - component: {fileID: 1523040181}
+  - component: {fileID: 1523040180}
+  m_Layer: 5
+  m_Name: Description
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1523040179
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1523040178}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 76967831}
+  m_Father: {fileID: 97389853}
+  m_RootOrder: 8
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: -580, y: 150}
+  m_SizeDelta: {x: 680, y: 300}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1523040180
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1523040178}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -765806418, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 0.7960785, g: 0.89019614, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
+      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+  m_Sprite: {fileID: 0}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+--- !u!222 &1523040181
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1523040178}
+  m_CullTransparentMesh: 0
 --- !u!1 &1535444546
 GameObject:
   m_ObjectHideFlags: 0
@@ -9613,7 +8755,7 @@ GameObject:
   - component: {fileID: 1535444548}
   - component: {fileID: 1535444550}
   m_Layer: 5
-  m_Name: SocialCharacter1Text
+  m_Name: Economic1Character1Text
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -9850,7 +8992,7 @@ GameObject:
   - component: {fileID: 1553907688}
   - component: {fileID: 1553907687}
   m_Layer: 5
-  m_Name: EconomicCharacter3Text
+  m_Name: SocialCharacter3Text
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -10276,7 +9418,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1651853233}
+      - m_Target: {fileID: 1651853232}
         m_MethodName: Statement3
         m_Mode: 1
         m_Arguments:
@@ -10298,7 +9440,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1651853231}
-  - component: {fileID: 1651853233}
+  - component: {fileID: 1651853232}
   m_Layer: 5
   m_Name: Task 3
   m_TagString: Untagged
@@ -10326,7 +9468,7 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &1651853233
+--- !u!114 &1651853232
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -10335,7 +9477,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1651853230}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e2dc0d3082d8d644891538efb03059da, type: 3}
+  m_Script: {fileID: 11500000, guid: aaa13b0d785697547b92b519b085a6a5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   statements:
@@ -10345,13 +9487,11 @@ MonoBehaviour:
   statement3: {fileID: 1623522749}
   statement4: {fileID: 1499168197}
   statement5: {fileID: 755796606}
-  statement6: {fileID: 1243935671}
   btnS1: {fileID: 1769699387}
   btnS2: {fileID: 286566575}
   btnS3: {fileID: 1623522751}
   btnS4: {fileID: 1499168199}
   btnS5: {fileID: 755796608}
-  btnS6: {fileID: 1243935670}
   feedbackCanvas: {fileID: 489378493}
 --- !u!1 &1682258672
 GameObject:
@@ -10364,7 +9504,7 @@ GameObject:
   - component: {fileID: 1682258673}
   - component: {fileID: 1682258674}
   m_Layer: 0
-  m_Name: Historical
+  m_Name: Economic3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -10393,27 +9533,28 @@ MonoBehaviour:
   m_GameObject: {fileID: 1682258672}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7324cb723208c1243819611e97f71c57, type: 3}
+  m_Script: {fileID: 11500000, guid: 6dfde725582d3de4db5ee15b0acdf80d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   statementTextDisplay: {fileID: 1394089434}
   discussion2:
-  - 'Do you think the EU has contributed into changing the war infested hisory of
-    the region?   '
-  - "Throughout the history of the EC and EU the peacekeeping aspect has been very
-    important and beneficial for the prosperity of Europ\xE9. "
-  - Throughout the history of the EC and EU the peacekeeping aspect deserves recognition.
-  - "The relevance of peacekeeping function of EC/EU in Europ\xE9 is exaggerated,
-    and should not be compared with that of NATO. "
+  - 'There will no longer be a cheap Eastern European trucker. New rules on which
+    the European Parliament recently reached agreement will also bring their wages
+    up to a competitive level. '
+  - 'Win win situation?? Not for us! When I started working, I was home every weekend.
+    Not anymore. The Netherlands are going down the drain thanks to politics, the
+    EU and the future. '
+  - 'Keep in mind they drink out of boredom if they drive through Europe for six to
+    eight weeks at a time. '
   typingSpeed: 0
   continueButton: {fileID: 1470800753}
   toolBG: {fileID: 1968638422}
   proCharacter: {fileID: 523651170}
-  antiCharacter: {fileID: 1236020478}
-  undecidedCharacter: {fileID: 915110332}
+  antiCharacter: {fileID: 915110332}
+  undecidedCharacter: {fileID: 1236020478}
   animPro: {fileID: 523651174}
-  animAnti: {fileID: 1236020482}
-  animUndecided: {fileID: 915110336}
+  animAnti: {fileID: 915110336}
+  animUndecided: {fileID: 1236020482}
   animText: {fileID: 1394089435}
   responseBox: {fileID: 1001931262}
   contextTheme1: {fileID: 490525867}
@@ -10421,7 +9562,6 @@ MonoBehaviour:
   contextTheme3: {fileID: 1259109597}
   contextTheme4: {fileID: 387591819}
   contextTheme5: {fileID: 1379542267}
-  contextTheme6: {fileID: 1144134543}
   playerSelection: {fileID: 1105663507}
   character1Text:
   - {fileID: 1535444546}
@@ -10429,39 +9569,33 @@ MonoBehaviour:
   - {fileID: 1727001783}
   - {fileID: 846032285}
   - {fileID: 2037030790}
-  - {fileID: 504398787}
   character2Text:
   - {fileID: 511520099}
   - {fileID: 1190927744}
   - {fileID: 1154856030}
   - {fileID: 1741286130}
   - {fileID: 290620608}
-  - {fileID: 725022518}
   character3Text:
   - {fileID: 1835748000}
   - {fileID: 1553907685}
   - {fileID: 163695663}
   - {fileID: 935932276}
   - {fileID: 1303799329}
-  - {fileID: 1778327790}
   theme1Character1: {fileID: 1535444548}
   theme2Character1: {fileID: 1481102906}
   theme3Character1: {fileID: 1727001787}
   theme4Character1: {fileID: 846032289}
   theme5Character1: {fileID: 2037030794}
-  theme6Character1: {fileID: 504398791}
   theme1Character2: {fileID: 511520101}
   theme2Character2: {fileID: 1190927748}
   theme3Character2: {fileID: 1154856034}
   theme4Character2: {fileID: 1741286134}
   theme5Character2: {fileID: 290620612}
-  theme6Character2: {fileID: 725022522}
   theme1Character3: {fileID: 1835748003}
   theme2Character3: {fileID: 1553907688}
   theme3Character3: {fileID: 163695666}
   theme4Character3: {fileID: 935932279}
   theme5Character3: {fileID: 1303799332}
-  theme6Character3: {fileID: 1778327793}
   task3: {fileID: 201300220}
   startCanvas: {fileID: 97389849}
 --- !u!224 &1693070709 stripped
@@ -10483,7 +9617,7 @@ GameObject:
   - component: {fileID: 1727001787}
   - component: {fileID: 1727001785}
   m_Layer: 5
-  m_Name: PoliticalCharacter1Text
+  m_Name: Economic2Character1Text
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -10815,7 +9949,7 @@ GameObject:
   - component: {fileID: 1741286134}
   - component: {fileID: 1741286132}
   m_Layer: 5
-  m_Name: SafetySecurityCharacter2Text
+  m_Name: RightsResponsibilitiesCharacter2Text
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -11096,7 +10230,7 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_Sprite: {fileID: 21300000, guid: 529f225e3627fbd4184543d0cb76b5e3, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 2624c483f0d99e443acb107a0bec05df, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -11217,13 +10351,11 @@ RectTransform:
   - {fileID: 229275082}
   - {fileID: 1231161831}
   - {fileID: 1470800754}
-  - {fileID: 1290602530}
   - {fileID: 490525868}
   - {fileID: 1463285662}
   - {fileID: 1259109598}
   - {fileID: 387591820}
   - {fileID: 1379542268}
-  - {fileID: 1144134544}
   - {fileID: 1105663508}
   m_Father: {fileID: 0}
   m_RootOrder: 4
@@ -11435,7 +10567,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1651853233}
+      - m_Target: {fileID: 1651853232}
         m_MethodName: Statement1
         m_Mode: 1
         m_Arguments:
@@ -11522,243 +10654,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1775578928}
   m_CullTransparentMesh: 0
---- !u!1 &1778327790
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1778327791}
-  - component: {fileID: 1778327794}
-  - component: {fileID: 1778327793}
-  - component: {fileID: 1778327792}
-  m_Layer: 5
-  m_Name: EnvironmentalCharacter3Text
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 0
---- !u!224 &1778327791
-RectTransform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1778327790}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 1978798693}
-  m_RootOrder: 5
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 1, y: 0}
-  m_AnchoredPosition: {x: 0, y: 50}
-  m_SizeDelta: {x: -60, y: 290}
-  m_Pivot: {x: 0.5, y: 0}
---- !u!114 &1778327792
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1778327790}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 1392445389, guid: f70555f144d8491a825f0804e09c671c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Navigation:
-    m_Mode: 3
-    m_SelectOnUp: {fileID: 0}
-    m_SelectOnDown: {fileID: 0}
-    m_SelectOnLeft: {fileID: 0}
-    m_SelectOnRight: {fileID: 0}
-  m_Transition: 1
-  m_Colors:
-    m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
-    m_HighlightedColor: {r: 0.039215688, g: 0.6509804, b: 0.16470589, a: 1}
-    m_PressedColor: {r: 0.011764706, g: 0.41568628, b: 0.09411765, a: 1}
-    m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
-    m_ColorMultiplier: 1
-    m_FadeDuration: 0.1
-  m_SpriteState:
-    m_HighlightedSprite: {fileID: 0}
-    m_PressedSprite: {fileID: 0}
-    m_DisabledSprite: {fileID: 0}
-  m_AnimationTriggers:
-    m_NormalTrigger: Normal
-    m_HighlightedTrigger: Highlighted
-    m_PressedTrigger: Pressed
-    m_DisabledTrigger: Disabled
-  m_Interactable: 1
-  m_TargetGraphic: {fileID: 1778327793}
-  m_OnClick:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 1046536573}
-        m_MethodName: Theme6Selected
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 1046536573}
-        m_MethodName: IfFinished
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 1046536573}
-        m_MethodName: Person3Theme6Selected
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-    m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
-      Culture=neutral, PublicKeyToken=null
---- !u!114 &1778327793
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1778327790}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_RaycastTarget: 1
-  m_OnCullStateChanged:
-    m_PersistentCalls:
-      m_Calls: []
-    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
-      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_text: 
-  m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: c300450777ecabf47af9601b674f38f5, type: 2}
-  m_sharedMaterial: {fileID: 21166231041172900, guid: c300450777ecabf47af9601b674f38f5,
-    type: 2}
-  m_fontSharedMaterials: []
-  m_fontMaterial: {fileID: 0}
-  m_fontMaterials: []
-  m_fontColor32:
-    serializedVersion: 2
-    rgba: 4294967295
-  m_fontColor: {r: 0.8, g: 0.5803922, b: 0, a: 1}
-  m_enableVertexGradient: 0
-  m_colorMode: 3
-  m_fontColorGradient:
-    topLeft: {r: 1, g: 1, b: 1, a: 1}
-    topRight: {r: 1, g: 1, b: 1, a: 1}
-    bottomLeft: {r: 1, g: 1, b: 1, a: 1}
-    bottomRight: {r: 1, g: 1, b: 1, a: 1}
-  m_fontColorGradientPreset: {fileID: 0}
-  m_spriteAsset: {fileID: 0}
-  m_tintAllSprites: 0
-  m_overrideHtmlColors: 0
-  m_faceColor:
-    serializedVersion: 2
-    rgba: 4294967295
-  m_outlineColor:
-    serializedVersion: 2
-    rgba: 4278190080
-  m_fontSize: 26
-  m_fontSizeBase: 26
-  m_fontWeight: 400
-  m_enableAutoSizing: 0
-  m_fontSizeMin: 18
-  m_fontSizeMax: 72
-  m_fontStyle: 0
-  m_textAlignment: 514
-  m_isAlignmentEnumConverted: 1
-  m_characterSpacing: 0
-  m_wordSpacing: 0
-  m_lineSpacing: 0
-  m_lineSpacingMax: 0
-  m_paragraphSpacing: 0
-  m_charWidthMaxAdj: 0
-  m_enableWordWrapping: 1
-  m_wordWrappingRatios: 0.4
-  m_overflowMode: 0
-  m_firstOverflowCharacterIndex: -1
-  m_linkedTextComponent: {fileID: 0}
-  m_isLinkedTextComponent: 0
-  m_isTextTruncated: 0
-  m_enableKerning: 1
-  m_enableExtraPadding: 0
-  checkPaddingRequired: 0
-  m_isRichText: 1
-  m_parseCtrlCharacters: 1
-  m_isOrthographic: 1
-  m_isCullingEnabled: 0
-  m_ignoreRectMaskCulling: 0
-  m_ignoreCulling: 1
-  m_horizontalMapping: 0
-  m_verticalMapping: 0
-  m_uvLineOffset: 0
-  m_geometrySortingOrder: 0
-  m_firstVisibleCharacter: 0
-  m_useMaxVisibleDescender: 1
-  m_pageToDisplay: 1
-  m_margin: {x: 0, y: 0, z: 0, w: 0}
-  m_textInfo:
-    textComponent: {fileID: 1778327793}
-    characterCount: 0
-    spriteCount: 0
-    spaceCount: 0
-    wordCount: 0
-    linkCount: 0
-    lineCount: 0
-    pageCount: 0
-    materialCount: 1
-  m_havePropertiesChanged: 1
-  m_isUsingLegacyAnimationComponent: 0
-  m_isVolumetricText: 0
-  m_spriteAnimator: {fileID: 0}
-  m_isInputParsingRequired: 0
-  m_inputSource: 0
-  m_hasFontAssetChanged: 0
-  m_subTextObjects:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  m_baseMaterial: {fileID: 0}
-  m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
---- !u!222 &1778327794
-CanvasRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1778327790}
-  m_CullTransparentMesh: 0
 --- !u!1 &1835748000
 GameObject:
   m_ObjectHideFlags: 0
@@ -11772,7 +10667,7 @@ GameObject:
   - component: {fileID: 1835748003}
   - component: {fileID: 1835748002}
   m_Layer: 5
-  m_Name: SocialCharacter3Text
+  m_Name: Economic1Character3Text
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -12007,7 +10902,7 @@ GameObject:
   - component: {fileID: 1858266112}
   - component: {fileID: 1858266113}
   m_Layer: 0
-  m_Name: Political
+  m_Name: Economic2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -12036,26 +10931,25 @@ MonoBehaviour:
   m_GameObject: {fileID: 1858266111}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7324cb723208c1243819611e97f71c57, type: 3}
+  m_Script: {fileID: 11500000, guid: 6dfde725582d3de4db5ee15b0acdf80d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   statementTextDisplay: {fileID: 1394089434}
   discussion2:
-  - 'Do you think that EU is to be trusted with the welfare of the citizens?   '
-  - 'We can take for sure that the EU is trustworthy and work for the good of the
-    EU citizen. '
-  - 'Other than the bureaucracy, EU is mostly trustworthy and is trying to work for
-    the good of the EU citizen. '
-  - 'The EU is not very trustworthy and is not working for the good of all EU citizen. '
+  - 'There is a huge shortage of drivers. People from Eastern Europe want to do the
+    work. '
+  - 'All profits go to private companies; all costs go to society and are paid by
+    us taxpayers. '
+  - 'It''s not a black and white situation people. '
   typingSpeed: 0
   continueButton: {fileID: 229275081}
   toolBG: {fileID: 1968638422}
   proCharacter: {fileID: 523651170}
-  antiCharacter: {fileID: 1236020478}
-  undecidedCharacter: {fileID: 915110332}
+  antiCharacter: {fileID: 915110332}
+  undecidedCharacter: {fileID: 1236020478}
   animPro: {fileID: 523651174}
-  animAnti: {fileID: 1236020482}
-  animUndecided: {fileID: 915110336}
+  animAnti: {fileID: 915110336}
+  animUndecided: {fileID: 1236020482}
   animText: {fileID: 1394089435}
   responseBox: {fileID: 1001931262}
   contextTheme1: {fileID: 490525867}
@@ -12063,7 +10957,6 @@ MonoBehaviour:
   contextTheme3: {fileID: 1259109597}
   contextTheme4: {fileID: 387591819}
   contextTheme5: {fileID: 1379542267}
-  contextTheme6: {fileID: 1144134543}
   playerSelection: {fileID: 1105663507}
   character1Text:
   - {fileID: 1535444546}
@@ -12071,39 +10964,33 @@ MonoBehaviour:
   - {fileID: 1727001783}
   - {fileID: 846032285}
   - {fileID: 2037030790}
-  - {fileID: 504398787}
   character2Text:
   - {fileID: 511520099}
   - {fileID: 1190927744}
   - {fileID: 1154856030}
   - {fileID: 1741286130}
   - {fileID: 290620608}
-  - {fileID: 725022518}
   character3Text:
   - {fileID: 1835748000}
   - {fileID: 1553907685}
   - {fileID: 163695663}
   - {fileID: 935932276}
   - {fileID: 1303799329}
-  - {fileID: 1778327790}
   theme1Character1: {fileID: 1535444548}
   theme2Character1: {fileID: 1481102906}
   theme3Character1: {fileID: 1727001787}
   theme4Character1: {fileID: 846032289}
   theme5Character1: {fileID: 2037030794}
-  theme6Character1: {fileID: 504398791}
   theme1Character2: {fileID: 511520101}
   theme2Character2: {fileID: 1190927748}
   theme3Character2: {fileID: 1154856034}
   theme4Character2: {fileID: 1741286134}
   theme5Character2: {fileID: 290620612}
-  theme6Character2: {fileID: 725022522}
   theme1Character3: {fileID: 1835748003}
   theme2Character3: {fileID: 1553907688}
   theme3Character3: {fileID: 163695666}
   theme4Character3: {fileID: 935932279}
   theme5Character3: {fileID: 1303799332}
-  theme6Character3: {fileID: 1778327793}
   task3: {fileID: 201300220}
   startCanvas: {fileID: 97389849}
 --- !u!1 &1968638422
@@ -12163,7 +11050,7 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_Sprite: {fileID: 21300000, guid: a1c3ec16c91bb55498ea4064671c0562, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 2624c483f0d99e443acb107a0bec05df, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -12214,7 +11101,6 @@ RectTransform:
   - {fileID: 163695664}
   - {fileID: 935932277}
   - {fileID: 1303799330}
-  - {fileID: 1778327791}
   m_Father: {fileID: 1105663508}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -12664,7 +11550,7 @@ GameObject:
   - component: {fileID: 2037030794}
   - component: {fileID: 2037030792}
   m_Layer: 5
-  m_Name: HistoricalCharacter1Text
+  m_Name: Economic3Character1Text
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -13407,7 +12293,7 @@ GameObject:
   - component: {fileID: 2147377590}
   - component: {fileID: 2147377591}
   m_Layer: 0
-  m_Name: SafetySecurity
+  m_Name: Rights&Responsibilities
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -13436,24 +12322,29 @@ MonoBehaviour:
   m_GameObject: {fileID: 2147377589}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7324cb723208c1243819611e97f71c57, type: 3}
+  m_Script: {fileID: 11500000, guid: 6dfde725582d3de4db5ee15b0acdf80d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   statementTextDisplay: {fileID: 1394089434}
   discussion2:
-  - 'Do you think a common policy on migration is necessary for EU members?     '
-  - 'A common EU policy on migration would benefit Greece very much. '
-  - 'It is essential that EU have one common policy on migration. '
-  - 'A common EU policy on migration is not necessary and not of good for UK. '
+  - "We 'lost' a lot of materials when we worked with national truckers (that were
+    later sold on the black market without punishing them for that)\u2026 since we
+    work with foreign drivers this has not happened anymore. "
+  - 'The Dutch are paying taxes for maintaining our highways so that Polish workers
+    do not suffer back pains. '
+  - 'I look forward to hearing what the Minister is going to do about the thousands
+    of jobs in the transport sector that have already been sacrificed to cheap profit.
+    We read daily in the newspaper about the exploitation of Eastern European drivers,
+    sham constructions and post office box companies. '
   typingSpeed: 0
   continueButton: {fileID: 1231161830}
   toolBG: {fileID: 1968638422}
   proCharacter: {fileID: 523651170}
-  antiCharacter: {fileID: 1236020478}
-  undecidedCharacter: {fileID: 915110332}
+  antiCharacter: {fileID: 915110332}
+  undecidedCharacter: {fileID: 1236020478}
   animPro: {fileID: 523651174}
-  animAnti: {fileID: 1236020482}
-  animUndecided: {fileID: 915110336}
+  animAnti: {fileID: 915110336}
+  animUndecided: {fileID: 1236020482}
   animText: {fileID: 1394089435}
   responseBox: {fileID: 1001931262}
   contextTheme1: {fileID: 490525867}
@@ -13461,7 +12352,6 @@ MonoBehaviour:
   contextTheme3: {fileID: 1259109597}
   contextTheme4: {fileID: 387591819}
   contextTheme5: {fileID: 1379542267}
-  contextTheme6: {fileID: 1144134543}
   playerSelection: {fileID: 1105663507}
   character1Text:
   - {fileID: 1535444546}
@@ -13469,38 +12359,32 @@ MonoBehaviour:
   - {fileID: 1727001783}
   - {fileID: 846032285}
   - {fileID: 2037030790}
-  - {fileID: 504398787}
   character2Text:
   - {fileID: 511520099}
   - {fileID: 1190927744}
   - {fileID: 1154856030}
   - {fileID: 1741286130}
   - {fileID: 290620608}
-  - {fileID: 725022518}
   character3Text:
   - {fileID: 1835748000}
   - {fileID: 1553907685}
   - {fileID: 163695663}
   - {fileID: 935932276}
   - {fileID: 1303799329}
-  - {fileID: 1778327790}
   theme1Character1: {fileID: 1535444548}
   theme2Character1: {fileID: 1481102906}
   theme3Character1: {fileID: 1727001787}
   theme4Character1: {fileID: 846032289}
   theme5Character1: {fileID: 2037030794}
-  theme6Character1: {fileID: 504398791}
   theme1Character2: {fileID: 511520101}
   theme2Character2: {fileID: 1190927748}
   theme3Character2: {fileID: 1154856034}
   theme4Character2: {fileID: 1741286134}
   theme5Character2: {fileID: 290620612}
-  theme6Character2: {fileID: 725022522}
   theme1Character3: {fileID: 1835748003}
   theme2Character3: {fileID: 1553907688}
   theme3Character3: {fileID: 163695666}
   theme4Character3: {fileID: 935932279}
   theme5Character3: {fileID: 1303799332}
-  theme6Character3: {fileID: 1778327793}
   task3: {fileID: 201300220}
   startCanvas: {fileID: 97389849}

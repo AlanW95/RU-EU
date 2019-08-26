@@ -42,10 +42,9 @@ public class LorryTruckDiscussion : MonoBehaviour {
     public GameObject contextTheme1, contextTheme2, contextTheme3, contextTheme4, contextTheme5;
 
     public GameObject playerSelection;
-    public GameObject[] character1Text, character2Text, character3Text;
+    public GameObject[] character1Text, character2Text;
     public TextMeshProUGUI theme1Character1, theme2Character1, theme3Character1, theme4Character1, theme5Character1;
     public TextMeshProUGUI theme1Character2, theme2Character2, theme3Character2, theme4Character2, theme5Character2;
-    public TextMeshProUGUI theme1Character3, theme2Character3, theme3Character3, theme4Character3, theme5Character3;
     private bool hasPlayerSelected = false;
 
     private bool isDialogueFinished = false;
@@ -185,13 +184,12 @@ public class LorryTruckDiscussion : MonoBehaviour {
 
             StartCoroutine(Type());
 
-            if (index == 1) {
-                animUndecided.SetTrigger("Idle");
+            if (index == 0) {
                 animPro.SetTrigger("Triggered");
                 //proAnimationBubble.SetActive(true);
             }
 
-            if (index == 2) {
+            if (index == 1) {
                 animPro.SetTrigger("Idle");
                 animAnti.SetTrigger("Triggered");
 
@@ -199,7 +197,7 @@ public class LorryTruckDiscussion : MonoBehaviour {
                 //antiAnimationBubble.SetActive(true);
             }
 
-            if (index == 3) {
+            if (index == 2) {
                 animAnti.SetTrigger("Idle");
                 animUndecided.SetTrigger("Triggered");
 
@@ -234,10 +232,8 @@ public class LorryTruckDiscussion : MonoBehaviour {
 
                 character1Text[0].SetActive(true);
                 character2Text[0].SetActive(true);
-                character3Text[0].SetActive(true);
                 theme1Character1.text = "Why select a national trucker with a big mouth demanding much and working little, instead of a hard-working  driver from Eastern Europe that does not complain about working over time?";
                 theme1Character2.text = "Europe is very good for the happy few at the top of international companies, but not for those who have to make their living in those companies.";
-                theme1Character3.text = "Europe is good for profits of Mediamarkt, IKEA and LIDL. They bring work.";
 
                 proCharacter.SetActive(true);
                 antiCharacter.SetActive(true);
@@ -257,7 +253,6 @@ public class LorryTruckDiscussion : MonoBehaviour {
             hasPlayerSelected = false;
             character1Text[0].SetActive(false);
             character2Text[0].SetActive(false);
-            character3Text[0].SetActive(false);
             playerSelection.SetActive(false);
             proCharacter.SetActive(false);
             antiCharacter.SetActive(false);
@@ -285,13 +280,13 @@ public class LorryTruckDiscussion : MonoBehaviour {
 
             StartCoroutine(Type());
 
-            if (index == 1) {
+            if (index == 0) {
                 animUndecided.SetTrigger("Idle");
                 animPro.SetTrigger("Triggered");
                 //proAnimationBubble.SetActive(true);
             }
 
-            if (index == 2) {
+            if (index == 1) {
                 animPro.SetTrigger("Idle");
                 animAnti.SetTrigger("Triggered");
 
@@ -299,7 +294,7 @@ public class LorryTruckDiscussion : MonoBehaviour {
                 //antiAnimationBubble.SetActive(true);
             }
 
-            if (index == 3) {
+            if (index == 2) {
                 animAnti.SetTrigger("Idle");
                 animUndecided.SetTrigger("Triggered");
 
@@ -330,11 +325,9 @@ public class LorryTruckDiscussion : MonoBehaviour {
                 playerSelection.SetActive(true);
                 character1Text[1].SetActive(true);
                 character2Text[1].SetActive(true);
-                character3Text[1].SetActive(true);
 
                 theme2Character1.text = "What's the problem with having others do our hard work? Isn't it the ultimate dream to sit at home and do nothing? The only problem is that the government isn't able to make the national citizen profit.";
                 theme2Character2.text = "Foreign drivers are being hosted. And what do you get if more drivers sit together? They go out to drink and then start driving.";
-                theme2Character3.text = "The company directors have their villas renovated by Polish workers who drive in brand new mini vans, construction markets are crowded and even open on Sundays for them. But who's fault is that?";
 
                 proCharacter.SetActive(true);
                 antiCharacter.SetActive(true);
@@ -352,7 +345,6 @@ public class LorryTruckDiscussion : MonoBehaviour {
             hasPlayerSelected = false;
             character1Text[1].SetActive(false);
             character2Text[1].SetActive(false);
-            character3Text[1].SetActive(false);
             playerSelection.SetActive(false);
             proCharacter.SetActive(false);
             antiCharacter.SetActive(false);
@@ -379,13 +371,13 @@ public class LorryTruckDiscussion : MonoBehaviour {
 
             StartCoroutine(Type());
 
-            if (index == 1) {
+            if (index == 0) {
                 animUndecided.SetTrigger("Idle");
                 animPro.SetTrigger("Triggered");
                 //proAnimationBubble.SetActive(true);
             }
 
-            if (index == 2) {
+            if (index == 1) {
                 animPro.SetTrigger("Idle");
                 animAnti.SetTrigger("Triggered");
 
@@ -393,7 +385,7 @@ public class LorryTruckDiscussion : MonoBehaviour {
                 //antiAnimationBubble.SetActive(true);
             }
 
-            if (index == 3) {
+            if (index == 2) {
                 animAnti.SetTrigger("Idle");
                 animUndecided.SetTrigger("Triggered");
 
@@ -423,11 +415,9 @@ public class LorryTruckDiscussion : MonoBehaviour {
                 playerSelection.SetActive(true);
                 character1Text[2].SetActive(true);
                 character2Text[2].SetActive(true);
-                character3Text[2].SetActive(true);
 
                 theme3Character1.text = "There is a huge shortage of drivers. People from Eastern Europe want to do the work.";
                 theme3Character2.text = "All profits go to private companies; all costs go to society and are paid by us taxpayers.";
-                theme3Character3.text = "It's not a black and white situation people.";
 
                 proCharacter.SetActive(true);
                 antiCharacter.SetActive(true);
@@ -445,7 +435,6 @@ public class LorryTruckDiscussion : MonoBehaviour {
             hasPlayerSelected = false;
             character1Text[2].SetActive(false);
             character2Text[2].SetActive(false);
-            character3Text[2].SetActive(false);
             playerSelection.SetActive(false);
             proCharacter.SetActive(false);
             antiCharacter.SetActive(false);
@@ -472,13 +461,13 @@ public class LorryTruckDiscussion : MonoBehaviour {
 
             StartCoroutine(Type());
 
-            if (index == 1) {
+            if (index == 0) {
                 animUndecided.SetTrigger("Idle");
                 animPro.SetTrigger("Triggered");
                 //proAnimationBubble.SetActive(true);
             }
 
-            if (index == 2) {
+            if (index == 1) {
                 animPro.SetTrigger("Idle");
                 animAnti.SetTrigger("Triggered");
 
@@ -486,7 +475,7 @@ public class LorryTruckDiscussion : MonoBehaviour {
                 //antiAnimationBubble.SetActive(true);
             }
 
-            if (index == 3) {
+            if (index == 2) {
                 animAnti.SetTrigger("Idle");
                 animUndecided.SetTrigger("Triggered");
 
@@ -516,11 +505,9 @@ public class LorryTruckDiscussion : MonoBehaviour {
                 playerSelection.SetActive(true);
                 character1Text[3].SetActive(true);
                 character2Text[3].SetActive(true);
-                character3Text[3].SetActive(true);
 
                 theme4Character1.text = "We 'lost' a lot of materials when we worked with national truckers (that were later sold on the black market without punishing them for that)… since we work with foreign drivers this has not happened anymore.";
                 theme4Character2.text = "The Dutch are paying taxes for maintaining our highways so that Polish workers do not suffer back pains.";
-                theme4Character3.text = "I look forward to hearing what the Minister is going to do about the thousands of jobs in the transport sector that have already been sacrificed to cheap profit. We read daily in the newspaper about the exploitation of Eastern European drivers, sham constructions and post office box companies.";
 
                 proCharacter.SetActive(true);
                 antiCharacter.SetActive(true);
@@ -538,7 +525,6 @@ public class LorryTruckDiscussion : MonoBehaviour {
             hasPlayerSelected = false;
             character1Text[3].SetActive(false);
             character2Text[3].SetActive(false);
-            character3Text[3].SetActive(false);
             playerSelection.SetActive(false);
             proCharacter.SetActive(false);
             antiCharacter.SetActive(false);
@@ -567,13 +553,13 @@ public class LorryTruckDiscussion : MonoBehaviour {
 
             StartCoroutine(Type());
 
-            if (index == 1) {
+            if (index == 0) {
                 animUndecided.SetTrigger("Idle");
                 animPro.SetTrigger("Triggered");
                 //proAnimationBubble.SetActive(true);
             }
 
-            if (index == 2) {
+            if (index == 1) {
                 animPro.SetTrigger("Idle");
                 animAnti.SetTrigger("Triggered");
 
@@ -581,7 +567,7 @@ public class LorryTruckDiscussion : MonoBehaviour {
                 //antiAnimationBubble.SetActive(true);
             }
 
-            if (index == 3) {
+            if (index == 2) {
                 animAnti.SetTrigger("Idle");
                 animUndecided.SetTrigger("Triggered");
 
@@ -611,11 +597,9 @@ public class LorryTruckDiscussion : MonoBehaviour {
                 playerSelection.SetActive(true);
                 character1Text[4].SetActive(true);
                 character2Text[4].SetActive(true);
-                character3Text[4].SetActive(true);
 
                 theme5Character1.text = "There will no longer be a cheap Eastern European trucker. New rules on which the European Parliament recently reached agreement will also bring their wages up to a competitive level.";
                 theme5Character2.text = "Win win situation?? Not for us! When I started working, I was home every weekend. Not anymore. The Netherlands are going down the drain thanks to politics, the EU and the future.";
-                theme5Character3.text = "Keep in mind they drink out of boredom if they drive through Europe for six to eight weeks at a time.";
 
                 proCharacter.SetActive(true);
                 antiCharacter.SetActive(true);
@@ -633,7 +617,6 @@ public class LorryTruckDiscussion : MonoBehaviour {
             hasPlayerSelected = false;
             character1Text[4].SetActive(false);
             character2Text[4].SetActive(false);
-            character3Text[4].SetActive(false);
             playerSelection.SetActive(false);
             proCharacter.SetActive(false);
             antiCharacter.SetActive(false);

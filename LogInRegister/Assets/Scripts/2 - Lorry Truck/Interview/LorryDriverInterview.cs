@@ -5,14 +5,14 @@ using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 using TMPro;
 
-public class DirectorInterview : MonoBehaviour
+public class LorryDriverInterview : MonoBehaviour
 {
     //initial starting canvas
     public GameObject startCanvas;
 
     //after START is selected from the Start Canvas, this canvas will appear
-    public GameObject themeSelectionCanvas;
-    public GameObject themeSelectionContinueButton;
+    public GameObject questionSelectionCanvas;
+    public GameObject questionSelectionContinueButton;
     //public GameObject themeDefinitionCanvas;
 
     public GameObject interviewCanvas;
@@ -33,17 +33,17 @@ public class DirectorInterview : MonoBehaviour
     public GameObject continueButton;
 
     //themes from selection, used to disabled each button
-    public Button question1Button, question2Button, question3Button, question4Button, question5Button, question6Button, question7Button, question8Button,
-                  question9Button, question10Button, question11Button, question12Button, question13Button, question14Button, question15Button;
+    public Button question1Button, question2Button, question3Button, question4Button, question5Button, question6Button, question7Button, question8Button;
 
     //each time a continue button is pressed the counter goes down
     public int interviewCounter;
     public int secondCounter;
 
     //PlayerPrefs
-    public string directorInterview = "DirectorInterview";
+    public string lorryDriverInterview = "LorryDriverInterview";
     //public static string proInterviewStatements;
     public TextMeshProUGUI chosenTextDisplay;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -74,7 +74,7 @@ public class DirectorInterview : MonoBehaviour
 
         if (secondCounter <= 0) {
             Debug.Log("You have answered 3 questions! If you wish, you may proceed and collect more statements but this will not affect your score.");
-            themeSelectionContinueButton.SetActive(true);
+            questionSelectionContinueButton.SetActive(true);
         }
     }
 
@@ -97,18 +97,18 @@ public class DirectorInterview : MonoBehaviour
 
     public void RankedStatements() {
         rankingCanvas.SetActive(false);
-        themeSelectionCanvas.SetActive(true);
+        questionSelectionCanvas.SetActive(true);
 
         secondCounter -= 1;
     }
 
     public void ScoreAndFeedback() {
-        themeSelectionCanvas.SetActive(false);
+        questionSelectionCanvas.SetActive(false);
 
         scoreCanvas.SetActive(true);
         feedbackCanvas.SetActive(true);
-        chosenTextDisplay.text = PlayerPrefs.GetString(directorInterview);
-        Debug.Log(PlayerPrefs.GetString(directorInterview).ToString());
+        chosenTextDisplay.text = PlayerPrefs.GetString(lorryDriverInterview);
+        Debug.Log(PlayerPrefs.GetString(lorryDriverInterview).ToString());
     }
 
     public void CounterDown() {
@@ -120,7 +120,7 @@ public class DirectorInterview : MonoBehaviour
             textDisplay.text += letter; //letter by letter type animation of the text, more animations can be added via the Animate tab
 
             //Setting of PlayerPrefs----------------------------
-            PlayerPrefs.SetString(directorInterview, sentences[index]);
+            PlayerPrefs.SetString(lorryDriverInterview, sentences[index]);
             //------------------------------------------------
 
             yield return new WaitForSeconds(typingSpeed);
@@ -131,7 +131,7 @@ public class DirectorInterview : MonoBehaviour
     //attach one of the first three issue for the inspector shouldn't matter which one you put in
     public void QuestionsAppear() {
         startCanvas.SetActive(false);
-        themeSelectionCanvas.SetActive(true);
+        questionSelectionCanvas.SetActive(true);
     }
 
     public void NextSentence() {
@@ -148,8 +148,7 @@ public class DirectorInterview : MonoBehaviour
             rankingCanvas.SetActive(false);
 
             StartCoroutine(Type());
-        }
-        else { //if there is no more dialogue the continue button isn't active and no text will appear
+        } else { //if there is no more dialogue the continue button isn't active and no text will appear
             textDisplay.text = "";
             continueButton.SetActive(false);
 
@@ -162,7 +161,16 @@ public class DirectorInterview : MonoBehaviour
 
     public void Question1() {
         question1Button.interactable = false;
-        themeSelectionCanvas.SetActive(false);
+        questionSelectionCanvas.SetActive(false);
+
+        interviewCanvas.SetActive(true);
+
+        StartCoroutine(Type());
+    }
+
+    public void Question2() {
+        question2Button.interactable = false;
+        questionSelectionCanvas.SetActive(false);
 
         interviewCanvas.SetActive(true);
         Debug.Log("Decoy statement.");
@@ -170,18 +178,9 @@ public class DirectorInterview : MonoBehaviour
         StartCoroutine(Type());
     }
 
-    public void Question2() {
-        question2Button.interactable = false;
-        themeSelectionCanvas.SetActive(false);
-
-        interviewCanvas.SetActive(true);
-
-        StartCoroutine(Type());
-    }
-
     public void Question3() {
         question3Button.interactable = false;
-        themeSelectionCanvas.SetActive(false);
+        questionSelectionCanvas.SetActive(false);
 
         interviewCanvas.SetActive(true);
 
@@ -190,7 +189,7 @@ public class DirectorInterview : MonoBehaviour
 
     public void Question4() {
         question4Button.interactable = false;
-        themeSelectionCanvas.SetActive(false);
+        questionSelectionCanvas.SetActive(false);
 
         interviewCanvas.SetActive(true);
 
@@ -199,17 +198,16 @@ public class DirectorInterview : MonoBehaviour
 
     public void Question5() {
         question5Button.interactable = false;
-        themeSelectionCanvas.SetActive(false);
+        questionSelectionCanvas.SetActive(false);
 
         interviewCanvas.SetActive(true);
-        Debug.Log("Decoy statement.");
 
         StartCoroutine(Type());
     }
 
     public void Question6() {
         question6Button.interactable = false;
-        themeSelectionCanvas.SetActive(false);
+        questionSelectionCanvas.SetActive(false);
 
         interviewCanvas.SetActive(true);
         Debug.Log("Decoy statement.");
@@ -219,9 +217,10 @@ public class DirectorInterview : MonoBehaviour
 
     public void Question7() {
         question7Button.interactable = false;
-        themeSelectionCanvas.SetActive(false);
+        questionSelectionCanvas.SetActive(false);
 
         interviewCanvas.SetActive(true);
+        Debug.Log("Decoy statement.");
 
         StartCoroutine(Type());
 
@@ -229,74 +228,9 @@ public class DirectorInterview : MonoBehaviour
 
     public void Question8() {
         question8Button.interactable = false;
-        themeSelectionCanvas.SetActive(false);
+        questionSelectionCanvas.SetActive(false);
 
         interviewCanvas.SetActive(true);
-
-        StartCoroutine(Type());
-    }
-
-    public void Question9() {
-        question9Button.interactable = false;
-        themeSelectionCanvas.SetActive(false);
-
-        interviewCanvas.SetActive(true);
-
-        StartCoroutine(Type());
-    }
-
-    public void Question10() {
-        question10Button.interactable = false;
-        themeSelectionCanvas.SetActive(false);
-
-        interviewCanvas.SetActive(true);
-
-        StartCoroutine(Type());
-    }
-
-    public void Question11() {
-        question11Button.interactable = false;
-        themeSelectionCanvas.SetActive(false);
-
-        interviewCanvas.SetActive(true);
-
-        StartCoroutine(Type());
-    }
-
-    public void Question12() {
-        question12Button.interactable = false;
-        themeSelectionCanvas.SetActive(false);
-
-        interviewCanvas.SetActive(true);
-
-        StartCoroutine(Type());
-    }
-
-    public void Question13() {
-        question13Button.interactable = false;
-        themeSelectionCanvas.SetActive(false);
-
-        interviewCanvas.SetActive(true);
-        Debug.Log("Decoy statement.");
-
-        StartCoroutine(Type());
-    }
-
-    public void Question14() {
-        question14Button.interactable = false;
-        themeSelectionCanvas.SetActive(false);
-
-        interviewCanvas.SetActive(true);
-
-        StartCoroutine(Type());
-    }
-
-    public void Question15() {
-        question15Button.interactable = false;
-        themeSelectionCanvas.SetActive(false);
-
-        interviewCanvas.SetActive(true);
-        Debug.Log("Decoy statement.");
 
         StartCoroutine(Type());
     }

@@ -11,8 +11,8 @@ public class AttitudesNewsflash : MonoBehaviour
 
     private int selection = 0; //do this after each time they select the CONTINUE button the Feedback Canvas.
 
-    public GameObject statement1, statement2, statement3, statement4, statement5, statement6, statement7, statement8, statement9, statement10, statement11, statement12, statement13;
-    public GameObject statement1Continue, statement2Continue, statement3Continue, statement4Continue, statement5Continue, statement6Continue, statement7Continue, statement8Continue, statement9Continue, statement10Continue, statement11Continue, statement12Continue, statement13Continue;
+    public GameObject statement1, statement2, statement3, statement4, statement5, statement6, statement7, statement8, statement9, statement10, statement11, statement12, statement13, statement14, statement15;
+    public GameObject statement1Continue, statement2Continue, statement3Continue, statement4Continue, statement5Continue, statement6Continue, statement7Continue, statement8Continue, statement9Continue, statement10Continue, statement11Continue, statement12Continue, statement13Continue, statement14Continue, statement15Continue;
     public GameObject correct, incorrect;
 
     // Start is called before the first frame update
@@ -28,7 +28,7 @@ public class AttitudesNewsflash : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (selection == 13) {
+        if (selection == 16) {
             //go to feedback screen
             //feedback.SetActive(true);
             //ogCanvas.SetActive(false);
@@ -164,6 +164,22 @@ public class AttitudesNewsflash : MonoBehaviour
         selection++;
     }
 
+    public void Statement14() {
+        statement13Continue.SetActive(false);
+        feedbackCanvas.SetActive(false);
+        newsflashCanvas.SetActive(true);
+        statement13.SetActive(false);
+        statement14.SetActive(true); 
+        selection++;
+    }
+    public void Statement15(){
+        statement14Continue.SetActive(false);
+        feedbackCanvas.SetActive(false);
+        newsflashCanvas.SetActive(true);
+        statement14.SetActive(false);
+        statement15.SetActive(true); 
+        selection++;
+    }
     //---------------------------------------------------------------------------------------------
     /*
      * Going to simplify this down at a later date, for the moment this way has been taken
@@ -388,5 +404,41 @@ public class AttitudesNewsflash : MonoBehaviour
         correct.SetActive(false);
         incorrect.SetActive(true);
         statement13Continue.SetActive(true);
+    }
+    public void Statement14Correct()
+    {
+        //Jobs & Economy
+        //newsflashCanvas.SetActive(false);
+        feedbackCanvas.SetActive(true);
+        correct.SetActive(true);
+        incorrect.SetActive(false);
+        statement14Continue.SetActive(true);
+    }
+
+    public void Statement14Incorrect()
+    {
+        //newsflashCanvas.SetActive(false);
+        feedbackCanvas.SetActive(true);
+        correct.SetActive(false);
+        incorrect.SetActive(true);
+        statement14Continue.SetActive(true);
+    }
+    public void Statement15Correct()
+    {
+        //Jobs & Economy
+        //newsflashCanvas.SetActive(false);
+        feedbackCanvas.SetActive(true);
+        correct.SetActive(true);
+        incorrect.SetActive(false);
+        statement15Continue.SetActive(true);
+    }
+
+    public void Statement15Incorrect()
+    {
+        //newsflashCanvas.SetActive(false);
+        feedbackCanvas.SetActive(true);
+        correct.SetActive(false);
+        incorrect.SetActive(true);
+        statement15Continue.SetActive(true);
     }
 }

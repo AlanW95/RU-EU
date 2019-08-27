@@ -184,10 +184,10 @@ public class LorryTruckDiscussion : MonoBehaviour {
 
             StartCoroutine(Type());
 
-            if (index == 0) {
+            /*if (index == 0) {
                 animPro.SetTrigger("Triggered");
                 //proAnimationBubble.SetActive(true);
-            }
+            }*/
 
             if (index == 1) {
                 animPro.SetTrigger("Idle");
@@ -195,6 +195,10 @@ public class LorryTruckDiscussion : MonoBehaviour {
 
                 //proAnimationBubble.SetActive(false);
                 //antiAnimationBubble.SetActive(true);
+            } else {
+                if (index == 0) {
+                    animPro.SetTrigger("Triggered");
+                }
             }
 
             if (index == 2) {
@@ -203,8 +207,11 @@ public class LorryTruckDiscussion : MonoBehaviour {
 
                 //antiAnimationBubble.SetActive(false);
                 //undecidedAnimationBubble.SetActive(true);
+            } else {
+                if (index == 0) {
+                    animPro.SetTrigger("Triggered");
+                }
             }
-
         } else {
             statementTextDisplay.text = "";
             continueButton.SetActive(false);
@@ -280,11 +287,11 @@ public class LorryTruckDiscussion : MonoBehaviour {
 
             StartCoroutine(Type());
 
-            if (index == 0) {
+            /*if (index == 0) {
                 animUndecided.SetTrigger("Idle");
                 animPro.SetTrigger("Triggered");
                 //proAnimationBubble.SetActive(true);
-            }
+            }*/
 
             if (index == 1) {
                 animPro.SetTrigger("Idle");
@@ -292,6 +299,10 @@ public class LorryTruckDiscussion : MonoBehaviour {
 
                 //proAnimationBubble.SetActive(false);
                 //antiAnimationBubble.SetActive(true);
+            } else {
+                if (index == 0) {
+                    animPro.SetTrigger("Triggered");
+                }
             }
 
             if (index == 2) {
@@ -300,6 +311,10 @@ public class LorryTruckDiscussion : MonoBehaviour {
 
                 //antiAnimationBubble.SetActive(false);
                 //undecidedAnimationBubble.SetActive(true);
+            } else {
+                if (index == 0) {
+                    animPro.SetTrigger("Triggered");
+                }
             }
 
         } else {
@@ -371,11 +386,11 @@ public class LorryTruckDiscussion : MonoBehaviour {
 
             StartCoroutine(Type());
 
-            if (index == 0) {
+            /*if (index == 0) {
                 animUndecided.SetTrigger("Idle");
                 animPro.SetTrigger("Triggered");
                 //proAnimationBubble.SetActive(true);
-            }
+            }*/
 
             if (index == 1) {
                 animPro.SetTrigger("Idle");
@@ -383,6 +398,10 @@ public class LorryTruckDiscussion : MonoBehaviour {
 
                 //proAnimationBubble.SetActive(false);
                 //antiAnimationBubble.SetActive(true);
+            } else {
+                if (index == 0) {
+                    animPro.SetTrigger("Triggered");
+                }
             }
 
             if (index == 2) {
@@ -391,6 +410,10 @@ public class LorryTruckDiscussion : MonoBehaviour {
 
                 //antiAnimationBubble.SetActive(false);
                 //undecidedAnimationBubble.SetActive(true);
+            } else {
+                if (index == 0) {
+                    animPro.SetTrigger("Triggered");
+                }
             }
         } else {
             statementTextDisplay.text = "";
@@ -461,11 +484,11 @@ public class LorryTruckDiscussion : MonoBehaviour {
 
             StartCoroutine(Type());
 
-            if (index == 0) {
+            /*if (index == 0) {
                 animUndecided.SetTrigger("Idle");
                 animPro.SetTrigger("Triggered");
                 //proAnimationBubble.SetActive(true);
-            }
+            }*/
 
             if (index == 1) {
                 animPro.SetTrigger("Idle");
@@ -473,6 +496,10 @@ public class LorryTruckDiscussion : MonoBehaviour {
 
                 //proAnimationBubble.SetActive(false);
                 //antiAnimationBubble.SetActive(true);
+            } else {
+                if (index == 0) {
+                    animPro.SetTrigger("Triggered");
+                }
             }
 
             if (index == 2) {
@@ -481,6 +508,10 @@ public class LorryTruckDiscussion : MonoBehaviour {
 
                 //antiAnimationBubble.SetActive(false);
                 //undecidedAnimationBubble.SetActive(true);
+            } else {
+                if (index == 0) {
+                    animPro.SetTrigger("Triggered");
+                }
             }
         } else {
             statementTextDisplay.text = "";
@@ -553,11 +584,11 @@ public class LorryTruckDiscussion : MonoBehaviour {
 
             StartCoroutine(Type());
 
-            if (index == 0) {
+            /*if (index == 0) {
                 animUndecided.SetTrigger("Idle");
                 animPro.SetTrigger("Triggered");
                 //proAnimationBubble.SetActive(true);
-            }
+            }*/
 
             if (index == 1) {
                 animPro.SetTrigger("Idle");
@@ -565,6 +596,10 @@ public class LorryTruckDiscussion : MonoBehaviour {
 
                 //proAnimationBubble.SetActive(false);
                 //antiAnimationBubble.SetActive(true);
+            } else {
+                if (index == 0) {
+                    animPro.SetTrigger("Triggered");
+                }
             }
 
             if (index == 2) {
@@ -573,6 +608,10 @@ public class LorryTruckDiscussion : MonoBehaviour {
 
                 //antiAnimationBubble.SetActive(false);
                 //undecidedAnimationBubble.SetActive(true);
+            } else {
+                if (index == 0) {
+                    animPro.SetTrigger("Triggered");
+                }
             }
         } else {
             statementTextDisplay.text = "";

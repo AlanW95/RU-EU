@@ -62,12 +62,12 @@ public class DiscussionSelectionLorryTruck : MonoBehaviour
 
         if (predictorCounter == 1) {
             //add to new PlayerPrefs
-            PlayerPrefs.SetString("NewLorryTruckDiscussion1", "");
+            PlayerPrefs.SetString("NewLorryTruckDiscussion1", statement1.text);
         }
 
         if (predictorCounter == 0) {
             //add to new PlayerPrefs
-            PlayerPrefs.SetString("NewLorryTruckDiscussion2", "");
+            PlayerPrefs.SetString("NewLorryTruckDiscussion2", statement1.text);
         }
     }
 
@@ -82,12 +82,12 @@ public class DiscussionSelectionLorryTruck : MonoBehaviour
 
         if (predictorCounter == 1) {
             //add to new PlayerPrefs
-            PlayerPrefs.SetString("NewLorryTruckDiscussion1", "");
+            PlayerPrefs.SetString("NewLorryTruckDiscussion1", statement2.text);
         }
 
         if (predictorCounter == 0) {
             //add to new PlayerPrefs
-            PlayerPrefs.SetString("NewLorryTruckDiscussion2", "");
+            PlayerPrefs.SetString("NewLorryTruckDiscussion2", statement2.text);
         }
     }
 
@@ -102,12 +102,12 @@ public class DiscussionSelectionLorryTruck : MonoBehaviour
 
         if (predictorCounter == 1) {
             //add to new PlayerPrefs
-            PlayerPrefs.SetString("NewLorryTruckDiscussion1", "");
+            PlayerPrefs.SetString("NewLorryTruckDiscussion1", statement3.text);
         }
 
         if (predictorCounter == 0) {
             //add to new PlayerPrefs
-            PlayerPrefs.SetString("NewLorryTruckDiscussion2", "");
+            PlayerPrefs.SetString("NewLorryTruckDiscussion2", statement3.text);
         }
     }
 
@@ -122,12 +122,12 @@ public class DiscussionSelectionLorryTruck : MonoBehaviour
 
         if (predictorCounter == 1) {
             //add to new PlayerPrefs
-            PlayerPrefs.SetString("NewLorryTruckDiscussion1", "");
+            PlayerPrefs.SetString("NewLorryTruckDiscussion1", statement4.text);
         }
 
         if (predictorCounter == 0) {
             //add to new PlayerPrefs
-            PlayerPrefs.SetString("NewLorryTruckDiscussion2", "");
+            PlayerPrefs.SetString("NewLorryTruckDiscussion2", statement4.text);
         }
     }
 
@@ -142,12 +142,12 @@ public class DiscussionSelectionLorryTruck : MonoBehaviour
 
         if (predictorCounter == 1) {
             //add to new PlayerPrefs
-            PlayerPrefs.SetString("NewLorryTruckDiscussion1", "");
+            PlayerPrefs.SetString("NewLorryTruckDiscussion1", statement5.text);
         }
 
         if (predictorCounter == 0) {
             //add to new PlayerPrefs
-            PlayerPrefs.SetString("NewLorryTruckDiscussion2", "");
+            PlayerPrefs.SetString("NewLorryTruckDiscussion2", statement5.text);
         }
     }
 }

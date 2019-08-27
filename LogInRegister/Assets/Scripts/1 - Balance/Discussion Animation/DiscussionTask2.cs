@@ -278,7 +278,31 @@ public class DiscussionTask2 : MonoBehaviour
     }*/
 
     public void SocialNextSentence() {
-        continueButton.SetActive(false);
+        task2FullCanvas.SetActive(false);
+
+        contextSocial.SetActive(false);
+
+        //contextEnvironment.SetActive(true); //move this to SocialSelected()
+
+        //we want to give the player the option to choose between options
+        playerSelection.SetActive(true);
+        proText[0].SetActive(true);
+        antiText[0].SetActive(true);
+        socialPro.text = "But most immigrants have integrated well into this village and make a real contribution to village life.";
+        socialAnti.text = "That's so not true! Most of them hang around with the people they came with and don't even try to learn English.";
+        toolBG.SetActive(true);
+
+        proCharacter.SetActive(true);
+        antiCharacter.SetActive(true);
+        undecidedCharacter.SetActive(false);
+        undecidedCharacter.SetActive(false);
+
+        hasPlayerSelected = true; //when the player clicks on the appropriate text it will trigger it to store the information and progress
+
+        animPro.SetTrigger("Triggered");
+        animAnti.SetTrigger("Triggered");
+
+        /*continueButton.SetActive(false);
 
         if (index < discussion2.Length - 1) {
             index++;
@@ -333,34 +357,12 @@ public class DiscussionTask2 : MonoBehaviour
             isSocialFinished = true;
 
             if (isSocialFinished == true) {
-                contextSocial.SetActive(false);
-
-                //contextEnvironment.SetActive(true); //move this to SocialSelected()
-
-                //we want to give the player the option to choose between options
-                playerSelection.SetActive(true);
-
-
-                proText[0].SetActive(true);
-                antiText[0].SetActive(true);
-                socialPro.text = "But most immigrants have integrated well into this village and make a real contribution to village life.";
-                socialAnti.text = "That's so not true! Most of them hang around with the people they came with and don't even try to learn English.";
-
-                proCharacter.SetActive(true);
-                antiCharacter.SetActive(true);
-                undecidedCharacter.SetActive(false);
-                undecidedCharacter.SetActive(false);
-
-                hasPlayerSelected = true; //when the player clicks on the appropriate text it will trigger it to store the information and progress
-
-                animPro.SetTrigger("Triggered");
-                animAnti.SetTrigger("Triggered");
             }
-        }
+        }*/
     }
 
     public void SocialSelected() {
-        if (hasPlayerSelected == true) {
+        //if (hasPlayerSelected == true) {
             hasPlayerSelected = false;
             proText[0].SetActive(false);
             antiText[0].SetActive(false);
@@ -372,12 +374,36 @@ public class DiscussionTask2 : MonoBehaviour
             //store data
             //put into Unity Analytics when available
 
-            contextEnvironment.SetActive(true);
-        }
+            //contextEnvironment.SetActive(true);
+            EnvironmentNextSentence();
+        //}
     }
 
     public void EnvironmentNextSentence() {
-        continueButton.SetActive(false);
+        task2FullCanvas.SetActive(false);
+        
+        contextEnvironment.SetActive(false);
+
+        //contextCivic.SetActive(true); //move to EnvironmentSelected()
+
+        //we want to give the player the option to choose between options
+        playerSelection.SetActive(true);
+        proText[1].SetActive(true);
+        antiText[1].SetActive(true);
+        toolBG.SetActive(true);
+
+        environmentPro.text = "The EU has done a lot to tackle climate change.";
+        environmentAnti.text = "If the EU were effective we wouldn't need extinction revolution.";
+
+        proCharacter.SetActive(true);
+        antiCharacter.SetActive(true);
+        undecidedCharacter.SetActive(false);
+
+        hasPlayerSelected = true; //when the player clicks on the appropriate text it will trigger it to store information and progress
+        animPro.SetTrigger("Triggered");
+        animAnti.SetTrigger("Triggered");
+
+        /*continueButton.SetActive(false);
 
         if (index < discussion2.Length - 1) {
             index++;
@@ -430,31 +456,12 @@ public class DiscussionTask2 : MonoBehaviour
             isEnvironmentFinished = true;
 
             if (isEnvironmentFinished == true) {
-                contextEnvironment.SetActive(false);
-
-                //contextCivic.SetActive(true); //move to EnvironmentSelected()
-
-                //we want to give the player the option to choose between options
-                playerSelection.SetActive(true);
-                proText[1].SetActive(true);
-                antiText[1].SetActive(true);
-
-                environmentPro.text = "The EU has done a lot to tackle climate change.";
-                environmentAnti.text = "If the EU were effective we wouldn't need extinction revolution.";
-
-                proCharacter.SetActive(true);
-                antiCharacter.SetActive(true);
-                undecidedCharacter.SetActive(false);
-
-                hasPlayerSelected = true; //when the player clicks on the appropriate text it will trigger it to store information and progress
-                animPro.SetTrigger("Triggered");
-                animAnti.SetTrigger("Triggered");
             }
-        }
+        }*/
     }
 
     public void EnvironmentSelected() {
-        if (hasPlayerSelected == true) {
+        //if (hasPlayerSelected == true) {
             hasPlayerSelected = false;
             proText[1].SetActive(false);
             antiText[1].SetActive(false);
@@ -465,12 +472,36 @@ public class DiscussionTask2 : MonoBehaviour
 
             //store data
             //put into Unity Analytics when available
-            contextCivic.SetActive(true);
-        }
+            //contextCivic.SetActive(true);
+            CivicNextSentence();
+        //}
     }
 
     public void CivicNextSentence() {
-        continueButton.SetActive(false);
+        task2FullCanvas.SetActive(false);
+
+        contextEnvironment.SetActive(false);
+
+        //contextSafetySecurity.SetActive(true); // move this to CivicSelected()
+
+        //we want to give the player the option to choose between options
+        playerSelection.SetActive(true);
+        proText[2].SetActive(true);
+        antiText[2].SetActive(true);
+        toolBG.SetActive(true);
+
+        rightsResponsibilitiesPro.text = "Being a member of the EU has provided fabulous opportunities for students to travel and study abroad to anyone who wants to take them.";
+        rightsResponsibilitiesAnti.text = "You must be kidding - that is what Brexit is about! There are no opportunities for us ordinary folk, the opportunities are only for those who have money.";
+
+        proCharacter.SetActive(true);
+        antiCharacter.SetActive(true);
+        undecidedCharacter.SetActive(false);
+
+        hasPlayerSelected = true; //when the player clicks on the appropriate text it will trigger it to store the information and progress
+        animPro.SetTrigger("Triggered");
+        animAnti.SetTrigger("Triggered");
+
+        /*continueButton.SetActive(false);
 
         if (index < discussion2.Length - 1) {
             index++;
@@ -522,31 +553,12 @@ public class DiscussionTask2 : MonoBehaviour
             isCivicFinished = true;
 
             if (isCivicFinished == true) {
-                contextEnvironment.SetActive(false);
-
-                //contextSafetySecurity.SetActive(true); // move this to CivicSelected()
-
-                //we want to give the player the option to choose between options
-                playerSelection.SetActive(true);
-                proText[2].SetActive(true);
-                antiText[2].SetActive(true);
-
-                rightsResponsibilitiesPro.text = "Being a member of the EU has provided fabulous opportunities for students to travel and study abroad to anyone who wants to take them.";
-                rightsResponsibilitiesAnti.text = "You must be kidding - that is what Brexit is about! There are no opportunities for us ordinary folk, the opportunities are only for those who have money.";
-
-                proCharacter.SetActive(true);
-                antiCharacter.SetActive(true);
-                undecidedCharacter.SetActive(false);
-
-                hasPlayerSelected = true; //when the player clicks on the appropriate text it will trigger it to store the information and progress
-                animPro.SetTrigger("Triggered");
-                animAnti.SetTrigger("Triggered");
             }
-        }
+        }*/
     }
 
     public void CivicSelected() {
-        if (hasPlayerSelected == true) {
+        //if (hasPlayerSelected == true) {
             hasPlayerSelected = false;
             proText[2].SetActive(false);
             antiText[2].SetActive(false);
@@ -557,12 +569,34 @@ public class DiscussionTask2 : MonoBehaviour
 
             //store data
             //put into Unity Analytics when available
-            contextSafetySecurity.SetActive(true);
-        }
+            //contextSafetySecurity.SetActive(true);
+            SafetyAndSecurityNextSentence();
+        //}
     }
 
     public void SafetyAndSecurityNextSentence() {
-        continueButton.SetActive(false);
+        task2FullCanvas.SetActive(false);
+
+        contextSafetySecurity.SetActive(false);
+
+        //we want to give the player the option to choose between options
+        playerSelection.SetActive(true);
+        proText[3].SetActive(true);
+        antiText[3].SetActive(true);
+        toolBG.SetActive(true);
+
+        safetySecurityPro.text = "For me, one of the main benefits of EU membership has been to prevent war between the nations of Europe.";
+        safetySecurityAnti.text = "But there's still lots of tensions between the nations of Europe. It's only a matter of time before serious trouble kicks off somewhere.";
+
+        proCharacter.SetActive(true);
+        antiCharacter.SetActive(true);
+        undecidedCharacter.SetActive(false);
+
+        hasPlayerSelected = true; //when the player clicks on the appropriate text it will trigger it to store the information and progress
+        animPro.SetTrigger("Triggered");
+        animAnti.SetTrigger("Triggered");
+
+        /*continueButton.SetActive(false);
 
         if (index < discussion2.Length - 1) {
             index++;
@@ -614,29 +648,12 @@ public class DiscussionTask2 : MonoBehaviour
             isSafetyAndSecurityFinished = true;
 
             if (isSafetyAndSecurityFinished == true) {
-                contextSafetySecurity.SetActive(false);
-
-                //we want to give the player the option to choose between options
-                playerSelection.SetActive(true);
-                proText[3].SetActive(true);
-                antiText[3].SetActive(true);
-
-                safetySecurityPro.text = "For me, one of the main benefits of EU membership has been to prevent war between the nations of Europe.";
-                safetySecurityAnti.text = "But there's still lots of tensions between the nations of Europe. It's only a matter of time before serious trouble kicks off somewhere.";
-
-                proCharacter.SetActive(true);
-                antiCharacter.SetActive(true);
-                undecidedCharacter.SetActive(false);
-
-                hasPlayerSelected = true; //when the player clicks on the appropriate text it will trigger it to store the information and progress
-                animPro.SetTrigger("Triggered");
-                animAnti.SetTrigger("Triggered");
             }
-        }
+        }*/
     }
 
     public void SafetyAndSecuritySelected() {
-        if (hasPlayerSelected == true) {
+        //if (hasPlayerSelected == true) {
             hasPlayerSelected = false;
             proText[3].SetActive(false);
             antiText[3].SetActive(false);
@@ -649,12 +666,36 @@ public class DiscussionTask2 : MonoBehaviour
             //put into UnityAnalytics when available
 
             //instead of moving on to the next area, we will give the player feedback at this stage, with a final tool feedback screen.
-            contextEmotional.SetActive(true);
-        }
+            //contextEmotional.SetActive(true);
+            EmotionalNextSentence();
+        //}
     }
 
     public void EmotionalNextSentence() {
-        continueButton.SetActive(false);
+        task2FullCanvas.SetActive(false);
+
+        contextEmotional.SetActive(false);
+
+        //we want to give the player the option to choose between options
+        playerSelection.SetActive(true);
+        proText[4].SetActive(true);
+        antiText[4].SetActive(true);
+        toolBG.SetActive(true);
+
+        emotionalPro.text = "I'm really worried about leaving the EU. It feels like we're turning our backs on the rest of the world.";
+        emotionalAnti.text = "All the people I know are really pleased about leaving Europe. We're planning a street party for when we go.";
+
+        proCharacter.SetActive(true);
+        antiCharacter.SetActive(true);
+        undecidedCharacter.SetActive(false);
+
+        hasPlayerSelected = true; //when the player clicks on the appropriate text it will trigger it to store the information and progress
+        animPro.SetTrigger("Triggered");
+        animAnti.SetTrigger("Triggered");
+
+        //isDialogue1Finished = true;
+
+        /*continueButton.SetActive(false);
 
         if (index < discussion2.Length - 1) {
             index++;
@@ -706,31 +747,12 @@ public class DiscussionTask2 : MonoBehaviour
             isEmotionalFinished = true;
 
             if (isEmotionalFinished == true) {
-                contextEmotional.SetActive(false);
-
-                //we want to give the player the option to choose between options
-                playerSelection.SetActive(true);
-                proText[4].SetActive(true);
-                antiText[4].SetActive(true);
-
-                emotionalPro.text = "I'm really worried about leaving the EU. It feels like we're turning our backs on the rest of the world.";
-                emotionalAnti.text = "All the people I know are really pleased about leaving Europe. We're planning a street party for when we go.";
-
-                proCharacter.SetActive(true);
-                antiCharacter.SetActive(true);
-                undecidedCharacter.SetActive(false);
-
-                hasPlayerSelected = true; //when the player clicks on the appropriate text it will trigger it to store the information and progress
-                animPro.SetTrigger("Triggered");
-                animAnti.SetTrigger("Triggered");
-
-                isDialogue1Finished = true;
             }
-        }
+        }*/
     }
 
     public void EmotionalSelected() {
-        if (hasPlayerSelected == true) {
+        //if (hasPlayerSelected == true) {
             hasPlayerSelected = false;
             proText[4].SetActive(false);
             antiText[4].SetActive(false);
@@ -747,7 +769,7 @@ public class DiscussionTask2 : MonoBehaviour
             //put into UnityAnalytics when available
 
             //instead of moving on to the next area, we will give the player feedback at this stage, with a final tool feedback screen.
-        }
+        //}
     }
 
     //-------------------------------------------------------------------------------
@@ -1360,6 +1382,354 @@ public class DiscussionTask2 : MonoBehaviour
         StartCoroutine(Type());
     }
 
+    //Add these to the Continue button then it takes
+    public void ProSocialSelected()
+    {
+        PlayerPrefs.SetString("BrexitDiscussion1", "But most immigrants have integrated well into this village and make a real contribution to village life.");
+        Debug.Log(PlayerPrefs.GetString("BrexitDiscussion1"));
+
+        discussionCount++;
+        Debug.Log(discussionCount);
+        countdown = 9;
+        Debug.Log("countdown: " + countdown);
+
+        /*if (discussionCount == 1) {
+            PlayerPrefs.SetString("Discussion1", "But most immigrants have integrated well into this village and make a real contribution to village life.");
+            Debug.Log(PlayerPrefs.GetString("Discussion1"));
+        }*/
+    }
+
+    //Add these to the Continue button then it takes
+    public void AntiSocialSelected() {
+
+        PlayerPrefs.SetString("BrexitDiscussion1", "That's so not true! Most of them hang around with the people they came with and don't even try to learn English.");
+        Debug.Log(PlayerPrefs.GetString("BrexitDiscussion1"));
+
+        discussionCount++;
+        Debug.Log(discussionCount);
+        countdown = 9;
+        Debug.Log("countdown: " + countdown);
+
+        /*if (discussionCount == 1) {
+            PlayerPrefs.SetString("Discussion1", "That's so not true! Most of them hang around with the people they came with and don't even try to learn English.");
+            Debug.Log(PlayerPrefs.GetString("Discussion1"));
+        }*/
+    }
+
+    //Add these to the Continue button then it takes
+    public void ProEnvironmentSelected() {
+
+        PlayerPrefs.SetString("BrexitDiscussion2", "The EU has done a lot to tackle climate change.");
+        Debug.Log(PlayerPrefs.GetString("BrexitDiscussion2"));
+
+        discussionCount++;
+        Debug.Log(discussionCount);
+        countdown = 8;
+        Debug.Log("countdown: " + countdown);
+
+        /*if (discussionCount == 2) {
+            PlayerPrefs.SetString("Discussion2", "The EU has done a lot to tackle climate change.");
+            Debug.Log(PlayerPrefs.GetString("Discussion2"));
+        }*/
+    }
+
+    //Add these to the Continue button then it takes
+    public void AntiEnvironmentSelected() {
+
+        PlayerPrefs.SetString("BrexitDiscussion2", "If the EU were effective we wouldn't need extinction revolution.");
+        Debug.Log(PlayerPrefs.GetString("BrexitDiscussion2"));
+
+        discussionCount++;
+        Debug.Log(discussionCount);
+        countdown = 8;
+        Debug.Log("countdown: " + countdown);
+
+        /*if (discussionCount == 2) {
+            PlayerPrefs.SetString("Discussion2", "If the EU were effective we wouldn't need extinction revolution.");
+            Debug.Log(PlayerPrefs.GetString("Discussion2"));
+        }*/
+    }
+
+    //Add these to the Continue button then it takes
+    public void ProRightsAndResponsibilitiesSelected() {
+
+        PlayerPrefs.SetString("BrexitDiscussion3", "Being a member of the EU has provided fabulous opportunities for students to travel and study abroad to anyone who wants to take them.");
+        Debug.Log(PlayerPrefs.GetString("BrexitDiscussion3"));
+
+        discussionCount++;
+        Debug.Log(discussionCount);
+        countdown = 7;
+        Debug.Log("countdown: " + countdown);
+
+        /*if (discussionCount == 3) {
+            PlayerPrefs.SetString("Discussion3", "Being a member of the EU has provided fabulous opportunities for students to travel and study abroad to anyone who wants to take them.");
+            Debug.Log(PlayerPrefs.GetString("Discussion3"));
+        }*/
+    }
+
+    //Add these to the Continue button then it takes
+    public void AntiRightsAndResponsibilitiesSelected() {
+
+        PlayerPrefs.SetString("BrexitDiscussion3", "You must be kidding - that is what Brexit is all about! There are no opportunities for us ordinary folk, the opportunities are only for those who have money.");
+        Debug.Log(PlayerPrefs.GetString("BrexitDiscussion3"));
+
+        discussionCount++;
+        Debug.Log(discussionCount);
+        countdown = 7;
+        Debug.Log("countdown: " + countdown);
+
+        /*if (discussionCount == 3) {
+            PlayerPrefs.SetString("Discussion3", "You must be kidding - that is what Brexit is all about! There are no opportunities for us ordinary folk, the opportunities are only for those who have money.");
+            Debug.Log(PlayerPrefs.GetString("Discussion3"));
+        }*/
+    }
+
+    //Add these to the Continue button then it takes
+    public void ProSafetyAndSecuritySelected() {
+
+        PlayerPrefs.SetString("BrexitDiscussion4", "For me, one of the main benefits of EU membership has been to prevent war between the nations of Europe.");
+        Debug.Log(PlayerPrefs.GetString("BrexitDiscussion4"));
+
+        discussionCount++;
+        Debug.Log(discussionCount);
+        countdown = 6;
+        Debug.Log("countdown: " + countdown);
+
+        /*if (discussionCount == 4) {
+            PlayerPrefs.SetString("Discussion4", "For me, one of the main benefits of EU membership has been to prevent war between the nations of Europe.");
+            Debug.Log(PlayerPrefs.GetString("Discussion4"));
+        }*/
+    }
+
+    //Add these to the Continue button then it takes
+    public void AntiSafetyAndSecuritySelected() {
+
+        PlayerPrefs.SetString("BrexitDiscussion4", "But there's still lots of tensions between the nations of Europe. It's only a matter of time before serious trouble kicks off somewhere.");
+        Debug.Log(PlayerPrefs.GetString("BrexitDiscussion4"));
+
+        discussionCount++;
+        Debug.Log(discussionCount);
+        countdown = 6;
+        Debug.Log("countdown: " + countdown);
+
+        /*if (discussionCount == 4) {
+            PlayerPrefs.SetString("Discussion4", "But there's still lots of tensions between the nations of Europe. It's only a matter of time before serious trouble kicks off somewhere.");
+            Debug.Log(PlayerPrefs.GetString("Discussion4"));
+        }*/
+    }
+
+    //Add these to the Continue button then it takes
+    public void ProEmotionalSelected() {
+
+        PlayerPrefs.SetString("BrexitDiscussion5", "I'm really worried about leaving the EU. It feels like we're turning our backs on the rest of the world.");
+        Debug.Log(PlayerPrefs.GetString("BrexitDiscussion5"));
+
+        discussionCount++;
+        Debug.Log(discussionCount);
+        countdown = 5;
+        Debug.Log("countdown: " + countdown);
+
+        isDialogue1Finished = true;
+
+        /*if (discussionCount == 5) {
+            PlayerPrefs.SetString("Discussion5", "I'm really worried about leaving the EU. It feels like we're turning our backs on the rest of the world.");
+            Debug.Log(PlayerPrefs.GetString("Discussion5"));
+        }*/
+    }
+
+    //Add these to the Continue button then it takes
+    public void AntiEmotionalSelected() {
+
+        PlayerPrefs.SetString("BrexitDiscussion5", "All the people I know are really pleased about leaving Europe. We're planning a street party for when we go.");
+        Debug.Log(PlayerPrefs.GetString("BrexitDiscussion5"));
+
+        discussionCount++;
+        Debug.Log(discussionCount);
+        countdown = 5;
+        Debug.Log("countdown: " + countdown);
+
+        isDialogue1Finished = true;
+
+        /*if (discussionCount == 5) {
+            PlayerPrefs.SetString("Discussion5", "All the people I know are really pleased about leaving Europe. We're planning a street party for when we go.");
+            Debug.Log(PlayerPrefs.GetString("Discussion5"));
+        }*/
+    }
+
+    //Add these to the Continue button then it takes
+    public void ProEconomicSelected() {
+        
+        PlayerPrefs.SetString("BrexitDiscussion6", "After Brexit, the UK economy could be around 6% smaller by 2030 and that would mean a loss of income equivalent to £4,300 a year for every British household.");
+        Debug.Log(PlayerPrefs.GetString("BrexitDiscussion6"));
+
+        discussionCount++;
+        Debug.Log(discussionCount);
+        countdown = 4;
+        Debug.Log("countdown: " + countdown);
+
+        /*if (discussionCount == 6) {
+            PlayerPrefs.SetString("Discussion6", "After Brexit, the UK economy could be around 6% smaller by 2030 and that would mean a loss of income equivalent to £4,300 a year for every British household.");
+            Debug.Log(PlayerPrefs.GetString("Discussion6"));
+        }*/
+    }
+
+    //Add these to the Continue button then it takes
+    public void AntiEconomicSelected() {
+
+        PlayerPrefs.SetString("BrexitDiscussion6", "But once we've left the EU, we'll be able to strike deals with the rest of the world so we'll be fine.");
+        Debug.Log(PlayerPrefs.GetString("BrexitDiscussion6"));
+
+        discussionCount++;
+        Debug.Log(discussionCount);
+        countdown = 4;
+        Debug.Log("countdown: " + countdown);
+
+        /*if (discussionCount == 6) {
+            PlayerPrefs.SetString("Discussion6", "But once we've left the EU, we'll be able to strike deals with the rest of the world so we'll be fine.");
+            Debug.Log(PlayerPrefs.GetString("Discussion6"));
+        }*/
+    }
+
+    //Add these to the Continue button then it takes
+    public void ProPoliticalSelected() {
+
+        PlayerPrefs.SetString("BrexitDiscussion7", "Would you not rather have the Brussels elite in charge than UKIP and Nigel Farage?");
+        Debug.Log(PlayerPrefs.GetString("BrexitDiscussion7"));
+
+        discussionCount++;
+        Debug.Log(discussionCount);
+        countdown = 3;
+        Debug.Log("countdown: " + countdown);
+
+        /*if (discussionCount == 7) {
+            PlayerPrefs.SetString("Discussion7", "Would you not rather have the Brussels elite in charge than UKIP and Nigel Farage?");
+            Debug.Log(PlayerPrefs.GetString("Discussion7"));
+        }*/
+    }
+
+    //Add these to the Continue button then it takes
+    public void AntiPoliticalSelected() {
+
+        PlayerPrefs.SetString("BrexitDiscussion7", "Brussels is far too remote - we need to be making our own laws back here in the UK.");
+        Debug.Log(PlayerPrefs.GetString("BrexitDiscussion7"));
+
+        discussionCount++;
+        Debug.Log(discussionCount);
+        countdown = 3;
+        Debug.Log("countdown: " + countdown);
+
+        /*if (discussionCount == 7) {
+            PlayerPrefs.SetString("Discussion7", "Brussels is far too remote - we need to be making our own laws back here in the UK.");
+            Debug.Log(PlayerPrefs.GetString("Discussion7"));
+        }*/
+    }
+
+    //Add these to the Continue button then it takes
+    public void ProHistoricSelected() {
+
+        PlayerPrefs.SetString("BrexitDiscussion8", "The people who want to go back in time have a very poor knowledge of European history.");
+        Debug.Log(PlayerPrefs.GetString("BrexitDiscussion8"));
+
+        discussionCount++;
+        Debug.Log(discussionCount);
+        countdown = 2;
+        Debug.Log("countdown: " + countdown);
+
+        /*if (discussionCount == 8) {
+            PlayerPrefs.SetString("Discussion8", "The people who want to go back in time have a very poor knowledge of European history.");
+            Debug.Log(PlayerPrefs.GetString("Discussion8"));
+        }*/
+    }
+
+    //Add these to the Continue button then it takes
+    public void AntiHistoricSelected() {
+
+        PlayerPrefs.SetString("BrexitDiscussion8", "The UK has always felt the need to defend itself, which is why the UK doesn't feel very 'European'.");
+        Debug.Log(PlayerPrefs.GetString("BrexitDiscussion8"));
+
+        discussionCount++;
+        Debug.Log(discussionCount);
+        countdown = 2;
+        Debug.Log("countdown: " + countdown);
+
+        /*if (discussionCount == 8) {
+            PlayerPrefs.SetString("Discussion8", "The UK has always felt the need to defend itself, which is why the UK doesn't feel very 'European'.");
+            Debug.Log(PlayerPrefs.GetString("Discussion8"));
+        }*/
+    }
+
+    //Add these to the Continue button then it takes
+    public void ProCultureSelected() {
+
+        PlayerPrefs.SetString("BrexitDiscussion9", "EU grants have funded many projects that contribute to a shared European cultural identity.");
+        Debug.Log(PlayerPrefs.GetString("BrexitDiscussion9"));
+
+        discussionCount++;
+        Debug.Log(discussionCount);
+        countdown = 1;
+        Debug.Log("countdown: " + countdown);
+
+        /*if (discussionCount == 9) {
+            PlayerPrefs.SetString("Discussion9", "EU grants have funded many projects that contribute to a shared European cultural identity.");
+            Debug.Log(PlayerPrefs.GetString("Discussion9"));
+        }*/
+    }
+
+    //Add these to the Continue button then it takes
+    public void AntiCultureSelected() {
+
+        PlayerPrefs.SetString("BrexitDiscussion9", "The European Union represents an unattractive homogenisation of European cultures.");
+        Debug.Log(PlayerPrefs.GetString("BrexitDiscussion9"));
+
+        discussionCount++;
+        Debug.Log(discussionCount);
+        countdown = 1;
+        Debug.Log("countdown: " + countdown);
+
+        /*if (discussionCount == 9) {
+            PlayerPrefs.SetString("Discussion9", "The European Union represents an unattractive homogenisation of European cultures.");
+            Debug.Log(PlayerPrefs.GetString("Discussion9"));
+        }*/
+    }
+
+    //Add these to the Continue button then it takes
+    public void ProGeographySelected() {
+
+        PlayerPrefs.SetString("BrexitDiscussion10", "I have no trouble in thinking of myself as both British and European.");
+        Debug.Log(PlayerPrefs.GetString("BrexitDiscussion10"));
+
+        discussionCount++;
+        Debug.Log(discussionCount);
+        countdown = 0;
+        Debug.Log("countdown: " + countdown);
+
+        isDialogue2Finished = true;
+
+        /*if (discussionCount == 10) {
+            PlayerPrefs.SetString("Discussion10", "I have no trouble in thinking of myself as both British and European.");
+            Debug.Log(PlayerPrefs.GetString("Discussion10"));
+        }*/
+    }
+
+    //Add these to the Continue button then it takes
+    public void AntiGeographySelected() {
+
+        PlayerPrefs.SetString("BrexitDiscussion10", "Being British is much more important to me than being European - I really want a British passport!");
+        Debug.Log(PlayerPrefs.GetString("BrexitDiscussion10"));
+
+        discussionCount++;
+        Debug.Log(discussionCount);
+        countdown = 0;
+        Debug.Log("countdown: " + countdown);
+
+        isDialogue2Finished = true;
+
+        /*if (discussionCount == 10) {
+            PlayerPrefs.SetString("Discussion10", "Being British is much more important to me than being European - I really want a British passport!");
+            Debug.Log(PlayerPrefs.GetString("Discussion10"));
+        }*/
+    }
+
     //----------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
     //This is used for the statement selection at the end of each interview response in order to help store in PlayerPrefs
@@ -1907,352 +2277,4 @@ public class DiscussionTask2 : MonoBehaviour
         //-----------------------------------------------------
 
     }*/
-
-    //Add these to the Continue button then it takes
-    public void ProSocialSelected()
-    {
-        PlayerPrefs.SetString("Discussion1", "But most immigrants have integrated well into this village and make a real contribution to village life.");
-        Debug.Log(PlayerPrefs.GetString("Discussion1"));
-
-        discussionCount++;
-        Debug.Log(discussionCount);
-        countdown = 9;
-        Debug.Log("countdown: " + countdown);
-
-        /*if (discussionCount == 1) {
-            PlayerPrefs.SetString("Discussion1", "But most immigrants have integrated well into this village and make a real contribution to village life.");
-            Debug.Log(PlayerPrefs.GetString("Discussion1"));
-        }*/
-    }
-
-    //Add these to the Continue button then it takes
-    public void AntiSocialSelected() {
-
-        PlayerPrefs.SetString("Discussion1", "That's so not true! Most of them hang around with the people they came with and don't even try to learn English.");
-        Debug.Log(PlayerPrefs.GetString("Discussion1"));
-
-        discussionCount++;
-        Debug.Log(discussionCount);
-        countdown = 9;
-        Debug.Log("countdown: " + countdown);
-
-        /*if (discussionCount == 1) {
-            PlayerPrefs.SetString("Discussion1", "That's so not true! Most of them hang around with the people they came with and don't even try to learn English.");
-            Debug.Log(PlayerPrefs.GetString("Discussion1"));
-        }*/
-    }
-
-    //Add these to the Continue button then it takes
-    public void ProEnvironmentSelected() {
-
-        PlayerPrefs.SetString("Discussion2", "The EU has done a lot to tackle climate change.");
-        Debug.Log(PlayerPrefs.GetString("Discussion2"));
-
-        discussionCount++;
-        Debug.Log(discussionCount);
-        countdown = 8;
-        Debug.Log("countdown: " + countdown);
-
-        /*if (discussionCount == 2) {
-            PlayerPrefs.SetString("Discussion2", "The EU has done a lot to tackle climate change.");
-            Debug.Log(PlayerPrefs.GetString("Discussion2"));
-        }*/
-    }
-
-    //Add these to the Continue button then it takes
-    public void AntiEnvironmentSelected() {
-
-        PlayerPrefs.SetString("Discussion2", "If the EU were effective we wouldn't need extinction revolution.");
-        Debug.Log(PlayerPrefs.GetString("Discussion2"));
-
-        discussionCount++;
-        Debug.Log(discussionCount);
-        countdown = 8;
-        Debug.Log("countdown: " + countdown);
-
-        /*if (discussionCount == 2) {
-            PlayerPrefs.SetString("Discussion2", "If the EU were effective we wouldn't need extinction revolution.");
-            Debug.Log(PlayerPrefs.GetString("Discussion2"));
-        }*/
-    }
-
-    //Add these to the Continue button then it takes
-    public void ProRightsAndResponsibilitiesSelected() {
-
-        PlayerPrefs.SetString("Discussion3", "Being a member of the EU has provided fabulous opportunities for students to travel and study abroad to anyone who wants to take them.");
-        Debug.Log(PlayerPrefs.GetString("Discussion3"));
-
-        discussionCount++;
-        Debug.Log(discussionCount);
-        countdown = 7;
-        Debug.Log("countdown: " + countdown);
-
-        /*if (discussionCount == 3) {
-            PlayerPrefs.SetString("Discussion3", "Being a member of the EU has provided fabulous opportunities for students to travel and study abroad to anyone who wants to take them.");
-            Debug.Log(PlayerPrefs.GetString("Discussion3"));
-        }*/
-    }
-
-    //Add these to the Continue button then it takes
-    public void AntiRightsAndResponsibilitiesSelected() {
-
-        PlayerPrefs.SetString("Discussion3", "You must be kidding - that is what Brexit is all about! There are no opportunities for us ordinary folk, the opportunities are only for those who have money.");
-        Debug.Log(PlayerPrefs.GetString("Discussion3"));
-
-        discussionCount++;
-        Debug.Log(discussionCount);
-        countdown = 7;
-        Debug.Log("countdown: " + countdown);
-
-        /*if (discussionCount == 3) {
-            PlayerPrefs.SetString("Discussion3", "You must be kidding - that is what Brexit is all about! There are no opportunities for us ordinary folk, the opportunities are only for those who have money.");
-            Debug.Log(PlayerPrefs.GetString("Discussion3"));
-        }*/
-    }
-
-    //Add these to the Continue button then it takes
-    public void ProSafetyAndSecuritySelected() {
-
-        PlayerPrefs.SetString("Discussion4", "For me, one of the main benefits of EU membership has been to prevent war between the nations of Europe.");
-        Debug.Log(PlayerPrefs.GetString("Discussion4"));
-
-        discussionCount++;
-        Debug.Log(discussionCount);
-        countdown = 6;
-        Debug.Log("countdown: " + countdown);
-
-        /*if (discussionCount == 4) {
-            PlayerPrefs.SetString("Discussion4", "For me, one of the main benefits of EU membership has been to prevent war between the nations of Europe.");
-            Debug.Log(PlayerPrefs.GetString("Discussion4"));
-        }*/
-    }
-
-    //Add these to the Continue button then it takes
-    public void AntiSafetyAndSecuritySelected() {
-
-        PlayerPrefs.SetString("Discussion4", "But there's still lots of tensions between the nations of Europe. It's only a matter of time before serious trouble kicks off somewhere.");
-        Debug.Log(PlayerPrefs.GetString("Discussion4"));
-
-        discussionCount++;
-        Debug.Log(discussionCount);
-        countdown = 6;
-        Debug.Log("countdown: " + countdown);
-
-        /*if (discussionCount == 4) {
-            PlayerPrefs.SetString("Discussion4", "But there's still lots of tensions between the nations of Europe. It's only a matter of time before serious trouble kicks off somewhere.");
-            Debug.Log(PlayerPrefs.GetString("Discussion4"));
-        }*/
-    }
-
-    //Add these to the Continue button then it takes
-    public void ProEmotionalSelected() {
-
-        PlayerPrefs.SetString("Discussion5", "I'm really worried about leaving the EU. It feels like we're turning our backs on the rest of the world.");
-        Debug.Log(PlayerPrefs.GetString("Discussion5"));
-
-        discussionCount++;
-        Debug.Log(discussionCount);
-        countdown = 5;
-        Debug.Log("countdown: " + countdown);
-
-        isDialogue1Finished = true;
-
-        /*if (discussionCount == 5) {
-            PlayerPrefs.SetString("Discussion5", "I'm really worried about leaving the EU. It feels like we're turning our backs on the rest of the world.");
-            Debug.Log(PlayerPrefs.GetString("Discussion5"));
-        }*/
-    }
-
-    //Add these to the Continue button then it takes
-    public void AntiEmotionalSelected() {
-
-        PlayerPrefs.SetString("Discussion5", "All the people I know are really pleased about leaving Europe. We're planning a street party for when we go.");
-        Debug.Log(PlayerPrefs.GetString("Discussion5"));
-
-        discussionCount++;
-        Debug.Log(discussionCount);
-        countdown = 5;
-        Debug.Log("countdown: " + countdown);
-
-        isDialogue1Finished = true;
-
-        /*if (discussionCount == 5) {
-            PlayerPrefs.SetString("Discussion5", "All the people I know are really pleased about leaving Europe. We're planning a street party for when we go.");
-            Debug.Log(PlayerPrefs.GetString("Discussion5"));
-        }*/
-    }
-
-    //Add these to the Continue button then it takes
-    public void ProEconomicSelected() {
-        
-        PlayerPrefs.SetString("Discussion6", "After Brexit, the UK economy could be around 6% smaller by 2030 and that would mean a loss of income equivalent to £4,300 a year for every British household.");
-        Debug.Log(PlayerPrefs.GetString("Discussion6"));
-
-        discussionCount++;
-        Debug.Log(discussionCount);
-        countdown = 4;
-        Debug.Log("countdown: " + countdown);
-
-        /*if (discussionCount == 6) {
-            PlayerPrefs.SetString("Discussion6", "After Brexit, the UK economy could be around 6% smaller by 2030 and that would mean a loss of income equivalent to £4,300 a year for every British household.");
-            Debug.Log(PlayerPrefs.GetString("Discussion6"));
-        }*/
-    }
-
-    //Add these to the Continue button then it takes
-    public void AntiEconomicSelected() {
-
-        PlayerPrefs.SetString("Discussion6", "But once we've left the EU, we'll be able to strike deals with the rest of the world so we'll be fine.");
-        Debug.Log(PlayerPrefs.GetString("Discussion6"));
-
-        discussionCount++;
-        Debug.Log(discussionCount);
-        countdown = 4;
-        Debug.Log("countdown: " + countdown);
-
-        /*if (discussionCount == 6) {
-            PlayerPrefs.SetString("Discussion6", "But once we've left the EU, we'll be able to strike deals with the rest of the world so we'll be fine.");
-            Debug.Log(PlayerPrefs.GetString("Discussion6"));
-        }*/
-    }
-
-    //Add these to the Continue button then it takes
-    public void ProPoliticalSelected() {
-
-        PlayerPrefs.SetString("Discussion7", "Would you not rather have the Brussels elite in charge than UKIP and Nigel Farage?");
-        Debug.Log(PlayerPrefs.GetString("Discussion7"));
-
-        discussionCount++;
-        Debug.Log(discussionCount);
-        countdown = 3;
-        Debug.Log("countdown: " + countdown);
-
-        /*if (discussionCount == 7) {
-            PlayerPrefs.SetString("Discussion7", "Would you not rather have the Brussels elite in charge than UKIP and Nigel Farage?");
-            Debug.Log(PlayerPrefs.GetString("Discussion7"));
-        }*/
-    }
-
-    //Add these to the Continue button then it takes
-    public void AntiPoliticalSelected() {
-
-        PlayerPrefs.SetString("Discussion7", "Brussels is far too remote - we need to be making our own laws back here in the UK.");
-        Debug.Log(PlayerPrefs.GetString("Discussion7"));
-
-        discussionCount++;
-        Debug.Log(discussionCount);
-        countdown = 3;
-        Debug.Log("countdown: " + countdown);
-
-        /*if (discussionCount == 7) {
-            PlayerPrefs.SetString("Discussion7", "Brussels is far too remote - we need to be making our own laws back here in the UK.");
-            Debug.Log(PlayerPrefs.GetString("Discussion7"));
-        }*/
-    }
-
-    //Add these to the Continue button then it takes
-    public void ProHistoricSelected() {
-
-        PlayerPrefs.SetString("Discussion8", "The people who want to go back in time have a very poor knowledge of European history.");
-        Debug.Log(PlayerPrefs.GetString("Discussion8"));
-
-        discussionCount++;
-        Debug.Log(discussionCount);
-        countdown = 2;
-        Debug.Log("countdown: " + countdown);
-
-        /*if (discussionCount == 8) {
-            PlayerPrefs.SetString("Discussion8", "The people who want to go back in time have a very poor knowledge of European history.");
-            Debug.Log(PlayerPrefs.GetString("Discussion8"));
-        }*/
-    }
-
-    //Add these to the Continue button then it takes
-    public void AntiHistoricSelected() {
-
-        PlayerPrefs.SetString("Discussion8", "The UK has always felt the need to defend itself, which is why the UK doesn't feel very 'European'.");
-        Debug.Log(PlayerPrefs.GetString("Discussion8"));
-
-        discussionCount++;
-        Debug.Log(discussionCount);
-        countdown = 2;
-        Debug.Log("countdown: " + countdown);
-
-        /*if (discussionCount == 8) {
-            PlayerPrefs.SetString("Discussion8", "The UK has always felt the need to defend itself, which is why the UK doesn't feel very 'European'.");
-            Debug.Log(PlayerPrefs.GetString("Discussion8"));
-        }*/
-    }
-
-    //Add these to the Continue button then it takes
-    public void ProCultureSelected() {
-
-        PlayerPrefs.SetString("Discussion9", "EU grants have funded many projects that contribute to a shared European cultural identity.");
-        Debug.Log(PlayerPrefs.GetString("Discussion9"));
-
-        discussionCount++;
-        Debug.Log(discussionCount);
-        countdown = 1;
-        Debug.Log("countdown: " + countdown);
-
-        /*if (discussionCount == 9) {
-            PlayerPrefs.SetString("Discussion9", "EU grants have funded many projects that contribute to a shared European cultural identity.");
-            Debug.Log(PlayerPrefs.GetString("Discussion9"));
-        }*/
-    }
-
-    //Add these to the Continue button then it takes
-    public void AntiCultureSelected() {
-
-        PlayerPrefs.SetString("Discussion9", "The European Union represents an unattractive homogenisation of European cultures.");
-        Debug.Log(PlayerPrefs.GetString("Discussion9"));
-
-        discussionCount++;
-        Debug.Log(discussionCount);
-        countdown = 1;
-        Debug.Log("countdown: " + countdown);
-
-        /*if (discussionCount == 9) {
-            PlayerPrefs.SetString("Discussion9", "The European Union represents an unattractive homogenisation of European cultures.");
-            Debug.Log(PlayerPrefs.GetString("Discussion9"));
-        }*/
-    }
-
-    //Add these to the Continue button then it takes
-    public void ProGeographySelected() {
-
-        PlayerPrefs.SetString("Discussion10", "I have no trouble in thinking of myself as both British and European.");
-        Debug.Log(PlayerPrefs.GetString("Discussion10"));
-
-        discussionCount++;
-        Debug.Log(discussionCount);
-        countdown = 0;
-        Debug.Log("countdown: " + countdown);
-
-        isDialogue2Finished = true;
-
-        /*if (discussionCount == 10) {
-            PlayerPrefs.SetString("Discussion10", "I have no trouble in thinking of myself as both British and European.");
-            Debug.Log(PlayerPrefs.GetString("Discussion10"));
-        }*/
-    }
-
-    //Add these to the Continue button then it takes
-    public void AntiGeographySelected() {
-
-        PlayerPrefs.SetString("Discussion10", "Being British is much more important to me than being European - I really want a British passport!");
-        Debug.Log(PlayerPrefs.GetString("Discussion10"));
-
-        discussionCount++;
-        Debug.Log(discussionCount);
-        countdown = 0;
-        Debug.Log("countdown: " + countdown);
-
-        isDialogue2Finished = true;
-
-        /*if (discussionCount == 10) {
-            PlayerPrefs.SetString("Discussion10", "Being British is much more important to me than being European - I really want a British passport!");
-            Debug.Log(PlayerPrefs.GetString("Discussion10"));
-        }*/
-    }
 }

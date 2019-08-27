@@ -25,11 +25,11 @@ public class DiscussionTask3 : MonoBehaviour
         //Statements 1-5 (Discussion1-5)
         statements[0].SetActive(true);
 
-        statement1.text = PlayerPrefs.GetString("Discussion1");
-        statement2.text = PlayerPrefs.GetString("Discussion2");
-        statement3.text = PlayerPrefs.GetString("Discussion3");
-        statement4.text = PlayerPrefs.GetString("Discussion4");
-        statement5.text = PlayerPrefs.GetString("Discussion5");
+        statement1.text = PlayerPrefs.GetString("BrexitDiscussion1");
+        statement2.text = PlayerPrefs.GetString("BrexitDiscussion2");
+        statement3.text = PlayerPrefs.GetString("BrexitDiscussion3");
+        statement4.text = PlayerPrefs.GetString("BrexitDiscussion4");
+        statement5.text = PlayerPrefs.GetString("BrexitDiscussion5");
 
         statements[1].SetActive(false);
     }
@@ -54,11 +54,11 @@ public class DiscussionTask3 : MonoBehaviour
 
             //Dialogue 2 statements appear
             //Statements 6-10 (Discussion6-10)
-            statement6.text = PlayerPrefs.GetString("Discussion6");
-            statement7.text = PlayerPrefs.GetString("Discussion7");
-            statement8.text = PlayerPrefs.GetString("Discussion8");
-            statement9.text = PlayerPrefs.GetString("Discussion9");
-            statement10.text = PlayerPrefs.GetString("Discussion10");
+            statement6.text = PlayerPrefs.GetString("BrexitDiscussion6");
+            statement7.text = PlayerPrefs.GetString("BrexitDiscussion7");
+            statement8.text = PlayerPrefs.GetString("BrexitDiscussion8");
+            statement9.text = PlayerPrefs.GetString("BrexitDiscussion9");
+            statement10.text = PlayerPrefs.GetString("BrexitDiscussion10");
         }
 
         if (task3Counter == 1) {
@@ -77,6 +77,8 @@ public class DiscussionTask3 : MonoBehaviour
             //go to feedback
             feedbackCanvas.SetActive(true);
         }
+
+        Debug.Log(predictorCounter);
     }
 
     public void ExitGame() {
@@ -94,12 +96,12 @@ public class DiscussionTask3 : MonoBehaviour
 
         if (predictorCounter == 4) {
             //add to new PlayerPrefs
-            PlayerPrefs.SetString("NewDiscussion1", "");
+            PlayerPrefs.SetString("NewBrexitDiscussion1", statement1.text);
         }
 
         if (predictorCounter == 3) {
             //add to new PlayerPrefs
-            PlayerPrefs.SetString("NewDiscussion2", "");
+            PlayerPrefs.SetString("NewBrexitDiscussion2", statement1.text);
         }
     }
 
@@ -114,12 +116,12 @@ public class DiscussionTask3 : MonoBehaviour
 
         if (predictorCounter == 4) {
             //add to new PlayerPrefs
-            PlayerPrefs.SetString("NewDiscussion1", "");
+            PlayerPrefs.SetString("NewBrexitDiscussion1", statement2.text);
         }
 
         if (predictorCounter == 3) {
             //add to new PlayerPrefs
-            PlayerPrefs.SetString("NewDiscussion2", "");
+            PlayerPrefs.SetString("NewBrexitDiscussion2", statement2.text);
         }
     }
 
@@ -134,12 +136,12 @@ public class DiscussionTask3 : MonoBehaviour
 
         if (predictorCounter == 4) {
             //add to new PlayerPrefs
-            PlayerPrefs.SetString("NewDiscussion1", "");
+            PlayerPrefs.SetString("NewBrexitDiscussion1", statement3.text);
         }
 
         if (predictorCounter == 3) {
             //add to new PlayerPrefs
-            PlayerPrefs.SetString("NewDiscussion2", "");
+            PlayerPrefs.SetString("NewBrexitDiscussion2", statement3.text);
         }
     }
 
@@ -154,12 +156,12 @@ public class DiscussionTask3 : MonoBehaviour
 
         if (predictorCounter == 4) {
             //add to new PlayerPrefs
-            PlayerPrefs.SetString("NewDiscussion1", "");
+            PlayerPrefs.SetString("NewBrexitDiscussion1", statement4.text);
         }
 
         if (predictorCounter == 3) {
             //add to new PlayerPrefs
-            PlayerPrefs.SetString("NewDiscussion2", "");
+            PlayerPrefs.SetString("NewBrexitDiscussion2", statement4.text);
         }
     }
 
@@ -174,12 +176,12 @@ public class DiscussionTask3 : MonoBehaviour
 
         if (predictorCounter == 4) {
             //add to new PlayerPrefs
-            PlayerPrefs.SetString("NewDiscussion1", "");
+            PlayerPrefs.SetString("NewBrexitDiscussion1", statement5.text);
         }
 
         if (predictorCounter == 3) {
             //add to new PlayerPrefs
-            PlayerPrefs.SetString("NewDiscussion2", "");
+            PlayerPrefs.SetString("NewBrexitDiscussion2", statement5.text);
         }
     }
 
@@ -194,12 +196,12 @@ public class DiscussionTask3 : MonoBehaviour
 
         if (predictorCounter == 2) {
             //add to new PlayerPrefs
-            PlayerPrefs.SetString("NewDiscussion3", "");
+            PlayerPrefs.SetString("NewBrexitDiscussion3", statement6.text);
         }
 
         if (predictorCounter == 1) {
             //add to new PlayerPrefs
-            PlayerPrefs.SetString("NewDiscussion4", "");
+            PlayerPrefs.SetString("NewBrexitDiscussion4", statement6.text);
         }
     }
 
@@ -214,12 +216,12 @@ public class DiscussionTask3 : MonoBehaviour
 
         if (predictorCounter == 2) {
             //add to new PlayerPrefs
-            PlayerPrefs.SetString("NewDiscussion3", "");
+            PlayerPrefs.SetString("NewBrexitDiscussion3", statement7.text);
         }
 
         if (predictorCounter == 1) {
             //add to new PlayerPrefs
-            PlayerPrefs.SetString("NewDiscussion4", "");
+            PlayerPrefs.SetString("NewBrexitDiscussion4", statement7.text);
         }
     }
 
@@ -234,12 +236,12 @@ public class DiscussionTask3 : MonoBehaviour
 
         if (predictorCounter == 2) {
             //add to new PlayerPrefs
-            PlayerPrefs.SetString("NewDiscussion3", "");
+            PlayerPrefs.SetString("NewBrexitDiscussion3", statement8.text);
         }
 
         if (predictorCounter == 1) {
             //add to new PlayerPrefs
-            PlayerPrefs.SetString("NewDiscussion4", "");
+            PlayerPrefs.SetString("NewBrexitDiscussion4", statement8.text);
         }
     }
 
@@ -254,12 +256,12 @@ public class DiscussionTask3 : MonoBehaviour
 
         if (predictorCounter == 2) {
             //add to new PlayerPrefs
-            PlayerPrefs.SetString("NewDiscussion3", "");
+            PlayerPrefs.SetString("NewBrexitDiscussion3", statement9.text);
         }
 
         if (predictorCounter == 1) {
             //add to new PlayerPrefs
-            PlayerPrefs.SetString("NewDiscussion4", "");
+            PlayerPrefs.SetString("NewBrexitDiscussion4", statement9.text);
         }
     }
 
@@ -274,12 +276,12 @@ public class DiscussionTask3 : MonoBehaviour
 
         if (predictorCounter == 2) {
             //add to new PlayerPrefs
-            PlayerPrefs.SetString("NewDiscussion3", "");
+            PlayerPrefs.SetString("NewBrexitDiscussion3", statement10.text);
         }
 
         if (predictorCounter == 1) {
             //add to new PlayerPrefs
-            PlayerPrefs.SetString("NewDiscussion4", "");
+            PlayerPrefs.SetString("NewBrexitDiscussion4", statement10.text);
         }
     }
 }

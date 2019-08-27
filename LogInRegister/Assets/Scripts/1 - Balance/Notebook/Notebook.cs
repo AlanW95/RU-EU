@@ -63,14 +63,14 @@ public class Notebook : MonoBehaviour
         //PlayerPrefs.SetString("Discussion4", "Would you not rather have the Brussels elite in charge than UKIP and Nigel Farage?");
 
         //Balance Scenario
-        //discussionTextDisplay[0].text = PlayerPrefs.GetString("NewDiscussion1");
-        //discussionTextDisplay[1].text = PlayerPrefs.GetString("NewDiscussion2");
-        //discussionTextDisplay[2].text = PlayerPrefs.GetString("NewDiscussion3");
-        //discussionTextDisplay[3].text = PlayerPrefs.GetString("NewDiscussion4");
+        discussionTextDisplay1.text = PlayerPrefs.GetString("NewBrexitDiscussion1");
+        discussionTextDisplay2.text = PlayerPrefs.GetString("NewBrexitDiscussion2");
+        discussionTextDisplay3.text = PlayerPrefs.GetString("NewBrexitDiscussion3");
+        discussionTextDisplay4.text = PlayerPrefs.GetString("NewBrexitDiscussion4");
 
-        //Temp for Attitudes example
-        discussionTextDisplay1.text = PlayerPrefs.GetString("NewAttitudesDiscussion1");
-        discussionTextDisplay2.text = PlayerPrefs.GetString("NewAttitudesDiscussion2");
+        //Temp for example
+        //discussionTextDisplay1.text = PlayerPrefs.GetString("NewLorryTruckDiscussion1");
+        //discussionTextDisplay2.text = PlayerPrefs.GetString("NewLorryTruckDiscussion2");
 
 
         //Newsflash

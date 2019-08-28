@@ -60,13 +60,14 @@ public class DiscussionAnimation : MonoBehaviour {
     //Win, Try Again and Corect State
     public GameObject tryAgain, correct;
 
-    public GameObject pro, anti;
-    public GameObject emptyPro, emptyAnti;
+    public GameObject pro, anti, neutral;
+    public GameObject emptyPro, emptyAnti, emptyNeutral;
 
-    Vector2 proInitialPos, antiInitialPos;
+    Vector2 proInitialPos, antiInitialPos, neutralInitialPos;
 
     bool isProCorrect = false;
     bool isAntiCorrect = false;
+    bool isNeutralCorrect = false;
 
     // Start is called before the first frame update
     void Start()
@@ -83,7 +84,7 @@ public class DiscussionAnimation : MonoBehaviour {
             continueButton.SetActive(true);
         }
 
-        if (isProCorrect && isAntiCorrect) {
+        if (isProCorrect && isAntiCorrect && isNeutralCorrect) {
             Debug.Log("You matched both correctly!");
             task1Selection.SetActive(false);
             task2FullCanvas.SetActive(true);
@@ -93,6 +94,7 @@ public class DiscussionAnimation : MonoBehaviour {
             toolBG.SetActive(false);
             isProCorrect = false;
             isAntiCorrect = false;
+            isNeutralCorrect = false;
             //add score
             //progress to stage 2
             //add a button that appears once both are correct, then select that button to progress
@@ -134,7 +136,6 @@ public class DiscussionAnimation : MonoBehaviour {
         task1Selection.SetActive(false);
 
         task1Notice[0].SetActive(true);
-        task1Notice[1].SetActive(true);
         contextTask1.SetActive(true);
 
         animText.SetTrigger("Change");
@@ -210,12 +211,15 @@ public class DiscussionAnimation : MonoBehaviour {
             //after finished
             proInitialPos = pro.transform.position;
             antiInitialPos = anti.transform.position;
+            neutralInitialPos = neutral.transform.position;
             tryAgain.SetActive(false); //Try Again State
             correct.SetActive(false); //Correct State
             pro.SetActive(true);
             emptyPro.SetActive(true);
             anti.SetActive(true);
             emptyAnti.SetActive(true);
+            neutral.SetActive(true);
+            emptyNeutral.SetActive(true);
         }
     }
 
@@ -224,7 +228,6 @@ public class DiscussionAnimation : MonoBehaviour {
     public void Task1() {
         contextTask1.SetActive(false);
         task1Notice[0].SetActive(false);
-        task1Notice[1].SetActive(false);
 
         responseBox.SetActive(true);
 
@@ -245,6 +248,10 @@ public class DiscussionAnimation : MonoBehaviour {
 
     public void DragAnti() {
         anti.transform.position = Input.mousePosition;
+    }
+
+    public void DragNeutral() {
+        neutral.transform.position = Input.mousePosition;
     }
 
     public void DropPro() {
@@ -274,6 +281,23 @@ public class DiscussionAnimation : MonoBehaviour {
             TextNotActive();
         } else {
             anti.transform.position = antiInitialPos;
+            //play audio for incorrect
+            //show text saying try again etc
+            tryAgain.SetActive(true);
+            TextNotActive();
+        }
+    }
+
+    public void DropNeutral() {
+        float distance = Vector3.Distance(neutral.transform.position, emptyNeutral.transform.position);
+
+        if (distance < 50) {
+            neutral.transform.position = emptyNeutral.transform.position;
+            isNeutralCorrect = true;
+            correct.SetActive(true);
+            TextNotActive();
+        } else {
+            neutral.transform.position = neutralInitialPos;
             //play audio for incorrect
             //show text saying try again etc
             tryAgain.SetActive(true);

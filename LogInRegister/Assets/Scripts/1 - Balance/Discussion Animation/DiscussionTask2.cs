@@ -118,6 +118,10 @@ public class DiscussionTask2 : MonoBehaviour
             SceneManager.LoadScene("Journalist");
         }
 
+        if (isDialogue1Finished) {
+            dialogue1.interactable = false;
+        }
+
         //StatementsSelected();
 
         if (countdown == 0)
@@ -227,6 +231,7 @@ public class DiscussionTask2 : MonoBehaviour
         contextGeography.SetActive(false);
 
         //animText.SetTrigger("Change"); //for player if added later on
+        animText.SetTrigger("Change");
     }
 
     public void IfFinished() {
@@ -789,6 +794,7 @@ public class DiscussionTask2 : MonoBehaviour
             antiCharacter.SetActive(true);
             undecidedCharacter.SetActive(true);
 
+            animText.SetTrigger("Change");
             StartCoroutine(Type());
 
             if (index == 1) {
@@ -882,6 +888,7 @@ public class DiscussionTask2 : MonoBehaviour
             antiCharacter.SetActive(true);
             undecidedCharacter.SetActive(true);
 
+            animText.SetTrigger("Change");
             StartCoroutine(Type());
 
             if (index == 1) {
@@ -975,6 +982,7 @@ public class DiscussionTask2 : MonoBehaviour
             antiCharacter.SetActive(true);
             undecidedCharacter.SetActive(true);
 
+            animText.SetTrigger("Change");
             StartCoroutine(Type());
 
             if (index == 1) {
@@ -1068,6 +1076,7 @@ public class DiscussionTask2 : MonoBehaviour
             antiCharacter.SetActive(true);
             undecidedCharacter.SetActive(true);
 
+            animText.SetTrigger("Change");
             StartCoroutine(Type());
 
             if (index == 1) {
@@ -1161,6 +1170,7 @@ public class DiscussionTask2 : MonoBehaviour
             antiCharacter.SetActive(true);
             undecidedCharacter.SetActive(true);
 
+            animText.SetTrigger("Change");
             StartCoroutine(Type());
 
             if (index == 1) {

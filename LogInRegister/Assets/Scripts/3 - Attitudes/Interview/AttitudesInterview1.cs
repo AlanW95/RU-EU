@@ -73,7 +73,7 @@ public class AttitudesInterview1 : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (textDisplay.text == sentences[index]) {
+        if (textDisplay.text == sentences[Random.Range(index, sentences.Length - 1)]) {
             continueButton.SetActive(true);
         }
 
@@ -151,7 +151,7 @@ public class AttitudesInterview1 : MonoBehaviour
 
         continueButton.SetActive(false);
 
-        if (index < sentences.Length - 1) {
+        if (index > 0) {
             Debug.Log("Button has been pressed");
             index++;
             textDisplay.text = "";

@@ -150,7 +150,7 @@ public class AttitudesInterview2 : MonoBehaviour {
 
         continueButton.SetActive(false);
 
-        if (index < sentences.Length - 1) {
+        if (index > 0) {
             Debug.Log("Button has been pressed");
             index++;
             textDisplay.text = "";

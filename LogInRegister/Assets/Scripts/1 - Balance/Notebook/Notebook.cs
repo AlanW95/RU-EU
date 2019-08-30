@@ -29,38 +29,16 @@ public class Notebook : MonoBehaviour
     void Update()
     {
         //Interview 1
-        interview1TextDisplay1.text = PlayerPrefs.GetString("ProInterview1");
-        interview1TextDisplay2.text = PlayerPrefs.GetString("ProInterview2");
-        interview1TextDisplay3.text = PlayerPrefs.GetString("ProInterview3");
-        interview1TextDisplay4.text = PlayerPrefs.GetString("ProInterview4");
-        /*interview1TextDisplay[0].text = PlayerPrefs.GetString("ProInterview1");
-        interview1TextDisplay[1].text = PlayerPrefs.GetString("ProInterview2");
-        interview1TextDisplay[2].text = PlayerPrefs.GetString("ProInterview3");
-        interview1TextDisplay[3].text = PlayerPrefs.GetString("ProInterview4");
-        interview1TextDisplay[4].text = PlayerPrefs.GetString("ProInterview5");
-        interview1TextDisplay[5].text = PlayerPrefs.GetString("ProInterview6");
-        interview1TextDisplay[6].text = PlayerPrefs.GetString("ProInterview7");
-        interview1TextDisplay[7].text = PlayerPrefs.GetString("ProInterview8");
-        interview1TextDisplay[8].text = PlayerPrefs.GetString("ProInterview9");
-        interview1TextDisplay[9].text = PlayerPrefs.GetString("ProInterview10");*/
+        interview1TextDisplay1.text = PlayerPrefs.GetString("BrexitProInterview1");
+        interview1TextDisplay2.text = PlayerPrefs.GetString("BrexitProInterview2");
+        interview1TextDisplay3.text = PlayerPrefs.GetString("BrexitProInterview3");
+        interview1TextDisplay4.text = PlayerPrefs.GetString("BrexitProInterview4");
 
         //Interview 2
-        interview2TextDisplay[0].text = PlayerPrefs.GetString("AntiInterview1");
-        interview2TextDisplay[1].text = PlayerPrefs.GetString("AntiInterview2");
-        interview2TextDisplay[2].text = PlayerPrefs.GetString("AntiInterview3");
-        interview2TextDisplay[3].text = PlayerPrefs.GetString("AntiInterview4");
-        /*interview2TextDisplay[4].text = PlayerPrefs.GetString("AntiInterview5");
-        interview2TextDisplay[5].text = PlayerPrefs.GetString("AntiInterview6");
-        interview2TextDisplay[6].text = PlayerPrefs.GetString("AntiInterview7");
-        interview2TextDisplay[7].text = PlayerPrefs.GetString("AntiInterview8");
-        interview2TextDisplay[8].text = PlayerPrefs.GetString("AntiInterview9");
-        interview2TextDisplay[9].text = PlayerPrefs.GetString("AntiInterview10");*/
-
-        //Discussion
-        //PlayerPrefs.SetString("Discussion1", "Would you not rather have the Brussels elite in charge than UKIP and Nigel Farage?");
-        //PlayerPrefs.SetString("Discussion2", "Would you not rather have the Brussels elite in charge than UKIP and Nigel Farage?");
-        //PlayerPrefs.SetString("Discussion3", "Would you not rather have the Brussels elite in charge than UKIP and Nigel Farage?");
-        //PlayerPrefs.SetString("Discussion4", "Would you not rather have the Brussels elite in charge than UKIP and Nigel Farage?");
+        interview2TextDisplay[0].text = PlayerPrefs.GetString("BrexitAntiInterview1");
+        interview2TextDisplay[1].text = PlayerPrefs.GetString("BrexitAntiInterview2");
+        interview2TextDisplay[2].text = PlayerPrefs.GetString("BrexitAntiInterview3");
+        interview2TextDisplay[3].text = PlayerPrefs.GetString("BrexitAntiInterview4");
 
         //Balance Scenario
         discussionTextDisplay1.text = PlayerPrefs.GetString("NewBrexitDiscussion1");

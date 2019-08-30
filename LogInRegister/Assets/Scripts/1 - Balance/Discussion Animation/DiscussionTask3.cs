@@ -91,6 +91,9 @@ public class DiscussionTask3 : MonoBehaviour
         predictorCounter--;
         //button for statement gets disabled
         btnS1.interactable = false;
+    }
+
+    public void Statement1Selected() {
 
         //there will only be two because we change to the second set of dialogue to choose
 
@@ -111,7 +114,10 @@ public class DiscussionTask3 : MonoBehaviour
         predictorCounter--;
         //button for statement gets disabled
         btnS2.interactable = false;
+    }
 
+    public void Statement2Selected() {
+        
         //there will only be two because we change to the second set of dialogue to choose
 
         if (predictorCounter == 4) {
@@ -145,13 +151,31 @@ public class DiscussionTask3 : MonoBehaviour
         }
     }
 
+    public void Statement3Selected() {
+        
+        //there will only be two because we change to the second set of dialogue to choose
+
+        if (predictorCounter == 4) {
+            //add to new PlayerPrefs
+            PlayerPrefs.SetString("NewBrexitDiscussion1", statement3.text);
+        }
+
+        if (predictorCounter == 3) {
+            //add to new PlayerPrefs
+            PlayerPrefs.SetString("NewBrexitDiscussion2", statement3.text);
+        }
+    }
+
     public void Statement4() {
         //counter goes down 1 for both the Task3Counter and PredictorCounter
         task3Counter--;
         predictorCounter--;
         //button for statement gets disabled
         btnS4.interactable = false;
+    }
 
+    public void Statement4Selected() {
+        
         //there will only be two because we change to the second set of dialogue to choose
 
         if (predictorCounter == 4) {
@@ -171,7 +195,10 @@ public class DiscussionTask3 : MonoBehaviour
         predictorCounter--;
         //button for statement gets disabled
         btnS5.interactable = false;
+    }
 
+    public void Statement5Selected() {
+        
         //there will only be two because we change to the second set of dialogue to choose
 
         if (predictorCounter == 4) {
@@ -191,7 +218,10 @@ public class DiscussionTask3 : MonoBehaviour
         predictorCounter--;
         //button for statement gets disabled
         btnS6.interactable = false;
+    }
 
+    public void Statement6Selected() {
+        
         //there will only be two because we change to the second set of dialogue to choose
 
         if (predictorCounter == 2) {
@@ -211,7 +241,10 @@ public class DiscussionTask3 : MonoBehaviour
         predictorCounter--;
         //button for statement gets disabled
         btnS7.interactable = false;
+    }
 
+    public void Statement7Selected() {
+        
         //there will only be two because we change to the second set of dialogue to choose
 
         if (predictorCounter == 2) {
@@ -231,7 +264,10 @@ public class DiscussionTask3 : MonoBehaviour
         predictorCounter--;
         //button for statement gets disabled
         btnS8.interactable = false;
+    }
 
+    public void Statement8Selected() {
+        
         //there will only be two because we change to the second set of dialogue to choose
 
         if (predictorCounter == 2) {
@@ -251,7 +287,10 @@ public class DiscussionTask3 : MonoBehaviour
         predictorCounter--;
         //button for statement gets disabled
         btnS9.interactable = false;
+    }
 
+    public void Statement9Selected() {
+        
         //there will only be two because we change to the second set of dialogue to choose
 
         if (predictorCounter == 2) {
@@ -271,7 +310,10 @@ public class DiscussionTask3 : MonoBehaviour
         predictorCounter--;
         //button for statement gets disabled
         btnS10.interactable = false;
+    }
 
+    public void Statement10Selected() {
+        
         //there will only be two because we change to the second set of dialogue to choose
 
         if (predictorCounter == 2) {

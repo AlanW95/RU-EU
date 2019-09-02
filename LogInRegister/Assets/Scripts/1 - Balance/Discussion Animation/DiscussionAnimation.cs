@@ -106,7 +106,8 @@ public class DiscussionAnimation : MonoBehaviour {
     }
 
     public void ReturnToTheMobileWorkplace() {
-        SceneManager.LoadScene("Journalist");
+        //SceneManager.LoadScene("Journalist");
+        SceneManager.LoadScene("Dashboard");
     }
 
     IEnumerator Type() {

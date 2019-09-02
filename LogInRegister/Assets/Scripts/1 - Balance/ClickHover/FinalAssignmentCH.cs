@@ -8,7 +8,7 @@ public class FinalAssignmentCH : MonoBehaviour
     public GameObject finalAssignmentTool;
 
     void OnMouseDown() {
-        //SceneManager.LoadScene("FinalAssignment");
+        SceneManager.LoadScene("FinalAssignment");
     }
 
     void OnMouseOver() {

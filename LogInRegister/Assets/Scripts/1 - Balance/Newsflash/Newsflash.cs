@@ -53,6 +53,7 @@ public class Newsflash : MonoBehaviour
         //SceneManager.LoadScene("Journalist");
     }
 
+    //NEW STATEMENT 1 - GEOGRAPHY   
     public void Statement1() { //this will appear when the start button is selected to start the tool
         //in addition to it show this, we must make the canvas visible and have the Start Canvas when availble, to SetActive(false).
         startCanvas.SetActive(false);
@@ -79,6 +80,7 @@ public class Newsflash : MonoBehaviour
         selection++;
     }
 
+    //NEW STATEMENT 2 - POLITICAL
     public void Statement4() {
         statement3Continue.SetActive(false);
         feedbackCanvas.SetActive(false);
@@ -97,6 +99,7 @@ public class Newsflash : MonoBehaviour
         selection++;
     }
 
+    //NEW STATEMENT 3 - CULTURE
     public void Statement6() {
         statement5Continue.SetActive(false);
         feedbackCanvas.SetActive(false);
@@ -115,6 +118,7 @@ public class Newsflash : MonoBehaviour
         selection++;
     }
 
+    //NEW STATEMENT 4 - GEOGRAPHY
     public void Statement8() {
         statement7Continue.SetActive(false);
         feedbackCanvas.SetActive(false);
@@ -124,6 +128,7 @@ public class Newsflash : MonoBehaviour
         selection++;
     }
 
+    //NEW STATEMENT 5 - ENVIRONMENT
     public void Statement9() {
         statement8Continue.SetActive(false);
         feedbackCanvas.SetActive(false);
@@ -160,6 +165,7 @@ public class Newsflash : MonoBehaviour
         selection++;
     }
 
+    //NEW STATEMENT 6 - Economy
     public void Statement13() {
         statement12Continue.SetActive(false);
         feedbackCanvas.SetActive(false);

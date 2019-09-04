@@ -84,52 +84,52 @@ public class ThemeScoring : MonoBehaviour
     }
 
     public void AddSocialPoints() {
-        socialScore += 1;
+        socialScore++;
         Debug.Log("+1 to Social. You currently have " + socialScore + " for the theme of Social.");
     }
 
     public void AddEnvironmentPoints() {
-        environmentScore += 1;
+        environmentScore++;
         Debug.Log("+1 to Social. You currently have " + environmentScore + " for the theme of Environment.");
     }
 
     public void AddRightsResponsibilitiesPoints() {
-        rightsAndResponsibilitiesScore += 1;
+        rightsAndResponsibilitiesScore++;
         Debug.Log("+1 to Rights and Responsibilities. You currently have " + rightsAndResponsibilitiesScore + " for the theme of Rights and Responsibilities.");
     }
 
     public void AddSafetySecurityPoints() {
-        safetyAndSecurityScore += 1;
+        safetyAndSecurityScore++;
         Debug.Log("+1 to Safety and Security. You currently have " + safetyAndSecurityScore + " for the theme of Safety and Security.");
     }
 
     public void AddEmotionalPoints() {
-        emotionalScore += 1;
+        emotionalScore++;
         Debug.Log("+1 to Emotional. You currently have " + emotionalScore + " for the theme of Emotional.");
     }
 
     public void AddEconomyPoints() {
-        economyScore += 1;
+        economyScore++;
         Debug.Log("+1 to Economy. You currently have " + economyScore + " for the theme of Economy.");
     }
 
     public void AddPoliticalPoints() {
-        politicalScore += 1;
+        politicalScore++;
         Debug.Log("+1 to Political. You currently have " + politicalScore + " for the theme of Political.");
     }
 
     public void AddHistoricPoints() {
-        historicScore += 1;
+        historicScore++;
         Debug.Log("+1 to Historic. You currently have " + historicScore + " for the theme of Historic.");
     }
 
     public void AddCulturePoints() {
-        cultureScore += 1;
+        cultureScore++;
         Debug.Log("+1 to Culture. You currently have " + cultureScore + " for the theme of Culture.");
     }
 
     public void AddGeographyPoints() {
-        geographyScore += 1;
+        geographyScore++;
         Debug.Log("+1 to Geography. You currently have " + geographyScore + " for the theme of Geography.");
     }
 

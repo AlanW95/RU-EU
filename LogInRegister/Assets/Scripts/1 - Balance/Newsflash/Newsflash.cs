@@ -20,6 +20,11 @@ public class Newsflash : MonoBehaviour
     public GameObject statement1Continue, statement2Continue, statement3Continue, statement4Continue, statement5Continue, statement6Continue, statement7Continue, statement8Continue, statement9Continue, statement10Continue, statement11Continue, statement12Continue, statement13Continue;
     public GameObject correct, incorrect;
 
+    public GameObject geography, political, culture, environment, rightsResponsibilities, economy;
+    public GameObject geographyEmpty, politicalEmpty, cultureEmpty, environmentEmpty, rightsResponsibilitiesEmpty, economyEmpty;
+    Vector2 geographyInitialPos, politicalInitialPos, cultureInitialPos, environmentInitialPos, rightsResponsibilitiesInitialPos, economyInitialPos;
+    public GameObject answerCorrect, answerIncorrect;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -399,6 +404,131 @@ public class Newsflash : MonoBehaviour
         correct.SetActive(false);
         incorrect.SetActive(true);
         statement13Continue.SetActive(true);
+    }
+
+    public void DragGeography() {
+        geography.transform.position = Input.mousePosition;
+    }
+
+    public void DragPolitical() {
+        political.transform.position = Input.mousePosition;
+    }
+
+    public void DragCulture() {
+        culture.transform.position = Input.mousePosition;
+    }
+
+    public void DragEnvironment() {
+        environment.transform.position = Input.mousePosition;
+    }
+
+    public void DragRightsAndResponsibilities() {
+        rightsResponsibilities.transform.position = Input.mousePosition;
+    }
+
+    public void DragEconomy() {
+        economy.transform.position = Input.mousePosition;
+    }
+
+    public void DropGeography() {
+        float distance = Vector3.Distance(geography.transform.position, geographyEmpty.transform.position);
+
+        if (distance < 50) {
+            geography.transform.position = geographyEmpty.transform.position;
+            //geographyCorrect = true;
+            answerCorrect.SetActive(true);
+            TextNotActive();
+        } else {
+            geography.transform.position = geographyInitialPos;
+            answerIncorrect.SetActive(true);
+            TextNotActive();
+        }
+    }
+
+    public void DropPolitical() {
+        float distance = Vector3.Distance(political.transform.position, politicalEmpty.transform.position);
+
+        if (distance < 50) {
+            political.transform.position = politicalEmpty.transform.position;
+            //politicalCorrect = true;
+            answerCorrect.SetActive(true);
+            TextNotActive();
+        } else {
+            political.transform.position = politicalInitialPos;
+            answerIncorrect.SetActive(true);
+            TextNotActive();
+        }
+    }
+
+    public void DropCulture() {
+        float distance = Vector3.Distance(culture.transform.position, cultureEmpty.transform.position);
+
+        if (distance < 50) {
+            culture.transform.position = cultureEmpty.transform.position;
+            //cultureCorrect = true;
+            answerCorrect.SetActive(true);
+            TextNotActive();
+        } else {
+            culture.transform.position = cultureInitialPos;
+            answerIncorrect.SetActive(true);
+            TextNotActive();
+        }
+    }
+
+    public void DropEnvironment() {
+        float distance = Vector3.Distance(environment.transform.position, environmentEmpty.transform.position);
+        
+        if (distance < 50) {
+            environment.transform.position = environmentEmpty.transform.position;
+            //environmentCorrect = true;
+            answerCorrect.SetActive(true);
+            TextNotActive();
+        } else {
+            environment.transform.position = environmentInitialPos;
+            answerIncorrect.SetActive(true);
+            TextNotActive();
+        }
+    }
+
+    public void DropRightsAndResponsibilities() {
+        float distance = Vector3.Distance(rightsResponsibilities.transform.position, rightsResponsibilitiesEmpty.transform.position);
+
+        if (distance < 50) {
+            rightsResponsibilities.transform.position = rightsResponsibilitiesEmpty.transform.position;
+            //rightsResponsibilitiesCorrect = true;
+            answerCorrect.SetActive(true);
+            TextNotActive();
+        } else {
+            rightsResponsibilities.transform.position = rightsResponsibilitiesInitialPos;
+            answerIncorrect.SetActive(true);
+            TextNotActive();
+        }
+    }
+
+    public void DropEconomy() {
+        float distance = Vector3.Distance(economy.transform.position, economyEmpty.transform.position);
+
+        if (distance < 50) {
+            economy.transform.position = economyEmpty.transform.position;
+            //economyCorrect = true;
+            answerCorrect.SetActive(true);
+            TextNotActive();
+        } else {
+            economy.transform.position = economyInitialPos;
+            answerIncorrect.SetActive(true);
+            TextNotActive();
+        }
+    }
+
+    public void TextNotActive() {
+        //2 seconds delay on each
+        StartCoroutine(HideText(answerIncorrect, 2f));
+        StartCoroutine(HideText(answerCorrect, 1.5f));
+    }
+
+    IEnumerator HideText(GameObject text, float delay) {
+        yield return new WaitForSeconds(delay);
+        text.SetActive(false);
     }
 
     //-----------------------------------------------------------------------------------

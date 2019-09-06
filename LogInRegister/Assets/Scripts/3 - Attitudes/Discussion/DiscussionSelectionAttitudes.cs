@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 using TMPro;
 
 public class DiscussionSelectionAttitudes : MonoBehaviour
@@ -46,6 +47,10 @@ public class DiscussionSelectionAttitudes : MonoBehaviour
         if (task3Counter == 0) {
             //go to feedback
             feedbackCanvas.SetActive(true);
+        }
+
+        if (Input.GetKeyDown(KeyCode.Escape)) {
+            SceneManager.LoadScene("MobileWorkplaceAttitudes");
         }
     }
 

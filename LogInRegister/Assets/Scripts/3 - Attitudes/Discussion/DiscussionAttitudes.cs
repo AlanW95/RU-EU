@@ -83,7 +83,7 @@ public class DiscussionAttitudes : MonoBehaviour
         }
 
         if (Input.GetKeyDown(KeyCode.Escape)) {
-            SceneManager.LoadScene("Journalist");
+            SceneManager.LoadScene("MobileWorkplaceAttitudes");
         }
 
         //StatementsSelected();
@@ -98,6 +98,10 @@ public class DiscussionAttitudes : MonoBehaviour
 
             toolBG.SetActive(false);
         }
+
+        if (Input.GetKeyDown(KeyCode.Escape)) {
+            SceneManager.LoadScene("MobileWorkplaceAttitudes");
+        }
     }
 
     IEnumerator Type() {
@@ -108,7 +112,7 @@ public class DiscussionAttitudes : MonoBehaviour
     }
 
     public void ReturnToTheMobileWorkplace() {
-        SceneManager.LoadScene("Journalist");
+        SceneManager.LoadScene("MobileWorkplaceAttitudes");
     }
 
     //Task 2 is relatively the same as the original way we had the Discussion tool but this time after each one, 

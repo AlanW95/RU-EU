@@ -15,7 +15,7 @@ public class NewsflashCH : MonoBehaviour
     }
 
     public void OnPointerClick(PointerEventData eventData) {
-        SceneManager.LoadScene("Newsflash");
+        SceneManager.LoadScene("NewsflashAttitudes");
     }
 
     public void OnPointerExit(PointerEventData eventData) {
@@ -23,6 +23,6 @@ public class NewsflashCH : MonoBehaviour
     }
 
     public void DisplayNewsflash() {
-        SceneManager.LoadScene("Newsflash");
+        SceneManager.LoadScene("NewsflashAttitudes");
     }
 }

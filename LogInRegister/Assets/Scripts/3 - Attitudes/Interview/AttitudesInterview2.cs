@@ -88,6 +88,10 @@ public class AttitudesInterview2 : MonoBehaviour {
             Debug.Log("You have answered 3 questions! If you wish, you may proceed and collect more statements but this will not affect your score.");
             themeSelectionContinueButton.SetActive(true);
         }
+
+        if (Input.GetKeyDown(KeyCode.Escape)) {
+            SceneManager.LoadScene("MobileWorkplaceAttitudes");
+        }
     }
 
     //Used for individual demos of the tool
@@ -104,7 +108,7 @@ public class AttitudesInterview2 : MonoBehaviour {
     }
 
     public void ReturnToMobileWorkplace() {
-        SceneManager.LoadScene("Journalist");
+        SceneManager.LoadScene("MobileWorkplaceAttitudes");
     }
 
     public void RankedStatements() {

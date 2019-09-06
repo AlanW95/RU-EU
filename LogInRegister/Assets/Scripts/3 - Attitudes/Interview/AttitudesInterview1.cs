@@ -64,7 +64,7 @@ public class AttitudesInterview1 : MonoBehaviour
         rankingCanvas.SetActive(false);
         feedbackCanvas.SetActive(false);
 
-        interviewCounter = 10;
+        interviewCounter = 6;
         secondCounter = 3;
 
         FloatingTextController.Initialize();
@@ -89,6 +89,10 @@ public class AttitudesInterview1 : MonoBehaviour
             Debug.Log("You have answered 3 questions! If you wish, you may proceed and collect more statements but this will not affect your score.");
             themeSelectionContinueButton.SetActive(true);
         }
+
+        if (Input.GetKeyDown(KeyCode.Escape)) {
+            SceneManager.LoadScene("MobileWorkplaceAttitudes");
+        }
     }
 
     //Used for individual demos of the tool
@@ -105,14 +109,14 @@ public class AttitudesInterview1 : MonoBehaviour
     }
 
     public void ReturnToMobileWorkplace() {
-        SceneManager.LoadScene("Journalist");
+        SceneManager.LoadScene("MobileWorkplaceAttitudes");
     }
 
     public void RankedStatements() {
         rankingCanvas.SetActive(false);
         themeSelectionCanvas.SetActive(true);
 
-        secondCounter -= 1;
+        secondCounter--;
     }
 
     public void ScoreAndFeedback() {
@@ -126,6 +130,7 @@ public class AttitudesInterview1 : MonoBehaviour
 
     public void CounterDown() {
         interviewCounter--;
+        Debug.Log(interviewCounter);
     }
 
     IEnumerator Type() {

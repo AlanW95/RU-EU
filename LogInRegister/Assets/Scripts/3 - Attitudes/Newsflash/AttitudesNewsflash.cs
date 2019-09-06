@@ -41,11 +41,15 @@ public class AttitudesNewsflash : MonoBehaviour
             //give overall feedback
             finishCanvas.SetActive(true);
         }
+
+        if (Input.GetKeyDown(KeyCode.Escape)) {
+            SceneManager.LoadScene("MobileWorkplaceAttitudes");
+        }
     }
 
     public void ReturnToJournalist() {
         //Application.Quit();
-        SceneManager.LoadScene("Journalist");
+        SceneManager.LoadScene("MobileWorkplaceAttitudes");
     }
 
     public void Statement1() { //this will appear when the start button is selected to start the tool

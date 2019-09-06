@@ -20,9 +20,13 @@ public class Newsflash : MonoBehaviour
     public GameObject statement1Continue, statement2Continue, statement3Continue, statement4Continue, statement5Continue, statement6Continue, statement7Continue, statement8Continue, statement9Continue, statement10Continue, statement11Continue, statement12Continue, statement13Continue;
     public GameObject correct, incorrect;
 
-    public GameObject geography, political, culture, environment, rightsResponsibilities, economy;
-    public GameObject geographyEmpty, politicalEmpty, cultureEmpty, environmentEmpty, rightsResponsibilitiesEmpty, economyEmpty;
-    Vector2 geographyInitialPos, politicalInitialPos, cultureInitialPos, environmentInitialPos, rightsResponsibilitiesInitialPos, economyInitialPos;
+    public GameObject geography, political, culture, environment, rightsResponsibilities, economy, social, security, emotions, history;
+    public GameObject geographyEmpty, politicalEmpty, cultureEmpty, environmentEmpty, rightsResponsibilitiesEmpty, economyEmpty, socialEmpty, securityEmpty, emotionsEmpty, historyEmpty;
+    Vector2 geographyInitialPos, politicalInitialPos, cultureInitialPos, environmentInitialPos, rightsResponsibilitiesInitialPos, economyInitialPos, socialInitialPos, securityInitialPos, emotionsInitialPos, historyInitialPos;
+
+    public GameObject pro, anti, neutral;
+    public GameObject proEmpty, antiEmpty, neutralEmpty;
+    Vector2 proInitialPos, antiInitialPos, neutralInitialPos;
     public GameObject answerCorrect, answerIncorrect;
 
     // Start is called before the first frame update
@@ -430,6 +434,34 @@ public class Newsflash : MonoBehaviour
         economy.transform.position = Input.mousePosition;
     }
 
+    public void DragSocial() {
+        social.transform.position = Input.mousePosition;
+    }
+
+    public void DragSecurity() {
+        security.transform.position = Input.mousePosition;
+    }
+
+    public void DragEmotions() {
+        emotions.transform.position = Input.mousePosition;
+    }
+
+    public void DragHistory() {
+        history.transform.position = Input.mousePosition;
+    }
+
+    public void DragPro() {
+        pro.transform.position = Input.mousePosition;
+    }
+
+    public void DragAnti() {
+        anti.transform.position = Input.mousePosition;
+    }
+
+    public void DragNeutral() {
+        neutral.transform.position = Input.mousePosition;
+    }
+
     public void DropGeography() {
         float distance = Vector3.Distance(geography.transform.position, geographyEmpty.transform.position);
 
@@ -515,6 +547,111 @@ public class Newsflash : MonoBehaviour
             TextNotActive();
         } else {
             economy.transform.position = economyInitialPos;
+            answerIncorrect.SetActive(true);
+            TextNotActive();
+        }
+    }
+
+    public void DropSocial() {
+        float distance = Vector3.Distance(social.transform.position, socialEmpty.transform.position);
+
+        if (distance < 50) {
+            social.transform.position = socialEmpty.transform.position;
+            //socialCorrect = true;
+            answerCorrect.SetActive(true);
+            TextNotActive();
+        } else {
+            social.transform.position = socialInitialPos;
+            answerIncorrect.SetActive(true);
+            TextNotActive();
+        }
+    }
+
+    public void DropSecurity() {
+        float distance = Vector3.Distance(security.transform.position, securityEmpty.transform.position);
+
+        if (distance < 50) {
+            security.transform.position = securityEmpty.transform.position;
+            //securityCorrect = true;
+            answerCorrect.SetActive(true);
+            TextNotActive();
+        } else {
+            security.transform.position = securityInitialPos;
+            answerIncorrect.SetActive(true);
+            TextNotActive();
+        }
+    }
+
+    public void DropEmotions() {
+        float distance = Vector3.Distance(emotions.transform.position, emotionsEmpty.transform.position);
+
+        if (distance < 50) {
+            emotions.transform.position = emotionsEmpty.transform.position;
+            //emotionsCorrect = true;
+            answerCorrect.SetActive(true);
+            TextNotActive();
+        } else {
+            emotions.transform.position = emotionsInitialPos;
+            answerIncorrect.SetActive(true);
+            TextNotActive();
+        }
+    }
+
+    public void DropHistory() {
+        float distance = Vector3.Distance(history.transform.position, historyEmpty.transform.position);
+
+        if (distance < 50) {
+            history.transform.position = historyEmpty.transform.position;
+            //historyCorrect = true;
+            answerCorrect.SetActive(true);
+            TextNotActive();
+        } else {
+            history.transform.position = historyInitialPos;
+            answerIncorrect.SetActive(true);
+            TextNotActive();
+        }
+    }
+
+    public void DropPro() {
+        float distance = Vector3.Distance(pro.transform.position, proEmpty.transform.position);
+
+        if (distance < 50) {
+            pro.transform.position = proEmpty.transform.position;
+            //proCorrect = true;
+            answerCorrect.SetActive(true);
+            TextNotActive();
+        } else {
+            pro.transform.position = proInitialPos;
+            answerIncorrect.SetActive(true);
+            TextNotActive();
+        }
+    }
+
+    public void DropAnti() {
+        float distance = Vector3.Distance(anti.transform.position, antiEmpty.transform.position);
+
+        if (distance < 50) {
+            anti.transform.position = antiEmpty.transform.position;
+            //antiCorrect = true;
+            answerCorrect.SetActive(true);
+            TextNotActive();
+        } else {
+            anti.transform.position = antiInitialPos;
+            answerIncorrect.SetActive(true);
+            TextNotActive();
+        }
+    }
+
+    public void DropNeutral() {
+        float distance = Vector3.Distance(neutral.transform.position, neutralEmpty.transform.position);
+
+        if (distance < 50) {
+            neutral.transform.position = neutralEmpty.transform.position;
+            //neutralCorrect = true;
+            answerCorrect.SetActive(true);
+            TextNotActive();
+        } else {
+            neutral.transform.position = neutralInitialPos;
             answerIncorrect.SetActive(true);
             TextNotActive();
         }

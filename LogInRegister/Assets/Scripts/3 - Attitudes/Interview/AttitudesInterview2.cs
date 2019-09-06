@@ -63,7 +63,7 @@ public class AttitudesInterview2 : MonoBehaviour {
         rankingCanvas.SetActive(false);
         feedbackCanvas.SetActive(false);
 
-        interviewCounter = 10;
+        interviewCounter = 6;
         secondCounter = 3;
 
         FloatingTextController.Initialize();

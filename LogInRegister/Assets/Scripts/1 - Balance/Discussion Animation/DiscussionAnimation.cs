@@ -80,6 +80,17 @@ public class DiscussionAnimation : MonoBehaviour {
     // Update is called once per frame
     void Update()
     {
+        PlayerPrefs.GetInt("CurrentSocialScore");
+        PlayerPrefs.GetInt("CurrentEnvironmentScore");
+        PlayerPrefs.GetInt("CurrentRightsAndResponsibilitiesScore");
+        PlayerPrefs.GetInt("CurrentSafetyAndSecurityScore");
+        PlayerPrefs.GetInt("CurrentEmotionalScore");
+        PlayerPrefs.GetInt("CurrentEconomyScore");
+        PlayerPrefs.GetInt("CurrentPoliticalScore");
+        PlayerPrefs.GetInt("CurrentHistoricScore");
+        PlayerPrefs.GetInt("CurrentCultureScore");
+        PlayerPrefs.GetInt("CurrentGeographyScore");
+
         if (textDisplay.text == discussion[index]) {
             continueButton.SetActive(true);
         }
@@ -103,6 +114,10 @@ public class DiscussionAnimation : MonoBehaviour {
         if (Input.GetKeyDown(KeyCode.Escape)) {
             SceneManager.LoadScene("Journalist");
         }
+    }
+
+    public void ResetPlayerPrefs() {
+        PlayerPrefs.DeleteAll();
     }
 
     public void ReturnToTheMobileWorkplace() {

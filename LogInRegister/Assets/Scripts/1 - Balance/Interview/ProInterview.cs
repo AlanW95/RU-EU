@@ -76,6 +76,17 @@ public class ProInterview : MonoBehaviour {
     // Update is called once per frame
     void Update() {
 
+        PlayerPrefs.GetInt("CurrentSocialScore");
+        PlayerPrefs.GetInt("CurrentEnvironmentScore");
+        PlayerPrefs.GetInt("CurrentRightsAndResponsibilitiesScore");
+        PlayerPrefs.GetInt("CurrentSafetyAndSecurityScore");
+        PlayerPrefs.GetInt("CurrentEmotionalScore");
+        PlayerPrefs.GetInt("CurrentEconomyScore");
+        PlayerPrefs.GetInt("CurrentPoliticalScore");
+        PlayerPrefs.GetInt("CurrentHistoricScore");
+        PlayerPrefs.GetInt("CurrentCultureScore");
+        PlayerPrefs.GetInt("CurrentGeographyScore");
+
         if (textDisplay.text == sentences[index]) {
             continueButton.SetActive(true);
         }
@@ -97,6 +108,10 @@ public class ProInterview : MonoBehaviour {
             feedbackCanvas.SetActive(true);
             //themeSelectionContinueButton.SetActive(true);
         }
+    }
+
+    public void ResetPlayerPrefs() {
+        PlayerPrefs.DeleteAll();
     }
 
     //Used for individual demos of the tool

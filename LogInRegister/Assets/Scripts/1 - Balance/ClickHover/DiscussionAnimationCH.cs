@@ -8,7 +8,7 @@ public class DiscussionAnimationCH : MonoBehaviour
     public GameObject discussionAnimationTool;
 
     void OnMouseDown() {
-        SceneManager.LoadScene("DiscussionAttitudes");
+        SceneManager.LoadScene("DiscussionTool");
     }
 
     void OnMouseOver() {

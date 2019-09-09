@@ -4,7 +4,7 @@ using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
 
-public class ShowSliderValue : MonoBehaviour
+public class ShowSliderValue : Dashboard
 {
     TextMeshProUGUI percentageText;
     TextMeshProUGUI percentageTextTopTheme, percentageTextSecondTheme, percentageTextThirdTheme;

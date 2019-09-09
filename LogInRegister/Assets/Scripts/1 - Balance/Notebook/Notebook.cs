@@ -28,6 +28,17 @@ public class Notebook : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        PlayerPrefs.GetInt("CurrentSocialScore");
+        PlayerPrefs.GetInt("CurrentEnvironmentScore");
+        PlayerPrefs.GetInt("CurrentRightsAndResponsibilitiesScore");
+        PlayerPrefs.GetInt("CurrentSafetyAndSecurityScore");
+        PlayerPrefs.GetInt("CurrentEmotionalScore");
+        PlayerPrefs.GetInt("CurrentEconomyScore");
+        PlayerPrefs.GetInt("CurrentPoliticalScore");
+        PlayerPrefs.GetInt("CurrentHistoricScore");
+        PlayerPrefs.GetInt("CurrentCultureScore");
+        PlayerPrefs.GetInt("CurrentGeographyScore");
+
         //Interview 1
         interview1TextDisplay1.text = PlayerPrefs.GetString("BrexitProInterview1");
         interview1TextDisplay2.text = PlayerPrefs.GetString("BrexitProInterview2");

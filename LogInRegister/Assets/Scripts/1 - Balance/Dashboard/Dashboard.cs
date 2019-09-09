@@ -9,7 +9,8 @@ public class Dashboard : MonoBehaviour
 {
 
     public Slider proAntiSlider;
-    public Slider topThemeSlider;
+
+    public Slider topThemeSlider; //used to update score with theme score
 
     public TextMeshProUGUI topTheme;
 
@@ -22,12 +23,23 @@ public class Dashboard : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        proAntiSlider.value = PlayerPrefs.GetInt("ProAntiSlider");
-        topThemeSlider.value = PlayerPrefs.GetInt("");
+        PlayerPrefs.GetInt("CurrentSocialScore");
+        PlayerPrefs.GetInt("CurrentEnvironmentScore");
+        PlayerPrefs.GetInt("CurrentRightsAndResponsibilitiesScore");
+        PlayerPrefs.GetInt("CurrentSafetyAndSecurityScore");
+        PlayerPrefs.GetInt("CurrentEmotionalScore");
+        PlayerPrefs.GetInt("CurrentEconomyScore");
+        PlayerPrefs.GetInt("CurrentPoliticalScore");
+        PlayerPrefs.GetInt("CurrentHistoricScore");
+        PlayerPrefs.GetInt("CurrentCultureScore");
+        PlayerPrefs.GetInt("CurrentGeographyScore");
+
+        proAntiSlider.value = PlayerPrefs.GetInt("CredibilityScore");
+        //topThemeSlider.value = PlayerPrefs.GetInt("");
 
         topTheme.text = PlayerPrefs.GetString("TopTheme");
 
-        TopThemeSliderValue();       
+        TopThemeSliderValue();
     }
 
     public void ExitGame() {
@@ -35,44 +47,56 @@ public class Dashboard : MonoBehaviour
     }
 
     public void TopThemeSliderValue() {
+
         if (topTheme.text == "Social") {
-            topThemeSlider.value = PlayerPrefs.GetInt("CurrentSocialScore");
+            int topScore = PlayerPrefs.GetInt("CurrentSocialScore");
+            topThemeSlider.value = topScore;
+
         }
 
         if (topTheme.text == "Environment") {
-            topThemeSlider.value = PlayerPrefs.GetInt("CurrentEnvironmentScore");
+            int topScore = PlayerPrefs.GetInt("CurrentEnvironmentScore");
+            topThemeSlider.value = topScore;
         }
 
         if (topTheme.text == "Rights & Responsibilities") {
-            topThemeSlider.value = PlayerPrefs.GetInt("CurrentRightsAndResponsibilitiesScore");
+            int topScore = PlayerPrefs.GetInt("CurrentRightsAndResponsibilitiesScore");
+            topThemeSlider.value = topScore;
         }
 
         if (topTheme.text == "Safety & Security") {
-            topThemeSlider.value = PlayerPrefs.GetInt("CurrentSafetyAndSecurityScore");
+            int topScore = PlayerPrefs.GetInt("CurrentSafetyAndSecurityScore");
+            topThemeSlider.value = topScore;
         }
 
         if (topTheme.text == "Emotional") {
-            topThemeSlider.value = PlayerPrefs.GetInt("CurrentEmotionalScore");
+            int topScore = PlayerPrefs.GetInt("CurrentEmotionalScore");
+            topThemeSlider.value = topScore;
         }
 
         if (topTheme.text == "Economy") {
-            topThemeSlider.value = PlayerPrefs.GetInt("CurrentEconomyScore");
+            int topScore = PlayerPrefs.GetInt("CurrentEconomyScore");
+            topThemeSlider.value = topScore;
         }
 
         if (topTheme.text == "Political") {
-            topThemeSlider.value = PlayerPrefs.GetInt("CurrentPoliticalScore");
+            int topScore = PlayerPrefs.GetInt("CurrentPoliticalScore");
+            topThemeSlider.value = topScore;
         }
 
         if (topTheme.text == "Historic") {
-            topThemeSlider.value = PlayerPrefs.GetInt("CurrentHistoricScore");
+            int topScore = PlayerPrefs.GetInt("CurrentHistoricScore");
+            topThemeSlider.value = topScore;
         }
 
         if (topTheme.text == "Culture") {
-            topThemeSlider.value = PlayerPrefs.GetInt("CurrentCultureScore");
+            int topScore = PlayerPrefs.GetInt("CurrentCultureScore");
+            topThemeSlider.value = topScore;
         }
 
         if (topTheme.text == "Geography") {
-            topThemeSlider.value = PlayerPrefs.GetInt("CurrentGeographyScore");
+            int topScore = PlayerPrefs.GetInt("CurrentGeographyScore");
+            topThemeSlider.value = topScore;
         }
     }
 }

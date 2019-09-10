@@ -40,10 +40,18 @@ public class Dashboard : MonoBehaviour
         topTheme.text = PlayerPrefs.GetString("TopTheme");
 
         TopThemeSliderValue();
+
+        if (Input.GetKeyDown(KeyCode.Escape)) {
+            SceneManager.LoadScene("Journalist");
+        }
     }
 
     public void ExitGame() {
         Application.Quit();
+    }
+
+    public void ReturnToWorkplace() {
+        SceneManager.LoadScene("Journalist");
     }
 
     public void TopThemeSliderValue() {

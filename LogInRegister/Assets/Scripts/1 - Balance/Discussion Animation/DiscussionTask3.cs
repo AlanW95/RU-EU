@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 using TMPro;
 
 public class DiscussionTask3 : MonoBehaviour
@@ -79,6 +80,10 @@ public class DiscussionTask3 : MonoBehaviour
         }
 
         Debug.Log(predictorCounter);
+
+        if (Input.GetKeyDown(KeyCode.Escape)) {
+            SceneManager.LoadScene("Journalist");
+        }
     }
 
     public void ExitGame() {

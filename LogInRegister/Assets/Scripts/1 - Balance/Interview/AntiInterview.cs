@@ -108,6 +108,10 @@ public class AntiInterview : MonoBehaviour {
             feedbackCanvas.SetActive(true);
             //themeSelectionContinueButton.SetActive(true);
         }
+
+        if (Input.GetKeyDown(KeyCode.Escape)) {
+            SceneManager.LoadScene("Journalist");
+        }
     }
 
     public void ResetPlayerPrefs() {

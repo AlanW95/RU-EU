@@ -20,6 +20,7 @@ public class MainMenu : MonoBehaviour
     void Start()
     {
         ButtonsAppear();
+        PlayerPrefs.DeleteAll();
     }
 
     IEnumerator ButtonsAppear()

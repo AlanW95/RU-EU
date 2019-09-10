@@ -18,6 +18,9 @@ public class FinalAssignment : MonoBehaviour {
     public TextMeshProUGUI discussion1, discussion2, discussion3, discussion4;
     //public TextMeshProUGUI newsflash1, newsflash2, newsflash3, newsflash4, newsflash5, newsflash6;
 
+    private string theme1, theme2, theme3;
+    public TextMeshProUGUI introduction, paragraph1, paragraph2, paragraph3;
+
     // Start is called before the first frame update
     void Start() {
         Interview1Tab();
@@ -46,6 +49,18 @@ public class FinalAssignment : MonoBehaviour {
         //newsflash4.text = PlayerPrefs.GetString("BrexitNewsflash4");
         //newsflash5.text = PlayerPrefs.GetString("BrexitNewsflash5");
         //newsflash6.text = PlayerPrefs.GetString("BrexitNewsflash6");
+
+        theme1 = PlayerPrefs.GetString("TopTheme");
+        introduction.text = "They key issues that concern EU citizens seems to be; " + theme1 + " , [THEME2], [THEME3].";
+        paragraph1.text = "It is clear in the debate about EU identity that " + theme1 + " is very important. As one interviewee said:";
+        paragraph2.text = "However, we would also remember that [THEME2] is important too. Speaking to our reporter, our interviewee said:";
+        paragraph3.text = "Many people seem very concerned about [THEME3]. To quote one of our interviewees on this topic:";
+
+
+
+        if (Input.GetKeyDown(KeyCode.Escape)) {
+            SceneManager.LoadScene("Journalist");
+        }
     }
 
     public void ReturnToWorkplace() {

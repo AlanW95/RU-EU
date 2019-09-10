@@ -4,8 +4,7 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.EventSystems;
 
-public class NewsflashCH : MonoBehaviour
-{
+public class NewsflashCH : BrexitWorkplace {
     public GameObject newsflashBar;
 
     public GameObject newsflashText;
@@ -15,7 +14,8 @@ public class NewsflashCH : MonoBehaviour
     }
 
     public void OnPointerClick(PointerEventData eventData) {
-        SceneManager.LoadScene("NewsflashAttitudes");
+        SceneManager.LoadScene("Newsflash1");
+        AddToToolAvailability();
     }
 
     public void OnPointerExit(PointerEventData eventData) {
@@ -23,6 +23,7 @@ public class NewsflashCH : MonoBehaviour
     }
 
     public void DisplayNewsflash() {
-        SceneManager.LoadScene("NewsflashAttitudes");
+        SceneManager.LoadScene("Newsflash1");
+        //Discussion();
     }
 }

@@ -3,12 +3,12 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class FinalAssignmentCH : MonoBehaviour
-{
+public class FinalAssignmentCH : BrexitWorkplace {
     public GameObject finalAssignmentTool;
 
     void OnMouseDown() {
         SceneManager.LoadScene("FinalAssignment");
+        //FinalAssignment();
     }
 
     void OnMouseOver() {

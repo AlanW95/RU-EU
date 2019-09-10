@@ -3,12 +3,13 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class InterviewCH : MonoBehaviour
+public class InterviewCH : BrexitWorkplace
 {
     public GameObject interviewTool;
 
     void OnMouseDown() {
-        SceneManager.LoadScene("RemainInterview");    
+        SceneManager.LoadScene("RemainInterview");
+        //Newsflash1();
     }
 
     void OnMouseOver() {

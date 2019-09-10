@@ -2,8 +2,10 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.UI;
+using TMPro;
 
-public class ChatToolCH : MonoBehaviour {
+public class ChatToolCH : BrexitWorkplace {
 
     /*
      * Basic script ready to use when dealing with the 3D Objects on the Journalist's Mobile
@@ -20,7 +22,13 @@ public class ChatToolCH : MonoBehaviour {
 
     public GameObject chatTool;
 
+    void Update() {
+        PlayerPrefs.GetInt("ToolNumber");    
+    }
+
     void OnMouseDown() {
+        toolAvailability++;
+        PlayerPrefs.SetInt("ToolNumber", toolAvailability);
         SceneManager.LoadScene("MobilePhoneTool");
     }
 

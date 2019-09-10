@@ -53,48 +53,47 @@ public class Newsflash : MonoBehaviour
         PlayerPrefs.GetInt("CurrentCultureScore");
         PlayerPrefs.GetInt("CurrentGeographyScore");
 
-        /*if (selection == 13) {
-            //go to feedback screen
-            //feedback.SetActive(true);
-            //ogCanvas.SetActive(false);
-            //feedbackCanvas.SetActive(true);
-
-            startCanvas.SetActive(false);
-            newsflashCanvas.SetActive(false);
-            feedbackCanvas.SetActive(false);
-
-            //give overall feedback
-            finishCanvas.SetActive(true);
-        }*/
-
         if (geography.transform.position == geographyEmpty.transform.position && neutral.transform.position == neutralEmpty.transform.position) {
-            Statement2();
-            /*feedbackCanvas.SetActive(true);
-            correct.SetActive(true);
-            incorrect.SetActive(false);
-            statement1Continue.SetActive(true);*/
+            finishCanvas.SetActive(true);
         }
 
-        if (political.transform.position == politicalEmpty.transform.position && pro.transform.position == proEmpty.transform.position) {
-            Statement3();
+        if (Input.GetKeyDown(KeyCode.Escape)) {
+            SceneManager.LoadScene("Journalist");
+        }
+
+        //if (geography.transform.position == geographyEmpty.transform.position && neutral.transform.position == neutralEmpty.transform.position) {
+        //finishCanvas.SetActive(true);
+        //Statement2();
+        /*feedbackCanvas.SetActive(true);
+        correct.SetActive(true);
+        incorrect.SetActive(false);
+        statement1Continue.SetActive(true);*/
+        //}
+
+        /*if (political.transform.position == politicalEmpty.transform.position && pro.transform.position == proEmpty.transform.position) {
+            finishCanvas.SetActive(true);
+            //Statement3();
         }
 
         if (culture.transform.position == cultureEmpty.transform.position && anti.transform.position == antiEmpty.transform.position) {
-            Statement4();
+            finishCanvas.SetActive(true);
+            //Statement4();
         }
 
         if (environment.transform.position == environmentEmpty.transform.position && neutral.transform.position == neutralEmpty.transform.position) {
-            Statement5();
+            finishCanvas.SetActive(true);
+            //Statement5();
         }
 
         if (rightsResponsibilities.transform.position == rightsResponsibilitiesEmpty.transform.position && anti.transform.position == antiEmpty.transform.position) {
-            Statement6();
+            finishCanvas.SetActive(true);
+            //Statement6();
         }
 
         if (economy.transform.position == economyEmpty.transform.position && pro.transform.position == proEmpty.transform.position) {
             //finished
             finishCanvas.SetActive(true);
-        }
+        }*/
     }
     
     public void ReturnToJournalist() {

@@ -27,8 +27,13 @@ public class ChatToolCH : BrexitWorkplace {
     }
 
     void OnMouseDown() {
-        toolAvailability++;
-        PlayerPrefs.SetInt("ToolNumber", toolAvailability);
+        //toolAvailability++;
+        //PlayerPrefs.SetInt("ToolNumber", toolAvailability);
+
+        //AddToToolAvailability();
+        toolObjectiveCountdown--;
+        PlayerPrefs.SetInt("ObjectiveCountdown", toolObjectiveCountdown);
+
         SceneManager.LoadScene("MobilePhoneTool");
     }
 

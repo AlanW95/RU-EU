@@ -555,10 +555,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   textDisplay2: {fileID: 1394089434}
   discussion2:
-  - Does environment matter to the EU?
-  - The EU has done a lot to tackle climate change.
-  - If the EU were effective we wouldn't need extinction revolution.
-  - I'm with Trump here. There is no climate change problem.
+  - 'The EU has done a lot to tackle climate change. '
+  - 'If the EU were effective we wouldn''t need extinction rebellion. '
+  - 'Government and people at all levels need to take action. '
   typingSpeed: 0
   continueButton: {fileID: 763336593}
   toolBG: {fileID: 1968638422}
@@ -1917,7 +1916,7 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_text: The following discussion is based on the theme of CULTURE.
+  m_text: Has the EU helped to create a shared cultural identity between EU nations?
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: bf071a21c75d5984182ca2896c24ba39, type: 2}
   m_sharedMaterial: {fileID: 21445493198866178, guid: bf071a21c75d5984182ca2896c24ba39,
@@ -1995,11 +1994,11 @@ MonoBehaviour:
     lineCount: 2
     pageCount: 1
     materialCount: 1
-  m_havePropertiesChanged: 0
+  m_havePropertiesChanged: 1
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_spriteAnimator: {fileID: 0}
-  m_isInputParsingRequired: 0
+  m_isInputParsingRequired: 1
   m_inputSource: 0
   m_hasFontAssetChanged: 0
   m_subTextObjects:
@@ -2453,12 +2452,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   textDisplay2: {fileID: 1394089434}
   discussion2:
-  - Has the social impact been important?
-  - But most immigrants have integrated well into this village and make a real contribution
-    to village life.
-  - That's so not true! Most of them hang around with the people they came with and
-    don't even try to learn English.
-  - I can see it both ways.
+  - 'But most immigrants have integrated well into this village and make a real contribution
+    to village life. '
+  - 'That''s so not true! Most of them hang around with the people they came with
+    and don''t even try to learn English. '
+  - 'Some people integrate and some don''t. '
   typingSpeed: 0
   continueButton: {fileID: 1093933578}
   toolBG: {fileID: 1968638422}
@@ -5188,34 +5186,34 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   textDisplay: {fileID: 89239116}
   discussion:
-  - Has the social impact been important?
-  - But most immigrants have integrated well into this village and make a real contribution
-    to village life.
-  - That's so not true! Most of them hang around with people they came with and don't
-    even try to learn English.
-  - I can see it both ways.
+  - Has the social impact of EU membership been important?
+  - 'But most immigrants have integrated well into this village and make a real contribution
+    to village life. '
+  - 'That''s so not true! Most of them hang around with the people they came with
+    and don''t even try to learn English. '
+  - 'Some people integrate and some don''t. '
   - Does the environment matter to the EU?
-  - The EU has done a lot to tackle climate change.
-  - If the EU were effective we wouldn't need extinction revolution.
-  - I'm with Trump here. There is no climate change problem.
-  - But is there really equality of opportunity for all?
-  - Being a member of the EU has provided fabulous opportunities for students to travel
-    and study abroad to anyone who wants to take them.
-  - You must be kidding - that is what Brexit is all about! There are no opportunities
-    for us ordinary folk, the opportunities are only for those who have money.
-  - Well both of these are true!
+  - 'The EU has done a lot to tackle climate change. '
+  - 'If the EU were effective we wouldn''t need extinction rebellion. '
+  - 'Government and people at all levels need to take action. '
+  - But is there really equality of opportunity for all EU citizens?
+  - 'Being a member of the EU has provided fabulous opportunities for people to travel
+    or study abroad, for anyone who wants to take them. '
+  - 'You must be kidding - that is what Brexit is all about! There are no opportunities
+    for us ordinary folk, the opportunities are only for those who have money. '
+  - 'Well both of these might be true at times? '
   - But what about the security of our country?
-  - For me, one of the main benefits of EU membership has been to prevent war between
-    the nations of Europe.
-  - But there's still lots of tensions between the nations of Europe. It's only a
-    matter of time before serious trouble kicks off somewhere.
-  - I don't really know enough about this to comment.
+  - 'For me one of the main benefits of EU membership has been to prevent war between
+    the nations of Europe. '
+  - 'But there''s still lots of tensions between the nations of Europe. It''s only
+    a matter of time before serious trouble kicks off somewhere. '
+  - 'I don''t really know enough about this to comment. '
   - Deep down, how would you feel if we left the EU?
-  - I'm really worried about leaving the EU. It feels like we're turning our backs
-    on the rest of the world.
-  - All the people I know are really pleased about leaving Europe. We're planning
-    a street party for when we go.
-  - I'm worried about how easy it will be to go on holiday.
+  - 'I''m really worried about leaving the EU. It feels like we''re turning our backs
+    on the rest of the world. '
+  - 'All the people I know are really pleased about leaving the EU. We''re planning
+    a street party for when we go. '
+  - 'I''m worried about how easy it will be to go on holiday. '
   typingSpeed: 0
   continueButton: {fileID: 1041933043}
   startCanvas: {fileID: 97389849}
@@ -5302,7 +5300,7 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_text: The following discussion is based on the theme of EMOTIONS.
+  m_text: Deep down, how would you feel if we left the EU?
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: bf071a21c75d5984182ca2896c24ba39, type: 2}
   m_sharedMaterial: {fileID: 21445493198866178, guid: bf071a21c75d5984182ca2896c24ba39,
@@ -5380,11 +5378,11 @@ MonoBehaviour:
     lineCount: 2
     pageCount: 1
     materialCount: 1
-  m_havePropertiesChanged: 0
+  m_havePropertiesChanged: 1
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_spriteAnimator: {fileID: 0}
-  m_isInputParsingRequired: 0
+  m_isInputParsingRequired: 1
   m_inputSource: 0
   m_hasFontAssetChanged: 0
   m_subTextObjects:
@@ -5917,7 +5915,7 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_text: The following discussion is based on the theme of SOCIAL.
+  m_text: Has the social impact of EU membership been important?
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: bf071a21c75d5984182ca2896c24ba39, type: 2}
   m_sharedMaterial: {fileID: 21445493198866178, guid: bf071a21c75d5984182ca2896c24ba39,
@@ -5999,7 +5997,7 @@ MonoBehaviour:
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_spriteAnimator: {fileID: 0}
-  m_isInputParsingRequired: 0
+  m_isInputParsingRequired: 1
   m_inputSource: 0
   m_hasFontAssetChanged: 0
   m_subTextObjects:
@@ -7231,7 +7229,7 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_text: The following discussion is based on the theme of RIGHTS & RESPONSIBILITIES.
+  m_text: But is there really equality of opportunity for all EU citizens?
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: bf071a21c75d5984182ca2896c24ba39, type: 2}
   m_sharedMaterial: {fileID: 21445493198866178, guid: bf071a21c75d5984182ca2896c24ba39,
@@ -7313,7 +7311,7 @@ MonoBehaviour:
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_spriteAnimator: {fileID: 0}
-  m_isInputParsingRequired: 0
+  m_isInputParsingRequired: 1
   m_inputSource: 0
   m_hasFontAssetChanged: 0
   m_subTextObjects:
@@ -7919,13 +7917,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   textDisplay2: {fileID: 1394089434}
   discussion2:
-  - Something people worry about is who makes the laws - Brussels or your national
-    government.
-  - Would you not rather have the Brussels elite in charge than UKIP and Nigel Farage?
-  - Brussels is far too remote - we need to be making our own laws back here in the
-    UK.
-  - It doesn't make any difference - all the politicians just say the same things
-    anyway.
+  - 'It is common decision making - all national governments could veto potential
+    laws from Brussels if they wanted to. '
+  - 'Brussels is far too remote - we need to be making our own laws back here in the
+    UK. '
+  - 'It doesn''t make any difference - all the politicians just say the same things
+    anyway. '
   typingSpeed: 0
   continueButton: {fileID: 1972205700}
   toolBG: {fileID: 1968638422}
@@ -8365,11 +8362,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   textDisplay2: {fileID: 1394089434}
   discussion2:
-  - What do you think of the motto of the European Union "United in Diversity"?
-  - EU grants have funded many projects that contribute to a shared European cultural
-    identity.
-  - The European Union represents an unattractive homogenisation of European cultures.
-  - But what does culture really mean?
+  - 'EU grants have funded many projects that contribute to a shared European cultural
+    identity. '
+  - 'The European Union represents an unattractive homogenisation of European cultures. '
+  - 'But what does culture really mean? '
   typingSpeed: 0
   continueButton: {fileID: 580406612}
   toolBG: {fileID: 1968638422}
@@ -9553,7 +9549,7 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_text: The following discussion is based on the theme of HISTORY.
+  m_text: What does history tell us about the value of the European Union?
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: bf071a21c75d5984182ca2896c24ba39, type: 2}
   m_sharedMaterial: {fileID: 21445493198866178, guid: bf071a21c75d5984182ca2896c24ba39,
@@ -9631,11 +9627,11 @@ MonoBehaviour:
     lineCount: 2
     pageCount: 1
     materialCount: 1
-  m_havePropertiesChanged: 0
+  m_havePropertiesChanged: 1
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_spriteAnimator: {fileID: 0}
-  m_isInputParsingRequired: 0
+  m_isInputParsingRequired: 1
   m_inputSource: 0
   m_hasFontAssetChanged: 0
   m_subTextObjects:
@@ -11188,11 +11184,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   textDisplay2: {fileID: 1394089434}
   discussion2:
-  - But surely what matters most is where you actually come from?
-  - I have no trouble in thinking of myself as both British and European.
-  - Being British is much more important to me than being European - I really want
-    a British passport!
-  - It all depends what you're talking about.
+  - 'I have no trouble in thinking of myself as both British and European. '
+  - 'Being British is much more important to me than being European - I really want
+    a blue passport! '
+  - 'It all depends what you''re talking about. '
   typingSpeed: 0
   continueButton: {fileID: 958828457}
   toolBG: {fileID: 1968638422}
@@ -12629,12 +12624,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   textDisplay2: {fileID: 1394089434}
   discussion2:
-  - Jobs and the economy seem to be important issues for most people.
-  - "After Brexit, the UK economy could be around 6% smaller by 2030 and that would
-    mean a loss of income equivalent to \xA34,300 a year for every British household."
-  - But once we've left the EU we'll be able to strike deals with the rest of the
-    world so we'll be fine.
-  - I don't really care so long as my kids get jobs when they leave school.
+  - "After Brexit, the UK economy could be around 6% smaller by 2030, and that would
+    mean a loss of income equivalent to \xA34,300 a year for every British household. "
+  - 'But once we''ve left the EU we''ll be able to strike deals with the rest of the
+    world so we''ll be fine. '
+  - 'I don''t really care so long as my kids get jobs when they leave school. '
   typingSpeed: 0
   continueButton: {fileID: 1290602529}
   toolBG: {fileID: 1968638422}
@@ -17066,11 +17060,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   textDisplay2: {fileID: 1394089434}
   discussion2:
-  - What does history tell us?
-  - The people who want to go back in time have very poor knowledge of European history.
-  - The UK has always felt the need to defend itself, which is why the UK doesn't
-    feel very 'European'.
-  - History can tell us a lot.
+  - 'History tells us that the European Union was founded on the very idea of avoiding
+    future conflicts in Europe. '
+  - 'The UK has always managed to defend itself just fine without Europe. '
+  - 'History can tell us a lot. '
   typingSpeed: 0
   continueButton: {fileID: 1628697458}
   toolBG: {fileID: 1968638422}
@@ -17277,7 +17270,7 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_text: The following discussion is based on the theme of ENVIRONMENT.
+  m_text: Does environment matter to the EU?
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: bf071a21c75d5984182ca2896c24ba39, type: 2}
   m_sharedMaterial: {fileID: 21445493198866178, guid: bf071a21c75d5984182ca2896c24ba39,
@@ -17359,7 +17352,7 @@ MonoBehaviour:
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_spriteAnimator: {fileID: 0}
-  m_isInputParsingRequired: 0
+  m_isInputParsingRequired: 1
   m_inputSource: 0
   m_hasFontAssetChanged: 0
   m_subTextObjects:
@@ -19143,7 +19136,7 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_text: The following discussion is based on the theme of GEOGRAPHY.
+  m_text: But surely what matters most is where you actually come from?
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: bf071a21c75d5984182ca2896c24ba39, type: 2}
   m_sharedMaterial: {fileID: 21445493198866178, guid: bf071a21c75d5984182ca2896c24ba39,
@@ -19221,11 +19214,11 @@ MonoBehaviour:
     lineCount: 2
     pageCount: 1
     materialCount: 1
-  m_havePropertiesChanged: 0
+  m_havePropertiesChanged: 1
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_spriteAnimator: {fileID: 0}
-  m_isInputParsingRequired: 0
+  m_isInputParsingRequired: 1
   m_inputSource: 0
   m_hasFontAssetChanged: 0
   m_subTextObjects:
@@ -19756,7 +19749,8 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_text: The following discussion is based on the theme of POLITICS.
+  m_text: Something people worry about is who makes the laws - Brussels or your national
+    government?
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: bf071a21c75d5984182ca2896c24ba39, type: 2}
   m_sharedMaterial: {fileID: 21445493198866178, guid: bf071a21c75d5984182ca2896c24ba39,
@@ -19834,11 +19828,11 @@ MonoBehaviour:
     lineCount: 2
     pageCount: 1
     materialCount: 1
-  m_havePropertiesChanged: 0
+  m_havePropertiesChanged: 1
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_spriteAnimator: {fileID: 0}
-  m_isInputParsingRequired: 0
+  m_isInputParsingRequired: 1
   m_inputSource: 0
   m_hasFontAssetChanged: 0
   m_subTextObjects:
@@ -20290,12 +20284,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   textDisplay2: {fileID: 1394089434}
   discussion2:
-  - Deep down, how would you feel if we left the EU?
-  - I'm really worried about leaving the EU. It feels like we're turning our backs
-    on the rest of the world.
-  - All the people I know are really pleased about leaving Europe. We're planning
-    a street party for when we go.
-  - I'm worried about how easy it will be to go on holiday.
+  - 'I''m really worried about leaving the EU. It feels like we''re turning our backs
+    on the rest of the world. '
+  - 'All the people I know are really pleased about leaving the EU. We''re planning
+    a street party for when we go. '
+  - 'I''m worried about how easy it will be to go on holiday. '
   typingSpeed: 0
   continueButton: {fileID: 1470800753}
   toolBG: {fileID: 1968638422}
@@ -21796,12 +21789,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   textDisplay2: {fileID: 1394089434}
   discussion2:
-  - But is there really equality of opportunity for all?
-  - Being a member of the EU has provided fabulous opportunities for students to travel
-    and study abroad to anyone who wants to take them.
-  - You must be kidding - that is what Brexit is all about! There are no opportunities
-    for us ordinary folk, the opportunities are only for those who have money.
-  - Well both of these are true!
+  - 'Being a member of the EU has provided fabulous opportunities for people to travel
+    or study abroad, for anyone who wants to take them. '
+  - 'You must be kidding - that is what Brexit is all about! There are no opportunities
+    for us ordinary folk, the opportunities are only for those who have money. '
+  - 'Well both of these might be true at times? '
   typingSpeed: 0
   continueButton: {fileID: 229275081}
   toolBG: {fileID: 1968638422}
@@ -22602,7 +22594,8 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_text: The following discussion is based on the theme of ECONOMY.
+  m_text: Jobs and the economy seem to be important issues for most people, in thinking
+    about the EU.
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: bf071a21c75d5984182ca2896c24ba39, type: 2}
   m_sharedMaterial: {fileID: 21445493198866178, guid: bf071a21c75d5984182ca2896c24ba39,
@@ -22680,11 +22673,11 @@ MonoBehaviour:
     lineCount: 2
     pageCount: 1
     materialCount: 1
-  m_havePropertiesChanged: 0
+  m_havePropertiesChanged: 1
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_spriteAnimator: {fileID: 0}
-  m_isInputParsingRequired: 0
+  m_isInputParsingRequired: 1
   m_inputSource: 0
   m_hasFontAssetChanged: 0
   m_subTextObjects:
@@ -24298,7 +24291,7 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_text: The following discussion is based on the theme of SAFETY & SECURITY.
+  m_text: But what about security of our country?
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: bf071a21c75d5984182ca2896c24ba39, type: 2}
   m_sharedMaterial: {fileID: 21445493198866178, guid: bf071a21c75d5984182ca2896c24ba39,
@@ -24376,11 +24369,11 @@ MonoBehaviour:
     lineCount: 2
     pageCount: 1
     materialCount: 1
-  m_havePropertiesChanged: 0
+  m_havePropertiesChanged: 1
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_spriteAnimator: {fileID: 0}
-  m_isInputParsingRequired: 0
+  m_isInputParsingRequired: 1
   m_inputSource: 0
   m_hasFontAssetChanged: 0
   m_subTextObjects:
@@ -25183,12 +25176,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   textDisplay2: {fileID: 1394089434}
   discussion2:
-  - But what about the security of our country?
-  - For me, one of the main benefits of EU membership has been to prevent war between
-    the nations of Europe.
-  - But there's still lots of tensions between nations of Europe. It's only a matter
-    of time before serious trouble kicks off somewhere.
-  - I don't really know enough about this to comment.
+  - 'For me one of the main benefits of EU membership has been to prevent war between
+    the nations of Europe. '
+  - 'But there''s still lots of tensions between the nations of Europe. It''s only
+    a matter of time before serious trouble kicks off somewhere. '
+  - 'I don''t really know enough about this to comment. '
   typingSpeed: 0
   continueButton: {fileID: 1231161830}
   toolBG: {fileID: 1968638422}

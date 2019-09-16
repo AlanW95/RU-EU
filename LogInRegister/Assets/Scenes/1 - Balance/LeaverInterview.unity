@@ -9913,7 +9913,7 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_text: In what way has the EU and the impact of the EU changed over time?
+  m_text: "Has the EU helped to create a shared cultural indentity between EU nations?\r"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: bf071a21c75d5984182ca2896c24ba39, type: 2}
   m_sharedMaterial: {fileID: 21445493198866178, guid: bf071a21c75d5984182ca2896c24ba39,
@@ -9995,7 +9995,7 @@ MonoBehaviour:
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_spriteAnimator: {fileID: 0}
-  m_isInputParsingRequired: 0
+  m_isInputParsingRequired: 1
   m_inputSource: 0
   m_hasFontAssetChanged: 0
   m_subTextObjects:
@@ -13624,7 +13624,7 @@ MonoBehaviour:
   textDisplay: {fileID: 1940251443}
   sentences:
   - 'The EU claims to provide rigorous standards for treating its citizens fairly,
-    but this is not the experience of many citizens. '
+    but this is not the experience of many citizens in my country. '
   feedbackCanvas: {fileID: 1271130292}
   scoreCanvas: {fileID: 1810696522}
   rankingCanvas: {fileID: 732463104}
@@ -16755,7 +16755,8 @@ MonoBehaviour:
   leaverCanvas: {fileID: 1408915861}
   textDisplay: {fileID: 1940251443}
   sentences:
-  - 'The European Union represents an unattractive homogenisation of European cultures. '
+  - 'To me, the European Union represents an unattractive homogenisation of European
+    cultures. '
   feedbackCanvas: {fileID: 1271130292}
   scoreCanvas: {fileID: 1810696522}
   rankingCanvas: {fileID: 732463104}
@@ -21011,7 +21012,7 @@ MonoBehaviour:
   leaverCanvas: {fileID: 1408915861}
   textDisplay: {fileID: 1940251443}
   sentences:
-  - 'I think of myself as my own nationality. '
+  - 'I think of myself primarily as my own nationality. '
   feedbackCanvas: {fileID: 1271130292}
   scoreCanvas: {fileID: 1810696522}
   rankingCanvas: {fileID: 732463104}

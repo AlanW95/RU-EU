@@ -13,11 +13,13 @@ public class BrexitWorkplace : MonoBehaviour
 
     public TextMeshProUGUI textDisplay;
 
-    public int toolAvailability = 0;
+    //public int toolAvailability = 0;
+    public int toolObjectiveCountdown = 8;
 
     // Start is called before the first frame update
     void Start()
-    {   
+    {
+        PlayerPrefs.GetInt("ObjectiveCountdown");
         mobilePhone.SetActive(false); //WILL BE TRUE IN FULL GAME
         //click mobile phone and the interview will become available
 
@@ -31,38 +33,44 @@ public class BrexitWorkplace : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        PlayerPrefs.GetInt("ToolNumber");
+        //PlayerPrefs.GetInt("ToolNumber");
+        Debug.Log("Objective Countdown: " + toolObjectiveCountdown);
 
-        if (toolAvailability == 0) {
+        if (toolObjectiveCountdown == 8) {        //toolAvailability == 0) {
             textDisplay.text = "You are receiving a call from your mentor... pick it up!";
-            PlayerPrefs.SetInt("ToolNumber", toolAvailability);
+            //PlayerPrefs.SetInt("ObjectiveCountdown", toolObjectiveCountdown);
+            
+            /*textDisplay.text = "You are receiving a call from your mentor... pick it up!";
+            PlayerPrefs.SetInt("ToolNumber", toolAvailability);*/
         }
 
-        if (toolAvailability == 1) {
+        if (toolObjectiveCountdown == 7) {        //toolAvailability == 1) {
             Interview1();
+
+            textDisplay.text = "Interview with a Remain campaigner is now available. Click the reporter pad to continue.";
         }
 
-        if (toolAvailability == 2) {
+        if (toolObjectiveCountdown == 6) {        //toolAvailability == 2) {
             Newsflash1();
         }
 
-        if (toolAvailability == 3) {
+        if (toolObjectiveCountdown == 5) {        //toolAvailability == 3) {
             Discussion();
         }
 
-        if (toolAvailability == 4) {
+        if (toolObjectiveCountdown == 4) {        //toolAvailability == 4) {
             Newsflash2();
         }
 
-        if (toolAvailability == 5) {
+        if (toolObjectiveCountdown == 3) {        //toolAvailability == 5) {
             Interview2();
         }
 
-        if (toolAvailability == 6) {
+        if (toolObjectiveCountdown == 2) {        //toolAvailability == 6) {
             Newsflash3();
         }
 
-        if (toolAvailability == 7) {
+        if (toolObjectiveCountdown == 1) {        //toolAvailability == 7) {
             FinalAssignment();
         }
 
@@ -75,11 +83,16 @@ public class BrexitWorkplace : MonoBehaviour
         SceneManager.LoadScene("Dashboard");
     }
 
+
+
     public void AddToToolAvailability() {
         //helps recognise when to activate other tools
-        toolAvailability++;
+        toolObjectiveCountdown--;
+        PlayerPrefs.SetInt("ObjectiveCountdown", toolObjectiveCountdown);
+        //Debug.Log("Tool Objective Countdown: " + toolObjectiveCountdown);
+        /*toolAvailability++;
         PlayerPrefs.SetInt("ToolNumber", toolAvailability);
-        Debug.Log("Tool Availability: " + toolAvailability);
+        Debug.Log("Tool Availability: " + toolAvailability);*/
     }
 
     public void Interview1() {
@@ -90,13 +103,12 @@ public class BrexitWorkplace : MonoBehaviour
         //Interview 1 becomes available
         interview1.SetActive(true);
         interview1Collider.GetComponent<BoxCollider>().enabled = true;
-        textDisplay.text = "Interview with a Remain campaigner is now available. Click the reporter pad to continue.";
     }
 
     public void Newsflash1() {
-        toolAvailability++;
+        /*toolAvailability++;
         PlayerPrefs.SetInt("ToolNumber", toolAvailability);
-        Debug.Log("Tool Availability: " + toolAvailability);
+        Debug.Log("Tool Availability: " + toolAvailability);*/
 
         //the first Newsflash will be activated here
         interview1Collider.GetComponent<BoxCollider>().enabled = false;
@@ -106,9 +118,9 @@ public class BrexitWorkplace : MonoBehaviour
     }
 
     public void Discussion() {
-        toolAvailability++;
+        /*toolAvailability++;
         PlayerPrefs.SetInt("ToolNumber", toolAvailability);
-        Debug.Log("Tool Availability: " + toolAvailability);
+        Debug.Log("Tool Availability: " + toolAvailability);*/
 
         //the discussion becomes available
         newsflash.SetActive(false);
@@ -119,9 +131,9 @@ public class BrexitWorkplace : MonoBehaviour
     }
 
     public void Newsflash2() {
-        toolAvailability++;
+        /*toolAvailability++;
         PlayerPrefs.SetInt("ToolNumber", toolAvailability);
-        Debug.Log("Tool Availability: " + toolAvailability);
+        Debug.Log("Tool Availability: " + toolAvailability);*/
 
         discussionCollider.GetComponent<MeshCollider>().enabled = false;
 
@@ -130,9 +142,9 @@ public class BrexitWorkplace : MonoBehaviour
     }
 
     public void Interview2() {
-        toolAvailability++;
+        /*toolAvailability++;
         PlayerPrefs.SetInt("ToolNumber", toolAvailability);
-        Debug.Log("Tool Availability: " + toolAvailability);
+        Debug.Log("Tool Availability: " + toolAvailability);*/
 
         newsflash.SetActive(false);
 
@@ -142,9 +154,9 @@ public class BrexitWorkplace : MonoBehaviour
     }
 
     public void Newsflash3() {
-        toolAvailability++;
+        /*toolAvailability++;
         PlayerPrefs.SetInt("ToolNumber", toolAvailability);
-        Debug.Log("Tool Availability: " + toolAvailability);
+        Debug.Log("Tool Availability: " + toolAvailability);*/
 
         interview2Collider.GetComponent<BoxCollider>().enabled = false;
 
@@ -153,9 +165,9 @@ public class BrexitWorkplace : MonoBehaviour
     }
 
     public void FinalAssignment() {
-        toolAvailability++;
+        /*toolAvailability++;
         PlayerPrefs.SetInt("ToolNumber", toolAvailability);
-        Debug.Log("Tool Availability: " + toolAvailability);
+        Debug.Log("Tool Availability: " + toolAvailability);*/
 
         newsflash.SetActive(false);
 

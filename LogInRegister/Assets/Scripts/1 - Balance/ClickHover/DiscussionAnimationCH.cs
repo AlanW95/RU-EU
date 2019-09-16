@@ -10,6 +10,9 @@ public class DiscussionAnimationCH : BrexitWorkplace
     void OnMouseDown() {
         SceneManager.LoadScene("DiscussionTool");
         //Interview2();
+
+        toolObjectiveCountdown--;
+        PlayerPrefs.SetInt("ObjectiveCountdown", toolObjectiveCountdown);
     }
 
     void OnMouseOver() {

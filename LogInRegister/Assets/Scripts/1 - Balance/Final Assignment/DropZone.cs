@@ -13,9 +13,17 @@ public class DropZone : MonoBehaviour, IDropHandler, IPointerEnterHandler, IPoin
     public GameObject dropzone1, dropzone2, dropzone3;
     PointerEventData eventData;
 
+    public int finalAssignmentCounter;
+
     //Trying to effectively get the submission of the article button to appear upon putting three items in
     void Update() {
         //CheckSubmission();
+
+        PlayerPrefs.GetInt("FinalAssignmentCounter");
+
+        if (finalAssignmentCounter == -3) {
+            submitButton.interactable = true;
+        }
     }
 
     /*public void CheckSubmission() {
@@ -58,6 +66,10 @@ public class DropZone : MonoBehaviour, IDropHandler, IPointerEnterHandler, IPoin
 
     public void OnDrop(PointerEventData eventData) {
         Debug.Log(eventData.pointerDrag.name + " was dropped on " + gameObject.name);
+        
+        finalAssignmentCounter -= 1;
+        PlayerPrefs.SetInt("FinalAssignmentCounter", finalAssignmentCounter);
+        Debug.Log("Final Assignment Counter: " + finalAssignmentCounter);
 
         Drag d = eventData.pointerDrag.GetComponent<Drag>();
         if (d != null) {

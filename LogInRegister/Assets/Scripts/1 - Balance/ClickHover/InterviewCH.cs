@@ -10,6 +10,9 @@ public class InterviewCH : BrexitWorkplace
     void OnMouseDown() {
         SceneManager.LoadScene("RemainInterview");
         //Newsflash1();
+
+        toolObjectiveCountdown--;
+        PlayerPrefs.SetInt("ObjectiveCountdown", toolObjectiveCountdown);
     }
 
     void OnMouseOver() {

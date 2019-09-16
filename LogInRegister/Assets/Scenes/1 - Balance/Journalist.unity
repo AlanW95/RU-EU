@@ -1013,7 +1013,7 @@ MonoBehaviour:
   interview2Collider: {fileID: 117575379}
   finalAssignmentCollider: {fileID: 1641170707}
   textDisplay: {fileID: 1839532273}
-  toolAvailability: 0
+  toolObjectiveCountdown: 8
   interviewTool: {fileID: 559657443}
 --- !u!65 &117575379
 BoxCollider:
@@ -5082,7 +5082,7 @@ MonoBehaviour:
   interview2Collider: {fileID: 117575379}
   finalAssignmentCollider: {fileID: 1641170707}
   textDisplay: {fileID: 1839532273}
-  toolAvailability: 0
+  toolObjectiveCountdown: 8
   interviewTool: {fileID: 1401194809}
 --- !u!65 &557821211
 BoxCollider:
@@ -6306,7 +6306,7 @@ MonoBehaviour:
   interview2Collider: {fileID: 117575379}
   finalAssignmentCollider: {fileID: 1641170707}
   textDisplay: {fileID: 1839532273}
-  toolAvailability: 0
+  toolObjectiveCountdown: 8
   discussionAnimationTool: {fileID: 801888538}
 --- !u!64 &617982933 stripped
 MeshCollider:
@@ -10411,7 +10411,7 @@ MonoBehaviour:
   interview2Collider: {fileID: 117575379}
   finalAssignmentCollider: {fileID: 1641170707}
   textDisplay: {fileID: 1839532273}
-  toolAvailability: 0
+  toolObjectiveCountdown: 8
   chatTool: {fileID: 1153496229}
 --- !u!65 &1044808115
 BoxCollider:
@@ -10930,7 +10930,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 0.5}
   m_AnchorMax: {x: 1, y: 0.5}
-  m_AnchoredPosition: {x: 0.000061035156, y: 0}
+  m_AnchoredPosition: {x: 0.00012207031, y: 0}
   m_SizeDelta: {x: 550, y: 100}
   m_Pivot: {x: 1, y: 0.5}
 --- !u!114 &1191487353
@@ -13060,6 +13060,17 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 1707301744}
+        m_MethodName: AddToToolAvailability
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
     m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
       Culture=neutral, PublicKeyToken=null
 --- !u!95 &1366833989
@@ -14757,7 +14768,7 @@ MonoBehaviour:
   interview2Collider: {fileID: 117575379}
   finalAssignmentCollider: {fileID: 1641170707}
   textDisplay: {fileID: 1839532273}
-  toolAvailability: 0
+  toolObjectiveCountdown: 8
   notebookTool: {fileID: 2114749090}
 --- !u!65 &1510091880
 BoxCollider:
@@ -16397,7 +16408,7 @@ MonoBehaviour:
   interview2Collider: {fileID: 117575379}
   finalAssignmentCollider: {fileID: 1641170707}
   textDisplay: {fileID: 1839532273}
-  toolAvailability: 0
+  toolObjectiveCountdown: 8
   newsflashBar: {fileID: 1366833983}
   newsflashText: {fileID: 675694825}
 --- !u!114 &1641170706
@@ -16423,7 +16434,7 @@ MonoBehaviour:
   interview2Collider: {fileID: 117575379}
   finalAssignmentCollider: {fileID: 1641170707}
   textDisplay: {fileID: 1839532273}
-  toolAvailability: 0
+  toolObjectiveCountdown: 8
   finalAssignmentTool: {fileID: 1539768061}
 --- !u!65 &1641170707
 BoxCollider:
@@ -16833,7 +16844,7 @@ MonoBehaviour:
   interview2Collider: {fileID: 117575379}
   finalAssignmentCollider: {fileID: 1641170707}
   textDisplay: {fileID: 1839532273}
-  toolAvailability: 0
+  toolObjectiveCountdown: 8
   newsflashBar: {fileID: 1366833983}
   newsflashText: {fileID: 675694825}
 --- !u!114 &1707301744
@@ -16859,7 +16870,7 @@ MonoBehaviour:
   interview2Collider: {fileID: 117575379}
   finalAssignmentCollider: {fileID: 1641170707}
   textDisplay: {fileID: 1839532273}
-  toolAvailability: 0
+  toolObjectiveCountdown: 8
 --- !u!1 &1715251254
 GameObject:
   m_ObjectHideFlags: 0
@@ -18032,7 +18043,7 @@ MonoBehaviour:
   interview2Collider: {fileID: 117575379}
   finalAssignmentCollider: {fileID: 1641170707}
   textDisplay: {fileID: 1839532273}
-  toolAvailability: 0
+  toolObjectiveCountdown: 8
   chatTool: {fileID: 1153496229}
 --- !u!4 &1798004177
 Transform:
@@ -18344,7 +18355,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &1839532272
 RectTransform:
   m_ObjectHideFlags: 0

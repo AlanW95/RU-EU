@@ -21,6 +21,8 @@ public class FinalAssignment : MonoBehaviour {
     private string theme1, theme2, theme3;
     public TextMeshProUGUI introduction, paragraph1, paragraph2, paragraph3;
 
+    public GameObject finalAssignmentCanvas, exitGameCanvas;
+
     // Start is called before the first frame update
     void Start() {
         Interview1Tab();
@@ -67,6 +69,10 @@ public class FinalAssignment : MonoBehaviour {
         SceneManager.LoadScene("Journalist");
     }
 
+    public void ExitGame() {
+        Application.Quit();
+    }
+
     public void Interview1Tab() {
         tools[0].SetActive(true); //Interview 1
         tools[1].SetActive(false); //Interview 2
@@ -93,5 +99,10 @@ public class FinalAssignment : MonoBehaviour {
         tools[1].SetActive(false); //Interview 2
         tools[2].SetActive(false); //Discussion
         tools[3].SetActive(true); //Newsflash
+    }
+
+    public void GameFinished() {
+        finalAssignmentCanvas.SetActive(false);
+        exitGameCanvas.SetActive(true);
     }
 }

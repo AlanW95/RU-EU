@@ -21,7 +21,7 @@ public class DropZone : MonoBehaviour, IDropHandler, IPointerEnterHandler, IPoin
 
         PlayerPrefs.GetInt("FinalAssignmentCounter");
 
-        if (finalAssignmentCounter == -3) {
+        if (finalAssignmentCounter == -1) {
             submitButton.interactable = true;
         }
     }

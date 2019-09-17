@@ -54,6 +54,10 @@ public class Dashboard : MonoBehaviour
         SceneManager.LoadScene("Journalist");
     }
 
+    public void LoadFinalAssignment() {
+        SceneManager.LoadScene("FinalAssignment");
+    }
+
     public void TopThemeSliderValue() {
 
         if (topTheme.text == "Social") {

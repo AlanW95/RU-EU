@@ -23,11 +23,11 @@ public class BrexitWorkplace : MonoBehaviour
         mobilePhone.SetActive(false); //WILL BE TRUE IN FULL GAME
         //click mobile phone and the interview will become available
 
-        interview1.SetActive(true);
-        interview2.SetActive(true);
-        discussion.SetActive(true);
-        newsflash.SetActive(true);
-        finalAssignment.SetActive(true);
+        //interview1.SetActive(true);
+        //interview2.SetActive(true);
+        //discussion.SetActive(true);
+        //newsflash.SetActive(true);
+        //finalAssignment.SetActive(true);
     }
 
     // Update is called once per frame
@@ -37,9 +37,10 @@ public class BrexitWorkplace : MonoBehaviour
         Debug.Log("Objective Countdown: " + toolObjectiveCountdown);
 
         if (toolObjectiveCountdown == 8) {        //toolAvailability == 0) {
-            textDisplay.text = "You are receiving a call from your mentor... pick it up!";
+            //textDisplay.text = "You are receiving a call from your mentor... pick it up!";
+            textDisplay.text = "Do in order; left to right. Press bar below to participate in Newsflash tool.";
             //PlayerPrefs.SetInt("ObjectiveCountdown", toolObjectiveCountdown);
-            
+
             /*textDisplay.text = "You are receiving a call from your mentor... pick it up!";
             PlayerPrefs.SetInt("ToolNumber", toolAvailability);*/
         }

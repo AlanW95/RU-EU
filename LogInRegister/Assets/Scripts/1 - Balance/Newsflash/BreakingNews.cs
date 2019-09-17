@@ -6,7 +6,7 @@ public class BreakingNews : MonoBehaviour {
 
     public BreakingNewsItem breakingNewsItemPrefab;
     [Range(1f, 10f)]
-    public float itemDuration = 3.0f;
+    public float itemDuration = 1.0f; //3.0f
     public string[] fillerItems;
 
     float width;

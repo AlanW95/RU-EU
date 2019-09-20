@@ -24,7 +24,7 @@ EditorBuildSettings:
     path: Assets/Scenes/1 - Balance/Journalist.unity
     guid: 4fa2492e0e4d1c141a0ca7c62cb7d94f
   - enabled: 0
-    path: Assets/Scenes/1 - Balance/MobilePhoneTool.unity
+    path: Assets/Scenes/1 - Balance/MobilePhone.unity
     guid: 23a1be3d8e0ca094eb1928019e4885aa
   - enabled: 1
     path: Assets/Scenes/1 - Balance/RemainInterview.unity

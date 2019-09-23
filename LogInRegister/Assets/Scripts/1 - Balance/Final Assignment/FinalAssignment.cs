@@ -53,9 +53,10 @@ public class FinalAssignment : MonoBehaviour {
         //newsflash6.text = PlayerPrefs.GetString("BrexitNewsflash6");
 
         theme1 = PlayerPrefs.GetString("TopTheme");
-        introduction.text = "They key issues that concern EU citizens seems to be; " + theme1 + " , [THEME2], [THEME3].";
+        theme2 = PlayerPrefs.GetString("SecondTheme");
+        introduction.text = "They key issues that concern EU citizens seems to be; " + theme1 + " ," + theme2 + " , [THEME3].";
         paragraph1.text = "It is clear in the debate about EU identity that " + theme1 + " is very important. As one interviewee said:";
-        paragraph2.text = "However, we would also remember that [THEME2] is important too. Speaking to our reporter, our interviewee said:";
+        paragraph2.text = "However, we would also remember that " + theme2 + " is important too. Speaking to our reporter, our interviewee said:";
         paragraph3.text = "Many people seem very concerned about [THEME3]. To quote one of our interviewees on this topic:";
 
 

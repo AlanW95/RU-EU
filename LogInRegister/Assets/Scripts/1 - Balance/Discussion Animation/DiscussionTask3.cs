@@ -79,11 +79,11 @@ public class DiscussionTask3 : MonoBehaviour
             feedbackCanvas.SetActive(true);
         }
 
-        Debug.Log(predictorCounter);
-
         if (Input.GetKeyDown(KeyCode.Escape)) {
             SceneManager.LoadScene("Journalist");
         }
+
+        Debug.Log("Predictor Counter: " + predictorCounter);
     }
 
     public void ExitGame() {
@@ -102,12 +102,12 @@ public class DiscussionTask3 : MonoBehaviour
 
         //there will only be two because we change to the second set of dialogue to choose
 
-        if (predictorCounter == 4) {
+        if (predictorCounter == 3) {
             //add to new PlayerPrefs
             PlayerPrefs.SetString("NewBrexitDiscussion1", statement1.text);
         }
 
-        if (predictorCounter == 3) {
+        if (predictorCounter == 2) {
             //add to new PlayerPrefs
             PlayerPrefs.SetString("NewBrexitDiscussion2", statement1.text);
         }
@@ -125,12 +125,12 @@ public class DiscussionTask3 : MonoBehaviour
         
         //there will only be two because we change to the second set of dialogue to choose
 
-        if (predictorCounter == 4) {
+        if (predictorCounter == 3) {
             //add to new PlayerPrefs
             PlayerPrefs.SetString("NewBrexitDiscussion1", statement2.text);
         }
 
-        if (predictorCounter == 3) {
+        if (predictorCounter == 2) {
             //add to new PlayerPrefs
             PlayerPrefs.SetString("NewBrexitDiscussion2", statement2.text);
         }
@@ -145,12 +145,12 @@ public class DiscussionTask3 : MonoBehaviour
 
         //there will only be two because we change to the second set of dialogue to choose
 
-        if (predictorCounter == 4) {
+        if (predictorCounter == 3) {
             //add to new PlayerPrefs
             PlayerPrefs.SetString("NewBrexitDiscussion1", statement3.text);
         }
 
-        if (predictorCounter == 3) {
+        if (predictorCounter == 2) {
             //add to new PlayerPrefs
             PlayerPrefs.SetString("NewBrexitDiscussion2", statement3.text);
         }
@@ -160,12 +160,12 @@ public class DiscussionTask3 : MonoBehaviour
         
         //there will only be two because we change to the second set of dialogue to choose
 
-        if (predictorCounter == 4) {
+        if (predictorCounter == 3) {
             //add to new PlayerPrefs
             PlayerPrefs.SetString("NewBrexitDiscussion1", statement3.text);
         }
 
-        if (predictorCounter == 3) {
+        if (predictorCounter == 2) {
             //add to new PlayerPrefs
             PlayerPrefs.SetString("NewBrexitDiscussion2", statement3.text);
         }
@@ -183,12 +183,12 @@ public class DiscussionTask3 : MonoBehaviour
         
         //there will only be two because we change to the second set of dialogue to choose
 
-        if (predictorCounter == 4) {
+        if (predictorCounter == 3) {
             //add to new PlayerPrefs
             PlayerPrefs.SetString("NewBrexitDiscussion1", statement4.text);
         }
 
-        if (predictorCounter == 3) {
+        if (predictorCounter == 2) {
             //add to new PlayerPrefs
             PlayerPrefs.SetString("NewBrexitDiscussion2", statement4.text);
         }
@@ -206,12 +206,12 @@ public class DiscussionTask3 : MonoBehaviour
         
         //there will only be two because we change to the second set of dialogue to choose
 
-        if (predictorCounter == 4) {
+        if (predictorCounter == 3) {
             //add to new PlayerPrefs
             PlayerPrefs.SetString("NewBrexitDiscussion1", statement5.text);
         }
 
-        if (predictorCounter == 3) {
+        if (predictorCounter == 2) {
             //add to new PlayerPrefs
             PlayerPrefs.SetString("NewBrexitDiscussion2", statement5.text);
         }
@@ -229,12 +229,12 @@ public class DiscussionTask3 : MonoBehaviour
         
         //there will only be two because we change to the second set of dialogue to choose
 
-        if (predictorCounter == 2) {
+        if (predictorCounter == 1) {
             //add to new PlayerPrefs
             PlayerPrefs.SetString("NewBrexitDiscussion3", statement6.text);
         }
 
-        if (predictorCounter == 1) {
+        if (predictorCounter == 0) {
             //add to new PlayerPrefs
             PlayerPrefs.SetString("NewBrexitDiscussion4", statement6.text);
         }
@@ -252,12 +252,12 @@ public class DiscussionTask3 : MonoBehaviour
         
         //there will only be two because we change to the second set of dialogue to choose
 
-        if (predictorCounter == 2) {
+        if (predictorCounter == 1) {
             //add to new PlayerPrefs
             PlayerPrefs.SetString("NewBrexitDiscussion3", statement7.text);
         }
 
-        if (predictorCounter == 1) {
+        if (predictorCounter == 0) {
             //add to new PlayerPrefs
             PlayerPrefs.SetString("NewBrexitDiscussion4", statement7.text);
         }
@@ -275,12 +275,12 @@ public class DiscussionTask3 : MonoBehaviour
         
         //there will only be two because we change to the second set of dialogue to choose
 
-        if (predictorCounter == 2) {
+        if (predictorCounter == 1) {
             //add to new PlayerPrefs
             PlayerPrefs.SetString("NewBrexitDiscussion3", statement8.text);
         }
 
-        if (predictorCounter == 1) {
+        if (predictorCounter == 0) {
             //add to new PlayerPrefs
             PlayerPrefs.SetString("NewBrexitDiscussion4", statement8.text);
         }
@@ -298,12 +298,12 @@ public class DiscussionTask3 : MonoBehaviour
         
         //there will only be two because we change to the second set of dialogue to choose
 
-        if (predictorCounter == 2) {
+        if (predictorCounter == 1) {
             //add to new PlayerPrefs
             PlayerPrefs.SetString("NewBrexitDiscussion3", statement9.text);
         }
 
-        if (predictorCounter == 1) {
+        if (predictorCounter == 0) {
             //add to new PlayerPrefs
             PlayerPrefs.SetString("NewBrexitDiscussion4", statement9.text);
         }
@@ -321,12 +321,12 @@ public class DiscussionTask3 : MonoBehaviour
         
         //there will only be two because we change to the second set of dialogue to choose
 
-        if (predictorCounter == 2) {
+        if (predictorCounter == 1) {
             //add to new PlayerPrefs
             PlayerPrefs.SetString("NewBrexitDiscussion3", statement10.text);
         }
 
-        if (predictorCounter == 1) {
+        if (predictorCounter == 0) {
             //add to new PlayerPrefs
             PlayerPrefs.SetString("NewBrexitDiscussion4", statement10.text);
         }

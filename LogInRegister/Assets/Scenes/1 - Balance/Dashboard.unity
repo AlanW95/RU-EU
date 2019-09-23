@@ -285,7 +285,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   proAntiSlider: {fileID: 0}
   topThemeSlider: {fileID: 0}
+  secondTopThemeSlider: {fileID: 0}
+  thirdTopThemeSlider: {fileID: 0}
   topTheme: {fileID: 0}
+  secondTopTheme: {fileID: 0}
+  thirdTopTheme: {fileID: 0}
 --- !u!114 &98912072
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -666,7 +670,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!114 &478600847
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -681,7 +685,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   proAntiSlider: {fileID: 0}
   topThemeSlider: {fileID: 0}
+  secondTopThemeSlider: {fileID: 0}
+  thirdTopThemeSlider: {fileID: 0}
   topTheme: {fileID: 0}
+  secondTopTheme: {fileID: 0}
+  thirdTopTheme: {fileID: 0}
 --- !u!114 &478600848
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -780,11 +788,11 @@ MonoBehaviour:
     lineCount: 1
     pageCount: 1
     materialCount: 1
-  m_havePropertiesChanged: 1
+  m_havePropertiesChanged: 0
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_spriteAnimator: {fileID: 0}
-  m_isInputParsingRequired: 1
+  m_isInputParsingRequired: 0
   m_inputSource: 0
   m_hasFontAssetChanged: 0
   m_subTextObjects:
@@ -1088,7 +1096,7 @@ RectTransform:
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0.85, y: 1}
+  m_AnchorMax: {x: 0, y: 0}
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 10, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
@@ -1146,7 +1154,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &631580850
 RectTransform:
   m_ObjectHideFlags: 0
@@ -1186,7 +1194,7 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_text: Theme2
+  m_text: Theme3
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: bf071a21c75d5984182ca2896c24ba39, type: 2}
   m_sharedMaterial: {fileID: 21445493198866178, guid: bf071a21c75d5984182ca2896c24ba39,
@@ -1264,11 +1272,11 @@ MonoBehaviour:
     lineCount: 1
     pageCount: 1
     materialCount: 1
-  m_havePropertiesChanged: 1
+  m_havePropertiesChanged: 0
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_spriteAnimator: {fileID: 0}
-  m_isInputParsingRequired: 1
+  m_isInputParsingRequired: 0
   m_inputSource: 0
   m_hasFontAssetChanged: 0
   m_subTextObjects:
@@ -1542,7 +1550,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &830817898
 RectTransform:
   m_ObjectHideFlags: 0
@@ -1660,11 +1668,11 @@ MonoBehaviour:
     lineCount: 1
     pageCount: 1
     materialCount: 1
-  m_havePropertiesChanged: 1
+  m_havePropertiesChanged: 0
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_spriteAnimator: {fileID: 0}
-  m_isInputParsingRequired: 1
+  m_isInputParsingRequired: 0
   m_inputSource: 0
   m_hasFontAssetChanged: 0
   m_subTextObjects:
@@ -1776,7 +1784,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &894390936
 RectTransform:
   m_ObjectHideFlags: 0
@@ -1849,6 +1857,17 @@ MonoBehaviour:
       - m_Target: {fileID: 1068196893}
         m_MethodName: TextUpdateSecondTopTheme
         m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1382110433}
+        m_MethodName: SecondThemeSliderValue
+        m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -2037,8 +2056,8 @@ RectTransform:
   m_Father: {fileID: 2082538513}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.85, y: 0}
-  m_AnchorMax: {x: 0.85, y: 1}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 0}
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 40, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
@@ -2185,8 +2204,8 @@ RectTransform:
   m_Father: {fileID: 268525354}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.85, y: 0}
-  m_AnchorMax: {x: 0.85, y: 1}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 0}
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 40, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
@@ -2319,7 +2338,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!114 &1068196893
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2334,7 +2353,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   proAntiSlider: {fileID: 0}
   topThemeSlider: {fileID: 0}
+  secondTopThemeSlider: {fileID: 0}
+  thirdTopThemeSlider: {fileID: 0}
   topTheme: {fileID: 0}
+  secondTopTheme: {fileID: 0}
+  thirdTopTheme: {fileID: 0}
 --- !u!114 &1068196894
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2433,11 +2456,11 @@ MonoBehaviour:
     lineCount: 1
     pageCount: 1
     materialCount: 1
-  m_havePropertiesChanged: 1
+  m_havePropertiesChanged: 0
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_spriteAnimator: {fileID: 0}
-  m_isInputParsingRequired: 1
+  m_isInputParsingRequired: 0
   m_inputSource: 0
   m_hasFontAssetChanged: 0
   m_subTextObjects:
@@ -2768,7 +2791,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   proAntiSlider: {fileID: 0}
   topThemeSlider: {fileID: 0}
+  secondTopThemeSlider: {fileID: 0}
+  thirdTopThemeSlider: {fileID: 0}
   topTheme: {fileID: 0}
+  secondTopTheme: {fileID: 0}
+  thirdTopTheme: {fileID: 0}
 --- !u!114 &1155443742
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3529,7 +3556,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &1358753685
 RectTransform:
   m_ObjectHideFlags: 0
@@ -3647,11 +3674,11 @@ MonoBehaviour:
     lineCount: 1
     pageCount: 1
     materialCount: 1
-  m_havePropertiesChanged: 1
+  m_havePropertiesChanged: 0
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_spriteAnimator: {fileID: 0}
-  m_isInputParsingRequired: 1
+  m_isInputParsingRequired: 0
   m_inputSource: 0
   m_hasFontAssetChanged: 0
   m_subTextObjects:
@@ -3787,7 +3814,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   proAntiSlider: {fileID: 1441521363}
   topThemeSlider: {fileID: 1151345875}
+  secondTopThemeSlider: {fileID: 894390937}
+  thirdTopThemeSlider: {fileID: 1716938743}
   topTheme: {fileID: 1159946755}
+  secondTopTheme: {fileID: 830817899}
+  thirdTopTheme: {fileID: 631580851}
 --- !u!1 &1432884701
 GameObject:
   m_ObjectHideFlags: 0
@@ -4265,7 +4296,7 @@ RectTransform:
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0.85, y: 1}
+  m_AnchorMax: {x: 0, y: 0}
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 10, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
@@ -4322,7 +4353,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &1716938742
 RectTransform:
   m_ObjectHideFlags: 0
@@ -4398,6 +4429,17 @@ MonoBehaviour:
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1382110428}
+        m_MethodName: 
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: 
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
@@ -4737,7 +4779,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &2141258015
 RectTransform:
   m_ObjectHideFlags: 0
@@ -4855,11 +4897,11 @@ MonoBehaviour:
     lineCount: 1
     pageCount: 1
     materialCount: 1
-  m_havePropertiesChanged: 1
+  m_havePropertiesChanged: 0
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_spriteAnimator: {fileID: 0}
-  m_isInputParsingRequired: 1
+  m_isInputParsingRequired: 0
   m_inputSource: 0
   m_hasFontAssetChanged: 0
   m_subTextObjects:

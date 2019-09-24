@@ -63,105 +63,104 @@ public class Dashboard : MonoBehaviour
     public void TopThemeSliderValue() {
 
         if (topTheme.text == "Social") {
-            int topScore = PlayerPrefs.GetInt("CurrentSocialScore");
+            int topScore = PlayerPrefs.GetInt("TopThemeScore");
             topThemeSlider.value = topScore;
-
         }
 
         if (topTheme.text == "Environment") {
-            int topScore = PlayerPrefs.GetInt("CurrentEnvironmentScore");
+            int topScore = PlayerPrefs.GetInt("TopThemeScore");
             topThemeSlider.value = topScore;
         }
 
         if (topTheme.text == "Rights & Responsibilities") {
-            int topScore = PlayerPrefs.GetInt("CurrentRightsAndResponsibilitiesScore");
+            int topScore = PlayerPrefs.GetInt("TopThemeScore");
             topThemeSlider.value = topScore;
         }
 
         if (topTheme.text == "Security") {
-            int topScore = PlayerPrefs.GetInt("CurrentSafetyAndSecurityScore");
+            int topScore = PlayerPrefs.GetInt("TopThemeScore");
             topThemeSlider.value = topScore;
         }
 
         if (topTheme.text == "Emotional") {
-            int topScore = PlayerPrefs.GetInt("CurrentEmotionalScore");
+            int topScore = PlayerPrefs.GetInt("TopThemeScore");
             topThemeSlider.value = topScore;
         }
 
         if (topTheme.text == "Economy") {
-            int topScore = PlayerPrefs.GetInt("CurrentEconomyScore");
+            int topScore = PlayerPrefs.GetInt("TopThemeScore");
             topThemeSlider.value = topScore;
         }
 
         if (topTheme.text == "Political") {
-            int topScore = PlayerPrefs.GetInt("CurrentPoliticalScore");
+            int topScore = PlayerPrefs.GetInt("TopThemeScore");
             topThemeSlider.value = topScore;
         }
 
         if (topTheme.text == "Historic") {
-            int topScore = PlayerPrefs.GetInt("CurrentHistoricScore");
+            int topScore = PlayerPrefs.GetInt("TopThemeScore");
             topThemeSlider.value = topScore;
         }
 
         if (topTheme.text == "Culture") {
-            int topScore = PlayerPrefs.GetInt("CurrentCultureScore");
+            int topScore = PlayerPrefs.GetInt("TopThemeScore");
             topThemeSlider.value = topScore;
         }
 
         if (topTheme.text == "Geography") {
-            int topScore = PlayerPrefs.GetInt("CurrentGeographyScore");
+            int topScore = PlayerPrefs.GetInt("TopThemeScore");
             topThemeSlider.value = topScore;
         }
     }
 
     public void SecondThemeSliderValue() {
         if (secondTopTheme.text == "Social") {
-            int secondTopScore = PlayerPrefs.GetInt("CurrentSocialScore");
+            int secondTopScore = PlayerPrefs.GetInt("SecondThemeScore");
             secondTopThemeSlider.value = secondTopScore;
         }
 
         if (secondTopTheme.text == "Environment") {
-            int secondTopScore = PlayerPrefs.GetInt("CurrentEnvironmentScore");
+            int secondTopScore = PlayerPrefs.GetInt("SecondThemeScore");
             secondTopThemeSlider.value = secondTopScore;
         }
 
         if (secondTopTheme.text == "Rights & Responsibilities") {
-            int secondTopScore = PlayerPrefs.GetInt("CurrentRightsAndResponsibilitiesScore");
+            int secondTopScore = PlayerPrefs.GetInt("SecondThemeScore");
             secondTopThemeSlider.value = secondTopScore;
         }
 
         if (secondTopTheme.text == "Security") {
-            int secondTopScore = PlayerPrefs.GetInt("CurrentSafetyAndSecurityScore");
+            int secondTopScore = PlayerPrefs.GetInt("SecondThemeScore");
             secondTopThemeSlider.value = secondTopScore;
         }
 
         if (secondTopTheme.text == "Emotional") {
-            int secondTopScore = PlayerPrefs.GetInt("CurrentEmotionalScore");
+            int secondTopScore = PlayerPrefs.GetInt("SecondThemeScore");
             secondTopThemeSlider.value = secondTopScore;
         }
 
         if (secondTopTheme.text == "Economy") {
-            int secondTopScore = PlayerPrefs.GetInt("CurrentEconomyScore");
+            int secondTopScore = PlayerPrefs.GetInt("SecondThemeScore");
             secondTopThemeSlider.value = secondTopScore;
         }
 
         if (secondTopTheme.text == "Political") {
-            int secondTopScore = PlayerPrefs.GetInt("CurrentPoliticalScore");
+            int secondTopScore = PlayerPrefs.GetInt("SecondThemeScore");
             secondTopThemeSlider.value = secondTopScore;
         }
 
         if (secondTopTheme.text == "Historic") {
-            int secondTopScore = PlayerPrefs.GetInt("CurrentHistoricScore");
+            int secondTopScore = PlayerPrefs.GetInt("SecondThemeScore");
             secondTopThemeSlider.value = secondTopScore;
         }
 
         if (secondTopTheme.text == "Culture") {
-            int secondTopScore = PlayerPrefs.GetInt("CurrentCultureScore");
+            int secondTopScore = PlayerPrefs.GetInt("SecondThemeScore");
             secondTopThemeSlider.value = secondTopScore;
         }
 
         if (secondTopTheme.text == "Geography") {
-            int secondTopScore = PlayerPrefs.GetInt("CurrentGeographyScore");
+            int secondTopScore = PlayerPrefs.GetInt("SecondThemeScore");
             secondTopThemeSlider.value = secondTopScore;
         }
     }

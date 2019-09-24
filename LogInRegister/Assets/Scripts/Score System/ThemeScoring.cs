@@ -282,22 +282,14 @@ public class ThemeScoring : MonoBehaviour
             PlayerPrefs.SetString("TopTheme", geography);
             firstPlace = "GeographyFirst";
             firstSelected = true;
-
         }
     }
 
     public void Number2TopTheme() {
-        if (firstSelected == true) {
-            if (firstPlace == "SocialFirst" && socialScore < environmentScore && socialScore > rightsAndResponsibilitiesScore && socialScore > safetyAndSecurityScore && socialScore > emotionalScore
-            && socialScore > economyScore && socialScore > politicalScore && socialScore > historicScore && socialScore > cultureScore && socialScore > geographyScore) {
-                PlayerPrefs.SetInt("SecondThemeScore", socialScore);
-                social = "Social";
-                PlayerPrefs.SetString("SecondTheme", social);
-                secondPlace = "SocialSecond";
-                secondSelected = true;
-            }
-
-            if (firstPlace == "EnvironmentFirst" && environmentScore > socialScore && environmentScore > rightsAndResponsibilitiesScore && environmentScore > safetyAndSecurityScore && environmentScore > emotionalScore
+        //TOP THEME IS SOCIAL
+        if (firstSelected == true && firstPlace == "SocialFirst") {
+            //For Environment
+            if (environmentScore < socialScore && environmentScore > rightsAndResponsibilitiesScore && environmentScore > safetyAndSecurityScore && environmentScore > emotionalScore
             && environmentScore > economyScore && environmentScore > politicalScore && environmentScore > historicScore && environmentScore > cultureScore && environmentScore > geographyScore) {
                 PlayerPrefs.SetInt("SecondThemeScore", environmentScore);
                 environment = "Environment";
@@ -305,8 +297,8 @@ public class ThemeScoring : MonoBehaviour
                 secondPlace = "EnvironmentSecond";
                 secondSelected = true;
             }
-
-            if (firstPlace == "RightsAndResponsibilitiesFirst" && rightsAndResponsibilitiesScore > socialScore && rightsAndResponsibilitiesScore > environmentScore && rightsAndResponsibilitiesScore > safetyAndSecurityScore && rightsAndResponsibilitiesScore > emotionalScore
+            //For Rights & Responsibilities
+            if (rightsAndResponsibilitiesScore < socialScore && rightsAndResponsibilitiesScore > environmentScore && rightsAndResponsibilitiesScore > safetyAndSecurityScore && rightsAndResponsibilitiesScore > emotionalScore
             && rightsAndResponsibilitiesScore > economyScore && rightsAndResponsibilitiesScore > politicalScore && rightsAndResponsibilitiesScore > historicScore && rightsAndResponsibilitiesScore > cultureScore && rightsAndResponsibilitiesScore > geographyScore) {
                 PlayerPrefs.SetInt("SecondThemeScore", rightsAndResponsibilitiesScore);
                 rightsresponsibilities = "Rights & Responsibilities";
@@ -314,8 +306,8 @@ public class ThemeScoring : MonoBehaviour
                 secondPlace = "RightsAndResponsibilitiesSecond";
                 secondSelected = true;
             }
-
-            if (firstPlace == "SafetySecurityFirst" && safetyAndSecurityScore > socialScore && safetyAndSecurityScore > environmentScore && safetyAndSecurityScore > rightsAndResponsibilitiesScore && safetyAndSecurityScore > emotionalScore
+            //For Security
+            if (safetyAndSecurityScore < socialScore && safetyAndSecurityScore > environmentScore && safetyAndSecurityScore > rightsAndResponsibilitiesScore && safetyAndSecurityScore > emotionalScore
             && safetyAndSecurityScore > economyScore && safetyAndSecurityScore > politicalScore && safetyAndSecurityScore > historicScore && safetyAndSecurityScore > cultureScore && safetyAndSecurityScore > geographyScore) {
                 PlayerPrefs.SetInt("SecondThemeScore", safetyAndSecurityScore);
                 safetysecurity = "Security";
@@ -323,8 +315,8 @@ public class ThemeScoring : MonoBehaviour
                 secondPlace = "SafetySecuritySecond";
                 secondSelected = true;
             }
-
-            if (firstPlace == "EmotionalFirst" && emotionalScore > socialScore && emotionalScore > environmentScore && emotionalScore > rightsAndResponsibilitiesScore && emotionalScore > safetyAndSecurityScore
+            //For Emotional
+            if (emotionalScore < socialScore && emotionalScore > environmentScore && emotionalScore > rightsAndResponsibilitiesScore && emotionalScore > safetyAndSecurityScore
             && emotionalScore > economyScore && emotionalScore > politicalScore && emotionalScore > historicScore && emotionalScore > cultureScore && emotionalScore > geographyScore) {
                 PlayerPrefs.SetInt("SecondThemeScore", emotionalScore);
                 emotional = "Emotional";
@@ -332,8 +324,8 @@ public class ThemeScoring : MonoBehaviour
                 secondPlace = "EmotionalSecond";
                 secondSelected = true;
             }
-
-            if (firstPlace == "EconomyFirst" && economyScore > socialScore && economyScore > environmentScore && economyScore > rightsAndResponsibilitiesScore && economyScore > safetyAndSecurityScore
+            //For Economy
+            if (economyScore < socialScore && economyScore > environmentScore && economyScore > rightsAndResponsibilitiesScore && economyScore > safetyAndSecurityScore
             && economyScore > emotionalScore && economyScore > politicalScore && economyScore > historicScore && economyScore > cultureScore && economyScore > geographyScore) {
                 PlayerPrefs.SetInt("SecondThemeScore", economyScore);
                 economy = "Economy";
@@ -341,8 +333,8 @@ public class ThemeScoring : MonoBehaviour
                 secondPlace = "EconomySecond";
                 secondSelected = true;
             }
-
-            if (firstPlace == "PoliticalFirst" && politicalScore > socialScore && politicalScore > environmentScore && politicalScore > rightsAndResponsibilitiesScore && politicalScore > safetyAndSecurityScore
+            //For Political
+            if (politicalScore < socialScore && politicalScore > environmentScore && politicalScore > rightsAndResponsibilitiesScore && politicalScore > safetyAndSecurityScore
             && politicalScore > emotionalScore && politicalScore > economyScore && politicalScore > historicScore && politicalScore > cultureScore && politicalScore > geographyScore) {
                 PlayerPrefs.SetInt("SecondThemeScore", politicalScore);
                 political = "Political";
@@ -350,8 +342,8 @@ public class ThemeScoring : MonoBehaviour
                 secondPlace = "PoliticalSecond";
                 secondSelected = true;
             }
-
-            if (firstPlace == "HistoricFirst" && historicScore > socialScore && historicScore > environmentScore && historicScore > rightsAndResponsibilitiesScore && historicScore > safetyAndSecurityScore
+            //For Historic
+            if (historicScore < socialScore && historicScore > environmentScore && historicScore > rightsAndResponsibilitiesScore && historicScore > safetyAndSecurityScore
             && historicScore > emotionalScore && historicScore > economyScore && historicScore > politicalScore && historicScore > cultureScore && historicScore > geographyScore) {
                 PlayerPrefs.SetInt("SecondThemeScore", historicScore);
                 historic = "Historic";
@@ -359,8 +351,8 @@ public class ThemeScoring : MonoBehaviour
                 secondPlace = "HistoricSecond";
                 secondSelected = true;
             }
-
-            if (firstPlace == "CultureFirst" && cultureScore > socialScore && cultureScore > environmentScore && cultureScore > rightsAndResponsibilitiesScore && cultureScore > safetyAndSecurityScore
+            //For Culture
+            if (cultureScore < socialScore && cultureScore > environmentScore && cultureScore > rightsAndResponsibilitiesScore && cultureScore > safetyAndSecurityScore
             && cultureScore > emotionalScore && cultureScore > economyScore && cultureScore > politicalScore && cultureScore > historicScore && cultureScore > geographyScore) {
                 PlayerPrefs.SetInt("SecondThemeScore", cultureScore);
                 culture = "Culture";
@@ -368,13 +360,778 @@ public class ThemeScoring : MonoBehaviour
                 secondPlace = "CultureSecond";
                 secondSelected = true;
             }
-
-            if (firstPlace == "GeographyFirst" && geographyScore > socialScore && geographyScore > environmentScore && geographyScore > rightsAndResponsibilitiesScore && geographyScore > safetyAndSecurityScore
+            //For Geography
+            if (geographyScore < socialScore && geographyScore > environmentScore && geographyScore > rightsAndResponsibilitiesScore && geographyScore > safetyAndSecurityScore
             && geographyScore > emotionalScore && geographyScore > economyScore && geographyScore > politicalScore && geographyScore > historicScore && geographyScore > cultureScore) {
                 PlayerPrefs.SetInt("SecondThemeScore", geographyScore);
                 geography = "Geography";
                 PlayerPrefs.SetString("SecondTheme", geography);
                 secondPlace = "GeographySecond";
+                secondSelected = true;
+            }
+        }
+
+        //TOP THEME IS ENVIRONMENT
+        if (firstSelected == true && firstPlace == "EnvironmentFirst") {
+            //For Social
+            if (socialScore < environmentScore && socialScore > rightsAndResponsibilitiesScore && socialScore > safetyAndSecurityScore && socialScore > emotionalScore
+            && socialScore > economyScore && socialScore > politicalScore && socialScore > historicScore && socialScore > cultureScore && socialScore > geographyScore) {
+                PlayerPrefs.SetInt("SecondThemeScore", socialScore);
+                social = "Social";
+                PlayerPrefs.SetString("SecondTheme", social);
+                secondPlace = "SocialSecond";
+                secondSelected = true;
+            }
+            //For Rights & Responsibilities
+            if (rightsAndResponsibilitiesScore < environmentScore && rightsAndResponsibilitiesScore > socialScore && rightsAndResponsibilitiesScore > safetyAndSecurityScore && rightsAndResponsibilitiesScore > emotionalScore
+            && rightsAndResponsibilitiesScore > economyScore && rightsAndResponsibilitiesScore > politicalScore && rightsAndResponsibilitiesScore > historicScore && rightsAndResponsibilitiesScore > cultureScore && rightsAndResponsibilitiesScore > geographyScore) {
+                PlayerPrefs.SetInt("SecondThemeScore", rightsAndResponsibilitiesScore);
+                rightsresponsibilities = "Rights & Responsibilities";
+                PlayerPrefs.SetString("SecondTheme", rightsresponsibilities);
+                secondPlace = "RightsAndResponsibilitiesSecond";
+                secondSelected = true;
+            }
+            //For Security
+            if (safetyAndSecurityScore < environmentScore && safetyAndSecurityScore > socialScore && safetyAndSecurityScore > rightsAndResponsibilitiesScore && safetyAndSecurityScore > emotionalScore
+            && safetyAndSecurityScore > economyScore && safetyAndSecurityScore > politicalScore && safetyAndSecurityScore > historicScore && safetyAndSecurityScore > cultureScore && safetyAndSecurityScore > geographyScore) {
+                PlayerPrefs.SetInt("SecondThemeScore", safetyAndSecurityScore);
+                safetysecurity = "Security";
+                PlayerPrefs.SetString("SecondTheme", safetysecurity);
+                secondPlace = "SafetySecuritySecond";
+                secondSelected = true;
+            }
+            //For Emotional
+            if (emotionalScore < environmentScore && emotionalScore > socialScore && emotionalScore > rightsAndResponsibilitiesScore && emotionalScore > safetyAndSecurityScore
+            && emotionalScore > economyScore && emotionalScore > politicalScore && emotionalScore > historicScore && emotionalScore > cultureScore && emotionalScore > geographyScore) {
+                PlayerPrefs.SetInt("SecondThemeScore", emotionalScore);
+                emotional = "Emotional";
+                PlayerPrefs.SetString("SecondTheme", emotional);
+                secondPlace = "EmotionalSecond";
+                secondSelected = true;
+            }
+            //For Economy
+            if (economyScore < environmentScore && economyScore > environmentScore && socialScore > rightsAndResponsibilitiesScore && economyScore > safetyAndSecurityScore
+            && economyScore > emotionalScore && economyScore > politicalScore && economyScore > historicScore && economyScore > cultureScore && economyScore > geographyScore) {
+                PlayerPrefs.SetInt("SecondThemeScore", economyScore);
+                economy = "Economy";
+                PlayerPrefs.SetString("SecondTheme", economy);
+                secondPlace = "EconomySecond";
+                secondSelected = true;
+            }
+            //For Political
+            if (politicalScore < environmentScore && politicalScore > socialScore && politicalScore > rightsAndResponsibilitiesScore && politicalScore > safetyAndSecurityScore
+            && politicalScore > emotionalScore && politicalScore > economyScore && politicalScore > historicScore && politicalScore > cultureScore && politicalScore > geographyScore) {
+                PlayerPrefs.SetInt("SecondThemeScore", politicalScore);
+                political = "Political";
+                PlayerPrefs.SetString("SecondTheme", political);
+                secondPlace = "PoliticalSecond";
+                secondSelected = true;
+            }
+            //For Historic
+            if (historicScore < environmentScore && historicScore > socialScore && historicScore > rightsAndResponsibilitiesScore && historicScore > safetyAndSecurityScore
+            && historicScore > emotionalScore && historicScore > economyScore && historicScore > politicalScore && historicScore > cultureScore && historicScore > geographyScore) {
+                PlayerPrefs.SetInt("SecondThemeScore", historicScore);
+                historic = "Historic";
+                PlayerPrefs.SetString("SecondTheme", historic);
+                secondPlace = "HistoricSecond";
+                secondSelected = true;
+            }
+            //For Culture
+            if (cultureScore < environmentScore && cultureScore > socialScore && cultureScore > rightsAndResponsibilitiesScore && cultureScore > safetyAndSecurityScore
+            && cultureScore > emotionalScore && cultureScore > economyScore && cultureScore > politicalScore && cultureScore > historicScore && cultureScore > geographyScore) {
+                PlayerPrefs.SetInt("SecondThemeScore", cultureScore);
+                culture = "Culture";
+                PlayerPrefs.SetString("SecondTheme", culture);
+                secondPlace = "CultureSecond";
+                secondSelected = true;
+            }
+            //For Geography
+            if (geographyScore < environmentScore && geographyScore > socialScore && geographyScore > rightsAndResponsibilitiesScore && geographyScore > safetyAndSecurityScore
+            && geographyScore > emotionalScore && geographyScore > economyScore && geographyScore > politicalScore && geographyScore > historicScore && geographyScore > cultureScore) {
+                PlayerPrefs.SetInt("SecondThemeScore", geographyScore);
+                geography = "Geography";
+                PlayerPrefs.SetString("SecondTheme", geography);
+                secondPlace = "GeographySecond";
+                secondSelected = true;
+            }
+        }
+
+        //TOP THEME IS RIGHTS & RESPONSIBILITIES
+        if (firstSelected == true && firstPlace == "RightsAndResponsibilitiesFirst") {
+            //For Social
+            if (socialScore < rightsAndResponsibilitiesScore && socialScore > environmentScore && socialScore > safetyAndSecurityScore && socialScore > emotionalScore
+            && socialScore > economyScore && socialScore > politicalScore && socialScore > historicScore && socialScore > cultureScore && socialScore > geographyScore) {
+                PlayerPrefs.SetInt("SecondThemeScore", socialScore);
+                social = "Social";
+                PlayerPrefs.SetString("SecondTheme", social);
+                secondPlace = "SocialSecond";
+                secondSelected = true;
+            }
+            //For Environment
+            if (environmentScore < rightsAndResponsibilitiesScore && environmentScore > socialScore && environmentScore > safetyAndSecurityScore && environmentScore > emotionalScore
+            && environmentScore > economyScore && environmentScore > politicalScore && environmentScore > historicScore && environmentScore > cultureScore && environmentScore > geographyScore) {
+                PlayerPrefs.SetInt("SecondThemeScore", environmentScore);
+                environment = "Environment";
+                PlayerPrefs.SetString("SecondTheme", environment);
+                secondPlace = "EnvironmentSecond";
+                secondSelected = true;
+            }
+            //For Security
+            if (safetyAndSecurityScore < rightsAndResponsibilitiesScore && safetyAndSecurityScore > socialScore && safetyAndSecurityScore > environmentScore && safetyAndSecurityScore > emotionalScore
+            && safetyAndSecurityScore > economyScore && safetyAndSecurityScore > politicalScore && safetyAndSecurityScore > historicScore && safetyAndSecurityScore > cultureScore && safetyAndSecurityScore > geographyScore) {
+                PlayerPrefs.SetInt("SecondThemeScore", safetyAndSecurityScore);
+                safetysecurity = "Security";
+                PlayerPrefs.SetString("SecondTheme", safetysecurity);
+                secondPlace = "SafetySecuritySecond";
+                secondSelected = true;
+            }
+            //For Emotional
+            if (emotionalScore < rightsAndResponsibilitiesScore && emotionalScore > socialScore && emotionalScore > environmentScore && emotionalScore > safetyAndSecurityScore
+            && emotionalScore > economyScore && emotionalScore > politicalScore && emotionalScore > historicScore && emotionalScore > cultureScore && emotionalScore > geographyScore) {
+                PlayerPrefs.SetInt("SecondThemeScore", emotionalScore);
+                emotional = "Emotional";
+                PlayerPrefs.SetString("SecondTheme", emotional);
+                secondPlace = "EmotionalSecond";
+                secondSelected = true;
+            }
+            //For Economy
+            if (economyScore < rightsAndResponsibilitiesScore && economyScore > socialScore && economyScore > environmentScore && economyScore > safetyAndSecurityScore
+            && economyScore > emotionalScore && economyScore > politicalScore && economyScore > historicScore && economyScore > cultureScore && economyScore > geographyScore) {
+                PlayerPrefs.SetInt("SecondThemeScore", economyScore);
+                economy = "Economy";
+                PlayerPrefs.SetString("SecondTheme", economy);
+                secondPlace = "EconomySecond";
+                secondSelected = true;
+            }
+            //For Political
+            if (politicalScore < rightsAndResponsibilitiesScore && politicalScore > socialScore && politicalScore > environmentScore && politicalScore > safetyAndSecurityScore
+            && politicalScore > emotionalScore && politicalScore > economyScore && politicalScore > historicScore && politicalScore > cultureScore && politicalScore > geographyScore) {
+                PlayerPrefs.SetInt("SecondThemeScore", politicalScore);
+                political = "Political";
+                PlayerPrefs.SetString("SecondTheme", political);
+                secondPlace = "PoliticalSecond";
+                secondSelected = true;
+            }
+            //For Historic
+            if (historicScore < rightsAndResponsibilitiesScore && historicScore > socialScore && historicScore > environmentScore && historicScore > safetyAndSecurityScore
+            && historicScore > emotionalScore && historicScore > economyScore && historicScore > politicalScore && historicScore > cultureScore && historicScore > geographyScore) {
+                PlayerPrefs.SetInt("SecondThemeScore", historicScore);
+                historic = "Historic";
+                PlayerPrefs.SetString("SecondTheme", historic);
+                secondPlace = "HistoricSecond";
+                secondSelected = true;
+            }
+            //For Culture
+            if (cultureScore < rightsAndResponsibilitiesScore && cultureScore > socialScore && cultureScore > environmentScore && cultureScore > safetyAndSecurityScore
+            && cultureScore > emotionalScore && cultureScore > economyScore && cultureScore > politicalScore && cultureScore > historicScore && cultureScore > geographyScore) {
+                PlayerPrefs.SetInt("SecondThemeScore", cultureScore);
+                culture = "Culture";
+                PlayerPrefs.SetString("SecondTheme", culture);
+                secondPlace = "CultureSecond";
+                secondSelected = true;
+            }
+            //For Geography
+            if (geographyScore < rightsAndResponsibilitiesScore && geographyScore > socialScore && geographyScore > environmentScore && geographyScore > safetyAndSecurityScore
+            && geographyScore > emotionalScore && geographyScore > economyScore && geographyScore > politicalScore && geographyScore > historicScore && geographyScore > cultureScore) {
+                PlayerPrefs.SetInt("SecondThemeScore", geographyScore);
+                geography = "Geography";
+                PlayerPrefs.SetString("SecondTheme", geography);
+                secondPlace = "GeographySecond";
+                secondSelected = true;
+            }
+        }
+
+        //TOP THEME IS SAFETY & SECURITY
+        if (firstSelected == true && firstPlace == "SafetySecurityFirst") {
+            //For Social
+            if (socialScore < safetyAndSecurityScore && socialScore > environmentScore && socialScore > rightsAndResponsibilitiesScore && socialScore > emotionalScore
+            && socialScore > economyScore && socialScore > politicalScore && socialScore > historicScore && socialScore > cultureScore && socialScore > geographyScore) {
+                PlayerPrefs.SetInt("SecondThemeScore", socialScore);
+                social = "Social";
+                PlayerPrefs.SetString("SecondTheme", social);
+                secondPlace = "SocialSecond";
+                secondSelected = true;
+            }
+            //For Environment
+            if (environmentScore < safetyAndSecurityScore && environmentScore > socialScore && environmentScore > rightsAndResponsibilitiesScore && environmentScore > emotionalScore
+            && environmentScore > economyScore && environmentScore > politicalScore && environmentScore > historicScore && environmentScore > cultureScore && environmentScore > geographyScore) {
+                PlayerPrefs.SetInt("SecondThemeScore", environmentScore);
+                environment = "Environment";
+                PlayerPrefs.SetString("SecondTheme", environment);
+                secondPlace = "EnvironmentSecond";
+                secondSelected = true;
+            }
+            //For Rights & Responsibilities
+            if (rightsAndResponsibilitiesScore < safetyAndSecurityScore && rightsAndResponsibilitiesScore > socialScore && rightsAndResponsibilitiesScore > environmentScore && rightsAndResponsibilitiesScore > emotionalScore
+            && rightsAndResponsibilitiesScore > economyScore && rightsAndResponsibilitiesScore > politicalScore && rightsAndResponsibilitiesScore > historicScore && rightsAndResponsibilitiesScore > cultureScore && rightsAndResponsibilitiesScore > geographyScore) {
+                PlayerPrefs.SetInt("SecondThemeScore", rightsAndResponsibilitiesScore);
+                rightsresponsibilities = "Rights & Responsibilities";
+                PlayerPrefs.SetString("SecondTheme", rightsresponsibilities);
+                secondPlace = "RightsAndResponsibilitiesSecond";
+                secondSelected = true;
+            }
+            //For Emotional
+            if (emotionalScore < safetyAndSecurityScore && emotionalScore > socialScore && emotionalScore > environmentScore && emotionalScore > rightsAndResponsibilitiesScore
+            && emotionalScore > economyScore && emotionalScore > politicalScore && emotionalScore > historicScore && emotionalScore > cultureScore && emotionalScore > geographyScore) {
+                PlayerPrefs.SetInt("SecondThemeScore", emotionalScore);
+                emotional = "Emotional";
+                PlayerPrefs.SetString("SecondTheme", emotional);
+                secondPlace = "EmotionalSecond";
+                secondSelected = true;
+            }
+            //For Economy
+            if (economyScore < safetyAndSecurityScore && economyScore > socialScore && economyScore > environmentScore && economyScore > rightsAndResponsibilitiesScore
+            && economyScore > emotionalScore && economyScore > politicalScore && economyScore > historicScore && economyScore > cultureScore && economyScore > geographyScore) {
+                PlayerPrefs.SetInt("SecondThemeScore", economyScore);
+                economy = "Economy";
+                PlayerPrefs.SetString("SecondTheme", economy);
+                secondPlace = "EconomySecond";
+                secondSelected = true;
+            }
+            //For Political
+            if (politicalScore < safetyAndSecurityScore && politicalScore > socialScore && politicalScore > environmentScore && politicalScore > rightsAndResponsibilitiesScore
+            && politicalScore > emotionalScore && politicalScore > economyScore && politicalScore > historicScore && politicalScore > cultureScore && politicalScore > geographyScore) {
+                PlayerPrefs.SetInt("SecondThemeScore", politicalScore);
+                political = "Political";
+                PlayerPrefs.SetString("SecondTheme", political);
+                secondPlace = "PoliticalSecond";
+                secondSelected = true;
+            }
+            //For Historic
+            if (historicScore < safetyAndSecurityScore && historicScore > socialScore && historicScore > environmentScore && historicScore > rightsAndResponsibilitiesScore
+            && historicScore > emotionalScore && historicScore > economyScore && historicScore > politicalScore && historicScore > cultureScore && historicScore > geographyScore) {
+                PlayerPrefs.SetInt("SecondThemeScore", historicScore);
+                historic = "Historic";
+                PlayerPrefs.SetString("SecondTheme", historic);
+                secondPlace = "HistoricSecond";
+                secondSelected = true;
+            }
+            //For Culture
+            if (cultureScore < safetyAndSecurityScore && cultureScore > socialScore && cultureScore > environmentScore && cultureScore > rightsAndResponsibilitiesScore
+            && cultureScore > emotionalScore && cultureScore > economyScore && cultureScore > politicalScore && cultureScore > historicScore && cultureScore > geographyScore) {
+                PlayerPrefs.SetInt("SecondThemeScore", cultureScore);
+                culture = "Culture";
+                PlayerPrefs.SetString("SecondTheme", culture);
+                secondPlace = "CultureSecond";
+                secondSelected = true;
+            }
+            //For Geography
+            if (geographyScore < safetyAndSecurityScore && geographyScore > socialScore && geographyScore > environmentScore && geographyScore > rightsAndResponsibilitiesScore
+            && geographyScore > emotionalScore && geographyScore > economyScore && geographyScore > politicalScore && geographyScore > historicScore && geographyScore > cultureScore) {
+                PlayerPrefs.SetInt("SecondThemeScore", geographyScore);
+                geography = "Geography";
+                PlayerPrefs.SetString("SecondTheme", geography);
+                secondPlace = "GeographySecond";
+                secondSelected = true;
+            }
+        }
+
+        //TOP THEME IS EMOTIONAL
+        if (firstSelected == true && firstPlace == "EmotionalFirst") {
+            //For Social
+            if (socialScore < emotionalScore && socialScore > environmentScore && socialScore > rightsAndResponsibilitiesScore && socialScore > safetyAndSecurityScore
+            && socialScore > economyScore && socialScore > politicalScore && socialScore > historicScore && socialScore > cultureScore && socialScore > geographyScore) {
+                PlayerPrefs.SetInt("SecondThemeScore", socialScore);
+                social = "Social";
+                PlayerPrefs.SetString("SecondTheme", social);
+                secondPlace = "SocialSecond";
+                secondSelected = true;
+            }
+            //For Environment
+            if (environmentScore < emotionalScore && environmentScore > socialScore && environmentScore > rightsAndResponsibilitiesScore && environmentScore > safetyAndSecurityScore
+            && environmentScore > economyScore && environmentScore > politicalScore && environmentScore > historicScore && environmentScore > cultureScore && environmentScore > geographyScore) {
+                PlayerPrefs.SetInt("SecondThemeScore", environmentScore);
+                environment = "Environment";
+                PlayerPrefs.SetString("SecondTheme", environment);
+                secondPlace = "EnvironmentSecond";
+                secondSelected = true;
+            }
+            //For Rights & Responsibilities
+            if (rightsAndResponsibilitiesScore < emotionalScore && rightsAndResponsibilitiesScore > socialScore && rightsAndResponsibilitiesScore > environmentScore && rightsAndResponsibilitiesScore > safetyAndSecurityScore
+            && rightsAndResponsibilitiesScore > economyScore && rightsAndResponsibilitiesScore > politicalScore && rightsAndResponsibilitiesScore > historicScore && rightsAndResponsibilitiesScore > cultureScore && rightsAndResponsibilitiesScore > geographyScore) {
+                PlayerPrefs.SetInt("SecondThemeScore", rightsAndResponsibilitiesScore);
+                rightsresponsibilities = "Rights & Responsibilities";
+                PlayerPrefs.SetString("SecondTheme", rightsresponsibilities);
+                secondPlace = "RightsAndResponsibilitiesSecond";
+                secondSelected = true;
+            }
+            //For Security
+            if (safetyAndSecurityScore < emotionalScore && safetyAndSecurityScore > socialScore && safetyAndSecurityScore > environmentScore && safetyAndSecurityScore > rightsAndResponsibilitiesScore
+            && safetyAndSecurityScore > economyScore && safetyAndSecurityScore > politicalScore && safetyAndSecurityScore > historicScore && safetyAndSecurityScore > cultureScore && safetyAndSecurityScore > geographyScore) {
+                PlayerPrefs.SetInt("SecondThemeScore", safetyAndSecurityScore);
+                safetysecurity = "Security";
+                PlayerPrefs.SetString("SecondTheme", safetysecurity);
+                secondPlace = "SafetySecuritySecond";
+                secondSelected = true;
+            }
+            //For Economy
+            if (economyScore < emotionalScore && economyScore > socialScore && economyScore > environmentScore && economyScore > rightsAndResponsibilitiesScore
+            && economyScore > safetyAndSecurityScore && economyScore > politicalScore && economyScore > historicScore && economyScore > cultureScore && economyScore > geographyScore) {
+                PlayerPrefs.SetInt("SecondThemeScore", economyScore);
+                economy = "Economy";
+                PlayerPrefs.SetString("SecondTheme", economy);
+                secondPlace = "EconomySecond";
+                secondSelected = true;
+            }
+            //For Political
+            if (politicalScore < emotionalScore && politicalScore > socialScore && politicalScore > environmentScore && politicalScore > rightsAndResponsibilitiesScore
+            && politicalScore > safetyAndSecurityScore && politicalScore > economyScore && politicalScore > historicScore && politicalScore > cultureScore && politicalScore > geographyScore) {
+                PlayerPrefs.SetInt("SecondThemeScore", politicalScore);
+                political = "Political";
+                PlayerPrefs.SetString("SecondTheme", political);
+                secondPlace = "PoliticalSecond";
+                secondSelected = true;
+            }
+            //For Historic
+            if (historicScore < emotionalScore && historicScore > socialScore && historicScore > environmentScore && historicScore > rightsAndResponsibilitiesScore
+            && historicScore > safetyAndSecurityScore && historicScore > economyScore && historicScore > politicalScore && historicScore > cultureScore && historicScore > geographyScore) {
+                PlayerPrefs.SetInt("SecondThemeScore", historicScore);
+                historic = "Historic";
+                PlayerPrefs.SetString("SecondTheme", historic);
+                secondPlace = "HistoricSecond";
+                secondSelected = true;
+            }
+            //For Culture
+            if (cultureScore < emotionalScore && cultureScore > socialScore && cultureScore > environmentScore && cultureScore > rightsAndResponsibilitiesScore
+            && cultureScore > safetyAndSecurityScore && cultureScore > economyScore && cultureScore > politicalScore && cultureScore > historicScore && cultureScore > geographyScore) {
+                PlayerPrefs.SetInt("SecondThemeScore", cultureScore);
+                culture = "Culture";
+                PlayerPrefs.SetString("SecondTheme", culture);
+                secondPlace = "CultureSecond";
+                secondSelected = true;
+            }
+            //For Geography
+            if (geographyScore < emotionalScore && geographyScore > socialScore && geographyScore > environmentScore && geographyScore > rightsAndResponsibilitiesScore
+            && geographyScore > safetyAndSecurityScore && geographyScore > economyScore && geographyScore > politicalScore && geographyScore > historicScore && geographyScore > cultureScore) {
+                PlayerPrefs.SetInt("SecondThemeScore", geographyScore);
+                geography = "Geography";
+                PlayerPrefs.SetString("SecondTheme", geography);
+                secondPlace = "GeographySecond";
+                secondSelected = true;
+            }
+        }
+
+        //TOP THEME IS ECONOMY
+        if (firstSelected == true && firstPlace == "EconomyFirst") {
+            //For Social
+            if (socialScore < economyScore && socialScore > environmentScore && socialScore > rightsAndResponsibilitiesScore && socialScore > safetyAndSecurityScore
+            && socialScore > emotionalScore && socialScore > politicalScore && socialScore > historicScore && socialScore > cultureScore && socialScore > geographyScore) {
+                PlayerPrefs.SetInt("SecondThemeScore", socialScore);
+                social = "Social";
+                PlayerPrefs.SetString("SecondTheme", social);
+                secondPlace = "SocialSecond";
+                secondSelected = true;
+            }
+            //For Environment
+            if (environmentScore < economyScore && environmentScore > socialScore && environmentScore > rightsAndResponsibilitiesScore && environmentScore > safetyAndSecurityScore
+            && environmentScore > emotionalScore && environmentScore > politicalScore && environmentScore > historicScore && environmentScore > cultureScore && environmentScore > geographyScore) {
+                PlayerPrefs.SetInt("SecondThemeScore", environmentScore);
+                environment = "Environment";
+                PlayerPrefs.SetString("SecondTheme", environment);
+                secondPlace = "EnvironmentSecond";
+                secondSelected = true;
+            }
+            //For Rights & Responsibilities
+            if (rightsAndResponsibilitiesScore < economyScore && rightsAndResponsibilitiesScore > socialScore && rightsAndResponsibilitiesScore > environmentScore && rightsAndResponsibilitiesScore > safetyAndSecurityScore
+            && rightsAndResponsibilitiesScore > emotionalScore && rightsAndResponsibilitiesScore > politicalScore && rightsAndResponsibilitiesScore > historicScore && rightsAndResponsibilitiesScore > cultureScore && rightsAndResponsibilitiesScore > geographyScore) {
+                PlayerPrefs.SetInt("SecondThemeScore", rightsAndResponsibilitiesScore);
+                rightsresponsibilities = "Rights & Responsibilities";
+                PlayerPrefs.SetString("SecondTheme", rightsresponsibilities);
+                secondPlace = "RightsAndResponsibilitiesSecond";
+                secondSelected = true;
+            }
+            //For Security
+            if (safetyAndSecurityScore < economyScore && safetyAndSecurityScore > socialScore && safetyAndSecurityScore > environmentScore && safetyAndSecurityScore > rightsAndResponsibilitiesScore
+            && safetyAndSecurityScore > emotionalScore && safetyAndSecurityScore > politicalScore && safetyAndSecurityScore > historicScore && safetyAndSecurityScore > cultureScore && safetyAndSecurityScore > geographyScore) {
+                PlayerPrefs.SetInt("SecondThemeScore", safetyAndSecurityScore);
+                safetysecurity = "Security";
+                PlayerPrefs.SetString("SecondTheme", safetysecurity);
+                secondPlace = "SafetySecuritySecond";
+                secondSelected = true;
+            }
+            //For Emotional
+            if (emotionalScore < economyScore && emotionalScore > socialScore && emotionalScore > environmentScore && emotionalScore > rightsAndResponsibilitiesScore
+            && emotionalScore > safetyAndSecurityScore && emotionalScore > politicalScore && emotionalScore > historicScore && emotionalScore > cultureScore && emotionalScore > geographyScore) {
+                PlayerPrefs.SetInt("SecondThemeScore", emotionalScore);
+                emotional = "Emotional";
+                PlayerPrefs.SetString("SecondTheme", emotional);
+                secondPlace = "EmotionalSecond";
+                secondSelected = true;
+            }
+            //For Political
+            if (politicalScore < economyScore && politicalScore > socialScore && politicalScore > environmentScore && politicalScore > rightsAndResponsibilitiesScore
+            && politicalScore > safetyAndSecurityScore && politicalScore > emotionalScore && politicalScore > historicScore && politicalScore > cultureScore && politicalScore > geographyScore) {
+                PlayerPrefs.SetInt("SecondThemeScore", politicalScore);
+                political = "Political";
+                PlayerPrefs.SetString("SecondTheme", political);
+                secondPlace = "PoliticalSecond";
+                secondSelected = true;
+            }
+            //For Historic
+            if (historicScore < economyScore && historicScore > socialScore && historicScore > environmentScore && historicScore > rightsAndResponsibilitiesScore
+            && historicScore > safetyAndSecurityScore && historicScore > emotionalScore && historicScore > politicalScore && historicScore > cultureScore && historicScore > geographyScore) {
+                PlayerPrefs.SetInt("SecondThemeScore", historicScore);
+                historic = "Historic";
+                PlayerPrefs.SetString("SecondTheme", historic);
+                secondPlace = "HistoricSecond";
+                secondSelected = true;
+            }
+            //For Culture
+            if (cultureScore < economyScore && cultureScore > socialScore && cultureScore > environmentScore && cultureScore > rightsAndResponsibilitiesScore
+            && cultureScore > safetyAndSecurityScore && cultureScore > emotionalScore && cultureScore > politicalScore && cultureScore > historicScore && cultureScore > geographyScore) {
+                PlayerPrefs.SetInt("SecondThemeScore", cultureScore);
+                culture = "Culture";
+                PlayerPrefs.SetString("SecondTheme", culture);
+                secondPlace = "CultureSecond";
+                secondSelected = true;
+            }
+            //For Geography
+            if (geographyScore < economyScore && geographyScore > socialScore && geographyScore > environmentScore && geographyScore > rightsAndResponsibilitiesScore
+            && geographyScore > safetyAndSecurityScore && geographyScore > emotionalScore && geographyScore > politicalScore && geographyScore > historicScore && geographyScore > cultureScore) {
+                PlayerPrefs.SetInt("SecondThemeScore", geographyScore);
+                geography = "Geography";
+                PlayerPrefs.SetString("SecondTheme", geography);
+                secondPlace = "GeographySecond";
+                secondSelected = true;
+            }
+        }
+
+        //TOP THEME IS POLITICAL
+        if (firstSelected == true && firstPlace == "PoliticalFirst") {
+            //For Social
+            if (socialScore < politicalScore && socialScore > environmentScore && socialScore > rightsAndResponsibilitiesScore && socialScore > safetyAndSecurityScore
+            && socialScore > emotionalScore && socialScore > economyScore && socialScore > historicScore && socialScore > cultureScore && socialScore > geographyScore) {
+                PlayerPrefs.SetInt("SecondThemeScore", socialScore);
+                social = "Social";
+                PlayerPrefs.SetString("SecondTheme", social);
+                secondPlace = "SocialSecond";
+                secondSelected = true;
+            }
+            //For Environment
+            if (environmentScore < politicalScore && environmentScore > socialScore && environmentScore > rightsAndResponsibilitiesScore && environmentScore > safetyAndSecurityScore
+            && environmentScore > emotionalScore && environmentScore > economyScore && environmentScore > historicScore && environmentScore > cultureScore && environmentScore > geographyScore) {
+                PlayerPrefs.SetInt("SecondThemeScore", environmentScore);
+                environment = "Environment";
+                PlayerPrefs.SetString("SecondTheme", environment);
+                secondPlace = "EnvironmentSecond";
+                secondSelected = true;
+            }
+            //For Rights & Responsibilities
+            if (rightsAndResponsibilitiesScore < politicalScore && rightsAndResponsibilitiesScore > socialScore && rightsAndResponsibilitiesScore > environmentScore && rightsAndResponsibilitiesScore > safetyAndSecurityScore
+            && rightsAndResponsibilitiesScore > emotionalScore && rightsAndResponsibilitiesScore > economyScore && rightsAndResponsibilitiesScore > historicScore && rightsAndResponsibilitiesScore > cultureScore && rightsAndResponsibilitiesScore > geographyScore) {
+                PlayerPrefs.SetInt("SecondThemeScore", rightsAndResponsibilitiesScore);
+                rightsresponsibilities = "Rights & Responsibilities";
+                PlayerPrefs.SetString("SecondTheme", rightsresponsibilities);
+                secondPlace = "RightsAndResponsibilitiesSecond";
+                secondSelected = true;
+            }
+            //For Security
+            if (safetyAndSecurityScore < politicalScore && safetyAndSecurityScore > socialScore && safetyAndSecurityScore > environmentScore && safetyAndSecurityScore > rightsAndResponsibilitiesScore
+            && safetyAndSecurityScore > emotionalScore && safetyAndSecurityScore > economyScore && safetyAndSecurityScore > historicScore && safetyAndSecurityScore > cultureScore && safetyAndSecurityScore > geographyScore) {
+                PlayerPrefs.SetInt("SecondThemeScore", safetyAndSecurityScore);
+                safetysecurity = "Security";
+                PlayerPrefs.SetString("SecondTheme", safetysecurity);
+                secondPlace = "SafetySecuritySecond";
+                secondSelected = true;
+            }
+            //For Emotional
+            if (emotionalScore < politicalScore && emotionalScore > socialScore && emotionalScore > environmentScore && emotionalScore > rightsAndResponsibilitiesScore
+            && emotionalScore > safetyAndSecurityScore && emotionalScore > economyScore && emotionalScore > historicScore && emotionalScore > cultureScore && emotionalScore > geographyScore) {
+                PlayerPrefs.SetInt("SecondThemeScore", emotionalScore);
+                emotional = "Emotional";
+                PlayerPrefs.SetString("SecondTheme", emotional);
+                secondPlace = "EmotionalSecond";
+                secondSelected = true;
+            }
+            //For Economy
+            if (economyScore < politicalScore && economyScore > socialScore && economyScore > environmentScore && economyScore > rightsAndResponsibilitiesScore
+            && economyScore > safetyAndSecurityScore && economyScore > emotionalScore && economyScore > historicScore && economyScore > cultureScore && economyScore > geographyScore) {
+                PlayerPrefs.SetInt("SecondThemeScore", economyScore);
+                economy = "Economy";
+                PlayerPrefs.SetString("SecondTheme", economy);
+                secondPlace = "EconomySecond";
+                secondSelected = true;
+            }
+            //For Historic
+            if (historicScore < politicalScore && historicScore > socialScore && historicScore > environmentScore && historicScore > rightsAndResponsibilitiesScore
+            && historicScore > safetyAndSecurityScore && historicScore > emotionalScore && historicScore > economyScore && historicScore > cultureScore && historicScore > geographyScore) {
+                PlayerPrefs.SetInt("SecondThemeScore", historicScore);
+                historic = "Historic";
+                PlayerPrefs.SetString("SecondTheme", historic);
+                secondPlace = "HistoricSecond";
+                secondSelected = true;
+            }
+            //For Culture
+            if (cultureScore < politicalScore && cultureScore > socialScore && cultureScore > environmentScore && cultureScore > rightsAndResponsibilitiesScore
+            && cultureScore > safetyAndSecurityScore && cultureScore > emotionalScore && cultureScore > economyScore && cultureScore > historicScore && cultureScore > geographyScore) {
+                PlayerPrefs.SetInt("SecondThemeScore", cultureScore);
+                culture = "Culture";
+                PlayerPrefs.SetString("SecondTheme", culture);
+                secondPlace = "CultureSecond";
+                secondSelected = true;
+            }
+            //For Geography
+            if (geographyScore < politicalScore && geographyScore > socialScore && geographyScore > environmentScore && geographyScore > rightsAndResponsibilitiesScore
+            && geographyScore > safetyAndSecurityScore && geographyScore > emotionalScore && geographyScore > economyScore && geographyScore > historicScore && geographyScore > cultureScore) {
+                PlayerPrefs.SetInt("SecondThemeScore", geographyScore);
+                geography = "Geography";
+                PlayerPrefs.SetString("SecondTheme", geography);
+                secondPlace = "GeographySecond";
+                secondSelected = true;
+            }
+        }
+
+        //TOP THEME IS HISTORIC
+        if (firstSelected == true && firstPlace == "HistoricFirst") {
+            //For Social
+            if (socialScore < historicScore && socialScore > environmentScore && socialScore > rightsAndResponsibilitiesScore && socialScore > safetyAndSecurityScore
+            && socialScore > emotionalScore && socialScore > economyScore && socialScore > politicalScore && socialScore > cultureScore && socialScore > geographyScore) {
+                PlayerPrefs.SetInt("SecondThemeScore", socialScore);
+                social = "Social";
+                PlayerPrefs.SetString("SecondTheme", social);
+                secondPlace = "SocialSecond";
+                secondSelected = true;
+            }
+            //For Environment
+            if (environmentScore < historicScore && environmentScore > socialScore && environmentScore > rightsAndResponsibilitiesScore && environmentScore > safetyAndSecurityScore
+            && environmentScore > emotionalScore && environmentScore > economyScore && environmentScore > politicalScore && environmentScore > cultureScore && environmentScore > geographyScore) {
+                PlayerPrefs.SetInt("SecondThemeScore", environmentScore);
+                environment = "Environment";
+                PlayerPrefs.SetString("SecondTheme", environment);
+                secondPlace = "EnvironmentSecond";
+                secondSelected = true;
+            }
+            //For Rights & Responsibilities
+            if (rightsAndResponsibilitiesScore < historicScore && rightsAndResponsibilitiesScore > socialScore && rightsAndResponsibilitiesScore > environmentScore && rightsAndResponsibilitiesScore > safetyAndSecurityScore
+            && rightsAndResponsibilitiesScore > emotionalScore && rightsAndResponsibilitiesScore > economyScore && rightsAndResponsibilitiesScore > politicalScore && rightsAndResponsibilitiesScore > cultureScore && rightsAndResponsibilitiesScore > geographyScore) {
+                PlayerPrefs.SetInt("SecondThemeScore", rightsAndResponsibilitiesScore);
+                rightsresponsibilities = "Rights & Responsibilities";
+                PlayerPrefs.SetString("SecondTheme", rightsresponsibilities);
+                secondPlace = "RightsAndResponsibilitiesSecond";
+                secondSelected = true;
+            }
+            //For Security
+            if (safetyAndSecurityScore < historicScore && safetyAndSecurityScore > socialScore && safetyAndSecurityScore > environmentScore && safetyAndSecurityScore > rightsAndResponsibilitiesScore
+            && safetyAndSecurityScore > emotionalScore && safetyAndSecurityScore > economyScore && safetyAndSecurityScore > politicalScore && safetyAndSecurityScore > cultureScore && safetyAndSecurityScore > geographyScore) {
+                PlayerPrefs.SetInt("SecondThemeScore", safetyAndSecurityScore);
+                safetysecurity = "Security";
+                PlayerPrefs.SetString("SecondTheme", safetysecurity);
+                secondPlace = "SafetySecuritySecond";
+                secondSelected = true;
+            }
+            //For Emotional
+            if (emotionalScore < historicScore && emotionalScore > socialScore && emotionalScore > environmentScore && emotionalScore > rightsAndResponsibilitiesScore
+            && emotionalScore > safetyAndSecurityScore && emotionalScore > economyScore && emotionalScore > politicalScore && emotionalScore > cultureScore && emotionalScore > geographyScore) {
+                PlayerPrefs.SetInt("SecondThemeScore", emotionalScore);
+                emotional = "Emotional";
+                PlayerPrefs.SetString("SecondTheme", emotional);
+                secondPlace = "EmotionalSecond";
+                secondSelected = true;
+            }
+            //For Economy
+            if (economyScore < historicScore && economyScore > socialScore && economyScore > environmentScore && economyScore > rightsAndResponsibilitiesScore
+            && economyScore > safetyAndSecurityScore && economyScore > emotionalScore && economyScore > politicalScore && economyScore > cultureScore && economyScore > geographyScore) {
+                PlayerPrefs.SetInt("SecondThemeScore", economyScore);
+                economy = "Economy";
+                PlayerPrefs.SetString("SecondTheme", economy);
+                secondPlace = "EconomySecond";
+                secondSelected = true;
+            }
+            //For Political
+            if (politicalScore < historicScore && politicalScore > socialScore && politicalScore > environmentScore && politicalScore > rightsAndResponsibilitiesScore
+            && politicalScore > safetyAndSecurityScore && politicalScore > emotionalScore && politicalScore > economyScore && politicalScore > cultureScore && politicalScore > geographyScore) {
+                PlayerPrefs.SetInt("SecondThemeScore", politicalScore);
+                political = "Political";
+                PlayerPrefs.SetString("SecondTheme", political);
+                secondPlace = "PoliticalSecond";
+                secondSelected = true;
+            }
+            //For Culture
+            if (cultureScore < historicScore && cultureScore > socialScore && cultureScore > environmentScore && cultureScore > rightsAndResponsibilitiesScore
+            && cultureScore > safetyAndSecurityScore && cultureScore > emotionalScore && cultureScore > economyScore && cultureScore > politicalScore && cultureScore > geographyScore) {
+                PlayerPrefs.SetInt("SecondThemeScore", cultureScore);
+                culture = "Culture";
+                PlayerPrefs.SetString("SecondTheme", culture);
+                secondPlace = "CultureSecond";
+                secondSelected = true;
+            }
+            //For Geography
+            if (geographyScore < historicScore && geographyScore > socialScore && geographyScore > environmentScore && geographyScore > rightsAndResponsibilitiesScore
+            && geographyScore > safetyAndSecurityScore && geographyScore > emotionalScore && geographyScore > economyScore && geographyScore > politicalScore && geographyScore > cultureScore) {
+                PlayerPrefs.SetInt("SecondThemeScore", geographyScore);
+                geography = "Geography";
+                PlayerPrefs.SetString("SecondTheme", geography);
+                secondPlace = "GeographySecond";
+                secondSelected = true;
+            }
+        }
+
+        //TOP THEME IS CULTURE
+        if (firstSelected == true && firstPlace == "CultureFirst") {
+            //For Social
+            if (socialScore < cultureScore && socialScore > environmentScore && socialScore > rightsAndResponsibilitiesScore && socialScore > safetyAndSecurityScore
+            && socialScore > emotionalScore && socialScore > economyScore && socialScore > politicalScore && socialScore > historicScore && socialScore > geographyScore) {
+                PlayerPrefs.SetInt("SecondThemeScore", socialScore);
+                social = "Social";
+                PlayerPrefs.SetString("SecondTheme", social);
+                secondPlace = "SocialSecond";
+                secondSelected = true;
+            }
+            //For Environment
+            if (environmentScore < cultureScore && environmentScore > socialScore && environmentScore > rightsAndResponsibilitiesScore && environmentScore > safetyAndSecurityScore
+            && environmentScore > emotionalScore && environmentScore > economyScore && environmentScore > politicalScore && environmentScore > historicScore && environmentScore > geographyScore) {
+                PlayerPrefs.SetInt("SecondThemeScore", environmentScore);
+                environment = "Environment";
+                PlayerPrefs.SetString("SecondTheme", environment);
+                secondPlace = "EnvironmentSecond";
+                secondSelected = true;
+            }
+            //For Rights & Responsibilities
+            if (rightsAndResponsibilitiesScore < cultureScore && rightsAndResponsibilitiesScore > socialScore && rightsAndResponsibilitiesScore > environmentScore && rightsAndResponsibilitiesScore > safetyAndSecurityScore
+            && rightsAndResponsibilitiesScore > emotionalScore && rightsAndResponsibilitiesScore > economyScore && rightsAndResponsibilitiesScore > politicalScore && rightsAndResponsibilitiesScore > historicScore && rightsAndResponsibilitiesScore > geographyScore) {
+                PlayerPrefs.SetInt("SecondThemeScore", rightsAndResponsibilitiesScore);
+                rightsresponsibilities = "Rights & Responsibilities";
+                PlayerPrefs.SetString("SecondTheme", rightsresponsibilities);
+                secondPlace = "RightsAndResponsibilitiesSecond";
+                secondSelected = true;
+            }
+            //For Security
+            if (safetyAndSecurityScore < cultureScore && safetyAndSecurityScore > socialScore && safetyAndSecurityScore > environmentScore && safetyAndSecurityScore > rightsAndResponsibilitiesScore
+            && safetyAndSecurityScore > emotionalScore && safetyAndSecurityScore > economyScore && safetyAndSecurityScore > politicalScore && safetyAndSecurityScore > historicScore && safetyAndSecurityScore > geographyScore) {
+                PlayerPrefs.SetInt("SecondThemeScore", safetyAndSecurityScore);
+                safetysecurity = "Security";
+                PlayerPrefs.SetString("SecondTheme", safetysecurity);
+                secondPlace = "SafetySecuritySecond";
+                secondSelected = true;
+            }
+            //For Emotional
+            if (emotionalScore < cultureScore && emotionalScore > socialScore && emotionalScore > environmentScore && emotionalScore > rightsAndResponsibilitiesScore
+            && emotionalScore > safetyAndSecurityScore && emotionalScore > economyScore && emotionalScore > politicalScore && emotionalScore > historicScore && emotionalScore > geographyScore) {
+                PlayerPrefs.SetInt("SecondThemeScore", emotionalScore);
+                emotional = "Emotional";
+                PlayerPrefs.SetString("SecondTheme", emotional);
+                secondPlace = "EmotionalSecond";
+                secondSelected = true;
+            }
+            //For Economy
+            if (economyScore < cultureScore && economyScore > socialScore && economyScore > environmentScore && economyScore > rightsAndResponsibilitiesScore
+            && economyScore > safetyAndSecurityScore && economyScore > emotionalScore && economyScore > politicalScore && economyScore > historicScore && economyScore > geographyScore) {
+                PlayerPrefs.SetInt("SecondThemeScore", economyScore);
+                economy = "Economy";
+                PlayerPrefs.SetString("SecondTheme", economy);
+                secondPlace = "EconomySecond";
+                secondSelected = true;
+            }
+            //For Political
+            if (politicalScore < cultureScore && politicalScore > socialScore && politicalScore > environmentScore && politicalScore > rightsAndResponsibilitiesScore
+            && politicalScore > safetyAndSecurityScore && politicalScore > emotionalScore && politicalScore > economyScore && politicalScore > historicScore && politicalScore > geographyScore) {
+                PlayerPrefs.SetInt("SecondThemeScore", politicalScore);
+                political = "Political";
+                PlayerPrefs.SetString("SecondTheme", political);
+                secondPlace = "PoliticalSecond";
+                secondSelected = true;
+            }
+            //For Historic
+            if (historicScore < cultureScore && historicScore > socialScore && historicScore > environmentScore && historicScore > rightsAndResponsibilitiesScore
+            && historicScore > safetyAndSecurityScore && historicScore > emotionalScore && historicScore > economyScore && historicScore > politicalScore && historicScore > geographyScore) {
+                PlayerPrefs.SetInt("SecondThemeScore", historicScore);
+                historic = "Historic";
+                PlayerPrefs.SetString("SecondTheme", historic);
+                secondPlace = "HistoricSecond";
+                secondSelected = true;
+            }
+            //For Geography
+            if (geographyScore < cultureScore && geographyScore > socialScore && geographyScore > environmentScore && geographyScore > rightsAndResponsibilitiesScore
+            && geographyScore > safetyAndSecurityScore && geographyScore > emotionalScore && geographyScore > economyScore && geographyScore > politicalScore && geographyScore > historicScore) {
+                PlayerPrefs.SetInt("SecondThemeScore", geographyScore);
+                geography = "Geography";
+                PlayerPrefs.SetString("SecondTheme", geography);
+                secondPlace = "GeographySecond";
+                secondSelected = true;
+            }
+        }
+
+        //TOP THEME IS GEOGRAPHY
+        if (firstSelected == true && firstPlace == "GeographyFirst") {
+            //For Social
+            if (socialScore < geographyScore && socialScore > environmentScore && socialScore > rightsAndResponsibilitiesScore && socialScore > safetyAndSecurityScore
+            && socialScore > emotionalScore && socialScore > economyScore && socialScore > politicalScore && socialScore > historicScore && socialScore > cultureScore) {
+                PlayerPrefs.SetInt("SecondThemeScore", socialScore);
+                social = "Social";
+                PlayerPrefs.SetString("SecondTheme", social);
+                secondPlace = "SocialSecond";
+                secondSelected = true;
+            }
+            //For Environment
+            if (environmentScore < geographyScore && environmentScore > socialScore && environmentScore > rightsAndResponsibilitiesScore && environmentScore > safetyAndSecurityScore
+            && environmentScore > emotionalScore && environmentScore > economyScore && environmentScore > politicalScore && environmentScore > historicScore && environmentScore > cultureScore) {
+                PlayerPrefs.SetInt("SecondThemeScore", environmentScore);
+                environment = "Environment";
+                PlayerPrefs.SetString("SecondTheme", environment);
+                secondPlace = "EnvironmentSecond";
+                secondSelected = true;
+            }
+            //For Rights & Responsibilities
+            if (rightsAndResponsibilitiesScore < geographyScore && rightsAndResponsibilitiesScore > socialScore && rightsAndResponsibilitiesScore > environmentScore && rightsAndResponsibilitiesScore > safetyAndSecurityScore
+            && rightsAndResponsibilitiesScore > emotionalScore && rightsAndResponsibilitiesScore > economyScore && rightsAndResponsibilitiesScore > politicalScore && rightsAndResponsibilitiesScore > historicScore && rightsAndResponsibilitiesScore > cultureScore) {
+                PlayerPrefs.SetInt("SecondThemeScore", rightsAndResponsibilitiesScore);
+                rightsresponsibilities = "Rights & Responsibilities";
+                PlayerPrefs.SetString("SecondTheme", rightsresponsibilities);
+                secondPlace = "RightsAndResponsibilitiesSecond";
+                secondSelected = true;
+            }
+            //For Security
+            if (safetyAndSecurityScore < geographyScore && safetyAndSecurityScore > socialScore && safetyAndSecurityScore > environmentScore && safetyAndSecurityScore > rightsAndResponsibilitiesScore
+            && safetyAndSecurityScore > emotionalScore && safetyAndSecurityScore > economyScore && safetyAndSecurityScore > politicalScore && safetyAndSecurityScore > historicScore && safetyAndSecurityScore > cultureScore) {
+                PlayerPrefs.SetInt("SecondThemeScore", safetyAndSecurityScore);
+                safetysecurity = "Security";
+                PlayerPrefs.SetString("SecondTheme", safetysecurity);
+                secondPlace = "SafetySecuritySecond";
+                secondSelected = true;
+            }
+            //For Emotional
+            if (emotionalScore < geographyScore && emotionalScore > socialScore && emotionalScore > environmentScore && emotionalScore > rightsAndResponsibilitiesScore
+            && emotionalScore > safetyAndSecurityScore && emotionalScore > economyScore && emotionalScore > politicalScore && emotionalScore > historicScore && emotionalScore > cultureScore) {
+                PlayerPrefs.SetInt("SecondThemeScore", emotionalScore);
+                emotional = "Emotional";
+                PlayerPrefs.SetString("SecondTheme", emotional);
+                secondPlace = "EmotionalSecond";
+                secondSelected = true;
+            }
+            //For Economy
+            if (economyScore < geographyScore && economyScore > socialScore && economyScore > environmentScore && economyScore > rightsAndResponsibilitiesScore
+            && economyScore > safetyAndSecurityScore && economyScore > emotionalScore && economyScore > politicalScore && economyScore > historicScore && economyScore > cultureScore) {
+                PlayerPrefs.SetInt("SecondThemeScore", economyScore);
+                economy = "Economy";
+                PlayerPrefs.SetString("SecondTheme", economy);
+                secondPlace = "EconomySecond";
+                secondSelected = true;
+            }
+            //For Political
+            if (politicalScore < geographyScore && politicalScore > socialScore && politicalScore > environmentScore && politicalScore > rightsAndResponsibilitiesScore
+            && politicalScore > safetyAndSecurityScore && politicalScore > emotionalScore && politicalScore > economyScore && politicalScore > historicScore && politicalScore > cultureScore) {
+                PlayerPrefs.SetInt("SecondThemeScore", politicalScore);
+                political = "Political";
+                PlayerPrefs.SetString("SecondTheme", political);
+                secondPlace = "PoliticalSecond";
+                secondSelected = true;
+            }
+            //For Historic
+            if (historicScore < geographyScore && historicScore > socialScore && historicScore > environmentScore && historicScore > rightsAndResponsibilitiesScore
+            && historicScore > safetyAndSecurityScore && historicScore > emotionalScore && historicScore > economyScore && historicScore > politicalScore && historicScore > cultureScore) {
+                PlayerPrefs.SetInt("SecondThemeScore", historicScore);
+                historic = "Historic";
+                PlayerPrefs.SetString("SecondTheme", historic);
+                secondPlace = "HistoricSecond";
+                secondSelected = true;
+            }
+            //For Culture
+            if (cultureScore < geographyScore && cultureScore > socialScore && cultureScore > environmentScore && cultureScore > rightsAndResponsibilitiesScore
+            && cultureScore > safetyAndSecurityScore && cultureScore > emotionalScore && cultureScore > economyScore && cultureScore > politicalScore && cultureScore > historicScore) {
+                PlayerPrefs.SetInt("SecondThemeScore", cultureScore);
+                culture = "Culture";
+                PlayerPrefs.SetString("SecondTheme", culture);
+                secondPlace = "CultureSecond";
                 secondSelected = true;
             }
         }

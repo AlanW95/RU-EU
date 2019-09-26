@@ -50,6 +50,12 @@ public class AttitudesInterview1 : MonoBehaviour
     public int interviewCounter;
     public int secondCounter;
 
+    private bool statement1Selected = false;
+    private bool statement2Selected = false;
+    private bool statement3Selected = false;
+
+
+    private bool selected = false;
     //PlayerPrefs
     public string proInterview = "ProInterview";
     //public static string proInterviewStatements;
@@ -64,16 +70,22 @@ public class AttitudesInterview1 : MonoBehaviour
         rankingCanvas.SetActive(false);
         feedbackCanvas.SetActive(false);
 
-        interviewCounter = 6;
+        interviewCounter = 1;
         secondCounter = 3;
 
         FloatingTextController.Initialize();
+        index = Random.Range(0, sentences.Length);
     }
 
     // Update is called once per frame
     void Update()
     {
-        if (textDisplay.text == sentences[Random.Range(index, sentences.Length - 1)]) {
+        //index = Random.Range(0, sentences.Length);
+        Debug.Log("InterviewCounter: " + interviewCounter.ToString());
+
+        Debug.Log("SecondCounter: " + secondCounter.ToString());
+
+        if (textDisplay.text == sentences[index]) {
             continueButton.SetActive(true);
         }
 
@@ -85,9 +97,11 @@ public class AttitudesInterview1 : MonoBehaviour
             rankingCanvas.SetActive(true);
         }
 
-        if (secondCounter <= 0) {
+        if (secondCounter == 0) {
             Debug.Log("You have answered 3 questions! If you wish, you may proceed and collect more statements but this will not affect your score.");
-            themeSelectionContinueButton.SetActive(true);
+            themeSelectionCanvas.SetActive(false);
+            scoreCanvas.SetActive(true);
+            feedbackCanvas.SetActive(true);
         }
 
         if (Input.GetKeyDown(KeyCode.Escape)) {
@@ -124,8 +138,8 @@ public class AttitudesInterview1 : MonoBehaviour
 
         scoreCanvas.SetActive(true);
         feedbackCanvas.SetActive(true);
-        chosenTextDisplay.text = PlayerPrefs.GetString(proInterview);
-        Debug.Log(PlayerPrefs.GetString(proInterview).ToString());
+       // chosenTextDisplay.text = PlayerPrefs.GetString(proInterview);
+       // Debug.Log(PlayerPrefs.GetString(proInterview).ToString());
     }
 
     public void CounterDown() {
@@ -156,7 +170,7 @@ public class AttitudesInterview1 : MonoBehaviour
 
         continueButton.SetActive(false);
 
-        if (index > 0) {
+        if (index < sentences.Length - 1) {
             Debug.Log("Button has been pressed");
             index++;
             textDisplay.text = "";

@@ -49,6 +49,13 @@ public class AttitudesInterview2 : MonoBehaviour {
     public int interviewCounter;
     public int secondCounter;
 
+    private bool statement1Selected = false;
+    private bool statement2Selected = false;
+    private bool statement3Selected = false;
+     
+
+    private bool selected = false;
+
     //PlayerPrefs
     public string antiInterview = "AntiInterview";
     //public static string proInterviewStatements;
@@ -63,16 +70,22 @@ public class AttitudesInterview2 : MonoBehaviour {
         rankingCanvas.SetActive(false);
         feedbackCanvas.SetActive(false);
 
-        interviewCounter = 6;
+        interviewCounter = 1;
         secondCounter = 3;
 
         FloatingTextController.Initialize();
+        index = Random.Range(0, sentences.Length);
     }
 
     // Update is called once per frame
     void Update()
     {
-        if (textDisplay.text == sentences[index]) {
+
+        Debug.Log("InterviewCounter: " + interviewCounter.ToString());
+
+        Debug.Log("SecondCounter: " + secondCounter.ToString());
+        if (textDisplay.text == sentences[index])
+        {
             continueButton.SetActive(true);
         }
 
@@ -84,14 +97,18 @@ public class AttitudesInterview2 : MonoBehaviour {
             rankingCanvas.SetActive(true);
         }
 
-        if (secondCounter <= 0) {
+        if (secondCounter == 0) {
             Debug.Log("You have answered 3 questions! If you wish, you may proceed and collect more statements but this will not affect your score.");
-            themeSelectionContinueButton.SetActive(true);
+            themeSelectionCanvas.SetActive(false);
+            scoreCanvas.SetActive(true);
+            feedbackCanvas.SetActive(true);
+            
         }
+    
 
-        if (Input.GetKeyDown(KeyCode.Escape)) {
-            SceneManager.LoadScene("MobileWorkplaceAttitudes");
-        }
+        //if (Input.GetKeyDown(KeyCode.Escape)) {
+         /*   SceneManager.LoadScene("MobileWorkplaceAttitudes");
+        }*/
     }
 
     //Used for individual demos of the tool
@@ -115,7 +132,7 @@ public class AttitudesInterview2 : MonoBehaviour {
         rankingCanvas.SetActive(false);
         themeSelectionCanvas.SetActive(true);
 
-        secondCounter -= 1;
+        secondCounter --;
     }
 
     public void ScoreAndFeedback() {
@@ -123,12 +140,14 @@ public class AttitudesInterview2 : MonoBehaviour {
 
         scoreCanvas.SetActive(true);
         feedbackCanvas.SetActive(true);
-        chosenTextDisplay.text = PlayerPrefs.GetString(antiInterview);
-        Debug.Log(PlayerPrefs.GetString(antiInterview).ToString());
+        //chosenTextDisplay.text = PlayerPrefs.GetString(antiInterview);
+        /*Debug.Log(PlayerPrefs.GetString(antiInterview).ToString());*/
     }
 
     public void CounterDown() {
         interviewCounter--;
+        Debug.Log(interviewCounter);
+       
     }
 
     IEnumerator Type() {
@@ -156,7 +175,7 @@ public class AttitudesInterview2 : MonoBehaviour {
 
         if (index > 0) {
             Debug.Log("Button has been pressed");
-            index++;
+           // index++;
             textDisplay.text = "";
 
             startCanvas.SetActive(false); //start canvas kept appearing

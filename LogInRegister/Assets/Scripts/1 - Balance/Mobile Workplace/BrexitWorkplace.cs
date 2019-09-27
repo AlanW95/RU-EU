@@ -7,7 +7,11 @@ using TMPro;
 
 public class BrexitWorkplace : MonoBehaviour
 {
+    public GameObject startCanvas, mainCanvas;
+
     public GameObject interview1, interview2, discussion, newsflash, finalAssignment, mobilePhone;
+    public GameObject threeDObjects;
+
     public MeshCollider discussionCollider;
     public BoxCollider interview1Collider, interview2Collider, finalAssignmentCollider;
 
@@ -17,17 +21,32 @@ public class BrexitWorkplace : MonoBehaviour
     public int toolObjectiveCountdown = 8;
 
     // Start is called before the first frame update
-    void Start()
-    {
+    void Start() {
+        startCanvas.SetActive(false);
+        mainCanvas.SetActive(true);
+
+        threeDObjects.SetActive(true);
+
         PlayerPrefs.GetInt("ObjectiveCountdown");
         mobilePhone.SetActive(false); //WILL BE TRUE IN FULL GAME
         //click mobile phone and the interview will become available
 
-        //interview1.SetActive(true);
-        //interview2.SetActive(true);
-        //discussion.SetActive(true);
-        //newsflash.SetActive(true);
-        //finalAssignment.SetActive(true);
+        interview1.SetActive(true);
+        interview2.SetActive(true);
+        discussion.SetActive(true);
+        newsflash.SetActive(true);
+        finalAssignment.SetActive(true);
+
+/*        startCanvas.SetActive(true);
+        mainCanvas.SetActive(false);
+        
+        interview1.SetActive(false);
+        interview2.SetActive(false);
+        discussion.SetActive(false);
+        newsflash.SetActive(false);
+        finalAssignment.SetActive(false);
+
+        threeDObjects.SetActive(false);*/
     }
 
     // Update is called once per frame
@@ -38,7 +57,7 @@ public class BrexitWorkplace : MonoBehaviour
 
         if (toolObjectiveCountdown == 8) {        //toolAvailability == 0) {
             //textDisplay.text = "You are receiving a call from your mentor... pick it up!";
-            textDisplay.text = "Do in order; left to right. Press bar below to participate in Newsflash tool.";
+            textDisplay.text = "Choose from any of the 4 tools, the Remain Interview,the Leaver Interview, the Pub Discussion or the Newsflash.";
             //PlayerPrefs.SetInt("ObjectiveCountdown", toolObjectiveCountdown);
 
             /*textDisplay.text = "You are receiving a call from your mentor... pick it up!";
@@ -80,11 +99,12 @@ public class BrexitWorkplace : MonoBehaviour
         }
     }
 
+    public void MainCanvas() {
+    }
+
     public void LoadDashboard() {
         SceneManager.LoadScene("Dashboard");
     }
-
-
 
     public void AddToToolAvailability() {
         //helps recognise when to activate other tools

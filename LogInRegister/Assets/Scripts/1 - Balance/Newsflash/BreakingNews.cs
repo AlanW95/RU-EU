@@ -5,7 +5,7 @@ using UnityEngine;
 public class BreakingNews : MonoBehaviour {
 
     public BreakingNewsItem breakingNewsItemPrefab;
-    [Range(1f, 10f)]
+    [Range(1f, 20f)]
     public float itemDuration = 1.0f; //3.0f
     public string[] fillerItems;
 

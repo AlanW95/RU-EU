@@ -10,9 +10,9 @@ public class Dashboard : MonoBehaviour
 
     public Slider proAntiSlider;
 
-    public Slider topThemeSlider, secondTopThemeSlider, thirdTopThemeSlider; //used to update score with theme score
+    public Slider topThemeSlider, secondTopThemeSlider; //used to update score with theme score
 
-    public TextMeshProUGUI topTheme, secondTopTheme, thirdTopTheme;
+    public TextMeshProUGUI topTheme, secondTopTheme;
 
     // Start is called before the first frame update
     void Start()

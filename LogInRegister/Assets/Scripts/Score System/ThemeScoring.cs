@@ -84,7 +84,6 @@ public class ThemeScoring : MonoBehaviour
 
         Number1TopTheme();
         Number2TopTheme();
-        Number3TopTheme();
     }
 
     public void AddSocialPoints() {
@@ -1135,9 +1134,5 @@ public class ThemeScoring : MonoBehaviour
                 secondSelected = true;
             }
         }
-    }
-
-    public void Number3TopTheme() {
-
     }
 }

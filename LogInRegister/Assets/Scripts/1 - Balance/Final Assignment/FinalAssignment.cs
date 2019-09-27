@@ -19,7 +19,7 @@ public class FinalAssignment : MonoBehaviour {
     //public TextMeshProUGUI newsflash1, newsflash2, newsflash3, newsflash4, newsflash5, newsflash6;
 
     private string theme1, theme2, theme3;
-    public TextMeshProUGUI introduction, paragraph1, paragraph2, paragraph3;
+    public TextMeshProUGUI introduction, paragraph1, paragraph2; //, paragraph3;
 
     public GameObject finalAssignmentCanvas, exitGameCanvas;
 
@@ -54,10 +54,10 @@ public class FinalAssignment : MonoBehaviour {
 
         theme1 = PlayerPrefs.GetString("TopTheme");
         theme2 = PlayerPrefs.GetString("SecondTheme");
-        introduction.text = "They key issues that concern EU citizens seems to be; " + theme1 + " ," + theme2 + " , [THEME3].";
-        paragraph1.text = "It is clear in the debate about EU identity that " + theme1 + " is very important. As one interviewee said:";
-        paragraph2.text = "However, we would also remember that " + theme2 + " is important too. Speaking to our reporter, our interviewee said:";
-        paragraph3.text = "Many people seem very concerned about [THEME3]. To quote one of our interviewees on this topic:";
+        introduction.text = "The top 2 issues that concern EU citizens are; " + theme1 + " and " + theme2 + ".";
+        paragraph1.text = "It is clear in the debate about EU identity that " + theme1 + " is very important. As one interviewee said (select a quotation about " + theme1 + " from your notebook):";
+        paragraph2.text = "However, many people are also concerned about " + theme2 + " (select a quotation about " + theme2 + " from your notebook):";
+        //paragraph3.text = "Many people seem very concerned about [THEME3]. To quote one of our interviewees on this topic:";
 
 
 

@@ -80,6 +80,8 @@ public class DiscussionAnimation : MonoBehaviour {
     // Update is called once per frame
     void Update()
     {
+        continueButton.SetActive(false);
+
         PlayerPrefs.GetInt("CurrentSocialScore");
         PlayerPrefs.GetInt("CurrentEnvironmentScore");
         PlayerPrefs.GetInt("CurrentRightsAndResponsibilitiesScore");
@@ -92,7 +94,8 @@ public class DiscussionAnimation : MonoBehaviour {
         PlayerPrefs.GetInt("CurrentGeographyScore");
 
         if (textDisplay.text == discussion[index]) {
-            continueButton.SetActive(true);
+            StartCoroutine(Continue());
+            //continueButton.SetActive(true);
         }
 
         if (isProCorrect && isAntiCorrect && isNeutralCorrect) {
@@ -122,6 +125,11 @@ public class DiscussionAnimation : MonoBehaviour {
 
     public void ReturnToTheMobileWorkplace() {
         SceneManager.LoadScene("Journalist");
+    }
+
+    IEnumerator Continue() {
+        yield return new WaitForSeconds(4);
+        continueButton.SetActive(true);
     }
 
     IEnumerator Type() {

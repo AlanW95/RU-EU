@@ -29,7 +29,7 @@ public class MainMenu : MonoBehaviour
         loadButton.interactable = false;
         optionsButton.interactable = false;
         exitButton.interactable = false;
-        yield return new WaitForSeconds(4000);
+        yield return new WaitForSeconds(6);
         startButton.interactable = true;
         loadButton.interactable = true;
         optionsButton.interactable = true;

@@ -111,7 +111,12 @@ public class DiscussionTask2 : MonoBehaviour
     void Update()
     {
         if (textDisplay2.text == discussion2[index]) {
-            continueButton.SetActive(true);
+            StartCoroutine(Continue());
+            //continueButton.SetActive(true);
+        }
+
+        if (textDisplay2.text != discussion2[index]) {
+            continueButton.SetActive(false);
         }
 
         if (Input.GetKeyDown(KeyCode.Escape)) {
@@ -136,6 +141,11 @@ public class DiscussionTask2 : MonoBehaviour
 
             toolBG.SetActive(false);
         }
+    }
+
+    IEnumerator Continue() {
+        yield return new WaitForSeconds(2);
+        continueButton.SetActive(true);
     }
 
     IEnumerator Type() {

@@ -37,7 +37,7 @@ public class ScenarioSelection : MonoBehaviour {
     }
 
     public void BalanceScenario() {
-        SceneManager.LoadScene("Journalist");
+        SceneManager.LoadScene("MobilePhone");
     }
 
     public void AttitudesScenario() {

@@ -42,7 +42,9 @@ public class MainMenu : MonoBehaviour
         PlayerPrefs.SetInt("CurrentXPScore", 0);
 
         //SceneManager.LoadScene("JobInterview");
-        SceneManager.LoadScene("ScenarioChoice");
+        //SceneManager.LoadScene("ScenarioChoice");
+
+        SceneManager.LoadScene("InterviewPhone");
     }
 
     public void LoadGame() {

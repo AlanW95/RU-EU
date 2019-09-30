@@ -6890,17 +6890,17 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 300
       objectReference: {fileID: 0}
+    - target: {fileID: 33639879297558196, guid: 1a5a73e93b869204898d14ba1945e0a9,
+        type: 3}
+      propertyPath: m_Mesh
+      value: 
+      objectReference: {fileID: 4300000, guid: f8270a09e16cc1843bc98462e3379516, type: 3}
     - target: {fileID: 64078956708921608, guid: 1a5a73e93b869204898d14ba1945e0a9,
         type: 3}
       propertyPath: m_Enabled
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 64078956708921608, guid: 1a5a73e93b869204898d14ba1945e0a9,
-        type: 3}
-      propertyPath: m_Mesh
-      value: 
-      objectReference: {fileID: 4300000, guid: f8270a09e16cc1843bc98462e3379516, type: 3}
-    - target: {fileID: 33639879297558196, guid: 1a5a73e93b869204898d14ba1945e0a9,
         type: 3}
       propertyPath: m_Mesh
       value: 
@@ -12439,7 +12439,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 0.5}
   m_AnchorMax: {x: 1, y: 0.5}
-  m_AnchoredPosition: {x: 0.00012207031, y: 0}
+  m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 550, y: 100}
   m_Pivot: {x: 1, y: 0.5}
 --- !u!114 &1191487353
@@ -20777,7 +20777,7 @@ PrefabInstance:
     - target: {fileID: 2389776, guid: 2f1666ad9b7fdd7459a360619d6ccffd, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
-      objectReference: {fileID: 2100000, guid: 1fe677a8264e9b146a0294877119d0e6, type: 2}
+      objectReference: {fileID: 2100000, guid: 4d627e254924a654fb64e03702c18675, type: 2}
     - target: {fileID: 2389776, guid: 2f1666ad9b7fdd7459a360619d6ccffd, type: 3}
       propertyPath: m_LightProbeUsage
       value: 1

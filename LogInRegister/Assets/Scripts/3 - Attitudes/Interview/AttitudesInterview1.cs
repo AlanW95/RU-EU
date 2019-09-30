@@ -22,6 +22,7 @@ public class AttitudesInterview1 : MonoBehaviour
     public TextMeshProUGUI textDisplay;
     public string[] sentences;
     private int index;
+    private string currentIndexSentence;
 
     //canvas that gives the player feedback on what they have done in the Pro Interview tool
     public GameObject feedbackCanvas;
@@ -70,17 +71,19 @@ public class AttitudesInterview1 : MonoBehaviour
         rankingCanvas.SetActive(false);
         feedbackCanvas.SetActive(false);
 
-        interviewCounter = 1;
+        interviewCounter = 6;
         secondCounter = 3;
 
         FloatingTextController.Initialize();
-        index = Random.Range(0, sentences.Length);
+        //index = Random.Range(0, sentences.Length);
     }
 
     // Update is called once per frame
     void Update()
     {
-        //index = Random.Range(0, sentences.Length);
+        index = Random.Range(0, sentences.Length);
+        //currentIndexSentence = sentences[index];
+
         Debug.Log("InterviewCounter: " + interviewCounter.ToString());
 
         Debug.Log("SecondCounter: " + secondCounter.ToString());
@@ -144,7 +147,7 @@ public class AttitudesInterview1 : MonoBehaviour
 
     public void CounterDown() {
         interviewCounter--;
-        Debug.Log(interviewCounter);
+        Debug.Log("Interview Counter: " + interviewCounter);
     }
 
     IEnumerator Type() {
@@ -173,6 +176,7 @@ public class AttitudesInterview1 : MonoBehaviour
         if (index < sentences.Length - 1) {
             Debug.Log("Button has been pressed");
             index++;
+            //currentIndexSentence = sentences[index];
             textDisplay.text = "";
 
             startCanvas.SetActive(false); //start canvas kept appearing

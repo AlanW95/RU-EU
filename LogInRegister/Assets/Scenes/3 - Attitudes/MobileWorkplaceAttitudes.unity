@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.44657898, g: 0.4964133, b: 0.5748178, a: 1}
+  m_IndirectSpecularColor: {r: 0.44657868, g: 0.49641263, b: 0.57481706, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -1002,6 +1002,21 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2483c0f5285059045ac287955ca2e5dc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  startCanvas: {fileID: 0}
+  mainCanvas: {fileID: 0}
+  interview1: {fileID: 0}
+  interview2: {fileID: 0}
+  discussion: {fileID: 0}
+  newsflash: {fileID: 0}
+  finalAssignment: {fileID: 0}
+  mobilePhone: {fileID: 0}
+  threeDObjects: {fileID: 0}
+  discussionCollider: {fileID: 0}
+  interview1Collider: {fileID: 0}
+  interview2Collider: {fileID: 0}
+  finalAssignmentCollider: {fileID: 0}
+  textDisplay: {fileID: 0}
+  toolObjectiveCountdown: 8
   interviewTool: {fileID: 559657443}
 --- !u!65 &117575379
 BoxCollider:
@@ -5191,6 +5206,21 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a23b418c58599284f86ae931bea8e877, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  startCanvas: {fileID: 0}
+  mainCanvas: {fileID: 0}
+  interview1: {fileID: 0}
+  interview2: {fileID: 0}
+  discussion: {fileID: 0}
+  newsflash: {fileID: 0}
+  finalAssignment: {fileID: 0}
+  mobilePhone: {fileID: 0}
+  threeDObjects: {fileID: 0}
+  discussionCollider: {fileID: 0}
+  interview1Collider: {fileID: 0}
+  interview2Collider: {fileID: 0}
+  finalAssignmentCollider: {fileID: 0}
+  textDisplay: {fileID: 0}
+  toolObjectiveCountdown: 8
   interviewTool: {fileID: 1401194809}
 --- !u!65 &557821211
 BoxCollider:
@@ -6403,6 +6433,21 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0b904a05fb0a69e4e846d3a18654ec06, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  startCanvas: {fileID: 0}
+  mainCanvas: {fileID: 0}
+  interview1: {fileID: 0}
+  interview2: {fileID: 0}
+  discussion: {fileID: 0}
+  newsflash: {fileID: 0}
+  finalAssignment: {fileID: 0}
+  mobilePhone: {fileID: 0}
+  threeDObjects: {fileID: 0}
+  discussionCollider: {fileID: 0}
+  interview1Collider: {fileID: 0}
+  interview2Collider: {fileID: 0}
+  finalAssignmentCollider: {fileID: 0}
+  textDisplay: {fileID: 0}
+  toolObjectiveCountdown: 8
   discussionAnimationTool: {fileID: 801888538}
 --- !u!1 &624774374
 GameObject:
@@ -10584,6 +10629,21 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5861f66080edad741ab2d364e2fa8f3b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  startCanvas: {fileID: 0}
+  mainCanvas: {fileID: 0}
+  interview1: {fileID: 0}
+  interview2: {fileID: 0}
+  discussion: {fileID: 0}
+  newsflash: {fileID: 0}
+  finalAssignment: {fileID: 0}
+  mobilePhone: {fileID: 0}
+  threeDObjects: {fileID: 0}
+  discussionCollider: {fileID: 0}
+  interview1Collider: {fileID: 0}
+  interview2Collider: {fileID: 0}
+  finalAssignmentCollider: {fileID: 0}
+  textDisplay: {fileID: 0}
+  toolObjectiveCountdown: 8
   chatTool: {fileID: 1153496229}
 --- !u!65 &1044808115
 BoxCollider:
@@ -14181,7 +14241,7 @@ PrefabInstance:
     - target: {fileID: 2310044, guid: 074728566132335428608c1b7e7f1f14, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
-      objectReference: {fileID: 2100000, guid: 0967d64242edd9041b295d67e0ee03eb, type: 2}
+      objectReference: {fileID: 2100000, guid: 0cfef4e685697694884396d9c26cc38c, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 074728566132335428608c1b7e7f1f14, type: 3}
 --- !u!4 &1452661193 stripped
@@ -14790,6 +14850,21 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 52c0d3888c1cf1b4ba8fc0901674c87a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  startCanvas: {fileID: 0}
+  mainCanvas: {fileID: 0}
+  interview1: {fileID: 0}
+  interview2: {fileID: 0}
+  discussion: {fileID: 0}
+  newsflash: {fileID: 0}
+  finalAssignment: {fileID: 0}
+  mobilePhone: {fileID: 0}
+  threeDObjects: {fileID: 0}
+  discussionCollider: {fileID: 0}
+  interview1Collider: {fileID: 0}
+  interview2Collider: {fileID: 0}
+  finalAssignmentCollider: {fileID: 0}
+  textDisplay: {fileID: 0}
+  toolObjectiveCountdown: 8
   notebookTool: {fileID: 2114749090}
 --- !u!65 &1510091880
 BoxCollider:
@@ -16418,6 +16493,21 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ea42a3d643d03e54083364811da37d9c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  startCanvas: {fileID: 0}
+  mainCanvas: {fileID: 0}
+  interview1: {fileID: 0}
+  interview2: {fileID: 0}
+  discussion: {fileID: 0}
+  newsflash: {fileID: 0}
+  finalAssignment: {fileID: 0}
+  mobilePhone: {fileID: 0}
+  threeDObjects: {fileID: 0}
+  discussionCollider: {fileID: 0}
+  interview1Collider: {fileID: 0}
+  interview2Collider: {fileID: 0}
+  finalAssignmentCollider: {fileID: 0}
+  textDisplay: {fileID: 0}
+  toolObjectiveCountdown: 8
   newsflashBar: {fileID: 1366833983}
   newsflashText: {fileID: 675694825}
 --- !u!114 &1641170706
@@ -16432,6 +16522,21 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: aef6ce159ae1f08428dc9b4b3b038546, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  startCanvas: {fileID: 0}
+  mainCanvas: {fileID: 0}
+  interview1: {fileID: 0}
+  interview2: {fileID: 0}
+  discussion: {fileID: 0}
+  newsflash: {fileID: 0}
+  finalAssignment: {fileID: 0}
+  mobilePhone: {fileID: 0}
+  threeDObjects: {fileID: 0}
+  discussionCollider: {fileID: 0}
+  interview1Collider: {fileID: 0}
+  interview2Collider: {fileID: 0}
+  finalAssignmentCollider: {fileID: 0}
+  textDisplay: {fileID: 0}
+  toolObjectiveCountdown: 8
   finalAssignmentTool: {fileID: 1539768061}
 --- !u!65 &1641170707
 BoxCollider:
@@ -16828,6 +16933,21 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ea42a3d643d03e54083364811da37d9c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  startCanvas: {fileID: 0}
+  mainCanvas: {fileID: 0}
+  interview1: {fileID: 0}
+  interview2: {fileID: 0}
+  discussion: {fileID: 0}
+  newsflash: {fileID: 0}
+  finalAssignment: {fileID: 0}
+  mobilePhone: {fileID: 0}
+  threeDObjects: {fileID: 0}
+  discussionCollider: {fileID: 0}
+  interview1Collider: {fileID: 0}
+  interview2Collider: {fileID: 0}
+  finalAssignmentCollider: {fileID: 0}
+  textDisplay: {fileID: 0}
+  toolObjectiveCountdown: 8
   newsflashBar: {fileID: 1366833983}
   newsflashText: {fileID: 675694825}
 --- !u!1 &1715251254
@@ -17991,6 +18111,21 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5861f66080edad741ab2d364e2fa8f3b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  startCanvas: {fileID: 0}
+  mainCanvas: {fileID: 0}
+  interview1: {fileID: 0}
+  interview2: {fileID: 0}
+  discussion: {fileID: 0}
+  newsflash: {fileID: 0}
+  finalAssignment: {fileID: 0}
+  mobilePhone: {fileID: 0}
+  threeDObjects: {fileID: 0}
+  discussionCollider: {fileID: 0}
+  interview1Collider: {fileID: 0}
+  interview2Collider: {fileID: 0}
+  finalAssignmentCollider: {fileID: 0}
+  textDisplay: {fileID: 0}
+  toolObjectiveCountdown: 8
   chatTool: {fileID: 1153496229}
 --- !u!4 &1798004177
 Transform:

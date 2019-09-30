@@ -7,6 +7,8 @@ public class ExperienceScoring : MonoBehaviour
 {
 
     public static int xpScore;
+    public static int level;
+    public static int xpScoreToNextLevel;
 
     Text xpText;
 
@@ -39,6 +41,10 @@ public class ExperienceScoring : MonoBehaviour
         //FloatingTextController.CreateFloatingText(xpPointsToAdd.ToString(), transform);
         Debug.Log("XP has been achieved!");
         Debug.Log("+" + xpPointsToAdd);
+    }
+
+    public void LevelSystem() {
+        
     }
 
     public void ResetXP() {

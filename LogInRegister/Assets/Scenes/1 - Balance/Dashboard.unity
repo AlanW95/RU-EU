@@ -286,10 +286,8 @@ MonoBehaviour:
   proAntiSlider: {fileID: 0}
   topThemeSlider: {fileID: 0}
   secondTopThemeSlider: {fileID: 0}
-  thirdTopThemeSlider: {fileID: 0}
   topTheme: {fileID: 0}
   secondTopTheme: {fileID: 0}
-  thirdTopTheme: {fileID: 0}
 --- !u!114 &98912072
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -670,7 +668,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &478600847
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -686,10 +684,8 @@ MonoBehaviour:
   proAntiSlider: {fileID: 0}
   topThemeSlider: {fileID: 0}
   secondTopThemeSlider: {fileID: 0}
-  thirdTopThemeSlider: {fileID: 0}
   topTheme: {fileID: 0}
   secondTopTheme: {fileID: 0}
-  thirdTopTheme: {fileID: 0}
 --- !u!114 &478600848
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -788,7 +784,7 @@ MonoBehaviour:
     lineCount: 1
     pageCount: 1
     materialCount: 1
-  m_havePropertiesChanged: 0
+  m_havePropertiesChanged: 1
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_spriteAnimator: {fileID: 0}
@@ -1096,7 +1092,7 @@ RectTransform:
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
+  m_AnchorMax: {x: 0.85, y: 1}
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 10, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
@@ -1154,7 +1150,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &631580850
 RectTransform:
   m_ObjectHideFlags: 0
@@ -1272,7 +1268,7 @@ MonoBehaviour:
     lineCount: 1
     pageCount: 1
     materialCount: 1
-  m_havePropertiesChanged: 0
+  m_havePropertiesChanged: 1
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_spriteAnimator: {fileID: 0}
@@ -1332,7 +1328,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0.5}
   m_AnchorMax: {x: 1, y: 0.5}
-  m_AnchoredPosition: {x: -350, y: 65}
+  m_AnchoredPosition: {x: -350, y: 60}
   m_SizeDelta: {x: -750, y: 75}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &724356506
@@ -1567,7 +1563,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0.5}
   m_AnchorMax: {x: 1, y: 0.5}
-  m_AnchoredPosition: {x: -0.000030517578, y: -35}
+  m_AnchoredPosition: {x: -0.000030517578, y: -105}
   m_SizeDelta: {x: -300, y: 75}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &830817899
@@ -1804,7 +1800,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0.5}
   m_AnchorMax: {x: 1, y: 0.5}
-  m_AnchoredPosition: {x: 50, y: -80}
+  m_AnchoredPosition: {x: 50, y: -150}
   m_SizeDelta: {x: -200, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &894390937
@@ -2056,8 +2052,8 @@ RectTransform:
   m_Father: {fileID: 2082538513}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
+  m_AnchorMin: {x: 0.85, y: 0}
+  m_AnchorMax: {x: 0.85, y: 1}
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 40, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
@@ -2354,10 +2350,8 @@ MonoBehaviour:
   proAntiSlider: {fileID: 0}
   topThemeSlider: {fileID: 0}
   secondTopThemeSlider: {fileID: 0}
-  thirdTopThemeSlider: {fileID: 0}
   topTheme: {fileID: 0}
   secondTopTheme: {fileID: 0}
-  thirdTopTheme: {fileID: 0}
 --- !u!114 &1068196894
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2498,7 +2492,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0.5}
   m_AnchorMax: {x: 1, y: 0.5}
-  m_AnchoredPosition: {x: 325, y: -35}
+  m_AnchoredPosition: {x: 325, y: -105}
   m_SizeDelta: {x: -750, y: 75}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &1130665137
@@ -2665,7 +2659,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0.5}
   m_AnchorMax: {x: 1, y: 0.5}
-  m_AnchoredPosition: {x: 50, y: 35}
+  m_AnchoredPosition: {x: 50, y: 30}
   m_SizeDelta: {x: -200, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1151345875
@@ -2774,7 +2768,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0.5}
   m_AnchorMax: {x: 1, y: 0.5}
-  m_AnchoredPosition: {x: 325, y: 85}
+  m_AnchoredPosition: {x: 325, y: 80}
   m_SizeDelta: {x: -750, y: 75}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1155443741
@@ -2792,10 +2786,8 @@ MonoBehaviour:
   proAntiSlider: {fileID: 0}
   topThemeSlider: {fileID: 0}
   secondTopThemeSlider: {fileID: 0}
-  thirdTopThemeSlider: {fileID: 0}
   topTheme: {fileID: 0}
   secondTopTheme: {fileID: 0}
-  thirdTopTheme: {fileID: 0}
 --- !u!114 &1155443742
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2954,7 +2946,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0.5}
   m_AnchorMax: {x: 1, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 85}
+  m_AnchoredPosition: {x: 0, y: 80}
   m_SizeDelta: {x: -300.00003, y: 75}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1159946755
@@ -3556,7 +3548,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1358753685
 RectTransform:
   m_ObjectHideFlags: 0
@@ -3674,7 +3666,7 @@ MonoBehaviour:
     lineCount: 1
     pageCount: 1
     materialCount: 1
-  m_havePropertiesChanged: 0
+  m_havePropertiesChanged: 1
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_spriteAnimator: {fileID: 0}
@@ -3815,10 +3807,8 @@ MonoBehaviour:
   proAntiSlider: {fileID: 1441521363}
   topThemeSlider: {fileID: 1151345875}
   secondTopThemeSlider: {fileID: 894390937}
-  thirdTopThemeSlider: {fileID: 1716938743}
   topTheme: {fileID: 1159946755}
   secondTopTheme: {fileID: 830817899}
-  thirdTopTheme: {fileID: 631580851}
 --- !u!1 &1432884701
 GameObject:
   m_ObjectHideFlags: 0
@@ -4353,7 +4343,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1716938742
 RectTransform:
   m_ObjectHideFlags: 0
@@ -4796,7 +4786,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0.5}
   m_AnchorMax: {x: 1, y: 0.5}
-  m_AnchoredPosition: {x: -350, y: -50}
+  m_AnchoredPosition: {x: -350, y: -120}
   m_SizeDelta: {x: -750, y: 75}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2141258016

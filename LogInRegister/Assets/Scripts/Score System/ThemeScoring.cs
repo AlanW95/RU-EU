@@ -286,7 +286,7 @@ public class ThemeScoring : MonoBehaviour
 
     public void Number2TopTheme() {
         //TOP THEME IS SOCIAL
-        if (firstSelected == true && firstPlace == "SocialFirst") {
+        if (firstPlace == "SocialFirst") {
             //For Environment
             if (environmentScore < socialScore && environmentScore > rightsAndResponsibilitiesScore && environmentScore > safetyAndSecurityScore && environmentScore > emotionalScore
             && environmentScore > economyScore && environmentScore > politicalScore && environmentScore > historicScore && environmentScore > cultureScore && environmentScore > geographyScore) {
@@ -371,7 +371,7 @@ public class ThemeScoring : MonoBehaviour
         }
 
         //TOP THEME IS ENVIRONMENT
-        if (firstSelected == true && firstPlace == "EnvironmentFirst") {
+        if (firstPlace == "EnvironmentFirst") {
             //For Social
             if (socialScore < environmentScore && socialScore > rightsAndResponsibilitiesScore && socialScore > safetyAndSecurityScore && socialScore > emotionalScore
             && socialScore > economyScore && socialScore > politicalScore && socialScore > historicScore && socialScore > cultureScore && socialScore > geographyScore) {
@@ -456,7 +456,7 @@ public class ThemeScoring : MonoBehaviour
         }
 
         //TOP THEME IS RIGHTS & RESPONSIBILITIES
-        if (firstSelected == true && firstPlace == "RightsAndResponsibilitiesFirst") {
+        if (firstPlace == "RightsAndResponsibilitiesFirst") {
             //For Social
             if (socialScore < rightsAndResponsibilitiesScore && socialScore > environmentScore && socialScore > safetyAndSecurityScore && socialScore > emotionalScore
             && socialScore > economyScore && socialScore > politicalScore && socialScore > historicScore && socialScore > cultureScore && socialScore > geographyScore) {
@@ -541,7 +541,7 @@ public class ThemeScoring : MonoBehaviour
         }
 
         //TOP THEME IS SAFETY & SECURITY
-        if (firstSelected == true && firstPlace == "SafetySecurityFirst") {
+        if (firstPlace == "SafetySecurityFirst") {
             //For Social
             if (socialScore < safetyAndSecurityScore && socialScore > environmentScore && socialScore > rightsAndResponsibilitiesScore && socialScore > emotionalScore
             && socialScore > economyScore && socialScore > politicalScore && socialScore > historicScore && socialScore > cultureScore && socialScore > geographyScore) {
@@ -626,7 +626,7 @@ public class ThemeScoring : MonoBehaviour
         }
 
         //TOP THEME IS EMOTIONAL
-        if (firstSelected == true && firstPlace == "EmotionalFirst") {
+        if (firstPlace == "EmotionalFirst") {
             //For Social
             if (socialScore < emotionalScore && socialScore > environmentScore && socialScore > rightsAndResponsibilitiesScore && socialScore > safetyAndSecurityScore
             && socialScore > economyScore && socialScore > politicalScore && socialScore > historicScore && socialScore > cultureScore && socialScore > geographyScore) {
@@ -711,7 +711,7 @@ public class ThemeScoring : MonoBehaviour
         }
 
         //TOP THEME IS ECONOMY
-        if (firstSelected == true && firstPlace == "EconomyFirst") {
+        if (firstPlace == "EconomyFirst") {
             //For Social
             if (socialScore < economyScore && socialScore > environmentScore && socialScore > rightsAndResponsibilitiesScore && socialScore > safetyAndSecurityScore
             && socialScore > emotionalScore && socialScore > politicalScore && socialScore > historicScore && socialScore > cultureScore && socialScore > geographyScore) {
@@ -796,7 +796,7 @@ public class ThemeScoring : MonoBehaviour
         }
 
         //TOP THEME IS POLITICAL
-        if (firstSelected == true && firstPlace == "PoliticalFirst") {
+        if (firstPlace == "PoliticalFirst") {
             //For Social
             if (socialScore < politicalScore && socialScore > environmentScore && socialScore > rightsAndResponsibilitiesScore && socialScore > safetyAndSecurityScore
             && socialScore > emotionalScore && socialScore > economyScore && socialScore > historicScore && socialScore > cultureScore && socialScore > geographyScore) {
@@ -881,7 +881,7 @@ public class ThemeScoring : MonoBehaviour
         }
 
         //TOP THEME IS HISTORIC
-        if (firstSelected == true && firstPlace == "HistoricFirst") {
+        if (firstPlace == "HistoricFirst") {
             //For Social
             if (socialScore < historicScore && socialScore > environmentScore && socialScore > rightsAndResponsibilitiesScore && socialScore > safetyAndSecurityScore
             && socialScore > emotionalScore && socialScore > economyScore && socialScore > politicalScore && socialScore > cultureScore && socialScore > geographyScore) {
@@ -966,7 +966,7 @@ public class ThemeScoring : MonoBehaviour
         }
 
         //TOP THEME IS CULTURE
-        if (firstSelected == true && firstPlace == "CultureFirst") {
+        if (firstPlace == "CultureFirst") {
             //For Social
             if (socialScore < cultureScore && socialScore > environmentScore && socialScore > rightsAndResponsibilitiesScore && socialScore > safetyAndSecurityScore
             && socialScore > emotionalScore && socialScore > economyScore && socialScore > politicalScore && socialScore > historicScore && socialScore > geographyScore) {
@@ -1051,7 +1051,7 @@ public class ThemeScoring : MonoBehaviour
         }
 
         //TOP THEME IS GEOGRAPHY
-        if (firstSelected == true && firstPlace == "GeographyFirst") {
+        if (firstPlace == "GeographyFirst") {
             //For Social
             if (socialScore < geographyScore && socialScore > environmentScore && socialScore > rightsAndResponsibilitiesScore && socialScore > safetyAndSecurityScore
             && socialScore > emotionalScore && socialScore > economyScore && socialScore > politicalScore && socialScore > historicScore && socialScore > cultureScore) {

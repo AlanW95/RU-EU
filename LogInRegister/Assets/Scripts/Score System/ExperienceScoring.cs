@@ -41,10 +41,18 @@ public class ExperienceScoring : MonoBehaviour
         //FloatingTextController.CreateFloatingText(xpPointsToAdd.ToString(), transform);
         Debug.Log("XP has been achieved!");
         Debug.Log("+" + xpPointsToAdd);
+
+        if (xpScore >= xpScoreToNextLevel) {
+            // Having enough experience to level up
+            level++;
+            xpScore -= xpScoreToNextLevel;
+        }
     }
 
     public void LevelSystem() {
-        
+        level = 0;
+        xpScore = 0;
+        xpScoreToNextLevel = 100;
     }
 
     public void ResetXP() {

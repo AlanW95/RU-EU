@@ -155,19 +155,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2483c0f5285059045ac287955ca2e5dc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  startCanvas: {fileID: 0}
-  mainCanvas: {fileID: 0}
+  startCanvas: {fileID: 626349102}
+  mainCanvas: {fileID: 1707301738}
   interview1: {fileID: 927768664}
   interview2: {fileID: 22638015}
   discussion: {fileID: 617982931}
   newsflash: {fileID: 1366833983}
-  finalAssignment: {fileID: 0}
+  finalAssignment: {fileID: 1641170704}
   mobilePhone: {fileID: 1044808111}
-  threeDObjects: {fileID: 0}
+  threeDObjects: {fileID: 849400650}
   discussionCollider: {fileID: 617982933}
   interview1Collider: {fileID: 927768667}
   interview2Collider: {fileID: 22638018}
-  finalAssignmentCollider: {fileID: 0}
+  finalAssignmentCollider: {fileID: 1641170707}
   textDisplay: {fileID: 1839532273}
   toolObjectiveCountdown: 8
   interviewTool: {fileID: 1057987902}
@@ -10147,19 +10147,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a23b418c58599284f86ae931bea8e877, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  startCanvas: {fileID: 0}
-  mainCanvas: {fileID: 0}
+  startCanvas: {fileID: 626349102}
+  mainCanvas: {fileID: 1707301738}
   interview1: {fileID: 927768664}
   interview2: {fileID: 22638015}
   discussion: {fileID: 617982931}
   newsflash: {fileID: 1366833983}
-  finalAssignment: {fileID: 0}
+  finalAssignment: {fileID: 1641170704}
   mobilePhone: {fileID: 1044808111}
-  threeDObjects: {fileID: 0}
+  threeDObjects: {fileID: 849400650}
   discussionCollider: {fileID: 617982933}
   interview1Collider: {fileID: 927768667}
   interview2Collider: {fileID: 22638018}
-  finalAssignmentCollider: {fileID: 0}
+  finalAssignmentCollider: {fileID: 1641170707}
   textDisplay: {fileID: 1839532273}
   toolObjectiveCountdown: 8
   interviewTool: {fileID: 828502426}
@@ -11756,19 +11756,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5861f66080edad741ab2d364e2fa8f3b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  startCanvas: {fileID: 0}
-  mainCanvas: {fileID: 0}
+  startCanvas: {fileID: 626349102}
+  mainCanvas: {fileID: 1707301738}
   interview1: {fileID: 927768664}
   interview2: {fileID: 22638015}
   discussion: {fileID: 617982931}
   newsflash: {fileID: 1366833983}
-  finalAssignment: {fileID: 0}
+  finalAssignment: {fileID: 1641170704}
   mobilePhone: {fileID: 1044808111}
-  threeDObjects: {fileID: 0}
+  threeDObjects: {fileID: 849400650}
   discussionCollider: {fileID: 617982933}
   interview1Collider: {fileID: 927768667}
   interview2Collider: {fileID: 22638018}
-  finalAssignmentCollider: {fileID: 0}
+  finalAssignmentCollider: {fileID: 1641170707}
   textDisplay: {fileID: 1839532273}
   toolObjectiveCountdown: 8
   chatTool: {fileID: 1153496229}

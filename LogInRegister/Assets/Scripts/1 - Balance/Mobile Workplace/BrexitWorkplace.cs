@@ -37,7 +37,7 @@ public class BrexitWorkplace : MonoBehaviour
         newsflash.SetActive(true);
         finalAssignment.SetActive(true);
 
-/*        startCanvas.SetActive(true);
+        /*startCanvas.SetActive(true);
         mainCanvas.SetActive(false);
         
         interview1.SetActive(false);

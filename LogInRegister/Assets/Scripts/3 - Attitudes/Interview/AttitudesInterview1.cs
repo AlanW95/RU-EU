@@ -55,7 +55,7 @@ public class AttitudesInterview1 : MonoBehaviour
     private bool statement3Selected = false;
 
 
-    private bool selected = false;
+    //private bool selected = false;
     //PlayerPrefs
     public string proInterview = "ProInterview";
     //public static string proInterviewStatements;

@@ -48,11 +48,11 @@ EditorBuildSettings:
     path: Assets/Scenes/1 - Balance/Notebook.unity
     guid: fd8919a103441084dbfcb87b23e3fc72
   - enabled: 1
-    path: Assets/Scenes/1 - Balance/FinalAssignment.unity
-    guid: 0a89806a69e779a4c86be5b2dea8c004
-  - enabled: 1
     path: Assets/Scenes/1 - Balance/Dashboard.unity
     guid: 0fc0272d844751e47810ab26d1445af0
+  - enabled: 1
+    path: Assets/Scenes/1 - Balance/FinalAssignment.unity
+    guid: 0a89806a69e779a4c86be5b2dea8c004
   - enabled: 0
     path: Assets/Scenes/LoginRegister.unity
     guid: 04c575150ed685a4aac7f8b53a627e9c

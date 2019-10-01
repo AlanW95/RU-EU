@@ -94,8 +94,8 @@ public class DiscussionAnimation : MonoBehaviour {
         PlayerPrefs.GetInt("CurrentGeographyScore");
 
         if (textDisplay.text == discussion[index]) {
-            StartCoroutine(Continue());
-            //continueButton.SetActive(true);
+            //StartCoroutine(Continue());
+            continueButton.SetActive(true);
         }
 
         if (isProCorrect && isAntiCorrect && isNeutralCorrect) {
@@ -127,10 +127,10 @@ public class DiscussionAnimation : MonoBehaviour {
         SceneManager.LoadScene("Journalist");
     }
 
-    IEnumerator Continue() {
+    /*IEnumerator Continue() {
         yield return new WaitForSeconds(4);
         continueButton.SetActive(true);
-    }
+    }*/
 
     IEnumerator Type() {
         foreach (char letter in discussion[index].ToCharArray()) {

@@ -2509,6 +2509,7 @@ MonoBehaviour:
   themeDefinitionCanvas: {fileID: 1116076909}
   remainerCanvas: {fileID: 1408915861}
   textDisplay: {fileID: 1940251443}
+  animText: {fileID: 1940251446}
   sentences:
   - 'For all of us Europeans - our shared history matters. We do not want to repeat
     the mistakes of the past. '
@@ -2792,6 +2793,7 @@ MonoBehaviour:
   themeDefinitionCanvas: {fileID: 1116076909}
   remainerCanvas: {fileID: 1408915861}
   textDisplay: {fileID: 1940251443}
+  animText: {fileID: 1940251446}
   sentences:
   - 'The EU has introduced very effective standards for caring for the environment. '
   feedbackCanvas: {fileID: 1271130292}
@@ -3171,6 +3173,7 @@ MonoBehaviour:
   themeDefinitionCanvas: {fileID: 1116076909}
   remainerCanvas: {fileID: 1408915861}
   textDisplay: {fileID: 1940251443}
+  animText: {fileID: 1940251446}
   sentences:
   - 'The 4 freedoms of the EU have been beneficial for our country. '
   feedbackCanvas: {fileID: 1271130292}
@@ -3884,7 +3887,7 @@ MonoBehaviour:
       - m_RequirementType: 0
         m_GroupID: 
         m_Tooltip: 
-        m_Name: PoliticalSelected
+        m_Name: Theme Remainer Interview
         m_Value:
           m_EditingCustomValue: 0
           m_PopupIndex: 0
@@ -3910,7 +3913,7 @@ MonoBehaviour:
             - System.String
             m_Type: System.String
             m_EnumType: 
-    m_Name: ThemeSelected
+    m_Name: Theme Selection
 --- !u!1 &417092195
 GameObject:
   m_ObjectHideFlags: 0
@@ -5102,7 +5105,7 @@ MonoBehaviour:
       - m_RequirementType: 0
         m_GroupID: 
         m_Tooltip: 
-        m_Name: EnvironmentSelected
+        m_Name: Theme Remainer Interview
         m_Value:
           m_EditingCustomValue: 0
           m_PopupIndex: 0
@@ -5128,7 +5131,7 @@ MonoBehaviour:
             - System.String
             m_Type: System.String
             m_EnumType: 
-    m_Name: ThemeSelected
+    m_Name: Theme Selection
 --- !u!1 &615424835
 GameObject:
   m_ObjectHideFlags: 0
@@ -5570,7 +5573,7 @@ MonoBehaviour:
       - m_RequirementType: 0
         m_GroupID: 
         m_Tooltip: 
-        m_Name: SocialSelected
+        m_Name: Theme Remainer Interview
         m_Value:
           m_EditingCustomValue: 0
           m_PopupIndex: 0
@@ -5596,7 +5599,7 @@ MonoBehaviour:
             - System.String
             m_Type: System.String
             m_EnumType: 
-    m_Name: ThemeSelected
+    m_Name: Theme Selection
 --- !u!1 &687127328
 GameObject:
   m_ObjectHideFlags: 0
@@ -5804,7 +5807,7 @@ MonoBehaviour:
       - m_RequirementType: 0
         m_GroupID: 
         m_Tooltip: 
-        m_Name: EmotionalSelected
+        m_Name: Theme Remainer Interview
         m_Value:
           m_EditingCustomValue: 0
           m_PopupIndex: 0
@@ -5830,7 +5833,7 @@ MonoBehaviour:
             - System.String
             m_Type: System.String
             m_EnumType: 
-    m_Name: ThemeSelected
+    m_Name: Theme Selection
 --- !u!1 &717342266
 GameObject:
   m_ObjectHideFlags: 0
@@ -6343,7 +6346,7 @@ MonoBehaviour:
       - m_RequirementType: 0
         m_GroupID: 
         m_Tooltip: 
-        m_Name: CultureSelected
+        m_Name: Theme Remainer Interview
         m_Value:
           m_EditingCustomValue: 0
           m_PopupIndex: 0
@@ -6369,7 +6372,7 @@ MonoBehaviour:
             - System.String
             m_Type: System.String
             m_EnumType: 
-    m_Name: ThemeSelected
+    m_Name: Theme Selection
 --- !u!1 &755120889
 GameObject:
   m_ObjectHideFlags: 0
@@ -8538,7 +8541,7 @@ MonoBehaviour:
       - m_RequirementType: 0
         m_GroupID: 
         m_Tooltip: 
-        m_Name: SecuritySelected
+        m_Name: Theme Remainer Interview
         m_Value:
           m_EditingCustomValue: 0
           m_PopupIndex: 0
@@ -8564,7 +8567,7 @@ MonoBehaviour:
             - System.String
             m_Type: System.String
             m_EnumType: 
-    m_Name: ThemeSelected
+    m_Name: Theme Selection
 --- !u!1 &973780868
 GameObject:
   m_ObjectHideFlags: 0
@@ -9144,6 +9147,7 @@ MonoBehaviour:
   themeDefinitionCanvas: {fileID: 1116076909}
   remainerCanvas: {fileID: 1408915861}
   textDisplay: {fileID: 1940251443}
+  animText: {fileID: 1940251446}
   sentences:
   - 'Freedom of movement has helped to create a much richer and more diverse society. '
   feedbackCanvas: {fileID: 1271130292}
@@ -10041,8 +10045,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Trigger:
-    m_IsTriggerExpanded: 0
-    m_Type: 0
+    m_IsTriggerExpanded: 1
+    m_Type: 1
     m_LifecycleEvent: 0
     m_ApplyRules: 0
     m_Rules:
@@ -10060,7 +10064,7 @@ MonoBehaviour:
       - m_RequirementType: 0
         m_GroupID: 
         m_Tooltip: 
-        m_Name: RightsAndResponsibilitiesSelected
+        m_Name: Theme Remainer Interview
         m_Value:
           m_EditingCustomValue: 0
           m_PopupIndex: 0
@@ -10086,7 +10090,7 @@ MonoBehaviour:
             - System.String
             m_Type: System.String
             m_EnumType: 
-    m_Name: ThemeSelected
+    m_Name: Theme Selection
 --- !u!1 &1116076909
 GameObject:
   m_ObjectHideFlags: 0
@@ -10717,6 +10721,67 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1215873032}
   m_CullTransparentMesh: 0
+--- !u!1 &1224261726
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1224261728}
+  - component: {fileID: 1224261727}
+  m_Layer: 0
+  m_Name: AnalyticsTracker
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1224261727
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1224261726}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -745406591, guid: 220224b43fc464c28bc0e8de8f54a432, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Trigger:
+    m_IsTriggerExpanded: 1
+    m_Type: 0
+    m_LifecycleEvent: 0
+    m_ApplyRules: 0
+    m_Rules:
+      m_Rules: []
+    m_TriggerBool: 0
+    m_InitTime: 5
+    m_RepeatTime: 5
+    m_Repetitions: 0
+    repetitionCount: 0
+  m_EventPayload:
+    m_IsEventExpanded: 1
+    m_StandardEventType: CustomEvent
+    m_Parameters:
+      m_Parameters: []
+    m_Name: 
+--- !u!4 &1224261728
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1224261726}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 391.69052, y: 237.39136, z: -4.318664}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 13
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1233280939
 GameObject:
   m_ObjectHideFlags: 0
@@ -11491,6 +11556,7 @@ MonoBehaviour:
   themeDefinitionCanvas: {fileID: 1116076909}
   remainerCanvas: {fileID: 1408915861}
   textDisplay: {fileID: 1940251443}
+  animText: {fileID: 1940251446}
   sentences:
   - 'I would be absolutely devastated if my country voted to leave the EU. '
   feedbackCanvas: {fileID: 1271130292}
@@ -11894,7 +11960,7 @@ MonoBehaviour:
       - m_RequirementType: 0
         m_GroupID: 
         m_Tooltip: 
-        m_Name: GeographySelected
+        m_Name: Theme Remainer Interview
         m_Value:
           m_EditingCustomValue: 0
           m_PopupIndex: 0
@@ -11920,7 +11986,7 @@ MonoBehaviour:
             - System.String
             m_Type: System.String
             m_EnumType: 
-    m_Name: ThemeSelected
+    m_Name: Theme Selection
 --- !u!1 &1404177936
 GameObject:
   m_ObjectHideFlags: 0
@@ -12580,7 +12646,7 @@ MonoBehaviour:
       - m_RequirementType: 0
         m_GroupID: 
         m_Tooltip: 
-        m_Name: HistoricSelected
+        m_Name: Theme Remainer Interview
         m_Value:
           m_EditingCustomValue: 0
           m_PopupIndex: 0
@@ -12606,7 +12672,7 @@ MonoBehaviour:
             - System.String
             m_Type: System.String
             m_EnumType: 
-    m_Name: ThemeSelected
+    m_Name: Theme Selection
 --- !u!1 &1433238505
 GameObject:
   m_ObjectHideFlags: 0
@@ -12642,6 +12708,7 @@ MonoBehaviour:
   themeDefinitionCanvas: {fileID: 1116076909}
   remainerCanvas: {fileID: 1408915861}
   textDisplay: {fileID: 1940251443}
+  animText: {fileID: 1940251446}
   sentences:
   - 'The EU provides rigorous standards for fair treatment of its citizens irrespective
     of member state. '
@@ -13828,7 +13895,7 @@ MonoBehaviour:
       - m_RequirementType: 0
         m_GroupID: 
         m_Tooltip: 
-        m_Name: EconomySelected
+        m_Name: Theme Remainer Interview
         m_Value:
           m_EditingCustomValue: 0
           m_PopupIndex: 0
@@ -13854,7 +13921,7 @@ MonoBehaviour:
             - System.String
             m_Type: System.String
             m_EnumType: 
-    m_Name: ThemeSelected
+    m_Name: Theme Selection
 --- !u!1001 &1589842740
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -14410,6 +14477,7 @@ MonoBehaviour:
   themeDefinitionCanvas: {fileID: 1116076909}
   remainerCanvas: {fileID: 1408915861}
   textDisplay: {fileID: 1940251443}
+  animText: {fileID: 1940251446}
   sentences:
   - 'The EU provides rigorous standards for defending the safety and security of all
     member countries. '
@@ -14959,6 +15027,7 @@ MonoBehaviour:
   themeDefinitionCanvas: {fileID: 1116076909}
   remainerCanvas: {fileID: 1408915861}
   textDisplay: {fileID: 1940251443}
+  animText: {fileID: 1940251446}
   sentences:
   - 'Being a member of the EU has helped to create a shared cultural identity. '
   feedbackCanvas: {fileID: 1271130292}
@@ -16764,10 +16833,10 @@ MonoBehaviour:
   m_outlineColor:
     serializedVersion: 2
     rgba: 4278190080
-  m_fontSize: 36
-  m_fontSizeBase: 36
+  m_fontSize: 50
+  m_fontSizeBase: 50
   m_fontWeight: 400
-  m_enableAutoSizing: 1
+  m_enableAutoSizing: 0
   m_fontSizeMin: 18
   m_fontSizeMax: 72
   m_fontStyle: 0
@@ -16813,7 +16882,7 @@ MonoBehaviour:
     lineCount: 0
     pageCount: 0
     materialCount: 1
-  m_havePropertiesChanged: 0
+  m_havePropertiesChanged: 1
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_spriteAnimator: {fileID: 0}
@@ -18341,6 +18410,7 @@ MonoBehaviour:
   themeDefinitionCanvas: {fileID: 1116076909}
   remainerCanvas: {fileID: 1408915861}
   textDisplay: {fileID: 1940251443}
+  animText: {fileID: 1940251446}
   sentences:
   - 'European identity means that where you are born does not matter. '
   feedbackCanvas: {fileID: 1271130292}
@@ -18397,6 +18467,7 @@ MonoBehaviour:
   themeDefinitionCanvas: {fileID: 1116076909}
   remainerCanvas: {fileID: 1408915861}
   textDisplay: {fileID: 1940251443}
+  animText: {fileID: 1940251446}
   sentences:
   - 'Being a member of the EU has had a huge positive impact on the economy of our
     country. '

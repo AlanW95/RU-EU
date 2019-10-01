@@ -17,6 +17,7 @@ public class AntiInterview : MonoBehaviour {
     public GameObject leaverCanvas;
 
     public TextMeshProUGUI textDisplay;
+    public Animator animText;
     public string[] sentences;
     private int index;
 
@@ -156,6 +157,7 @@ public class AntiInterview : MonoBehaviour {
 
     IEnumerator Type() {
         foreach (char letter in sentences[index].ToCharArray()) {
+            animText.SetTrigger("Change");
             textDisplay.text += letter; //letter by letter type animation of the text, more animations can be added via the Animate tab
 
             yield return new WaitForSeconds(typingSpeed);
@@ -203,6 +205,8 @@ public class AntiInterview : MonoBehaviour {
         //interviewCounter--;
         statement1Selected = false;
 
+        animText.SetTrigger("Change");
+
         StartCoroutine(Type());
     }
 
@@ -241,6 +245,8 @@ public class AntiInterview : MonoBehaviour {
         //secondCounter--;
         statement1Selected = false;
 
+        animText.SetTrigger("Change");
+
         StartCoroutine(Type());
     }
 
@@ -278,6 +284,8 @@ public class AntiInterview : MonoBehaviour {
 
         //secondCounter--;
         statement1Selected = false;
+
+        animText.SetTrigger("Change");
 
         StartCoroutine(Type());
     }
@@ -318,6 +326,8 @@ public class AntiInterview : MonoBehaviour {
         //secondCounter--;
         statement1Selected = false;
 
+        animText.SetTrigger("Change");
+
         StartCoroutine(Type());
     }
 
@@ -356,6 +366,8 @@ public class AntiInterview : MonoBehaviour {
 
         //secondCounter--;
         statement1Selected = false;
+
+        animText.SetTrigger("Change");
 
         StartCoroutine(Type());
     }
@@ -396,6 +408,8 @@ public class AntiInterview : MonoBehaviour {
         //secondCounter--;
         statement1Selected = false;
 
+        animText.SetTrigger("Change");
+
         StartCoroutine(Type());
     }
 
@@ -434,6 +448,8 @@ public class AntiInterview : MonoBehaviour {
 
         //secondCounter--;
         statement1Selected = false;
+
+        animText.SetTrigger("Change");
 
         StartCoroutine(Type());
     }
@@ -474,6 +490,8 @@ public class AntiInterview : MonoBehaviour {
         //secondCounter--;
         statement1Selected = false;
 
+        animText.SetTrigger("Change");
+
         StartCoroutine(Type());
     }
 
@@ -512,6 +530,8 @@ public class AntiInterview : MonoBehaviour {
 
         //secondCounter--;
         statement1Selected = false;
+
+        animText.SetTrigger("Change");
 
         StartCoroutine(Type());
     }
@@ -552,6 +572,8 @@ public class AntiInterview : MonoBehaviour {
         //interviewCounter--;
         //secondCounter--;
         statement1Selected = false;
+
+        animText.SetTrigger("Change");
 
         StartCoroutine(Type());
     }

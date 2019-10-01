@@ -17,6 +17,7 @@ public class ProInterview : MonoBehaviour {
     public GameObject remainerCanvas;
 
     public TextMeshProUGUI textDisplay;
+    public Animator animText;
     public string[] sentences;
     private int index;
 
@@ -160,8 +161,9 @@ public class ProInterview : MonoBehaviour {
 
     IEnumerator Type() {
         foreach (char letter in sentences[index].ToCharArray()) {
+            animText.SetTrigger("Change");
             textDisplay.text += letter; //letter by letter type animation of the text, more animations can be added via the Animate tab
-                        
+
             yield return new WaitForSeconds(typingSpeed);
         }
     }
@@ -207,6 +209,9 @@ public class ProInterview : MonoBehaviour {
         //interviewCounter--;
         statement1Selected = false;
 
+
+        animText.SetTrigger("Change");
+
         StartCoroutine(Type());
     }
 
@@ -241,6 +246,8 @@ public class ProInterview : MonoBehaviour {
 
         //secondCounter--;
         statement1Selected = false;
+
+        animText.SetTrigger("Change");
 
         StartCoroutine(Type());
     }
@@ -277,6 +284,8 @@ public class ProInterview : MonoBehaviour {
         //secondCounter--;
         statement1Selected = false;
 
+        animText.SetTrigger("Change");
+
         StartCoroutine(Type());
     }
 
@@ -311,6 +320,8 @@ public class ProInterview : MonoBehaviour {
 
         //secondCounter--;
         statement1Selected = false;
+
+        animText.SetTrigger("Change");
 
         StartCoroutine(Type());
     }
@@ -347,6 +358,8 @@ public class ProInterview : MonoBehaviour {
         //secondCounter--;
         statement1Selected = false;
 
+        animText.SetTrigger("Change");
+
         StartCoroutine(Type());
     }
 
@@ -382,6 +395,8 @@ public class ProInterview : MonoBehaviour {
         //secondCounter--;
         statement1Selected = false;
 
+        animText.SetTrigger("Change");
+
         StartCoroutine(Type());
     }
 
@@ -416,6 +431,8 @@ public class ProInterview : MonoBehaviour {
 
         //secondCounter--;
         statement1Selected = false;
+
+        animText.SetTrigger("Change");
 
         StartCoroutine(Type());
 
@@ -453,6 +470,8 @@ public class ProInterview : MonoBehaviour {
         //secondCounter--;
         statement1Selected = false;
 
+        animText.SetTrigger("Change");
+
         StartCoroutine(Type());
     }
 
@@ -487,6 +506,8 @@ public class ProInterview : MonoBehaviour {
 
         //secondCounter--;
         statement1Selected = false;
+
+        animText.SetTrigger("Change");
 
         StartCoroutine(Type());
     }
@@ -523,6 +544,8 @@ public class ProInterview : MonoBehaviour {
         //interviewCounter--;
         //secondCounter--;
         statement1Selected = false;
+
+        animText.SetTrigger("Change");
 
         StartCoroutine(Type());
     }

@@ -9,7 +9,7 @@ public class Interview2CH : BrexitWorkplace {
 
     void OnMouseDown() {
         SceneManager.LoadScene("LeaverInterview");
-        //FinalAssignment();
+        Interview2();
 
         toolObjectiveCountdown--;
         PlayerPrefs.SetInt("ObjectiveCountdown", toolObjectiveCountdown);

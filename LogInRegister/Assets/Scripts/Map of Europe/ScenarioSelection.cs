@@ -6,6 +6,8 @@ using TMPro;
 
 public class ScenarioSelection : MonoBehaviour {
 
+    public GameObject startCanvas, mapCanvas;
+
     public GameObject balanceUK; //UK
     public GameObject attitudesDE; //Germany
     public GameObject workPartnerNL; //Netherlands
@@ -23,6 +25,14 @@ public class ScenarioSelection : MonoBehaviour {
 
     // Start is called before the first frame update
     void Start() {
+
+        startCanvas.SetActive(true);
+    }
+
+    public void MapCanvas() {
+        startCanvas.SetActive(false);
+        mapCanvas.SetActive(true);
+
         balanceUK.SetActive(true);
         attitudesDE.SetActive(true);
         workPartnerNL.SetActive(true);

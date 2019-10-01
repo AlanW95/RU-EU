@@ -7,99 +7,352 @@ using TMPro;
 
 public class BrexitWorkplace : MonoBehaviour
 {
-    public GameObject startCanvas, mainCanvas;
-
     public GameObject interview1, interview2, discussion, newsflash, finalAssignment, mobilePhone;
-    public GameObject threeDObjects;
+    private bool interview1Completed, interview2Completed, discussionCompleted, newsflashCompleted;
 
     public MeshCollider discussionCollider;
     public BoxCollider interview1Collider, interview2Collider, finalAssignmentCollider;
 
-    public TextMeshProUGUI textDisplay;
+    public TextMeshProUGUI textDisplay, toolCompletionText;
+    public static string toolCompletion;
 
     //public int toolAvailability = 0;
     public int toolObjectiveCountdown = 8;
 
     // Start is called before the first frame update
     void Start() {
-        startCanvas.SetActive(false);
-        mainCanvas.SetActive(true);
+        
+        //for displaying the completion of tools
+        PlayerPrefs.GetString("ToolsCompleted");
+        PlayerPrefs.SetString("ToolsCompleted", toolCompletion);
 
-        threeDObjects.SetActive(true);
+        //DEBUGGING PURPOSE---------
+        //PlayerPrefs.SetString("ToolCompletionText", "");
+        //PlayerPrefs.SetInt("ObjectiveCountdown", 8);
+        //--------------------------
+        toolObjectiveCountdown = PlayerPrefs.GetInt("ObjectiveCountdown");
+        PlayerPrefs.SetInt("ObjectiveCountdown", toolObjectiveCountdown);
+        Debug.Log(toolObjectiveCountdown);
 
-        PlayerPrefs.GetInt("ObjectiveCountdown");
-        mobilePhone.SetActive(false); //WILL BE TRUE IN FULL GAME
-        //click mobile phone and the interview will become available
+
+        interview1Completed = intToBool(PlayerPrefs.GetInt("Interview1Completed"));
+        interview2Completed = intToBool(PlayerPrefs.GetInt("Interview2Completed"));
+        discussionCompleted = intToBool(PlayerPrefs.GetInt("DiscussionCompleted"));
+        newsflashCompleted = intToBool(PlayerPrefs.GetInt("NewsflashCompleted"));
+
+        toolCompletion = PlayerPrefs.GetString("ToolCompletionText");
+        toolCompletion = toolCompletionText.text;
+        Debug.Log("LOADING IN TEXT: " + PlayerPrefs.GetString("ToolCompletionText"));
 
         interview1.SetActive(true);
         interview2.SetActive(true);
         discussion.SetActive(true);
         newsflash.SetActive(true);
-        finalAssignment.SetActive(true);
-
-        /*startCanvas.SetActive(true);
-        mainCanvas.SetActive(false);
-        
-        interview1.SetActive(false);
-        interview2.SetActive(false);
-        discussion.SetActive(false);
-        newsflash.SetActive(false);
+        //final assignment will appear when all four main tools have been completed
         finalAssignment.SetActive(false);
-
-        threeDObjects.SetActive(false);*/
     }
 
     // Update is called once per frame
     void Update()
     {
-        //PlayerPrefs.GetInt("ToolNumber");
         Debug.Log("Objective Countdown: " + toolObjectiveCountdown);
 
-        if (toolObjectiveCountdown == 8) {        //toolAvailability == 0) {
-            //textDisplay.text = "You are receiving a call from your mentor... pick it up!";
-            textDisplay.text = "Choose from any of the 4 tools, the Remain Interview,the Leaver Interview, the Pub Discussion or the Newsflash.";
+        toolCompletionText.text = PlayerPrefs.GetString("ToolCompletionText");
+
+
+        //if (toolObjectiveCountdown == 8) {        //toolAvailability == 0) {
+        //textDisplay.text = "You are receiving a call from your mentor... pick it up!";
+        textDisplay.text = "Choose from any of the 4 tools on the desk; the Remain Interview, the Leaver Interview, the Pub Discussion or the Newsflash.";
             //PlayerPrefs.SetInt("ObjectiveCountdown", toolObjectiveCountdown);
 
             /*textDisplay.text = "You are receiving a call from your mentor... pick it up!";
             PlayerPrefs.SetInt("ToolNumber", toolAvailability);*/
+        //}
+
+        //if (toolObjectiveCountdown == 7) {
+            textDisplay.text = "Choose from any of the 4 tools on the desk; the Remain Interview, the Leaver interview, the Pub Discussion or the Newsflash.";
+        // }
+        
+        if (interview1Completed && interview2Completed && discussionCompleted && newsflashCompleted) {
+            finalAssignment.SetActive(true);
         }
 
-        if (toolObjectiveCountdown == 7) {        //toolAvailability == 1) {
-            Interview1();
+        /*if (toolObjectiveCountdown == 6) {
+            textDisplay.text = "Choose from any of the 4 tools on the desk; the Remain Interview, the Leaver interview, the Pub Discussion or the Newsflash.";
 
-            textDisplay.text = "Interview with a Remain campaigner is now available. Click the reporter pad to continue.";
+            if (interview1Completed == true) {
+                toolCompletionText.text = PlayerPrefs.GetString("ToolCompletionText") + "\n" + "Remain Interview has been completed.";
+                //toolCompletionText.text = toolCompletion;
+                PlayerPrefs.SetString("ToolCompletionText", toolCompletionText.text);
+                Debug.Log("Tool Completion Text: " + PlayerPrefs.GetString("ToolCompletionText"));
+            }
+
+            if (interview2Completed == true) {
+                toolCompletionText.text = PlayerPrefs.GetString("ToolCompletionText") + "\n" + "Leaver Interview has been completed.";
+                //toolCompletionText.text = toolCompletion;
+                PlayerPrefs.SetString("ToolCompletionText", toolCompletionText.text);
+                Debug.Log("Tool Completion Text: " + PlayerPrefs.GetString("ToolCompletionText"));
+            }
+
+            if (discussionCompleted == true) {
+                toolCompletionText.text = PlayerPrefs.GetString("ToolCompletionText") + "\n" + "Discussion in Pub has been completed.";
+                //toolCompletionText.text = toolCompletion;
+                PlayerPrefs.SetString("ToolCompletionText", toolCompletionText.text);
+                Debug.Log("Tool Completion Text: " + PlayerPrefs.GetString("ToolCompletionText"));
+            }
+
+            if (newsflashCompleted == true) {
+                toolCompletionText.text = PlayerPrefs.GetString("ToolCompletionText") + "\n" + "Newsflash has been completed.";
+                //toolCompletionText.text = toolCompletion;
+                PlayerPrefs.SetString("ToolCompletionText", toolCompletionText.text);
+                Debug.Log("Tool Completion Text: " + PlayerPrefs.GetString("ToolCompletionText"));
+            }
+
+            if (interview1Completed && interview2Completed && discussionCompleted && newsflashCompleted) {
+                toolCompletionText.text = PlayerPrefs.GetString("ToolCompletionText") + "\n" + "All are now complete. You may progress to your article.";
+                //toolCompletionText.text = toolCompletion;
+                PlayerPrefs.SetString("ToolCompletionText", toolCompletionText.text);
+                Debug.Log("Tool Completion Text: " + PlayerPrefs.GetString("ToolCompletionText"));
+            }
         }
 
-        if (toolObjectiveCountdown == 6) {        //toolAvailability == 2) {
-            Newsflash1();
+        if (toolObjectiveCountdown == 5) {
+            textDisplay.text = "Choose from any of the 4 tools on the desk; the Remain Interview, the Leaver interview, the Pub Discussion or the Newsflash.";
+
+            if (interview1Completed == true) {
+                toolCompletionText.text = PlayerPrefs.GetString("ToolCompletionText") + "\n" + "Remain Interview has been completed.";
+                //toolCompletionText.text = toolCompletion;
+                PlayerPrefs.SetString("ToolCompletionText", toolCompletionText.text);
+                Debug.Log("Tool Completion Text: " + PlayerPrefs.GetString("ToolCompletionText"));
+            }
+
+            if (interview2Completed == true) {
+                toolCompletionText.text = PlayerPrefs.GetString("ToolCompletionText") + "\n" + "Leaver Interview has been completed.";
+                //toolCompletionText.text = toolCompletion;
+                PlayerPrefs.SetString("ToolCompletionText", toolCompletionText.text);
+                Debug.Log("Tool Completion Text: " + PlayerPrefs.GetString("ToolCompletionText"));
+            }
+
+            if (discussionCompleted == true) {
+                toolCompletionText.text = PlayerPrefs.GetString("ToolCompletionText") + "\n" + "Discussion in Pub has been completed.";
+                //toolCompletionText.text = toolCompletion;
+                PlayerPrefs.SetString("ToolCompletionText", toolCompletionText.text);
+                Debug.Log("Tool Completion Text: " + PlayerPrefs.GetString("ToolCompletionText"));
+            }
+
+            if (newsflashCompleted == true) {
+                toolCompletionText.text = PlayerPrefs.GetString("ToolCompletionText") + "\n" + "Newsflash has been completed.";
+                //toolCompletionText.text = toolCompletion;
+                PlayerPrefs.SetString("ToolCompletionText", toolCompletionText.text);
+                Debug.Log("Tool Completion Text: " + PlayerPrefs.GetString("ToolCompletionText"));
+            }
+
+            if (interview1Completed && interview2Completed && discussionCompleted && newsflashCompleted) {
+                toolCompletionText.text = PlayerPrefs.GetString("ToolCompletionText") + "\n" + "All are now complete. You may progress to your article.";
+                //toolCompletionText.text = toolCompletion;
+                PlayerPrefs.SetString("ToolCompletionText", toolCompletionText.text);
+                Debug.Log("Tool Completion Text: " + PlayerPrefs.GetString("ToolCompletionText"));
+            }
         }
 
-        if (toolObjectiveCountdown == 5) {        //toolAvailability == 3) {
-            Discussion();
+        if (toolObjectiveCountdown == 4) {
+            textDisplay.text = "Choose from any of the 4 tools on the desk; the Remain Interview, the Leaver interview, the Pub Discussion or the Newsflash.";
+
+            if (interview1Completed == true) {
+                toolCompletionText.text = PlayerPrefs.GetString("ToolCompletionText") + "\n" + "Remain Interview has been completed.";
+                //toolCompletionText.text = toolCompletion;
+                PlayerPrefs.SetString("ToolCompletionText", toolCompletionText.text);
+                Debug.Log("Tool Completion Text: " + PlayerPrefs.GetString("ToolCompletionText"));
+            }
+
+            if (interview2Completed == true) {
+                toolCompletionText.text = PlayerPrefs.GetString("ToolCompletionText") + "\n" + "Leaver Interview has been completed.";
+                //toolCompletionText.text = toolCompletion;
+                PlayerPrefs.SetString("ToolCompletionText", toolCompletionText.text);
+                Debug.Log("Tool Completion Text: " + PlayerPrefs.GetString("ToolCompletionText"));
+            }
+
+            if (discussionCompleted == true) {
+                toolCompletionText.text = PlayerPrefs.GetString("ToolCompletionText") + "\n" + "Discussion in Pub has been completed.";
+                //toolCompletionText.text = toolCompletion;
+                PlayerPrefs.SetString("ToolCompletionText", toolCompletionText.text);
+                Debug.Log("Tool Completion Text: " + PlayerPrefs.GetString("ToolCompletionText"));
+            }
+
+            if (newsflashCompleted == true) {
+                toolCompletionText.text = PlayerPrefs.GetString("ToolCompletionText") + "\n" + "Newsflash has been completed.";
+                //toolCompletionText.text = toolCompletion;
+                PlayerPrefs.SetString("ToolCompletionText", toolCompletionText.text);
+                Debug.Log("Tool Completion Text: " + PlayerPrefs.GetString("ToolCompletionText"));
+            }
+
+            if (interview1Completed && interview2Completed && discussionCompleted && newsflashCompleted) {
+                toolCompletionText.text = PlayerPrefs.GetString("ToolCompletionText") + "\n" + "All are now complete. You may progress to your article.";
+                //toolCompletionText.text = toolCompletion;
+                PlayerPrefs.SetString("ToolCompletionText", toolCompletionText.text);
+                Debug.Log("Tool Completion Text: " + PlayerPrefs.GetString("ToolCompletionText"));
+            }
         }
 
-        if (toolObjectiveCountdown == 4) {        //toolAvailability == 4) {
-            Newsflash2();
+        if (toolObjectiveCountdown == 3) {
+            textDisplay.text = "Choose from any of the 4 tools on the desk; the Remain Interview, the Leaver interview, the Pub Discussion or the Newsflash.";
+
+            if (interview1Completed == true) {
+                toolCompletionText.text = PlayerPrefs.GetString("ToolCompletionText") + "\n" + "Remain Interview has been completed.";
+                //toolCompletionText.text = toolCompletion;
+                PlayerPrefs.SetString("ToolCompletionText", toolCompletionText.text);
+                Debug.Log("Tool Completion Text: " + PlayerPrefs.GetString("ToolCompletionText"));
+            }
+
+            if (interview2Completed == true) {
+                toolCompletionText.text = PlayerPrefs.GetString("ToolCompletionText") + "\n" + "Leaver Interview has been completed.";
+                //toolCompletionText.text = toolCompletion;
+                PlayerPrefs.SetString("ToolCompletionText", toolCompletionText.text);
+                Debug.Log("Tool Completion Text: " + PlayerPrefs.GetString("ToolCompletionText"));
+            }
+
+            if (discussionCompleted == true) {
+                toolCompletionText.text = PlayerPrefs.GetString("ToolCompletionText") + "\n" + "Discussion in Pub has been completed.";
+                //toolCompletionText.text = toolCompletion;
+                PlayerPrefs.SetString("ToolCompletionText", toolCompletionText.text);
+                Debug.Log("Tool Completion Text: " + PlayerPrefs.GetString("ToolCompletionText"));
+            }
+
+            if (newsflashCompleted == true) {
+                toolCompletionText.text = PlayerPrefs.GetString("ToolCompletionText") + "\n" + "Newsflash has been completed.";
+                //toolCompletionText.text = toolCompletion;
+                PlayerPrefs.SetString("ToolCompletionText", toolCompletionText.text);
+                Debug.Log("Tool Completion Text: " + PlayerPrefs.GetString("ToolCompletionText"));
+            }
+
+            if (interview1Completed && interview2Completed && discussionCompleted && newsflashCompleted) {
+                toolCompletionText.text = PlayerPrefs.GetString("ToolCompletionText") + "\n" + "All are now complete. You may progress to your article.";
+                //toolCompletionText.text = toolCompletion;
+                PlayerPrefs.SetString("ToolCompletionText", toolCompletionText.text);
+                Debug.Log("Tool Completion Text: " + PlayerPrefs.GetString("ToolCompletionText"));
+            }
         }
 
-        if (toolObjectiveCountdown == 3) {        //toolAvailability == 5) {
-            Interview2();
+        if (toolObjectiveCountdown == 2) {
+            textDisplay.text = "Choose from any of the 4 tools on the desk; the Remain Interview, the Leaver interview, the Pub Discussion or the Newsflash.";
+
+            if (interview1Completed == true) {
+                toolCompletionText.text = PlayerPrefs.GetString("ToolCompletionText") + "\n" + "Remain Interview has been completed.";
+                //toolCompletionText.text = toolCompletion;
+                PlayerPrefs.SetString("ToolCompletionText", toolCompletionText.text);
+                Debug.Log("Tool Completion Text: " + PlayerPrefs.GetString("ToolCompletionText"));
+            }
+
+            if (interview2Completed == true) {
+                toolCompletionText.text = PlayerPrefs.GetString("ToolCompletionText") + "\n" + "Leaver Interview has been completed.";
+                //toolCompletionText.text = toolCompletion;
+                PlayerPrefs.SetString("ToolCompletionText", toolCompletionText.text);
+                Debug.Log("Tool Completion Text: " + PlayerPrefs.GetString("ToolCompletionText"));
+            }
+
+            if (discussionCompleted == true) {
+                toolCompletionText.text = PlayerPrefs.GetString("ToolCompletionText") + "\n" + "Discussion in Pub has been completed.";
+                //toolCompletionText.text = toolCompletion;
+                PlayerPrefs.SetString("ToolCompletionText", toolCompletionText.text);
+                Debug.Log("Tool Completion Text: " + PlayerPrefs.GetString("ToolCompletionText"));
+            }
+
+            if (newsflashCompleted == true) {
+                toolCompletionText.text = PlayerPrefs.GetString("ToolCompletionText") + "\n" + "Newsflash has been completed.";
+                //toolCompletionText.text = toolCompletion;
+                PlayerPrefs.SetString("ToolCompletionText", toolCompletionText.text);
+                Debug.Log("Tool Completion Text: " + PlayerPrefs.GetString("ToolCompletionText"));
+            }
+
+            if (interview1Completed && interview2Completed && discussionCompleted && newsflashCompleted) {
+                toolCompletionText.text = PlayerPrefs.GetString("ToolCompletionText") + "\n" + "All are now complete. You may progress to your article.";
+                //toolCompletionText.text = toolCompletion;
+                PlayerPrefs.SetString("ToolCompletionText", toolCompletionText.text);
+                Debug.Log("Tool Completion Text: " + PlayerPrefs.GetString("ToolCompletionText"));
+            }
         }
 
-        if (toolObjectiveCountdown == 2) {        //toolAvailability == 6) {
-            Newsflash3();
+        if (toolObjectiveCountdown == 1) {
+            textDisplay.text = "Choose from any of the 4 tools on the desk; the Remain Interview, the Leaver interview, the Pub Discussion or the Newsflash.";
+
+            if (interview1Completed == true) {
+                toolCompletionText.text = PlayerPrefs.GetString("ToolCompletionText") + "\n" + "Remain Interview has been completed.";
+                //toolCompletionText.text = toolCompletion;
+                PlayerPrefs.SetString("ToolCompletionText", toolCompletion);
+                Debug.Log("Tool Completion Text: " + PlayerPrefs.GetString("ToolCompletionText"));
+            }
+
+            if (interview2Completed == true) {
+                toolCompletionText.text = PlayerPrefs.GetString("ToolCompletionText") + "\n" + "Leaver Interview has been completed.";
+                //toolCompletionText.text = toolCompletion;
+                PlayerPrefs.SetString("ToolCompletionText", toolCompletion);
+                Debug.Log("Tool Completion Text: " + PlayerPrefs.GetString("ToolCompletionText"));
+            }
+
+            if (discussionCompleted == true) {
+                toolCompletionText.text = PlayerPrefs.GetString("ToolCompletionText") + "\n" + "Discussion in Pub has been completed.";
+                //toolCompletionText.text = toolCompletion;
+                PlayerPrefs.SetString("ToolCompletionText", toolCompletion);
+                Debug.Log("Tool Completion Text: " + PlayerPrefs.GetString("ToolCompletionText"));
+            }
+
+            if (newsflashCompleted == true) {
+                toolCompletionText.text = PlayerPrefs.GetString("ToolCompletionText") + "\n" + "Newsflash has been completed.";
+                //toolCompletionText.text = toolCompletion;
+                PlayerPrefs.SetString("ToolCompletionText", toolCompletion);
+                Debug.Log("Tool Completion Text: " + PlayerPrefs.GetString("ToolCompletionText"));
+            }
+
+            if (interview1Completed && interview2Completed && discussionCompleted && newsflashCompleted) {
+                toolCompletionText.text = PlayerPrefs.GetString("ToolCompletionText") + "\n" + "All are now complete. You may progress to your article.";
+                //toolCompletionText.text = toolCompletion;
+                PlayerPrefs.SetString("ToolCompletionText", toolCompletion);
+                Debug.Log("Tool Completion Text: " + PlayerPrefs.GetString("ToolCompletionText"));
+            }
         }
 
-        if (toolObjectiveCountdown == 1) {        //toolAvailability == 7) {
-            FinalAssignment();
-        }
+        if (toolObjectiveCountdown == 0) {
+            textDisplay.text = "Choose from any of the 4 tools on the desk; the Remain Interview, the Leaver interview, the Pub Discussion or the Newsflash.";
 
-        if (Input.GetKeyDown(KeyCode.Escape)) {
+            if (interview1Completed == true) {
+                toolCompletionText.text = PlayerPrefs.GetString("ToolCompletionText") + "\n" + "Remain Interview has been completed.";
+                //toolCompletionText.text = toolCompletion;
+                PlayerPrefs.SetString("ToolCompletionText", toolCompletion);
+                Debug.Log("Tool Completion Text: " + PlayerPrefs.GetString("ToolCompletionText"));
+            }
+
+            if (interview2Completed == true) {
+                toolCompletionText.text = PlayerPrefs.GetString("ToolCompletionText") + "\n" + "Leaver Interview has been completed.";
+                //toolCompletionText.text = toolCompletion;
+                PlayerPrefs.SetString("ToolCompletionText", toolCompletion);
+                Debug.Log("Tool Completion Text: " + PlayerPrefs.GetString("ToolCompletionText"));
+            }
+
+            if (discussionCompleted == true) {
+                toolCompletionText.text = PlayerPrefs.GetString("ToolCompletionText") + "\n" + "Discussion in Pub has been completed.";
+                //toolCompletionText.text = toolCompletion;
+                PlayerPrefs.SetString("ToolCompletionText", toolCompletion);
+                Debug.Log("Tool Completion Text: " + PlayerPrefs.GetString("ToolCompletionText"));
+            }
+
+            if (newsflashCompleted == true) {
+                toolCompletionText.text = PlayerPrefs.GetString("ToolCompletionText") + "\n" + "Newsflash has been completed.";
+                //toolCompletionText.text = toolCompletion;
+                PlayerPrefs.SetString("ToolCompletionText", toolCompletion);
+                Debug.Log("Tool Completion Text: " + PlayerPrefs.GetString("ToolCompletionText"));
+            }
+
+            if (interview1Completed && interview2Completed && discussionCompleted && newsflashCompleted) {
+                toolCompletionText.text = PlayerPrefs.GetString("ToolCompletionText") + "\n" + "All are now complete. You may progress to your article.";
+                //toolCompletionText.text = toolCompletion;
+                PlayerPrefs.SetString("ToolCompletionText", toolCompletion);
+                Debug.Log("Tool Completion Text: " + PlayerPrefs.GetString("ToolCompletionText"));
+            }
+        }*/
+
+        /*if (Input.GetKeyDown(KeyCode.Escape)) {
             Application.Quit();
-        }
-    }
-
-    public void MainCanvas() {
+        }*/
     }
 
     public void LoadDashboard() {
@@ -110,6 +363,9 @@ public class BrexitWorkplace : MonoBehaviour
         //helps recognise when to activate other tools
         toolObjectiveCountdown--;
         PlayerPrefs.SetInt("ObjectiveCountdown", toolObjectiveCountdown);
+        Debug.Log("Objective Countdown" + PlayerPrefs.GetInt("ObjectiveCountdown"));
+
+
         //Debug.Log("Tool Objective Countdown: " + toolObjectiveCountdown);
         /*toolAvailability++;
         PlayerPrefs.SetInt("ToolNumber", toolAvailability);
@@ -123,43 +379,25 @@ public class BrexitWorkplace : MonoBehaviour
 
         //Interview 1 becomes available
         interview1.SetActive(true);
-        interview1Collider.GetComponent<BoxCollider>().enabled = true;
-    }
-
-    public void Newsflash1() {
-        /*toolAvailability++;
-        PlayerPrefs.SetInt("ToolNumber", toolAvailability);
-        Debug.Log("Tool Availability: " + toolAvailability);*/
-
-        //the first Newsflash will be activated here
         interview1Collider.GetComponent<BoxCollider>().enabled = false;
+        interview1Completed = true;
+        PlayerPrefs.SetInt("Interview1Completed", boolToInt(interview1Completed));
 
-        newsflash.SetActive(true);
-        textDisplay.text = "BREAKING NEWS! Click the newsflash bar to proceed.";
-    }
 
-    public void Discussion() {
-        /*toolAvailability++;
-        PlayerPrefs.SetInt("ToolNumber", toolAvailability);
-        Debug.Log("Tool Availability: " + toolAvailability);*/
 
-        //the discussion becomes available
-        newsflash.SetActive(false);
+        if (interview1Completed == true) {
+            toolCompletionText.text = PlayerPrefs.GetString("ToolCompletionText") + "\n" + "Remain Interview complete";
+            //toolCompletionText.text = toolCompletion;
+            PlayerPrefs.SetString("ToolCompletionText", toolCompletionText.text);
+            Debug.Log("Tool Completion Text: " + PlayerPrefs.GetString("ToolCompletionText"));
+        }
 
-        discussion.SetActive(true);
-        discussionCollider.GetComponent<MeshCollider>().enabled = true;
-        textDisplay.text = "Discussion with the general public in a pub is now available. Click the beverage (camera at the minute) to proceed.";
-    }
-
-    public void Newsflash2() {
-        /*toolAvailability++;
-        PlayerPrefs.SetInt("ToolNumber", toolAvailability);
-        Debug.Log("Tool Availability: " + toolAvailability);*/
-
-        discussionCollider.GetComponent<MeshCollider>().enabled = false;
-
-        newsflash.SetActive(true);
-        textDisplay.text = "BREAKING NEWS AGAIN! Click the newsflash bar to proceed.";
+        if (interview1Completed && interview2Completed && discussionCompleted && newsflashCompleted) {
+            toolCompletionText.text = PlayerPrefs.GetString("ToolCompletionText") + "\n" + "All are now complete. You may progress to your article.";
+            //toolCompletionText.text = toolCompletion;
+            PlayerPrefs.SetString("ToolCompletionText", toolCompletionText.text);
+            Debug.Log("Tool Completion Text: " + PlayerPrefs.GetString("ToolCompletionText"));
+        }
     }
 
     public void Interview2() {
@@ -167,22 +405,74 @@ public class BrexitWorkplace : MonoBehaviour
         PlayerPrefs.SetInt("ToolNumber", toolAvailability);
         Debug.Log("Tool Availability: " + toolAvailability);*/
 
-        newsflash.SetActive(false);
-
         interview2.SetActive(true);
-        interview2Collider.GetComponent<BoxCollider>().enabled = true;
-        textDisplay.text = "Interview with a Leave campaigner is now available. Click the smaller reporter pad to continue.";
+        interview2Collider.GetComponent<BoxCollider>().enabled = false;
+        interview2Completed = true;
+        PlayerPrefs.SetInt("Interview2Completed", boolToInt(interview2Completed));
+        
+
+        if (interview2Completed == true) {
+            toolCompletionText.text = PlayerPrefs.GetString("ToolCompletionText") + "\n" + "Leaver Interview complete";
+            //toolCompletionText.text = toolCompletion;
+            PlayerPrefs.SetString("ToolCompletionText", toolCompletionText.text);
+            Debug.Log("Tool Completion Text: " + PlayerPrefs.GetString("ToolCompletionText"));
+        }
+
+        if (interview1Completed && interview2Completed && discussionCompleted && newsflashCompleted) {
+            toolCompletionText.text = PlayerPrefs.GetString("ToolCompletionText") + "\n" + "All are now complete. You may progress to your article.";
+            //toolCompletionText.text = toolCompletion;
+            PlayerPrefs.SetString("ToolCompletionText", toolCompletionText.text);
+            Debug.Log("Tool Completion Text: " + PlayerPrefs.GetString("ToolCompletionText"));
+        }
     }
 
-    public void Newsflash3() {
+    public void Discussion() {
         /*toolAvailability++;
         PlayerPrefs.SetInt("ToolNumber", toolAvailability);
         Debug.Log("Tool Availability: " + toolAvailability);*/
 
-        interview2Collider.GetComponent<BoxCollider>().enabled = false;
+        discussion.SetActive(true);
+        discussionCollider.GetComponent<MeshCollider>().enabled = false;
+        discussionCompleted = true;
+        PlayerPrefs.SetInt("DiscussionCompleted", boolToInt(discussionCompleted));
 
-        newsflash.SetActive(true);
-        textDisplay.text = "ANOTHER!? BREAKING NEWS COMING IN! Click the newsflash to proceed.";
+        if (discussionCompleted == true) {
+            toolCompletionText.text = PlayerPrefs.GetString("ToolCompletionText") + "\n" + "Discussion in Pub complete";
+            //toolCompletionText.text = toolCompletion;
+            PlayerPrefs.SetString("ToolCompletionText", toolCompletionText.text);
+            Debug.Log("Tool Completion Text: " + PlayerPrefs.GetString("ToolCompletionText"));
+        }
+
+        if (interview1Completed && interview2Completed && discussionCompleted && newsflashCompleted) {
+            toolCompletionText.text = PlayerPrefs.GetString("ToolCompletionText") + "\n" + "All are now complete. You may progress to your article.";
+            //toolCompletionText.text = toolCompletion;
+            PlayerPrefs.SetString("ToolCompletionText", toolCompletionText.text);
+            Debug.Log("Tool Completion Text: " + PlayerPrefs.GetString("ToolCompletionText"));
+        }
+    }
+
+    public void Newsflash() {
+        /*toolAvailability++;
+        PlayerPrefs.SetInt("ToolNumber", toolAvailability);
+        Debug.Log("Tool Availability: " + toolAvailability);*/
+
+        newsflash.SetActive(false);
+        newsflashCompleted = true;
+        PlayerPrefs.SetInt("NewsflashCompleted", boolToInt(newsflashCompleted));
+
+        if (newsflashCompleted == true) {
+            toolCompletionText.text = PlayerPrefs.GetString("ToolCompletionText") + "\n" + "Newsflash complete";
+            //toolCompletionText.text = toolCompletion;
+            PlayerPrefs.SetString("ToolCompletionText", toolCompletionText.text);
+            Debug.Log("Tool Completion Text: " + PlayerPrefs.GetString("ToolCompletionText"));
+        }
+
+        if (interview1Completed && interview2Completed && discussionCompleted && newsflashCompleted) {
+            toolCompletionText.text = PlayerPrefs.GetString("ToolCompletionText") + "\n" + "All are now complete. You may progress to your article.";
+            //toolCompletionText.text = toolCompletion;
+            PlayerPrefs.SetString("ToolCompletionText", toolCompletionText.text);
+            Debug.Log("Tool Completion Text: " + PlayerPrefs.GetString("ToolCompletionText"));
+        }
     }
 
     public void FinalAssignment() {
@@ -190,13 +480,25 @@ public class BrexitWorkplace : MonoBehaviour
         PlayerPrefs.SetInt("ToolNumber", toolAvailability);
         Debug.Log("Tool Availability: " + toolAvailability);*/
 
-        newsflash.SetActive(false);
-
-        //dashboard will appear before this.
-
         finalAssignment.SetActive(true);
         finalAssignmentCollider.GetComponent<BoxCollider>().enabled = true;
 
         textDisplay.text = "You have completed all the necessary tools to build your report. Head to the laptop to construct your report.";
+    }
+    
+    int boolToInt(bool val) {
+        if (val) {
+            return 1;
+        } else {
+            return 0;
+        }
+    }
+
+    bool intToBool(int val) {
+        if (val != 0) {
+            return true;
+        } else {
+            return false;
+        }
     }
 }

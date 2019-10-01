@@ -14,7 +14,7 @@ public class NewsflashCH : BrexitWorkplace {
     }
 
     public void OnPointerClick(PointerEventData eventData) {
-        SceneManager.LoadScene("Newsflash1");
+        SceneManager.LoadScene("Newsflash");
         AddToToolAvailability();
     }
 
@@ -23,7 +23,7 @@ public class NewsflashCH : BrexitWorkplace {
     }
 
     public void DisplayNewsflash() {
-        SceneManager.LoadScene("Newsflash1");
-        //Discussion();
+        SceneManager.LoadScene("Newsflash");
+        Newsflash();
     }
 }

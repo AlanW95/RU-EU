@@ -8,8 +8,8 @@ public class InterviewCH : BrexitWorkplace
     public GameObject interviewTool;
 
     void OnMouseDown() {
+        Interview1();
         SceneManager.LoadScene("RemainInterview");
-        //Newsflash1();
 
         toolObjectiveCountdown--;
         PlayerPrefs.SetInt("ObjectiveCountdown", toolObjectiveCountdown);

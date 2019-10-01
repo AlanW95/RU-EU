@@ -31,7 +31,7 @@ public class DiscussionTask2 : MonoBehaviour
     //public GameObject contextProCharacter;
 
     public Animator animPro, animAnti, animUndecided;
-    public Animator animText;
+    public Animator animText1, animText2;
 
     //public GameObject proAnimationBubble;
     //public GameObject antiAnimationBubble;
@@ -111,8 +111,8 @@ public class DiscussionTask2 : MonoBehaviour
     void Update()
     {
         if (textDisplay2.text == discussion2[index]) {
-            StartCoroutine(Continue());
-            //continueButton.SetActive(true);
+            //StartCoroutine(Continue());
+            continueButton.SetActive(true);
         }
 
         if (textDisplay2.text != discussion2[index]) {
@@ -125,9 +125,19 @@ public class DiscussionTask2 : MonoBehaviour
 
         if (isDialogue1Finished) {
             dialogue1.interactable = false;
+            //show Dialogue 1 Task 3
+        }
+
+        if (isDialogue2Finished) {
+            dialogue2.interactable = false;
+            //show Dialogue 2 Task 3
         }
 
         //StatementsSelected();
+
+        if (countdown == 5) {
+
+        }
 
         if (countdown == 0)
         {
@@ -143,10 +153,10 @@ public class DiscussionTask2 : MonoBehaviour
         }
     }
 
-    IEnumerator Continue() {
+    /*IEnumerator Continue() {
         yield return new WaitForSeconds(2);
         continueButton.SetActive(true);
-    }
+    }*/
 
     IEnumerator Type() {
         foreach (char letter in discussion2[index].ToCharArray()) {
@@ -241,7 +251,8 @@ public class DiscussionTask2 : MonoBehaviour
         contextGeography.SetActive(false);
 
         //animText.SetTrigger("Change"); //for player if added later on
-        animText.SetTrigger("Change");
+        animText1.SetTrigger("Change");
+        animText2.SetTrigger("Change");
     }
 
     public void IfFinished() {
@@ -804,16 +815,20 @@ public class DiscussionTask2 : MonoBehaviour
             antiCharacter.SetActive(true);
             undecidedCharacter.SetActive(true);
 
-            animText.SetTrigger("Change");
+            animText1.SetTrigger("Change");
+            animText2.SetTrigger("Change");
+
+            //animPro.SetTrigger("Triggered");
+
             StartCoroutine(Type());
 
-            if (index == 1) {
+            if (index == 0) {
                 animUndecided.SetTrigger("Idle");
                 animPro.SetTrigger("Triggered");
                 //proAnimationBubble.SetActive(true);
             }
 
-            if (index == 2) {
+            if (index == 1) {
                 animPro.SetTrigger("Idle");
                 animAnti.SetTrigger("Triggered");
 
@@ -821,7 +836,7 @@ public class DiscussionTask2 : MonoBehaviour
                 //antiAnimationBubble.SetActive(true);
             }
 
-            if (index == 3) {
+            if (index == 2) {
                 animAnti.SetTrigger("Idle");
                 animUndecided.SetTrigger("Triggered");
 
@@ -898,16 +913,20 @@ public class DiscussionTask2 : MonoBehaviour
             antiCharacter.SetActive(true);
             undecidedCharacter.SetActive(true);
 
-            animText.SetTrigger("Change");
+            animText1.SetTrigger("Change");
+            animText2.SetTrigger("Change");
+
+            //animPro.SetTrigger("Triggered");
+
             StartCoroutine(Type());
 
-            if (index == 1) {
+            if (index == 0) {
                 animUndecided.SetTrigger("Idle");
                 animPro.SetTrigger("Triggered");
                 //proAnimationBubble.SetActive(true);
             }
 
-            if (index == 2) {
+            if (index == 1) {
                 animPro.SetTrigger("Idle");
                 animAnti.SetTrigger("Triggered");
 
@@ -915,7 +934,7 @@ public class DiscussionTask2 : MonoBehaviour
                 //antiAnimationBubble.SetActive(true);
             }
 
-            if (index == 3) {
+            if (index == 2) {
                 animAnti.SetTrigger("Idle");
                 animUndecided.SetTrigger("Triggered");
 
@@ -992,16 +1011,20 @@ public class DiscussionTask2 : MonoBehaviour
             antiCharacter.SetActive(true);
             undecidedCharacter.SetActive(true);
 
-            animText.SetTrigger("Change");
+            animText1.SetTrigger("Change");
+            animText2.SetTrigger("Change");
+
+            //animPro.SetTrigger("Triggered");
+
             StartCoroutine(Type());
 
-            if (index == 1) {
+            if (index == 0) {
                 animUndecided.SetTrigger("Idle");
                 animPro.SetTrigger("Triggered");
                 //proAnimationBubble.SetActive(true);
             }
 
-            if (index == 2) {
+            if (index == 1) {
                 animPro.SetTrigger("Idle");
                 animAnti.SetTrigger("Triggered");
 
@@ -1009,7 +1032,7 @@ public class DiscussionTask2 : MonoBehaviour
                 //antiAnimationBubble.SetActive(true);
             }
 
-            if (index == 3) {
+            if (index == 2) {
                 animAnti.SetTrigger("Idle");
                 animUndecided.SetTrigger("Triggered");
 
@@ -1086,16 +1109,20 @@ public class DiscussionTask2 : MonoBehaviour
             antiCharacter.SetActive(true);
             undecidedCharacter.SetActive(true);
 
-            animText.SetTrigger("Change");
+            animText1.SetTrigger("Change");
+            animText2.SetTrigger("Change");
+
+            //animPro.SetTrigger("Triggered");
+
             StartCoroutine(Type());
 
-            if (index == 1) {
+            if (index == 0) {
                 animUndecided.SetTrigger("Idle");
                 animPro.SetTrigger("Triggered");
                 //proAnimationBubble.SetActive(true);
             }
 
-            if (index == 2) {
+            if (index == 1) {
                 animPro.SetTrigger("Idle");
                 animAnti.SetTrigger("Triggered");
 
@@ -1103,7 +1130,7 @@ public class DiscussionTask2 : MonoBehaviour
                 //antiAnimationBubble.SetActive(true);
             }
 
-            if (index == 3) {
+            if (index == 2) {
                 animAnti.SetTrigger("Idle");
                 animUndecided.SetTrigger("Triggered");
 
@@ -1180,16 +1207,20 @@ public class DiscussionTask2 : MonoBehaviour
             antiCharacter.SetActive(true);
             undecidedCharacter.SetActive(true);
 
-            animText.SetTrigger("Change");
+            animText1.SetTrigger("Change");
+            animText2.SetTrigger("Change");
+
+            //animPro.SetTrigger("Triggered");
+
             StartCoroutine(Type());
 
-            if (index == 1) {
+            if (index == 0) {
                 animUndecided.SetTrigger("Idle");
                 animPro.SetTrigger("Triggered");
                 //proAnimationBubble.SetActive(true);
             }
 
-            if (index == 2) {
+            if (index == 1) {
                 animPro.SetTrigger("Idle");
                 animAnti.SetTrigger("Triggered");
 
@@ -1197,7 +1228,7 @@ public class DiscussionTask2 : MonoBehaviour
                 //antiAnimationBubble.SetActive(true);
             }
 
-            if (index == 3) {
+            if (index == 2) {
                 animAnti.SetTrigger("Idle");
                 animUndecided.SetTrigger("Triggered");
 

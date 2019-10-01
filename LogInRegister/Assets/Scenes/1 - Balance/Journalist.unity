@@ -155,20 +155,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2483c0f5285059045ac287955ca2e5dc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  startCanvas: {fileID: 626349102}
-  mainCanvas: {fileID: 1707301738}
   interview1: {fileID: 927768664}
   interview2: {fileID: 22638015}
   discussion: {fileID: 617982931}
   newsflash: {fileID: 1366833983}
   finalAssignment: {fileID: 1641170704}
   mobilePhone: {fileID: 1044808111}
-  threeDObjects: {fileID: 849400650}
   discussionCollider: {fileID: 617982933}
   interview1Collider: {fileID: 927768667}
   interview2Collider: {fileID: 22638018}
   finalAssignmentCollider: {fileID: 1641170707}
   textDisplay: {fileID: 1839532273}
+  toolCompletionText: {fileID: 1175204525}
   toolObjectiveCountdown: 8
   interviewTool: {fileID: 1057987902}
 --- !u!65 &22638018
@@ -2093,6 +2091,43 @@ PrefabInstance:
       objectReference: {fileID: 2100000, guid: e2ff4118305d11c41bb216685380c6ab, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 71384cbc628fa864eb38a3ce9020699c, type: 3}
+--- !u!1 &222454190
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 222454191}
+  m_Layer: 5
+  m_Name: ToolsCompleted
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &222454191
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 222454190}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 1927072897}
+  - {fileID: 1175204523}
+  m_Father: {fileID: 1707301742}
+  m_RootOrder: 23
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 1, y: 0.5}
+  m_AnchorMax: {x: 1, y: 0.5}
+  m_AnchoredPosition: {x: -530.2, y: 200}
+  m_SizeDelta: {x: 389.8, y: 263.95}
+  m_Pivot: {x: 1, y: 0.5}
 --- !u!1001 &235236878
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -6931,20 +6966,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0b904a05fb0a69e4e846d3a18654ec06, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  startCanvas: {fileID: 626349102}
-  mainCanvas: {fileID: 1707301738}
   interview1: {fileID: 927768664}
   interview2: {fileID: 22638015}
   discussion: {fileID: 617982931}
   newsflash: {fileID: 1366833983}
   finalAssignment: {fileID: 1641170704}
   mobilePhone: {fileID: 1044808111}
-  threeDObjects: {fileID: 849400650}
   discussionCollider: {fileID: 617982933}
   interview1Collider: {fileID: 927768667}
   interview2Collider: {fileID: 22638018}
   finalAssignmentCollider: {fileID: 1641170707}
   textDisplay: {fileID: 1839532273}
+  toolCompletionText: {fileID: 1175204525}
   toolObjectiveCountdown: 8
   discussionAnimationTool: {fileID: 1263190809}
 --- !u!64 &617982933 stripped
@@ -9500,7 +9533,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 0, y: 0.000061035156}
+  m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 500, y: 226.04999}
   m_Pivot: {x: 0, y: 1}
 --- !u!114 &828502428
@@ -10147,20 +10180,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a23b418c58599284f86ae931bea8e877, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  startCanvas: {fileID: 626349102}
-  mainCanvas: {fileID: 1707301738}
   interview1: {fileID: 927768664}
   interview2: {fileID: 22638015}
   discussion: {fileID: 617982931}
   newsflash: {fileID: 1366833983}
   finalAssignment: {fileID: 1641170704}
   mobilePhone: {fileID: 1044808111}
-  threeDObjects: {fileID: 849400650}
   discussionCollider: {fileID: 617982933}
   interview1Collider: {fileID: 927768667}
   interview2Collider: {fileID: 22638018}
   finalAssignmentCollider: {fileID: 1641170707}
   textDisplay: {fileID: 1839532273}
+  toolCompletionText: {fileID: 1175204525}
   toolObjectiveCountdown: 8
   interviewTool: {fileID: 828502426}
 --- !u!65 &927768667
@@ -11756,20 +11787,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5861f66080edad741ab2d364e2fa8f3b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  startCanvas: {fileID: 626349102}
-  mainCanvas: {fileID: 1707301738}
   interview1: {fileID: 927768664}
   interview2: {fileID: 22638015}
   discussion: {fileID: 617982931}
   newsflash: {fileID: 1366833983}
   finalAssignment: {fileID: 1641170704}
   mobilePhone: {fileID: 1044808111}
-  threeDObjects: {fileID: 849400650}
   discussionCollider: {fileID: 617982933}
   interview1Collider: {fileID: 927768667}
   interview2Collider: {fileID: 22638018}
   finalAssignmentCollider: {fileID: 1641170707}
   textDisplay: {fileID: 1839532273}
+  toolCompletionText: {fileID: 1175204525}
   toolObjectiveCountdown: 8
   chatTool: {fileID: 1153496229}
 --- !u!65 &1044808115
@@ -11820,7 +11849,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 0, y: 0.000061035156}
+  m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 500, y: 226.04999}
   m_Pivot: {x: 0, y: 1}
 --- !u!114 &1057987904
@@ -11895,7 +11924,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 0, y: 0.000061035156}
+  m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 500, y: 226.04999}
   m_Pivot: {x: 0, y: 1}
 --- !u!114 &1105433475
@@ -12404,6 +12433,173 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1159624521}
   m_CullTransparentMesh: 0
+--- !u!1 &1175204522
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1175204523}
+  - component: {fileID: 1175204524}
+  - component: {fileID: 1175204525}
+  m_Layer: 5
+  m_Name: Content
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1175204523
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1175204522}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 222454191}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 1, y: 1}
+  m_AnchoredPosition: {x: 0, y: -50}
+  m_SizeDelta: {x: 0, y: 350}
+  m_Pivot: {x: 0.5, y: 1}
+--- !u!222 &1175204524
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1175204522}
+  m_CullTransparentMesh: 0
+--- !u!114 &1175204525
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1175204522}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
+      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+  m_text: 'Remainer Interview complete
+
+    Leaver Interview complete
+
+    Discussion in Pub complete
+
+    Newsflash complete'
+  m_isRightToLeft: 0
+  m_fontAsset: {fileID: 11400000, guid: bf071a21c75d5984182ca2896c24ba39, type: 2}
+  m_sharedMaterial: {fileID: 21445493198866178, guid: bf071a21c75d5984182ca2896c24ba39,
+    type: 2}
+  m_fontSharedMaterials: []
+  m_fontMaterial: {fileID: 0}
+  m_fontMaterials: []
+  m_fontColor32:
+    serializedVersion: 2
+    rgba: 4294967295
+  m_fontColor: {r: 1, g: 1, b: 1, a: 1}
+  m_enableVertexGradient: 0
+  m_colorMode: 3
+  m_fontColorGradient:
+    topLeft: {r: 1, g: 1, b: 1, a: 1}
+    topRight: {r: 1, g: 1, b: 1, a: 1}
+    bottomLeft: {r: 1, g: 1, b: 1, a: 1}
+    bottomRight: {r: 1, g: 1, b: 1, a: 1}
+  m_fontColorGradientPreset: {fileID: 0}
+  m_spriteAsset: {fileID: 0}
+  m_tintAllSprites: 0
+  m_overrideHtmlColors: 0
+  m_faceColor:
+    serializedVersion: 2
+    rgba: 4294967295
+  m_outlineColor:
+    serializedVersion: 2
+    rgba: 4278190080
+  m_fontSize: 29
+  m_fontSizeBase: 29
+  m_fontWeight: 400
+  m_enableAutoSizing: 0
+  m_fontSizeMin: 18
+  m_fontSizeMax: 72
+  m_fontStyle: 2
+  m_textAlignment: 260
+  m_isAlignmentEnumConverted: 1
+  m_characterSpacing: 0
+  m_wordSpacing: 0
+  m_lineSpacing: 0
+  m_lineSpacingMax: 0
+  m_paragraphSpacing: 0
+  m_charWidthMaxAdj: 0
+  m_enableWordWrapping: 1
+  m_wordWrappingRatios: 0.4
+  m_overflowMode: 0
+  m_firstOverflowCharacterIndex: -1
+  m_linkedTextComponent: {fileID: 0}
+  m_isLinkedTextComponent: 0
+  m_isTextTruncated: 0
+  m_enableKerning: 1
+  m_enableExtraPadding: 0
+  checkPaddingRequired: 0
+  m_isRichText: 1
+  m_parseCtrlCharacters: 1
+  m_isOrthographic: 1
+  m_isCullingEnabled: 0
+  m_ignoreRectMaskCulling: 0
+  m_ignoreCulling: 1
+  m_horizontalMapping: 0
+  m_verticalMapping: 0
+  m_uvLineOffset: 0
+  m_geometrySortingOrder: 0
+  m_firstVisibleCharacter: 0
+  m_useMaxVisibleDescender: 1
+  m_pageToDisplay: 1
+  m_margin: {x: 0, y: 0, z: 0, w: 0}
+  m_textInfo:
+    textComponent: {fileID: 1175204525}
+    characterCount: 99
+    spriteCount: 0
+    spaceCount: 11
+    wordCount: 12
+    linkCount: 0
+    lineCount: 4
+    pageCount: 1
+    materialCount: 1
+  m_havePropertiesChanged: 0
+  m_isUsingLegacyAnimationComponent: 0
+  m_isVolumetricText: 0
+  m_spriteAnimator: {fileID: 0}
+  m_isInputParsingRequired: 0
+  m_inputSource: 0
+  m_hasFontAssetChanged: 0
+  m_subTextObjects:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  m_baseMaterial: {fileID: 0}
+  m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
 --- !u!1 &1191487351
 GameObject:
   m_ObjectHideFlags: 0
@@ -13255,7 +13451,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 0, y: 0.000061035156}
+  m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 500, y: 226.04999}
   m_Pivot: {x: 0, y: 1}
 --- !u!114 &1263190811
@@ -14779,21 +14975,12 @@ MonoBehaviour:
   - 
   - 
   - No-one had anticipated the problems the Irish border would cause for Brexit.
-  - Leading Brexiteer says Brexit is a 'liberation for British people' and that 'our
-    democracy will once again make our laws'.
-  - Leading UK businessman says that the European Union is bad for UK business.
-  - The separate sovereign nations of the past cannot solve the problems of the present;
-    we must go forward together in Europe.
-  - The Brexit referendum has highlighted the strength of feeling about the EU.
+  - The separate sovereign nations of the past cannot solve the problems of the present.
+    We must go forward together in Europe.
   - Most EU citizens are more aware of the culture of their own country than of European
     culture generally.
-  - Poor knowledge of history amongst EU citizens increases anti EU feelings.
-  - Level of social instability in Italy is rising with 200,000 people leaving the
-    country each year.
-  - Young people very concerned with environmental issues.
-  - Technology having impact on identity.
+  - Young people are very concerned with environmental issues.
   - European laws can never be fair to all.
-  - Emotions are running high in Brussels.
   - Leaving the EU will allow the UK to strike trade deals with the rest of the world.
 --- !u!114 &1366833986
 MonoBehaviour:
@@ -16970,20 +17157,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 52c0d3888c1cf1b4ba8fc0901674c87a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  startCanvas: {fileID: 626349102}
-  mainCanvas: {fileID: 1707301738}
   interview1: {fileID: 927768664}
   interview2: {fileID: 22638015}
   discussion: {fileID: 617982931}
   newsflash: {fileID: 1366833983}
   finalAssignment: {fileID: 1641170704}
   mobilePhone: {fileID: 1044808111}
-  threeDObjects: {fileID: 849400650}
   discussionCollider: {fileID: 617982933}
   interview1Collider: {fileID: 927768667}
   interview2Collider: {fileID: 22638018}
   finalAssignmentCollider: {fileID: 1641170707}
   textDisplay: {fileID: 1839532273}
+  toolCompletionText: {fileID: 1175204525}
   toolObjectiveCountdown: 8
   notebookTool: {fileID: 1105433473}
 --- !u!65 &1510091880
@@ -17543,7 +17728,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 0, y: 0.000061035156}
+  m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 500, y: 226.04999}
   m_Pivot: {x: 0, y: 1}
 --- !u!1001 &1578359608
@@ -18689,20 +18874,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: aef6ce159ae1f08428dc9b4b3b038546, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  startCanvas: {fileID: 626349102}
-  mainCanvas: {fileID: 1707301738}
   interview1: {fileID: 927768664}
   interview2: {fileID: 22638015}
   discussion: {fileID: 617982931}
   newsflash: {fileID: 1366833983}
   finalAssignment: {fileID: 1641170704}
   mobilePhone: {fileID: 1044808111}
-  threeDObjects: {fileID: 849400650}
   discussionCollider: {fileID: 617982933}
   interview1Collider: {fileID: 927768667}
   interview2Collider: {fileID: 22638018}
   finalAssignmentCollider: {fileID: 1641170707}
   textDisplay: {fileID: 1839532273}
+  toolCompletionText: {fileID: 1175204525}
   toolObjectiveCountdown: 8
   finalAssignmentTool: {fileID: 502046981}
 --- !u!65 &1641170707
@@ -19088,6 +19271,7 @@ RectTransform:
   - {fileID: 1839532272}
   - {fileID: 1191487352}
   - {fileID: 605634782}
+  - {fileID: 222454191}
   m_Father: {fileID: 0}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -19108,20 +19292,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ea42a3d643d03e54083364811da37d9c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  startCanvas: {fileID: 626349102}
-  mainCanvas: {fileID: 1707301738}
   interview1: {fileID: 927768664}
   interview2: {fileID: 22638015}
   discussion: {fileID: 617982931}
   newsflash: {fileID: 1366833983}
   finalAssignment: {fileID: 1641170704}
   mobilePhone: {fileID: 1044808111}
-  threeDObjects: {fileID: 849400650}
   discussionCollider: {fileID: 617982933}
   interview1Collider: {fileID: 927768667}
   interview2Collider: {fileID: 22638018}
   finalAssignmentCollider: {fileID: 1641170707}
   textDisplay: {fileID: 1839532273}
+  toolCompletionText: {fileID: 1175204525}
   toolObjectiveCountdown: 8
   newsflashBar: {fileID: 1366833983}
   newsflashText: {fileID: 1561676810}
@@ -19137,20 +19319,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ab4413031b7f982438ba489dc88ca1e4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  startCanvas: {fileID: 626349102}
-  mainCanvas: {fileID: 1707301738}
   interview1: {fileID: 927768664}
   interview2: {fileID: 22638015}
   discussion: {fileID: 617982931}
   newsflash: {fileID: 1366833983}
   finalAssignment: {fileID: 1641170704}
   mobilePhone: {fileID: 1044808111}
-  threeDObjects: {fileID: 849400650}
   discussionCollider: {fileID: 617982933}
   interview1Collider: {fileID: 927768667}
   interview2Collider: {fileID: 22638018}
   finalAssignmentCollider: {fileID: 1641170707}
   textDisplay: {fileID: 1839532273}
+  toolCompletionText: {fileID: 1175204525}
   toolObjectiveCountdown: 8
 --- !u!1 &1715251254
 GameObject:
@@ -20313,20 +20493,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5861f66080edad741ab2d364e2fa8f3b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  startCanvas: {fileID: 626349102}
-  mainCanvas: {fileID: 1707301738}
   interview1: {fileID: 927768664}
   interview2: {fileID: 22638015}
   discussion: {fileID: 617982931}
   newsflash: {fileID: 1366833983}
   finalAssignment: {fileID: 1641170704}
   mobilePhone: {fileID: 1044808111}
-  threeDObjects: {fileID: 849400650}
   discussionCollider: {fileID: 617982933}
   interview1Collider: {fileID: 927768667}
   interview2Collider: {fileID: 22638018}
   finalAssignmentCollider: {fileID: 1641170707}
   textDisplay: {fileID: 1839532273}
+  toolCompletionText: {fileID: 1175204525}
   toolObjectiveCountdown: 8
   chatTool: {fileID: 1153496229}
 --- !u!4 &1798004177
@@ -20899,8 +21077,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 405, y: 0}
-  m_SizeDelta: {x: -830, y: 100}
+  m_AnchoredPosition: {x: 345, y: -10}
+  m_SizeDelta: {x: -710, y: 100}
   m_Pivot: {x: 0.5, y: 1}
 --- !u!114 &1839532273
 MonoBehaviour:
@@ -20922,8 +21100,8 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_text: Choose from any of the 4 tools, the Remain Interview,the Leaver Interview,
-    the Pub Discussion or the Newsflash.
+  m_text: Choose from any of the 4 tools on the desk; the Remain Interview, the Leaver
+    Interview, the Pub Discussion or the Newsflash.
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: e22c8eeddeac64b4583e35e7834baaeb, type: 2}
   m_sharedMaterial: {fileID: 21445493198866178, guid: e22c8eeddeac64b4583e35e7834baaeb,
@@ -20959,7 +21137,7 @@ MonoBehaviour:
   m_fontSizeMin: 18
   m_fontSizeMax: 72
   m_fontStyle: 0
-  m_textAlignment: 516
+  m_textAlignment: 260
   m_isAlignmentEnumConverted: 1
   m_characterSpacing: 0
   m_wordSpacing: 0
@@ -20993,10 +21171,10 @@ MonoBehaviour:
   m_margin: {x: 0, y: 0, z: 0, w: 0}
   m_textInfo:
     textComponent: {fileID: 1839532273}
-    characterCount: 111
+    characterCount: 124
     spriteCount: 0
-    spaceCount: 17
-    wordCount: 19
+    spaceCount: 21
+    wordCount: 22
     linkCount: 0
     lineCount: 2
     pageCount: 1
@@ -21353,6 +21531,167 @@ CanvasRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1893572951}
+  m_CullTransparentMesh: 0
+--- !u!1 &1927072896
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1927072897}
+  - component: {fileID: 1927072899}
+  - component: {fileID: 1927072898}
+  m_Layer: 5
+  m_Name: CompletedToolsText
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1927072897
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1927072896}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 222454191}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 1, y: 1}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 50}
+  m_Pivot: {x: 0.5, y: 1}
+--- !u!114 &1927072898
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1927072896}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
+      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+  m_text: Tools Completed
+  m_isRightToLeft: 0
+  m_fontAsset: {fileID: 11400000, guid: e22c8eeddeac64b4583e35e7834baaeb, type: 2}
+  m_sharedMaterial: {fileID: 21445493198866178, guid: e22c8eeddeac64b4583e35e7834baaeb,
+    type: 2}
+  m_fontSharedMaterials: []
+  m_fontMaterial: {fileID: 0}
+  m_fontMaterials: []
+  m_fontColor32:
+    serializedVersion: 2
+    rgba: 4294967295
+  m_fontColor: {r: 1, g: 1, b: 1, a: 1}
+  m_enableVertexGradient: 0
+  m_colorMode: 3
+  m_fontColorGradient:
+    topLeft: {r: 1, g: 1, b: 1, a: 1}
+    topRight: {r: 1, g: 1, b: 1, a: 1}
+    bottomLeft: {r: 1, g: 1, b: 1, a: 1}
+    bottomRight: {r: 1, g: 1, b: 1, a: 1}
+  m_fontColorGradientPreset: {fileID: 0}
+  m_spriteAsset: {fileID: 0}
+  m_tintAllSprites: 0
+  m_overrideHtmlColors: 0
+  m_faceColor:
+    serializedVersion: 2
+    rgba: 4294967295
+  m_outlineColor:
+    serializedVersion: 2
+    rgba: 4278190080
+  m_fontSize: 42
+  m_fontSizeBase: 42
+  m_fontWeight: 400
+  m_enableAutoSizing: 0
+  m_fontSizeMin: 18
+  m_fontSizeMax: 72
+  m_fontStyle: 6
+  m_textAlignment: 516
+  m_isAlignmentEnumConverted: 1
+  m_characterSpacing: 0
+  m_wordSpacing: 0
+  m_lineSpacing: 0
+  m_lineSpacingMax: 0
+  m_paragraphSpacing: 0
+  m_charWidthMaxAdj: 0
+  m_enableWordWrapping: 1
+  m_wordWrappingRatios: 0.4
+  m_overflowMode: 0
+  m_firstOverflowCharacterIndex: -1
+  m_linkedTextComponent: {fileID: 0}
+  m_isLinkedTextComponent: 0
+  m_isTextTruncated: 0
+  m_enableKerning: 1
+  m_enableExtraPadding: 0
+  checkPaddingRequired: 0
+  m_isRichText: 1
+  m_parseCtrlCharacters: 1
+  m_isOrthographic: 1
+  m_isCullingEnabled: 0
+  m_ignoreRectMaskCulling: 0
+  m_ignoreCulling: 1
+  m_horizontalMapping: 0
+  m_verticalMapping: 0
+  m_uvLineOffset: 0
+  m_geometrySortingOrder: 0
+  m_firstVisibleCharacter: 0
+  m_useMaxVisibleDescender: 1
+  m_pageToDisplay: 1
+  m_margin: {x: 0, y: 0, z: 0, w: 0}
+  m_textInfo:
+    textComponent: {fileID: 1927072898}
+    characterCount: 15
+    spriteCount: 0
+    spaceCount: 1
+    wordCount: 2
+    linkCount: 0
+    lineCount: 1
+    pageCount: 1
+    materialCount: 1
+  m_havePropertiesChanged: 0
+  m_isUsingLegacyAnimationComponent: 0
+  m_isVolumetricText: 0
+  m_spriteAnimator: {fileID: 0}
+  m_isInputParsingRequired: 0
+  m_inputSource: 0
+  m_hasFontAssetChanged: 0
+  m_subTextObjects:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  m_baseMaterial: {fileID: 0}
+  m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
+--- !u!222 &1927072899
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1927072896}
   m_CullTransparentMesh: 0
 --- !u!1001 &1927074148
 PrefabInstance:

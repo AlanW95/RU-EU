@@ -205,6 +205,28 @@ public class AttitudesInterview1 : MonoBehaviour
         StartCoroutine(Type());
     }
 
+    public void Theme1Selected() {
+        if (interviewCounter == 7) {
+            PlayerPrefs.SetString("AttitudesInterview1", statementText.text);
+            Debug.Log(PlayerPrefs.GetString("BrexitProInterview1"));
+        }
+
+        if (interviewCounter == 6) {
+            PlayerPrefs.SetString("AttitudesInterview1", statementText.text);
+            Debug.Log(PlayerPrefs.GetString("BrexitProInterview2"));
+        }
+
+        if (interviewCounter == 5) {
+            PlayerPrefs.SetString("AttitudesInterview1", statementText.text);
+            Debug.Log(PlayerPrefs.GetString("BrexitProInterview3"));
+        }
+
+        if (interviewCounter == 4) {
+            PlayerPrefs.SetString("AttitudesInterview1", statementText.text);
+            Debug.Log(PlayerPrefs.GetString("BrexitProInterview4"));
+        }
+    }
+
     public void Theme2() {
         theme2Button.interactable = false;
         themeSelectionCanvas.SetActive(false);

@@ -5,7 +5,7 @@ using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 using TMPro;
 
-public class Phone : MonoBehaviour
+public class PhoneAttitudes : MonoBehaviour
 {
     public GameObject startCanvas, mainCanvas;
     public GameObject c1, c2, c3, c4, c5, c6, c7; //continue buttons
@@ -14,16 +14,14 @@ public class Phone : MonoBehaviour
     public GameObject[] text;
 
     // Start is called before the first frame update
-    void Start()
-    {
+    void Start() {
         startCanvas.SetActive(true);
         mainCanvas.SetActive(false);
         //Set1();
     }
 
     // Update is called once per frame
-    void Update()
-    {
+    void Update() {
         if (Input.GetKeyDown(KeyCode.Escape)) {
             SceneManager.LoadScene("Journalist");
         }

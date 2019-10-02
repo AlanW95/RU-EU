@@ -5,9 +5,9 @@ using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 using TMPro;
 
-public class BrexitWorkplace : MonoBehaviour
+public class AttitudesMobileWorkplace : MonoBehaviour
 {
-    public GameObject interview1, interview2, discussion, newsflash, finalAssignment, mobilePhone;
+    public GameObject interview1, interview2, discussion, newsflash, finalAssignment;//, mobilePhone;
     private bool interview1Completed, interview2Completed, discussionCompleted, newsflashCompleted;
 
     public MeshCollider discussionCollider;
@@ -16,12 +16,11 @@ public class BrexitWorkplace : MonoBehaviour
     public TextMeshProUGUI textDisplay, toolCompletionText;
     public static string toolCompletion;
 
-    //public int toolAvailability = 0;
     public int toolObjectiveCountdown = 8;
 
     // Start is called before the first frame update
     void Start() {
-        
+
         //for displaying the completion of tools
         PlayerPrefs.GetString("ToolsCompleted");
         PlayerPrefs.SetString("ToolsCompleted", toolCompletion);
@@ -30,6 +29,7 @@ public class BrexitWorkplace : MonoBehaviour
         //PlayerPrefs.SetString("ToolCompletionText", "");
         //PlayerPrefs.SetInt("ObjectiveCountdown", 8);
         //--------------------------
+
         toolObjectiveCountdown = PlayerPrefs.GetInt("ObjectiveCountdown");
         PlayerPrefs.SetInt("ObjectiveCountdown", toolObjectiveCountdown);
         Debug.Log(toolObjectiveCountdown);
@@ -53,25 +53,12 @@ public class BrexitWorkplace : MonoBehaviour
     }
 
     // Update is called once per frame
-    void Update()
-    {
+    void Update() {
         Debug.Log("Objective Countdown: " + toolObjectiveCountdown);
 
         toolCompletionText.text = PlayerPrefs.GetString("ToolCompletionText");
 
-
-        //if (toolObjectiveCountdown == 8) {        //toolAvailability == 0) {
-        //textDisplay.text = "You are receiving a call from your mentor... pick it up!";
         textDisplay.text = "Choose from any of the 4 tools on the desk; the Remain Interview, the Leaver Interview, the Pub Discussion or the Newsflash.";
-            //PlayerPrefs.SetInt("ObjectiveCountdown", toolObjectiveCountdown);
-
-            /*textDisplay.text = "You are receiving a call from your mentor... pick it up!";
-            PlayerPrefs.SetInt("ToolNumber", toolAvailability);*/
-        //}
-
-        //if (toolObjectiveCountdown == 7) {
-            textDisplay.text = "Choose from any of the 4 tools on the desk; the Remain Interview, the Leaver interview, the Pub Discussion or the Newsflash.";
-        // }
         
         if (interview1Completed && interview2Completed && discussionCompleted && newsflashCompleted) {
             finalAssignment.SetActive(true);
@@ -91,19 +78,9 @@ public class BrexitWorkplace : MonoBehaviour
         toolObjectiveCountdown--;
         PlayerPrefs.SetInt("ObjectiveCountdown", toolObjectiveCountdown);
         Debug.Log("Objective Countdown" + PlayerPrefs.GetInt("ObjectiveCountdown"));
-
-
-        //Debug.Log("Tool Objective Countdown: " + toolObjectiveCountdown);
-        /*toolAvailability++;
-        PlayerPrefs.SetInt("ToolNumber", toolAvailability);
-        Debug.Log("Tool Availability: " + toolAvailability);*/
     }
 
     public void Interview1() {
-        //toolAvailability++;
-        //PlayerPrefs.SetInt("ToolNumber", toolAvailability);
-        //Debug.Log("Tool Availability: " + toolAvailability);
-
         //Interview 1 becomes available
         interview1.SetActive(true);
         interview1Collider.GetComponent<BoxCollider>().enabled = false;
@@ -114,49 +91,39 @@ public class BrexitWorkplace : MonoBehaviour
 
         if (interview1Completed == true) {
             toolCompletionText.text = PlayerPrefs.GetString("ToolCompletionText") + "\n" + "Remain Interview complete";
-            //toolCompletionText.text = toolCompletion;
             PlayerPrefs.SetString("ToolCompletionText", toolCompletionText.text);
             Debug.Log("Tool Completion Text: " + PlayerPrefs.GetString("ToolCompletionText"));
         }
 
         if (interview1Completed && interview2Completed && discussionCompleted && newsflashCompleted) {
             toolCompletionText.text = PlayerPrefs.GetString("ToolCompletionText") + "\n" + "All are now complete. You may progress to your article.";
-            //toolCompletionText.text = toolCompletion;
             PlayerPrefs.SetString("ToolCompletionText", toolCompletionText.text);
             Debug.Log("Tool Completion Text: " + PlayerPrefs.GetString("ToolCompletionText"));
         }
     }
 
     public void Interview2() {
-        /*toolAvailability++;
-        PlayerPrefs.SetInt("ToolNumber", toolAvailability);
-        Debug.Log("Tool Availability: " + toolAvailability);*/
 
         interview2.SetActive(true);
         interview2Collider.GetComponent<BoxCollider>().enabled = false;
         interview2Completed = true;
         PlayerPrefs.SetInt("Interview2Completed", boolToInt(interview2Completed));
-        
+
 
         if (interview2Completed == true) {
             toolCompletionText.text = PlayerPrefs.GetString("ToolCompletionText") + "\n" + "Leaver Interview complete";
-            //toolCompletionText.text = toolCompletion;
             PlayerPrefs.SetString("ToolCompletionText", toolCompletionText.text);
             Debug.Log("Tool Completion Text: " + PlayerPrefs.GetString("ToolCompletionText"));
         }
 
         if (interview1Completed && interview2Completed && discussionCompleted && newsflashCompleted) {
             toolCompletionText.text = PlayerPrefs.GetString("ToolCompletionText") + "\n" + "All are now complete. You may progress to your article.";
-            //toolCompletionText.text = toolCompletion;
             PlayerPrefs.SetString("ToolCompletionText", toolCompletionText.text);
             Debug.Log("Tool Completion Text: " + PlayerPrefs.GetString("ToolCompletionText"));
         }
     }
 
     public void Discussion() {
-        /*toolAvailability++;
-        PlayerPrefs.SetInt("ToolNumber", toolAvailability);
-        Debug.Log("Tool Availability: " + toolAvailability);*/
 
         discussion.SetActive(true);
         discussionCollider.GetComponent<MeshCollider>().enabled = false;
@@ -165,23 +132,18 @@ public class BrexitWorkplace : MonoBehaviour
 
         if (discussionCompleted == true) {
             toolCompletionText.text = PlayerPrefs.GetString("ToolCompletionText") + "\n" + "Discussion in Pub complete";
-            //toolCompletionText.text = toolCompletion;
             PlayerPrefs.SetString("ToolCompletionText", toolCompletionText.text);
             Debug.Log("Tool Completion Text: " + PlayerPrefs.GetString("ToolCompletionText"));
         }
 
         if (interview1Completed && interview2Completed && discussionCompleted && newsflashCompleted) {
             toolCompletionText.text = PlayerPrefs.GetString("ToolCompletionText") + "\n" + "All are now complete. You may progress to your article.";
-            //toolCompletionText.text = toolCompletion;
             PlayerPrefs.SetString("ToolCompletionText", toolCompletionText.text);
             Debug.Log("Tool Completion Text: " + PlayerPrefs.GetString("ToolCompletionText"));
         }
     }
 
     public void Newsflash() {
-        /*toolAvailability++;
-        PlayerPrefs.SetInt("ToolNumber", toolAvailability);
-        Debug.Log("Tool Availability: " + toolAvailability);*/
 
         newsflash.SetActive(false);
         newsflashCompleted = true;
@@ -189,30 +151,25 @@ public class BrexitWorkplace : MonoBehaviour
 
         if (newsflashCompleted == true) {
             toolCompletionText.text = PlayerPrefs.GetString("ToolCompletionText") + "\n" + "Newsflash complete";
-            //toolCompletionText.text = toolCompletion;
             PlayerPrefs.SetString("ToolCompletionText", toolCompletionText.text);
             Debug.Log("Tool Completion Text: " + PlayerPrefs.GetString("ToolCompletionText"));
         }
 
         if (interview1Completed && interview2Completed && discussionCompleted && newsflashCompleted) {
             toolCompletionText.text = PlayerPrefs.GetString("ToolCompletionText") + "\n" + "All are now complete. You may progress to your article.";
-            //toolCompletionText.text = toolCompletion;
             PlayerPrefs.SetString("ToolCompletionText", toolCompletionText.text);
             Debug.Log("Tool Completion Text: " + PlayerPrefs.GetString("ToolCompletionText"));
         }
     }
 
     public void FinalAssignment() {
-        /*toolAvailability++;
-        PlayerPrefs.SetInt("ToolNumber", toolAvailability);
-        Debug.Log("Tool Availability: " + toolAvailability);*/
 
         finalAssignment.SetActive(true);
         finalAssignmentCollider.GetComponent<BoxCollider>().enabled = true;
 
         textDisplay.text = "You have completed all the necessary tools to build your report. Head to the laptop to construct your report.";
     }
-    
+
     int boolToInt(bool val) {
         if (val) {
             return 1;

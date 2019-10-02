@@ -12678,7 +12678,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1707301744}
+      - m_Target: {fileID: 0}
         m_MethodName: LoadDashboard
         m_Mode: 1
         m_Arguments:
@@ -15070,7 +15070,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 1707301744}
+      - m_Target: {fileID: 0}
         m_MethodName: AddToToolAvailability
         m_Mode: 1
         m_Arguments:
@@ -15181,7 +15181,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1707301744}
+      - m_Target: {fileID: 0}
         m_MethodName: MainCanvas
         m_Mode: 1
         m_Arguments:
@@ -19168,8 +19168,8 @@ GameObject:
   - component: {fileID: 1707301741}
   - component: {fileID: 1707301740}
   - component: {fileID: 1707301739}
-  - component: {fileID: 1707301743}
   - component: {fileID: 1707301744}
+  - component: {fileID: 1707301743}
   m_Layer: 5
   m_Name: Canvas
   m_TagString: Untagged
@@ -19316,7 +19316,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1707301738}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ab4413031b7f982438ba489dc88ca1e4, type: 3}
+  m_Script: {fileID: 11500000, guid: 7991048b677dd7c44badc21a6fa05204, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   interview1: {fileID: 927768664}
@@ -19324,7 +19324,6 @@ MonoBehaviour:
   discussion: {fileID: 617982931}
   newsflash: {fileID: 1366833983}
   finalAssignment: {fileID: 1641170704}
-  mobilePhone: {fileID: 1044808111}
   discussionCollider: {fileID: 617982933}
   interview1Collider: {fileID: 927768667}
   interview2Collider: {fileID: 22638018}

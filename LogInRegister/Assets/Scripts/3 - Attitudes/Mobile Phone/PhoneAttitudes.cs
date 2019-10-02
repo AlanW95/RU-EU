@@ -23,7 +23,7 @@ public class PhoneAttitudes : MonoBehaviour
     // Update is called once per frame
     void Update() {
         if (Input.GetKeyDown(KeyCode.Escape)) {
-            SceneManager.LoadScene("Journalist");
+            SceneManager.LoadScene("AttitudesMobileWorkplace");
         }
     }
 
@@ -154,6 +154,6 @@ public class PhoneAttitudes : MonoBehaviour
     }
 
     public void Finished() {
-        SceneManager.LoadScene("OpeningJournalist");
+        SceneManager.LoadScene("OpeningJournalistAttitude");
     }
 }

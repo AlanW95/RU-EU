@@ -20,6 +20,7 @@ public class AttitudesInterview1 : MonoBehaviour
     public GameObject interviewCanvas;
 
     public TextMeshProUGUI textDisplay;
+    public Animator animText;
     public string[] sentences;
     private int index;
     private string currentIndexSentence;
@@ -202,28 +203,31 @@ public class AttitudesInterview1 : MonoBehaviour
 
         interviewCanvas.SetActive(true);
 
+        statement1Selected = false;
+
+
         StartCoroutine(Type());
     }
 
     public void Theme1Selected() {
         if (interviewCounter == 7) {
             PlayerPrefs.SetString("AttitudesInterview1", statementText.text);
-            Debug.Log(PlayerPrefs.GetString("BrexitProInterview1"));
+            Debug.Log(PlayerPrefs.GetString("AttitudesInterview1"));
         }
 
         if (interviewCounter == 6) {
             PlayerPrefs.SetString("AttitudesInterview1", statementText.text);
-            Debug.Log(PlayerPrefs.GetString("BrexitProInterview2"));
+            Debug.Log(PlayerPrefs.GetString("AttitudesInterview1"));
         }
 
         if (interviewCounter == 5) {
             PlayerPrefs.SetString("AttitudesInterview1", statementText.text);
-            Debug.Log(PlayerPrefs.GetString("BrexitProInterview3"));
+            Debug.Log(PlayerPrefs.GetString("AttitudesInterview1"));
         }
 
         if (interviewCounter == 4) {
             PlayerPrefs.SetString("AttitudesInterview1", statementText.text);
-            Debug.Log(PlayerPrefs.GetString("BrexitProInterview4"));
+            Debug.Log(PlayerPrefs.GetString("AttitudesInterview1"));
         }
     }
 
@@ -233,7 +237,38 @@ public class AttitudesInterview1 : MonoBehaviour
 
         interviewCanvas.SetActive(true);
 
+        statement1Selected = false;
+
+       
+
         StartCoroutine(Type());
+    }
+
+    public void Theme2Selected()
+    {
+        if (interviewCounter == 7)
+        {
+            PlayerPrefs.SetString("AttitudesInterview1", statementText.text);
+            Debug.Log(PlayerPrefs.GetString("AttitudesInterview1"));
+        }
+
+        if (interviewCounter == 6)
+        {
+            PlayerPrefs.SetString("AttitudesInterview1", statementText.text);
+            Debug.Log(PlayerPrefs.GetString("AttitudesInterview1"));
+        }
+
+        if (interviewCounter == 5)
+        {
+            PlayerPrefs.SetString("AttitudesInterview1", statementText.text);
+            Debug.Log(PlayerPrefs.GetString("AttitudesInterview1"));
+        }
+
+        if (interviewCounter == 4)
+        {
+            PlayerPrefs.SetString("AttitudesInterview1", statementText.text);
+            Debug.Log(PlayerPrefs.GetString("AttitudesInterview1"));
+        }
     }
 
     public void Theme3() {
@@ -241,8 +276,38 @@ public class AttitudesInterview1 : MonoBehaviour
         themeSelectionCanvas.SetActive(false);
 
         interviewCanvas.SetActive(true);
+        statement1Selected = false;
+
+    
 
         StartCoroutine(Type());
+    }
+
+    public void Theme3Selected()
+    {
+        if (interviewCounter == 7)
+        {
+            PlayerPrefs.SetString("AttitudesInterview1", statementText.text);
+            Debug.Log(PlayerPrefs.GetString("AttitudesInterview1"));
+        }
+
+        if (interviewCounter == 6)
+        {
+            PlayerPrefs.SetString("AttitudesInterview1", statementText.text);
+            Debug.Log(PlayerPrefs.GetString("AttitudesInterview1"));
+        }
+
+        if (interviewCounter == 5)
+        {
+            PlayerPrefs.SetString("AttitudesInterview1", statementText.text);
+            Debug.Log(PlayerPrefs.GetString("AttitudesInterview1"));
+        }
+
+        if (interviewCounter == 4)
+        {
+            PlayerPrefs.SetString("AttitudesInterview1", statementText.text);
+            Debug.Log(PlayerPrefs.GetString("AttitudesInterview1"));
+        }
     }
 
     public void Theme4() {
@@ -251,16 +316,75 @@ public class AttitudesInterview1 : MonoBehaviour
 
         interviewCanvas.SetActive(true);
 
-        StartCoroutine(Type());
-    }
+        statement1Selected = false;
 
+       
+        StartCoroutine(Type());
+}
+    public void Theme4Selected()
+    {
+
+        if (interviewCounter == 7)
+        {
+            PlayerPrefs.SetString("AttitudesInterview1", statementText.text);
+            Debug.Log(PlayerPrefs.GetString("AttitudesInterview1"));
+        }
+
+        if (interviewCounter == 6)
+        {
+            PlayerPrefs.SetString("AttitudesInterview1", statementText.text);
+            Debug.Log(PlayerPrefs.GetString("AttitudesInterview1"));
+        }
+
+        if (interviewCounter == 5)
+        {
+            PlayerPrefs.SetString("AttitudesInterview1", statementText.text);
+            Debug.Log(PlayerPrefs.GetString("AttitudesInterview1"));
+        }
+
+        if (interviewCounter == 4)
+        {
+            PlayerPrefs.SetString("AttitudesInterview1", statementText.text);
+            Debug.Log(PlayerPrefs.GetString("AttitudesInterview1"));
+        }
+    }
     public void Theme5() {
         theme5Button.interactable = false;
         themeSelectionCanvas.SetActive(false);
 
         interviewCanvas.SetActive(true);
 
+        statement1Selected = false;
+
+       
         StartCoroutine(Type());
+}
+
+    public void Theme5Selected()
+    {
+        if (interviewCounter == 7)
+        {
+            PlayerPrefs.SetString("AttitudesInterview1", statementText.text);
+            Debug.Log(PlayerPrefs.GetString("AttitudesInterview1"));
+        }
+
+        if (interviewCounter == 6)
+        {
+            PlayerPrefs.SetString("AttitudesInterview1", statementText.text);
+            Debug.Log(PlayerPrefs.GetString("AttitudesInterview1"));
+        }
+
+        if (interviewCounter == 5)
+        {
+            PlayerPrefs.SetString("AttitudesInterview1", statementText.text);
+            Debug.Log(PlayerPrefs.GetString("AttitudesInterview1"));
+        }
+
+        if (interviewCounter == 4)
+        {
+            PlayerPrefs.SetString("AttitudesInterview1", statementText.text);
+            Debug.Log(PlayerPrefs.GetString("AttitudesInterview1"));
+        }
     }
 
     public void Theme6() {
@@ -269,28 +393,118 @@ public class AttitudesInterview1 : MonoBehaviour
 
         interviewCanvas.SetActive(true);
 
-        StartCoroutine(Type());
-    }
+        statement1Selected = false;
 
+       
+
+        StartCoroutine(Type());
+}
+
+    public void Theme6Selected()
+    {
+        if (interviewCounter == 7)
+        {
+            PlayerPrefs.SetString("AttitudesInterview1", statementText.text);
+            Debug.Log(PlayerPrefs.GetString("AttitudesInterview1"));
+        }
+
+        if (interviewCounter == 6)
+        {
+            PlayerPrefs.SetString("AttitudesInterview1", statementText.text);
+            Debug.Log(PlayerPrefs.GetString("AttitudesInterview1"));
+        }
+
+        if (interviewCounter == 5)
+        {
+            PlayerPrefs.SetString("AttitudesInterview1", statementText.text);
+            Debug.Log(PlayerPrefs.GetString("AttitudesInterview1"));
+        }
+
+        if (interviewCounter == 4)
+        {
+            PlayerPrefs.SetString("AttitudesInterview1", statementText.text);
+            Debug.Log(PlayerPrefs.GetString("AttitudesInterview1"));
+        }
+    }
     public void Theme7() {
         theme7Button.interactable = false;
         themeSelectionCanvas.SetActive(false);
 
         interviewCanvas.SetActive(true);
 
+        statement1Selected = false;
+
+     
+
         StartCoroutine(Type());
 
-    }
+}
+    public void Theme7Selected()
+    {
 
+        if (interviewCounter == 7)
+        {
+            PlayerPrefs.SetString("AttitudesInterview1", statementText.text);
+            Debug.Log(PlayerPrefs.GetString("AttitudesInterview1"));
+        }
+
+        if (interviewCounter == 6)
+        {
+            PlayerPrefs.SetString("AttitudesInterview1", statementText.text);
+            Debug.Log(PlayerPrefs.GetString("AttitudesInterview1"));
+        }
+
+        if (interviewCounter == 5)
+        {
+            PlayerPrefs.SetString("AttitudesInterview1", statementText.text);
+            Debug.Log(PlayerPrefs.GetString("AttitudesInterview1"));
+        }
+
+        if (interviewCounter == 4)
+        {
+            PlayerPrefs.SetString("AttitudesInterview1", statementText.text);
+            Debug.Log(PlayerPrefs.GetString("AttitudesInterview1"));
+        }
+    }
     public void Theme8() {
         theme8Button.interactable = false;
         themeSelectionCanvas.SetActive(false);
 
         interviewCanvas.SetActive(true);
 
-        StartCoroutine(Type());
-    }
+        statement1Selected = false;
 
+     
+
+        StartCoroutine(Type());
+}
+    public void Theme8Selected()
+    {
+
+        if (interviewCounter == 7)
+        {
+            PlayerPrefs.SetString("AttitudesInterview1", statementText.text);
+            Debug.Log(PlayerPrefs.GetString("AttitudesInterview1"));
+        }
+
+        if (interviewCounter == 6)
+        {
+            PlayerPrefs.SetString("AttitudesInterview1", statementText.text);
+            Debug.Log(PlayerPrefs.GetString("AttitudesInterview1"));
+        }
+
+        if (interviewCounter == 5)
+        {
+            PlayerPrefs.SetString("AttitudesInterview1", statementText.text);
+            Debug.Log(PlayerPrefs.GetString("AttitudesInterview1"));
+        }
+
+        if (interviewCounter == 4)
+        {
+            PlayerPrefs.SetString("AttitudesInterview1", statementText.text);
+            Debug.Log(PlayerPrefs.GetString("AttitudesInterview1"));
+        }
+    }
     //Only 8 themes being used for this interview tool
     /*public void Theme9() {
         theme9Button.interactable = false;

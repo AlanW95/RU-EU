@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.44657868, g: 0.49641263, b: 0.57481706, a: 1}
+  m_IndirectSpecularColor: {r: 0.44657898, g: 0.4964133, b: 0.5748178, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -125,7 +125,7 @@ GameObject:
   - component: {fileID: 4924067}
   - component: {fileID: 4924066}
   m_Layer: 5
-  m_Name: Theme7ProContinue
+  m_Name: PoliticalProContinue
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -203,6 +203,17 @@ MonoBehaviour:
         m_CallState: 2
       - m_Target: {fileID: 1010829894}
         m_MethodName: CounterDown
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1010829894}
+        m_MethodName: Theme7Selected
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -2497,9 +2508,6 @@ MonoBehaviour:
   sentences:
   - EU citizens and the EU institutions need to get a better idea of what EU really
     is and why it is important.
-  - 'A person born in Europe with parents from countries outside will encounter difficulties. '
-  - 'Ancestry and ethnicity are not important, I know people from all parts of the
-    world, who are living in Europe and have a strong sense of European identity. '
   feedbackCanvas: {fileID: 1271130292}
   scoreCanvas: {fileID: 1810696522}
   rankingCanvas: {fileID: 732463104}
@@ -3253,8 +3261,6 @@ MonoBehaviour:
   sentences:
   - EU being a practical entiry and the practical implementations of EU are two different
     things.
-  - EU politics regarding accepting refugees was a disgrace to its ideals.
-  - United states of Europe is a promising idea in this competitive world.
   feedbackCanvas: {fileID: 1271130292}
   scoreCanvas: {fileID: 1810696522}
   rankingCanvas: {fileID: 732463104}
@@ -3771,7 +3777,7 @@ GameObject:
   - component: {fileID: 417092198}
   - component: {fileID: 417092197}
   m_Layer: 5
-  m_Name: Theme5ProContinue
+  m_Name: EmotionalProContinue
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3849,6 +3855,17 @@ MonoBehaviour:
         m_CallState: 2
       - m_Target: {fileID: 1010829894}
         m_MethodName: CounterDown
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1010829894}
+        m_MethodName: Theme5Selected
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -5049,7 +5066,7 @@ GameObject:
   - component: {fileID: 755120892}
   - component: {fileID: 755120891}
   m_Layer: 5
-  m_Name: Theme3ProContinue
+  m_Name: RightsResponsibilitiesProContinue
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -5127,6 +5144,17 @@ MonoBehaviour:
         m_CallState: 2
       - m_Target: {fileID: 1010829894}
         m_MethodName: CounterDown
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1010829894}
+        m_MethodName: Theme3Selected
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -7377,7 +7405,7 @@ GameObject:
   - component: {fileID: 973780871}
   - component: {fileID: 973780870}
   m_Layer: 5
-  m_Name: Theme6ProContinue
+  m_Name: HistoricProContinue
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -7455,6 +7483,17 @@ MonoBehaviour:
         m_CallState: 2
       - m_Target: {fileID: 1010829894}
         m_MethodName: CounterDown
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1010829894}
+        m_MethodName: Theme6Selected
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -8092,10 +8131,6 @@ MonoBehaviour:
   sentences:
   - Peoples perception of EU is mostly dominated by the media portrayal of the EU
     laws and European directives.
-  - EU must become more strategic and put more effort into European integration with
-    a definite perspective.
-  - EU is a very important achievement for Europe and European societies, after the
-    2nd World War.
   feedbackCanvas: {fileID: 1271130292}
   scoreCanvas: {fileID: 1810696522}
   rankingCanvas: {fileID: 732463104}
@@ -9971,9 +10006,6 @@ MonoBehaviour:
   textDisplay: {fileID: 1940251443}
   sentences:
   - Brexit has strengthened the sense of European identity.
-  - It is possible to be pro-EU while being Eurosceptic on different issues.
-  - Even the concept of unification is there, the people of Europe are diverging because
-    of economic and refugee crisis.
   feedbackCanvas: {fileID: 1271130292}
   scoreCanvas: {fileID: 1810696522}
   rankingCanvas: {fileID: 732463104}
@@ -10739,10 +10771,6 @@ MonoBehaviour:
   textDisplay: {fileID: 1940251443}
   sentences:
   - It is a big issue to find a balance between a member state's laws and EU laws.
-  - Elected state governments are bound to accommodate EU laws and it makes the citizens
-    unhappy.
-  - The political side of Europe along the line of implementating new laws and regulations
-    is perceived as forced by some members.
   feedbackCanvas: {fileID: 1271130292}
   scoreCanvas: {fileID: 1810696522}
   rankingCanvas: {fileID: 732463104}
@@ -10949,7 +10977,7 @@ GameObject:
   - component: {fileID: 1486652021}
   - component: {fileID: 1486652020}
   m_Layer: 5
-  m_Name: Theme4ProContinue
+  m_Name: EconomicalProContinue
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -11008,6 +11036,17 @@ MonoBehaviour:
         m_CallState: 2
       - m_Target: {fileID: 1010829894}
         m_MethodName: CounterDown
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1010829894}
+        m_MethodName: Theme4Selected
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -12578,9 +12617,6 @@ MonoBehaviour:
   sentences:
   - Europe is a rather stable part compared with the rest of the world with higher
     living standards and peace in the region.
-  - Advantages for the citizens, contribution to national wealth and regional peace
-    are the most treasured benefits at this moment.
-  - Older generations who survived the war are more appreciative of the EU.
   feedbackCanvas: {fileID: 1271130292}
   scoreCanvas: {fileID: 1810696522}
   rankingCanvas: {fileID: 732463104}
@@ -13128,9 +13164,6 @@ MonoBehaviour:
   textDisplay: {fileID: 1940251443}
   sentences:
   - EU gives the freedom to act internationally and gain international understanding.
-  - Shared ideals across different countries are the essence of European identity.
-  - 'Education and upbringing are key factors when it comes to having a open and tolerant
-    outlook on different cultures. '
   feedbackCanvas: {fileID: 1271130292}
   scoreCanvas: {fileID: 1810696522}
   rankingCanvas: {fileID: 732463104}
@@ -14320,7 +14353,7 @@ GameObject:
   - component: {fileID: 1871030974}
   - component: {fileID: 1871030973}
   m_Layer: 5
-  m_Name: Theme8ProContinue
+  m_Name: CultureProContinue
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -14398,6 +14431,17 @@ MonoBehaviour:
         m_CallState: 2
       - m_Target: {fileID: 1010829894}
         m_MethodName: CounterDown
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1010829894}
+        m_MethodName: Theme8Selected
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -14620,7 +14664,7 @@ GameObject:
   - component: {fileID: 1894523652}
   - component: {fileID: 1894523651}
   m_Layer: 5
-  m_Name: Theme1ProContinue
+  m_Name: SocialProContinue
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -14698,6 +14742,17 @@ MonoBehaviour:
         m_CallState: 2
       - m_Target: {fileID: 1010829894}
         m_MethodName: CounterDown
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1010829894}
+        m_MethodName: Theme1Selected
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -16257,7 +16312,7 @@ GameObject:
   - component: {fileID: 2049551427}
   - component: {fileID: 2049551426}
   m_Layer: 5
-  m_Name: Theme2ProContinue
+  m_Name: SafetySecurityProContinue
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -16335,6 +16390,17 @@ MonoBehaviour:
         m_CallState: 2
       - m_Target: {fileID: 1010829894}
         m_MethodName: CounterDown
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1010829894}
+        m_MethodName: Theme2Selected
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -16555,7 +16621,7 @@ GameObject:
   - component: {fileID: 2092788523}
   - component: {fileID: 2092788522}
   m_Layer: 0
-  m_Name: EconomiclPro
+  m_Name: EconomicalPro
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -16582,9 +16648,6 @@ MonoBehaviour:
   sentences:
   - All European countried should be subjected to development and be recognized along
     with their individuality.
-  - People who migrated to other EU countries for different reasons are more appreciative
-    of the EU.
-  - After being informed about EU benefits, many are becoming pro-EU.
   feedbackCanvas: {fileID: 1271130292}
   scoreCanvas: {fileID: 1810696522}
   rankingCanvas: {fileID: 732463104}

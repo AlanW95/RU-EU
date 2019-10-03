@@ -57,7 +57,7 @@ public class AttitudesInterview1 : MonoBehaviour
     private bool statement3Selected = false;
 
 
-    //private bool selected = false;
+    private bool selected = false;
     //PlayerPrefs
     public string proInterview = "ProInterview";
     //public static string proInterviewStatements;
@@ -82,12 +82,24 @@ public class AttitudesInterview1 : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+
+
         index = Random.Range(0, sentences.Length);
         //currentIndexSentence = sentences[index];
 
         Debug.Log("InterviewCounter: " + interviewCounter.ToString());
 
         Debug.Log("SecondCounter: " + secondCounter.ToString());
+
+        //  PlayerPrefs.GetInt("CurrentSocialProScore");
+        // PlayerPrefs.GetInt("CurrentSafetySecurityProScore");
+        // PlayerPrefs.GetInt("CurrentRightsResponsibilitiesProScore");
+        // PlayerPrefs.GetInt("CurrentEconomicalProScore");
+        //PlayerPrefs.GetInt("CurrentEmotionalProScore");
+        //PlayerPrefs.GetInt("CurrentHistoricProScore");
+        //PlayerPrefs.GetInt("CurrentPoliticalProScore");
+        //PlayerPrefs.GetInt("CurrentCultureProScore"); 
+
 
         if (textDisplay.text == sentences[index]) {
             continueButton.SetActive(true);

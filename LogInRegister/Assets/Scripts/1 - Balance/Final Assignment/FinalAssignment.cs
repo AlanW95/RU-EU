@@ -74,10 +74,6 @@ public class FinalAssignment : MonoBehaviour {
         Application.Quit();
     }
 
-    public void ReturnToMap() {
-        SceneManager.LoadScene("ScenarioChoice");
-    }
-
     public void Interview1Tab() {
         tools[0].SetActive(true); //Interview 1
         tools[1].SetActive(false); //Interview 2

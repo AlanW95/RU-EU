@@ -62,12 +62,12 @@ public class FinalAssignmentAttitudes : MonoBehaviour
 
 
         if (Input.GetKeyDown(KeyCode.Escape)) {
-            SceneManager.LoadScene("Journalist");
+            SceneManager.LoadScene("AttitudesMobileWorkplace");
         }
     }
 
     public void ReturnToWorkplace() {
-        SceneManager.LoadScene("Journalist");
+        SceneManager.LoadScene("AttitudesMobileWorkplace");
     }
 
     public void ExitGame() {

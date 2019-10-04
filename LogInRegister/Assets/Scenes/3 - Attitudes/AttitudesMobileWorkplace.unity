@@ -182,8 +182,8 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_text: Using this tool, you can interview an anti EU campaigner about their views
-    about the EU.
+  m_text: Using this tool, you can interview an  EU campaigner about their views about
+    the EU.
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: bf071a21c75d5984182ca2896c24ba39, type: 2}
   m_sharedMaterial: {fileID: 21445493198866178, guid: bf071a21c75d5984182ca2896c24ba39,
@@ -261,11 +261,11 @@ MonoBehaviour:
     lineCount: 3
     pageCount: 1
     materialCount: 1
-  m_havePropertiesChanged: 0
+  m_havePropertiesChanged: 1
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_spriteAnimator: {fileID: 0}
-  m_isInputParsingRequired: 0
+  m_isInputParsingRequired: 1
   m_inputSource: 0
   m_hasFontAssetChanged: 0
   m_subTextObjects:
@@ -2668,7 +2668,7 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_text: Leave Interview
+  m_text: ' Interview 2'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: bf071a21c75d5984182ca2896c24ba39, type: 2}
   m_sharedMaterial: {fileID: 21445493198866178, guid: bf071a21c75d5984182ca2896c24ba39,
@@ -2746,11 +2746,11 @@ MonoBehaviour:
     lineCount: 1
     pageCount: 1
     materialCount: 1
-  m_havePropertiesChanged: 0
+  m_havePropertiesChanged: 1
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_spriteAnimator: {fileID: 0}
-  m_isInputParsingRequired: 0
+  m_isInputParsingRequired: 1
   m_inputSource: 0
   m_hasFontAssetChanged: 0
   m_subTextObjects:
@@ -5066,7 +5066,7 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_text: Using this tool, you can interview a pro EU campaigner on their views about
+  m_text: Using this tool, you can interview a  EU campaigner on their views about
     the EU.
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: bf071a21c75d5984182ca2896c24ba39, type: 2}
@@ -5958,7 +5958,7 @@ Transform:
   m_GameObject: {fileID: 1833330600}
   m_LocalRotation: {x: 0.00000008146034, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1000, y: 1000, z: 1000}
+  m_LocalScale: {x: 1273.125, y: 1000, z: 1000}
   m_Children: []
   m_Father: {fileID: 1832969476}
   m_RootOrder: 1
@@ -7215,7 +7215,7 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_text: Remain Interview
+  m_text: ' Interview 1'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: bf071a21c75d5984182ca2896c24ba39, type: 2}
   m_sharedMaterial: {fileID: 21445493198866178, guid: bf071a21c75d5984182ca2896c24ba39,

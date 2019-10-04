@@ -191,7 +191,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 793249811}
         m_MethodName: ExitGame
         m_Mode: 1
         m_Arguments:
@@ -1370,7 +1370,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 793249811}
         m_MethodName: DiscussionTab
         m_Mode: 1
         m_Arguments:
@@ -1513,8 +1513,7 @@ PrefabInstance:
     - target: {fileID: 8931139395045626428, guid: f67dd290d434d3d4e89f81f77940fb50,
         type: 3}
       propertyPath: m_text
-      value: "No-one had anticipated the problems the Irish border would cause for
-        Brexit.\r"
+      value: "All EU members have a long common historical background.\r\n"
       objectReference: {fileID: 0}
     - target: {fileID: 8931139395045626428, guid: f67dd290d434d3d4e89f81f77940fb50,
         type: 3}
@@ -2084,7 +2083,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 793249811}
         m_MethodName: DiscussionTab
         m_Mode: 1
         m_Arguments:
@@ -2252,8 +2251,7 @@ PrefabInstance:
     - target: {fileID: 8931139395045626428, guid: f67dd290d434d3d4e89f81f77940fb50,
         type: 3}
       propertyPath: m_text
-      value: "Most EU citizens are more aware of the culture of their own country
-        than of European culture generally.\r"
+      value: "The UK has always been ambivalent about Europe\r\n"
       objectReference: {fileID: 0}
     - target: {fileID: 8931139395045626428, guid: f67dd290d434d3d4e89f81f77940fb50,
         type: 3}
@@ -2367,7 +2365,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 793249811}
         m_MethodName: GameFinished
         m_Mode: 1
         m_Arguments:
@@ -2619,7 +2617,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 793249811}
         m_MethodName: Interview1Tab
         m_Mode: 1
         m_Arguments:
@@ -2878,7 +2876,7 @@ PrefabInstance:
     - target: {fileID: 8931139395045626428, guid: f67dd290d434d3d4e89f81f77940fb50,
         type: 3}
       propertyPath: m_text
-      value: "Young people very concerned with environmental issues.\r"
+      value: "Germany and France are very pro-European.\r\n"
       objectReference: {fileID: 0}
     - target: {fileID: 8931139395045626428, guid: f67dd290d434d3d4e89f81f77940fb50,
         type: 3}
@@ -3622,7 +3620,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 793249811}
         m_MethodName: NewsflashTab
         m_Mode: 1
         m_Arguments:
@@ -4146,7 +4144,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 793249811}
         m_MethodName: NewsflashTab
         m_Mode: 1
         m_Arguments:
@@ -4199,7 +4197,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: 0}
+  m_AnchoredPosition: {x: -4, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &435240745
@@ -4441,7 +4439,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 793249811}
         m_MethodName: Interview2Tab
         m_Mode: 1
         m_Arguments:
@@ -4764,8 +4762,8 @@ PrefabInstance:
     - target: {fileID: 8931139395045626428, guid: f67dd290d434d3d4e89f81f77940fb50,
         type: 3}
       propertyPath: m_text
-      value: "The separate sovereign nations of the past cannot solve the problems
-        of the present; we must go forward together in Europe.\r\n"
+      value: "Croatians don\u2019t really feel European yet because they have only
+        just joined the EU\r\n"
       objectReference: {fileID: 0}
     - target: {fileID: 8931139395045626428, guid: f67dd290d434d3d4e89f81f77940fb50,
         type: 3}
@@ -5401,6 +5399,7 @@ GameObject:
   - component: {fileID: 579583416}
   - component: {fileID: 579583418}
   - component: {fileID: 579583417}
+  - component: {fileID: 579583419}
   m_Layer: 5
   m_Name: Discussion
   m_TagString: Untagged
@@ -5551,6 +5550,59 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 579583415}
   m_CullTransparentMesh: 0
+--- !u!114 &579583419
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 579583415}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1392445389, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Navigation:
+    m_Mode: 3
+    m_SelectOnUp: {fileID: 0}
+    m_SelectOnDown: {fileID: 0}
+    m_SelectOnLeft: {fileID: 0}
+    m_SelectOnRight: {fileID: 0}
+  m_Transition: 1
+  m_Colors:
+    m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
+    m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
+    m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
+    m_ColorMultiplier: 1
+    m_FadeDuration: 0.1
+  m_SpriteState:
+    m_HighlightedSprite: {fileID: 0}
+    m_PressedSprite: {fileID: 0}
+    m_DisabledSprite: {fileID: 0}
+  m_AnimationTriggers:
+    m_NormalTrigger: Normal
+    m_HighlightedTrigger: Highlighted
+    m_PressedTrigger: Pressed
+    m_DisabledTrigger: Disabled
+  m_Interactable: 1
+  m_TargetGraphic: {fileID: 579583417}
+  m_OnClick:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 793249811}
+        m_MethodName: DiscussionTab
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+    m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
+      Culture=neutral, PublicKeyToken=null
 --- !u!1001 &658564813
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -5989,7 +6041,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 793249811}
         m_MethodName: Interview1Tab
         m_Mode: 1
         m_Arguments:
@@ -6780,7 +6832,7 @@ PrefabInstance:
     - target: {fileID: 8931139395045626428, guid: f67dd290d434d3d4e89f81f77940fb50,
         type: 3}
       propertyPath: m_text
-      value: "European laws can never be fair to all.\r"
+      value: "Some people in the UK see Europe as a kind of \u2018enemy\u2019\r\n"
       objectReference: {fileID: 0}
     - target: {fileID: 8931139395045626428, guid: f67dd290d434d3d4e89f81f77940fb50,
         type: 3}
@@ -7121,7 +7173,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 492.3, y: 446.2}
+  m_AnchoredPosition: {x: 498, y: 446.2}
   m_SizeDelta: {x: 828.2, y: 102.5}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &831273090
@@ -7144,7 +7196,8 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_text: BREXIT ILLUSTRATES DIFFERING LEVELS OF COMMITMENT TO THE EU
+  m_text: Difference between nations illustrates differing levels of commitment to
+    the EU
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: bf071a21c75d5984182ca2896c24ba39, type: 2}
   m_sharedMaterial: {fileID: 21445493198866178, guid: bf071a21c75d5984182ca2896c24ba39,
@@ -7173,7 +7226,7 @@ MonoBehaviour:
   m_outlineColor:
     serializedVersion: 2
     rgba: 4278190080
-  m_fontSize: 48.7
+  m_fontSize: 41.05
   m_fontSizeBase: 27
   m_fontWeight: 400
   m_enableAutoSizing: 1
@@ -7211,13 +7264,13 @@ MonoBehaviour:
   m_firstVisibleCharacter: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: 0, y: 0, z: 0, w: 0}
+  m_margin: {x: 2.0167136, y: 0, z: 0, w: 0}
   m_textInfo:
     textComponent: {fileID: 831273090}
-    characterCount: 59
+    characterCount: 79
     spriteCount: 0
-    spaceCount: 8
-    wordCount: 9
+    spaceCount: 10
+    wordCount: 11
     linkCount: 0
     lineCount: 2
     pageCount: 1
@@ -7283,7 +7336,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -547.2001, y: 294.13995}
+  m_AnchoredPosition: {x: -581, y: 294.13995}
   m_SizeDelta: {x: 177.34, y: 45.91}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &850486630
@@ -7450,7 +7503,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 793249811}
         m_MethodName: Interview2Tab
         m_Mode: 1
         m_Arguments:
@@ -7618,8 +7671,7 @@ PrefabInstance:
     - target: {fileID: 8931139395045626428, guid: f67dd290d434d3d4e89f81f77940fb50,
         type: 3}
       propertyPath: m_text
-      value: "Leaving the EU will allow the UK to strike trade deals with the rest
-        of the world.\r"
+      value: "Greece sees itself as the cradle of European civilisation.\r\n"
       objectReference: {fileID: 0}
     - target: {fileID: 8931139395045626428, guid: f67dd290d434d3d4e89f81f77940fb50,
         type: 3}
@@ -8183,6 +8235,7 @@ GameObject:
   - component: {fileID: 958180281}
   - component: {fileID: 958180283}
   - component: {fileID: 958180282}
+  - component: {fileID: 958180284}
   m_Layer: 5
   m_Name: Newsflash
   m_TagString: Untagged
@@ -8333,6 +8386,59 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 958180280}
   m_CullTransparentMesh: 0
+--- !u!114 &958180284
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 958180280}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1392445389, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Navigation:
+    m_Mode: 3
+    m_SelectOnUp: {fileID: 0}
+    m_SelectOnDown: {fileID: 0}
+    m_SelectOnLeft: {fileID: 0}
+    m_SelectOnRight: {fileID: 0}
+  m_Transition: 1
+  m_Colors:
+    m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
+    m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
+    m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
+    m_ColorMultiplier: 1
+    m_FadeDuration: 0.1
+  m_SpriteState:
+    m_HighlightedSprite: {fileID: 0}
+    m_PressedSprite: {fileID: 0}
+    m_DisabledSprite: {fileID: 0}
+  m_AnimationTriggers:
+    m_NormalTrigger: Normal
+    m_HighlightedTrigger: Highlighted
+    m_PressedTrigger: Pressed
+    m_DisabledTrigger: Disabled
+  m_Interactable: 1
+  m_TargetGraphic: {fileID: 958180282}
+  m_OnClick:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 793249811}
+        m_MethodName: NewsflashTab
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+    m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
+      Culture=neutral, PublicKeyToken=null
 --- !u!1 &960349603
 GameObject:
   m_ObjectHideFlags: 0
@@ -9490,7 +9596,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 793249811}
         m_MethodName: Interview1Tab
         m_Mode: 1
         m_Arguments:
@@ -10118,7 +10224,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 793249811}
         m_MethodName: NewsflashTab
         m_Mode: 1
         m_Arguments:
@@ -10216,6 +10322,7 @@ GameObject:
   - component: {fileID: 1305585982}
   - component: {fileID: 1305585984}
   - component: {fileID: 1305585983}
+  - component: {fileID: 1305585985}
   m_Layer: 5
   m_Name: Interview 1
   m_TagString: Untagged
@@ -10239,7 +10346,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -750.42, y: 294.14}
+  m_AnchoredPosition: {x: -771, y: 294.14}
   m_SizeDelta: {x: 177.34, y: 45.91}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1305585983
@@ -10366,6 +10473,59 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1305585981}
   m_CullTransparentMesh: 0
+--- !u!114 &1305585985
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1305585981}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1392445389, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Navigation:
+    m_Mode: 3
+    m_SelectOnUp: {fileID: 0}
+    m_SelectOnDown: {fileID: 0}
+    m_SelectOnLeft: {fileID: 0}
+    m_SelectOnRight: {fileID: 0}
+  m_Transition: 1
+  m_Colors:
+    m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
+    m_HighlightedColor: {r: 0.6698113, g: 0.48594156, b: 0, a: 1}
+    m_PressedColor: {r: 0.4716981, g: 0.34205008, b: 0, a: 1}
+    m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
+    m_ColorMultiplier: 1
+    m_FadeDuration: 0.1
+  m_SpriteState:
+    m_HighlightedSprite: {fileID: 0}
+    m_PressedSprite: {fileID: 0}
+    m_DisabledSprite: {fileID: 0}
+  m_AnimationTriggers:
+    m_NormalTrigger: Normal
+    m_HighlightedTrigger: Highlighted
+    m_PressedTrigger: Pressed
+    m_DisabledTrigger: Disabled
+  m_Interactable: 1
+  m_TargetGraphic: {fileID: 850486630}
+  m_OnClick:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 793249811}
+        m_MethodName: Interview1Tab
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+    m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
+      Culture=neutral, PublicKeyToken=null
 --- !u!1 &1312503032
 GameObject:
   m_ObjectHideFlags: 0
@@ -11234,7 +11394,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 793249811}
         m_MethodName: ReturnToWorkplace
         m_Mode: 1
         m_Arguments:
@@ -12775,6 +12935,7 @@ GameObject:
   - component: {fileID: 1883456755}
   - component: {fileID: 1883456757}
   - component: {fileID: 1883456756}
+  - component: {fileID: 1883456758}
   m_Layer: 5
   m_Name: Interview 2
   m_TagString: Untagged
@@ -12798,7 +12959,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -547.2, y: 294.14}
+  m_AnchoredPosition: {x: -566, y: 294.14}
   m_SizeDelta: {x: 177.34, y: 45.91}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1883456756
@@ -12925,6 +13086,59 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1883456754}
   m_CullTransparentMesh: 0
+--- !u!114 &1883456758
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1883456754}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1392445389, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Navigation:
+    m_Mode: 3
+    m_SelectOnUp: {fileID: 0}
+    m_SelectOnDown: {fileID: 0}
+    m_SelectOnLeft: {fileID: 0}
+    m_SelectOnRight: {fileID: 0}
+  m_Transition: 1
+  m_Colors:
+    m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
+    m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
+    m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
+    m_ColorMultiplier: 1
+    m_FadeDuration: 0.1
+  m_SpriteState:
+    m_HighlightedSprite: {fileID: 0}
+    m_PressedSprite: {fileID: 0}
+    m_DisabledSprite: {fileID: 0}
+  m_AnimationTriggers:
+    m_NormalTrigger: Normal
+    m_HighlightedTrigger: Highlighted
+    m_PressedTrigger: Pressed
+    m_DisabledTrigger: Disabled
+  m_Interactable: 1
+  m_TargetGraphic: {fileID: 1883456756}
+  m_OnClick:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 793249811}
+        m_MethodName: Interview2Tab
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+    m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
+      Culture=neutral, PublicKeyToken=null
 --- !u!1 &1916847074
 GameObject:
   m_ObjectHideFlags: 0
@@ -13255,8 +13469,8 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_text: Brexit illustrates that EU citizens have differing levels of commitment
-    to the EU.
+  m_text: Difference between nations illustrates that EU citizens have differing levels
+    of commitment to the EU.
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: bf071a21c75d5984182ca2896c24ba39, type: 2}
   m_sharedMaterial: {fileID: 21445493198866178, guid: bf071a21c75d5984182ca2896c24ba39,
@@ -13303,7 +13517,7 @@ MonoBehaviour:
   m_enableWordWrapping: 1
   m_wordWrappingRatios: 0.4
   m_overflowMode: 0
-  m_firstOverflowCharacterIndex: -1
+  m_firstOverflowCharacterIndex: 95
   m_linkedTextComponent: {fileID: 0}
   m_isLinkedTextComponent: 0
   m_isTextTruncated: 0
@@ -13326,12 +13540,12 @@ MonoBehaviour:
   m_margin: {x: 0, y: 0, z: 0, w: 0}
   m_textInfo:
     textComponent: {fileID: 1982238461}
-    characterCount: 82
+    characterCount: 102
     spriteCount: 0
-    spaceCount: 12
-    wordCount: 13
+    spaceCount: 14
+    wordCount: 15
     linkCount: 0
-    lineCount: 2
+    lineCount: 3
     pageCount: 1
     materialCount: 1
   m_havePropertiesChanged: 0
@@ -13723,7 +13937,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 793249811}
         m_MethodName: Interview2Tab
         m_Mode: 1
         m_Arguments:
@@ -14100,7 +14314,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 793249811}
         m_MethodName: DiscussionTab
         m_Mode: 1
         m_Arguments:
@@ -14304,7 +14518,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -70, y: -42.499985}
+  m_AnchoredPosition: {x: -70, y: -42.5}
   m_SizeDelta: {x: 800, y: -184.99997}
   m_Pivot: {x: 1, y: 0.5}
 --- !u!1001 &8931139393588338128

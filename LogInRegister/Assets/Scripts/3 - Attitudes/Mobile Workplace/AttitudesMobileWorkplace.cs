@@ -22,27 +22,27 @@ public class AttitudesMobileWorkplace : MonoBehaviour
     void Start() {
 
         //for displaying the completion of tools
-        PlayerPrefs.GetString("ToolsCompleted");
-        PlayerPrefs.SetString("ToolsCompleted", toolCompletion);
+        PlayerPrefs.GetString("ToolsCompletedAttitudes");
+        PlayerPrefs.SetString("ToolsCompletedAttitudes", toolCompletion);
 
         //DEBUGGING PURPOSE---------
-        //PlayerPrefs.SetString("ToolCompletionText", "");
-        //PlayerPrefs.SetInt("ObjectiveCountdown", 8);
+        //PlayerPrefs.SetString("ToolCompletionAttitudesText", "");
+        //PlayerPrefs.SetInt("ObjectiveCountdownAttitudes", 8);
         //--------------------------
 
-        toolObjectiveCountdown = PlayerPrefs.GetInt("ObjectiveCountdown");
-        PlayerPrefs.SetInt("ObjectiveCountdown", toolObjectiveCountdown);
+        toolObjectiveCountdown = PlayerPrefs.GetInt("ObjectiveCountdownAttitudes");
+        PlayerPrefs.SetInt("ObjectiveCountdownAttitudes", toolObjectiveCountdown);
         Debug.Log(toolObjectiveCountdown);
 
 
-        interview1Completed = intToBool(PlayerPrefs.GetInt("Interview1Completed"));
-        interview2Completed = intToBool(PlayerPrefs.GetInt("Interview2Completed"));
-        discussionCompleted = intToBool(PlayerPrefs.GetInt("DiscussionCompleted"));
-        newsflashCompleted = intToBool(PlayerPrefs.GetInt("NewsflashCompleted"));
+        interview1Completed = intToBool(PlayerPrefs.GetInt("Interview1AttitudesCompleted"));
+        interview2Completed = intToBool(PlayerPrefs.GetInt("Interview2AttitudesCompleted"));
+        discussionCompleted = intToBool(PlayerPrefs.GetInt("DiscussionAttitudesCompleted"));
+        newsflashCompleted = intToBool(PlayerPrefs.GetInt("NewsflashAttitudesCompleted"));
 
-        toolCompletion = PlayerPrefs.GetString("ToolCompletionText");
+        toolCompletion = PlayerPrefs.GetString("ToolCompletionAttitudesText");
         toolCompletion = toolCompletionText.text;
-        Debug.Log("LOADING IN TEXT: " + PlayerPrefs.GetString("ToolCompletionText"));
+        Debug.Log("LOADING IN TEXT: " + PlayerPrefs.GetString("ToolCompletionAttitudesText"));
 
         interview1.SetActive(true);
         interview2.SetActive(true);
@@ -56,9 +56,9 @@ public class AttitudesMobileWorkplace : MonoBehaviour
     void Update() {
         Debug.Log("Objective Countdown: " + toolObjectiveCountdown);
 
-        toolCompletionText.text = PlayerPrefs.GetString("ToolCompletionText");
+        toolCompletionText.text = PlayerPrefs.GetString("ToolCompletionAttitudesText");
 
-        textDisplay.text = "Choose from any of the 4 tools on the desk; the Remain Interview, the Leaver Interview, the Pub Discussion or the Newsflash.";
+        textDisplay.text = "Choose from any of the 4 tools on the desk; Interview 1, Interview 2, the Public Discussion and the Newsflashes.";
         
         if (interview1Completed && interview2Completed && discussionCompleted && newsflashCompleted) {
             finalAssignment.SetActive(true);
@@ -70,14 +70,14 @@ public class AttitudesMobileWorkplace : MonoBehaviour
     }
 
     public void LoadDashboard() {
-        SceneManager.LoadScene("Dashboard");
+        SceneManager.LoadScene("DashboardAttitudes");
     }
 
     public void AddToToolAvailability() {
         //helps recognise when to activate other tools
         toolObjectiveCountdown--;
-        PlayerPrefs.SetInt("ObjectiveCountdown", toolObjectiveCountdown);
-        Debug.Log("Objective Countdown" + PlayerPrefs.GetInt("ObjectiveCountdown"));
+        PlayerPrefs.SetInt("ObjectiveCountdownAttitudes", toolObjectiveCountdown);
+        Debug.Log("Objective Countdown" + PlayerPrefs.GetInt("ObjectiveCountdownAttitudes"));
     }
 
     public void Interview1() {
@@ -85,20 +85,20 @@ public class AttitudesMobileWorkplace : MonoBehaviour
         interview1.SetActive(true);
         interview1Collider.GetComponent<BoxCollider>().enabled = false;
         interview1Completed = true;
-        PlayerPrefs.SetInt("Interview1Completed", boolToInt(interview1Completed));
+        PlayerPrefs.SetInt("Interview1AttitudesCompleted", boolToInt(interview1Completed));
 
 
 
         if (interview1Completed == true) {
-            toolCompletionText.text = PlayerPrefs.GetString("ToolCompletionText") + "\n" + "Remain Interview complete";
-            PlayerPrefs.SetString("ToolCompletionText", toolCompletionText.text);
-            Debug.Log("Tool Completion Text: " + PlayerPrefs.GetString("ToolCompletionText"));
+            toolCompletionText.text = PlayerPrefs.GetString("ToolCompletionAttitudesText") + "\n" + "Interview 1 complete";
+            PlayerPrefs.SetString("ToolCompletionAttitudesText", toolCompletionText.text);
+            Debug.Log("Tool Completion Text: " + PlayerPrefs.GetString("ToolCompletionAttitudesText"));
         }
 
         if (interview1Completed && interview2Completed && discussionCompleted && newsflashCompleted) {
-            toolCompletionText.text = PlayerPrefs.GetString("ToolCompletionText") + "\n" + "All are now complete. You may progress to your article.";
-            PlayerPrefs.SetString("ToolCompletionText", toolCompletionText.text);
-            Debug.Log("Tool Completion Text: " + PlayerPrefs.GetString("ToolCompletionText"));
+            toolCompletionText.text = PlayerPrefs.GetString("ToolCompletionAttitudesText") + "\n" + "All are now complete. You may progress to your article.";
+            PlayerPrefs.SetString("ToolCompletionAttitudesText", toolCompletionText.text);
+            Debug.Log("Tool Completion Text: " + PlayerPrefs.GetString("ToolCompletionAttitudesText"));
         }
     }
 
@@ -107,19 +107,19 @@ public class AttitudesMobileWorkplace : MonoBehaviour
         interview2.SetActive(true);
         interview2Collider.GetComponent<BoxCollider>().enabled = false;
         interview2Completed = true;
-        PlayerPrefs.SetInt("Interview2Completed", boolToInt(interview2Completed));
+        PlayerPrefs.SetInt("Interview2AttitudesCompleted", boolToInt(interview2Completed));
 
 
         if (interview2Completed == true) {
-            toolCompletionText.text = PlayerPrefs.GetString("ToolCompletionText") + "\n" + "Leaver Interview complete";
-            PlayerPrefs.SetString("ToolCompletionText", toolCompletionText.text);
-            Debug.Log("Tool Completion Text: " + PlayerPrefs.GetString("ToolCompletionText"));
+            toolCompletionText.text = PlayerPrefs.GetString("ToolCompletionAttitudesText") + "\n" + "Interview 2 complete";
+            PlayerPrefs.SetString("ToolCompletionAttitudesText", toolCompletionText.text);
+            Debug.Log("Tool Completion Text: " + PlayerPrefs.GetString("ToolCompletionAttitudesText"));
         }
 
         if (interview1Completed && interview2Completed && discussionCompleted && newsflashCompleted) {
-            toolCompletionText.text = PlayerPrefs.GetString("ToolCompletionText") + "\n" + "All are now complete. You may progress to your article.";
-            PlayerPrefs.SetString("ToolCompletionText", toolCompletionText.text);
-            Debug.Log("Tool Completion Text: " + PlayerPrefs.GetString("ToolCompletionText"));
+            toolCompletionText.text = PlayerPrefs.GetString("ToolCompletionAttitudesText") + "\n" + "All are now complete. You may progress to your article.";
+            PlayerPrefs.SetString("ToolCompletionAttitudesText", toolCompletionText.text);
+            Debug.Log("Tool Completion Text: " + PlayerPrefs.GetString("ToolCompletionAttitudesText"));
         }
     }
 
@@ -128,18 +128,18 @@ public class AttitudesMobileWorkplace : MonoBehaviour
         discussion.SetActive(true);
         discussionCollider.GetComponent<MeshCollider>().enabled = false;
         discussionCompleted = true;
-        PlayerPrefs.SetInt("DiscussionCompleted", boolToInt(discussionCompleted));
+        PlayerPrefs.SetInt("DiscussionAttitudesCompleted", boolToInt(discussionCompleted));
 
         if (discussionCompleted == true) {
-            toolCompletionText.text = PlayerPrefs.GetString("ToolCompletionText") + "\n" + "Discussion in Pub complete";
-            PlayerPrefs.SetString("ToolCompletionText", toolCompletionText.text);
-            Debug.Log("Tool Completion Text: " + PlayerPrefs.GetString("ToolCompletionText"));
+            toolCompletionText.text = PlayerPrefs.GetString("ToolCompletionAttitudesText") + "\n" + "Public Discussion complete";
+            PlayerPrefs.SetString("ToolCompletionAttitudesText", toolCompletionText.text);
+            Debug.Log("Tool Completion Text: " + PlayerPrefs.GetString("ToolCompletionAttitudesText"));
         }
 
         if (interview1Completed && interview2Completed && discussionCompleted && newsflashCompleted) {
-            toolCompletionText.text = PlayerPrefs.GetString("ToolCompletionText") + "\n" + "All are now complete. You may progress to your article.";
-            PlayerPrefs.SetString("ToolCompletionText", toolCompletionText.text);
-            Debug.Log("Tool Completion Text: " + PlayerPrefs.GetString("ToolCompletionText"));
+            toolCompletionText.text = PlayerPrefs.GetString("ToolCompletionAttitudesText") + "\n" + "All are now complete. You may progress to your article.";
+            PlayerPrefs.SetString("ToolCompletionAttitudesText", toolCompletionText.text);
+            Debug.Log("Tool Completion Text: " + PlayerPrefs.GetString("ToolCompletionAttitudesText"));
         }
     }
 
@@ -147,18 +147,18 @@ public class AttitudesMobileWorkplace : MonoBehaviour
 
         newsflash.SetActive(false);
         newsflashCompleted = true;
-        PlayerPrefs.SetInt("NewsflashCompleted", boolToInt(newsflashCompleted));
+        PlayerPrefs.SetInt("NewsflashAttitudesCompleted", boolToInt(newsflashCompleted));
 
         if (newsflashCompleted == true) {
-            toolCompletionText.text = PlayerPrefs.GetString("ToolCompletionText") + "\n" + "Newsflash complete";
-            PlayerPrefs.SetString("ToolCompletionText", toolCompletionText.text);
-            Debug.Log("Tool Completion Text: " + PlayerPrefs.GetString("ToolCompletionText"));
+            toolCompletionText.text = PlayerPrefs.GetString("ToolCompletionAttitudesText") + "\n" + "Newsflash complete";
+            PlayerPrefs.SetString("ToolCompletionAttitudesText", toolCompletionText.text);
+            Debug.Log("Tool Completion Text: " + PlayerPrefs.GetString("ToolCompletionAttitudesText"));
         }
 
         if (interview1Completed && interview2Completed && discussionCompleted && newsflashCompleted) {
-            toolCompletionText.text = PlayerPrefs.GetString("ToolCompletionText") + "\n" + "All are now complete. You may progress to your article.";
-            PlayerPrefs.SetString("ToolCompletionText", toolCompletionText.text);
-            Debug.Log("Tool Completion Text: " + PlayerPrefs.GetString("ToolCompletionText"));
+            toolCompletionText.text = PlayerPrefs.GetString("ToolCompletionAttitudesText") + "\n" + "All are now complete. You may progress to your article.";
+            PlayerPrefs.SetString("ToolCompletionAttitudesText", toolCompletionText.text);
+            Debug.Log("Tool Completion Text: " + PlayerPrefs.GetString("ToolCompletionAttitudesText"));
         }
     }
 

@@ -13,9 +13,9 @@ public class FinalAssignmentAttitudes : MonoBehaviour
     //public GameObject interview1S1Empty, interview1S2Empty, interview1S3Empty, interview1S4Empty;
     //Vector2 interview1S1InitialPos, interview1S2InitialPos, interview1S3InitialPos, interview1S4InitialPos;
 
-    public TextMeshProUGUI interview101, interview102, interview103, interview104;
-    public TextMeshProUGUI interview201, interview202, interview203, interview204;
-    public TextMeshProUGUI discussion1, discussion2, discussion3, discussion4;
+    public TextMeshProUGUI interview101, interview102, interview103;//, interview104;
+    public TextMeshProUGUI interview201, interview202, interview203;//, interview204;
+    public TextMeshProUGUI discussion1, discussion2;//, discussion3, discussion4;
     //public TextMeshProUGUI newsflash1, newsflash2, newsflash3, newsflash4, newsflash5, newsflash6;
 
     private string theme1, theme2, theme3;
@@ -30,20 +30,20 @@ public class FinalAssignmentAttitudes : MonoBehaviour
 
     // Update is called once per frame
     void Update() {
-        interview101.text = PlayerPrefs.GetString("BrexitProInterview1");
-        interview102.text = PlayerPrefs.GetString("BrexitProInterview2");
-        interview103.text = PlayerPrefs.GetString("BrexitProInterview3");
-        interview104.text = PlayerPrefs.GetString("BrexitProInterview4");
+        interview101.text = PlayerPrefs.GetString("AttitudesInterview1-1");
+        interview102.text = PlayerPrefs.GetString("AttitudesInterview1-2");
+        interview103.text = PlayerPrefs.GetString("AttitudesInterview1-3");
+        //interview104.text = PlayerPrefs.GetString("BrexitProInterview4");
 
-        interview201.text = PlayerPrefs.GetString("BrexitAntiInterview1");
-        interview202.text = PlayerPrefs.GetString("BrexitAntiInterview2");
-        interview203.text = PlayerPrefs.GetString("BrexitAntiInterview3");
-        interview204.text = PlayerPrefs.GetString("BrexitAntiInterview4");
+        interview201.text = PlayerPrefs.GetString("AttitudesInterview2-1");
+        interview202.text = PlayerPrefs.GetString("AttitudesInterview2-2");
+        interview203.text = PlayerPrefs.GetString("AttitudesInterview2-3");
+        //interview204.text = PlayerPrefs.GetString("BrexitAntiInterview4");
 
-        discussion1.text = PlayerPrefs.GetString("NewBrexitDiscussion1");
-        discussion2.text = PlayerPrefs.GetString("NewBrexitDiscussion2");
-        discussion3.text = PlayerPrefs.GetString("NewBrexitDiscussion3");
-        discussion4.text = PlayerPrefs.GetString("NewBrexitDiscussion4");
+        discussion1.text = PlayerPrefs.GetString("NewAttitudesDiscussion1");
+        discussion2.text = PlayerPrefs.GetString("NewAttitudesDiscussion2");
+        //discussion3.text = PlayerPrefs.GetString("NewBrexitDiscussion3");
+        //discussion4.text = PlayerPrefs.GetString("NewBrexitDiscussion4");
 
         //newsflash1.text = PlayerPrefs.GetString("BrexitNewsflash1");
         //newsflash2.text = PlayerPrefs.GetString("BrexitNewsflash2");
@@ -72,6 +72,10 @@ public class FinalAssignmentAttitudes : MonoBehaviour
 
     public void ExitGame() {
         Application.Quit();
+    }
+
+    public void ReturnToMap() {
+        SceneManager.LoadScene("ScenarioChoice");
     }
 
     public void Interview1Tab() {

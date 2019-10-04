@@ -1190,7 +1190,7 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_text: Pub Discussion
+  m_text: Public Discussion
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: bf071a21c75d5984182ca2896c24ba39, type: 2}
   m_sharedMaterial: {fileID: 21445493198866178, guid: bf071a21c75d5984182ca2896c24ba39,
@@ -1260,7 +1260,7 @@ MonoBehaviour:
   m_margin: {x: 0, y: 0, z: 0, w: 0}
   m_textInfo:
     textComponent: {fileID: 579592981}
-    characterCount: 14
+    characterCount: 17
     spriteCount: 0
     spaceCount: 1
     wordCount: 2
@@ -2668,7 +2668,7 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_text: ' Interview 2'
+  m_text: Interview 2
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: bf071a21c75d5984182ca2896c24ba39, type: 2}
   m_sharedMaterial: {fileID: 21445493198866178, guid: bf071a21c75d5984182ca2896c24ba39,
@@ -3428,11 +3428,11 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_text: 'Remainer Interview complete
+  m_text: 'Interview 1 complete
 
-    Leaver Interview complete
+    Interview 2 complete
 
-    Discussion in Pub complete
+    Public Discussion complete
 
     Newsflash complete'
   m_isRightToLeft: 0
@@ -3504,10 +3504,10 @@ MonoBehaviour:
   m_margin: {x: 0, y: 0, z: 0, w: 0}
   m_textInfo:
     textComponent: {fileID: 1175204525}
-    characterCount: 99
+    characterCount: 87
     spriteCount: 0
-    spaceCount: 11
-    wordCount: 12
+    spaceCount: 10
+    wordCount: 11
     linkCount: 0
     lineCount: 4
     pageCount: 1
@@ -4413,14 +4413,29 @@ MonoBehaviour:
   fillerItems:
   - 
   - 
-  - No-one had anticipated the problems the Irish border would cause for Brexit.
-  - The separate sovereign nations of the past cannot solve the problems of the present.
-    We must go forward together in Europe.
-  - Most EU citizens are more aware of the culture of their own country than of European
-    culture generally.
-  - Young people are very concerned with environmental issues.
-  - European laws can never be fair to all.
-  - Leaving the EU will allow the UK to strike trade deals with the rest of the world.
+  - 'All EU members have a long common historical background. '
+  - "Croatians don\u2019t really feel European yet because they have only just joined
+    the EU. "
+  - 'The UK has always been ambivalent about Europe. '
+  - 'Germany and France are very pro-European. '
+  - "Some people in the UK see Europe as a kind of \u2018enemy\u2019. "
+  - 'Greece sees itself as the cradle of European civilisation. '
+  - 'Israel is a European country which is why they take part in the Eurovision Song
+    Contest. '
+  - Most small European nations like Luxembourg, Ireland and the Baltic States are
+    pro-European because they benefit from being part of a larger union.
+  - 'Greeks feel less European than they did, because they feel they were badly treated
+    by the EU during the Eurozone crisis after 2010. '
+  - "Countries that are not really \u2018in Europe\u2019 like Turkey can never really
+    be European. "
+  - 'People who took refuge or have migrated to Europe, are not really European. '
+  - "It\u2019s perfectly possible to feel a strong sense of national identity and
+    also feel European. "
+  - 'People are either nationalist or European as it is impossible to be both at the
+    same time. '
+  - "We all identify with our own country but hardly anybody feels truly \u2018European\u2019. "
+  - 'Eastern European countries are pro-EU because of their experiences during the
+    Cold War. '
 --- !u!114 &1366833986
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5077,7 +5092,7 @@ MonoBehaviour:
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4294967295
+    rgba: 4278190080
   m_fontColor: {r: 0, g: 0, b: 0, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
@@ -5137,10 +5152,10 @@ MonoBehaviour:
   m_margin: {x: 0, y: 0, z: 0, w: 0}
   m_textInfo:
     textComponent: {fileID: 1481078991}
-    characterCount: 83
+    characterCount: 80
     spriteCount: 0
     spaceCount: 15
-    wordCount: 16
+    wordCount: 15
     linkCount: 0
     lineCount: 3
     pageCount: 1
@@ -5149,7 +5164,7 @@ MonoBehaviour:
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_spriteAnimator: {fileID: 0}
-  m_isInputParsingRequired: 1
+  m_isInputParsingRequired: 0
   m_inputSource: 0
   m_hasFontAssetChanged: 0
   m_subTextObjects:
@@ -5829,7 +5844,7 @@ MonoBehaviour:
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   m_text: Using this tool, you have access to informal comments from the man on the
-    street to see what he is saying about the referendum.
+    street to see what they are saying about differences between nations.
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: bf071a21c75d5984182ca2896c24ba39, type: 2}
   m_sharedMaterial: {fileID: 21445493198866178, guid: bf071a21c75d5984182ca2896c24ba39,
@@ -5858,8 +5873,8 @@ MonoBehaviour:
   m_outlineColor:
     serializedVersion: 2
     rgba: 4278190080
-  m_fontSize: 30
-  m_fontSizeBase: 30
+  m_fontSize: 26
+  m_fontSizeBase: 26
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -5899,10 +5914,10 @@ MonoBehaviour:
   m_margin: {x: 0, y: 0, z: 0, w: 0}
   m_textInfo:
     textComponent: {fileID: 1806958603}
-    characterCount: 127
+    characterCount: 143
     spriteCount: 0
-    spaceCount: 23
-    wordCount: 24
+    spaceCount: 24
+    wordCount: 25
     linkCount: 0
     lineCount: 4
     pageCount: 1
@@ -6203,8 +6218,8 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_text: Choose from any of the 4 tools on the desk; the Remain Interview, the Leaver
-    Interview, the Pub Discussion or the Newsflash.
+  m_text: Choose from any of the 4 tools on the desk; Interview 1, Interview 2, the
+    Public Discussion and the Newsflashes.
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: e22c8eeddeac64b4583e35e7834baaeb, type: 2}
   m_sharedMaterial: {fileID: 21445493198866178, guid: e22c8eeddeac64b4583e35e7834baaeb,
@@ -6274,10 +6289,10 @@ MonoBehaviour:
   m_margin: {x: 0, y: 0, z: 0, w: 0}
   m_textInfo:
     textComponent: {fileID: 1839532273}
-    characterCount: 124
+    characterCount: 112
     spriteCount: 0
-    spaceCount: 21
-    wordCount: 22
+    spaceCount: 19
+    wordCount: 20
     linkCount: 0
     lineCount: 2
     pageCount: 1
@@ -7215,7 +7230,7 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_text: ' Interview 1'
+  m_text: Interview 1
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: bf071a21c75d5984182ca2896c24ba39, type: 2}
   m_sharedMaterial: {fileID: 21445493198866178, guid: bf071a21c75d5984182ca2896c24ba39,
@@ -7225,7 +7240,7 @@ MonoBehaviour:
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4294967295
+    rgba: 4278190080
   m_fontColor: {r: 0, g: 0, b: 0, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
@@ -7285,7 +7300,7 @@ MonoBehaviour:
   m_margin: {x: 0, y: 0, z: 0, w: 0}
   m_textInfo:
     textComponent: {fileID: 2141986931}
-    characterCount: 16
+    characterCount: 11
     spriteCount: 0
     spaceCount: 1
     wordCount: 2
@@ -7297,7 +7312,7 @@ MonoBehaviour:
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_spriteAnimator: {fileID: 0}
-  m_isInputParsingRequired: 1
+  m_isInputParsingRequired: 0
   m_inputSource: 0
   m_hasFontAssetChanged: 0
   m_subTextObjects:

@@ -83,7 +83,7 @@ public class DiscussionAttitudes : MonoBehaviour
         }
 
         if (Input.GetKeyDown(KeyCode.Escape)) {
-            SceneManager.LoadScene("MobileWorkplaceAttitudes");
+            SceneManager.LoadScene("AttitudesMobileWorkplace");
         }
 
         //StatementsSelected();
@@ -100,7 +100,7 @@ public class DiscussionAttitudes : MonoBehaviour
         }
 
         if (Input.GetKeyDown(KeyCode.Escape)) {
-            SceneManager.LoadScene("MobileWorkplaceAttitudes");
+            SceneManager.LoadScene("AttitudesMobileWorkplace");
         }
     }
 
@@ -112,7 +112,7 @@ public class DiscussionAttitudes : MonoBehaviour
     }
 
     public void ReturnToTheMobileWorkplace() {
-        SceneManager.LoadScene("MobileWorkplaceAttitudes");
+        SceneManager.LoadScene("AttitudesMobileWorkplace");
     }
 
     //Task 2 is relatively the same as the original way we had the Discussion tool but this time after each one, 
@@ -344,7 +344,7 @@ public class DiscussionAttitudes : MonoBehaviour
                 character3Text[1].SetActive(true);
 
                 theme2Character1.text = "A European economic and monetary union with 1 single currency is essential for keeping EU competitive.";
-                theme2Character2.text = "The Euro and a monetary union is not advantageous for the Europé.";
+                theme2Character2.text = "The Euro and a monetary union is not advantageous for the Europe.";
                 theme2Character3.text = "Regarding if a single monetary union with a single currency is good or not, is not so easy to say per se, since so many factors play a role.";
 
                 proCharacter.SetActive(true);

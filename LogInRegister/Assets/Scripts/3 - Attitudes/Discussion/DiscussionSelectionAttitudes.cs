@@ -50,7 +50,7 @@ public class DiscussionSelectionAttitudes : MonoBehaviour
         }
 
         if (Input.GetKeyDown(KeyCode.Escape)) {
-            SceneManager.LoadScene("MobileWorkplaceAttitudes");
+            SceneManager.LoadScene("AttitudesMobileWorkplace");
         }
     }
 

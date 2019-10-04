@@ -71,22 +71,25 @@ EditorBuildSettings:
   - enabled: 0
     path: Assets/Scenes/2 - Lorry Truck/DiscussionLorryTruck.unity
     guid: fa4976436b48bae46bc6733d3749a2b5
-  - enabled: 0
-    path: 
-    guid: 6f14bd83152df0c42a265456fcb119f6
-  - enabled: 0
-    path: Assets/Scenes/3 - Attitudes/DiscussionAttitudes.unity
-    guid: be0950a7fc85c6741a3f1a05fe58d5d7
-  - enabled: 0
-    path: Assets/Scenes/3 - Attitudes/InterviewAttitudes1.unity
-    guid: c2afe013800ccc945a966110fd0c4961
-  - enabled: 0
-    path: Assets/Scenes/3 - Attitudes/InterviewAttitudes2.unity
-    guid: 6766110116d46c143961587f0c5d5d02
-  - enabled: 0
-    path: Assets/Scenes/3 - Attitudes/NewsflashAttitudes.unity
-    guid: 32ff617eb1d5b494a9841be691f9b6b5
+  - enabled: 1
+    path: Assets/Scenes/3 - Attitudes/MobilePhoneAttitudes.unity
+    guid: 4949aa10e705c3248b7fc9e1136025c7
   - enabled: 1
     path: Assets/Scenes/3 - Attitudes/OpeningJournalistAttitude.unity
     guid: a74f3d28641d98e48bcf1d5f6b0aef51
+  - enabled: 1
+    path: Assets/Scenes/3 - Attitudes/AttitudesMobileWorkplace.unity
+    guid: 9840722107361da4a9cf578532164c7e
+  - enabled: 1
+    path: Assets/Scenes/3 - Attitudes/InterviewAttitudes1.unity
+    guid: c2afe013800ccc945a966110fd0c4961
+  - enabled: 1
+    path: Assets/Scenes/3 - Attitudes/InterviewAttitudes2.unity
+    guid: 6766110116d46c143961587f0c5d5d02
+  - enabled: 1
+    path: Assets/Scenes/3 - Attitudes/DiscussionAttitudes.unity
+    guid: be0950a7fc85c6741a3f1a05fe58d5d7
+  - enabled: 1
+    path: Assets/Scenes/3 - Attitudes/NewsflashAttitudes.unity
+    guid: 32ff617eb1d5b494a9841be691f9b6b5
   m_configObjects: {}

@@ -121,7 +121,7 @@ public class AttitudesInterview1 : MonoBehaviour
         }
 
         if (Input.GetKeyDown(KeyCode.Escape)) {
-            SceneManager.LoadScene("MobileWorkplaceAttitudes");
+            SceneManager.LoadScene("AttitudesMobileWorkplace");
         }
     }
 
@@ -139,7 +139,7 @@ public class AttitudesInterview1 : MonoBehaviour
     }
 
     public void ReturnToMobileWorkplace() {
-        SceneManager.LoadScene("MobileWorkplaceAttitudes");
+        SceneManager.LoadScene("AttitudesMobileWorkplace");
     }
 
     public void RankedStatements() {

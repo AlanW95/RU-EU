@@ -3,15 +3,12 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class SceneSelectionAttitudes : MonoBehaviour
+public class LoadAttitudesWorkplace : MonoBehaviour
 {
-
-    public GameObject backToJournalistDesk;
-
     // Start is called before the first frame update
     void Start()
     {
-        backToJournalistDesk.SetActive(true);
+        
     }
 
     // Update is called once per frame
@@ -20,7 +17,7 @@ public class SceneSelectionAttitudes : MonoBehaviour
         
     }
 
-    public void GoBack() {
+    public void LoadMobileWorkplace() {
         SceneManager.LoadScene("AttitudesMobileWorkplace");
     }
 }

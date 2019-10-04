@@ -51,7 +51,8 @@ public class ScenarioSelection : MonoBehaviour {
     }
 
     public void AttitudesScenario() {
-        Debug.Log("This will go to the Germany themed Journalist's Desk!");
+        SceneManager.LoadScene("MobilePhoneAttitudes");
+        //Debug.Log("This will go to the Germany themed Journalist's Desk!");
     }
 
     public void WorkingPartnerCountriesScenario() {

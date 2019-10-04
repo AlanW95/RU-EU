@@ -104,11 +104,11 @@ public class AttitudesInterview2 : MonoBehaviour {
             feedbackCanvas.SetActive(true);
             
         }
-    
+
 
         //if (Input.GetKeyDown(KeyCode.Escape)) {
-         /*   SceneManager.LoadScene("MobileWorkplaceAttitudes");
-        }*/
+        /*   SceneManager.LoadScene("AttitudesMobileWorkplace");
+       }*/
     }
 
     //Used for individual demos of the tool
@@ -125,7 +125,7 @@ public class AttitudesInterview2 : MonoBehaviour {
     }
 
     public void ReturnToMobileWorkplace() {
-        SceneManager.LoadScene("MobileWorkplaceAttitudes");
+        SceneManager.LoadScene("AttitudesMobileWorkplace");
     }
 
     public void RankedStatements() {

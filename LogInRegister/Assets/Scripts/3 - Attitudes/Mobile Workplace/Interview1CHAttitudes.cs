@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class Interview1CHAttitudes : MonoBehaviour
+public class Interview1CHAttitudes : AttitudesMobileWorkplace
 {
     public GameObject interviewTool;
 

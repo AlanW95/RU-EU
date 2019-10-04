@@ -191,7 +191,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 793249811}
+      - m_Target: {fileID: 0}
         m_MethodName: ExitGame
         m_Mode: 1
         m_Arguments:
@@ -1304,11 +1304,11 @@ MonoBehaviour:
     lineCount: 1
     pageCount: 1
     materialCount: 1
-  m_havePropertiesChanged: 1
+  m_havePropertiesChanged: 0
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_spriteAnimator: {fileID: 0}
-  m_isInputParsingRequired: 1
+  m_isInputParsingRequired: 0
   m_inputSource: 0
   m_hasFontAssetChanged: 0
   m_subTextObjects:
@@ -1370,7 +1370,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 793249811}
+      - m_Target: {fileID: 0}
         m_MethodName: DiscussionTab
         m_Mode: 1
         m_Arguments:
@@ -1453,12 +1453,12 @@ PrefabInstance:
     - target: {fileID: 8931139393895343956, guid: f67dd290d434d3d4e89f81f77940fb50,
         type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 0
+      value: 425.3947
       objectReference: {fileID: 0}
     - target: {fileID: 8931139393895343956, guid: f67dd290d434d3d4e89f81f77940fb50,
         type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 0
+      value: -50
       objectReference: {fileID: 0}
     - target: {fileID: 8931139393895343956, guid: f67dd290d434d3d4e89f81f77940fb50,
         type: 3}
@@ -1478,7 +1478,7 @@ PrefabInstance:
     - target: {fileID: 8931139393895343956, guid: f67dd290d434d3d4e89f81f77940fb50,
         type: 3}
       propertyPath: m_AnchorMin.y
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8931139393895343956, guid: f67dd290d434d3d4e89f81f77940fb50,
         type: 3}
@@ -1488,7 +1488,7 @@ PrefabInstance:
     - target: {fileID: 8931139393895343956, guid: f67dd290d434d3d4e89f81f77940fb50,
         type: 3}
       propertyPath: m_AnchorMax.y
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8931139393895343956, guid: f67dd290d434d3d4e89f81f77940fb50,
         type: 3}
@@ -2084,7 +2084,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 793249811}
+      - m_Target: {fileID: 0}
         m_MethodName: DiscussionTab
         m_Mode: 1
         m_Arguments:
@@ -2167,12 +2167,12 @@ PrefabInstance:
     - target: {fileID: 8931139393895343956, guid: f67dd290d434d3d4e89f81f77940fb50,
         type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 0
+      value: 425.3947
       objectReference: {fileID: 0}
     - target: {fileID: 8931139393895343956, guid: f67dd290d434d3d4e89f81f77940fb50,
         type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 0
+      value: -250
       objectReference: {fileID: 0}
     - target: {fileID: 8931139393895343956, guid: f67dd290d434d3d4e89f81f77940fb50,
         type: 3}
@@ -2192,7 +2192,7 @@ PrefabInstance:
     - target: {fileID: 8931139393895343956, guid: f67dd290d434d3d4e89f81f77940fb50,
         type: 3}
       propertyPath: m_AnchorMin.y
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8931139393895343956, guid: f67dd290d434d3d4e89f81f77940fb50,
         type: 3}
@@ -2202,7 +2202,7 @@ PrefabInstance:
     - target: {fileID: 8931139393895343956, guid: f67dd290d434d3d4e89f81f77940fb50,
         type: 3}
       propertyPath: m_AnchorMax.y
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8931139393895343956, guid: f67dd290d434d3d4e89f81f77940fb50,
         type: 3}
@@ -2367,7 +2367,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 793249811}
+      - m_Target: {fileID: 0}
         m_MethodName: GameFinished
         m_Mode: 1
         m_Arguments:
@@ -2619,7 +2619,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 793249811}
+      - m_Target: {fileID: 0}
         m_MethodName: Interview1Tab
         m_Mode: 1
         m_Arguments:
@@ -2793,12 +2793,12 @@ PrefabInstance:
     - target: {fileID: 8931139393895343956, guid: f67dd290d434d3d4e89f81f77940fb50,
         type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 0
+      value: 425.3947
       objectReference: {fileID: 0}
     - target: {fileID: 8931139393895343956, guid: f67dd290d434d3d4e89f81f77940fb50,
         type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 0
+      value: -350
       objectReference: {fileID: 0}
     - target: {fileID: 8931139393895343956, guid: f67dd290d434d3d4e89f81f77940fb50,
         type: 3}
@@ -2818,7 +2818,7 @@ PrefabInstance:
     - target: {fileID: 8931139393895343956, guid: f67dd290d434d3d4e89f81f77940fb50,
         type: 3}
       propertyPath: m_AnchorMin.y
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8931139393895343956, guid: f67dd290d434d3d4e89f81f77940fb50,
         type: 3}
@@ -2828,7 +2828,7 @@ PrefabInstance:
     - target: {fileID: 8931139393895343956, guid: f67dd290d434d3d4e89f81f77940fb50,
         type: 3}
       propertyPath: m_AnchorMax.y
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8931139393895343956, guid: f67dd290d434d3d4e89f81f77940fb50,
         type: 3}
@@ -3556,11 +3556,11 @@ MonoBehaviour:
     lineCount: 1
     pageCount: 1
     materialCount: 1
-  m_havePropertiesChanged: 1
+  m_havePropertiesChanged: 0
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_spriteAnimator: {fileID: 0}
-  m_isInputParsingRequired: 1
+  m_isInputParsingRequired: 0
   m_inputSource: 0
   m_hasFontAssetChanged: 0
   m_subTextObjects:
@@ -3622,7 +3622,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 793249811}
+      - m_Target: {fileID: 0}
         m_MethodName: NewsflashTab
         m_Mode: 1
         m_Arguments:
@@ -4146,7 +4146,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 793249811}
+      - m_Target: {fileID: 0}
         m_MethodName: NewsflashTab
         m_Mode: 1
         m_Arguments:
@@ -4176,7 +4176,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &435240744
 RectTransform:
   m_ObjectHideFlags: 0
@@ -4441,7 +4441,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 793249811}
+      - m_Target: {fileID: 0}
         m_MethodName: Interview2Tab
         m_Mode: 1
         m_Arguments:
@@ -4689,12 +4689,12 @@ PrefabInstance:
     - target: {fileID: 8931139393895343956, guid: f67dd290d434d3d4e89f81f77940fb50,
         type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 0
+      value: 425.3947
       objectReference: {fileID: 0}
     - target: {fileID: 8931139393895343956, guid: f67dd290d434d3d4e89f81f77940fb50,
         type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 0
+      value: -150
       objectReference: {fileID: 0}
     - target: {fileID: 8931139393895343956, guid: f67dd290d434d3d4e89f81f77940fb50,
         type: 3}
@@ -4714,7 +4714,7 @@ PrefabInstance:
     - target: {fileID: 8931139393895343956, guid: f67dd290d434d3d4e89f81f77940fb50,
         type: 3}
       propertyPath: m_AnchorMin.y
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8931139393895343956, guid: f67dd290d434d3d4e89f81f77940fb50,
         type: 3}
@@ -4724,7 +4724,7 @@ PrefabInstance:
     - target: {fileID: 8931139393895343956, guid: f67dd290d434d3d4e89f81f77940fb50,
         type: 3}
       propertyPath: m_AnchorMax.y
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8931139393895343956, guid: f67dd290d434d3d4e89f81f77940fb50,
         type: 3}
@@ -5989,7 +5989,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 793249811}
+      - m_Target: {fileID: 0}
         m_MethodName: Interview1Tab
         m_Mode: 1
         m_Arguments:
@@ -6072,12 +6072,12 @@ PrefabInstance:
     - target: {fileID: 8931139393895343956, guid: 3773788d72f638848ad9f11bd6fedcc8,
         type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 424.80072
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8931139393895343956, guid: 3773788d72f638848ad9f11bd6fedcc8,
         type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -350
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8931139393895343956, guid: 3773788d72f638848ad9f11bd6fedcc8,
         type: 3}
@@ -6097,7 +6097,7 @@ PrefabInstance:
     - target: {fileID: 8931139393895343956, guid: 3773788d72f638848ad9f11bd6fedcc8,
         type: 3}
       propertyPath: m_AnchorMin.y
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8931139393895343956, guid: 3773788d72f638848ad9f11bd6fedcc8,
         type: 3}
@@ -6107,7 +6107,7 @@ PrefabInstance:
     - target: {fileID: 8931139393895343956, guid: 3773788d72f638848ad9f11bd6fedcc8,
         type: 3}
       propertyPath: m_AnchorMax.y
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8931139393895343956, guid: 3773788d72f638848ad9f11bd6fedcc8,
         type: 3}
@@ -6371,12 +6371,12 @@ PrefabInstance:
     - target: {fileID: 8931139393895343956, guid: 3773788d72f638848ad9f11bd6fedcc8,
         type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 424.80072
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8931139393895343956, guid: 3773788d72f638848ad9f11bd6fedcc8,
         type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -200
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8931139393895343956, guid: 3773788d72f638848ad9f11bd6fedcc8,
         type: 3}
@@ -6396,7 +6396,7 @@ PrefabInstance:
     - target: {fileID: 8931139393895343956, guid: 3773788d72f638848ad9f11bd6fedcc8,
         type: 3}
       propertyPath: m_AnchorMin.y
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8931139393895343956, guid: 3773788d72f638848ad9f11bd6fedcc8,
         type: 3}
@@ -6406,7 +6406,7 @@ PrefabInstance:
     - target: {fileID: 8931139393895343956, guid: 3773788d72f638848ad9f11bd6fedcc8,
         type: 3}
       propertyPath: m_AnchorMax.y
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8931139393895343956, guid: 3773788d72f638848ad9f11bd6fedcc8,
         type: 3}
@@ -6695,12 +6695,12 @@ PrefabInstance:
     - target: {fileID: 8931139393895343956, guid: f67dd290d434d3d4e89f81f77940fb50,
         type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 0
+      value: 425.3947
       objectReference: {fileID: 0}
     - target: {fileID: 8931139393895343956, guid: f67dd290d434d3d4e89f81f77940fb50,
         type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 0
+      value: -450
       objectReference: {fileID: 0}
     - target: {fileID: 8931139393895343956, guid: f67dd290d434d3d4e89f81f77940fb50,
         type: 3}
@@ -6720,7 +6720,7 @@ PrefabInstance:
     - target: {fileID: 8931139393895343956, guid: f67dd290d434d3d4e89f81f77940fb50,
         type: 3}
       propertyPath: m_AnchorMin.y
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8931139393895343956, guid: f67dd290d434d3d4e89f81f77940fb50,
         type: 3}
@@ -6730,7 +6730,7 @@ PrefabInstance:
     - target: {fileID: 8931139393895343956, guid: f67dd290d434d3d4e89f81f77940fb50,
         type: 3}
       propertyPath: m_AnchorMax.y
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8931139393895343956, guid: f67dd290d434d3d4e89f81f77940fb50,
         type: 3}
@@ -6932,7 +6932,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 793249806}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e48a1e2d1ac786d4d92813a1000b594b, type: 3}
+  m_Script: {fileID: 11500000, guid: 17048bdb20c3637469fa4fcc2b51da82, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   tools:
@@ -7384,11 +7384,11 @@ MonoBehaviour:
     lineCount: 1
     pageCount: 1
     materialCount: 1
-  m_havePropertiesChanged: 1
+  m_havePropertiesChanged: 0
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_spriteAnimator: {fileID: 0}
-  m_isInputParsingRequired: 1
+  m_isInputParsingRequired: 0
   m_inputSource: 0
   m_hasFontAssetChanged: 0
   m_subTextObjects:
@@ -7450,7 +7450,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 793249811}
+      - m_Target: {fileID: 0}
         m_MethodName: Interview2Tab
         m_Mode: 1
         m_Arguments:
@@ -7533,12 +7533,12 @@ PrefabInstance:
     - target: {fileID: 8931139393895343956, guid: f67dd290d434d3d4e89f81f77940fb50,
         type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 0
+      value: 425.3947
       objectReference: {fileID: 0}
     - target: {fileID: 8931139393895343956, guid: f67dd290d434d3d4e89f81f77940fb50,
         type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 0
+      value: -550
       objectReference: {fileID: 0}
     - target: {fileID: 8931139393895343956, guid: f67dd290d434d3d4e89f81f77940fb50,
         type: 3}
@@ -7558,7 +7558,7 @@ PrefabInstance:
     - target: {fileID: 8931139393895343956, guid: f67dd290d434d3d4e89f81f77940fb50,
         type: 3}
       propertyPath: m_AnchorMin.y
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8931139393895343956, guid: f67dd290d434d3d4e89f81f77940fb50,
         type: 3}
@@ -7568,7 +7568,7 @@ PrefabInstance:
     - target: {fileID: 8931139393895343956, guid: f67dd290d434d3d4e89f81f77940fb50,
         type: 3}
       propertyPath: m_AnchorMax.y
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8931139393895343956, guid: f67dd290d434d3d4e89f81f77940fb50,
         type: 3}
@@ -8494,12 +8494,12 @@ PrefabInstance:
     - target: {fileID: 8931139393895343956, guid: 3773788d72f638848ad9f11bd6fedcc8,
         type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 424.80072
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8931139393895343956, guid: 3773788d72f638848ad9f11bd6fedcc8,
         type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -500
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8931139393895343956, guid: 3773788d72f638848ad9f11bd6fedcc8,
         type: 3}
@@ -8519,7 +8519,7 @@ PrefabInstance:
     - target: {fileID: 8931139393895343956, guid: 3773788d72f638848ad9f11bd6fedcc8,
         type: 3}
       propertyPath: m_AnchorMin.y
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8931139393895343956, guid: 3773788d72f638848ad9f11bd6fedcc8,
         type: 3}
@@ -8529,7 +8529,7 @@ PrefabInstance:
     - target: {fileID: 8931139393895343956, guid: 3773788d72f638848ad9f11bd6fedcc8,
         type: 3}
       propertyPath: m_AnchorMax.y
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8931139393895343956, guid: 3773788d72f638848ad9f11bd6fedcc8,
         type: 3}
@@ -9490,7 +9490,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 793249811}
+      - m_Target: {fileID: 0}
         m_MethodName: Interview1Tab
         m_Mode: 1
         m_Arguments:
@@ -10118,7 +10118,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 793249811}
+      - m_Target: {fileID: 0}
         m_MethodName: NewsflashTab
         m_Mode: 1
         m_Arguments:
@@ -10340,11 +10340,11 @@ MonoBehaviour:
     lineCount: 1
     pageCount: 1
     materialCount: 1
-  m_havePropertiesChanged: 1
+  m_havePropertiesChanged: 0
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_spriteAnimator: {fileID: 0}
-  m_isInputParsingRequired: 1
+  m_isInputParsingRequired: 0
   m_inputSource: 0
   m_hasFontAssetChanged: 0
   m_subTextObjects:
@@ -11234,7 +11234,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 793249811}
+      - m_Target: {fileID: 0}
         m_MethodName: ReturnToWorkplace
         m_Mode: 1
         m_Arguments:
@@ -12580,12 +12580,12 @@ PrefabInstance:
     - target: {fileID: 8931139393895343956, guid: 3773788d72f638848ad9f11bd6fedcc8,
         type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 424.80072
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8931139393895343956, guid: 3773788d72f638848ad9f11bd6fedcc8,
         type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -50
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8931139393895343956, guid: 3773788d72f638848ad9f11bd6fedcc8,
         type: 3}
@@ -12605,7 +12605,7 @@ PrefabInstance:
     - target: {fileID: 8931139393895343956, guid: 3773788d72f638848ad9f11bd6fedcc8,
         type: 3}
       propertyPath: m_AnchorMin.y
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8931139393895343956, guid: 3773788d72f638848ad9f11bd6fedcc8,
         type: 3}
@@ -12615,7 +12615,7 @@ PrefabInstance:
     - target: {fileID: 8931139393895343956, guid: 3773788d72f638848ad9f11bd6fedcc8,
         type: 3}
       propertyPath: m_AnchorMax.y
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8931139393895343956, guid: 3773788d72f638848ad9f11bd6fedcc8,
         type: 3}
@@ -13723,7 +13723,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 793249811}
+      - m_Target: {fileID: 0}
         m_MethodName: Interview2Tab
         m_Mode: 1
         m_Arguments:
@@ -13753,7 +13753,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &2012822739
 RectTransform:
   m_ObjectHideFlags: 0
@@ -14100,7 +14100,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 793249811}
+      - m_Target: {fileID: 0}
         m_MethodName: DiscussionTab
         m_Mode: 1
         m_Arguments:

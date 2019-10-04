@@ -64,17 +64,19 @@ public class DiscussionSelectionAttitudes : MonoBehaviour
         predictorCounter--;
         //button for statement gets disabled
         btnS1.interactable = false;
+    }
 
+    public void Statement1Selected() {
         //there will only be two because we change to the second set of dialogue to choose
 
         if (predictorCounter == 1) {
             //add to new PlayerPrefs
-            PlayerPrefs.SetString("NewAttitudesDiscussion1", "");
+            PlayerPrefs.SetString("NewAttitudesDiscussion1", statement1.text);
         }
 
         if (predictorCounter == 0) {
             //add to new PlayerPrefs
-            PlayerPrefs.SetString("NewAttitudesDiscussion2", "");
+            PlayerPrefs.SetString("NewAttitudesDiscussion2", statement1.text);
         }
     }
 
@@ -84,17 +86,19 @@ public class DiscussionSelectionAttitudes : MonoBehaviour
         predictorCounter--;
         //button for statement gets disabled
         btnS2.interactable = false;
+    }
 
+    public void Statement2Selected() {
         //there will only be two because we change to the second set of dialogue to choose
 
         if (predictorCounter == 1) {
             //add to new PlayerPrefs
-            PlayerPrefs.SetString("NewAttitudesDiscussion1", "");
+            PlayerPrefs.SetString("NewAttitudesDiscussion1", statement2.text);
         }
 
         if (predictorCounter == 0) {
             //add to new PlayerPrefs
-            PlayerPrefs.SetString("NewAttitudesDiscussion2", "");
+            PlayerPrefs.SetString("NewAttitudesDiscussion2", statement2.text);
         }
     }
 
@@ -104,17 +108,19 @@ public class DiscussionSelectionAttitudes : MonoBehaviour
         predictorCounter--;
         //button for statement gets disabled
         btnS3.interactable = false;
+    }
 
+    public void Statement3Selected() {
         //there will only be two because we change to the second set of dialogue to choose
 
         if (predictorCounter == 1) {
             //add to new PlayerPrefs
-            PlayerPrefs.SetString("NewAttitudesDiscussion1", "");
+            PlayerPrefs.SetString("NewAttitudesDiscussion1", statement3.text);
         }
 
         if (predictorCounter == 0) {
             //add to new PlayerPrefs
-            PlayerPrefs.SetString("NewAttitudesDiscussion2", "");
+            PlayerPrefs.SetString("NewAttitudesDiscussion2", statement3.text);
         }
     }
 
@@ -124,17 +130,19 @@ public class DiscussionSelectionAttitudes : MonoBehaviour
         predictorCounter--;
         //button for statement gets disabled
         btnS4.interactable = false;
+    }
 
+    public void Statement4Selected() {
         //there will only be two because we change to the second set of dialogue to choose
 
         if (predictorCounter == 1) {
             //add to new PlayerPrefs
-            PlayerPrefs.SetString("NewAttitudesDiscussion1", "");
+            PlayerPrefs.SetString("NewAttitudesDiscussion1", statement4.text);
         }
 
         if (predictorCounter == 0) {
             //add to new PlayerPrefs
-            PlayerPrefs.SetString("NewAttitudesDiscussion2", "");
+            PlayerPrefs.SetString("NewAttitudesDiscussion2", statement4.text);
         }
     }
 
@@ -144,17 +152,19 @@ public class DiscussionSelectionAttitudes : MonoBehaviour
         predictorCounter--;
         //button for statement gets disabled
         btnS5.interactable = false;
+    }
 
+    public void Statement5Selected() {
         //there will only be two because we change to the second set of dialogue to choose
 
         if (predictorCounter == 1) {
             //add to new PlayerPrefs
-            PlayerPrefs.SetString("NewAttitudesDiscussion1", "");
+            PlayerPrefs.SetString("NewAttitudesDiscussion1", statement5.text);
         }
 
         if (predictorCounter == 0) {
             //add to new PlayerPrefs
-            PlayerPrefs.SetString("NewAttitudesDiscussion2", "");
+            PlayerPrefs.SetString("NewAttitudesDiscussion2", statement5.text);
         }
     }
 
@@ -164,17 +174,19 @@ public class DiscussionSelectionAttitudes : MonoBehaviour
         predictorCounter--;
         //button for statement gets disabled
         btnS6.interactable = false;
+    }
 
+    public void Statement6Selected() {
         //there will only be two because we change to the second set of dialogue to choose
 
         if (predictorCounter == 1) {
             //add to new PlayerPrefs
-            PlayerPrefs.SetString("NewAttitudesDiscussion1", "");
+            PlayerPrefs.SetString("NewAttitudesDiscussion1", statement6.text);
         }
 
         if (predictorCounter == 0) {
             //add to new PlayerPrefs
-            PlayerPrefs.SetString("NewAttitudesDiscussion2", "");
+            PlayerPrefs.SetString("NewAttitudesDiscussion2", statement6.text);
         }
     }
 }

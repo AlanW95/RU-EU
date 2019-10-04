@@ -2980,7 +2980,7 @@ MonoBehaviour:
   themeDefinitionCanvas: {fileID: 1116076909}
   interviewCanvas: {fileID: 1408915861}
   textDisplay: {fileID: 1940251443}
-  animText: {fileID: 0}
+  animText: {fileID: 1940251446}
   sentences:
   - 'Principles of the Enlightenment, French revolution and ancient Greek civilization
     with modern meanings are the main component of European identity. '
@@ -3723,7 +3723,7 @@ MonoBehaviour:
   themeDefinitionCanvas: {fileID: 1116076909}
   interviewCanvas: {fileID: 1408915861}
   textDisplay: {fileID: 1940251443}
-  animText: {fileID: 0}
+  animText: {fileID: 1940251446}
   sentences:
   - 'Russia is conspiring against EU as they see the advantages of strength and unity. '
   feedbackCanvas: {fileID: 1271130292}
@@ -8895,7 +8895,7 @@ MonoBehaviour:
   themeDefinitionCanvas: {fileID: 1116076909}
   interviewCanvas: {fileID: 1408915861}
   textDisplay: {fileID: 1940251443}
-  animText: {fileID: 0}
+  animText: {fileID: 1940251446}
   sentences:
   - Open borders makes it easy to plan and go on vacations and/or work.
   feedbackCanvas: {fileID: 1271130292}
@@ -10933,7 +10933,7 @@ MonoBehaviour:
   themeDefinitionCanvas: {fileID: 1116076909}
   interviewCanvas: {fileID: 1408915861}
   textDisplay: {fileID: 1940251443}
-  animText: {fileID: 0}
+  animText: {fileID: 1940251446}
   sentences:
   - 'Perhaps Greeks do not feel European. '
   feedbackCanvas: {fileID: 1271130292}
@@ -11699,7 +11699,7 @@ MonoBehaviour:
   themeDefinitionCanvas: {fileID: 1116076909}
   interviewCanvas: {fileID: 1408915861}
   textDisplay: {fileID: 1940251443}
-  animText: {fileID: 0}
+  animText: {fileID: 1940251446}
   sentences:
   - 'People feel less positive about EU because of the conservative and neoliberal
     policies. '
@@ -13870,7 +13870,7 @@ MonoBehaviour:
   themeDefinitionCanvas: {fileID: 1116076909}
   interviewCanvas: {fileID: 1408915861}
   textDisplay: {fileID: 1940251443}
-  animText: {fileID: 0}
+  animText: {fileID: 1940251446}
   sentences:
   - 'Europe has done a lot for the respect for different nations but there are more
     possibilities to make things better in terms of stability and preservence of peace
@@ -14420,7 +14420,7 @@ MonoBehaviour:
   themeDefinitionCanvas: {fileID: 1116076909}
   interviewCanvas: {fileID: 1408915861}
   textDisplay: {fileID: 1940251443}
-  animText: {fileID: 0}
+  animText: {fileID: 1940251446}
   sentences:
   - 'EU related initiatives has enormously enriched the life of a lot of students
     who has participated in different programs funded and hosted by the EU. '
@@ -16622,6 +16622,7 @@ GameObject:
   - component: {fileID: 1940251445}
   - component: {fileID: 1940251444}
   - component: {fileID: 1940251443}
+  - component: {fileID: 1940251446}
   m_Layer: 5
   m_Name: IssueText
   m_TagString: Untagged
@@ -16772,6 +16773,25 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 145}
   m_SizeDelta: {x: -980, y: 120}
   m_Pivot: {x: 0.5, y: 0}
+--- !u!95 &1940251446
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1940251442}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 7c1d9edb5cc9dcf47898a3ad6b4e033b, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &1952967393
 GameObject:
   m_ObjectHideFlags: 0
@@ -18218,7 +18238,7 @@ MonoBehaviour:
   themeDefinitionCanvas: {fileID: 1116076909}
   interviewCanvas: {fileID: 1408915861}
   textDisplay: {fileID: 1940251443}
-  animText: {fileID: 0}
+  animText: {fileID: 1940251446}
   sentences:
   - 'It is absolutely important to have EU to economically thrive against other big
     economically powerful countries. '

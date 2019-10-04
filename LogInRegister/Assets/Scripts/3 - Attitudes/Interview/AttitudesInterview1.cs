@@ -82,7 +82,16 @@ public class AttitudesInterview1 : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-
+        PlayerPrefs.GetInt("CurrentAttitudesSocialScore");
+        PlayerPrefs.GetInt("CurrentAttitudesEnvironmentScore");
+        PlayerPrefs.GetInt("CurrentAttitudesRightsResponsibilitiesScore");
+        PlayerPrefs.GetInt("CurrentAttitudesSafetyAndSecurityScore");
+        PlayerPrefs.GetInt("CurrentAttitudesEmotionalScore");
+        PlayerPrefs.GetInt("CurrentAttitudesEconomyScore");
+        PlayerPrefs.GetInt("CurrentAttitudesPoliticalScore");
+        PlayerPrefs.GetInt("CurrentAttitudesHistoricScore");
+        PlayerPrefs.GetInt("CurrentAttitudesCultureScore");
+        PlayerPrefs.GetInt("CurrentAttitudesGeographyScore");
 
         index = Random.Range(0, sentences.Length);
         //currentIndexSentence = sentences[index];
@@ -90,15 +99,6 @@ public class AttitudesInterview1 : MonoBehaviour
         Debug.Log("InterviewCounter: " + interviewCounter.ToString());
 
         Debug.Log("SecondCounter: " + secondCounter.ToString());
-
-        //  PlayerPrefs.GetInt("CurrentSocialProScore");
-        // PlayerPrefs.GetInt("CurrentSafetySecurityProScore");
-        // PlayerPrefs.GetInt("CurrentRightsResponsibilitiesProScore");
-        // PlayerPrefs.GetInt("CurrentEconomicalProScore");
-        //PlayerPrefs.GetInt("CurrentEmotionalProScore");
-        //PlayerPrefs.GetInt("CurrentHistoricProScore");
-        //PlayerPrefs.GetInt("CurrentPoliticalProScore");
-        //PlayerPrefs.GetInt("CurrentCultureProScore"); 
 
 
         if (textDisplay.text == sentences[index]) {
@@ -116,6 +116,7 @@ public class AttitudesInterview1 : MonoBehaviour
         if (secondCounter == 0) {
             Debug.Log("You have answered 3 questions! If you wish, you may proceed and collect more statements but this will not affect your score.");
             themeSelectionCanvas.SetActive(false);
+
             scoreCanvas.SetActive(true);
             feedbackCanvas.SetActive(true);
         }
@@ -222,24 +223,19 @@ public class AttitudesInterview1 : MonoBehaviour
     }
 
     public void Theme1Selected() {
-        if (interviewCounter == 7) {
-            PlayerPrefs.SetString("AttitudesInterview1", statementText.text);
-            Debug.Log(PlayerPrefs.GetString("AttitudesInterview1"));
-        }
-
-        if (interviewCounter == 6) {
-            PlayerPrefs.SetString("AttitudesInterview1", statementText.text);
-            Debug.Log(PlayerPrefs.GetString("AttitudesInterview1"));
-        }
-
         if (interviewCounter == 5) {
-            PlayerPrefs.SetString("AttitudesInterview1", statementText.text);
-            Debug.Log(PlayerPrefs.GetString("AttitudesInterview1"));
+            PlayerPrefs.SetString("AttitudesInterview1-1", "Open borders makes it easy to plan and go on vacations and/or work.");
+            Debug.Log(PlayerPrefs.GetString("AttitudesInterview1-1"));
         }
 
         if (interviewCounter == 4) {
-            PlayerPrefs.SetString("AttitudesInterview1", statementText.text);
-            Debug.Log(PlayerPrefs.GetString("AttitudesInterview1"));
+            PlayerPrefs.SetString("AttitudesInterview1-2", "Open borders makes it easy to plan and go on vacations and/or work.");
+            Debug.Log(PlayerPrefs.GetString("AttitudesInterview1-2"));
+        }
+
+        if (interviewCounter == 3) {
+            PlayerPrefs.SetString("AttitudesInterview1-3", "Open borders makes it easy to plan and go on vacations and/or work.");
+            Debug.Log(PlayerPrefs.GetString("AttitudesInterview1-3"));
         }
     }
 
@@ -258,28 +254,19 @@ public class AttitudesInterview1 : MonoBehaviour
 
     public void Theme2Selected()
     {
-        if (interviewCounter == 7)
-        {
-            PlayerPrefs.SetString("AttitudesInterview1", statementText.text);
-            Debug.Log(PlayerPrefs.GetString("AttitudesInterview1"));
+        if (interviewCounter == 5) {
+            PlayerPrefs.SetString("AttitudesInterview1-1", "Europe has done a lot for the respect for different nations but there are more possibilities to make things better in terms of stability and preservence of peace in the region.");
+            Debug.Log(PlayerPrefs.GetString("AttitudesInterview1-1"));
         }
 
-        if (interviewCounter == 6)
-        {
-            PlayerPrefs.SetString("AttitudesInterview1", statementText.text);
-            Debug.Log(PlayerPrefs.GetString("AttitudesInterview1"));
+        if (interviewCounter == 4) {
+            PlayerPrefs.SetString("AttitudesInterview1-2", "Europe has done a lot for the respect for different nations but there are more possibilities to make things better in terms of stability and preservence of peace in the region.");
+            Debug.Log(PlayerPrefs.GetString("AttitudesInterview1-2"));
         }
 
-        if (interviewCounter == 5)
-        {
-            PlayerPrefs.SetString("AttitudesInterview1", statementText.text);
-            Debug.Log(PlayerPrefs.GetString("AttitudesInterview1"));
-        }
-
-         if (interviewCounter == 4)
-         {
-        PlayerPrefs.SetString("AttitudesInterview1", statementText.text);
-        Debug.Log(PlayerPrefs.GetString("AttitudesInterview1"));
+        if (interviewCounter == 3) {
+            PlayerPrefs.SetString("AttitudesInterview1-3", "Europe has done a lot for the respect for different nations but there are more possibilities to make things better in terms of stability and preservence of peace in the region.");
+            Debug.Log(PlayerPrefs.GetString("AttitudesInterview1-3"));
         }
     }
 
@@ -297,28 +284,19 @@ public class AttitudesInterview1 : MonoBehaviour
 
     public void Theme3Selected()
     {
-        if (interviewCounter == 7)
-        {
-            PlayerPrefs.SetString("AttitudesInterview1", statementText.text);
-            Debug.Log(PlayerPrefs.GetString("AttitudesInterview1"));
+        if (interviewCounter == 5) {
+            PlayerPrefs.SetString("AttitudesInterview1-1", "People feel less positive about EU because of the conservative and neoliberal policies.");
+            Debug.Log(PlayerPrefs.GetString("AttitudesInterview1-1"));
         }
 
-        if (interviewCounter == 6)
-        {
-            PlayerPrefs.SetString("AttitudesInterview1", statementText.text);
-            Debug.Log(PlayerPrefs.GetString("AttitudesInterview1"));
+        if (interviewCounter == 4) {
+            PlayerPrefs.SetString("AttitudesInterview1-2", "People feel less positive about EU because of the conservative and neoliberal policies.");
+            Debug.Log(PlayerPrefs.GetString("AttitudesInterview1-2"));
         }
 
-        if (interviewCounter == 5)
-        {
-            PlayerPrefs.SetString("AttitudesInterview1", statementText.text);
-            Debug.Log(PlayerPrefs.GetString("AttitudesInterview1"));
-        }
-
-        if (interviewCounter == 4)
-        {
-        PlayerPrefs.SetString("AttitudesInterview1", statementText.text);
-        Debug.Log(PlayerPrefs.GetString("AttitudesInterview1"));
+        if (interviewCounter == 3) {
+            PlayerPrefs.SetString("AttitudesInterview1-3", "People feel less positive about EU because of the conservative and neoliberal policies.");
+            Debug.Log(PlayerPrefs.GetString("AttitudesInterview1-3"));
         }
     }
 
@@ -335,30 +313,20 @@ public class AttitudesInterview1 : MonoBehaviour
 }
     public void Theme4Selected()
     {
-
-        if (interviewCounter == 7)
-        {
-            PlayerPrefs.SetString("AttitudesInterview1", statementText.text);
-            Debug.Log(PlayerPrefs.GetString("AttitudesInterview1"));
+        if (interviewCounter == 5) {
+            PlayerPrefs.SetString("AttitudesInterview1-1", "It is absolutely important to have EU to economically thrive against other big economically powerful countries.");
+            Debug.Log(PlayerPrefs.GetString("AttitudesInterview1-1"));
         }
 
-        if (interviewCounter == 6)
-        {
-            PlayerPrefs.SetString("AttitudesInterview1", statementText.text);
-            Debug.Log(PlayerPrefs.GetString("AttitudesInterview1"));
+        if (interviewCounter == 4) {
+            PlayerPrefs.SetString("AttitudesInterview1-2", "It is absolutely important to have EU to economically thrive against other big economically powerful countries.");
+            Debug.Log(PlayerPrefs.GetString("AttitudesInterview1-2"));
         }
 
-        if (interviewCounter == 5)
-        {
-            PlayerPrefs.SetString("AttitudesInterview1", statementText.text);
-            Debug.Log(PlayerPrefs.GetString("AttitudesInterview1"));
+        if (interviewCounter == 3) {
+            PlayerPrefs.SetString("AttitudesInterview1-3", "It is absolutely important to have EU to economically thrive against other big economically powerful countries.");
+            Debug.Log(PlayerPrefs.GetString("AttitudesInterview1-3"));
         }
-
-        if (interviewCounter == 4)
-        {
-        PlayerPrefs.SetString("AttitudesInterview1", statementText.text);
-        Debug.Log(PlayerPrefs.GetString("AttitudesInterview1"));
-         }
     }
     public void Theme5() {
         theme5Button.interactable = false;
@@ -374,28 +342,19 @@ public class AttitudesInterview1 : MonoBehaviour
 
     public void Theme5Selected()
     {
-        if (interviewCounter == 7)
-        {
-            PlayerPrefs.SetString("AttitudesInterview1", statementText.text);
-            Debug.Log(PlayerPrefs.GetString("AttitudesInterview1"));
+        if (interviewCounter == 5) {
+            PlayerPrefs.SetString("AttitudesInterview1-1", "Perhaps Greeks do not feel European.");
+            Debug.Log(PlayerPrefs.GetString("AttitudesInterview1-1"));
         }
 
-        if (interviewCounter == 6)
-        {
-            PlayerPrefs.SetString("AttitudesInterview1", statementText.text);
-            Debug.Log(PlayerPrefs.GetString("AttitudesInterview1"));
+        if (interviewCounter == 4) {
+            PlayerPrefs.SetString("AttitudesInterview1-2", "Perhaps Greeks do not feel European.");
+            Debug.Log(PlayerPrefs.GetString("AttitudesInterview1-2"));
         }
 
-        if (interviewCounter == 5)
-        {
-            PlayerPrefs.SetString("AttitudesInterview1", statementText.text);
-            Debug.Log(PlayerPrefs.GetString("AttitudesInterview1"));
-        }
-
-        if (interviewCounter == 4)
-        {
-        PlayerPrefs.SetString("AttitudesInterview1", statementText.text);
-        Debug.Log(PlayerPrefs.GetString("AttitudesInterview1"));
+        if (interviewCounter == 3) {
+            PlayerPrefs.SetString("AttitudesInterview1-3", "Perhaps Greeks do not feel European.");
+            Debug.Log(PlayerPrefs.GetString("AttitudesInterview1-3"));
         }
     }
 
@@ -414,29 +373,20 @@ public class AttitudesInterview1 : MonoBehaviour
 
     public void Theme6Selected()
     {
-        if (interviewCounter == 7)
-        {
-            PlayerPrefs.SetString("AttitudesInterview1", statementText.text);
-            Debug.Log(PlayerPrefs.GetString("AttitudesInterview1"));
+        if (interviewCounter == 5) {
+            PlayerPrefs.SetString("AttitudesInterview1-1", "Principles of the Enlightenment, French revolution and ancient Greek civilization with modern meanings are the main component of European identity.");
+            Debug.Log(PlayerPrefs.GetString("AttitudesInterview1-1"));
         }
 
-        if (interviewCounter == 6)
-        {
-            PlayerPrefs.SetString("AttitudesInterview1", statementText.text);
-            Debug.Log(PlayerPrefs.GetString("AttitudesInterview1"));
+        if (interviewCounter == 4) {
+            PlayerPrefs.SetString("AttitudesInterview1-2", "Principles of the Enlightenment, French revolution and ancient Greek civilization with modern meanings are the main component of European identity.");
+            Debug.Log(PlayerPrefs.GetString("AttitudesInterview1-2"));
         }
 
-        if (interviewCounter == 5)
-        {
-            PlayerPrefs.SetString("AttitudesInterview1", statementText.text);
-            Debug.Log(PlayerPrefs.GetString("AttitudesInterview1"));
+        if (interviewCounter == 3) {
+            PlayerPrefs.SetString("AttitudesInterview1-3", "Principles of the Enlightenment, French revolution and ancient Greek civilization with modern meanings are the main component of European identity.");
+            Debug.Log(PlayerPrefs.GetString("AttitudesInterview1-3"));
         }
-
-         if (interviewCounter == 4)
-        {
-            PlayerPrefs.SetString("AttitudesInterview1", statementText.text);
-         Debug.Log(PlayerPrefs.GetString("AttitudesInterview1"));
-         }
     }
     public void Theme7() {
         theme7Button.interactable = false;
@@ -453,29 +403,19 @@ public class AttitudesInterview1 : MonoBehaviour
 }
     public void Theme7Selected()
     {
-
-        if (interviewCounter == 7)
-        {
-            PlayerPrefs.SetString("AttitudesInterview1", statementText.text);
-            Debug.Log(PlayerPrefs.GetString("AttitudesInterview1"));
+        if (interviewCounter == 5) {
+            PlayerPrefs.SetString("AttitudesInterview1-1", "Russia is conspiring against EU as they see the advantages of strength and unity.");
+            Debug.Log(PlayerPrefs.GetString("AttitudesInterview1-1"));
         }
 
-        if (interviewCounter == 6)
-        {
-            PlayerPrefs.SetString("AttitudesInterview1", statementText.text);
-            Debug.Log(PlayerPrefs.GetString("AttitudesInterview1"));
+        if (interviewCounter == 4) {
+            PlayerPrefs.SetString("AttitudesInterview1-2", "Russia is conspiring against EU as they see the advantages of strength and unity.");
+            Debug.Log(PlayerPrefs.GetString("AttitudesInterview1-2"));
         }
 
-        if (interviewCounter == 5)
-        {
-            PlayerPrefs.SetString("AttitudesInterview1", statementText.text);
-            Debug.Log(PlayerPrefs.GetString("AttitudesInterview1"));
-        }
-
-        if (interviewCounter == 4)
-        {
-        PlayerPrefs.SetString("AttitudesInterview1", statementText.text);
-        Debug.Log(PlayerPrefs.GetString("AttitudesInterview1"));
+        if (interviewCounter == 3) {
+            PlayerPrefs.SetString("AttitudesInterview1-3", "Russia is conspiring against EU as they see the advantages of strength and unity.");
+            Debug.Log(PlayerPrefs.GetString("AttitudesInterview1-3"));
         }
     }
     public void Theme8() {
@@ -492,47 +432,19 @@ public class AttitudesInterview1 : MonoBehaviour
 }
     public void Theme8Selected()
     {
-
-        if (interviewCounter == 7)
-        {
-            PlayerPrefs.SetString("AttitudesInterview1", statementText.text);
-            Debug.Log(PlayerPrefs.GetString("AttitudesInterview1"));
+        if (interviewCounter == 5) {
+            PlayerPrefs.SetString("AttitudesInterview1-1", "EU related initiatives has enormously enriched the life of a lot of students who has participated in different programs funded and hosted by the EU.");
+            Debug.Log(PlayerPrefs.GetString("AttitudesInterview1-1"));
         }
 
-        if (interviewCounter == 6)
-        {
-            PlayerPrefs.SetString("AttitudesInterview1", statementText.text);
-            Debug.Log(PlayerPrefs.GetString("AttitudesInterview1"));
+        if (interviewCounter == 4) {
+            PlayerPrefs.SetString("AttitudesInterview1-2", "EU related initiatives has enormously enriched the life of a lot of students who has participated in different programs funded and hosted by the EU.");
+            Debug.Log(PlayerPrefs.GetString("AttitudesInterview1-2"));
         }
 
-        if (interviewCounter == 5)
-        {
-            PlayerPrefs.SetString("AttitudesInterview1", statementText.text);
-            Debug.Log(PlayerPrefs.GetString("AttitudesInterview1"));
+        if (interviewCounter == 3) {
+            PlayerPrefs.SetString("AttitudesInterview1-3", "EU related initiatives has enormously enriched the life of a lot of students who has participated in different programs funded and hosted by the EU.");
+            Debug.Log(PlayerPrefs.GetString("AttitudesInterview1-3"));
         }
-
-        if (interviewCounter == 4)
-          {
-         PlayerPrefs.SetString("AttitudesInterview1", statementText.text);
-         Debug.Log(PlayerPrefs.GetString("AttitudesInterview1"));
-         }
     }
-    //Only 8 themes being used for this interview tool
-    /*public void Theme9() {
-        theme9Button.interactable = false;
-        themeSelectionCanvas.SetActive(false);
-
-        interviewCanvas.SetActive(true);
-
-        StartCoroutine(Type());
-    }
-
-    public void Theme10() {
-        theme10Button.interactable = false;
-        themeSelectionCanvas.SetActive(false);
-
-        interviewCanvas.SetActive(true);
-
-        StartCoroutine(Type());
-    }*/
 }

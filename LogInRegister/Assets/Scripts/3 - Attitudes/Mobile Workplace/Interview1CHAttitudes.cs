@@ -8,11 +8,11 @@ public class Interview1CHAttitudes : AttitudesMobileWorkplace
     public GameObject interviewTool;
 
     void OnMouseDown() {
-        //Interview1();
         SceneManager.LoadScene("InterviewAttitudes1");
+        Interview1();
 
-        //toolObjectiveCountdown--;
-        //PlayerPrefs.SetInt("ObjectiveCountdown", toolObjectiveCountdown);
+        toolObjectiveCountdown--;
+        PlayerPrefs.SetInt("ObjectiveCountdown", toolObjectiveCountdown);
     }
 
     void OnMouseOver() {

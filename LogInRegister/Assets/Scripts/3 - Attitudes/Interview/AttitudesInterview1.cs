@@ -160,7 +160,7 @@ public class AttitudesInterview1 : MonoBehaviour
 
     public void CounterDown() {
         interviewCounter--;
-        Debug.Log("Interview Counter: " + interviewCounter);
+        Debug.Log("InterviewCounter:"+ interviewCounter);
     }
 
     IEnumerator Type() {
@@ -168,7 +168,7 @@ public class AttitudesInterview1 : MonoBehaviour
             textDisplay.text += letter; //letter by letter type animation of the text, more animations can be added via the Animate tab
 
             //Setting of PlayerPrefs----------------------------
-            PlayerPrefs.SetString(proInterview, sentences[index]);
+           // PlayerPrefs.SetString(proInterview, sentences[index]);
             //------------------------------------------------
 
             yield return new WaitForSeconds(typingSpeed);
@@ -188,7 +188,7 @@ public class AttitudesInterview1 : MonoBehaviour
 
         if (index < sentences.Length - 1) {
             Debug.Log("Button has been pressed");
-            index++;
+           // index++;
             //currentIndexSentence = sentences[index];
             textDisplay.text = "";
 
@@ -276,10 +276,10 @@ public class AttitudesInterview1 : MonoBehaviour
             Debug.Log(PlayerPrefs.GetString("AttitudesInterview1"));
         }
 
-        if (interviewCounter == 4)
-        {
-            PlayerPrefs.SetString("AttitudesInterview1", statementText.text);
-            Debug.Log(PlayerPrefs.GetString("AttitudesInterview1"));
+         if (interviewCounter == 4)
+         {
+        PlayerPrefs.SetString("AttitudesInterview1", statementText.text);
+        Debug.Log(PlayerPrefs.GetString("AttitudesInterview1"));
         }
     }
 
@@ -317,8 +317,8 @@ public class AttitudesInterview1 : MonoBehaviour
 
         if (interviewCounter == 4)
         {
-            PlayerPrefs.SetString("AttitudesInterview1", statementText.text);
-            Debug.Log(PlayerPrefs.GetString("AttitudesInterview1"));
+        PlayerPrefs.SetString("AttitudesInterview1", statementText.text);
+        Debug.Log(PlayerPrefs.GetString("AttitudesInterview1"));
         }
     }
 
@@ -356,9 +356,9 @@ public class AttitudesInterview1 : MonoBehaviour
 
         if (interviewCounter == 4)
         {
-            PlayerPrefs.SetString("AttitudesInterview1", statementText.text);
-            Debug.Log(PlayerPrefs.GetString("AttitudesInterview1"));
-        }
+        PlayerPrefs.SetString("AttitudesInterview1", statementText.text);
+        Debug.Log(PlayerPrefs.GetString("AttitudesInterview1"));
+         }
     }
     public void Theme5() {
         theme5Button.interactable = false;
@@ -394,8 +394,8 @@ public class AttitudesInterview1 : MonoBehaviour
 
         if (interviewCounter == 4)
         {
-            PlayerPrefs.SetString("AttitudesInterview1", statementText.text);
-            Debug.Log(PlayerPrefs.GetString("AttitudesInterview1"));
+        PlayerPrefs.SetString("AttitudesInterview1", statementText.text);
+        Debug.Log(PlayerPrefs.GetString("AttitudesInterview1"));
         }
     }
 
@@ -432,11 +432,11 @@ public class AttitudesInterview1 : MonoBehaviour
             Debug.Log(PlayerPrefs.GetString("AttitudesInterview1"));
         }
 
-        if (interviewCounter == 4)
+         if (interviewCounter == 4)
         {
             PlayerPrefs.SetString("AttitudesInterview1", statementText.text);
-            Debug.Log(PlayerPrefs.GetString("AttitudesInterview1"));
-        }
+         Debug.Log(PlayerPrefs.GetString("AttitudesInterview1"));
+         }
     }
     public void Theme7() {
         theme7Button.interactable = false;
@@ -474,8 +474,8 @@ public class AttitudesInterview1 : MonoBehaviour
 
         if (interviewCounter == 4)
         {
-            PlayerPrefs.SetString("AttitudesInterview1", statementText.text);
-            Debug.Log(PlayerPrefs.GetString("AttitudesInterview1"));
+        PlayerPrefs.SetString("AttitudesInterview1", statementText.text);
+        Debug.Log(PlayerPrefs.GetString("AttitudesInterview1"));
         }
     }
     public void Theme8() {
@@ -512,10 +512,10 @@ public class AttitudesInterview1 : MonoBehaviour
         }
 
         if (interviewCounter == 4)
-        {
-            PlayerPrefs.SetString("AttitudesInterview1", statementText.text);
-            Debug.Log(PlayerPrefs.GetString("AttitudesInterview1"));
-        }
+          {
+         PlayerPrefs.SetString("AttitudesInterview1", statementText.text);
+         Debug.Log(PlayerPrefs.GetString("AttitudesInterview1"));
+         }
     }
     //Only 8 themes being used for this interview tool
     /*public void Theme9() {

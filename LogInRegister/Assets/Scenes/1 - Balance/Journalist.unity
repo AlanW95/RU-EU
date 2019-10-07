@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.44657898, g: 0.4964133, b: 0.5748178, a: 1}
+  m_IndirectSpecularColor: {r: 0.44657868, g: 0.49641263, b: 0.57481706, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -19316,7 +19316,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1707301738}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7991048b677dd7c44badc21a6fa05204, type: 3}
+  m_Script: {fileID: 11500000, guid: ab4413031b7f982438ba489dc88ca1e4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   interview1: {fileID: 927768664}
@@ -19324,6 +19324,7 @@ MonoBehaviour:
   discussion: {fileID: 617982931}
   newsflash: {fileID: 1366833983}
   finalAssignment: {fileID: 1641170704}
+  mobilePhone: {fileID: 1044808111}
   discussionCollider: {fileID: 617982933}
   interview1Collider: {fileID: 927768667}
   interview2Collider: {fileID: 22638018}

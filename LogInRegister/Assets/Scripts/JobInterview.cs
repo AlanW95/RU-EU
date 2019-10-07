@@ -20,6 +20,14 @@ public class JobInterview : MonoBehaviour
     public TMP_InputField otherInputField;
     public TextMeshProUGUI a1, a2, a3, a4, a5, a6;
 
+    public GameObject one, two, three, four, five, six, seven, eight, nine, ten, eleven, twelve, thirteen, fourteen, fifteen, sixteen, seventeen, eighteen, nineteen;
+
+    private string q1Answer, q2Answer, q3Answer, q4Answer, q5Answer, q6Answer, q7Answer, q8Answer, q9Answer,
+                    q10Answer, q11Answer, q12Answer, q13Answer, q14Answer, q15Answer, q16Answer, q17Answer, q18Answer, q19Answer;
+
+    [SerializeField]
+    private string BASE_URL = "https://docs.google.com/forms/d/e/1FAIpQLSdUEfRXkMjAhyMkHbg9T3UvV253zYP7QhI95_gEkmJ7t7irzw/formResponse";
+
     public static int counter = 0;
 
     // Start is called before the first frame update
@@ -409,5 +417,62 @@ public class JobInterview : MonoBehaviour
         answer5.SetActive(true);
         answer6.SetActive(false);
         inputField.SetActive(false);
+    }
+
+    IEnumerator Post(string q1Answer, string q2Answer, string q3Answer, string q4Answer, string q5Answer, string q6Answer, string q7Answer,
+                    string q8Answer, string q9Answer, string q10Answer, string q11Answer, string q12Answer, string q13Answer, string q14Answer,
+                    string q15Answer, string q16Answer, string q17Answer, string q18Answer, string q19Answer) {
+
+        WWWForm form = new WWWForm();
+
+        form.AddField("entry.598450662", q1Answer);
+        form.AddField("entry.945306097", q2Answer);
+        form.AddField("entry.39158012", q3Answer);
+        form.AddField("entry.1292453078", q4Answer);
+        form.AddField("entry.1584333848", q5Answer);
+        form.AddField("entry.961712334", q6Answer);
+        form.AddField("entry.1638152976", q7Answer);
+        form.AddField("entry.214749853", q8Answer);
+        form.AddField("entry.898159844", q9Answer);
+        form.AddField("entry.1493578472", q10Answer);
+        form.AddField("entry.853945003", q11Answer);
+        form.AddField("entry.1428687212", q12Answer);
+        form.AddField("entry.1589165296", q13Answer);
+        form.AddField("entry.176801594", q14Answer);
+        form.AddField("entry.560029309", q15Answer);
+        form.AddField("entry.659858946", q16Answer);
+        form.AddField("entry.1810636355", q17Answer);
+        form.AddField("entry.1746438365", q18Answer);
+        form.AddField("entry.1722127928", q19Answer);
+
+        byte[] rawData = form.data;
+        WWW www = new WWW(BASE_URL, rawData);
+
+        yield return www;
+    }
+
+    public void Send() {
+        q1Answer = one.GetComponent<TextMeshProUGUI>().text;
+        q2Answer = two.GetComponent<TextMeshProUGUI>().text;
+        q3Answer = three.GetComponent<TextMeshProUGUI>().text;
+        q4Answer = four.GetComponent<TextMeshProUGUI>().text;
+        q5Answer = five.GetComponent<TextMeshProUGUI>().text;
+        q6Answer = six.GetComponent<TextMeshProUGUI>().text;
+        q7Answer = seven.GetComponent<TextMeshProUGUI>().text;
+        q8Answer = eight.GetComponent<TextMeshProUGUI>().text;
+        q9Answer = nine.GetComponent<TextMeshProUGUI>().text;
+        q10Answer = ten.GetComponent<TextMeshProUGUI>().text;
+        q11Answer = eleven.GetComponent<TextMeshProUGUI>().text;
+        q12Answer = twelve.GetComponent<TextMeshProUGUI>().text;
+        q13Answer = thirteen.GetComponent<TextMeshProUGUI>().text;
+        q14Answer = fourteen.GetComponent<TextMeshProUGUI>().text;
+        q15Answer = fifteen.GetComponent<TextMeshProUGUI>().text;
+        q16Answer = sixteen.GetComponent<TextMeshProUGUI>().text;
+        q17Answer = seventeen.GetComponent<TextMeshProUGUI>().text;
+        q18Answer = eighteen.GetComponent<TextMeshProUGUI>().text;
+        q19Answer = nineteen.GetComponent<TextMeshProUGUI>().text;
+
+        StartCoroutine(Post(q1Answer, q2Answer, q3Answer, q4Answer, q5Answer, q6Answer, q7Answer, q8Answer, q9Answer, q10Answer, q11Answer, q12Answer, q13Answer, q14Answer,
+                            q15Answer, q16Answer, q17Answer, q18Answer, q19Answer));
     }
 }

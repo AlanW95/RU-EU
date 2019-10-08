@@ -103,6 +103,6 @@ public class NotebookAttitudes : MonoBehaviour
     }
 
     public void ReturnToWorkplace() {
-        SceneManager.LoadScene("Journalist");
+        SceneManager.LoadScene("AttitudesMobileWorkplace");
     }
 }

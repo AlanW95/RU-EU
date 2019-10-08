@@ -7,22 +7,24 @@ using TMPro;
 
 public class JobInterview : MonoBehaviour
 {
-    public GameObject welcomeCanvas, questionsCanvas, finishCanvas;
+    public GameObject welcomeCanvas, set2QuestionCanvas, set3QuestionCanvas, set4QuestionCanvas, set5QuestionCanvas, set6QuestionCanvas, questionsCanvas, finishCanvas;
 
     public TextMeshProUGUI counterText;
     public TextMeshProUGUI welcomeText, finishedText;
 
+    public GameObject q1, q2, q3, q4, q5, q6, q7, q8, q9, q10, q11, q12, q13, q14, q15, q16, q17, q18, q19;
+
     //Question Text
-    public TextMeshProUGUI questions;
+    //public TextMeshProUGUI questions;
 
     //Answer Text
-    public GameObject answer3, answer4, answer5, answer6, inputField;
+    //public GameObject answer3, answer4, answer5, answer6, inputField;
     public TMP_InputField otherInputField;
-    public TextMeshProUGUI a1, a2, a3, a4, a5, a6;
+    //public TextMeshProUGUI a1, a2, a3, a4, a5, a6;
 
-    public GameObject one, two, three, four, five, six, seven, eight, nine, ten, eleven, twelve, thirteen, fourteen, fifteen, sixteen, seventeen, eighteen, nineteen;
+    public GameObject email, one, two, three, four, five, six, seven, eight, nine, ten, eleven, twelve, thirteen, fourteen, fifteen, sixteen, seventeen, eighteen, nineteen;
 
-    private string q1Answer, q2Answer, q3Answer, q4Answer, q5Answer, q6Answer, q7Answer, q8Answer, q9Answer,
+    private string emailAnswer, q1Answer, q2Answer, q3Answer, q4Answer, q5Answer, q6Answer, q7Answer, q8Answer, q9Answer,
                     q10Answer, q11Answer, q12Answer, q13Answer, q14Answer, q15Answer, q16Answer, q17Answer, q18Answer, q19Answer;
 
     [SerializeField]
@@ -68,7 +70,8 @@ public class JobInterview : MonoBehaviour
         }
 
         if (counter == 7) {
-            Question8();
+            Set2Questions();
+            //Question8();
         }
 
         if (counter == 8) {
@@ -76,7 +79,8 @@ public class JobInterview : MonoBehaviour
         }
 
         if (counter == 9) {
-            Question10();
+            Set3Questions();
+            //Question10();
         }
 
         if (counter == 10) {
@@ -88,7 +92,8 @@ public class JobInterview : MonoBehaviour
         }
 
         if (counter == 12) {
-            Question13();
+            Set4Questions();
+            //Question13();
         }
 
         if (counter == 13) {
@@ -100,7 +105,8 @@ public class JobInterview : MonoBehaviour
         }
 
         if (counter == 15) {
-            Question16();
+            Set5Questions();
+            //Question16();
         }
 
         if (counter == 16) {
@@ -108,7 +114,8 @@ public class JobInterview : MonoBehaviour
         }
 
         if (counter == 17) {
-            Question18();
+            Set6Questions();
+            //Question18();
         }
 
         if (counter == 18) {
@@ -128,12 +135,6 @@ public class JobInterview : MonoBehaviour
         welcomeText.text = "So first of all here are some basic questions about yourself.";
     }
 
-    public void FinishedCanvas() {
-        questionsCanvas.SetActive(false);
-        finishCanvas.SetActive(true);
-        finishedText.text = "Thank you very much. We will ask you the same questions after you have played the game.";
-    }
-
     public void LoadSuccessJobInterview() {
         SceneManager.LoadScene("SuccessJobInterview");
     }
@@ -142,7 +143,10 @@ public class JobInterview : MonoBehaviour
         welcomeCanvas.SetActive(false);
         questionsCanvas.SetActive(true);
         counterText.text = "1 / 19";
-        questions.text = "Can you tell us your age?";
+
+        q1.SetActive(true);
+
+        /*questions.text = "Can you tell us your age?";
         a1.text = "18 - 23";
         a2.text = "24 - 29";
         a3.text = "30 - 35";
@@ -151,12 +155,16 @@ public class JobInterview : MonoBehaviour
         answer4.SetActive(true);
         answer5.SetActive(false);
         answer6.SetActive(false);
-        inputField.SetActive(false);
+        inputField.SetActive(false);*/
     }
 
     public void Question2() {
         counterText.text = "2 / 19";
-        questions.text = "What gender are you?";
+
+        q1.SetActive(false);
+        q2.SetActive(true);
+
+        /*questions.text = "What gender are you?";
         a1.text = "Male";
         a2.text = "Female";
         a3.text = "Prefer not to say";
@@ -164,12 +172,16 @@ public class JobInterview : MonoBehaviour
         answer4.SetActive(false);
         answer5.SetActive(false);
         answer6.SetActive(false);
-        inputField.SetActive(false);
+        inputField.SetActive(false);*/
     }
 
     public void Question3() {
         counterText.text = "3 / 19";
-        questions.text = "And can you tell us your national identity?";
+
+        q2.SetActive(false);
+        q3.SetActive(true);
+
+        /*questions.text = "And can you tell us your national identity?";
         a1.text = "British";
         a2.text = "German";
         a3.text = "Dutch";
@@ -180,12 +192,16 @@ public class JobInterview : MonoBehaviour
         answer4.SetActive(true);
         answer5.SetActive(true);
         answer6.SetActive(true);
-        inputField.SetActive(true);
+        inputField.SetActive(true);*/
     }
 
     public void Question4() {
         counterText.text = "4 / 19";
-        questions.text = "And can you tell us your country of residence?";
+
+        q3.SetActive(false);
+        q4.SetActive(true);
+
+        /*questions.text = "And can you tell us your country of residence?";
         a1.text = "UK";
         a2.text = "Germany";
         a3.text = "Holland";
@@ -196,12 +212,16 @@ public class JobInterview : MonoBehaviour
         answer4.SetActive(true);
         answer5.SetActive(true);
         answer6.SetActive(true);
-        inputField.SetActive(true);
+        inputField.SetActive(true);*/
     }
 
     public void Question5() {
         counterText.text = "5 / 19";
-        questions.text = "What is your area of study?";
+
+        q4.SetActive(false);
+        q5.SetActive(true);
+
+        /*questions.text = "What is your area of study?";
         a1.text = "Social Science";
         a2.text = "Business";
         a3.text = "Computing";
@@ -210,12 +230,16 @@ public class JobInterview : MonoBehaviour
         answer4.SetActive(false);
         answer5.SetActive(false);
         answer6.SetActive(true);
-        inputField.SetActive(true);
+        inputField.SetActive(true);*/
     }
 
     public void Question6() {
         counterText.text = "6 / 19";
-        questions.text = "What is your previously completed level of education?";
+
+        q5.SetActive(false);
+        q6.SetActive(true);
+
+        /*questions.text = "What is your previously completed level of education?";
         a1.text = "University Education";
         a2.text = "Secondary School";
         a3.text = "Other, please state:";
@@ -224,12 +248,16 @@ public class JobInterview : MonoBehaviour
         answer4.SetActive(false);
         answer5.SetActive(false);
         answer6.SetActive(true);
-        inputField.SetActive(true);
+        inputField.SetActive(true);*/
     }
 
     public void Question7() {
         counterText.text = "7 / 19";
-        questions.text = "What is your work status?";
+
+        q6.SetActive(false);
+        q7.SetActive(true);
+
+        /*questions.text = "What is your work status?";
         a1.text = "Working fulltime";
         a2.text = "Working part time";
         a3.text = "Unemployed";
@@ -238,12 +266,24 @@ public class JobInterview : MonoBehaviour
         answer4.SetActive(true);
         answer5.SetActive(false);
         answer6.SetActive(false);
-        inputField.SetActive(false);
+        inputField.SetActive(false);*/
+    }
+
+    public void Set2Questions() {
+        //questionsCanvas.SetActive(false);
+        set2QuestionCanvas.SetActive(true);
     }
 
     public void Question8() {
+        set2QuestionCanvas.SetActive(false);
+        //questionsCanvas.SetActive(true);
+
         counterText.text = "8 / 19";
-        questions.text = "Which of these geographical groups would you say was the most important to you in terms of where you feel you belong?";
+
+        q7.SetActive(false);
+        q8.SetActive(true);
+
+        /*questions.text = "Which of these geographical groups would you say was the most important to you in terms of where you feel you belong?";
         a1.text = "The locality or town where you live";
         a2.text = "The region or country where you live";
         a3.text = "Your country as a whole";
@@ -253,12 +293,16 @@ public class JobInterview : MonoBehaviour
         answer4.SetActive(true);
         answer5.SetActive(true);
         answer6.SetActive(false);
-        inputField.SetActive(false);
+        inputField.SetActive(false);*/
     }
 
     public void Question9() {
         counterText.text = "9 / 19";
-        questions.text = "And the next most important?";
+
+        q8.SetActive(false);
+        q9.SetActive(true);
+
+        /*questions.text = "And the next most important?";
         a1.text = "The locality or town where you live";
         a2.text = "The region or country where you live";
         a3.text = "Your country as a whole";
@@ -268,12 +312,24 @@ public class JobInterview : MonoBehaviour
         answer4.SetActive(true);
         answer5.SetActive(true);
         answer6.SetActive(false);
-        inputField.SetActive(false);
+        inputField.SetActive(false);*/
+    }
+
+    public void Set3Questions() {
+        questionsCanvas.SetActive(false);
+        set3QuestionCanvas.SetActive(true);
     }
 
     public void Question10() {
+        set3QuestionCanvas.SetActive(false);
+        questionsCanvas.SetActive(true);
+
         counterText.text = "10 / 19";
-        questions.text = "Does the term 'European identity' mean anything to you?";
+
+        q9.SetActive(false);
+        q10.SetActive(true);
+
+        /*questions.text = "Does the term 'European identity' mean anything to you?";
         a1.text = "Yes, a lot";
         a2.text = "Yes, somewhat";
         a3.text = "Not very much";
@@ -283,12 +339,16 @@ public class JobInterview : MonoBehaviour
         answer4.SetActive(true);
         answer5.SetActive(true);
         answer6.SetActive(false);
-        inputField.SetActive(false);
+        inputField.SetActive(false);*/
     }
 
     public void Question11() {
         counterText.text = "11 / 19";
-        questions.text = "Do you ever think of yourself as a citizen of Europe?";
+
+        q10.SetActive(false);
+        q11.SetActive(true);
+
+        /*questions.text = "Do you ever think of yourself as a citizen of Europe?";
         a1.text = "Often";
         a2.text = "Sometimes";
         a3.text = "Never";
@@ -297,12 +357,16 @@ public class JobInterview : MonoBehaviour
         answer4.SetActive(true);
         answer5.SetActive(false);
         answer6.SetActive(false);
-        inputField.SetActive(false);
+        inputField.SetActive(false);*/
     }
 
     public void Question12() {
         counterText.text = "12 / 19";
-        questions.text = "Do you ever think of yourself as not only (your nationality) but also European?";
+
+        q11.SetActive(false);
+        q12.SetActive(true);
+
+        /*questions.text = "Do you ever think of yourself as not only (your nationality) but also European?";
         a1.text = "Often";
         a2.text = "Sometimes";
         a3.text = "Never";
@@ -311,12 +375,24 @@ public class JobInterview : MonoBehaviour
         answer4.SetActive(true);
         answer5.SetActive(false);
         answer6.SetActive(false);
-        inputField.SetActive(false);
+        inputField.SetActive(false);*/
+    }
+
+    public void Set4Questions() {
+        questionsCanvas.SetActive(false);
+        set4QuestionCanvas.SetActive(true);
     }
 
     public void Question13() {
+        set4QuestionCanvas.SetActive(false);
+        questionsCanvas.SetActive(true);
+
         counterText.text = "13 / 19";
-        questions.text = "How attached or close do you feel to the EU?";
+
+        q12.SetActive(false);
+        q13.SetActive(true);
+
+        /*questions.text = "How attached or close do you feel to the EU?";
         a1.text = "Very attached/ very close";
         a2.text = "Fairly attached/ fairly close";
         a3.text = "Not very attached/ not very close";
@@ -326,12 +402,16 @@ public class JobInterview : MonoBehaviour
         answer4.SetActive(true);
         answer5.SetActive(true);
         answer6.SetActive(false);
-        inputField.SetActive(false);
+        inputField.SetActive(false);*/
     }
 
     public void Question14() {
         counterText.text = "14 / 19";
-        questions.text = "How much does being an EU citizen have to do with how you feel about yourself in your day-to-day life?";
+
+        q13.SetActive(false);
+        q14.SetActive(true);
+
+        /*questions.text = "How much does being an EU citizen have to do with how you feel about yourself in your day-to-day life?";
         a1.text = "A great deal";
         a2.text = "Somewhat";
         a3.text = "Not very much";
@@ -341,12 +421,16 @@ public class JobInterview : MonoBehaviour
         answer4.SetActive(true);
         answer5.SetActive(true);
         answer6.SetActive(false);
-        inputField.SetActive(false);
+        inputField.SetActive(false);*/
     }
 
     public void Question15() {
         counterText.text = "15 / 19";
-        questions.text = "How far do you feel that what happens in the EU in general has consequences for people like you?";
+
+        q14.SetActive(false);
+        q15.SetActive(true);
+
+        /*questions.text = "How far do you feel that what happens in the EU in general has consequences for people like you?";
         a1.text = "A great deal";
         a2.text = "Somewhat";
         a3.text = "Not very much";
@@ -356,12 +440,24 @@ public class JobInterview : MonoBehaviour
         answer4.SetActive(true);
         answer5.SetActive(true);
         answer6.SetActive(false);
-        inputField.SetActive(false);
+        inputField.SetActive(false);*/
+    }
+
+    public void Set5Questions() {
+        questionsCanvas.SetActive(false);
+        set5QuestionCanvas.SetActive(true);
     }
 
     public void Question16() {
+        set5QuestionCanvas.SetActive(false);
+        questionsCanvas.SetActive(true);
+
         counterText.text = "16 / 19";
-        questions.text = "How attached or close do you feel to your own country?";
+
+        q15.SetActive(false);
+        q16.SetActive(true);
+
+        /*questions.text = "How attached or close do you feel to your own country?";
         a1.text = "Very attached/ very close";
         a2.text = "Fairly attached/ fairly close";
         a3.text = "Not very attached/ not very close";
@@ -371,12 +467,16 @@ public class JobInterview : MonoBehaviour
         answer4.SetActive(true);
         answer5.SetActive(true);
         answer6.SetActive(false);
-        inputField.SetActive(false);
+        inputField.SetActive(false);*/
     }
 
     public void Question17() {
         counterText.text = "17 / 19";
-        questions.text = "In this list, can you say how you would describe yourself?";
+
+        q16.SetActive(false);
+        q17.SetActive(true);
+
+        /*questions.text = "In this list, can you say how you would describe yourself?";
         a1.text = "My nationality only";
         a2.text = "More my own nationality than European";
         a3.text = "Equally my own nationality and European";
@@ -386,12 +486,24 @@ public class JobInterview : MonoBehaviour
         answer4.SetActive(true);
         answer5.SetActive(true);
         answer6.SetActive(false);
-        inputField.SetActive(false);
+        inputField.SetActive(false);*/
+    }
+
+    public void Set6Questions() {
+        questionsCanvas.SetActive(false);
+        set6QuestionCanvas.SetActive(true);
     }
 
     public void Question18() {
+        set6QuestionCanvas.SetActive(false);
+        questionsCanvas.SetActive(true);
+
         counterText.text = "18 / 19";
-        questions.text = "Do you feel a sense of pride at belonging to your own country?";
+
+        q17.SetActive(false);
+        q18.SetActive(true);
+
+        /*questions.text = "Do you feel a sense of pride at belonging to your own country?";
         a1.text = "Very proud";
         a2.text = "Fairly proud";
         a3.text = "Not very proud";
@@ -401,12 +513,16 @@ public class JobInterview : MonoBehaviour
         answer4.SetActive(true);
         answer5.SetActive(true);
         answer6.SetActive(false);
-        inputField.SetActive(false);
+        inputField.SetActive(false);*/
     }
 
     public void Question19() {
         counterText.text = "19 / 19";
-        questions.text = "Do you feel a sense of pride at being an EU citizen?";
+
+        q18.SetActive(false);
+        q19.SetActive(true);
+
+        /*questions.text = "Do you feel a sense of pride at being an EU citizen?";
         a1.text = "Very proud";
         a2.text = "Fairly proud";
         a3.text = "Not very proud";
@@ -416,15 +532,22 @@ public class JobInterview : MonoBehaviour
         answer4.SetActive(true);
         answer5.SetActive(true);
         answer6.SetActive(false);
-        inputField.SetActive(false);
+        inputField.SetActive(false);*/
     }
 
-    IEnumerator Post(string q1Answer, string q2Answer, string q3Answer, string q4Answer, string q5Answer, string q6Answer, string q7Answer,
+    public void FinishedCanvas() {
+        questionsCanvas.SetActive(false);
+        finishCanvas.SetActive(true);
+        finishedText.text = "Thank you very much. We will ask you the same questions after you have played the game.";
+    }
+
+    IEnumerator Post(string emailAnswer, string q1Answer, string q2Answer, string q3Answer, string q4Answer, string q5Answer, string q6Answer, string q7Answer,
                     string q8Answer, string q9Answer, string q10Answer, string q11Answer, string q12Answer, string q13Answer, string q14Answer,
                     string q15Answer, string q16Answer, string q17Answer, string q18Answer, string q19Answer) {
 
         WWWForm form = new WWWForm();
 
+        form.AddField("entry.569468777", emailAnswer);
         form.AddField("entry.598450662", q1Answer);
         form.AddField("entry.945306097", q2Answer);
         form.AddField("entry.39158012", q3Answer);
@@ -452,27 +575,28 @@ public class JobInterview : MonoBehaviour
     }
 
     public void Send() {
-        q1Answer = one.GetComponent<TextMeshProUGUI>().text;
-        q2Answer = two.GetComponent<TextMeshProUGUI>().text;
-        q3Answer = three.GetComponent<TextMeshProUGUI>().text;
-        q4Answer = four.GetComponent<TextMeshProUGUI>().text;
-        q5Answer = five.GetComponent<TextMeshProUGUI>().text;
-        q6Answer = six.GetComponent<TextMeshProUGUI>().text;
-        q7Answer = seven.GetComponent<TextMeshProUGUI>().text;
-        q8Answer = eight.GetComponent<TextMeshProUGUI>().text;
-        q9Answer = nine.GetComponent<TextMeshProUGUI>().text;
-        q10Answer = ten.GetComponent<TextMeshProUGUI>().text;
-        q11Answer = eleven.GetComponent<TextMeshProUGUI>().text;
-        q12Answer = twelve.GetComponent<TextMeshProUGUI>().text;
-        q13Answer = thirteen.GetComponent<TextMeshProUGUI>().text;
-        q14Answer = fourteen.GetComponent<TextMeshProUGUI>().text;
-        q15Answer = fifteen.GetComponent<TextMeshProUGUI>().text;
-        q16Answer = sixteen.GetComponent<TextMeshProUGUI>().text;
-        q17Answer = seventeen.GetComponent<TextMeshProUGUI>().text;
-        q18Answer = eighteen.GetComponent<TextMeshProUGUI>().text;
-        q19Answer = nineteen.GetComponent<TextMeshProUGUI>().text;
+        emailAnswer = email.GetComponent<InputField>().text;
+        q1Answer = one.GetComponent<InputField>().text;
+        q2Answer = two.GetComponent<InputField>().text;
+        q3Answer = three.GetComponent<InputField>().text;
+        q4Answer = four.GetComponent<InputField>().text;
+        q5Answer = five.GetComponent<InputField>().text;
+        q6Answer = six.GetComponent<InputField>().text;
+        q7Answer = seven.GetComponent<InputField>().text;
+        q8Answer = eight.GetComponent<InputField>().text;
+        q9Answer = nine.GetComponent<InputField>().text;
+        q10Answer = ten.GetComponent<InputField>().text;
+        q11Answer = eleven.GetComponent<InputField>().text;
+        q12Answer = twelve.GetComponent<InputField>().text;
+        q13Answer = thirteen.GetComponent<InputField>().text;
+        q14Answer = fourteen.GetComponent<InputField>().text;
+        q15Answer = fifteen.GetComponent<InputField>().text;
+        q16Answer = sixteen.GetComponent<InputField>().text;
+        q17Answer = seventeen.GetComponent<InputField>().text;
+        q18Answer = eighteen.GetComponent<InputField>().text;
+        q19Answer = nineteen.GetComponent<InputField>().text;
 
-        StartCoroutine(Post(q1Answer, q2Answer, q3Answer, q4Answer, q5Answer, q6Answer, q7Answer, q8Answer, q9Answer, q10Answer, q11Answer, q12Answer, q13Answer, q14Answer,
+        StartCoroutine(Post(emailAnswer, q1Answer, q2Answer, q3Answer, q4Answer, q5Answer, q6Answer, q7Answer, q8Answer, q9Answer, q10Answer, q11Answer, q12Answer, q13Answer, q14Answer,
                             q15Answer, q16Answer, q17Answer, q18Answer, q19Answer));
     }
 }

@@ -13940,7 +13940,7 @@ PrefabInstance:
     - target: {fileID: 2389776, guid: 2f1666ad9b7fdd7459a360619d6ccffd, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
-      objectReference: {fileID: 2100000, guid: 2e1c4d394fe5ade479fc76b3ef54ea65, type: 2}
+      objectReference: {fileID: 2100000, guid: f5ee0735937fa834a8f49d1240471326, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2f1666ad9b7fdd7459a360619d6ccffd, type: 3}
 --- !u!1 &1305778706
@@ -19316,7 +19316,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1707301738}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7991048b677dd7c44badc21a6fa05204, type: 3}
+  m_Script: {fileID: 11500000, guid: ab4413031b7f982438ba489dc88ca1e4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   interview1: {fileID: 927768664}
@@ -19324,6 +19324,7 @@ MonoBehaviour:
   discussion: {fileID: 617982931}
   newsflash: {fileID: 1366833983}
   finalAssignment: {fileID: 1641170704}
+  mobilePhone: {fileID: 1044808111}
   discussionCollider: {fileID: 617982933}
   interview1Collider: {fileID: 927768667}
   interview2Collider: {fileID: 22638018}
@@ -20954,7 +20955,7 @@ PrefabInstance:
     - target: {fileID: 2389776, guid: 2f1666ad9b7fdd7459a360619d6ccffd, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
-      objectReference: {fileID: 2100000, guid: 4d627e254924a654fb64e03702c18675, type: 2}
+      objectReference: {fileID: 2100000, guid: 76abc5f840763d14ca3c5b66a263bd4e, type: 2}
     - target: {fileID: 2389776, guid: 2f1666ad9b7fdd7459a360619d6ccffd, type: 3}
       propertyPath: m_LightProbeUsage
       value: 1

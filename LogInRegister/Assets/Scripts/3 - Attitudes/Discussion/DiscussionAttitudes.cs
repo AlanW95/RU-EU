@@ -344,8 +344,8 @@ public class DiscussionAttitudes : MonoBehaviour
                 character3Text[1].SetActive(true);
 
                 theme2Character1.text = "A European economic and monetary union with 1 single currency is essential for keeping EU competitive.";
-                theme2Character2.text = "The Euro and a monetary union is not advantageous for the Europe.";
-                theme2Character3.text = "Regarding if a single monetary union with a single currency is good or not, is not so easy to say per se, since so many factors play a role.";
+                theme2Character2.text = "The Euro and a monetary union is not advantageous for the EU.";
+                theme2Character3.text = "Regarding if a single monetary union with a single currency is good or not, is not so easy to say per see, since so many factors play a role.";
 
                 proCharacter.SetActive(true);
                 antiCharacter.SetActive(true);
@@ -627,9 +627,9 @@ public class DiscussionAttitudes : MonoBehaviour
                 character2Text[4].SetActive(true);
                 character3Text[4].SetActive(true);
 
-                theme5Character1.text = "Throughout the history of the EC and EU the peacekeeping aspect has been very important and beneficial for the prosperity of Europé.";
+                theme5Character1.text = "Throughout the history of the EC and EU the peacekeeping aspect has been very important and beneficial for the prosperity of Europe.";
                 theme5Character2.text = "Throughout the history of the EC and EU the peacekeeping aspect deserves recognition.";
-                theme5Character3.text = "The relevance of peacekeeping function of EC/EU in Europé is exaggerated, and should not be compared with that of NATO.";
+                theme5Character3.text = "The relevance of peacekeeping function of EC/EU in Europe is exaggerated, and should not be compared with that of NATO.";
 
                 proCharacter.SetActive(true);
                 antiCharacter.SetActive(true);
@@ -898,7 +898,7 @@ public class DiscussionAttitudes : MonoBehaviour
     //Add these to the Continue button then it takes
     public void Person2Theme2Selected() {
 
-        PlayerPrefs.SetString("AttitudesDiscussion2", "The Euro and a monetary union is not advantageous for the Europé.");
+        PlayerPrefs.SetString("AttitudesDiscussion2", "The Euro and a monetary union is not advantageous for the EU.");
         Debug.Log(PlayerPrefs.GetString("AttitudesDiscussion2"));
 
         discussionCount++;
@@ -1006,7 +1006,7 @@ public class DiscussionAttitudes : MonoBehaviour
     //Add these to the Continue button then it takes
     public void Person1Theme5Selected() {
 
-        PlayerPrefs.SetString("AttitudesDiscussion5", "Throughout the history of the EC and EU the peacekeeping aspect has been very important and beneficial for the prosperity of Europé.");
+        PlayerPrefs.SetString("AttitudesDiscussion5", "Throughout the history of the EC and EU the peacekeeping aspect has been very important and beneficial for the prosperity of EU.");
         Debug.Log(PlayerPrefs.GetString("AttitudesDiscussion5"));
 
         discussionCount++;
@@ -1030,7 +1030,7 @@ public class DiscussionAttitudes : MonoBehaviour
     //Add these to the Continue button then it takes
     public void Person3Theme5Selected() {
 
-        PlayerPrefs.SetString("AttitudesDiscussion5", "The relevance of peacekeeping function of EC/EU in Europé is exaggerated, and should not be compared with that of NATO. ");
+        PlayerPrefs.SetString("AttitudesDiscussion5", "The relevance of peacekeeping function of EC/EU in Europe is exaggerated, and should not be compared with that of NATO. ");
         Debug.Log(PlayerPrefs.GetString("AttitudesDiscussion5"));
 
         discussionCount++;

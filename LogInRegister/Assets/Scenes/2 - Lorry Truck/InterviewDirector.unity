@@ -3117,6 +3117,7 @@ MonoBehaviour:
   secondCounter: 0
   directorInterview: DirectorInterview
   chosenTextDisplay: {fileID: 1555891835}
+  animText: {fileID: 1940251446}
 --- !u!4 &290242460
 Transform:
   m_ObjectHideFlags: 0
@@ -3342,6 +3343,7 @@ MonoBehaviour:
   secondCounter: 0
   directorInterview: DirectorInterview
   chosenTextDisplay: {fileID: 1555891835}
+  animText: {fileID: 1940251446}
 --- !u!4 &325038438
 Transform:
   m_ObjectHideFlags: 0
@@ -3825,9 +3827,9 @@ MonoBehaviour:
   interviewCanvas: {fileID: 1408915861}
   textDisplay: {fileID: 1940251443}
   sentences:
-  - 'If the labor market in Hungary and Romania becomes higher, wages will rise there.
+  - If the labor market in Hungary and Romania becomes higher, wages will rise there.
     That would also improve their working conditions. I think that there will then
-    be some sort of stabilization. That will take time. '
+    be some sort of stabilization. That will take time.
   feedbackCanvas: {fileID: 1271130292}
   scoreCanvas: {fileID: 1810696522}
   rankingCanvas: {fileID: 732463104}
@@ -3853,6 +3855,7 @@ MonoBehaviour:
   secondCounter: 0
   directorInterview: DirectorInterview
   chosenTextDisplay: {fileID: 1555891835}
+  animText: {fileID: 1940251446}
 --- !u!4 &374528314
 Transform:
   m_ObjectHideFlags: 0
@@ -6249,8 +6252,8 @@ MonoBehaviour:
   textDisplay: {fileID: 1940251443}
   sentences:
   - Employers also need more clarity. Our cargo goes to and from the Netherlands by
-    all European member states and is transferred from truck to train and boat and
-    vice versa. We work with hundreds of companies with local drivers, so-called charters.
+    all European member states and is transferred from truck to train and boat to
+    vice versa. We work with hundreds of companies with local drivers, so called charters.
     It is unclear when you will have to pay what.
   feedbackCanvas: {fileID: 1271130292}
   scoreCanvas: {fileID: 1810696522}
@@ -6277,6 +6280,7 @@ MonoBehaviour:
   secondCounter: 0
   directorInterview: DirectorInterview
   chosenTextDisplay: {fileID: 1555891835}
+  animText: {fileID: 1940251446}
 --- !u!1 &708613209
 GameObject:
   m_ObjectHideFlags: 0
@@ -6603,6 +6607,7 @@ MonoBehaviour:
   secondCounter: 0
   directorInterview: DirectorInterview
   chosenTextDisplay: {fileID: 1555891835}
+  animText: {fileID: 1940251446}
 --- !u!1 &755120889
 GameObject:
   m_ObjectHideFlags: 0
@@ -8911,6 +8916,7 @@ MonoBehaviour:
   secondCounter: 0
   directorInterview: DirectorInterview
   chosenTextDisplay: {fileID: 1555891835}
+  animText: {fileID: 1940251446}
 --- !u!1 &973780868
 GameObject:
   m_ObjectHideFlags: 0
@@ -9887,6 +9893,7 @@ MonoBehaviour:
   secondCounter: 0
   directorInterview: DirectorInterview
   chosenTextDisplay: {fileID: 1555891835}
+  animText: {fileID: 1940251446}
 --- !u!1 &1025128743
 GameObject:
   m_ObjectHideFlags: 0
@@ -11426,7 +11433,7 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_text: '   10. [MISSING QUESTION?]'
+  m_text: '   10. What is the role of the consumers in this?'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: bf071a21c75d5984182ca2896c24ba39, type: 2}
   m_sharedMaterial: {fileID: 21445493198866178, guid: bf071a21c75d5984182ca2896c24ba39,
@@ -11504,11 +11511,11 @@ MonoBehaviour:
     lineCount: 1
     pageCount: 1
     materialCount: 1
-  m_havePropertiesChanged: 0
+  m_havePropertiesChanged: 1
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_spriteAnimator: {fileID: 0}
-  m_isInputParsingRequired: 0
+  m_isInputParsingRequired: 1
   m_inputSource: 0
   m_hasFontAssetChanged: 0
   m_subTextObjects:
@@ -11694,6 +11701,7 @@ MonoBehaviour:
   secondCounter: 0
   directorInterview: DirectorInterview
   chosenTextDisplay: {fileID: 1555891835}
+  animText: {fileID: 1940251446}
 --- !u!1 &1255778919
 GameObject:
   m_ObjectHideFlags: 0
@@ -12631,6 +12639,7 @@ MonoBehaviour:
   secondCounter: 0
   directorInterview: DirectorInterview
   chosenTextDisplay: {fileID: 1555891835}
+  animText: {fileID: 1940251446}
 --- !u!4 &1339411153
 Transform:
   m_ObjectHideFlags: 0
@@ -13362,11 +13371,10 @@ MonoBehaviour:
   interviewCanvas: {fileID: 1408915861}
   textDisplay: {fileID: 1940251443}
   sentences:
-  - We don't want to take money from anyone. You need to find a position where an
-    employer is able to pay everyone a wage that is normal in terms of the conditions
-    in their country of residence. I wonder whether you have to pay six times as much
-    as a Hungarian or Romanian earns in their own country when you are working in
-    Europe. We want to keep our company afloat.
+  - You do everything you can to keep in line with the market. The rates that we can
+    charge our clients are under severe pressure. It would be good if we could pay
+    all drivers the Dutch collective agreement (CAO) wage. Then the customer will
+    have to appreciate the profession of driver more.
   feedbackCanvas: {fileID: 1271130292}
   scoreCanvas: {fileID: 1810696522}
   rankingCanvas: {fileID: 732463104}
@@ -13392,6 +13400,7 @@ MonoBehaviour:
   secondCounter: 0
   directorInterview: DirectorInterview
   chosenTextDisplay: {fileID: 1555891835}
+  animText: {fileID: 1940251446}
 --- !u!4 &1433238507
 Transform:
   m_ObjectHideFlags: 0
@@ -15352,6 +15361,7 @@ MonoBehaviour:
   secondCounter: 0
   directorInterview: DirectorInterview
   chosenTextDisplay: {fileID: 1555891835}
+  animText: {fileID: 1940251446}
 --- !u!4 &1683432097
 Transform:
   m_ObjectHideFlags: 0
@@ -15962,6 +15972,7 @@ MonoBehaviour:
   secondCounter: 0
   directorInterview: DirectorInterview
   chosenTextDisplay: {fileID: 1555891835}
+  animText: {fileID: 1940251446}
 --- !u!4 &1727027247
 Transform:
   m_ObjectHideFlags: 0
@@ -18756,6 +18767,7 @@ MonoBehaviour:
   secondCounter: 0
   directorInterview: DirectorInterview
   chosenTextDisplay: {fileID: 1555891835}
+  animText: {fileID: 1940251446}
 --- !u!1 &1905485736
 GameObject:
   m_ObjectHideFlags: 0
@@ -19155,6 +19167,7 @@ GameObject:
   - component: {fileID: 1940251445}
   - component: {fileID: 1940251444}
   - component: {fileID: 1940251443}
+  - component: {fileID: 1940251446}
   m_Layer: 5
   m_Name: IssueText
   m_TagString: Untagged
@@ -19305,6 +19318,25 @@ RectTransform:
   m_AnchoredPosition: {x: -123.3, y: 36.5}
   m_SizeDelta: {x: 817.3, y: 464.2}
   m_Pivot: {x: 1, y: 0.5}
+--- !u!95 &1940251446
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1940251442}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 7c1d9edb5cc9dcf47898a3ad6b4e033b, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &1952967393
 GameObject:
   m_ObjectHideFlags: 0
@@ -19524,7 +19556,7 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_text: "   6. Would you rather have a company in the Netherlands or\n       in
+  m_text: "   6. Would you rather have a company in the Netherlands\n       or in
     another European country?"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: bf071a21c75d5984182ca2896c24ba39, type: 2}
@@ -19603,11 +19635,11 @@ MonoBehaviour:
     lineCount: 3
     pageCount: 1
     materialCount: 1
-  m_havePropertiesChanged: 0
+  m_havePropertiesChanged: 1
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_spriteAnimator: {fileID: 0}
-  m_isInputParsingRequired: 0
+  m_isInputParsingRequired: 1
   m_inputSource: 0
   m_hasFontAssetChanged: 0
   m_subTextObjects:
@@ -21308,6 +21340,7 @@ MonoBehaviour:
   secondCounter: 0
   directorInterview: DirectorInterview
   chosenTextDisplay: {fileID: 1555891835}
+  animText: {fileID: 1940251446}
 --- !u!1 &2092788521
 GameObject:
   m_ObjectHideFlags: 0
@@ -21369,6 +21402,7 @@ MonoBehaviour:
   secondCounter: 0
   directorInterview: DirectorInterview
   chosenTextDisplay: {fileID: 1555891835}
+  animText: {fileID: 1940251446}
 --- !u!4 &2092788523
 Transform:
   m_ObjectHideFlags: 0

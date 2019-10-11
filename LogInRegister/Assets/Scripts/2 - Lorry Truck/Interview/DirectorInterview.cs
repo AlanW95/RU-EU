@@ -44,6 +44,9 @@ public class DirectorInterview : MonoBehaviour
     public string directorInterview = "DirectorInterview";
     //public static string proInterviewStatements;
     public TextMeshProUGUI chosenTextDisplay;
+
+    public Animator animText;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -142,6 +145,8 @@ public class DirectorInterview : MonoBehaviour
             Debug.Log("Button has been pressed");
             index++;
             textDisplay.text = "";
+
+            animText.SetTrigger("Change");
 
             startCanvas.SetActive(false); //start canvas kept appearing
 

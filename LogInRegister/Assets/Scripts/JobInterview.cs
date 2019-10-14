@@ -599,4 +599,445 @@ public class JobInterview : MonoBehaviour
         StartCoroutine(Post(emailAnswer, q1Answer, q2Answer, q3Answer, q4Answer, q5Answer, q6Answer, q7Answer, q8Answer, q9Answer, q10Answer, q11Answer, q12Answer, q13Answer, q14Answer,
                             q15Answer, q16Answer, q17Answer, q18Answer, q19Answer));
     }
+
+    /*
+     * This displays each of the ages that will be selected 
+    */
+    public void Age1() {
+        //age 18-23 selected
+
+    }
+
+    public void Age2() {
+        //age 24-29 selected
+
+    }
+
+    public void Age3() {
+        //age 30-35 selected
+
+    }
+
+    public void Age4() {
+        // age 36+ selected
+
+    }
+
+    public void Male() {
+        //male selected
+
+    }
+
+    public void Female() {
+        //female selected
+
+    }
+
+    public void PreferNotToSay() {
+        //prefer not to say selected
+
+    }
+
+    public void British() {
+        //British selected
+
+    }
+
+    public void German() {
+        //German selected
+
+    }
+
+    public void Dutch() {
+        //Dutch selected
+
+    }
+
+    public void Croatian() {
+        //Croatian selected
+
+    }
+
+    public void Greek() {
+        //Greek selected
+
+    }
+
+    public void Q3OtherPleaseState() {
+        //question 3 national identity other typed in input field 
+    }
+
+    public void UK() {
+        //UK selected
+
+    }
+
+    public void Germany() {
+        //Germany selected
+
+    }
+
+    public void Holland() {
+        //Holland selected
+
+    }
+
+    public void Croatia() {
+        //Croatia selected
+    }
+
+    public void Greece() {
+        //Greece selected
+
+    }
+
+    public void Q4OtherPleaseState() {
+        //Other, please specify selected for Question 4 on Country of Residence
+
+    }
+
+    public void SocialScience() {
+        //Social Sceience selected
+
+    }
+
+    public void Business() {
+        //Business selected
+
+    }
+
+    public void Computing() {
+        //Computing selected
+
+    }
+
+    public void Q5OtherPleaseState() {
+        //Other, please specify selected for Question 5 on area of study
+
+    }
+
+    public void UniversityEducation() {
+        //University Education selected
+
+    }
+
+    public void SecondarySchool() {
+        //Secondary School selected
+
+    }
+
+    public void Q6OtherPleaseState() {
+        //Other, please specify selected for Question 6 on previously completed level of education
+
+    }
+
+    public void WorkingFullTime() {
+        //Working Fulltime selected
+
+    }
+
+    public void WorkingPartTime() {
+        //Working Part Time selected
+
+    }
+
+    public void Unemployed() {
+        //Unemployed selected
+
+    }
+
+    public void Retired() {
+        //Retired selected
+
+    }
+
+    public void Q8LocalityOrTownWhereYouLive() {
+        //the locality or town where you live was selected for Question 8
+
+    }
+
+    public void Q8RegionOrCountryWhereYouLive() {
+        //the region or country where you live was selected for Question 8
+
+    }
+
+    public void Q8YourCountryAsAWhole() {
+        //your country as a whole was selected for Question 8
+
+    }
+
+    public void Q8Europe() {
+        //Europe was selected for Question 8
+
+    }
+
+    public void Q8DontKnow() {
+        //Don't know was selected for Question 8
+
+    }
+
+    public void Q9LocalityOrTownWhereYouLive() {
+        //the locality or town where you live was selected for Question 9
+
+    }
+
+    public void Q9RegionOrCountryWhereYouLive() {
+        //the region or country where you live was selected for Question 9
+
+    }
+
+    public void Q9YourCountryAsAWhole() {
+        //your country as a whole was selected for Question 9
+
+    }
+
+    public void Q9Europe() {
+        //Europe was selected for Question 9
+
+    }
+
+    public void Q9DontKnow() {
+        //Don't know was selected for Question 9
+
+    }
+
+    public void YesALot() {
+        //Yes, a lot was selected
+
+    }
+
+    public void YesSomewhat() {
+        //Yes, somewhat was selected
+
+    }
+
+    public void NotVeryMuch() {
+        //Not very much was selected
+
+    }
+
+    public void NotAtAll() {
+        //Not at all was selected
+
+    }
+
+    public void Q10DontKnow() {
+        //Don't know was selected for Question 10
+
+    }
+
+    public void Q11Often() {
+        //Often was selected for Question 11
+
+    }
+
+    public void Q11Sometimes() {
+        //Sometimes was selected for Question 11
+
+    }
+
+    public void Q11Never() {
+        //Never selected for Question 11
+
+    }
+
+    public void Q11DontKnow() {
+        //Don't know selected for Question 11
+
+    }
+
+    public void Q12Often() {
+        //Often selected for Question 12
+
+    }
+
+    public void Q12Sometimes() {
+        //Sometimes selected for Question 12
+
+    }
+
+    public void Q12Never() {
+        //Never selected for Question 12
+
+    }
+
+    public void Q12DontKnow() {
+        //Don't know selected for Question 12
+
+    }
+
+    public void Q13A1() {
+        //Very attached/ very close selected for Question 13
+
+    }
+
+    public void Q13A2() {
+        //Fairly attached/ fairly close selected for Question 13
+
+    }
+
+    public void Q13A3() {
+        //Not very attached/ not very close selected for Question 13
+
+    }
+
+    public void Q13A4() {
+        //Not at all attached/ not at all close selected for Question 13
+
+    }
+
+    public void Q13A5() {
+        //Don't know was selected for Question 13
+
+    }
+
+    public void Q14A1() {
+        //A great deal was selected for Question 14
+
+    }
+
+    public void Q14A2() {
+        //Somewhat was selected for Question 14
+
+    }
+
+    public void Q14A3() {
+        //Not very much was selected for Question 14
+
+    }
+
+    public void Q14A4() {
+        //Not at all was selected for Question 14
+
+    }
+
+    public void Q14A5() {
+        //Don't know was selected for Question 14
+
+    }
+
+    public void Q15A1() {
+        //A great deal was selected for Question 15
+
+    }
+
+    public void Q15A2() {
+        //Somewhat was selected for Question 15
+
+    }
+
+    public void Q15A3() {
+        //Not very much was selected for Question 15
+
+    }
+
+    public void Q15A4() {
+        //Not at all was selected for Question 15
+
+    }
+
+    public void Q15A5() {
+        //Don't know was selected for Question 15
+
+    }
+
+    public void Q16A1() {
+        //Very attached/ very close was selected for Question 16
+
+    }
+
+    public void Q16A2() {
+        //Fairly attached/ fairly close was selected to Question 16
+
+    }
+
+    public void Q16A3() {
+        //Not very attached/ not very close was selected for Question 16
+
+    }
+
+    public void Q16A4() {
+        //Not at all attached/ not at all close was selected for Question 16
+
+    }
+
+    public void Q16A5() {
+        //Don't know was selected for Question 16
+
+    }
+
+    public void Q17A1() {
+        //My nationality only was selected
+
+    }
+
+    public void Q17A2() {
+        //More my own nationality than European was selected
+
+    }
+
+    public void Q17A3() {
+        //Equally my own nationality and European
+
+    }
+
+    public void Q17A4() {
+        //More European than my own nationality
+
+    }
+
+    public void Q17A5() {
+        //European only was selected
+
+    }
+
+    public void Q18A1() {
+        //Very proud was selected
+
+    }
+
+    public void Q18A2() {
+        //Fairly proud was selected
+
+    }
+
+    public void Q18A3() {
+        //Not very proud was selected
+
+    }
+
+    public void Q18A4() {
+        //Not at all proud was selected
+
+    }
+
+    public void Q18A5() {
+        //Don't know was selected for Question 18
+
+    }
+
+    public void Q19A1() {
+        //Very proud was selected
+
+    }
+
+    public void Q19A2() {
+        //Fairly proud was selected
+
+    }
+
+    public void Q19A3() {
+        //Not very proud was selected
+
+    }
+
+    public void Q19A4() {
+        //Not at all proud was selected
+
+    }
+
+    public void Q19A5() {
+        //Don't know was selected for Question 19
+
+    }
 }

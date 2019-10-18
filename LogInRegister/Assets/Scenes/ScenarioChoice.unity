@@ -4104,6 +4104,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 53c191a335e25ed43bd137ad9acce1af, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  uk: {fileID: 1953572235}
+  germany: {fileID: 227944730}
+  netherlands: {fileID: 801772669}
+  croatia: {fileID: 730833560}
+  greece: {fileID: 321218958}
   startCanvas: {fileID: 814674703}
   mapCanvas: {fileID: 1114334757}
   balanceUK: {fileID: 55406853}

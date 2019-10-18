@@ -71,7 +71,9 @@ public class FinalAssignmentAttitudes : MonoBehaviour
     }
 
     public void ExitGame() {
-        Application.Quit();
+        SceneManager.LoadScene("PostQuestions");
+        
+        //Application.Quit();
     }
 
     public void ReturnToMap() {

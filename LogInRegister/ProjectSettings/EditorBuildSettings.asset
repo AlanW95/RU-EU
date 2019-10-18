@@ -101,4 +101,10 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/3 - Attitudes/FinalAssignmentAttitudes.unity
     guid: e72193b8f7bd9cb4ca34650bc9e5afc1
+  - enabled: 1
+    path: Assets/Scenes/PostQuestions.unity
+    guid: c753322edc596cb418d7550f47fcc607
+  - enabled: 1
+    path: Assets/Scenes/ThankYou.unity
+    guid: eef23feddc5dd7241a2ed4214d128481
   m_configObjects: {}

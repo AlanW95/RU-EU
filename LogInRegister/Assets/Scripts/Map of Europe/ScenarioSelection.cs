@@ -1,10 +1,13 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 using TMPro;
 
 public class ScenarioSelection : MonoBehaviour {
+
+    public Button uk, germany, netherlands, croatia, greece;
 
     public GameObject startCanvas, mapCanvas;
 
@@ -20,6 +23,8 @@ public class ScenarioSelection : MonoBehaviour {
     //public GameObject boxHR;
     //public GameObject boxGR;
 
+    private bool ukScenarioComplete, germanyScenarioComplete;
+
     public GameObject[] scenarioInformation;
     //scenarioInformation[0] = UK, scenarioInformation[1] = Netherlands, scenarioInformation[2] = Germany, scenarioInformation[3] = Croatia, scenarioInformation[4] = Greece
 
@@ -27,6 +32,15 @@ public class ScenarioSelection : MonoBehaviour {
     void Start() {
 
         startCanvas.SetActive(true);
+
+        ukScenarioComplete = intToBool(PlayerPrefs.GetInt("UKComplete"));
+        germanyScenarioComplete = intToBool(PlayerPrefs.GetInt("GermanyComplete"));
+    }
+
+    void Update() {
+        /*if (ukScenarioComplete && germanyScenarioComplete) {
+            SceneManager.LoadScene("PostQuestions");
+        }*/
     }
 
     public void MapCanvas() {
@@ -47,10 +61,18 @@ public class ScenarioSelection : MonoBehaviour {
     }
 
     public void BalanceScenario() {
+        ukScenarioComplete = true;
+        PlayerPrefs.SetInt("UKComplete", boolToInt(ukScenarioComplete));
+
+        uk.interactable = false;
         SceneManager.LoadScene("MobilePhone");
     }
 
     public void AttitudesScenario() {
+        germanyScenarioComplete = true;
+        PlayerPrefs.SetInt("GermanyComplete", boolToInt(germanyScenarioComplete));
+
+        germany.interactable = false;
         SceneManager.LoadScene("MobilePhoneAttitudes");
         //Debug.Log("This will go to the Germany themed Journalist's Desk!");
     }
@@ -115,5 +137,23 @@ public class ScenarioSelection : MonoBehaviour {
         scenarioInformation[2].SetActive(false);
         scenarioInformation[3].SetActive(false);
         scenarioInformation[4].SetActive(true);
+    }
+
+    int boolToInt(bool val) {
+        if (val) {
+            return 1;
+        }
+        else {
+            return 0;
+        }
+    }
+
+    bool intToBool(int val) {
+        if (val != 0) {
+            return true;
+        }
+        else {
+            return false;
+        }
     }
 }

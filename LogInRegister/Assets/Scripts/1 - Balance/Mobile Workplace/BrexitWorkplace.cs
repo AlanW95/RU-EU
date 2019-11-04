@@ -7,7 +7,7 @@ using TMPro;
 
 public class BrexitWorkplace : MonoBehaviour
 {
-    public GameObject interview1, interview2, discussion, newsflash, finalAssignment, mobilePhone;
+    public GameObject interview1, interview2, discussion, newsflash, finalAssignment, mobilePhone, notebook;
     private bool interview1Completed, interview2Completed, discussionCompleted, newsflashCompleted;
 
     public MeshCollider discussionCollider;
@@ -29,6 +29,14 @@ public class BrexitWorkplace : MonoBehaviour
         //DEBUGGING PURPOSE---------
         //PlayerPrefs.SetString("ToolCompletionText", "");
         //PlayerPrefs.SetInt("ObjectiveCountdown", 8);
+        //interview1Completed = false;
+        //PlayerPrefs.SetInt("Interview1Completed", boolToInt(interview1Completed));
+        //interview2Completed = false;
+        //PlayerPrefs.SetInt("Interview2Completed", boolToInt(interview2Completed));
+        //discussionCompleted = false;
+        //PlayerPrefs.SetInt("DiscussionCompleted", boolToInt(discussionCompleted));
+        //newsflashCompleted = false;
+        //PlayerPrefs.SetInt("NewsflashCompleted", boolToInt(newsflashCompleted));
         //--------------------------
         toolObjectiveCountdown = PlayerPrefs.GetInt("ObjectiveCountdown");
         PlayerPrefs.SetInt("ObjectiveCountdown", toolObjectiveCountdown);
@@ -44,12 +52,13 @@ public class BrexitWorkplace : MonoBehaviour
         toolCompletion = toolCompletionText.text;
         Debug.Log("LOADING IN TEXT: " + PlayerPrefs.GetString("ToolCompletionText"));
 
-        interview1.SetActive(true);
-        interview2.SetActive(true);
-        discussion.SetActive(true);
-        newsflash.SetActive(true);
-        //final assignment will appear when all four main tools have been completed
+        interview1.SetActive(false);
+        interview2.SetActive(false);
+        discussion.SetActive(false);
+        newsflash.SetActive(false);
+        //final assignment and notebook will appear when all four main tools have been completed
         finalAssignment.SetActive(false);
+        notebook.SetActive(false);
     }
 
     // Update is called once per frame
@@ -72,9 +81,26 @@ public class BrexitWorkplace : MonoBehaviour
         //if (toolObjectiveCountdown == 7) {
             textDisplay.text = "Choose from any of the 4 tools on the desk; the Remain Interview, the Leaver interview, the Pub Discussion or the Newsflash.";
         // }
+
+        if (interview1Completed == false) {
+            interview1.SetActive(true);
+        }
+
+        if (interview2Completed == false) {
+            interview2.SetActive(true);
+        }
+
+        if (discussionCompleted == false) {
+            discussion.SetActive(true);
+        }
+
+        if (newsflashCompleted == false) {
+            newsflash.SetActive(true);
+        }
         
         if (interview1Completed && interview2Completed && discussionCompleted && newsflashCompleted) {
             finalAssignment.SetActive(true);
+            notebook.SetActive(true);
         }
 
         /*if (Input.GetKeyDown(KeyCode.Escape)) {
@@ -105,7 +131,7 @@ public class BrexitWorkplace : MonoBehaviour
         //Debug.Log("Tool Availability: " + toolAvailability);
 
         //Interview 1 becomes available
-        interview1.SetActive(true);
+        //interview1.SetActive(true);
         interview1Collider.GetComponent<BoxCollider>().enabled = false;
         interview1Completed = true;
         PlayerPrefs.SetInt("Interview1Completed", boolToInt(interview1Completed));
@@ -117,6 +143,7 @@ public class BrexitWorkplace : MonoBehaviour
             //toolCompletionText.text = toolCompletion;
             PlayerPrefs.SetString("ToolCompletionText", toolCompletionText.text);
             Debug.Log("Tool Completion Text: " + PlayerPrefs.GetString("ToolCompletionText"));
+            interview1.SetActive(false);
         }
 
         if (interview1Completed && interview2Completed && discussionCompleted && newsflashCompleted) {
@@ -132,7 +159,7 @@ public class BrexitWorkplace : MonoBehaviour
         PlayerPrefs.SetInt("ToolNumber", toolAvailability);
         Debug.Log("Tool Availability: " + toolAvailability);*/
 
-        interview2.SetActive(true);
+        //interview2.SetActive(true);
         interview2Collider.GetComponent<BoxCollider>().enabled = false;
         interview2Completed = true;
         PlayerPrefs.SetInt("Interview2Completed", boolToInt(interview2Completed));
@@ -143,6 +170,7 @@ public class BrexitWorkplace : MonoBehaviour
             //toolCompletionText.text = toolCompletion;
             PlayerPrefs.SetString("ToolCompletionText", toolCompletionText.text);
             Debug.Log("Tool Completion Text: " + PlayerPrefs.GetString("ToolCompletionText"));
+            interview2.SetActive(false);
         }
 
         if (interview1Completed && interview2Completed && discussionCompleted && newsflashCompleted) {
@@ -158,7 +186,7 @@ public class BrexitWorkplace : MonoBehaviour
         PlayerPrefs.SetInt("ToolNumber", toolAvailability);
         Debug.Log("Tool Availability: " + toolAvailability);*/
 
-        discussion.SetActive(true);
+        //discussion.SetActive(true);
         discussionCollider.GetComponent<MeshCollider>().enabled = false;
         discussionCompleted = true;
         PlayerPrefs.SetInt("DiscussionCompleted", boolToInt(discussionCompleted));
@@ -183,7 +211,7 @@ public class BrexitWorkplace : MonoBehaviour
         PlayerPrefs.SetInt("ToolNumber", toolAvailability);
         Debug.Log("Tool Availability: " + toolAvailability);*/
 
-        newsflash.SetActive(false);
+        //newsflash.SetActive(false);
         newsflashCompleted = true;
         PlayerPrefs.SetInt("NewsflashCompleted", boolToInt(newsflashCompleted));
 
@@ -192,6 +220,7 @@ public class BrexitWorkplace : MonoBehaviour
             //toolCompletionText.text = toolCompletion;
             PlayerPrefs.SetString("ToolCompletionText", toolCompletionText.text);
             Debug.Log("Tool Completion Text: " + PlayerPrefs.GetString("ToolCompletionText"));
+            newsflash.SetActive(false);
         }
 
         if (interview1Completed && interview2Completed && discussionCompleted && newsflashCompleted) {
@@ -208,6 +237,7 @@ public class BrexitWorkplace : MonoBehaviour
         Debug.Log("Tool Availability: " + toolAvailability);*/
 
         finalAssignment.SetActive(true);
+        notebook.SetActive(true);
         finalAssignmentCollider.GetComponent<BoxCollider>().enabled = true;
 
         textDisplay.text = "You have completed all the necessary tools to build your report. Head to the laptop to construct your report.";

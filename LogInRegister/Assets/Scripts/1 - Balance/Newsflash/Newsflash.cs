@@ -25,7 +25,7 @@ public class Newsflash : MonoBehaviour
     public GameObject geographyEmpty, politicalEmpty, cultureEmpty, environmentEmpty, rightsResponsibilitiesEmpty, economyEmpty, socialEmpty, securityEmpty, emotionsEmpty, historyEmpty;
     Vector2 geographyInitialPos, politicalInitialPos, cultureInitialPos, environmentInitialPos, rightsResponsibilitiesInitialPos, economyInitialPos, socialInitialPos, securityInitialPos, emotionsInitialPos, historyInitialPos;
 
-    public GameObject pro1, anti1, neutral1, pro2, anti2, neutral2;
+    public GameObject pro1, anti1, neutral1, pro2, anti2, neutral2, pro3, anti3, neutral3;
     public GameObject proEmpty1, antiEmpty1, neutralEmpty1, proEmpty2, antiEmpty2, neutralEmpty2;
     Vector2 pro1InitialPos, anti1InitialPos, neutral1InitialPos, pro2InitialPos, anti2InitialPos, neutral2InitialPos;
     public GameObject answerCorrect, answerIncorrect;
@@ -45,6 +45,10 @@ public class Newsflash : MonoBehaviour
         pro2.SetActive(false);
         anti2.SetActive(false);
         neutral2.SetActive(false);
+        //---------------------------
+        pro3.SetActive(false);
+        anti3.SetActive(false);
+        neutral3.SetActive(false);
 
         //Initial Positions
         geographyInitialPos = geography.transform.position;
@@ -145,6 +149,7 @@ public class Newsflash : MonoBehaviour
             antiEmpty2.transform.position = nullViewInitialPos;
 
             neutral2.SetActive(false);
+            neutral3.SetActive(true);
             Statement5();
 
             //finishCanvas.SetActive(true);
@@ -161,6 +166,7 @@ public class Newsflash : MonoBehaviour
             proEmpty2.transform.position = nullViewInitialPos;
 
             anti2.SetActive(false);
+            anti3.SetActive(true);
             Statement6();
 
             //finishCanvas.SetActive(true);

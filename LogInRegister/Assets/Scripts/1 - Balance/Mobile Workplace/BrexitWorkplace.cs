@@ -27,17 +27,18 @@ public class BrexitWorkplace : MonoBehaviour
         PlayerPrefs.SetString("ToolsCompleted", toolCompletion);
 
         //DEBUGGING PURPOSE---------
-        //PlayerPrefs.SetString("ToolCompletionText", "");
-        //PlayerPrefs.SetInt("ObjectiveCountdown", 8);
-        //interview1Completed = false;
-        //PlayerPrefs.SetInt("Interview1Completed", boolToInt(interview1Completed));
-        //interview2Completed = false;
-        //PlayerPrefs.SetInt("Interview2Completed", boolToInt(interview2Completed));
-        //discussionCompleted = false;
-        //PlayerPrefs.SetInt("DiscussionCompleted", boolToInt(discussionCompleted));
-        //newsflashCompleted = false;
-        //PlayerPrefs.SetInt("NewsflashCompleted", boolToInt(newsflashCompleted));
+        /*PlayerPrefs.SetString("ToolCompletionText", "");
+        PlayerPrefs.SetInt("ObjectiveCountdown", 8);
+        interview1Completed = false;
+        PlayerPrefs.SetInt("Interview1Completed", boolToInt(interview1Completed));
+        interview2Completed = false;
+        PlayerPrefs.SetInt("Interview2Completed", boolToInt(interview2Completed));
+        discussionCompleted = false;
+        PlayerPrefs.SetInt("DiscussionCompleted", boolToInt(discussionCompleted));
+        newsflashCompleted = false;
+        PlayerPrefs.SetInt("NewsflashCompleted", boolToInt(newsflashCompleted));*/
         //--------------------------
+
         toolObjectiveCountdown = PlayerPrefs.GetInt("ObjectiveCountdown");
         PlayerPrefs.SetInt("ObjectiveCountdown", toolObjectiveCountdown);
         Debug.Log(toolObjectiveCountdown);

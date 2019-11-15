@@ -4440,31 +4440,6 @@ PrefabInstance:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
       value: PreExitTheGame
       objectReference: {fileID: 0}
-    - target: {fileID: 6301554108972280205, guid: d43f9de98e2f71f4191b1a49ab03b59d,
-        type: 3}
-      propertyPath: m_havePropertiesChanged
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 6301554108972280205, guid: d43f9de98e2f71f4191b1a49ab03b59d,
-        type: 3}
-      propertyPath: m_isInputParsingRequired
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 6698277808191766282, guid: d43f9de98e2f71f4191b1a49ab03b59d,
-        type: 3}
-      propertyPath: m_AnchoredPosition.x
-      value: 0.000061035156
-      objectReference: {fileID: 0}
-    - target: {fileID: 2339759044776233950, guid: d43f9de98e2f71f4191b1a49ab03b59d,
-        type: 3}
-      propertyPath: m_havePropertiesChanged
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 2339759044776233950, guid: d43f9de98e2f71f4191b1a49ab03b59d,
-        type: 3}
-      propertyPath: m_isInputParsingRequired
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 5631328685962456652, guid: d43f9de98e2f71f4191b1a49ab03b59d,
         type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
@@ -4494,6 +4469,31 @@ PrefabInstance:
         type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
       value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 6698277808191766282, guid: d43f9de98e2f71f4191b1a49ab03b59d,
+        type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 0.000061035156
+      objectReference: {fileID: 0}
+    - target: {fileID: 6301554108972280205, guid: d43f9de98e2f71f4191b1a49ab03b59d,
+        type: 3}
+      propertyPath: m_havePropertiesChanged
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6301554108972280205, guid: d43f9de98e2f71f4191b1a49ab03b59d,
+        type: 3}
+      propertyPath: m_isInputParsingRequired
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2339759044776233950, guid: d43f9de98e2f71f4191b1a49ab03b59d,
+        type: 3}
+      propertyPath: m_havePropertiesChanged
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2339759044776233950, guid: d43f9de98e2f71f4191b1a49ab03b59d,
+        type: 3}
+      propertyPath: m_isInputParsingRequired
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d43f9de98e2f71f4191b1a49ab03b59d, type: 3}

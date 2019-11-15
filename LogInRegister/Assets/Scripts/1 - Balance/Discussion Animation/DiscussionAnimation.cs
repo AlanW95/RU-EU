@@ -69,12 +69,18 @@ public class DiscussionAnimation : MonoBehaviour {
     bool isAntiCorrect = false;
     bool isNeutralCorrect = false;
 
+    public AudioClip backgroundClip, clickClip, dropClip;
+    public AudioSource backgroundSource, clickSource, dropSource;
+
     // Start is called before the first frame update
     void Start()
     {
         startCanvas.SetActive(true);
 
         FloatingTextController.Initialize();
+
+        backgroundSource.clip = backgroundClip;
+        backgroundSource.Play();
     }
 
     // Update is called once per frame
@@ -338,5 +344,15 @@ public class DiscussionAnimation : MonoBehaviour {
     IEnumerator HideText(GameObject text, float delay) {
         yield return new WaitForSeconds(delay);
         text.SetActive(false);
+    }
+
+    public void ButtonClickSound() {
+        clickSource.clip = clickClip;
+        clickSource.Play();
+    }
+
+    public void DropClickSound() {
+        dropSource.clip = dropClip;
+        dropSource.Play();
     }
 }

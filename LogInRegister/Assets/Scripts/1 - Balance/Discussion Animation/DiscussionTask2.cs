@@ -99,12 +99,18 @@ public class DiscussionTask2 : MonoBehaviour
 
     private int countdown = 10;
 
+    public AudioClip backgroundClip, clickClip;
+    public AudioSource backgroundSource, clickSource;
+
     // Start is called before the first frame update
     void Start()
     {
         //called from clicking button that leads to Task 2
 
         FloatingTextController.Initialize();
+
+        backgroundSource.clip = backgroundClip;
+        backgroundSource.Play();
     }
 
     // Update is called once per frame
@@ -1779,6 +1785,11 @@ public class DiscussionTask2 : MonoBehaviour
             PlayerPrefs.SetString("Discussion10", "Being British is much more important to me than being European - I really want a British passport!");
             Debug.Log(PlayerPrefs.GetString("Discussion10"));
         }*/
+    }
+
+    public void ButtonClickSound() {
+        clickSource.clip = clickClip;
+        clickSource.Play();
     }
 
     //----------------------------------------------------------------------------------------------------------------------------------------------------------------------

@@ -60,6 +60,9 @@ public class ProInterview : MonoBehaviour {
     //public static string proInterviewStatements;
     public TextMeshProUGUI chosenTextDisplay;
 
+    public AudioClip backgroundClip;
+    public AudioSource backgroundSource;
+
     // Start is called before the first frame update
     void Start() {
         startCanvas.SetActive(true);
@@ -72,6 +75,9 @@ public class ProInterview : MonoBehaviour {
         secondCounter = 4;
 
         FloatingTextController.Initialize();
+
+        backgroundSource.clip = backgroundClip;
+        backgroundSource.Play();
     }
 
     // Update is called once per frame

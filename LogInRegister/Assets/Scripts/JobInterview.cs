@@ -616,6 +616,8 @@ public class JobInterview : MonoBehaviour
 
     public void Send() {
         emailAnswer = inputEmail.GetComponent<TMP_InputField>().text;
+        PlayerPrefs.SetString("PlayerEmail", emailAnswer);
+        Debug.Log(PlayerPrefs.GetString("PlayerEmail"));
         q1Answer = input1.GetComponent<InputField>().text;
         q2Answer = input2.GetComponent<InputField>().text;
         q3Answer = input3.GetComponent<InputField>().text;

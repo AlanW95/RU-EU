@@ -63,6 +63,13 @@ public class AntiInterview : MonoBehaviour {
     public AudioClip backgroundClip;
     public AudioSource backgroundSource;
 
+    //Data for Google Forms
+    public InputField inputEmail, input1, input2, input3;
+    private string emailAnswer, selection1Answer, selection2Answer, selection3Answer;
+
+    [SerializeField]
+    private string BASE_URL = "https://docs.google.com/forms/u/0/d/e/1FAIpQLSciWjfoLl9ULoMgAoWebwAlU-YCcIDoJYbdforspuAF9iaZ3g/formResponse";
+
     // Start is called before the first frame update
     void Start()
     {
@@ -609,5 +616,34 @@ public class AntiInterview : MonoBehaviour {
             PlayerPrefs.SetString("BrexitAntiInterview4", "European identity means that where you are born does not matter.");
             Debug.Log(PlayerPrefs.GetString("BrexitAntiInterview4"));
         }
+    }
+
+    IEnumerator Post (string emailAnswer, string selection1, string selection2, string selection3) {
+        WWWForm form = new WWWForm();
+
+        form.AddField("entry.1134683784", emailAnswer);
+        form.AddField("entry.313931728", selection1);
+        form.AddField("entry.1799941440", selection2);
+        form.AddField("entry.529384337", selection3);
+
+        byte[] rawData = form.data;
+        WWW www = new WWW(BASE_URL, rawData);
+
+        yield return www;
+    }
+
+    public void Send() {
+        emailAnswer = inputEmail.GetComponent<InputField>().text;
+        Debug.Log(emailAnswer);
+        selection1Answer = input1.GetComponent<InputField>().text;
+        Debug.Log(selection1Answer);
+        selection2Answer = input2.GetComponent<InputField>().text;
+        Debug.Log(selection2Answer);
+        selection3Answer = input3.GetComponent<InputField>().text;
+        Debug.Log(selection3Answer);
+
+        //Debug.Log("Processing all themes selected and sending to Google Forms.");
+
+        StartCoroutine(Post(emailAnswer, selection1Answer, selection2Answer, selection3Answer));
     }
 }

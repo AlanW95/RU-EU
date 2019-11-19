@@ -19,6 +19,13 @@ public class DiscussionTask3 : MonoBehaviour
     private int task3Counter = 4; //after each choice the counter goes down
     private int predictorCounter = 4; //help with decided which slot the new statement goes to
 
+    //Data for Google Forms
+    public InputField inputEmail, input1, input2, input3, input4;
+    private string emailAnswer, selection1Answer, selection2Answer, selection3Answer, selection4Answer;
+
+    [SerializeField]
+    private string BASE_URL = "https://docs.google.com/forms/u/0/d/e/1FAIpQLSeyIYwJ_cVPvTiX0r8gAKDqVHGMTL6RYfpQg5LVNlpRZ3lZYQ/formResponse";
+
     // Start is called before the first frame update
     void Start()
     {
@@ -330,5 +337,35 @@ public class DiscussionTask3 : MonoBehaviour
             //add to new PlayerPrefs
             PlayerPrefs.SetString("NewBrexitDiscussion4", statement10.text);
         }
+    }
+
+    IEnumerator Post (string emailAnswer, string selection1, string selection2, string selection3, string selection4) {
+        WWWForm form = new WWWForm();
+
+        form.AddField("entry.1718955303", emailAnswer);
+        form.AddField("entry.2053095610", selection1);
+        form.AddField("entry.949755323", selection2);
+        form.AddField("entry.733869642", selection3);
+        form.AddField("entry.1988381126", selection4);
+
+        byte[] rawData = form.data;
+        WWW www = new WWW(BASE_URL, rawData);
+
+        yield return www;
+    }
+
+    public void Send() {
+        emailAnswer = inputEmail.GetComponent<InputField>().text;
+        Debug.Log(emailAnswer);
+        selection1Answer = input1.GetComponent<InputField>().text;
+        Debug.Log(selection1Answer);
+        selection2Answer = input2.GetComponent<InputField>().text;
+        Debug.Log(selection2Answer);
+        selection3Answer = input3.GetComponent<InputField>().text;
+        Debug.Log(selection3Answer);
+        selection4Answer = input4.GetComponent<InputField>().text;
+        Debug.Log(selection4Answer);
+
+        StartCoroutine(Post(emailAnswer, selection1Answer, selection2Answer, selection3Answer, selection4Answer));
     }
 }

@@ -60,6 +60,10 @@ public class Dashboard : MonoBehaviour
         SceneManager.LoadScene("FinalAssignment");
     }
 
+    public void ReturnToMap() {
+        SceneManager.LoadScene("ScenarioChoice");
+    }
+
     public void TopThemeSliderValue() {
 
         if (topTheme.text == "Social") {

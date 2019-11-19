@@ -7,7 +7,7 @@ public class FinalAssignmentCH : BrexitWorkplace {
     public GameObject finalAssignmentTool;
 
     void OnMouseDown() {
-        SceneManager.LoadScene("Dashboard");
+        SceneManager.LoadScene("OpeningFinalAssignment");
         //FinalAssignment();
     }
 

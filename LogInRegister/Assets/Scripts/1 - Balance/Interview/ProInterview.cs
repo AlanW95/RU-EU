@@ -360,19 +360,19 @@ public class ProInterview : MonoBehaviour {
         if (interviewCounter == 5) {
             PlayerPrefs.SetString("BrexitProInterview1", "The EU provides rigorous standards for defending the safety and security of the country.");
             Debug.Log(PlayerPrefs.GetString("BrexitProInterview1"));
-            input1.text = "Safety & Security";
+            input1.text = "Security";
         }
 
         if (interviewCounter == 4) {
             PlayerPrefs.SetString("BrexitProInterview2", "The EU provides rigorous standards for defending the safety and security of the country.");
             Debug.Log(PlayerPrefs.GetString("BrexitProInterview2"));
-            input2.text = "Safety & Security";
+            input2.text = "Security";
         }
 
         if (interviewCounter == 3) {
             PlayerPrefs.SetString("BrexitProInterview3", "The EU provides rigorous standards for defending the safety and security of the country.");
             Debug.Log(PlayerPrefs.GetString("BrexitProInterview3"));
-            input3.text = "Safety & Security";
+            input3.text = "Security";
         }
 
         if (interviewCounter == 2) {

@@ -72,8 +72,8 @@ public class AntiInterview : MonoBehaviour {
         rankingCanvas.SetActive(false);
         feedbackCanvas.SetActive(false);
 
-        interviewCounter = 8;
-        secondCounter = 4;
+        interviewCounter = 6;
+        secondCounter = 3;
 
         FloatingTextController.Initialize();
 
@@ -102,13 +102,13 @@ public class AntiInterview : MonoBehaviour {
         if (interviewCounter <= 0) {
             //give feedback
             //textDisplay.text = "Sorry but I must dash now, that is all I have time for.";
-            Debug.Log("You have asked 4 questions!");
+            Debug.Log("You have asked 3 questions!");
 
             rankingCanvas.SetActive(true);
         }
 
         if (secondCounter <= 0) {
-            Debug.Log("You have answered 4 questions! If you wish, you may proceed and collect more statements but this will not affect your score.");
+            Debug.Log("You have answered 3 questions! If you wish, you may proceed and collect more statements but this will not affect your score.");
             themeSelectionCanvas.SetActive(false);
 
             scoreCanvas.SetActive(true);
@@ -116,9 +116,9 @@ public class AntiInterview : MonoBehaviour {
             //themeSelectionContinueButton.SetActive(true);
         }
 
-        if (Input.GetKeyDown(KeyCode.Escape)) {
+        /*if (Input.GetKeyDown(KeyCode.Escape)) {
             SceneManager.LoadScene("Journalist");
-        }
+        }*/
     }
 
     public void ResetPlayerPrefs() {
@@ -217,25 +217,25 @@ public class AntiInterview : MonoBehaviour {
     }
 
     public void SocialSelected() {
-        if (interviewCounter == 7) {
+        if (interviewCounter == 5) {
             Debug.Log("I AM THE FIRST ONE!");
             PlayerPrefs.SetString("BrexitAntiInterview1", "Freedom of movement has helped to create a much richer and more diverse society.");
             Debug.Log(PlayerPrefs.GetString("BrexitAntiInterview1"));
         }
 
-        if (interviewCounter == 6) {
+        if (interviewCounter == 4) {
             Debug.Log("I AM THE SECOND ONE!");
             PlayerPrefs.SetString("BrexitAntiInterview2", "Freedom of movement has helped to create a much richer and more diverse society.");
             Debug.Log(PlayerPrefs.GetString("BrexitAntiInterview2"));
         }
 
-        if (interviewCounter == 5) {
+        if (interviewCounter == 3) {
             Debug.Log("I AM THE THIRD ONE!");
             PlayerPrefs.SetString("BrexitAntiInterview3", "Freedom of movement has helped to create a much richer and more diverse society.");
             Debug.Log(PlayerPrefs.GetString("BrexitAntiInterview3"));
         }
 
-        if (interviewCounter == 4) {
+        if (interviewCounter == 2) {
             Debug.Log("I AM THE FOURTH ONE!");
             PlayerPrefs.SetString("BrexitAntiInterview4", "Freedom of movement has helped to create a much richer and more diverse society.");
             Debug.Log(PlayerPrefs.GetString("BrexitAntiInterview4"));
@@ -257,25 +257,25 @@ public class AntiInterview : MonoBehaviour {
     }
 
     public void EnvironmentSelected() {
-        if (interviewCounter == 7) {
+        if (interviewCounter == 5) {
             Debug.Log("I AM THE FIRST ONE!");
             PlayerPrefs.SetString("BrexitAntiInterview1", "The EU has introduced very effective standard for caring for the environment.");
             Debug.Log(PlayerPrefs.GetString("BrexitAntiInterview1"));
         }
 
-        if (interviewCounter == 6) {
+        if (interviewCounter == 4) {
             Debug.Log("I AM THE SECOND ONE!");
             PlayerPrefs.SetString("BrexitAntiInterview2", "The EU has introduced very effective standard for caring for the environment.");
             Debug.Log(PlayerPrefs.GetString("BrexitAntiInterview2"));
         }
 
-        if (interviewCounter == 5) {
+        if (interviewCounter == 3) {
             Debug.Log("I AM THE THIRD ONE!");
             PlayerPrefs.SetString("BrexitAntiInterview3", "The EU has introduced very effective standard for caring for the environment.");
             Debug.Log(PlayerPrefs.GetString("BrexitAntiInterview3"));
         }
 
-        if (interviewCounter == 4) {
+        if (interviewCounter == 2) {
             Debug.Log("I AM THE FOURTH ONE!");
             PlayerPrefs.SetString("BrexitAntiInterview4", "The EU has introduced very effective standard for caring for the environment.");
             Debug.Log(PlayerPrefs.GetString("BrexitAntiInterview4"));
@@ -298,25 +298,25 @@ public class AntiInterview : MonoBehaviour {
 
     public void RightsResponsibilitiesSelected() {
 
-        if (interviewCounter == 7) {
+        if (interviewCounter == 5) {
             Debug.Log("I AM THE FIRST ONE!");
             PlayerPrefs.SetString("BrexitAntiInterview1", "The EU provides rigorous standards for fair treatment and EU citizens really appreciate that.");
             Debug.Log(PlayerPrefs.GetString("BrexitAntiInterview1"));
         }
 
-        if (interviewCounter == 6) {
+        if (interviewCounter == 4) {
             Debug.Log("I AM THE SECOND ONE!");
             PlayerPrefs.SetString("BrexitAntiInterview2", "The EU provides rigorous standards for fair treatment and EU citizens really appreciate that.");
             Debug.Log(PlayerPrefs.GetString("BrexitAntiInterview2"));
         }
 
-        if (interviewCounter == 5) {
+        if (interviewCounter == 3) {
             Debug.Log("I AM THE THIRD ONE!");
             PlayerPrefs.SetString("BrexitAntiInterview3", "The EU provides rigorous standards for fair treatment and EU citizens really appreciate that.");
             Debug.Log(PlayerPrefs.GetString("BrexitAntiInterview3"));
         }
 
-        if (interviewCounter == 4) {
+        if (interviewCounter == 2) {
             Debug.Log("I AM THE FOURTH ONE!");
             PlayerPrefs.SetString("BrexitAntiInterview4", "The EU provides rigorous standards for fair treatment and EU citizens really appreciate that.");
             Debug.Log(PlayerPrefs.GetString("BrexitAntiInterview4"));
@@ -339,25 +339,25 @@ public class AntiInterview : MonoBehaviour {
 
     public void SafetySecuritySelected() {
 
-        if (interviewCounter == 7) {
+        if (interviewCounter == 5) {
             Debug.Log("I AM THE FIRST ONE!");
             PlayerPrefs.SetString("BrexitAntiInterview1", "The EU provides rigorous standards for defending the safety and security of the country.");
             Debug.Log(PlayerPrefs.GetString("BrexitAntiInterview1"));
         }
 
-        if (interviewCounter == 6) {
+        if (interviewCounter == 4) {
             Debug.Log("I AM THE SECOND ONE!");
             PlayerPrefs.SetString("BrexitAntiInterview2", "The EU provides rigorous standards for defending the safety and security of the country.");
             Debug.Log(PlayerPrefs.GetString("BrexitAntiInterview2"));
         }
 
-        if (interviewCounter == 5) {
+        if (interviewCounter == 3) {
             Debug.Log("I AM THE THIRD ONE!");
             PlayerPrefs.SetString("BrexitAntiInterview3", "The EU provides rigorous standards for defending the safety and security of the country.");
             Debug.Log(PlayerPrefs.GetString("BrexitAntiInterview3"));
         }
 
-        if (interviewCounter == 4) {
+        if (interviewCounter == 2) {
             Debug.Log("I AM THE FOURTH ONE!");
             PlayerPrefs.SetString("BrexitAntiInterview4", "The EU provides rigorous standards for defending the safety and security of the country.");
             Debug.Log(PlayerPrefs.GetString("BrexitAntiInterview4"));
@@ -380,25 +380,25 @@ public class AntiInterview : MonoBehaviour {
 
     public void EmotionalSelected() {
         
-        if (interviewCounter == 7) {
+        if (interviewCounter == 5) {
             Debug.Log("I AM THE FIRST ONE!");
             PlayerPrefs.SetString("BrexitAntiInterview1", "I would be absolutely devastated if my country voted to leave the EU.");
             Debug.Log(PlayerPrefs.GetString("BrexitAntiInterview1"));
         }
 
-        if (interviewCounter == 6) {
+        if (interviewCounter == 4) {
             Debug.Log("I AM THE SECOND ONE!");
             PlayerPrefs.SetString("BrexitAntiInterview2", "I would be absolutely devastated if my country voted to leave the EU.");
             Debug.Log(PlayerPrefs.GetString("BrexitAntiInterview2"));
         }
 
-        if (interviewCounter == 5) {
+        if (interviewCounter == 3) {
             Debug.Log("I AM THE THIRD ONE!");
             PlayerPrefs.SetString("BrexitAntiInterview3", "I would be absolutely devastated if my country voted to leave the EU.");
             Debug.Log(PlayerPrefs.GetString("BrexitAntiInterview3"));
         }
 
-        if (interviewCounter == 4) {
+        if (interviewCounter == 2) {
             Debug.Log("I AM THE FOURTH ONE!");
             PlayerPrefs.SetString("BrexitAntiInterview4", "I would be absolutely devastated if my country voted to leave the EU.");
             Debug.Log(PlayerPrefs.GetString("BrexitAntiInterview4"));
@@ -421,25 +421,25 @@ public class AntiInterview : MonoBehaviour {
 
     public void EconomicSelected() {
         
-        if (interviewCounter == 7) {
+        if (interviewCounter == 5) {
             Debug.Log("I AM THE FIRST ONE!");
             PlayerPrefs.SetString("BrexitAntiInterview1", "Being a member of the EU has had a huge positive impact on the economy of our country.");
             Debug.Log(PlayerPrefs.GetString("BrexitAntiInterview1"));
         }
 
-        if (interviewCounter == 6) {
+        if (interviewCounter == 4) {
             Debug.Log("I AM THE SECOND ONE!");
             PlayerPrefs.SetString("BrexitAntiInterview2", "Being a member of the EU has had a huge positive impact on the economy of our country.");
             Debug.Log(PlayerPrefs.GetString("BrexitAntiInterview2"));
         }
 
-        if (interviewCounter == 5) {
+        if (interviewCounter == 3) {
             Debug.Log("I AM THE THIRD ONE!");
             PlayerPrefs.SetString("BrexitAntiInterview3", "Being a member of the EU has had a huge positive impact on the economy of our country.");
             Debug.Log(PlayerPrefs.GetString("BrexitAntiInterview3"));
         }
 
-        if (interviewCounter == 4) {
+        if (interviewCounter == 2) {
             Debug.Log("I AM THE FOURTH ONE!");
             PlayerPrefs.SetString("BrexitAntiInterview4", "Being a member of the EU has had a huge positive impact on the economy of our country.");
             Debug.Log(PlayerPrefs.GetString("BrexitAntiInterview4"));
@@ -462,25 +462,25 @@ public class AntiInterview : MonoBehaviour {
 
     public void PoliticalSelected() {
         
-        if (interviewCounter == 7) {
+        if (interviewCounter == 5) {
             Debug.Log("I AM THE FIRST ONE!");
             PlayerPrefs.SetString("BrexitAntiInterview1", "The 4 freedoms of the EU have been beneficial for our country.");
             Debug.Log(PlayerPrefs.GetString("BrexitAntiInterview1"));
         }
 
-        if (interviewCounter == 6) {
+        if (interviewCounter == 4) {
             Debug.Log("I AM THE SECOND ONE!");
             PlayerPrefs.SetString("BrexitAntiInterview2", "The 4 freedoms of the EU have been beneficial for our country.");
             Debug.Log(PlayerPrefs.GetString("BrexitAntiInterview2"));
         }
 
-        if (interviewCounter == 5) {
+        if (interviewCounter == 3) {
             Debug.Log("I AM THE THIRD ONE!");
             PlayerPrefs.SetString("BrexitAntiInterview3", "The 4 freedoms of the EU have been beneficial for our country.");
             Debug.Log(PlayerPrefs.GetString("BrexitAntiInterview3"));
         }
 
-        if (interviewCounter == 4) {
+        if (interviewCounter == 2) {
             Debug.Log("I AM THE FOURTH ONE!");
             PlayerPrefs.SetString("BrexitAntiInterview4", "The 4 freedoms of the EU have been beneficial for our country.");
             Debug.Log(PlayerPrefs.GetString("BrexitAntiInterview4"));
@@ -503,25 +503,25 @@ public class AntiInterview : MonoBehaviour {
 
     public void HistoricSelected() {
         
-        if (interviewCounter == 7) {
+        if (interviewCounter == 5) {
             Debug.Log("I AM THE FIRST ONE!");
             PlayerPrefs.SetString("BrexitAntiInterview1", "For all of us Europeans - our shared history matters. We do not want to repeat the mistakes of the past.");
             Debug.Log(PlayerPrefs.GetString("BrexitAntiInterview1"));
         }
 
-        if (interviewCounter == 6) {
+        if (interviewCounter == 4) {
             Debug.Log("I AM THE SECOND ONE!");
             PlayerPrefs.SetString("BrexitAntiInterview2", "For all of us Europeans - our shared history matters. We do not want to repeat the mistakes of the past.");
             Debug.Log(PlayerPrefs.GetString("BrexitAntiInterview2"));
         }
 
-        if (interviewCounter == 5) {
+        if (interviewCounter == 3) {
             Debug.Log("I AM THE THIRD ONE!");
             PlayerPrefs.SetString("BrexitAntiInterview3", "For all of us Europeans - our shared history matters. We do not want to repeat the mistakes of the past.");
             Debug.Log(PlayerPrefs.GetString("BrexitAntiInterview3"));
         }
 
-        if (interviewCounter == 4) {
+        if (interviewCounter == 2) {
             Debug.Log("I AM THE FOURHT ONE!");
             PlayerPrefs.SetString("BrexitAntiInterview4", "For all of us Europeans - our shared history matters. We do not want to repeat the mistakes of the past.");
             Debug.Log(PlayerPrefs.GetString("BrexitAntiInterview4"));
@@ -544,25 +544,25 @@ public class AntiInterview : MonoBehaviour {
 
     public void CultureSelected() {
         
-        if (interviewCounter == 7) {
+        if (interviewCounter == 5) {
             Debug.Log("I AM THE FIRST ONE!");
             PlayerPrefs.SetString("BrexitAntiInterview1", "The EU has helped to create a shared cultural identity.");
             Debug.Log(PlayerPrefs.GetString("BrexitAntiInterview1"));
         }
 
-        if (interviewCounter == 6) {
+        if (interviewCounter == 4) {
             Debug.Log("I AM THE SECOND ONE!");
             PlayerPrefs.SetString("BrexitAntiInterview2", "The EU has helped to create a shared cultural identity.");
             Debug.Log(PlayerPrefs.GetString("BrexitAntiInterview2"));
         }
 
-        if (interviewCounter == 5) {
+        if (interviewCounter == 3) {
             Debug.Log("I AM THE THIRD ONE!");
             PlayerPrefs.SetString("BrexitAntiInterview3", "The EU has helped to create a shared cultural identity.");
             Debug.Log(PlayerPrefs.GetString("BrexitAntiInterview3"));
         }
 
-        if (interviewCounter == 4) {
+        if (interviewCounter == 2) {
             Debug.Log("I AM THE FOURTH ONE!");
             PlayerPrefs.SetString("BrexitAntiInterview4", "The EU has helped to create a shared cultural identity.");
             Debug.Log(PlayerPrefs.GetString("BrexitAntiInterview4"));
@@ -586,25 +586,25 @@ public class AntiInterview : MonoBehaviour {
 
     public void GeographySelected() {
         
-        if (interviewCounter == 7) {
+        if (interviewCounter == 5) {
             Debug.Log("I AM THE FIRST ONE!");
             PlayerPrefs.SetString("BrexitAntiInterview1", "European identity means that where you are born does not matter.");
             Debug.Log(PlayerPrefs.GetString("BrexitAntiInterview1"));
         }
 
-        if (interviewCounter == 6) {
+        if (interviewCounter == 4) {
             Debug.Log("I AM THE SECOND ONE!");
             PlayerPrefs.SetString("BrexitAntiInterview2", "European identity means that where you are born does not matter.");
             Debug.Log(PlayerPrefs.GetString("BrexitAntiInterview2"));
         }
 
-        if (interviewCounter == 5) {
+        if (interviewCounter == 3) {
             Debug.Log("I AM THE THIRD ONE!");
             PlayerPrefs.SetString("BrexitAntiInterview3", "European identity means that where you are born does not matter.");
             Debug.Log(PlayerPrefs.GetString("BrexitAntiInterview3"));
         }
 
-        if (interviewCounter == 4) {
+        if (interviewCounter == 2) {
             Debug.Log("I AM THE FOURTH ONE!");
             PlayerPrefs.SetString("BrexitAntiInterview4", "European identity means that where you are born does not matter.");
             Debug.Log(PlayerPrefs.GetString("BrexitAntiInterview4"));

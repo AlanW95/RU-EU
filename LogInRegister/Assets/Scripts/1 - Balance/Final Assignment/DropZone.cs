@@ -10,7 +10,7 @@ public class DropZone : MonoBehaviour, IDropHandler, IPointerEnterHandler, IPoin
     public Drag.ToolSlot typeOfTool = Drag.ToolSlot.INTERVIEW1;
 
     public Button submitButton;
-    public GameObject dropzone1, dropzone2, dropzone3;
+    //public GameObject dropzone1, dropzone2, dropzone3, dropzone4;
     PointerEventData eventData;
 
     public int finalAssignmentCounter;
@@ -21,9 +21,21 @@ public class DropZone : MonoBehaviour, IDropHandler, IPointerEnterHandler, IPoin
 
         PlayerPrefs.GetInt("FinalAssignmentCounter");
 
-        if (finalAssignmentCounter == -1) {
+        /*if (finalAssignmentCounter <= -3) {
+            submitButton.interactable = false;
+        }*/
+
+        if (finalAssignmentCounter == -4) {
             submitButton.interactable = true;
         }
+
+
+        /*Drag d = eventData.pointerDrag.GetComponent<Drag>();
+        if (finalAssignmentCounter <= -4 && d != null) {
+            typeOfTool = Drag.ToolSlot.INTERVIEW2;
+            d.placeholderParent = this.transform;
+            
+        }*/
     }
 
     /*public void CheckSubmission() {
@@ -60,18 +72,23 @@ public class DropZone : MonoBehaviour, IDropHandler, IPointerEnterHandler, IPoin
         if (d != null && d.placeholderParent == this.transform) {
             if (typeOfTool == d.typeOfTool || typeOfTool == Drag.ToolSlot.INTERVIEW1) {
                 d.placeholderParent = d.parentToReturnTo;
+                PlayerPrefs.GetInt("FinalAssignmentCounter");
+                finalAssignmentCounter += 1;
+                PlayerPrefs.SetInt("FinalAssignmentCounter", finalAssignmentCounter);
             }
         }
     }
 
     public void OnDrop(PointerEventData eventData) {
         Debug.Log(eventData.pointerDrag.name + " was dropped on " + gameObject.name);
-        
+
+        PlayerPrefs.GetInt("FinalAssignmentCounter");
         finalAssignmentCounter -= 1;
         PlayerPrefs.SetInt("FinalAssignmentCounter", finalAssignmentCounter);
         Debug.Log("Final Assignment Counter: " + finalAssignmentCounter);
 
         Drag d = eventData.pointerDrag.GetComponent<Drag>();
+
         if (d != null) {
             if (typeOfTool == d.typeOfTool || typeOfTool == Drag.ToolSlot.INTERVIEW1) {
                 d.parentToReturnTo = this.transform;

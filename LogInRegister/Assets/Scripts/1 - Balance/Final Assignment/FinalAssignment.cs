@@ -55,7 +55,7 @@ public class FinalAssignment : MonoBehaviour {
 
         theme1 = PlayerPrefs.GetString("TopTheme");
         theme2 = PlayerPrefs.GetString("SecondTheme");
-        introduction.text = "The top 2 issues that concern EU citizens are; " + theme1 + " and " + theme2 + ".";
+        introduction.text = "The top 2 issues that concern EU citizens are; " + theme1 + " and " + theme2 + ". Now select 4 views that you think best illustrate your views about Brexit.";
         paragraph1.text = "It is clear in the debate about EU identity that " + theme1 + " is very important. As one interviewee said (select a quotation about " + theme1 + " from your notebook):";
         paragraph2.text = "However, many people are also concerned about " + theme2 + " (select a quotation about " + theme2 + " from your notebook):";
         //paragraph3.text = "Many people seem very concerned about [THEME3]. To quote one of our interviewees on this topic:";

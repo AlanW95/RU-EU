@@ -23,6 +23,9 @@ public class JobInterview : MonoBehaviour
     //public GameObject answer3, answer4, answer5, answer6, inputField;
 
     public TMP_InputField inputEmail;
+
+    private bool emailValid = false;
+
     public InputField input1, input2, input3, input4, input5, input6, input7, input8, input9, input10, input11, input12, input13, input14, input15, input16, input17, input18, input19;
 
     public TMP_InputField q3Input, q4Input, q5Input, q6Input;
@@ -615,6 +618,12 @@ public class JobInterview : MonoBehaviour
     }
 
     public void Send() {
+        if (emailAnswer != "") {
+            //Call EmailValidation();
+            if ()
+        }
+
+
         emailAnswer = inputEmail.GetComponent<TMP_InputField>().text;
         PlayerPrefs.SetString("PlayerEmail", emailAnswer);
         Debug.Log(PlayerPrefs.GetString("PlayerEmail"));

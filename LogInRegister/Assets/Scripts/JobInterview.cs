@@ -620,7 +620,9 @@ public class JobInterview : MonoBehaviour
     public void Send() {
         if (emailAnswer != "") {
             //Call EmailValidation();
-            if ()
+            {
+
+            }
         }
 
 

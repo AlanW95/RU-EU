@@ -2596,7 +2596,7 @@ MonoBehaviour:
   scoreCanvas: {fileID: 1810696522}
   rankingCanvas: {fileID: 732463104}
   statementText: {fileID: 1120657376}
-  typingSpeed: 0
+  typingSpeed: 0.005
   continueButton: {fileID: 1871030971}
   socialButton: {fileID: 674831209}
   environmentButton: {fileID: 560466084}
@@ -3153,7 +3153,7 @@ MonoBehaviour:
   scoreCanvas: {fileID: 1810696522}
   rankingCanvas: {fileID: 732463104}
   statementText: {fileID: 1120657376}
-  typingSpeed: 0
+  typingSpeed: 0.005
   continueButton: {fileID: 2049551424}
   socialButton: {fileID: 674831209}
   environmentButton: {fileID: 560466084}
@@ -3680,7 +3680,7 @@ MonoBehaviour:
   scoreCanvas: {fileID: 1810696522}
   rankingCanvas: {fileID: 732463104}
   statementText: {fileID: 1120657376}
-  typingSpeed: 0
+  typingSpeed: 0.005
   continueButton: {fileID: 4924064}
   socialButton: {fileID: 674831209}
   environmentButton: {fileID: 560466084}
@@ -10177,7 +10177,7 @@ MonoBehaviour:
   scoreCanvas: {fileID: 1810696522}
   rankingCanvas: {fileID: 732463104}
   statementText: {fileID: 1120657376}
-  typingSpeed: 0
+  typingSpeed: 0.005
   continueButton: {fileID: 1894523649}
   socialButton: {fileID: 674831209}
   environmentButton: {fileID: 560466084}
@@ -12892,7 +12892,7 @@ MonoBehaviour:
   scoreCanvas: {fileID: 1810696522}
   rankingCanvas: {fileID: 732463104}
   statementText: {fileID: 1120657376}
-  typingSpeed: 0
+  typingSpeed: 0.005
   continueButton: {fileID: 417092195}
   socialButton: {fileID: 674831209}
   environmentButton: {fileID: 560466084}
@@ -14070,7 +14070,7 @@ MonoBehaviour:
   scoreCanvas: {fileID: 1810696522}
   rankingCanvas: {fileID: 732463104}
   statementText: {fileID: 1120657376}
-  typingSpeed: 0
+  typingSpeed: 0.005
   continueButton: {fileID: 755120889}
   socialButton: {fileID: 674831209}
   environmentButton: {fileID: 560466084}
@@ -15845,7 +15845,7 @@ MonoBehaviour:
   scoreCanvas: {fileID: 1810696522}
   rankingCanvas: {fileID: 732463104}
   statementText: {fileID: 1120657376}
-  typingSpeed: 0
+  typingSpeed: 0.005
   continueButton: {fileID: 1486652019}
   socialButton: {fileID: 674831209}
   environmentButton: {fileID: 560466084}
@@ -16400,7 +16400,7 @@ MonoBehaviour:
   scoreCanvas: {fileID: 1810696522}
   rankingCanvas: {fileID: 732463104}
   statementText: {fileID: 1120657376}
-  typingSpeed: 0
+  typingSpeed: 0.005
   continueButton: {fileID: 1415236429}
   socialButton: {fileID: 674831209}
   environmentButton: {fileID: 560466084}
@@ -20137,7 +20137,7 @@ MonoBehaviour:
   scoreCanvas: {fileID: 1810696522}
   rankingCanvas: {fileID: 732463104}
   statementText: {fileID: 1120657376}
-  typingSpeed: 0
+  typingSpeed: 0.005
   continueButton: {fileID: 1955119464}
   socialButton: {fileID: 674831209}
   environmentButton: {fileID: 560466084}
@@ -20201,7 +20201,7 @@ MonoBehaviour:
   scoreCanvas: {fileID: 1810696522}
   rankingCanvas: {fileID: 732463104}
   statementText: {fileID: 1120657376}
-  typingSpeed: 0
+  typingSpeed: 0.005
   continueButton: {fileID: 973780868}
   socialButton: {fileID: 674831209}
   environmentButton: {fileID: 560466084}

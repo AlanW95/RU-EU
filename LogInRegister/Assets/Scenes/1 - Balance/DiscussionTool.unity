@@ -640,7 +640,7 @@ MonoBehaviour:
   - 'The EU has done a lot to tackle climate change. '
   - 'If the EU were effective we wouldn''t need extinction rebellion. '
   - 'Government and people at all levels need to take action. '
-  typingSpeed: 0
+  typingSpeed: 0.005
   continueButton: {fileID: 763336593}
   toolBG: {fileID: 1968638422}
   proCharacter: {fileID: 523651170}
@@ -2753,7 +2753,7 @@ MonoBehaviour:
   - 'That''s so not true! Most of them hang around with the people they came with
     and don''t even try to learn English. '
   - 'Some people integrate and some don''t. '
-  typingSpeed: 0
+  typingSpeed: 0.005
   continueButton: {fileID: 1093933578}
   toolBG: {fileID: 1968638422}
   proCharacter: {fileID: 523651170}
@@ -5872,7 +5872,7 @@ MonoBehaviour:
   - 'All the people I know are really pleased about leaving the EU. We''re planning
     a street party for when we go. '
   - 'I''m worried about how easy it will be to go on holiday. '
-  typingSpeed: 0
+  typingSpeed: 0.005
   continueButton: {fileID: 1041933043}
   startCanvas: {fileID: 97389849}
   toolBG: {fileID: 1968638422}
@@ -8648,7 +8648,7 @@ MonoBehaviour:
     UK. '
   - 'It doesn''t make any difference - all the politicians just say the same things
     anyway. '
-  typingSpeed: 0
+  typingSpeed: 0.005
   continueButton: {fileID: 1972205700}
   toolBG: {fileID: 1968638422}
   proCharacter: {fileID: 523651170}
@@ -9107,7 +9107,7 @@ MonoBehaviour:
     identity. '
   - 'The European Union represents an unattractive homogenisation of European cultures. '
   - 'But what does culture really mean? '
-  typingSpeed: 0
+  typingSpeed: 0.005
   continueButton: {fileID: 580406612}
   toolBG: {fileID: 1968638422}
   proCharacter: {fileID: 523651170}
@@ -12175,7 +12175,7 @@ MonoBehaviour:
   - 'Being British is much more important to me than being European - I really want
     a blue passport! '
   - 'It all depends what you''re talking about. '
-  typingSpeed: 0
+  typingSpeed: 0.005
   continueButton: {fileID: 958828457}
   toolBG: {fileID: 1968638422}
   proCharacter: {fileID: 523651170}
@@ -13855,7 +13855,7 @@ MonoBehaviour:
   - 'But once we''ve left the EU we''ll be able to strike deals with the rest of the
     world so we''ll be fine. '
   - 'I don''t really care so long as my kids get jobs when they leave school. '
-  typingSpeed: 0
+  typingSpeed: 0.005
   continueButton: {fileID: 1290602529}
   toolBG: {fileID: 1968638422}
   proCharacter: {fileID: 523651170}
@@ -18691,7 +18691,7 @@ MonoBehaviour:
     future conflicts in Europe. '
   - 'The UK has always managed to defend itself just fine without Europe. '
   - 'History can tell us a lot. '
-  typingSpeed: 0
+  typingSpeed: 0.005
   continueButton: {fileID: 1628697458}
   toolBG: {fileID: 1968638422}
   proCharacter: {fileID: 523651170}
@@ -21876,6 +21876,12 @@ MonoBehaviour:
   btnS9: {fileID: 715621819}
   btnS10: {fileID: 1271311775}
   feedbackCanvas: {fileID: 489378493}
+  inputEmail: {fileID: 0}
+  input1: {fileID: 0}
+  input2: {fileID: 0}
+  input3: {fileID: 0}
+  input4: {fileID: 0}
+  BASE_URL: https://docs.google.com/forms/u/0/d/e/1FAIpQLSeyIYwJ_cVPvTiX0r8gAKDqVHGMTL6RYfpQg5LVNlpRZ3lZYQ/formResponse
 --- !u!1 &1653582728
 GameObject:
   m_ObjectHideFlags: 0
@@ -22162,7 +22168,7 @@ MonoBehaviour:
   - 'All the people I know are really pleased about leaving the EU. We''re planning
     a street party for when we go. '
   - 'I''m worried about how easy it will be to go on holiday. '
-  typingSpeed: 0
+  typingSpeed: 0.005
   continueButton: {fileID: 1470800753}
   toolBG: {fileID: 1968638422}
   proCharacter: {fileID: 523651170}
@@ -23791,7 +23797,7 @@ MonoBehaviour:
   - 'You must be kidding - that is what Brexit is all about! There are no opportunities
     for us ordinary folk, the opportunities are only for those who have money. '
   - 'Well both of these might be true at times? '
-  typingSpeed: 0
+  typingSpeed: 0.005
   continueButton: {fileID: 229275081}
   toolBG: {fileID: 1968638422}
   proCharacter: {fileID: 523651170}
@@ -27283,7 +27289,7 @@ MonoBehaviour:
   - 'But there''s still lots of tensions between the nations of Europe. It''s only
     a matter of time before serious trouble kicks off somewhere. '
   - 'I don''t really know enough about this to comment. '
-  typingSpeed: 0
+  typingSpeed: 0.005
   continueButton: {fileID: 1231161830}
   toolBG: {fileID: 1968638422}
   proCharacter: {fileID: 523651170}

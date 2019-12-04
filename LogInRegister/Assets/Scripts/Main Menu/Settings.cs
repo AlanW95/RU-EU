@@ -65,10 +65,28 @@ public class Settings : MonoBehaviour
 
     public void SetFullscreen (bool isFullscreen) 
     {
+        //PlayerPrefs.GetInt("FullscreenMode");
         Screen.fullScreen = isFullscreen;
+        //PlayerPrefs.SetInt("FullscreenMode", boolToInt(isFullscreen));
     }
 
     public void ReturnToMainMenu() {
         SceneManager.LoadScene("Start");
+    }
+
+    int boolToInt(bool val) {
+        if (val) {
+            return 1;
+        } else {
+            return 0;
+        }
+    }
+
+    bool intToBool(int val) {
+        if (val != 0) {
+            return true;
+        } else {
+            return false;
+        }
     }
 }

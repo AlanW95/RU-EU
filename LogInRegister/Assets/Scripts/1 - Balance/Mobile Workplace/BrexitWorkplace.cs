@@ -85,18 +85,22 @@ public class BrexitWorkplace : MonoBehaviour
 
         if (interview1Completed == false) {
             interview1.SetActive(true);
+            notebook.SetActive(true);
         }
 
         if (interview2Completed == false) {
             interview2.SetActive(true);
+            notebook.SetActive(true);
         }
 
         if (discussionCompleted == false) {
             discussion.SetActive(true);
+            notebook.SetActive(true);
         }
 
         if (newsflashCompleted == false) {
             newsflash.SetActive(true);
+            notebook.SetActive(true);
         }
         
         if (interview1Completed && interview2Completed && discussionCompleted && newsflashCompleted) {

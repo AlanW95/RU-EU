@@ -4062,7 +4062,7 @@ MonoBehaviour:
   scoreCanvas: {fileID: 1810696522}
   rankingCanvas: {fileID: 732463104}
   statementText: {fileID: 1120657376}
-  typingSpeed: 0
+  typingSpeed: 0.005
   continueButton: {fileID: 1871030971}
   socialButton: {fileID: 7988826}
   environmentButton: {fileID: 184289780}
@@ -4079,6 +4079,11 @@ MonoBehaviour:
   chosenTextDisplay: {fileID: 1555891835}
   backgroundClip: {fileID: 8300000, guid: cb8f729cf4890f14190b2c6c7dac96ba, type: 3}
   backgroundSource: {fileID: 195803032}
+  inputEmail: {fileID: 0}
+  input1: {fileID: 0}
+  input2: {fileID: 0}
+  input3: {fileID: 0}
+  BASE_URL: https://docs.google.com/forms/u/0/d/e/1FAIpQLSciWjfoLl9ULoMgAoWebwAlU-YCcIDoJYbdforspuAF9iaZ3g/formResponse
 --- !u!4 &290242460
 Transform:
   m_ObjectHideFlags: 0
@@ -4258,7 +4263,7 @@ MonoBehaviour:
   scoreCanvas: {fileID: 1810696522}
   rankingCanvas: {fileID: 732463104}
   statementText: {fileID: 1120657376}
-  typingSpeed: 0
+  typingSpeed: 0.005
   continueButton: {fileID: 2049551424}
   socialButton: {fileID: 7988826}
   environmentButton: {fileID: 184289780}
@@ -4275,6 +4280,11 @@ MonoBehaviour:
   chosenTextDisplay: {fileID: 1555891835}
   backgroundClip: {fileID: 8300000, guid: cb8f729cf4890f14190b2c6c7dac96ba, type: 3}
   backgroundSource: {fileID: 195803032}
+  inputEmail: {fileID: 0}
+  input1: {fileID: 0}
+  input2: {fileID: 0}
+  input3: {fileID: 0}
+  BASE_URL: https://docs.google.com/forms/u/0/d/e/1FAIpQLSciWjfoLl9ULoMgAoWebwAlU-YCcIDoJYbdforspuAF9iaZ3g/formResponse
 --- !u!4 &325038438
 Transform:
   m_ObjectHideFlags: 0
@@ -4977,7 +4987,7 @@ MonoBehaviour:
   scoreCanvas: {fileID: 1810696522}
   rankingCanvas: {fileID: 732463104}
   statementText: {fileID: 1120657376}
-  typingSpeed: 0
+  typingSpeed: 0.005
   continueButton: {fileID: 4924064}
   socialButton: {fileID: 7988826}
   environmentButton: {fileID: 184289780}
@@ -4994,6 +5004,11 @@ MonoBehaviour:
   chosenTextDisplay: {fileID: 1555891835}
   backgroundClip: {fileID: 8300000, guid: cb8f729cf4890f14190b2c6c7dac96ba, type: 3}
   backgroundSource: {fileID: 195803032}
+  inputEmail: {fileID: 0}
+  input1: {fileID: 0}
+  input2: {fileID: 0}
+  input3: {fileID: 0}
+  BASE_URL: https://docs.google.com/forms/u/0/d/e/1FAIpQLSciWjfoLl9ULoMgAoWebwAlU-YCcIDoJYbdforspuAF9iaZ3g/formResponse
 --- !u!4 &374528314
 Transform:
   m_ObjectHideFlags: 0
@@ -10825,7 +10840,7 @@ MonoBehaviour:
   scoreCanvas: {fileID: 1810696522}
   rankingCanvas: {fileID: 732463104}
   statementText: {fileID: 1120657376}
-  typingSpeed: 0
+  typingSpeed: 0.005
   continueButton: {fileID: 1894523649}
   socialButton: {fileID: 7988826}
   environmentButton: {fileID: 184289780}
@@ -10842,6 +10857,11 @@ MonoBehaviour:
   chosenTextDisplay: {fileID: 1555891835}
   backgroundClip: {fileID: 8300000, guid: cb8f729cf4890f14190b2c6c7dac96ba, type: 3}
   backgroundSource: {fileID: 195803032}
+  inputEmail: {fileID: 0}
+  input1: {fileID: 0}
+  input2: {fileID: 0}
+  input3: {fileID: 0}
+  BASE_URL: https://docs.google.com/forms/u/0/d/e/1FAIpQLSciWjfoLl9ULoMgAoWebwAlU-YCcIDoJYbdforspuAF9iaZ3g/formResponse
 --- !u!1 &1028577365
 GameObject:
   m_ObjectHideFlags: 0
@@ -13514,7 +13534,7 @@ MonoBehaviour:
   scoreCanvas: {fileID: 1810696522}
   rankingCanvas: {fileID: 732463104}
   statementText: {fileID: 1120657376}
-  typingSpeed: 0
+  typingSpeed: 0.005
   continueButton: {fileID: 417092195}
   socialButton: {fileID: 7988826}
   environmentButton: {fileID: 184289780}
@@ -13531,6 +13551,11 @@ MonoBehaviour:
   chosenTextDisplay: {fileID: 1555891835}
   backgroundClip: {fileID: 8300000, guid: cb8f729cf4890f14190b2c6c7dac96ba, type: 3}
   backgroundSource: {fileID: 195803032}
+  inputEmail: {fileID: 0}
+  input1: {fileID: 0}
+  input2: {fileID: 0}
+  input3: {fileID: 0}
+  BASE_URL: https://docs.google.com/forms/u/0/d/e/1FAIpQLSciWjfoLl9ULoMgAoWebwAlU-YCcIDoJYbdforspuAF9iaZ3g/formResponse
 --- !u!4 &1339411153
 Transform:
   m_ObjectHideFlags: 0
@@ -14923,7 +14948,7 @@ MonoBehaviour:
   scoreCanvas: {fileID: 1810696522}
   rankingCanvas: {fileID: 732463104}
   statementText: {fileID: 1120657376}
-  typingSpeed: 0
+  typingSpeed: 0.005
   continueButton: {fileID: 755120889}
   socialButton: {fileID: 7988826}
   environmentButton: {fileID: 184289780}
@@ -14940,6 +14965,11 @@ MonoBehaviour:
   chosenTextDisplay: {fileID: 1555891835}
   backgroundClip: {fileID: 8300000, guid: cb8f729cf4890f14190b2c6c7dac96ba, type: 3}
   backgroundSource: {fileID: 195803032}
+  inputEmail: {fileID: 0}
+  input1: {fileID: 0}
+  input2: {fileID: 0}
+  input3: {fileID: 0}
+  BASE_URL: https://docs.google.com/forms/u/0/d/e/1FAIpQLSciWjfoLl9ULoMgAoWebwAlU-YCcIDoJYbdforspuAF9iaZ3g/formResponse
 --- !u!4 &1433238507
 Transform:
   m_ObjectHideFlags: 0
@@ -17533,7 +17563,7 @@ MonoBehaviour:
   scoreCanvas: {fileID: 1810696522}
   rankingCanvas: {fileID: 732463104}
   statementText: {fileID: 1120657376}
-  typingSpeed: 0
+  typingSpeed: 0.005
   continueButton: {fileID: 1486652019}
   socialButton: {fileID: 7988826}
   environmentButton: {fileID: 184289780}
@@ -17550,6 +17580,11 @@ MonoBehaviour:
   chosenTextDisplay: {fileID: 1555891835}
   backgroundClip: {fileID: 8300000, guid: cb8f729cf4890f14190b2c6c7dac96ba, type: 3}
   backgroundSource: {fileID: 195803032}
+  inputEmail: {fileID: 0}
+  input1: {fileID: 0}
+  input2: {fileID: 0}
+  input3: {fileID: 0}
+  BASE_URL: https://docs.google.com/forms/u/0/d/e/1FAIpQLSciWjfoLl9ULoMgAoWebwAlU-YCcIDoJYbdforspuAF9iaZ3g/formResponse
 --- !u!4 &1683432097
 Transform:
   m_ObjectHideFlags: 0
@@ -18758,7 +18793,7 @@ MonoBehaviour:
   scoreCanvas: {fileID: 1810696522}
   rankingCanvas: {fileID: 732463104}
   statementText: {fileID: 1120657376}
-  typingSpeed: 0
+  typingSpeed: 0.005
   continueButton: {fileID: 1415236429}
   socialButton: {fileID: 7988826}
   environmentButton: {fileID: 184289780}
@@ -18775,6 +18810,11 @@ MonoBehaviour:
   chosenTextDisplay: {fileID: 1555891835}
   backgroundClip: {fileID: 8300000, guid: cb8f729cf4890f14190b2c6c7dac96ba, type: 3}
   backgroundSource: {fileID: 195803032}
+  inputEmail: {fileID: 0}
+  input1: {fileID: 0}
+  input2: {fileID: 0}
+  input3: {fileID: 0}
+  BASE_URL: https://docs.google.com/forms/u/0/d/e/1FAIpQLSciWjfoLl9ULoMgAoWebwAlU-YCcIDoJYbdforspuAF9iaZ3g/formResponse
 --- !u!4 &1727027247
 Transform:
   m_ObjectHideFlags: 0
@@ -23137,7 +23177,7 @@ MonoBehaviour:
   scoreCanvas: {fileID: 1810696522}
   rankingCanvas: {fileID: 732463104}
   statementText: {fileID: 1120657376}
-  typingSpeed: 0
+  typingSpeed: 0.005
   continueButton: {fileID: 1955119464}
   socialButton: {fileID: 7988826}
   environmentButton: {fileID: 184289780}
@@ -23154,6 +23194,11 @@ MonoBehaviour:
   chosenTextDisplay: {fileID: 1555891835}
   backgroundClip: {fileID: 8300000, guid: cb8f729cf4890f14190b2c6c7dac96ba, type: 3}
   backgroundSource: {fileID: 195803032}
+  inputEmail: {fileID: 0}
+  input1: {fileID: 0}
+  input2: {fileID: 0}
+  input3: {fileID: 0}
+  BASE_URL: https://docs.google.com/forms/u/0/d/e/1FAIpQLSciWjfoLl9ULoMgAoWebwAlU-YCcIDoJYbdforspuAF9iaZ3g/formResponse
 --- !u!1 &2092788521
 GameObject:
   m_ObjectHideFlags: 0
@@ -23196,7 +23241,7 @@ MonoBehaviour:
   scoreCanvas: {fileID: 1810696522}
   rankingCanvas: {fileID: 732463104}
   statementText: {fileID: 1120657376}
-  typingSpeed: 0
+  typingSpeed: 0.005
   continueButton: {fileID: 973780868}
   socialButton: {fileID: 7988826}
   environmentButton: {fileID: 184289780}
@@ -23213,6 +23258,11 @@ MonoBehaviour:
   chosenTextDisplay: {fileID: 1555891835}
   backgroundClip: {fileID: 8300000, guid: cb8f729cf4890f14190b2c6c7dac96ba, type: 3}
   backgroundSource: {fileID: 195803032}
+  inputEmail: {fileID: 0}
+  input1: {fileID: 0}
+  input2: {fileID: 0}
+  input3: {fileID: 0}
+  BASE_URL: https://docs.google.com/forms/u/0/d/e/1FAIpQLSciWjfoLl9ULoMgAoWebwAlU-YCcIDoJYbdforspuAF9iaZ3g/formResponse
 --- !u!4 &2092788523
 Transform:
   m_ObjectHideFlags: 0

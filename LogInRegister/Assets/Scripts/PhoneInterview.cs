@@ -9,6 +9,7 @@ public class PhoneInterview : MonoBehaviour
 {
     //public GameObject startCanvas, mainCanvas;
     public GameObject c1, c2; //, c3, c4, c5, c6, c7; //continue buttons
+    public GameObject b1, b2;
     public GameObject finishedButton;
 
     public GameObject[] text;
@@ -46,6 +47,9 @@ public class PhoneInterview : MonoBehaviour
         c1.SetActive(true);
         c2.SetActive(false);
 
+        b1.SetActive(false);
+        b2.SetActive(false);
+
         finishedButton.SetActive(false);
     }
 
@@ -54,23 +58,36 @@ public class PhoneInterview : MonoBehaviour
         text[1].SetActive(false);
         text[2].SetActive(false);
         c1.SetActive(false);
+        b2.SetActive(false);
 
         text[3].SetActive(true);
         text[4].SetActive(true);
         text[5].SetActive(true);
         c2.SetActive(true);
+        b1.SetActive(true);
+
+        text[6].SetActive(false);
+        text[7].SetActive(false);
+        text[8].SetActive(false);
+        finishedButton.SetActive(false);
     }
 
     public void Set3() {
+        text[0].SetActive(false);
+        text[1].SetActive(false);
+        text[2].SetActive(false);
+
         text[3].SetActive(false);
         text[4].SetActive(false);
         text[5].SetActive(false);
         c2.SetActive(false);
+        b1.SetActive(false);
 
         text[6].SetActive(true);
         text[7].SetActive(true);
         text[8].SetActive(true);
         finishedButton.SetActive(true);
+        b2.SetActive(true);
     }
 
     public void Finished() {

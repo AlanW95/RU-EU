@@ -6,6 +6,8 @@ using UnityEngine.SceneManagement;
 using TMPro;
 
 public class ProInterview : MonoBehaviour {
+    private bool interview1Completed;
+
     //initial starting canvas
     public GameObject startCanvas;
 
@@ -151,6 +153,8 @@ public class ProInterview : MonoBehaviour {
     }
 
     public void ReturnToMobileWorkplace() {
+        //interview1Completed = false;
+        //PlayerPrefs.SetInt("Interview1Completed", boolToInt(interview1Completed));
         SceneManager.LoadScene("Journalist");
     }
 
@@ -620,6 +624,23 @@ public class ProInterview : MonoBehaviour {
         if (interviewCounter == 2) {
             PlayerPrefs.SetString("BrexitProInterview4", "European identity means that where you are born does not matter.");
             Debug.Log(PlayerPrefs.GetString("BrexitProInterview4"));
+        }
+    }
+    int boolToInt(bool val) {
+        if (val) {
+            return 1;
+        }
+        else {
+            return 0;
+        }
+    }
+
+    bool intToBool(int val) {
+        if (val != 0) {
+            return true;
+        }
+        else {
+            return false;
         }
     }
 

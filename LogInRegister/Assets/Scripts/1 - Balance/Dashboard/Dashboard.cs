@@ -14,6 +14,8 @@ public class Dashboard : MonoBehaviour
 
     public TextMeshProUGUI topTheme, secondTopTheme;
 
+    private bool isScenarioComplete = false;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -61,6 +63,12 @@ public class Dashboard : MonoBehaviour
     }
 
     public void ReturnToMap() {
+        //good to say that the scenario has been complete
+        //use the boolToInt, intToBool functions to help
+        isScenarioComplete = true;
+        //Add in PlayerPrefs to set this
+        PlayerPrefs.SetInt("UKScenarioComplete", boolToInt(isScenarioComplete));
+
         SceneManager.LoadScene("ScenarioChoice");
     }
 
@@ -166,6 +174,22 @@ public class Dashboard : MonoBehaviour
         if (secondTopTheme.text == "Geography") {
             int secondTopScore = PlayerPrefs.GetInt("SecondThemeScore");
             secondTopThemeSlider.value = secondTopScore;
+        }
+    }
+
+    int boolToInt(bool val) {
+        if (val) {
+            return 1;
+        } else {
+            return 0;
+        }
+    }
+
+    bool intToBool(int val) {
+        if (val != 0) {
+            return true;
+        } else {
+            return false;
         }
     }
 }

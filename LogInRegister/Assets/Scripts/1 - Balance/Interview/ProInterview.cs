@@ -67,10 +67,10 @@ public class ProInterview : MonoBehaviour {
 
     //Collecting Data through Google Forms
     public InputField inputEmail, input1, input2, input3;
-    //private string emailAnswer, selection1Answer, selection2Answer, selection3Answer;
+    private string emailAnswer, selection1Answer, selection2Answer, selection3Answer;
 
-    //[SerializeField]
-    //private string BASE_URL = "https://docs.google.com/forms/u/0/d/e/1FAIpQLSeRkxP5ZCsqPnWQbTLHudiOcRjW21pyAdkV-flT31XniuS9hw/formResponse";
+    [SerializeField]
+    private string BASE_URL = "https://docs.google.com/forms/u/0/d/e/1FAIpQLSeRkxP5ZCsqPnWQbTLHudiOcRjW21pyAdkV-flT31XniuS9hw/formResponse";
 
     //--------------------------------------
 
@@ -128,9 +128,9 @@ public class ProInterview : MonoBehaviour {
             //themeSelectionContinueButton.SetActive(true);
         }
 
-        if (Input.GetKeyDown(KeyCode.Escape)) {
+        /*if (Input.GetKeyDown(KeyCode.Escape)) {
             SceneManager.LoadScene("Journalist");
-        }
+        }*/
     }
 
     public void ResetPlayerPrefs() {
@@ -644,7 +644,7 @@ public class ProInterview : MonoBehaviour {
         }
     }
 
-    /*IEnumerator PostToGoogle(string emailAnswer, string selection1, string selection2, string selection3) {
+    IEnumerator PostToGoogle(string emailAnswer, string selection1, string selection2, string selection3) {
         WWWForm form = new WWWForm();
 
         form.AddField("entry.73471519", emailAnswer);
@@ -671,5 +671,5 @@ public class ProInterview : MonoBehaviour {
         Debug.Log("Processing all themes selected and sending to Google Forms.");
         
         StartCoroutine(PostToGoogle(emailAnswer, selection1Answer, selection2Answer, selection3Answer));
-    }*/
+    }
 }

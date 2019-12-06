@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.44657898, g: 0.4964133, b: 0.5748178, a: 1}
+  m_IndirectSpecularColor: {r: 0.44657868, g: 0.49641263, b: 0.57481706, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -163,7 +163,7 @@ MonoBehaviour:
   - 'The Euro and a monetary union is not advantageous for the EU. '
   - 'Regarding if a single monetary union with a single currency is good or not, is
     not so easy to say per se, since so many factors play a role.  '
-  typingSpeed: 0
+  typingSpeed: 0.005
   continueButton: {fileID: 763336593}
   toolBG: {fileID: 1968638422}
   proCharacter: {fileID: 523651170}
@@ -180,6 +180,7 @@ MonoBehaviour:
   contextTheme4: {fileID: 387591819}
   contextTheme5: {fileID: 1379542267}
   contextTheme6: {fileID: 1144134543}
+  contextBG: {fileID: 1492860181}
   playerSelection: {fileID: 1105663507}
   character1Text:
   - {fileID: 1535444546}
@@ -317,7 +318,7 @@ RectTransform:
   - {fileID: 1062759512}
   - {fileID: 1561163843}
   m_Father: {fileID: 0}
-  m_RootOrder: 6
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
@@ -494,7 +495,7 @@ Animator:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 89239114}
-  m_Enabled: 1
+  m_Enabled: 0
   m_Avatar: {fileID: 0}
   m_Controller: {fileID: 9100000, guid: e7fd317bd38e862459cf092ea5b0eba4, type: 2}
   m_CullingMode: 0
@@ -807,8 +808,8 @@ MonoBehaviour:
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4278190080
-  m_fontColor: {r: 0, g: 0, b: 0, a: 1}
+    rgba: 4294967295
+  m_fontColor: {r: 1, g: 1, b: 1, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -935,7 +936,7 @@ Transform:
   - {fileID: 1682258673}
   - {fileID: 1046536572}
   m_Father: {fileID: 0}
-  m_RootOrder: 8
+  m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &163695663
 GameObject:
@@ -1312,7 +1313,7 @@ MonoBehaviour:
     as EU citizens. '
   - 'I am first of all Greek, but i would like to be better informed about my rights
     as an EU citizen. '
-  typingSpeed: 0
+  typingSpeed: 0.005
   continueButton: {fileID: 1093933578}
   toolBG: {fileID: 1968638422}
   proCharacter: {fileID: 523651170}
@@ -1329,6 +1330,7 @@ MonoBehaviour:
   contextTheme4: {fileID: 387591819}
   contextTheme5: {fileID: 1379542267}
   contextTheme6: {fileID: 1144134543}
+  contextBG: {fileID: 1492860181}
   playerSelection: {fileID: 1105663507}
   character1Text:
   - {fileID: 1535444546}
@@ -1534,7 +1536,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 9
+  m_RootOrder: 10
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &229275081
 GameObject:
@@ -2302,8 +2304,8 @@ MonoBehaviour:
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4278190080
-  m_fontColor: {r: 0, g: 0, b: 0, a: 1}
+    rgba: 4294967295
+  m_fontColor: {r: 1, g: 1, b: 1, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -2427,7 +2429,7 @@ RectTransform:
   m_LocalScale: {x: 1.0000125, y: 1.0000125, z: 1.0000125}
   m_Children: []
   m_Father: {fileID: 1767171690}
-  m_RootOrder: 18
+  m_RootOrder: 19
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 0}
@@ -2455,8 +2457,8 @@ MonoBehaviour:
   m_Transition: 1
   m_Colors:
     m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
-    m_HighlightedColor: {r: 0.49056602, g: 0.49056602, b: 0.49056602, a: 1}
-    m_PressedColor: {r: 0.31132078, g: 0.31132078, b: 0.31132078, a: 1}
+    m_HighlightedColor: {r: 0.5943396, g: 0.5943396, b: 0.5943396, a: 1}
+    m_PressedColor: {r: 0.3490566, g: 0.3490566, b: 0.3490566, a: 1}
     m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
     m_ColorMultiplier: 2
     m_FadeDuration: 0.1
@@ -2827,7 +2829,7 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1767171690}
-  m_RootOrder: 15
+  m_RootOrder: 16
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 0}
@@ -2855,8 +2857,8 @@ MonoBehaviour:
   m_Transition: 1
   m_Colors:
     m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
-    m_HighlightedColor: {r: 0.5849056, g: 0.5849056, b: 0.5849056, a: 1}
-    m_PressedColor: {r: 0.3207547, g: 0.3207547, b: 0.3207547, a: 1}
+    m_HighlightedColor: {r: 0.5943396, g: 0.5943396, b: 0.5943396, a: 1}
+    m_PressedColor: {r: 0.3490566, g: 0.3490566, b: 0.3490566, a: 1}
     m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
     m_ColorMultiplier: 2
     m_FadeDuration: 0.1
@@ -2996,7 +2998,7 @@ MonoBehaviour:
     lineCount: 2
     pageCount: 1
     materialCount: 1
-  m_havePropertiesChanged: 1
+  m_havePropertiesChanged: 0
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_spriteAnimator: {fileID: 0}
@@ -3796,7 +3798,7 @@ RectTransform:
   m_Children:
   - {fileID: 1693070709}
   m_Father: {fileID: 0}
-  m_RootOrder: 7
+  m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
@@ -4187,6 +4189,12 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 706358103}
   m_CullTransparentMesh: 0
+--- !u!1 &707538117 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7665142781349280812, guid: d43f9de98e2f71f4191b1a49ab03b59d,
+    type: 3}
+  m_PrefabInstance: {fileID: 1248842427}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &714098575
 GameObject:
   m_ObjectHideFlags: 0
@@ -5967,7 +5975,7 @@ MonoBehaviour:
     environmental and climate changes. '
   - 'A common energy policy among EU member states is very important as it is for
     Germany. '
-  typingSpeed: 0
+  typingSpeed: 0.005
   continueButton: {fileID: 1290602529}
   toolBG: {fileID: 1968638422}
   proCharacter: {fileID: 523651170}
@@ -5984,6 +5992,7 @@ MonoBehaviour:
   contextTheme4: {fileID: 387591819}
   contextTheme5: {fileID: 1379542267}
   contextTheme6: {fileID: 1144134543}
+  contextBG: {fileID: 1492860181}
   playerSelection: {fileID: 1105663507}
   character1Text:
   - {fileID: 1535444546}
@@ -6369,7 +6378,7 @@ RectTransform:
   - {fileID: 1978798693}
   - {fileID: 2005500102}
   m_Father: {fileID: 1767171690}
-  m_RootOrder: 21
+  m_RootOrder: 22
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0}
   m_AnchorMax: {x: 0.5, y: 0}
@@ -6429,14 +6438,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.764151, g: 0.764151, b: 0.764151, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_Sprite: {fileID: 0}
+  m_Sprite: {fileID: 21300000, guid: 27395959ec68e5746b168b43b5e40f38, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -6484,7 +6493,7 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1767171690}
-  m_RootOrder: 20
+  m_RootOrder: 21
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 0}
@@ -6512,8 +6521,8 @@ MonoBehaviour:
   m_Transition: 1
   m_Colors:
     m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
-    m_HighlightedColor: {r: 0.5188679, g: 0.5188679, b: 0.5188679, a: 1}
-    m_PressedColor: {r: 0.3679245, g: 0.3679245, b: 0.3679245, a: 1}
+    m_HighlightedColor: {r: 0.5943396, g: 0.5943396, b: 0.5943396, a: 1}
+    m_PressedColor: {r: 0.3490566, g: 0.3490566, b: 0.3490566, a: 1}
     m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
     m_ColorMultiplier: 2
     m_FadeDuration: 0.1
@@ -7121,7 +7130,7 @@ RectTransform:
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 0}
+  m_SizeDelta: {x: -40, y: -40}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1165695874
 MonoBehaviour:
@@ -7173,8 +7182,8 @@ MonoBehaviour:
   m_outlineColor:
     serializedVersion: 2
     rgba: 4278190080
-  m_fontSize: 48
-  m_fontSizeBase: 48
+  m_fontSize: 44
+  m_fontSizeBase: 44
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -7966,6 +7975,190 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1243935668}
   m_CullTransparentMesh: 0
+--- !u!1001 &1248842427
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 5419248567114418950, guid: d43f9de98e2f71f4191b1a49ab03b59d,
+        type: 3}
+      propertyPath: m_Name
+      value: PauseMenu
+      objectReference: {fileID: 0}
+    - target: {fileID: 5419248567114418950, guid: d43f9de98e2f71f4191b1a49ab03b59d,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5419248567114418954, guid: d43f9de98e2f71f4191b1a49ab03b59d,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5419248567114418954, guid: d43f9de98e2f71f4191b1a49ab03b59d,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5419248567114418954, guid: d43f9de98e2f71f4191b1a49ab03b59d,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5419248567114418954, guid: d43f9de98e2f71f4191b1a49ab03b59d,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5419248567114418954, guid: d43f9de98e2f71f4191b1a49ab03b59d,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5419248567114418954, guid: d43f9de98e2f71f4191b1a49ab03b59d,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5419248567114418954, guid: d43f9de98e2f71f4191b1a49ab03b59d,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5419248567114418954, guid: d43f9de98e2f71f4191b1a49ab03b59d,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 5419248567114418954, guid: d43f9de98e2f71f4191b1a49ab03b59d,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5419248567114418954, guid: d43f9de98e2f71f4191b1a49ab03b59d,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5419248567114418954, guid: d43f9de98e2f71f4191b1a49ab03b59d,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5419248567114418954, guid: d43f9de98e2f71f4191b1a49ab03b59d,
+        type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5419248567114418954, guid: d43f9de98e2f71f4191b1a49ab03b59d,
+        type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5419248567114418954, guid: d43f9de98e2f71f4191b1a49ab03b59d,
+        type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5419248567114418954, guid: d43f9de98e2f71f4191b1a49ab03b59d,
+        type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5419248567114418954, guid: d43f9de98e2f71f4191b1a49ab03b59d,
+        type: 3}
+      propertyPath: m_AnchorMin.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5419248567114418954, guid: d43f9de98e2f71f4191b1a49ab03b59d,
+        type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5419248567114418954, guid: d43f9de98e2f71f4191b1a49ab03b59d,
+        type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5419248567114418954, guid: d43f9de98e2f71f4191b1a49ab03b59d,
+        type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5419248567114418954, guid: d43f9de98e2f71f4191b1a49ab03b59d,
+        type: 3}
+      propertyPath: m_Pivot.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5419248567114418954, guid: d43f9de98e2f71f4191b1a49ab03b59d,
+        type: 3}
+      propertyPath: m_Pivot.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5419248567752681859, guid: d43f9de98e2f71f4191b1a49ab03b59d,
+        type: 3}
+      propertyPath: m_havePropertiesChanged
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5419248567752681859, guid: d43f9de98e2f71f4191b1a49ab03b59d,
+        type: 3}
+      propertyPath: m_isInputParsingRequired
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5419248567650804325, guid: d43f9de98e2f71f4191b1a49ab03b59d,
+        type: 3}
+      propertyPath: m_havePropertiesChanged
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5419248567650804325, guid: d43f9de98e2f71f4191b1a49ab03b59d,
+        type: 3}
+      propertyPath: m_isInputParsingRequired
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5419248568730028561, guid: d43f9de98e2f71f4191b1a49ab03b59d,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1767171691}
+    - target: {fileID: 5419248568730028561, guid: d43f9de98e2f71f4191b1a49ab03b59d,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: PreExitTheGame
+      objectReference: {fileID: 0}
+    - target: {fileID: 5631328685962456652, guid: d43f9de98e2f71f4191b1a49ab03b59d,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1767171691}
+    - target: {fileID: 5631328685962456652, guid: d43f9de98e2f71f4191b1a49ab03b59d,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: ExitTheGame
+      objectReference: {fileID: 0}
+    - target: {fileID: 5631328685962456652, guid: d43f9de98e2f71f4191b1a49ab03b59d,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 8923340380848355901, guid: d43f9de98e2f71f4191b1a49ab03b59d,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1767171691}
+    - target: {fileID: 8923340380848355901, guid: d43f9de98e2f71f4191b1a49ab03b59d,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: Resume
+      objectReference: {fileID: 0}
+    - target: {fileID: 8923340380848355901, guid: d43f9de98e2f71f4191b1a49ab03b59d,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: d43f9de98e2f71f4191b1a49ab03b59d, type: 3}
 --- !u!1 &1259109597
 GameObject:
   m_ObjectHideFlags: 0
@@ -7997,7 +8190,7 @@ RectTransform:
   m_LocalScale: {x: 1.0000125, y: 1.0000125, z: 1.0000125}
   m_Children: []
   m_Father: {fileID: 1767171690}
-  m_RootOrder: 17
+  m_RootOrder: 18
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 0}
@@ -8025,8 +8218,8 @@ MonoBehaviour:
   m_Transition: 1
   m_Colors:
     m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
-    m_HighlightedColor: {r: 0.46226418, g: 0.46226418, b: 0.46226418, a: 1}
-    m_PressedColor: {r: 0.3018868, g: 0.3018868, b: 0.3018868, a: 1}
+    m_HighlightedColor: {r: 0.5943396, g: 0.5943396, b: 0.5943396, a: 1}
+    m_PressedColor: {r: 0.3490566, g: 0.3490566, b: 0.3490566, a: 1}
     m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
     m_ColorMultiplier: 2
     m_FadeDuration: 0.1
@@ -8464,7 +8657,7 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_Sprite: {fileID: 21300000, guid: 422e944e5b97b864ab89779552b35ae5, type: 3}
+  m_Sprite: {fileID: 21300000, guid: a1c3ec16c91bb55498ea4064671c0562, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -8760,7 +8953,7 @@ RectTransform:
   m_LocalScale: {x: 1.000001, y: 1.000001, z: 1.000001}
   m_Children: []
   m_Father: {fileID: 1767171690}
-  m_RootOrder: 19
+  m_RootOrder: 20
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 0}
@@ -8788,8 +8981,8 @@ MonoBehaviour:
   m_Transition: 1
   m_Colors:
     m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
-    m_HighlightedColor: {r: 0.5, g: 0.5, b: 0.5, a: 1}
-    m_PressedColor: {r: 0.33962262, g: 0.33962262, b: 0.33962262, a: 1}
+    m_HighlightedColor: {r: 0.5943396, g: 0.5943396, b: 0.5943396, a: 1}
+    m_PressedColor: {r: 0.3490566, g: 0.3490566, b: 0.3490566, a: 1}
     m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
     m_ColorMultiplier: 2
     m_FadeDuration: 0.1
@@ -9125,7 +9318,7 @@ Animator:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1394089431}
-  m_Enabled: 1
+  m_Enabled: 0
   m_Avatar: {fileID: 0}
   m_Controller: {fileID: 9100000, guid: e7fd317bd38e862459cf092ea5b0eba4, type: 2}
   m_CullingMode: 0
@@ -9323,7 +9516,7 @@ RectTransform:
   m_LocalScale: {x: 1.0000125, y: 1.0000125, z: 1.0000125}
   m_Children: []
   m_Father: {fileID: 1767171690}
-  m_RootOrder: 16
+  m_RootOrder: 17
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 0}
@@ -9351,8 +9544,8 @@ MonoBehaviour:
   m_Transition: 1
   m_Colors:
     m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
-    m_HighlightedColor: {r: 0.5283019, g: 0.5283019, b: 0.5283019, a: 1}
-    m_PressedColor: {r: 0.2264151, g: 0.2264151, b: 0.2264151, a: 1}
+    m_HighlightedColor: {r: 0.5943396, g: 0.5943396, b: 0.5943396, a: 1}
+    m_PressedColor: {r: 0.3490566, g: 0.3490566, b: 0.3490566, a: 1}
     m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
     m_ColorMultiplier: 2
     m_FadeDuration: 0.1
@@ -9905,6 +10098,80 @@ MonoBehaviour:
   - {fileID: 0}
   m_baseMaterial: {fileID: 0}
   m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
+--- !u!1 &1492860181
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1492860182}
+  - component: {fileID: 1492860184}
+  - component: {fileID: 1492860183}
+  m_Layer: 5
+  m_Name: ContextBG
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!224 &1492860182
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1492860181}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1767171690}
+  m_RootOrder: 15
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0}
+  m_AnchorMax: {x: 0.5, y: 0}
+  m_AnchoredPosition: {x: -0.0012207, y: 100}
+  m_SizeDelta: {x: 1678.1, y: 200}
+  m_Pivot: {x: 0.5, y: 0}
+--- !u!114 &1492860183
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1492860181}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -765806418, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
+      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+  m_Sprite: {fileID: 21300000, guid: 27395959ec68e5746b168b43b5e40f38, type: 3}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+--- !u!222 &1492860184
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1492860181}
+  m_CullTransparentMesh: 0
 --- !u!1 &1499168195
 GameObject:
   m_ObjectHideFlags: 0
@@ -11083,7 +11350,7 @@ MonoBehaviour:
   - Throughout the history of the EC and EU the peacekeeping aspect deserves recognition.
   - 'The relevance of peacekeeping function of EC/EU in Europe is exaggerated, and
     should not be compared with that of NATO. '
-  typingSpeed: 0
+  typingSpeed: 0.005
   continueButton: {fileID: 1470800753}
   toolBG: {fileID: 1968638422}
   proCharacter: {fileID: 523651170}
@@ -11100,6 +11367,7 @@ MonoBehaviour:
   contextTheme4: {fileID: 387591819}
   contextTheme5: {fileID: 1379542267}
   contextTheme6: {fileID: 1144134543}
+  contextBG: {fileID: 1492860181}
   playerSelection: {fileID: 1105663507}
   character1Text:
   - {fileID: 1535444546}
@@ -11414,7 +11682,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1731298096
 RectTransform:
   m_ObjectHideFlags: 0
@@ -11825,6 +12093,7 @@ GameObject:
   - component: {fileID: 1767171689}
   - component: {fileID: 1767171688}
   - component: {fileID: 1767171687}
+  - component: {fileID: 1767171691}
   m_Layer: 5
   m_Name: DiscussionCanvas
   m_TagString: Untagged
@@ -11918,6 +12187,7 @@ RectTransform:
   - {fileID: 1231161831}
   - {fileID: 1470800754}
   - {fileID: 1290602530}
+  - {fileID: 1492860182}
   - {fileID: 490525868}
   - {fileID: 1463285662}
   - {fileID: 1259109598}
@@ -11933,6 +12203,20 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 0}
+--- !u!114 &1767171691
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1767171686}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5a36c46ab42ee7b45bfa51a0d43c1850, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  pauseMenu: {fileID: 1982336446}
+  confirmationMenu: {fileID: 707538117}
 --- !u!1 &1769699383
 GameObject:
   m_ObjectHideFlags: 0
@@ -12791,7 +13075,7 @@ MonoBehaviour:
   - 'Other than the bureaucracy, EU is mostly trustworthy and is trying to work for
     the good of the EU citizen. '
   - 'The EU is not very trustworthy and is not working for the good of all EU citizen. '
-  typingSpeed: 0
+  typingSpeed: 0.005
   continueButton: {fileID: 229275081}
   toolBG: {fileID: 1968638422}
   proCharacter: {fileID: 523651170}
@@ -12808,6 +13092,7 @@ MonoBehaviour:
   contextTheme4: {fileID: 387591819}
   contextTheme5: {fileID: 1379542267}
   contextTheme6: {fileID: 1144134543}
+  contextBG: {fileID: 1492860181}
   playerSelection: {fileID: 1105663507}
   character1Text:
   - {fileID: 1535444546}
@@ -13004,6 +13289,12 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1978798692}
   m_CullTransparentMesh: 0
+--- !u!1 &1982336446 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5419248567114418950, guid: d43f9de98e2f71f4191b1a49ab03b59d,
+    type: 3}
+  m_PrefabInstance: {fileID: 1248842427}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1985942766
 GameObject:
   m_ObjectHideFlags: 0
@@ -13965,8 +14256,8 @@ MonoBehaviour:
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4278190080
-  m_fontColor: {r: 0, g: 0, b: 0, a: 1}
+    rgba: 4294967295
+  m_fontColor: {r: 1, g: 1, b: 1, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -14361,7 +14652,7 @@ MonoBehaviour:
   - 'A common EU policy on migration would benefit Greece very much. '
   - 'It is essential that EU have one common policy on migration. '
   - 'A common EU policy on migration is not necessary and not of good for UK. '
-  typingSpeed: 0
+  typingSpeed: 0.005
   continueButton: {fileID: 1231161830}
   toolBG: {fileID: 1968638422}
   proCharacter: {fileID: 523651170}
@@ -14378,6 +14669,7 @@ MonoBehaviour:
   contextTheme4: {fileID: 387591819}
   contextTheme5: {fileID: 1379542267}
   contextTheme6: {fileID: 1144134543}
+  contextBG: {fileID: 1492860181}
   playerSelection: {fileID: 1105663507}
   character1Text:
   - {fileID: 1535444546}

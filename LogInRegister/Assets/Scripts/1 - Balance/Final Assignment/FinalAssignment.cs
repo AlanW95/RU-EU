@@ -62,9 +62,9 @@ public class FinalAssignment : MonoBehaviour {
 
 
 
-        if (Input.GetKeyDown(KeyCode.Escape)) {
+        /*if (Input.GetKeyDown(KeyCode.Escape)) {
             SceneManager.LoadScene("Journalist");
-        }
+        }*/
     }
 
     public void ReturnToWorkplace() {

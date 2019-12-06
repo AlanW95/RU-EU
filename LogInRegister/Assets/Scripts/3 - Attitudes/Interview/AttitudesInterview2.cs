@@ -52,7 +52,6 @@ public class AttitudesInterview2 : MonoBehaviour {
     private bool statement1Selected = false;
     private bool statement2Selected = false;
     private bool statement3Selected = false;
-     
 
     private bool selected = false;
 
@@ -60,6 +59,16 @@ public class AttitudesInterview2 : MonoBehaviour {
     public string antiInterview = "AntiInterview";
     //public static string proInterviewStatements;
     public TextMeshProUGUI chosenTextDisplay;
+
+    public AudioClip backgroundClip;
+    public AudioSource backgroundSource;
+
+    //Data for Google Forms
+    public InputField inputEmail, input1, input2, input3;
+    private string emailAnswer, selection1Answer, selection2Answer, selection3Answer;
+
+    [SerializeField]
+    private string BASE_URL = "https://docs.google.com/forms/u/0/d/e/1FAIpQLSdTgYaKzYVObfF5Divl52bMFIDrBbY6AOW3o7HOE6DuBbRiug/formResponse";
 
     // Start is called before the first frame update
     void Start()
@@ -74,7 +83,10 @@ public class AttitudesInterview2 : MonoBehaviour {
         secondCounter = 3;
 
         FloatingTextController.Initialize();
-       // index = Random.Range(0, sentences.Length);
+        // index = Random.Range(0, sentences.Length);
+
+        backgroundSource.clip = backgroundClip;
+        backgroundSource.Play();
     }
 
     // Update is called once per frame
@@ -202,7 +214,7 @@ public class AttitudesInterview2 : MonoBehaviour {
         interviewCanvas.SetActive(true);
 
         statement1Selected = false;
-
+        
         StartCoroutine(Type());
     }
 
@@ -211,16 +223,19 @@ public class AttitudesInterview2 : MonoBehaviour {
         if (interviewCounter == 5) {
             PlayerPrefs.SetString("AttitudesInterview2-1", "Peoples perception of EU is mostly dominated by the media portrayal of the EU laws and European directives.");
             Debug.Log(PlayerPrefs.GetString("AttitudesInterview2-1"));
+            input1.text = "Social";
         }
 
         if (interviewCounter == 4) {
             PlayerPrefs.SetString("AttitudesInterview2-2", "Peoples perception of EU is mostly dominated by the media portrayal of the EU laws and European directives.");
             Debug.Log(PlayerPrefs.GetString("AttitudesInterview2-2"));
+            input2.text = "Social";
         }
 
         if (interviewCounter == 3) {
             PlayerPrefs.SetString("AttitudesInterview2-3", "Peoples perception of EU is mostly dominated by the media portrayal of the EU laws and European directives.");
             Debug.Log(PlayerPrefs.GetString("AttitudesInterview2-3"));
+            input3.text = "Social";
         }
     }
 
@@ -239,16 +254,19 @@ public class AttitudesInterview2 : MonoBehaviour {
         if (interviewCounter == 5) {
             PlayerPrefs.SetString("AttitudesInterview2-1", "Europe is a rather stable part compared with the rest of the world with higher living standards and peace in the region.");
             Debug.Log(PlayerPrefs.GetString("AttitudesInterview2-1"));
+            input1.text = "Safety & Security";
         }
 
         if (interviewCounter == 4) {
             PlayerPrefs.SetString("AttitudesInterview2-2", "Europe is a rather stable part compared with the rest of the world with higher living standards and peace in the region.");
             Debug.Log(PlayerPrefs.GetString("AttitudesInterview2-2"));
+            input2.text = "Safety & Security";
         }
 
         if (interviewCounter == 3) {
             PlayerPrefs.SetString("AttitudesInterview2-3", "Europe is a rather stable part compared with the rest of the world with higher living standards and peace in the region.");
             Debug.Log(PlayerPrefs.GetString("AttitudesInterview2-3"));
+            input3.text = "Safety & Security";
         }
     }
     public void Theme3() {
@@ -266,16 +284,19 @@ public class AttitudesInterview2 : MonoBehaviour {
         if (interviewCounter == 5) {
             PlayerPrefs.SetString("AttitudesInterview2-1", "It is a big issue to find a balance between a member state's laws and EU laws.");
             Debug.Log(PlayerPrefs.GetString("AttitudesInterview2-1"));
+            input1.text = "Rights & Responsibilities";
         }
 
         if (interviewCounter == 4) {
             PlayerPrefs.SetString("AttitudesInterview2-2", "It is a big issue to find a balance between a member state's laws and EU laws.");
             Debug.Log(PlayerPrefs.GetString("AttitudesInterview2-2"));
+            input2.text = "Rights & Responsibilities";
         }
 
         if (interviewCounter == 3) {
             PlayerPrefs.SetString("AttitudesInterview2-3", "It is a big issue to find a balance between a member state's laws and EU laws.");
             Debug.Log(PlayerPrefs.GetString("AttitudesInterview2-3"));
+            input3.text = "Rights & Responsibilities";
         }
     }
     public void Theme4() {
@@ -293,16 +314,19 @@ public class AttitudesInterview2 : MonoBehaviour {
         if (interviewCounter == 5) {
             PlayerPrefs.SetString("AttitudesInterview2-1", "All European countried should be subjected to development and be recognized along with their individuality.");
             Debug.Log(PlayerPrefs.GetString("AttitudesInterview2-1"));
+            input1.text = "Economic";
         }
 
         if (interviewCounter == 4) {
             PlayerPrefs.SetString("AttitudesInterview2-2", "All European countried should be subjected to development and be recognized along with their individuality.");
             Debug.Log(PlayerPrefs.GetString("AttitudesInterview2-2"));
+            input2.text = "Economic";
         }
 
         if (interviewCounter == 3) {
             PlayerPrefs.SetString("AttitudesInterview2-3", "All European countried should be subjected to development and be recognized along with their individuality.");
             Debug.Log(PlayerPrefs.GetString("AttitudesInterview2-3"));
+            input3.text = "Economic";
         }
     }
 
@@ -322,16 +346,19 @@ public class AttitudesInterview2 : MonoBehaviour {
         if (interviewCounter == 5) {
             PlayerPrefs.SetString("AttitudesInterview2-1", "Brexit has strengthened the sense of European identity.");
             Debug.Log(PlayerPrefs.GetString("AttitudesInterview2-1"));
+            input1.text = "Emotional";
         }
 
         if (interviewCounter == 4) {
             PlayerPrefs.SetString("AttitudesInterview2-2", "Brexit has strengthened the sense of European identity.");
             Debug.Log(PlayerPrefs.GetString("AttitudesInterview2-2"));
+            input2.text = "Emotional";
         }
 
         if (interviewCounter == 3) {
             PlayerPrefs.SetString("AttitudesInterview2-3", "Brexit has strengthened the sense of European identity.");
             Debug.Log(PlayerPrefs.GetString("AttitudesInterview2-3"));
+            input3.text = "Emotional";
         }
     }
 
@@ -351,16 +378,19 @@ public class AttitudesInterview2 : MonoBehaviour {
         if (interviewCounter == 5) {
             PlayerPrefs.SetString("AttitudesInterview2-1", "EU citizens and the EU institutions need to get a better idea of what EU really is and why it is important.");
             Debug.Log(PlayerPrefs.GetString("AttitudesInterview2-1"));
+            input1.text = "Historic";
         }
 
         if (interviewCounter == 4) {
             PlayerPrefs.SetString("AttitudesInterview2-2", "EU citizens and the EU institutions need to get a better idea of what EU really is and why it is important.");
             Debug.Log(PlayerPrefs.GetString("AttitudesInterview2-2"));
+            input2.text = "Historic";
         }
 
         if (interviewCounter == 3) {
             PlayerPrefs.SetString("AttitudesInterview2-3", "EU citizens and the EU institutions need to get a better idea of what EU really is and why it is important.");
             Debug.Log(PlayerPrefs.GetString("AttitudesInterview2-3"));
+            input3.text = "Historic";
         }
     }
     public void Theme7() {
@@ -379,16 +409,19 @@ public class AttitudesInterview2 : MonoBehaviour {
         if (interviewCounter == 5) {
             PlayerPrefs.SetString("AttitudesInterview2-1", "EU being a practical entiry and the practical implementations of EU are two different things.");
             Debug.Log(PlayerPrefs.GetString("AttitudesInterview2-1"));
+            input1.text = "Political";
         }
 
         if (interviewCounter == 4) {
             PlayerPrefs.SetString("AttitudesInterview2-2", "EU being a practical entiry and the practical implementations of EU are two different things.");
             Debug.Log(PlayerPrefs.GetString("AttitudesInterview2-2"));
+            input2.text = "Political";
         }
 
         if (interviewCounter == 3) {
             PlayerPrefs.SetString("AttitudesInterview2-3", "EU being a practical entiry and the practical implementations of EU are two different things.");
             Debug.Log(PlayerPrefs.GetString("AttitudesInterview2-3"));
+            input3.text = "Political";
         }
     }
 
@@ -407,16 +440,63 @@ public class AttitudesInterview2 : MonoBehaviour {
         if (interviewCounter == 5) {
             PlayerPrefs.SetString("AttitudesInterview2-1", "EU gives the freedom to act internationally and gain international understanding.");
             Debug.Log(PlayerPrefs.GetString("AttitudesInterview2-1"));
+            input1.text = "Culture";
         }
 
         if (interviewCounter == 4) {
             PlayerPrefs.SetString("AttitudesInterview2-2", "EU gives the freedom to act internationally and gain international understanding.");
             Debug.Log(PlayerPrefs.GetString("AttitudesInterview2-2"));
+            input2.text = "Culture";
         }
 
         if (interviewCounter == 3) {
             PlayerPrefs.SetString("AttitudesInterview2-3", "EU gives the freedom to act internationally and gain international understanding.");
             Debug.Log(PlayerPrefs.GetString("AttitudesInterview2-3"));
+            input3.text = "Culture";
         }
+    }
+
+    int boolToInt(bool val) {
+        if (val) {
+            return 1;
+        } else {
+            return 0;
+        }
+    }
+
+    bool intToBool(int val) {
+        if (val != 0) {
+            return true;
+        } else {
+            return false;
+        }
+    }
+
+    IEnumerator Post(string emailAnswer, string selection1, string selection2, string selection3) {
+        WWWForm form = new WWWForm();
+
+        form.AddField("entry.2100924704", emailAnswer);
+        form.AddField("entry.1710400999", selection1);
+        form.AddField("entry.360859262", selection2);
+        form.AddField("entry.1588982335", selection3);
+
+        byte[] rawData = form.data;
+        WWW www = new WWW(BASE_URL, rawData);
+
+        yield return www;
+    }
+
+    public void Send() {
+        emailAnswer = inputEmail.GetComponent<InputField>().text;
+        Debug.Log(emailAnswer);
+
+        selection1Answer = input1.GetComponent<InputField>().text;
+        Debug.Log(selection1Answer);
+
+        selection2Answer = input2.GetComponent<InputField>().text;
+        Debug.Log(selection2Answer);
+
+        selection3Answer = input3.GetComponent<InputField>().text;
+        Debug.Log(selection3Answer);
     }
 }

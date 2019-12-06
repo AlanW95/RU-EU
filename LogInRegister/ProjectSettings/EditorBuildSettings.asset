@@ -109,7 +109,7 @@ EditorBuildSettings:
     guid: 67e2535a5ebfbe64fb4136048f55a316
   - enabled: 1
     path: Assets/Scenes/3 - Attitudes/DashboardAttitudes.unity
-    guid: aeed50be2a679a646acc6a56863d4365
+    guid: b264cd859e6c4f548a07282bbabdc190
   - enabled: 1
     path: Assets/Scenes/3 - Attitudes/FinalAssignmentAttitudes.unity
     guid: e72193b8f7bd9cb4ca34650bc9e5afc1

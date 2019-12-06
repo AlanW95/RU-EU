@@ -41,6 +41,7 @@ public class DiscussionAttitudes : MonoBehaviour
 
     //Dialogue Context (before the dialogue begins)
     public GameObject contextTheme1, contextTheme2, contextTheme3, contextTheme4, contextTheme5, contextTheme6;
+    public GameObject contextBG;
 
     public GameObject playerSelection;
     public GameObject[] character1Text, character2Text, character3Text;
@@ -140,6 +141,7 @@ public class DiscussionAttitudes : MonoBehaviour
         //context statements for the dialogue
         //set false as they don't appear straight away
         //contextTheme1 is first, after each dialogue and selection, it goes to the next one
+        contextBG.SetActive(true);
         contextTheme1.SetActive(true);
         contextTheme2.SetActive(false);
         contextTheme3.SetActive(false);
@@ -235,6 +237,7 @@ public class DiscussionAttitudes : MonoBehaviour
 
             if (isTheme1Finished == true) {
                 contextTheme1.SetActive(false);
+                contextBG.SetActive(false);
 
                 //contextEnvironment.SetActive(true); //move this to SocialSelected()
 
@@ -277,6 +280,7 @@ public class DiscussionAttitudes : MonoBehaviour
             //put into Unity Analytics when available
 
             contextTheme2.SetActive(true);
+            contextBG.SetActive(true);
         }
     }
 
@@ -336,6 +340,7 @@ public class DiscussionAttitudes : MonoBehaviour
 
             if (isTheme2Finished == true) {
                 contextTheme2.SetActive(false);
+                contextBG.SetActive(false);
 
                 //we want to give the player the option to choose between options
                 playerSelection.SetActive(true);
@@ -372,6 +377,7 @@ public class DiscussionAttitudes : MonoBehaviour
             //store data
             //put into Unity Analytics when available
             contextTheme3.SetActive(true);
+            contextBG.SetActive(true);
         }
     }
 
@@ -430,6 +436,7 @@ public class DiscussionAttitudes : MonoBehaviour
 
             if (isTheme3Finished == true) {
                 contextTheme3.SetActive(false);
+                contextBG.SetActive(false);
 
                 //we want to give the player the option to choose between options
                 playerSelection.SetActive(true);
@@ -466,6 +473,7 @@ public class DiscussionAttitudes : MonoBehaviour
             //store data
             //put into Unity Analytics when available
             contextTheme4.SetActive(true);
+            contextBG.SetActive(true);
         }
     }
 
@@ -524,6 +532,7 @@ public class DiscussionAttitudes : MonoBehaviour
 
             if (isTheme4Finished == true) {
                 contextTheme4.SetActive(false);
+                contextBG.SetActive(false);
 
                 //we want to give the player the option to choose between options
                 playerSelection.SetActive(true);
@@ -562,6 +571,7 @@ public class DiscussionAttitudes : MonoBehaviour
 
             //instead of moving on to the next area, we will give the player feedback at this stage, with a final tool feedback screen.
             contextTheme5.SetActive(true);
+            contextBG.SetActive(true);
         }
     }
 
@@ -620,6 +630,7 @@ public class DiscussionAttitudes : MonoBehaviour
 
             if (isTheme5Finished == true) {
                 contextTheme5.SetActive(false);
+                contextBG.SetActive(false);
 
                 //we want to give the player the option to choose between options
                 playerSelection.SetActive(true);
@@ -660,6 +671,7 @@ public class DiscussionAttitudes : MonoBehaviour
 
             //instead of moving on to the next area, we will give the player feedback at this stage, with a final tool feedback screen.
             contextTheme6.SetActive(true);
+            contextBG.SetActive(true);
         }
     }
 
@@ -719,6 +731,7 @@ public class DiscussionAttitudes : MonoBehaviour
 
             if (isTheme6Finished == true) {
                 contextTheme6.SetActive(false);
+                contextBG.SetActive(false);
 
                 //contextEnvironment.SetActive(true); //move this to SocialSelected()
 
@@ -763,6 +776,7 @@ public class DiscussionAttitudes : MonoBehaviour
 
     public void Theme1() {
         contextTheme1.SetActive(false);
+        contextBG.SetActive(false);
 
         responseBox.SetActive(true);
 
@@ -777,6 +791,7 @@ public class DiscussionAttitudes : MonoBehaviour
 
     public void Theme2() {
         contextTheme2.SetActive(false);
+        contextBG.SetActive(false);
 
         responseBox.SetActive(true);
 
@@ -791,6 +806,7 @@ public class DiscussionAttitudes : MonoBehaviour
 
     public void Theme3() {
         contextTheme3.SetActive(false);
+        contextBG.SetActive(false);
 
         responseBox.SetActive(true);
 
@@ -805,6 +821,7 @@ public class DiscussionAttitudes : MonoBehaviour
 
     public void Theme4() {
         contextTheme4.SetActive(false);
+        contextBG.SetActive(false);
 
         responseBox.SetActive(true);
 
@@ -819,6 +836,7 @@ public class DiscussionAttitudes : MonoBehaviour
 
     public void Theme5() {
         contextTheme5.SetActive(false);
+        contextBG.SetActive(false);
 
         responseBox.SetActive(true);
 
@@ -833,6 +851,7 @@ public class DiscussionAttitudes : MonoBehaviour
 
     public void Theme6() {
         contextTheme6.SetActive(false);
+        contextBG.SetActive(false);
 
         responseBox.SetActive(true);
 

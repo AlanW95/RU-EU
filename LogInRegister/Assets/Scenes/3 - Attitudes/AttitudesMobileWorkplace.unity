@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.44657898, g: 0.4964133, b: 0.5748178, a: 1}
+  m_IndirectSpecularColor: {r: 0.44657868, g: 0.49641263, b: 0.57481706, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -193,8 +193,8 @@ MonoBehaviour:
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4278190080
-  m_fontColor: {r: 0, g: 0, b: 0, a: 1}
+    rgba: 4294967295
+  m_fontColor: {r: 1, g: 1, b: 1, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -261,11 +261,11 @@ MonoBehaviour:
     lineCount: 3
     pageCount: 1
     materialCount: 1
-  m_havePropertiesChanged: 0
+  m_havePropertiesChanged: 1
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_spriteAnimator: {fileID: 0}
-  m_isInputParsingRequired: 0
+  m_isInputParsingRequired: 1
   m_inputSource: 0
   m_hasFontAssetChanged: 0
   m_subTextObjects:
@@ -1282,8 +1282,8 @@ MonoBehaviour:
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4278190080
-  m_fontColor: {r: 0, g: 0, b: 0, a: 1}
+    rgba: 4294967295
+  m_fontColor: {r: 1, g: 1, b: 1, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -1350,11 +1350,11 @@ MonoBehaviour:
     lineCount: 1
     pageCount: 1
     materialCount: 1
-  m_havePropertiesChanged: 0
+  m_havePropertiesChanged: 1
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_spriteAnimator: {fileID: 0}
-  m_isInputParsingRequired: 0
+  m_isInputParsingRequired: 1
   m_inputSource: 0
   m_hasFontAssetChanged: 0
   m_subTextObjects:
@@ -1954,8 +1954,8 @@ MonoBehaviour:
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4278190080
-  m_fontColor: {r: 0, g: 0, b: 0, a: 1}
+    rgba: 4294967295
+  m_fontColor: {r: 1, g: 1, b: 1, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -2022,11 +2022,11 @@ MonoBehaviour:
     lineCount: 3
     pageCount: 1
     materialCount: 1
-  m_havePropertiesChanged: 0
+  m_havePropertiesChanged: 1
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_spriteAnimator: {fileID: 0}
-  m_isInputParsingRequired: 0
+  m_isInputParsingRequired: 1
   m_inputSource: 0
   m_hasFontAssetChanged: 0
   m_subTextObjects:
@@ -2409,8 +2409,8 @@ MonoBehaviour:
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4278190080
-  m_fontColor: {r: 0, g: 0, b: 0, a: 1}
+    rgba: 4294967295
+  m_fontColor: {r: 1, g: 1, b: 1, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -2477,11 +2477,11 @@ MonoBehaviour:
     lineCount: 1
     pageCount: 1
     materialCount: 1
-  m_havePropertiesChanged: 0
+  m_havePropertiesChanged: 1
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_spriteAnimator: {fileID: 0}
-  m_isInputParsingRequired: 0
+  m_isInputParsingRequired: 1
   m_inputSource: 0
   m_hasFontAssetChanged: 0
   m_subTextObjects:
@@ -2538,7 +2538,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -440, y: -3}
+  m_AnchoredPosition: {x: -205.94, y: -3}
   m_SizeDelta: {x: 500, y: 226.04999}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &828502428
@@ -2766,8 +2766,8 @@ MonoBehaviour:
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4278190080
-  m_fontColor: {r: 0, g: 0, b: 0, a: 1}
+    rgba: 4294967295
+  m_fontColor: {r: 1, g: 1, b: 1, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -2834,11 +2834,11 @@ MonoBehaviour:
     lineCount: 1
     pageCount: 1
     materialCount: 1
-  m_havePropertiesChanged: 0
+  m_havePropertiesChanged: 1
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_spriteAnimator: {fileID: 0}
-  m_isInputParsingRequired: 0
+  m_isInputParsingRequired: 1
   m_inputSource: 0
   m_hasFontAssetChanged: 0
   m_subTextObjects:
@@ -3175,7 +3175,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -175, y: -3}
+  m_AnchoredPosition: {x: 314.2, y: -3}
   m_SizeDelta: {x: 500, y: 226.04999}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1057987904
@@ -3250,7 +3250,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 310, y: -90}
+  m_AnchoredPosition: {x: 600, y: -90}
   m_SizeDelta: {x: 500, y: 226.04999}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1105433475
@@ -3921,7 +3921,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1305374025}
   m_LocalRotation: {x: 0, y: 1, z: 0, w: 0}
-  m_LocalPosition: {x: -24.5, y: -75, z: -10}
+  m_LocalPosition: {x: 72.3, y: -75, z: -10}
   m_LocalScale: {x: 150, y: 150, z: 150}
   m_Children:
   - {fileID: 1305024477}
@@ -4028,6 +4028,7 @@ MonoBehaviour:
   discussion: {fileID: 1951366450995891}
   newsflash: {fileID: 1366833983}
   finalAssignment: {fileID: 1716111833216360}
+  notebook: {fileID: 1662343418872061}
   discussionCollider: {fileID: 64078956116257497}
   interview1Collider: {fileID: 927768667}
   interview2Collider: {fileID: 22638018}
@@ -4194,8 +4195,8 @@ MonoBehaviour:
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4278190080
-  m_fontColor: {r: 0, g: 0, b: 0, a: 1}
+    rgba: 4294967295
+  m_fontColor: {r: 1, g: 1, b: 1, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -4262,11 +4263,11 @@ MonoBehaviour:
     lineCount: 1
     pageCount: 1
     materialCount: 1
-  m_havePropertiesChanged: 0
+  m_havePropertiesChanged: 1
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_spriteAnimator: {fileID: 0}
-  m_isInputParsingRequired: 0
+  m_isInputParsingRequired: 1
   m_inputSource: 0
   m_hasFontAssetChanged: 0
   m_subTextObjects:
@@ -5025,8 +5026,8 @@ MonoBehaviour:
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4278190080
-  m_fontColor: {r: 0, g: 0, b: 0, a: 1}
+    rgba: 4294967295
+  m_fontColor: {r: 1, g: 1, b: 1, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -5093,11 +5094,11 @@ MonoBehaviour:
     lineCount: 3
     pageCount: 1
     materialCount: 1
-  m_havePropertiesChanged: 0
+  m_havePropertiesChanged: 1
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_spriteAnimator: {fileID: 0}
-  m_isInputParsingRequired: 0
+  m_isInputParsingRequired: 1
   m_inputSource: 0
   m_hasFontAssetChanged: 0
   m_subTextObjects:
@@ -5595,6 +5596,7 @@ MonoBehaviour:
   discussion: {fileID: 1951366450995891}
   newsflash: {fileID: 1366833983}
   finalAssignment: {fileID: 1716111833216360}
+  notebook: {fileID: 1662343418872061}
   discussionCollider: {fileID: 64078956116257497}
   interview1Collider: {fileID: 927768667}
   interview2Collider: {fileID: 22638018}
@@ -5619,6 +5621,7 @@ MonoBehaviour:
   discussion: {fileID: 1951366450995891}
   newsflash: {fileID: 1366833983}
   finalAssignment: {fileID: 1716111833216360}
+  notebook: {fileID: 1662343418872061}
   discussionCollider: {fileID: 64078956116257497}
   interview1Collider: {fileID: 927768667}
   interview2Collider: {fileID: 22638018}
@@ -5787,8 +5790,8 @@ MonoBehaviour:
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4278190080
-  m_fontColor: {r: 0, g: 0, b: 0, a: 1}
+    rgba: 4294967295
+  m_fontColor: {r: 1, g: 1, b: 1, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -5855,11 +5858,11 @@ MonoBehaviour:
     lineCount: 4
     pageCount: 1
     materialCount: 1
-  m_havePropertiesChanged: 0
+  m_havePropertiesChanged: 1
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_spriteAnimator: {fileID: 0}
-  m_isInputParsingRequired: 0
+  m_isInputParsingRequired: 1
   m_inputSource: 0
   m_hasFontAssetChanged: 0
   m_subTextObjects:
@@ -5889,7 +5892,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1833313696}
   m_LocalRotation: {x: 0, y: 1, z: 0, w: 0}
-  m_LocalPosition: {x: -76.3, y: -75, z: -10}
+  m_LocalPosition: {x: -30.7, y: -75, z: -10}
   m_LocalScale: {x: 150, y: 150, z: 150}
   m_Children:
   - {fileID: 1833000756}
@@ -5978,6 +5981,7 @@ MonoBehaviour:
   discussion: {fileID: 1951366450995891}
   newsflash: {fileID: 1366833983}
   finalAssignment: {fileID: 1716111833216360}
+  notebook: {fileID: 1662343418872061}
   discussionCollider: {fileID: 64078956116257497}
   interview1Collider: {fileID: 927768667}
   interview2Collider: {fileID: 22638018}
@@ -6602,8 +6606,8 @@ MonoBehaviour:
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4278190080
-  m_fontColor: {r: 0, g: 0, b: 0, a: 1}
+    rgba: 4294967295
+  m_fontColor: {r: 1, g: 1, b: 1, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -6670,11 +6674,11 @@ MonoBehaviour:
     lineCount: 3
     pageCount: 1
     materialCount: 1
-  m_havePropertiesChanged: 0
+  m_havePropertiesChanged: 1
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_spriteAnimator: {fileID: 0}
-  m_isInputParsingRequired: 0
+  m_isInputParsingRequired: 1
   m_inputSource: 0
   m_hasFontAssetChanged: 0
   m_subTextObjects:
@@ -7012,8 +7016,8 @@ MonoBehaviour:
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4278190080
-  m_fontColor: {r: 0, g: 0, b: 0, a: 1}
+    rgba: 4294967295
+  m_fontColor: {r: 1, g: 1, b: 1, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -7080,11 +7084,11 @@ MonoBehaviour:
     lineCount: 1
     pageCount: 1
     materialCount: 1
-  m_havePropertiesChanged: 0
+  m_havePropertiesChanged: 1
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_spriteAnimator: {fileID: 0}
-  m_isInputParsingRequired: 0
+  m_isInputParsingRequired: 1
   m_inputSource: 0
   m_hasFontAssetChanged: 0
   m_subTextObjects:
@@ -7161,6 +7165,7 @@ MonoBehaviour:
   discussion: {fileID: 1951366450995891}
   newsflash: {fileID: 1366833983}
   finalAssignment: {fileID: 1716111833216360}
+  notebook: {fileID: 1662343418872061}
   discussionCollider: {fileID: 64078956116257497}
   interview1Collider: {fileID: 927768667}
   interview2Collider: {fileID: 22638018}
@@ -7224,6 +7229,7 @@ MonoBehaviour:
   discussion: {fileID: 1951366450995891}
   newsflash: {fileID: 1366833983}
   finalAssignment: {fileID: 1716111833216360}
+  notebook: {fileID: 1662343418872061}
   discussionCollider: {fileID: 64078956116257497}
   interview1Collider: {fileID: 927768667}
   interview2Collider: {fileID: 22638018}
@@ -7249,7 +7255,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &1716111833216361
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7267,6 +7273,7 @@ MonoBehaviour:
   discussion: {fileID: 1951366450995891}
   newsflash: {fileID: 1366833983}
   finalAssignment: {fileID: 1716111833216360}
+  notebook: {fileID: 1662343418872061}
   discussionCollider: {fileID: 64078956116257497}
   interview1Collider: {fileID: 927768667}
   interview2Collider: {fileID: 22638018}
@@ -7313,6 +7320,7 @@ MonoBehaviour:
   discussion: {fileID: 1951366450995891}
   newsflash: {fileID: 1366833983}
   finalAssignment: {fileID: 1716111833216360}
+  notebook: {fileID: 1662343418872061}
   discussionCollider: {fileID: 64078956116257497}
   interview1Collider: {fileID: 927768667}
   interview2Collider: {fileID: 22638018}
@@ -7357,7 +7365,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1662343418872061}
   m_LocalRotation: {x: -0.7071068, y: 0, z: 0, w: 0.7071068}
-  m_LocalPosition: {x: 66.2, y: -85, z: -5}
+  m_LocalPosition: {x: 126, y: -85, z: -5}
   m_LocalScale: {x: 100, y: 100, z: 100}
   m_Children: []
   m_Father: {fileID: 849400651}
@@ -7398,15 +7406,15 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1716111833216360}
-  m_LocalRotation: {x: -0, y: -0.99519247, z: -0, w: 0.09793887}
-  m_LocalPosition: {x: 131.2, y: -107.90045, z: 15.4}
+  m_LocalRotation: {x: -0, y: -0.98562425, z: -0, w: -0.16895209}
+  m_LocalPosition: {x: 13.2, y: -107.90045, z: 27.9}
   m_LocalScale: {x: 200.00009, y: 200, z: 200.00009}
   m_Children:
   - {fileID: 4143364954270798}
   - {fileID: 4763079777639150}
   m_Father: {fileID: 849400651}
   m_RootOrder: 4
-  m_LocalEulerAnglesHint: {x: 0, y: -168.759, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: -199.454, z: 0}
 --- !u!23 &23106606026840225
 MeshRenderer:
   m_ObjectHideFlags: 0

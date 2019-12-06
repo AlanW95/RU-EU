@@ -21,11 +21,12 @@ public class FinalAssignmentAttitudes : MonoBehaviour
     private string theme1, theme2, theme3;
     public TextMeshProUGUI introduction, paragraph1, paragraph2; //, paragraph3;
 
-    public GameObject finalAssignmentCanvas, exitGameCanvas;
+    public GameObject startCanvas, finalAssignmentCanvas, exitGameCanvas;
 
     // Start is called before the first frame update
     void Start() {
-        Interview1Tab();
+        //Interview1Tab();
+        startCanvas.SetActive(false);
     }
 
     // Update is called once per frame
@@ -54,16 +55,16 @@ public class FinalAssignmentAttitudes : MonoBehaviour
 
         theme1 = PlayerPrefs.GetString("TopTheme");
         theme2 = PlayerPrefs.GetString("SecondTheme");
-        introduction.text = "The top 2 issues that concern EU citizens are; " + theme1 + " and " + theme2 + ".";
+        introduction.text = "The top 2 issues that concern EU citizens are; " + theme1 + " and " + theme2 + ". Now select 4 views that you think best illustrate your views about Differences between Nations.";
         paragraph1.text = "It is clear in the debate about EU identity that " + theme1 + " is very important. As one interviewee said (select a quotation about " + theme1 + " from your notebook):";
         paragraph2.text = "However, many people are also concerned about " + theme2 + " (select a quotation about " + theme2 + " from your notebook):";
         //paragraph3.text = "Many people seem very concerned about [THEME3]. To quote one of our interviewees on this topic:";
 
 
 
-        if (Input.GetKeyDown(KeyCode.Escape)) {
+        /*if (Input.GetKeyDown(KeyCode.Escape)) {
             SceneManager.LoadScene("AttitudesMobileWorkplace");
-        }
+        }*/
     }
 
     public void ReturnToWorkplace() {
@@ -78,6 +79,12 @@ public class FinalAssignmentAttitudes : MonoBehaviour
 
     public void ReturnToMap() {
         SceneManager.LoadScene("ScenarioChoice");
+    }
+
+    public void MainCanvas() {
+        finalAssignmentCanvas.SetActive(true);
+        startCanvas.SetActive(false);
+        Interview1Tab();
     }
 
     public void Interview1Tab() {
@@ -109,7 +116,8 @@ public class FinalAssignmentAttitudes : MonoBehaviour
     }
 
     public void GameFinished() {
-        finalAssignmentCanvas.SetActive(false);
-        exitGameCanvas.SetActive(true);
+        /*finalAssignmentCanvas.SetActive(false);
+        exitGameCanvas.SetActive(true);*/
+        SceneManager.LoadScene("DashboardAttitudes");
     }
 }

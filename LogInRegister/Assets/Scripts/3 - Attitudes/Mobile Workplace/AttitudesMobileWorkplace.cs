@@ -7,7 +7,7 @@ using TMPro;
 
 public class AttitudesMobileWorkplace : MonoBehaviour
 {
-    public GameObject interview1, interview2, discussion, newsflash, finalAssignment;//, mobilePhone;
+    public GameObject interview1, interview2, discussion, newsflash, finalAssignment, notebook;
     private bool interview1Completed, interview2Completed, discussionCompleted, newsflashCompleted;
 
     public MeshCollider discussionCollider;
@@ -26,8 +26,16 @@ public class AttitudesMobileWorkplace : MonoBehaviour
         PlayerPrefs.SetString("ToolsCompletedAttitudes", toolCompletion);
 
         //DEBUGGING PURPOSE---------
-        //PlayerPrefs.SetString("ToolCompletionAttitudesText", "");
-        //PlayerPrefs.SetInt("ObjectiveCountdownAttitudes", 8);
+        /*PlayerPrefs.SetString("ToolCompletionAttitudesText", "");
+        PlayerPrefs.SetInt("ObjectiveCountdownAttitudes", 8);
+        interview1Completed = false;
+        PlayerPrefs.SetInt("AttitudesInterview1Completed", boolToInt(interview1Completed));
+        interview2Completed = false;
+        PlayerPrefs.SetInt("AttitudesInterview2Completed", boolToInt(interview2Completed));
+        discussionCompleted = false;
+        PlayerPrefs.SetInt("AttitudesDiscussionCompleted", boolToInt(discussionCompleted));
+        newsflashCompleted = false;
+        PlayerPrefs.SetInt("AttitudesNewsflashCompleted", boolToInt(newsflashCompleted));*/
         //--------------------------
 
         toolObjectiveCountdown = PlayerPrefs.GetInt("ObjectiveCountdownAttitudes");
@@ -50,6 +58,7 @@ public class AttitudesMobileWorkplace : MonoBehaviour
         newsflash.SetActive(true);
         //final assignment will appear when all four main tools have been completed
         finalAssignment.SetActive(false);
+        notebook.SetActive(false);
     }
 
     // Update is called once per frame
@@ -59,9 +68,30 @@ public class AttitudesMobileWorkplace : MonoBehaviour
         toolCompletionText.text = PlayerPrefs.GetString("ToolCompletionAttitudesText");
 
         textDisplay.text = "Choose from any of the 4 tools on the desk; Interview 1, Interview 2, the Public Discussion and the Newsflashes.";
+
+        if (interview1Completed == false) {
+            interview1.SetActive(true);
+            notebook.SetActive(true);
+        }
+
+        if (interview2Completed == false) {
+            interview2.SetActive(true);
+            notebook.SetActive(true);
+        }
+
+        if (discussionCompleted == false) {
+            discussion.SetActive(true);
+            notebook.SetActive(true);
+        }
+
+        if (newsflashCompleted == false) {
+            newsflash.SetActive(true);
+            notebook.SetActive(true);
+        }
         
         if (interview1Completed && interview2Completed && discussionCompleted && newsflashCompleted) {
             finalAssignment.SetActive(true);
+            notebook.SetActive(true);
         }
 
         /*if (Input.GetKeyDown(KeyCode.Escape)) {
@@ -82,7 +112,7 @@ public class AttitudesMobileWorkplace : MonoBehaviour
 
     public void Interview1() {
         //Interview 1 becomes available
-        interview1.SetActive(true);
+        //interview1.SetActive(true);
         interview1Collider.GetComponent<BoxCollider>().enabled = false;
         interview1Completed = true;
         PlayerPrefs.SetInt("Interview1AttitudesCompleted", boolToInt(interview1Completed));
@@ -104,7 +134,7 @@ public class AttitudesMobileWorkplace : MonoBehaviour
 
     public void Interview2() {
 
-        interview2.SetActive(true);
+        //interview2.SetActive(true);
         interview2Collider.GetComponent<BoxCollider>().enabled = false;
         interview2Completed = true;
         PlayerPrefs.SetInt("Interview2AttitudesCompleted", boolToInt(interview2Completed));
@@ -125,7 +155,7 @@ public class AttitudesMobileWorkplace : MonoBehaviour
 
     public void Discussion() {
 
-        discussion.SetActive(true);
+        //discussion.SetActive(true);
         discussionCollider.GetComponent<MeshCollider>().enabled = false;
         discussionCompleted = true;
         PlayerPrefs.SetInt("DiscussionAttitudesCompleted", boolToInt(discussionCompleted));
@@ -145,7 +175,7 @@ public class AttitudesMobileWorkplace : MonoBehaviour
 
     public void Newsflash() {
 
-        newsflash.SetActive(false);
+        //newsflash.SetActive(false);
         newsflashCompleted = true;
         PlayerPrefs.SetInt("NewsflashAttitudesCompleted", boolToInt(newsflashCompleted));
 
@@ -165,6 +195,7 @@ public class AttitudesMobileWorkplace : MonoBehaviour
     public void FinalAssignment() {
 
         finalAssignment.SetActive(true);
+        notebook.SetActive(true);
         finalAssignmentCollider.GetComponent<BoxCollider>().enabled = true;
 
         textDisplay.text = "You have completed all the necessary tools to build your report. Head to the laptop to construct your report.";

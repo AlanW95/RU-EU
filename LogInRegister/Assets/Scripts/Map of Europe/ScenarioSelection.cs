@@ -17,30 +17,35 @@ public class ScenarioSelection : MonoBehaviour {
     public GameObject identityHR; //Croatia
     public GameObject immigrationGR; //Greece
 
-    //public GameObject boxUK;
-    //public GameObject boxNL;
-    //public GameObject boxDE;
-    //public GameObject boxHR;
-    //public GameObject boxGR;
-
-    private bool ukScenarioComplete, germanyScenarioComplete;
+    private bool ukScenarioComplete = false;
+    private bool germanyScenarioComplete = false;
 
     public GameObject[] scenarioInformation;
-    //scenarioInformation[0] = UK, scenarioInformation[1] = Netherlands, scenarioInformation[2] = Germany, scenarioInformation[3] = Croatia, scenarioInformation[4] = Greece
-
+    
     // Start is called before the first frame update
     void Start() {
 
         startCanvas.SetActive(true);
 
-        ukScenarioComplete = intToBool(PlayerPrefs.GetInt("UKComplete"));
-        germanyScenarioComplete = intToBool(PlayerPrefs.GetInt("GermanyComplete"));
+        ukScenarioComplete = intToBool(PlayerPrefs.GetInt("UKScenarioComplete"));
+        germanyScenarioComplete = intToBool(PlayerPrefs.GetInt("GermanyScenarioComplete"));
     }
 
     void Update() {
-        /*if (ukScenarioComplete && germanyScenarioComplete) {
+        if (ukScenarioComplete == true) {
+            PlayerPrefs.SetInt("UKScenarioComplete", boolToInt(ukScenarioComplete));
+            uk.interactable = false;
+        }
+
+        if (germanyScenarioComplete == true) {
+            PlayerPrefs.SetInt("GermanyScenarioComplete", boolToInt(germanyScenarioComplete));
+            germany.interactable = false;
+        }
+
+        if (ukScenarioComplete == true && germanyScenarioComplete == true) {
+            //this might change to have a thank you for playing screen
             SceneManager.LoadScene("PostQuestions");
-        }*/
+        }
     }
 
     public void MapCanvas() {
@@ -52,19 +57,9 @@ public class ScenarioSelection : MonoBehaviour {
         workPartnerNL.SetActive(true);
         identityHR.SetActive(true);
         immigrationGR.SetActive(true);
-
-        //boxUK.SetActive(false);
-        //boxNL.SetActive(false);
-        //boxDE.SetActive(false);
-        //boxHR.SetActive(false);
-        //boxGR.SetActive(false);
     }
 
     public void BalanceScenario() {
-        ukScenarioComplete = true;
-        PlayerPrefs.SetInt("UKComplete", boolToInt(ukScenarioComplete));
-
-        uk.interactable = false;
         SceneManager.LoadScene("MobilePhone");
     }
 

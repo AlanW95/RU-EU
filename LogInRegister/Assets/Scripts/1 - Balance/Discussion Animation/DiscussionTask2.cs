@@ -125,9 +125,9 @@ public class DiscussionTask2 : MonoBehaviour
             continueButton.SetActive(false);
         }
 
-        if (Input.GetKeyDown(KeyCode.Escape)) {
+        /*if (Input.GetKeyDown(KeyCode.Escape)) {
             SceneManager.LoadScene("Journalist");
-        }
+        }*/
 
         if (isDialogue1Finished) {
             dialogue1.interactable = false;

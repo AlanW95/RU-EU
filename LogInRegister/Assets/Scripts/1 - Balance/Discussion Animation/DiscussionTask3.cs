@@ -86,9 +86,9 @@ public class DiscussionTask3 : MonoBehaviour
             feedbackCanvas.SetActive(true);
         }
 
-        if (Input.GetKeyDown(KeyCode.Escape)) {
+        /*if (Input.GetKeyDown(KeyCode.Escape)) {
             SceneManager.LoadScene("Journalist");
-        }
+        }*/
 
         Debug.Log("Predictor Counter: " + predictorCounter);
     }

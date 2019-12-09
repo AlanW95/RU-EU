@@ -83,9 +83,9 @@ public class DiscussionAttitudes : MonoBehaviour
             continueButton.SetActive(true);
         }
 
-        if (Input.GetKeyDown(KeyCode.Escape)) {
+        /*if (Input.GetKeyDown(KeyCode.Escape)) {
             SceneManager.LoadScene("AttitudesMobileWorkplace");
-        }
+        }*/
 
         //StatementsSelected();
 
@@ -98,10 +98,6 @@ public class DiscussionAttitudes : MonoBehaviour
             task3.SetActive(true);
 
             toolBG.SetActive(false);
-        }
-
-        if (Input.GetKeyDown(KeyCode.Escape)) {
-            SceneManager.LoadScene("AttitudesMobileWorkplace");
         }
     }
 

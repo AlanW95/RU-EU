@@ -177,9 +177,9 @@ public class Newsflash : MonoBehaviour
             finishCanvas.SetActive(true);
         }
 
-        if (Input.GetKeyDown(KeyCode.Escape)) {
+        /*if (Input.GetKeyDown(KeyCode.Escape)) {
             SceneManager.LoadScene("Journalist");
-        }
+        }*/
 
         //if (geography.transform.position == geographyEmpty.transform.position && neutral.transform.position == neutralEmpty.transform.position) {
         //finishCanvas.SetActive(true);

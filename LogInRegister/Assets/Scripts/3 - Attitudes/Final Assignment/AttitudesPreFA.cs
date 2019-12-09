@@ -6,6 +6,8 @@ using UnityEngine.SceneManagement;
 
 public class AttitudesPreFA : MonoBehaviour
 {
+    public GameObject startPro, startAnti;
+
     public GameObject proSelections, antiSelections;
 
     public Button b1, b2, b3, b4, b5, b6, b7, b8,
@@ -24,6 +26,9 @@ public class AttitudesPreFA : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        startPro.SetActive(true);
+        startAnti.SetActive(false);
+
         inputEmail.text = PlayerPrefs.GetString("PlayerEmail");
     }
 
@@ -31,6 +36,16 @@ public class AttitudesPreFA : MonoBehaviour
     void Update()
     {
         
+    }
+
+    public void ProStart() {
+        proSelections.SetActive(true);
+        startPro.SetActive(false);
+    }
+
+    public void AntiStart() {
+        antiSelections.SetActive(true);
+        startAnti.SetActive(false);
     }
 
     public void ProCounterDown() {
@@ -57,7 +72,7 @@ public class AttitudesPreFA : MonoBehaviour
             b1.interactable = false;
             //change scene too
             //always set true first then other to false next
-            antiSelections.SetActive(true);
+            startAnti.SetActive(true);
             proSelections.SetActive(false);
         }
     }
@@ -78,7 +93,7 @@ public class AttitudesPreFA : MonoBehaviour
             b2.interactable = false;
             //change scene too
             //always set true first then remove other to false next
-            antiSelections.SetActive(true);
+            startAnti.SetActive(true);
             proSelections.SetActive(false);
         }
     }
@@ -99,7 +114,7 @@ public class AttitudesPreFA : MonoBehaviour
             b3.interactable = false;
             //change scene too
             //always set true first then remove other to false next
-            antiSelections.SetActive(true);
+            startAnti.SetActive(true);
             proSelections.SetActive(false);
         }
     }
@@ -119,7 +134,7 @@ public class AttitudesPreFA : MonoBehaviour
             input3.text = "Economic";
             b4.interactable = false;
             //change scene too
-            antiSelections.SetActive(true);
+            startAnti.SetActive(true);
             proSelections.SetActive(false);
         }
     }
@@ -139,7 +154,7 @@ public class AttitudesPreFA : MonoBehaviour
             input3.text = "Emotional";
             b5.interactable = false;
             //change scene too
-            antiSelections.SetActive(true);
+            startAnti.SetActive(true);
             proSelections.SetActive(false);
         }
     }
@@ -159,7 +174,7 @@ public class AttitudesPreFA : MonoBehaviour
             input3.text = "Historic";
             b6.interactable = false;
             //change scene too
-            antiSelections.SetActive(true);
+            startAnti.SetActive(true);
             proSelections.SetActive(false);
         }
     }
@@ -179,7 +194,7 @@ public class AttitudesPreFA : MonoBehaviour
             input3.text = "Political";
             b7.interactable = false;
             //change scene too
-            antiSelections.SetActive(true);
+            startAnti.SetActive(true);
             proSelections.SetActive(false);
         }
     }
@@ -199,7 +214,7 @@ public class AttitudesPreFA : MonoBehaviour
             input3.text = "Culture";
             b8.interactable = false;
             //change scene too
-            antiSelections.SetActive(true);
+            startAnti.SetActive(true);
             proSelections.SetActive(false);
         }
     }

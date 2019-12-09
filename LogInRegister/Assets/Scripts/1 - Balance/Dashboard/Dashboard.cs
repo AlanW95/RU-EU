@@ -45,9 +45,9 @@ public class Dashboard : MonoBehaviour
         TopThemeSliderValue();
         SecondThemeSliderValue();
 
-        if (Input.GetKeyDown(KeyCode.Escape)) {
+        /*if (Input.GetKeyDown(KeyCode.Escape)) {
             SceneManager.LoadScene("Journalist");
-        }
+        }*/
     }
 
     public void ExitGame() {

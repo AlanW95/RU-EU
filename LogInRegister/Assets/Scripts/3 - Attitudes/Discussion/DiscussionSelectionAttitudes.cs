@@ -49,9 +49,9 @@ public class DiscussionSelectionAttitudes : MonoBehaviour
             feedbackCanvas.SetActive(true);
         }
 
-        if (Input.GetKeyDown(KeyCode.Escape)) {
+        /*if (Input.GetKeyDown(KeyCode.Escape)) {
             SceneManager.LoadScene("AttitudesMobileWorkplace");
-        }
+        }*/
     }
 
     public void ExitGame() {

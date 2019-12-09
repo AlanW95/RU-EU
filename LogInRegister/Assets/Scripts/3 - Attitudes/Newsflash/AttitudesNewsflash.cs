@@ -42,9 +42,9 @@ public class AttitudesNewsflash : MonoBehaviour
             finishCanvas.SetActive(true);
         }
 
-        if (Input.GetKeyDown(KeyCode.Escape)) {
+        /*if (Input.GetKeyDown(KeyCode.Escape)) {
             SceneManager.LoadScene("AttitudesMobileWorkplace");
-        }
+        }*/
     }
 
     public void ReturnToJournalist() {

@@ -217,6 +217,7 @@ public class AttitudesInterview1 : MonoBehaviour
     {
         startCanvas.SetActive(false);
         themeSelectionCanvas.SetActive(true);
+
         inputEmail.text = PlayerPrefs.GetString("PlayerEmail");
     }
 

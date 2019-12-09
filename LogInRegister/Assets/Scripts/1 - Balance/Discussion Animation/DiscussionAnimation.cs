@@ -120,9 +120,9 @@ public class DiscussionAnimation : MonoBehaviour {
             //add a button that appears once both are correct, then select that button to progress
         }
 
-        if (Input.GetKeyDown(KeyCode.Escape)) {
+        /*if (Input.GetKeyDown(KeyCode.Escape)) {
             SceneManager.LoadScene("Journalist");
-        }
+        }*/
     }
 
     public void ResetPlayerPrefs() {

@@ -6,6 +6,8 @@ using UnityEngine.SceneManagement;
 
 public class PreFinalAssignment : MonoBehaviour
 {
+    public GameObject startPro, startAnti;
+
     public GameObject proSelections, antiSelections;
 
     public Button b1, b2, b3, b4, b5, b6, b7, b8, b9, b10,
@@ -24,6 +26,9 @@ public class PreFinalAssignment : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        startPro.SetActive(true);
+        startAnti.SetActive(false);
+
         inputEmail.text = PlayerPrefs.GetString("PlayerEmail");
     }
 
@@ -31,6 +36,16 @@ public class PreFinalAssignment : MonoBehaviour
     void Update()
     {
         
+    }
+
+    public void ProStart() {
+        proSelections.SetActive(true);
+        startPro.SetActive(false);
+    }
+
+    public void AntiStart() {
+        antiSelections.SetActive(true);
+        startAnti.SetActive(false);
     }
 
     public void ProCounterDown() {
@@ -56,7 +71,7 @@ public class PreFinalAssignment : MonoBehaviour
             input3.text = "Social";
             b1.interactable = false;
             //change scene too
-            antiSelections.SetActive(true);
+            startAnti.SetActive(true);
             proSelections.SetActive(false);
         }
     }
@@ -76,7 +91,7 @@ public class PreFinalAssignment : MonoBehaviour
             input3.text = "Environment";
             b2.interactable = false;
             //change scene too
-            antiSelections.SetActive(true);
+            startAnti.SetActive(true);
             proSelections.SetActive(false);
         }
     }
@@ -96,7 +111,7 @@ public class PreFinalAssignment : MonoBehaviour
             input3.text = "Rights & Responsibilities";
             b3.interactable = false;
             //change scene too
-            antiSelections.SetActive(true);
+            startAnti.SetActive(true);
             proSelections.SetActive(false);
         }
     }
@@ -116,7 +131,7 @@ public class PreFinalAssignment : MonoBehaviour
             input3.text = "Security";
             b4.interactable = false;
             //change scene too
-            antiSelections.SetActive(true);
+            startAnti.SetActive(true);
             proSelections.SetActive(false);
         }
     }
@@ -136,7 +151,7 @@ public class PreFinalAssignment : MonoBehaviour
             input3.text = "Emotional";
             b5.interactable = false;
             //change scene too
-            antiSelections.SetActive(true);
+            startAnti.SetActive(true);
             proSelections.SetActive(false);
         }
     }
@@ -156,7 +171,7 @@ public class PreFinalAssignment : MonoBehaviour
             input3.text = "Economy";
             b6.interactable = false;
             //change scene too
-            antiSelections.SetActive(true);
+            startAnti.SetActive(true);
             proSelections.SetActive(false);
         }
     }
@@ -176,7 +191,7 @@ public class PreFinalAssignment : MonoBehaviour
             input3.text = "Political";
             b7.interactable = false;
             //change scene too
-            antiSelections.SetActive(true);
+            startAnti.SetActive(true);
             proSelections.SetActive(false);
         }
     }
@@ -196,7 +211,7 @@ public class PreFinalAssignment : MonoBehaviour
             input3.text = "Historic";
             b8.interactable = false;
             //change scene too
-            antiSelections.SetActive(true);
+            startAnti.SetActive(true);
             proSelections.SetActive(false);
         }
     }
@@ -216,7 +231,7 @@ public class PreFinalAssignment : MonoBehaviour
             input3.text = "Culture";
             b9.interactable = false;
             //change scene too
-            antiSelections.SetActive(true);
+            startAnti.SetActive(true);
             proSelections.SetActive(false);
         }
     }
@@ -236,7 +251,7 @@ public class PreFinalAssignment : MonoBehaviour
             input3.text = "Geography";
             b10.interactable = false;
             //change scene too
-            antiSelections.SetActive(true);
+            startAnti.SetActive(true);
             proSelections.SetActive(false);
         }
     }

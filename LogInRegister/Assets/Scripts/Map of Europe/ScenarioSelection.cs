@@ -64,8 +64,8 @@ public class ScenarioSelection : MonoBehaviour {
     }
 
     public void AttitudesScenario() {
-        germanyScenarioComplete = true;
-        PlayerPrefs.SetInt("GermanyComplete", boolToInt(germanyScenarioComplete));
+        //germanyScenarioComplete = true;
+        //PlayerPrefs.SetInt("GermanyComplete", boolToInt(germanyScenarioComplete));
 
         germany.interactable = false;
         SceneManager.LoadScene("MobilePhoneAttitudes");

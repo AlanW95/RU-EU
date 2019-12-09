@@ -19,7 +19,7 @@ public class AttitudesPreFA : MonoBehaviour
     private string emailAnswer, pro1Answer, pro2Answer, pro3Answer, anti1Answer, anti2Answer, anti3Answer;
 
     [SerializeField]
-    private string BASE_URL = "";
+    private string BASE_URL = "https://docs.google.com/forms/u/0/d/e/1FAIpQLSdGGNZDNr436pIEYnxKJEwKR_tYzp0b3L6LW7lv79a3pc75bw/formResponse";
     
     // Start is called before the first frame update
     void Start()
@@ -220,7 +220,8 @@ public class AttitudesPreFA : MonoBehaviour
         if (antiCounter == 0) {
             input6.text = "Social";
             b9.interactable = false;
-            //change scene too
+            //change scene too and send data
+            Send();
             SceneManager.LoadScene("FinalAssignmentAttitudes");
         }
     }
@@ -239,7 +240,8 @@ public class AttitudesPreFA : MonoBehaviour
         if (antiCounter == 0) {
             input6.text = "Safety & Security";
             b10.interactable = false;
-            //change scene too
+            //change scene too and send data
+            Send();
             SceneManager.LoadScene("FinalAssignmentAttitudes");
         }
     }
@@ -258,7 +260,8 @@ public class AttitudesPreFA : MonoBehaviour
         if (antiCounter == 0) {
             input6.text = "Rights & Responsibilities";
             b11.interactable = false;
-            //change scene too
+            //change scene too and send data
+            Send();
             SceneManager.LoadScene("FinalAssignmentAttitudes");
         }
     }
@@ -277,7 +280,8 @@ public class AttitudesPreFA : MonoBehaviour
         if (antiCounter == 0) {
             input6.text = "Economic";
             b12.interactable = false;
-            //change scene too
+            //change scene too and send data
+            Send();
             SceneManager.LoadScene("FinalAssignmentAttitudes");
         }
     }
@@ -296,7 +300,8 @@ public class AttitudesPreFA : MonoBehaviour
         if (antiCounter == 0) {
             input6.text = "Emotional";
             b13.interactable = false;
-            //change scene too
+            //change scene too and send data
+            Send();
             SceneManager.LoadScene("FinalAssignmentAttitudes");
         }
     }
@@ -315,7 +320,8 @@ public class AttitudesPreFA : MonoBehaviour
         if (antiCounter == 0) {
             input6.text = "Historic";
             b14.interactable = false;
-            //change scene too
+            //change scene too and send data
+            Send();
             SceneManager.LoadScene("FinalAssignmentAttitudes");
         }
     }
@@ -334,7 +340,8 @@ public class AttitudesPreFA : MonoBehaviour
         if (antiCounter == 0) {
             input6.text = "Political";
             b15.interactable = false;
-            //change scene too
+            //change scene too and send data
+            Send();
             SceneManager.LoadScene("FinalAssignmentAttitudes");
         }
     }
@@ -353,7 +360,8 @@ public class AttitudesPreFA : MonoBehaviour
         if (antiCounter == 0) {
             input6.text = "Culture";
             b16.interactable = false;
-            //change scene too
+            //change scene too and send data
+            Send();
             SceneManager.LoadScene("FinalAssignmentAttitudes");
         }
     }
@@ -361,13 +369,13 @@ public class AttitudesPreFA : MonoBehaviour
     IEnumerator Post(string emailAnswer, string pro1, string pro2, string pro3, string anti1, string anti2, string anti3) {
         WWWForm form = new WWWForm();
 
-        form.AddField("", emailAnswer);
-        form.AddField("", pro1);
-        form.AddField("", pro2);
-        form.AddField("", pro3);
-        form.AddField("", anti1);
-        form.AddField("", anti2);
-        form.AddField("", anti3);
+        form.AddField("entry.1965455641", emailAnswer);
+        form.AddField("entry.2117653514", pro1);
+        form.AddField("entry.455605766", pro2);
+        form.AddField("entry.201894361", pro3);
+        form.AddField("entry.668132892", anti1);
+        form.AddField("entry.1097623431", anti2);
+        form.AddField("entry.947707503", anti3);
 
         byte[] rawData = form.data;
         WWW www = new WWW(BASE_URL, rawData);

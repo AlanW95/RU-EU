@@ -15,6 +15,9 @@ public class Introduction : MonoBehaviour
     private bool dutch = false;
     private bool croatian = false;
 
+    private bool ukScenarioComplete = false;
+    private bool germanyScenarioComplete = false;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -57,6 +60,12 @@ public class Introduction : MonoBehaviour
         //Reading all previous set PlayerPrefs so they can be set depending on the bool state of each language in the Update()
         introductoryEN = PlayerPrefs.GetString("IntroductoryEnglish");
         introductoryGR = PlayerPrefs.GetString("IntroductoryGreek");
+
+        //debugging for starting game
+        ukScenarioComplete = false;
+        germanyScenarioComplete = false;
+        PlayerPrefs.SetInt("UKScenarioComplete", boolToInt(ukScenarioComplete));
+        PlayerPrefs.SetInt("GermanyScenarioComplete", boolToInt(germanyScenarioComplete));
     }
 
     // Update is called once per frame

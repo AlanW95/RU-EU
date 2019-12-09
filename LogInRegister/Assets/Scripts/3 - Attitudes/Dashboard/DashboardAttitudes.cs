@@ -42,9 +42,9 @@ public class DashboardAttitudes : MonoBehaviour
         TopThemeSliderValue();
         SecondThemeSliderValue();
 
-        if (Input.GetKeyDown(KeyCode.Escape)) {
+        /*if (Input.GetKeyDown(KeyCode.Escape)) {
             SceneManager.LoadScene("AttitudesMobileWorkplace");
-        }
+        }*/
     }
 
     public void ExitGame() {

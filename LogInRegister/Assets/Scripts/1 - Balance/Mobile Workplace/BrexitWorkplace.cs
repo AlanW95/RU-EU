@@ -106,6 +106,7 @@ public class BrexitWorkplace : MonoBehaviour
         if (interview1Completed && interview2Completed && discussionCompleted && newsflashCompleted) {
             finalAssignment.SetActive(true);
             notebook.SetActive(true);
+            textDisplay.text = "You have completed all the necessary tools to build your report. Head to the laptop to construct your report.";
         }
 
         /*if (Input.GetKeyDown(KeyCode.Escape)) {
@@ -201,6 +202,7 @@ public class BrexitWorkplace : MonoBehaviour
             //toolCompletionText.text = toolCompletion;
             PlayerPrefs.SetString("ToolCompletionText", toolCompletionText.text);
             Debug.Log("Tool Completion Text: " + PlayerPrefs.GetString("ToolCompletionText"));
+            discussion.SetActive(false);
         }
 
         if (interview1Completed && interview2Completed && discussionCompleted && newsflashCompleted) {

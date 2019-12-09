@@ -54,9 +54,6 @@ EditorBuildSettings:
     path: Assets/Scenes/1 - Balance/Notebook.unity
     guid: fd8919a103441084dbfcb87b23e3fc72
   - enabled: 1
-    path: Assets/Scenes/1 - Balance/Dashboard.unity
-    guid: 0fc0272d844751e47810ab26d1445af0
-  - enabled: 1
     path: Assets/Scenes/1 - Balance/OpeningFinalAssignment.unity
     guid: 718687d2bb68f86499a4bc744e833def
   - enabled: 1
@@ -65,6 +62,9 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/1 - Balance/FinalAssignment.unity
     guid: 0a89806a69e779a4c86be5b2dea8c004
+  - enabled: 1
+    path: Assets/Scenes/1 - Balance/Dashboard.unity
+    guid: 0fc0272d844751e47810ab26d1445af0
   - enabled: 0
     path: Assets/Scenes/LoginRegister.unity
     guid: 04c575150ed685a4aac7f8b53a627e9c
@@ -108,11 +108,17 @@ EditorBuildSettings:
     path: Assets/Scenes/3 - Attitudes/NotebookAttitudes.unity
     guid: 67e2535a5ebfbe64fb4136048f55a316
   - enabled: 1
-    path: Assets/Scenes/3 - Attitudes/DashboardAttitudes.unity
-    guid: b264cd859e6c4f548a07282bbabdc190
+    path: Assets/Scenes/3 - Attitudes/AttitudesOpeningFA.unity
+    guid: eaf2a2f6f7cea70408e56ad053b82478
+  - enabled: 1
+    path: Assets/Scenes/3 - Attitudes/AttitudesPreFA.unity
+    guid: 63cfd7903cab4dd4795ed738c11fb041
   - enabled: 1
     path: Assets/Scenes/3 - Attitudes/FinalAssignmentAttitudes.unity
-    guid: e72193b8f7bd9cb4ca34650bc9e5afc1
+    guid: a2fb6e9ce5dce3c48aa143d02672b879
+  - enabled: 1
+    path: Assets/Scenes/3 - Attitudes/DashboardAttitudes.unity
+    guid: b264cd859e6c4f548a07282bbabdc190
   - enabled: 1
     path: Assets/Scenes/PostQuestions.unity
     guid: c753322edc596cb418d7550f47fcc607

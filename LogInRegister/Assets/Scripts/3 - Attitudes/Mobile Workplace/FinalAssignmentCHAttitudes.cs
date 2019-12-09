@@ -9,7 +9,8 @@ public class FinalAssignmentCHAttitudes : AttitudesMobileWorkplace
     public GameObject finalAssignmentTool;
 
     void OnMouseDown() {
-        SceneManager.LoadScene("DashboardAttitudes"); //still to be added
+        //SceneManager.LoadScene("DashboardAttitudes"); //still to be added
+        SceneManager.LoadScene("AttitudesOpeningFA");
         //FinalAssignment();
     }
 

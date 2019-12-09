@@ -52,10 +52,10 @@ public class AttitudesMobileWorkplace : MonoBehaviour
         toolCompletion = toolCompletionText.text;
         Debug.Log("LOADING IN TEXT: " + PlayerPrefs.GetString("ToolCompletionAttitudesText"));
 
-        interview1.SetActive(true);
-        interview2.SetActive(true);
-        discussion.SetActive(true);
-        newsflash.SetActive(true);
+        interview1.SetActive(false);
+        interview2.SetActive(false);
+        discussion.SetActive(false);
+        newsflash.SetActive(false);
         //final assignment will appear when all four main tools have been completed
         finalAssignment.SetActive(false);
         notebook.SetActive(false);
@@ -72,26 +72,40 @@ public class AttitudesMobileWorkplace : MonoBehaviour
         if (interview1Completed == false) {
             interview1.SetActive(true);
             notebook.SetActive(true);
+
+            finalAssignment.SetActive(false);
+            Debug.Log("Interview 1 is not complete");
         }
 
         if (interview2Completed == false) {
             interview2.SetActive(true);
             notebook.SetActive(true);
+
+            finalAssignment.SetActive(false);
+            Debug.Log("Interview 2 is not complete");
         }
 
         if (discussionCompleted == false) {
             discussion.SetActive(true);
             notebook.SetActive(true);
+
+            finalAssignment.SetActive(false);
+            Debug.Log("Discussion is not complete");
         }
 
         if (newsflashCompleted == false) {
             newsflash.SetActive(true);
             notebook.SetActive(true);
+
+            finalAssignment.SetActive(false);
+            Debug.Log("Newsflash is not complete");
         }
         
         if (interview1Completed && interview2Completed && discussionCompleted && newsflashCompleted) {
             finalAssignment.SetActive(true);
             notebook.SetActive(true);
+            Debug.Log("All have been complete");
+            textDisplay.text = "You have completed all the necessary tools to build your report. Head to the laptop to construct your report.";
         }
 
         /*if (Input.GetKeyDown(KeyCode.Escape)) {
@@ -123,6 +137,7 @@ public class AttitudesMobileWorkplace : MonoBehaviour
             toolCompletionText.text = PlayerPrefs.GetString("ToolCompletionAttitudesText") + "\n" + "Interview 1 complete";
             PlayerPrefs.SetString("ToolCompletionAttitudesText", toolCompletionText.text);
             Debug.Log("Tool Completion Text: " + PlayerPrefs.GetString("ToolCompletionAttitudesText"));
+            interview1.SetActive(false);
         }
 
         if (interview1Completed && interview2Completed && discussionCompleted && newsflashCompleted) {
@@ -144,6 +159,7 @@ public class AttitudesMobileWorkplace : MonoBehaviour
             toolCompletionText.text = PlayerPrefs.GetString("ToolCompletionAttitudesText") + "\n" + "Interview 2 complete";
             PlayerPrefs.SetString("ToolCompletionAttitudesText", toolCompletionText.text);
             Debug.Log("Tool Completion Text: " + PlayerPrefs.GetString("ToolCompletionAttitudesText"));
+            interview2.SetActive(false);
         }
 
         if (interview1Completed && interview2Completed && discussionCompleted && newsflashCompleted) {
@@ -164,6 +180,7 @@ public class AttitudesMobileWorkplace : MonoBehaviour
             toolCompletionText.text = PlayerPrefs.GetString("ToolCompletionAttitudesText") + "\n" + "Public Discussion complete";
             PlayerPrefs.SetString("ToolCompletionAttitudesText", toolCompletionText.text);
             Debug.Log("Tool Completion Text: " + PlayerPrefs.GetString("ToolCompletionAttitudesText"));
+            discussion.SetActive(false);
         }
 
         if (interview1Completed && interview2Completed && discussionCompleted && newsflashCompleted) {
@@ -183,6 +200,7 @@ public class AttitudesMobileWorkplace : MonoBehaviour
             toolCompletionText.text = PlayerPrefs.GetString("ToolCompletionAttitudesText") + "\n" + "Newsflash complete";
             PlayerPrefs.SetString("ToolCompletionAttitudesText", toolCompletionText.text);
             Debug.Log("Tool Completion Text: " + PlayerPrefs.GetString("ToolCompletionAttitudesText"));
+            newsflash.SetActive(false);
         }
 
         if (interview1Completed && interview2Completed && discussionCompleted && newsflashCompleted) {

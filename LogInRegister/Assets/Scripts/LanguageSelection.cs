@@ -44,12 +44,14 @@ public class LanguageSelection : MonoBehaviour
         PlayerPrefs.SetInt("EnglishSelected", boolToInt(english));
         Debug.Log(PlayerPrefs.GetInt("EnglishSelected"));
         SceneManager.LoadScene("OpeningIntroduction");
+        Debug.Log("English has been selected");
     }
 
     public void Greek() {
         greek = true;
         PlayerPrefs.SetInt("GreekSelected", boolToInt(greek));
         SceneManager.LoadScene("OpeningIntroduction");
+        Debug.Log("Greek has been selected");
     }
 
     public void German() {

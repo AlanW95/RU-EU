@@ -65,6 +65,36 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/1 - Balance/Dashboard.unity
     guid: 0fc0272d844751e47810ab26d1445af0
+  - enabled: 1
+    path: Assets/Scenes/1 - Balance/Greek/GRJournalist.unity
+    guid: 28155fd85fa4fa742ac2665ce16d8c11
+  - enabled: 1
+    path: Assets/Scenes/1 - Balance/Greek/GRRemainInterview.unity
+    guid: 7e970685930f716489b3ca6f9727898b
+  - enabled: 1
+    path: Assets/Scenes/1 - Balance/Greek/GRLeaverInterview.unity
+    guid: 0af1e24a0e72436458a06c9a9b114f72
+  - enabled: 1
+    path: Assets/Scenes/1 - Balance/Greek/GRDiscussionTool.unity
+    guid: 04b35b6dee4379f42b1210798d9f3c00
+  - enabled: 1
+    path: Assets/Scenes/1 - Balance/Greek/GRNewsflash.unity
+    guid: bacd68feb2f496646b369fa8c8c1b169
+  - enabled: 1
+    path: Assets/Scenes/1 - Balance/Greek/GRNotebook.unity
+    guid: 8e04bf6d6fc29e64da886c0ed3e1bbfa
+  - enabled: 1
+    path: Assets/Scenes/1 - Balance/Greek/GROpeningFinalAssignment.unity
+    guid: 926f0faa35a4b5646b7714ba1b1c9ac9
+  - enabled: 1
+    path: Assets/Scenes/1 - Balance/Greek/GRPreFinalAssignment.unity
+    guid: 0d1a7f8ce4b79704ba40d48226ab996e
+  - enabled: 1
+    path: Assets/Scenes/1 - Balance/Greek/GRFinalAssignment.unity
+    guid: 17fadb0c4e4e4244e82bb874e711bff0
+  - enabled: 1
+    path: Assets/Scenes/1 - Balance/Greek/GRDashboard.unity
+    guid: 6e9bfb72ac4d3494bbb1d006a3220d78
   - enabled: 0
     path: Assets/Scenes/LoginRegister.unity
     guid: 04c575150ed685a4aac7f8b53a627e9c

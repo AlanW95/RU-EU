@@ -141,7 +141,7 @@ public class GRProInterview : MonoBehaviour
     public void ReturnToMobileWorkplace() {
         //interview1Completed = false;
         //PlayerPrefs.SetInt("Interview1Completed", boolToInt(interview1Completed));
-        SceneManager.LoadScene("Journalist");
+        SceneManager.LoadScene("GRJournalist");
     }
 
     public void RankedStatements() {

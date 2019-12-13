@@ -147,7 +147,7 @@ public class GRAntiInterview : MonoBehaviour
     }
 
     public void ReturnToMobileWorkplace() {
-        SceneManager.LoadScene("Journalist");
+        SceneManager.LoadScene("GRJournalist");
     }
 
     public void RankedStatements() {
@@ -229,28 +229,28 @@ public class GRAntiInterview : MonoBehaviour
     public void SocialSelected() {
         if (interviewCounter == 5) {
             Debug.Log("I AM THE FIRST ONE!");
-            PlayerPrefs.SetString("BrexitAntiInterview1", "Freedom of movement has helped to create a much richer and more diverse society.");
+            PlayerPrefs.SetString("BrexitAntiInterview1", "Η ελεύθερη κυκλοφορία έχει οδηγήσει σε τεράστιες κοινωνικές πιέσεις και δυσαρέσκεια στις πόλεις ολόκληρης της χώρας.");
             Debug.Log(PlayerPrefs.GetString("BrexitAntiInterview1"));
             input1.text = "Social";
         }
 
         if (interviewCounter == 4) {
             Debug.Log("I AM THE SECOND ONE!");
-            PlayerPrefs.SetString("BrexitAntiInterview2", "Freedom of movement has helped to create a much richer and more diverse society.");
+            PlayerPrefs.SetString("BrexitAntiInterview2", "Η ελεύθερη κυκλοφορία έχει οδηγήσει σε τεράστιες κοινωνικές πιέσεις και δυσαρέσκεια στις πόλεις ολόκληρης της χώρας.");
             Debug.Log(PlayerPrefs.GetString("BrexitAntiInterview2"));
             input2.text = "Social";
         }
 
         if (interviewCounter == 3) {
             Debug.Log("I AM THE THIRD ONE!");
-            PlayerPrefs.SetString("BrexitAntiInterview3", "Freedom of movement has helped to create a much richer and more diverse society.");
+            PlayerPrefs.SetString("BrexitAntiInterview3", "Η ελεύθερη κυκλοφορία έχει οδηγήσει σε τεράστιες κοινωνικές πιέσεις και δυσαρέσκεια στις πόλεις ολόκληρης της χώρας.");
             Debug.Log(PlayerPrefs.GetString("BrexitAntiInterview3"));
             input3.text = "Social";
         }
 
         if (interviewCounter == 2) {
             Debug.Log("I AM THE FOURTH ONE!");
-            PlayerPrefs.SetString("BrexitAntiInterview4", "Freedom of movement has helped to create a much richer and more diverse society.");
+            PlayerPrefs.SetString("BrexitAntiInterview4", "Η ελεύθερη κυκλοφορία έχει οδηγήσει σε τεράστιες κοινωνικές πιέσεις και δυσαρέσκεια στις πόλεις ολόκληρης της χώρας.");
             Debug.Log(PlayerPrefs.GetString("BrexitAntiInterview4"));
         }
     }
@@ -272,28 +272,28 @@ public class GRAntiInterview : MonoBehaviour
     public void EnvironmentSelected() {
         if (interviewCounter == 5) {
             Debug.Log("I AM THE FIRST ONE!");
-            PlayerPrefs.SetString("BrexitAntiInterview1", "The EU has introduced very effective standard for caring for the environment.");
+            PlayerPrefs.SetString("BrexitAntiInterview1", "Η ΕΕ δεν φαίνεται να έχει μεγάλη επίδραση στα περιβαλλοντικά πρότυπα.");
             Debug.Log(PlayerPrefs.GetString("BrexitAntiInterview1"));
             input1.text = "Environment";
         }
 
         if (interviewCounter == 4) {
             Debug.Log("I AM THE SECOND ONE!");
-            PlayerPrefs.SetString("BrexitAntiInterview2", "The EU has introduced very effective standard for caring for the environment.");
+            PlayerPrefs.SetString("BrexitAntiInterview2", "Η ΕΕ δεν φαίνεται να έχει μεγάλη επίδραση στα περιβαλλοντικά πρότυπα.");
             Debug.Log(PlayerPrefs.GetString("BrexitAntiInterview2"));
             input2.text = "Environment";
         }
 
         if (interviewCounter == 3) {
             Debug.Log("I AM THE THIRD ONE!");
-            PlayerPrefs.SetString("BrexitAntiInterview3", "The EU has introduced very effective standard for caring for the environment.");
+            PlayerPrefs.SetString("BrexitAntiInterview3", "Η ΕΕ δεν φαίνεται να έχει μεγάλη επίδραση στα περιβαλλοντικά πρότυπα.");
             Debug.Log(PlayerPrefs.GetString("BrexitAntiInterview3"));
             input3.text = "Environment";
         }
 
         if (interviewCounter == 2) {
             Debug.Log("I AM THE FOURTH ONE!");
-            PlayerPrefs.SetString("BrexitAntiInterview4", "The EU has introduced very effective standard for caring for the environment.");
+            PlayerPrefs.SetString("BrexitAntiInterview4", "Η ΕΕ δεν φαίνεται να έχει μεγάλη επίδραση στα περιβαλλοντικά πρότυπα.");
             Debug.Log(PlayerPrefs.GetString("BrexitAntiInterview4"));
         }
     }
@@ -316,28 +316,28 @@ public class GRAntiInterview : MonoBehaviour
 
         if (interviewCounter == 5) {
             Debug.Log("I AM THE FIRST ONE!");
-            PlayerPrefs.SetString("BrexitAntiInterview1", "The EU provides rigorous standards for fair treatment and EU citizens really appreciate that.");
+            PlayerPrefs.SetString("BrexitAntiInterview1", "Η ΕΕ ισχυρίζεται ότι παρέχει αυστηρά πρότυπα για τη δίκαιη μεταχείριση των πολιτών της όμως η εμπειρία πολλών πολιτών της χώρας μου είναι διαφορετική.");
             Debug.Log(PlayerPrefs.GetString("BrexitAntiInterview1"));
             input1.text = "Rights & Responsibilities";
         }
 
         if (interviewCounter == 4) {
             Debug.Log("I AM THE SECOND ONE!");
-            PlayerPrefs.SetString("BrexitAntiInterview2", "The EU provides rigorous standards for fair treatment and EU citizens really appreciate that.");
+            PlayerPrefs.SetString("BrexitAntiInterview2", "Η ΕΕ ισχυρίζεται ότι παρέχει αυστηρά πρότυπα για τη δίκαιη μεταχείριση των πολιτών της όμως η εμπειρία πολλών πολιτών της χώρας μου είναι διαφορετική.");
             Debug.Log(PlayerPrefs.GetString("BrexitAntiInterview2"));
             input2.text = "Rights & Responsibilities";
         }
 
         if (interviewCounter == 3) {
             Debug.Log("I AM THE THIRD ONE!");
-            PlayerPrefs.SetString("BrexitAntiInterview3", "The EU provides rigorous standards for fair treatment and EU citizens really appreciate that.");
+            PlayerPrefs.SetString("BrexitAntiInterview3", "Η ΕΕ ισχυρίζεται ότι παρέχει αυστηρά πρότυπα για τη δίκαιη μεταχείριση των πολιτών της όμως η εμπειρία πολλών πολιτών της χώρας μου είναι διαφορετική.");
             Debug.Log(PlayerPrefs.GetString("BrexitAntiInterview3"));
             input3.text = "Rights & Responsibilities";
         }
 
         if (interviewCounter == 2) {
             Debug.Log("I AM THE FOURTH ONE!");
-            PlayerPrefs.SetString("BrexitAntiInterview4", "The EU provides rigorous standards for fair treatment and EU citizens really appreciate that.");
+            PlayerPrefs.SetString("BrexitAntiInterview4", "Η ΕΕ ισχυρίζεται ότι παρέχει αυστηρά πρότυπα για τη δίκαιη μεταχείριση των πολιτών της όμως η εμπειρία πολλών πολιτών της χώρας μου είναι διαφορετική.");
             Debug.Log(PlayerPrefs.GetString("BrexitAntiInterview4"));
         }
     }
@@ -360,28 +360,28 @@ public class GRAntiInterview : MonoBehaviour
 
         if (interviewCounter == 5) {
             Debug.Log("I AM THE FIRST ONE!");
-            PlayerPrefs.SetString("BrexitAntiInterview1", "The EU provides rigorous standards for defending the safety and security of the country.");
+            PlayerPrefs.SetString("BrexitAntiInterview1", "Η χώρα μου σίγουρα θα είναι ασφαλέστερη εκτός της ΕΕ.");
             Debug.Log(PlayerPrefs.GetString("BrexitAntiInterview1"));
             input1.text = "Safety & Security";
         }
 
         if (interviewCounter == 4) {
             Debug.Log("I AM THE SECOND ONE!");
-            PlayerPrefs.SetString("BrexitAntiInterview2", "The EU provides rigorous standards for defending the safety and security of the country.");
+            PlayerPrefs.SetString("BrexitAntiInterview2", "Η χώρα μου σίγουρα θα είναι ασφαλέστερη εκτός της ΕΕ.");
             Debug.Log(PlayerPrefs.GetString("BrexitAntiInterview2"));
             input2.text = "Safety & Security";
         }
 
         if (interviewCounter == 3) {
             Debug.Log("I AM THE THIRD ONE!");
-            PlayerPrefs.SetString("BrexitAntiInterview3", "The EU provides rigorous standards for defending the safety and security of the country.");
+            PlayerPrefs.SetString("BrexitAntiInterview3", "Η χώρα μου σίγουρα θα είναι ασφαλέστερη εκτός της ΕΕ.");
             Debug.Log(PlayerPrefs.GetString("BrexitAntiInterview3"));
             input3.text = "Safety & Security";
         }
 
         if (interviewCounter == 2) {
             Debug.Log("I AM THE FOURTH ONE!");
-            PlayerPrefs.SetString("BrexitAntiInterview4", "The EU provides rigorous standards for defending the safety and security of the country.");
+            PlayerPrefs.SetString("BrexitAntiInterview4", "Η χώρα μου σίγουρα θα είναι ασφαλέστερη εκτός της ΕΕ.");
             Debug.Log(PlayerPrefs.GetString("BrexitAntiInterview4"));
         }
     }
@@ -404,28 +404,28 @@ public class GRAntiInterview : MonoBehaviour
 
         if (interviewCounter == 5) {
             Debug.Log("I AM THE FIRST ONE!");
-            PlayerPrefs.SetString("BrexitAntiInterview1", "I would be absolutely devastated if my country voted to leave the EU.");
+            PlayerPrefs.SetString("BrexitAntiInterview1", "Θα ήμουν απολύτως ικανοποιημένος εάν η χώρα μου ψήφιζε να εγκαταλείψει την ΕΕ.");
             Debug.Log(PlayerPrefs.GetString("BrexitAntiInterview1"));
             input1.text = "Emotional";
         }
 
         if (interviewCounter == 4) {
             Debug.Log("I AM THE SECOND ONE!");
-            PlayerPrefs.SetString("BrexitAntiInterview2", "I would be absolutely devastated if my country voted to leave the EU.");
+            PlayerPrefs.SetString("BrexitAntiInterview2", "Θα ήμουν απολύτως ικανοποιημένος εάν η χώρα μου ψήφιζε να εγκαταλείψει την ΕΕ.");
             Debug.Log(PlayerPrefs.GetString("BrexitAntiInterview2"));
             input2.text = "Emotional";
         }
 
         if (interviewCounter == 3) {
             Debug.Log("I AM THE THIRD ONE!");
-            PlayerPrefs.SetString("BrexitAntiInterview3", "I would be absolutely devastated if my country voted to leave the EU.");
+            PlayerPrefs.SetString("BrexitAntiInterview3", "Θα ήμουν απολύτως ικανοποιημένος εάν η χώρα μου ψήφιζε να εγκαταλείψει την ΕΕ.");
             Debug.Log(PlayerPrefs.GetString("BrexitAntiInterview3"));
             input3.text = "Emotional";
         }
 
         if (interviewCounter == 2) {
             Debug.Log("I AM THE FOURTH ONE!");
-            PlayerPrefs.SetString("BrexitAntiInterview4", "I would be absolutely devastated if my country voted to leave the EU.");
+            PlayerPrefs.SetString("BrexitAntiInterview4", "Θα ήμουν απολύτως ικανοποιημένος εάν η χώρα μου ψήφιζε να εγκαταλείψει την ΕΕ.");
             Debug.Log(PlayerPrefs.GetString("BrexitAntiInterview4"));
         }
     }
@@ -448,28 +448,28 @@ public class GRAntiInterview : MonoBehaviour
 
         if (interviewCounter == 5) {
             Debug.Log("I AM THE FIRST ONE!");
-            PlayerPrefs.SetString("BrexitAntiInterview1", "Being a member of the EU has had a huge positive impact on the economy of our country.");
+            PlayerPrefs.SetString("BrexitAntiInterview1", "Η έξοδος από την ΕΕ θα μας επιτρέψει να κάνουμε καλύτερες εμπορικές συμφωνίες με άλλες χώρες.");
             Debug.Log(PlayerPrefs.GetString("BrexitAntiInterview1"));
             input1.text = "Economic";
         }
 
         if (interviewCounter == 4) {
             Debug.Log("I AM THE SECOND ONE!");
-            PlayerPrefs.SetString("BrexitAntiInterview2", "Being a member of the EU has had a huge positive impact on the economy of our country.");
+            PlayerPrefs.SetString("BrexitAntiInterview2", "Η έξοδος από την ΕΕ θα μας επιτρέψει να κάνουμε καλύτερες εμπορικές συμφωνίες με άλλες χώρες.");
             Debug.Log(PlayerPrefs.GetString("BrexitAntiInterview2"));
             input2.text = "Economic";
         }
 
         if (interviewCounter == 3) {
             Debug.Log("I AM THE THIRD ONE!");
-            PlayerPrefs.SetString("BrexitAntiInterview3", "Being a member of the EU has had a huge positive impact on the economy of our country.");
+            PlayerPrefs.SetString("BrexitAntiInterview3", "Η έξοδος από την ΕΕ θα μας επιτρέψει να κάνουμε καλύτερες εμπορικές συμφωνίες με άλλες χώρες.");
             Debug.Log(PlayerPrefs.GetString("BrexitAntiInterview3"));
             input3.text = "Economic";
         }
 
         if (interviewCounter == 2) {
             Debug.Log("I AM THE FOURTH ONE!");
-            PlayerPrefs.SetString("BrexitAntiInterview4", "Being a member of the EU has had a huge positive impact on the economy of our country.");
+            PlayerPrefs.SetString("BrexitAntiInterview4", "Η έξοδος από την ΕΕ θα μας επιτρέψει να κάνουμε καλύτερες εμπορικές συμφωνίες με άλλες χώρες.");
             Debug.Log(PlayerPrefs.GetString("BrexitAntiInterview4"));
         }
     }
@@ -492,28 +492,28 @@ public class GRAntiInterview : MonoBehaviour
 
         if (interviewCounter == 5) {
             Debug.Log("I AM THE FIRST ONE!");
-            PlayerPrefs.SetString("BrexitAntiInterview1", "The 4 freedoms of the EU have been beneficial for our country.");
+            PlayerPrefs.SetString("BrexitAntiInterview1", "Συνολικά, νομίζω ότι οι 4 ελευθερίες της ΕΕ ήταν καταστροφικές για τη χώρα μας.");
             Debug.Log(PlayerPrefs.GetString("BrexitAntiInterview1"));
             input1.text = "Political";
         }
 
         if (interviewCounter == 4) {
             Debug.Log("I AM THE SECOND ONE!");
-            PlayerPrefs.SetString("BrexitAntiInterview2", "The 4 freedoms of the EU have been beneficial for our country.");
+            PlayerPrefs.SetString("BrexitAntiInterview2", "Συνολικά, νομίζω ότι οι 4 ελευθερίες της ΕΕ ήταν καταστροφικές για τη χώρα μας.");
             Debug.Log(PlayerPrefs.GetString("BrexitAntiInterview2"));
             input2.text = "Political";
         }
 
         if (interviewCounter == 3) {
             Debug.Log("I AM THE THIRD ONE!");
-            PlayerPrefs.SetString("BrexitAntiInterview3", "The 4 freedoms of the EU have been beneficial for our country.");
+            PlayerPrefs.SetString("BrexitAntiInterview3", "Συνολικά, νομίζω ότι οι 4 ελευθερίες της ΕΕ ήταν καταστροφικές για τη χώρα μας.");
             Debug.Log(PlayerPrefs.GetString("BrexitAntiInterview3"));
             input3.text = "Political";
         }
 
         if (interviewCounter == 2) {
             Debug.Log("I AM THE FOURTH ONE!");
-            PlayerPrefs.SetString("BrexitAntiInterview4", "The 4 freedoms of the EU have been beneficial for our country.");
+            PlayerPrefs.SetString("BrexitAntiInterview4", "Συνολικά, νομίζω ότι οι 4 ελευθερίες της ΕΕ ήταν καταστροφικές για τη χώρα μας.");
             Debug.Log(PlayerPrefs.GetString("BrexitAntiInterview4"));
         }
     }
@@ -536,28 +536,28 @@ public class GRAntiInterview : MonoBehaviour
 
         if (interviewCounter == 5) {
             Debug.Log("I AM THE FIRST ONE!");
-            PlayerPrefs.SetString("BrexitAntiInterview1", "For all of us Europeans - our shared history matters. We do not want to repeat the mistakes of the past.");
+            PlayerPrefs.SetString("BrexitAntiInterview1", "Η ΕΕ υποτίθεται ότι θα αφορούσε οικονομικές σχέσεις και όχι την πολιτική ενοποίηση.");
             Debug.Log(PlayerPrefs.GetString("BrexitAntiInterview1"));
             input1.text = "Historic";
         }
 
         if (interviewCounter == 4) {
             Debug.Log("I AM THE SECOND ONE!");
-            PlayerPrefs.SetString("BrexitAntiInterview2", "For all of us Europeans - our shared history matters. We do not want to repeat the mistakes of the past.");
+            PlayerPrefs.SetString("BrexitAntiInterview2", "Η ΕΕ υποτίθεται ότι θα αφορούσε οικονομικές σχέσεις και όχι την πολιτική ενοποίηση.");
             Debug.Log(PlayerPrefs.GetString("BrexitAntiInterview2"));
             input2.text = "Historic";
         }
 
         if (interviewCounter == 3) {
             Debug.Log("I AM THE THIRD ONE!");
-            PlayerPrefs.SetString("BrexitAntiInterview3", "For all of us Europeans - our shared history matters. We do not want to repeat the mistakes of the past.");
+            PlayerPrefs.SetString("BrexitAntiInterview3", "Η ΕΕ υποτίθεται ότι θα αφορούσε οικονομικές σχέσεις και όχι την πολιτική ενοποίηση.");
             Debug.Log(PlayerPrefs.GetString("BrexitAntiInterview3"));
             input3.text = "Historic";
         }
 
         if (interviewCounter == 2) {
             Debug.Log("I AM THE FOURHT ONE!");
-            PlayerPrefs.SetString("BrexitAntiInterview4", "For all of us Europeans - our shared history matters. We do not want to repeat the mistakes of the past.");
+            PlayerPrefs.SetString("BrexitAntiInterview4", "Η ΕΕ υποτίθεται ότι θα αφορούσε οικονομικές σχέσεις και όχι την πολιτική ενοποίηση.");
             Debug.Log(PlayerPrefs.GetString("BrexitAntiInterview4"));
         }
     }
@@ -580,28 +580,28 @@ public class GRAntiInterview : MonoBehaviour
 
         if (interviewCounter == 5) {
             Debug.Log("I AM THE FIRST ONE!");
-            PlayerPrefs.SetString("BrexitAntiInterview1", "The EU has helped to create a shared cultural identity.");
+            PlayerPrefs.SetString("BrexitAntiInterview1", "Για μένα, η Ευρωπαϊκή Ένωση αντιπροσωπεύει μια μη ελκυστική ομογενοποίηση των ευρωπαϊκών πολιτισμών.");
             Debug.Log(PlayerPrefs.GetString("BrexitAntiInterview1"));
             input1.text = "Culture";
         }
 
         if (interviewCounter == 4) {
             Debug.Log("I AM THE SECOND ONE!");
-            PlayerPrefs.SetString("BrexitAntiInterview2", "The EU has helped to create a shared cultural identity.");
+            PlayerPrefs.SetString("BrexitAntiInterview2", "Για μένα, η Ευρωπαϊκή Ένωση αντιπροσωπεύει μια μη ελκυστική ομογενοποίηση των ευρωπαϊκών πολιτισμών.");
             Debug.Log(PlayerPrefs.GetString("BrexitAntiInterview2"));
             input2.text = "Culture";
         }
 
         if (interviewCounter == 3) {
             Debug.Log("I AM THE THIRD ONE!");
-            PlayerPrefs.SetString("BrexitAntiInterview3", "The EU has helped to create a shared cultural identity.");
+            PlayerPrefs.SetString("BrexitAntiInterview3", "Για μένα, η Ευρωπαϊκή Ένωση αντιπροσωπεύει μια μη ελκυστική ομογενοποίηση των ευρωπαϊκών πολιτισμών.");
             Debug.Log(PlayerPrefs.GetString("BrexitAntiInterview3"));
             input3.text = "Culture";
         }
 
         if (interviewCounter == 2) {
             Debug.Log("I AM THE FOURTH ONE!");
-            PlayerPrefs.SetString("BrexitAntiInterview4", "The EU has helped to create a shared cultural identity.");
+            PlayerPrefs.SetString("BrexitAntiInterview4", "Για μένα, η Ευρωπαϊκή Ένωση αντιπροσωπεύει μια μη ελκυστική ομογενοποίηση των ευρωπαϊκών πολιτισμών.");
             Debug.Log(PlayerPrefs.GetString("BrexitAntiInterview4"));
         }
     }
@@ -625,28 +625,28 @@ public class GRAntiInterview : MonoBehaviour
 
         if (interviewCounter == 5) {
             Debug.Log("I AM THE FIRST ONE!");
-            PlayerPrefs.SetString("BrexitAntiInterview1", "European identity means that where you are born does not matter.");
+            PlayerPrefs.SetString("BrexitAntiInterview1", "Προσδιορίζω τον εαυτό μου πρωτίστως μέσα από την  εθνικότητά μου.");
             Debug.Log(PlayerPrefs.GetString("BrexitAntiInterview1"));
             input1.text = "Geography";
         }
 
         if (interviewCounter == 4) {
             Debug.Log("I AM THE SECOND ONE!");
-            PlayerPrefs.SetString("BrexitAntiInterview2", "European identity means that where you are born does not matter.");
+            PlayerPrefs.SetString("BrexitAntiInterview2", "Προσδιορίζω τον εαυτό μου πρωτίστως μέσα από την  εθνικότητά μου.");
             Debug.Log(PlayerPrefs.GetString("BrexitAntiInterview2"));
             input2.text = "Geography";
         }
 
         if (interviewCounter == 3) {
             Debug.Log("I AM THE THIRD ONE!");
-            PlayerPrefs.SetString("BrexitAntiInterview3", "European identity means that where you are born does not matter.");
+            PlayerPrefs.SetString("BrexitAntiInterview3", "Προσδιορίζω τον εαυτό μου πρωτίστως μέσα από την  εθνικότητά μου.");
             Debug.Log(PlayerPrefs.GetString("BrexitAntiInterview3"));
             input3.text = "Geography";
         }
 
         if (interviewCounter == 2) {
             Debug.Log("I AM THE FOURTH ONE!");
-            PlayerPrefs.SetString("BrexitAntiInterview4", "European identity means that where you are born does not matter.");
+            PlayerPrefs.SetString("BrexitAntiInterview4", "Προσδιορίζω τον εαυτό μου πρωτίστως μέσα από την  εθνικότητά μου.");
             Debug.Log(PlayerPrefs.GetString("BrexitAntiInterview4"));
         }
     }

@@ -1250,7 +1250,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1010829894}
+      - m_Target: {fileID: 1010829895}
         m_MethodName: RankedStatements
         m_Mode: 1
         m_Arguments:
@@ -1371,6 +1371,94 @@ CanvasRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 33127541}
+  m_CullTransparentMesh: 0
+--- !u!1 &47370189
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 47370190}
+  - component: {fileID: 47370192}
+  - component: {fileID: 47370191}
+  m_Layer: 5
+  m_Name: GRWellDoneFeedback
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &47370190
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 47370189}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1057516787}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 0.5}
+  m_AnchorMax: {x: 1, y: 0.5}
+  m_AnchoredPosition: {x: 0, y: -50}
+  m_SizeDelta: {x: -300, y: 300}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &47370191
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 47370189}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 708705254, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
+      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+  m_FontData:
+    m_Font: {fileID: 12800000, guid: 98a4a11abf7534444b5bcb3b7536520e, type: 3}
+    m_FontSize: 47
+    m_FontStyle: 0
+    m_BestFit: 0
+    m_MinSize: 10
+    m_MaxSize: 51
+    m_Alignment: 4
+    m_AlignByGeometry: 0
+    m_RichText: 1
+    m_HorizontalOverflow: 0
+    m_VerticalOverflow: 1
+    m_LineSpacing: 1
+  m_Text: "\u039C\u03C0\u03C1\u03AC\u03B2\u03BF! \u0388\u03C7\u03B5\u03C4\u03B5 \u03B5\u03C0\u03B9\u03BB\u03AD\u03BE\u03B5\u03B9
+    \u03BC\u03B5 \u03B5\u03C0\u03B9\u03C4\u03C5\u03C7\u03AF\u03B1 \u03C4\u03C1\u03AF\u03B1
+    \u03B8\u03AD\u03BC\u03B1\u03C4\u03B1 \u03B1\u03C0\u03CC \u03C4\u03B7 \u03C3\u03C5\u03BD\u03AD\u03BD\u03C4\u03B5\u03C5\u03BE\u03B7,
+    \u03B1\u03BB\u03BB\u03AC \u03BF \u03C5\u03C0\u03BF\u03C3\u03C4\u03B7\u03C1\u03B9\u03BA\u03C4\u03AE\u03C2
+    \u03C4\u03B7\u03C2 \u03B5\u03BA\u03C3\u03C4\u03C1\u03B1\u03C4\u03B5\u03AF\u03B1\u03C2
+    \ \u03C0\u03C1\u03AD\u03C0\u03B5\u03B9 \u03BD\u03B1 \u03B1\u03C0\u03BF\u03C7\u03C9\u03C1\u03AE\u03C3\u03B5\u03B9
+    \u03C4\u03CE\u03C1\u03B1.\n\n\u038C\u03BB\u03B5\u03C2 \u03BF\u03B9 \u03B4\u03B7\u03BB\u03CE\u03C3\u03B5\u03B9\u03C2
+    \u03AD\u03C7\u03BF\u03C5\u03BD \u03BC\u03B5\u03C4\u03B1\u03C6\u03B5\u03C1\u03B8\u03B5\u03AF
+    \u03C3\u03C4\u03BF\u03BD \u03C5\u03C0\u03BF\u03BB\u03BF\u03B3\u03B9\u03C3\u03C4\u03AE
+    \u03C3\u03B1\u03C2."
+--- !u!222 &47370192
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 47370189}
   m_CullTransparentMesh: 0
 --- !u!1 &68816127
 GameObject:
@@ -2029,6 +2117,85 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 137497506}
   m_CullTransparentMesh: 0
+--- !u!1 &152177519
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 152177520}
+  - component: {fileID: 152177522}
+  - component: {fileID: 152177521}
+  m_Layer: 5
+  m_Name: GRExtremelyUsefulText
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &152177520
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 152177519}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 659621870}
+  m_RootOrder: 8
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 1, y: 1}
+  m_AnchoredPosition: {x: 600, y: -75}
+  m_SizeDelta: {x: -1500, y: 50}
+  m_Pivot: {x: 0.5, y: 1}
+--- !u!114 &152177521
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 152177519}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 708705254, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
+      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+  m_FontData:
+    m_Font: {fileID: 12800000, guid: 98a4a11abf7534444b5bcb3b7536520e, type: 3}
+    m_FontSize: 30
+    m_FontStyle: 0
+    m_BestFit: 0
+    m_MinSize: 10
+    m_MaxSize: 44
+    m_Alignment: 4
+    m_AlignByGeometry: 0
+    m_RichText: 1
+    m_HorizontalOverflow: 0
+    m_VerticalOverflow: 1
+    m_LineSpacing: 1
+  m_Text: "\u03A0\u03AC\u03C1\u03B1 \u03C0\u03BF\u03BB\u03CD \u03C7\u03C1\u03AE\u03C3\u03B9\u03BC\u03B7"
+--- !u!222 &152177522
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 152177519}
+  m_CullTransparentMesh: 0
 --- !u!1 &154026986
 GameObject:
   m_ObjectHideFlags: 0
@@ -2269,7 +2436,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1010829894}
+      - m_Target: {fileID: 1010829895}
         m_MethodName: ReturnToMobileWorkplace
         m_Mode: 1
         m_Arguments:
@@ -4204,7 +4371,6 @@ GameObject:
   m_Component:
   - component: {fileID: 290242460}
   - component: {fileID: 290242461}
-  - component: {fileID: 290242459}
   m_Layer: 0
   m_Name: HistoricAnti
   m_TagString: Untagged
@@ -4212,53 +4378,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &290242459
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 290242458}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 98a18e56ee7b7f24cb7521080ea7eb9e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  startCanvas: {fileID: 255141318}
-  themeSelectionCanvas: {fileID: 828039753}
-  themeSelectionContinueButton: {fileID: 1490615297}
-  themeDefinitionCanvas: {fileID: 1116076909}
-  leaverCanvas: {fileID: 1408915861}
-  textDisplay: {fileID: 1940251443}
-  animText: {fileID: 1940251446}
-  sentences:
-  - 'The EU was supposed to be about economic links not about political unification. '
-  feedbackCanvas: {fileID: 1271130292}
-  scoreCanvas: {fileID: 1810696522}
-  rankingCanvas: {fileID: 732463104}
-  statementText: {fileID: 1120657376}
-  typingSpeed: 0.005
-  continueButton: {fileID: 1871030971}
-  socialButton: {fileID: 7988826}
-  environmentButton: {fileID: 184289780}
-  civilButton: {fileID: 2097322452}
-  safetySecurityButton: {fileID: 661218569}
-  emotionalButton: {fileID: 1102278767}
-  economicButton: {fileID: 1877743501}
-  politicalButton: {fileID: 1726907565}
-  historicButton: {fileID: 423659616}
-  cultureButton: {fileID: 1490077195}
-  geographyButton: {fileID: 16737114}
-  interviewCounter: 0
-  secondCounter: 0
-  chosenTextDisplay: {fileID: 1555891835}
-  backgroundClip: {fileID: 8300000, guid: cb8f729cf4890f14190b2c6c7dac96ba, type: 3}
-  backgroundSource: {fileID: 195803032}
-  inputEmail: {fileID: 2063400098}
-  input1: {fileID: 327011388}
-  input2: {fileID: 1151999080}
-  input3: {fileID: 424725275}
-  BASE_URL: https://docs.google.com/forms/u/0/d/e/1FAIpQLSciWjfoLl9ULoMgAoWebwAlU-YCcIDoJYbdforspuAF9iaZ3g/formResponse
 --- !u!4 &290242460
 Transform:
   m_ObjectHideFlags: 0
@@ -4457,7 +4576,6 @@ GameObject:
   m_Component:
   - component: {fileID: 325038438}
   - component: {fileID: 325038439}
-  - component: {fileID: 325038437}
   m_Layer: 0
   m_Name: EnvironmentAnti
   m_TagString: Untagged
@@ -4465,53 +4583,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &325038437
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 325038436}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 98a18e56ee7b7f24cb7521080ea7eb9e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  startCanvas: {fileID: 255141318}
-  themeSelectionCanvas: {fileID: 828039753}
-  themeSelectionContinueButton: {fileID: 1490615297}
-  themeDefinitionCanvas: {fileID: 1116076909}
-  leaverCanvas: {fileID: 1408915861}
-  textDisplay: {fileID: 1940251443}
-  animText: {fileID: 1940251446}
-  sentences:
-  - 'The EU does not seem to have much impact on environmental standards. '
-  feedbackCanvas: {fileID: 1271130292}
-  scoreCanvas: {fileID: 1810696522}
-  rankingCanvas: {fileID: 732463104}
-  statementText: {fileID: 1120657376}
-  typingSpeed: 0.005
-  continueButton: {fileID: 2049551424}
-  socialButton: {fileID: 7988826}
-  environmentButton: {fileID: 184289780}
-  civilButton: {fileID: 2097322452}
-  safetySecurityButton: {fileID: 661218569}
-  emotionalButton: {fileID: 1102278767}
-  economicButton: {fileID: 1877743501}
-  politicalButton: {fileID: 1726907565}
-  historicButton: {fileID: 423659616}
-  cultureButton: {fileID: 1490077195}
-  geographyButton: {fileID: 16737114}
-  interviewCounter: 0
-  secondCounter: 0
-  chosenTextDisplay: {fileID: 1555891835}
-  backgroundClip: {fileID: 8300000, guid: cb8f729cf4890f14190b2c6c7dac96ba, type: 3}
-  backgroundSource: {fileID: 195803032}
-  inputEmail: {fileID: 2063400098}
-  input1: {fileID: 327011388}
-  input2: {fileID: 1151999080}
-  input3: {fileID: 424725275}
-  BASE_URL: https://docs.google.com/forms/u/0/d/e/1FAIpQLSciWjfoLl9ULoMgAoWebwAlU-YCcIDoJYbdforspuAF9iaZ3g/formResponse
 --- !u!4 &325038438
 Transform:
   m_ObjectHideFlags: 0
@@ -5074,7 +5145,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1010829894}
+      - m_Target: {fileID: 1010829895}
         m_MethodName: RankedStatements
         m_Mode: 1
         m_Arguments:
@@ -5452,7 +5523,6 @@ GameObject:
   m_Component:
   - component: {fileID: 374528314}
   - component: {fileID: 374528315}
-  - component: {fileID: 374528313}
   m_Layer: 0
   m_Name: PoliticalAnti
   m_TagString: Untagged
@@ -5460,53 +5530,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &374528313
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 374528312}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 98a18e56ee7b7f24cb7521080ea7eb9e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  startCanvas: {fileID: 255141318}
-  themeSelectionCanvas: {fileID: 828039753}
-  themeSelectionContinueButton: {fileID: 1490615297}
-  themeDefinitionCanvas: {fileID: 1116076909}
-  leaverCanvas: {fileID: 1408915861}
-  textDisplay: {fileID: 1940251443}
-  animText: {fileID: 1940251446}
-  sentences:
-  - 'Overall, I think the 4 freedoms of the EU have been disastrous for our country. '
-  feedbackCanvas: {fileID: 1271130292}
-  scoreCanvas: {fileID: 1810696522}
-  rankingCanvas: {fileID: 732463104}
-  statementText: {fileID: 1120657376}
-  typingSpeed: 0.005
-  continueButton: {fileID: 4924064}
-  socialButton: {fileID: 7988826}
-  environmentButton: {fileID: 184289780}
-  civilButton: {fileID: 2097322452}
-  safetySecurityButton: {fileID: 661218569}
-  emotionalButton: {fileID: 1102278767}
-  economicButton: {fileID: 1877743501}
-  politicalButton: {fileID: 1726907565}
-  historicButton: {fileID: 423659616}
-  cultureButton: {fileID: 1490077195}
-  geographyButton: {fileID: 16737114}
-  interviewCounter: 0
-  secondCounter: 0
-  chosenTextDisplay: {fileID: 1555891835}
-  backgroundClip: {fileID: 8300000, guid: cb8f729cf4890f14190b2c6c7dac96ba, type: 3}
-  backgroundSource: {fileID: 195803032}
-  inputEmail: {fileID: 2063400098}
-  input1: {fileID: 327011388}
-  input2: {fileID: 1151999080}
-  input3: {fileID: 424725275}
-  BASE_URL: https://docs.google.com/forms/u/0/d/e/1FAIpQLSciWjfoLl9ULoMgAoWebwAlU-YCcIDoJYbdforspuAF9iaZ3g/formResponse
 --- !u!4 &374528314
 Transform:
   m_ObjectHideFlags: 0
@@ -5848,7 +5871,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1010829894}
+      - m_Target: {fileID: 1010829895}
         m_MethodName: RankedStatements
         m_Mode: 1
         m_Arguments:
@@ -5973,7 +5996,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1010829894}
+      - m_Target: {fileID: 0}
         m_MethodName: ReturnToMobileWorkplace
         m_Mode: 1
         m_Arguments:
@@ -6583,7 +6606,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &459213206
 RectTransform:
   m_ObjectHideFlags: 0
@@ -7805,7 +7828,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &551002537
 RectTransform:
   m_ObjectHideFlags: 0
@@ -8295,9 +8318,11 @@ RectTransform:
   - {fileID: 866517314}
   - {fileID: 349310081}
   - {fileID: 459213206}
+  - {fileID: 1135441675}
   - {fileID: 1255778920}
+  - {fileID: 152177520}
   m_Father: {fileID: 1705174809}
-  m_RootOrder: 2
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 0}
@@ -8670,7 +8695,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &732463105
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -10066,7 +10091,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1010829894}
+      - m_Target: {fileID: 1010829895}
         m_MethodName: RankedStatements
         m_Mode: 1
         m_Arguments:
@@ -10290,7 +10315,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &884920344
 RectTransform:
   m_ObjectHideFlags: 0
@@ -11167,7 +11192,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1010829894}
+      - m_Target: {fileID: 1010829895}
         m_MethodName: ReturnToMobileWorkplace
         m_Mode: 1
         m_Arguments:
@@ -11178,7 +11203,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 1010829894}
+      - m_Target: {fileID: 1010829895}
         m_MethodName: Send
         m_Mode: 1
         m_Arguments:
@@ -11332,7 +11357,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &992911033
 RectTransform:
   m_ObjectHideFlags: 0
@@ -11405,7 +11430,7 @@ MonoBehaviour:
   m_outlineColor:
     serializedVersion: 2
     rgba: 4278190080
-  m_fontSize: 48.1
+  m_fontSize: 47.45
   m_fontSizeBase: 50
   m_fontWeight: 400
   m_enableAutoSizing: 1
@@ -11446,7 +11471,7 @@ MonoBehaviour:
   m_margin: {x: 0, y: 0, z: 0, w: 0}
   m_textInfo:
     textComponent: {fileID: 992911034}
-    characterCount: 163
+    characterCount: 164
     spriteCount: 0
     spaceCount: 25
     wordCount: 25
@@ -11454,11 +11479,11 @@ MonoBehaviour:
     lineCount: 5
     pageCount: 1
     materialCount: 1
-  m_havePropertiesChanged: 1
+  m_havePropertiesChanged: 0
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_spriteAnimator: {fileID: 0}
-  m_isInputParsingRequired: 1
+  m_isInputParsingRequired: 0
   m_inputSource: 0
   m_hasFontAssetChanged: 0
   m_subTextObjects:
@@ -11651,7 +11676,6 @@ GameObject:
   m_Component:
   - component: {fileID: 1010829893}
   - component: {fileID: 1010829895}
-  - component: {fileID: 1010829894}
   m_Layer: 0
   m_Name: SocialAnti
   m_TagString: Untagged
@@ -11673,54 +11697,6 @@ Transform:
   m_Father: {fileID: 1203854742}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1010829894
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1010829892}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 98a18e56ee7b7f24cb7521080ea7eb9e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  startCanvas: {fileID: 255141318}
-  themeSelectionCanvas: {fileID: 828039753}
-  themeSelectionContinueButton: {fileID: 1490615297}
-  themeDefinitionCanvas: {fileID: 1116076909}
-  leaverCanvas: {fileID: 1408915861}
-  textDisplay: {fileID: 1940251443}
-  animText: {fileID: 1940251446}
-  sentences:
-  - 'Freedom of movement has led to huge social pressures and resentment in towns
-    across the country. '
-  feedbackCanvas: {fileID: 1271130292}
-  scoreCanvas: {fileID: 1810696522}
-  rankingCanvas: {fileID: 732463104}
-  statementText: {fileID: 1120657376}
-  typingSpeed: 0.005
-  continueButton: {fileID: 1894523649}
-  socialButton: {fileID: 7988826}
-  environmentButton: {fileID: 184289780}
-  civilButton: {fileID: 2097322452}
-  safetySecurityButton: {fileID: 661218569}
-  emotionalButton: {fileID: 1102278767}
-  economicButton: {fileID: 1877743501}
-  politicalButton: {fileID: 1726907565}
-  historicButton: {fileID: 423659616}
-  cultureButton: {fileID: 1490077195}
-  geographyButton: {fileID: 16737114}
-  interviewCounter: 0
-  secondCounter: 0
-  chosenTextDisplay: {fileID: 1555891835}
-  backgroundClip: {fileID: 8300000, guid: cb8f729cf4890f14190b2c6c7dac96ba, type: 3}
-  backgroundSource: {fileID: 195803032}
-  inputEmail: {fileID: 2063400098}
-  input1: {fileID: 327011388}
-  input2: {fileID: 1151999080}
-  input3: {fileID: 424725275}
-  BASE_URL: https://docs.google.com/forms/u/0/d/e/1FAIpQLSciWjfoLl9ULoMgAoWebwAlU-YCcIDoJYbdforspuAF9iaZ3g/formResponse
 --- !u!114 &1010829895
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -12106,6 +12082,7 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 992911033}
+  - {fileID: 47370190}
   - {fileID: 1988771150}
   m_Father: {fileID: 2094336953}
   m_RootOrder: 0
@@ -13284,6 +13261,85 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1132733491}
   m_CullTransparentMesh: 0
+--- !u!1 &1135441674
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1135441675}
+  - component: {fileID: 1135441677}
+  - component: {fileID: 1135441676}
+  m_Layer: 5
+  m_Name: GRNotUsefulText
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1135441675
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1135441674}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 659621870}
+  m_RootOrder: 6
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 1, y: 1}
+  m_AnchoredPosition: {x: -600, y: -75}
+  m_SizeDelta: {x: -1500, y: 50}
+  m_Pivot: {x: 0.5, y: 1}
+--- !u!114 &1135441676
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1135441674}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 708705254, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
+      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+  m_FontData:
+    m_Font: {fileID: 12800000, guid: 98a4a11abf7534444b5bcb3b7536520e, type: 3}
+    m_FontSize: 30
+    m_FontStyle: 0
+    m_BestFit: 0
+    m_MinSize: 3
+    m_MaxSize: 48
+    m_Alignment: 4
+    m_AlignByGeometry: 0
+    m_RichText: 1
+    m_HorizontalOverflow: 0
+    m_VerticalOverflow: 1
+    m_LineSpacing: 1
+  m_Text: " \u039C\u03B7 \u03C7\u03C1\u03AE\u03C3\u03B9\u03BC\u03B7"
+--- !u!222 &1135441677
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1135441674}
+  m_CullTransparentMesh: 0
 --- !u!1 &1151999078
 GameObject:
   m_ObjectHideFlags: 0
@@ -14129,7 +14185,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1255778920
 RectTransform:
   m_ObjectHideFlags: 0
@@ -14142,7 +14198,7 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 659621870}
-  m_RootOrder: 6
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 1, y: 1}
@@ -14946,7 +15002,6 @@ GameObject:
   m_Component:
   - component: {fileID: 1339411153}
   - component: {fileID: 1339411154}
-  - component: {fileID: 1339411152}
   m_Layer: 0
   m_Name: EmotionalAnti
   m_TagString: Untagged
@@ -14954,53 +15009,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &1339411152
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1339411151}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 98a18e56ee7b7f24cb7521080ea7eb9e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  startCanvas: {fileID: 255141318}
-  themeSelectionCanvas: {fileID: 828039753}
-  themeSelectionContinueButton: {fileID: 1490615297}
-  themeDefinitionCanvas: {fileID: 1116076909}
-  leaverCanvas: {fileID: 1408915861}
-  textDisplay: {fileID: 1940251443}
-  animText: {fileID: 1940251446}
-  sentences:
-  - 'I would be absolutely delighted if my country voted to leave the EU. '
-  feedbackCanvas: {fileID: 1271130292}
-  scoreCanvas: {fileID: 1810696522}
-  rankingCanvas: {fileID: 732463104}
-  statementText: {fileID: 1120657376}
-  typingSpeed: 0.005
-  continueButton: {fileID: 417092195}
-  socialButton: {fileID: 7988826}
-  environmentButton: {fileID: 184289780}
-  civilButton: {fileID: 2097322452}
-  safetySecurityButton: {fileID: 661218569}
-  emotionalButton: {fileID: 1102278767}
-  economicButton: {fileID: 1877743501}
-  politicalButton: {fileID: 1726907565}
-  historicButton: {fileID: 423659616}
-  cultureButton: {fileID: 1490077195}
-  geographyButton: {fileID: 16737114}
-  interviewCounter: 0
-  secondCounter: 0
-  chosenTextDisplay: {fileID: 1555891835}
-  backgroundClip: {fileID: 8300000, guid: cb8f729cf4890f14190b2c6c7dac96ba, type: 3}
-  backgroundSource: {fileID: 195803032}
-  inputEmail: {fileID: 2063400098}
-  input1: {fileID: 327011388}
-  input2: {fileID: 1151999080}
-  input3: {fileID: 424725275}
-  BASE_URL: https://docs.google.com/forms/u/0/d/e/1FAIpQLSciWjfoLl9ULoMgAoWebwAlU-YCcIDoJYbdforspuAF9iaZ3g/formResponse
 --- !u!4 &1339411153
 Transform:
   m_ObjectHideFlags: 0
@@ -15935,6 +15943,86 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1362393401}
   m_CullTransparentMesh: 0
+--- !u!1 &1384041324
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1384041325}
+  - component: {fileID: 1384041327}
+  - component: {fileID: 1384041326}
+  m_Layer: 5
+  m_Name: GRAgreementStatement
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1384041325
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1384041324}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1705174809}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 0.5}
+  m_AnchorMax: {x: 1, y: 0.5}
+  m_AnchoredPosition: {x: 0, y: 80}
+  m_SizeDelta: {x: -800, y: 150}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1384041326
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1384041324}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 708705254, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
+      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+  m_FontData:
+    m_Font: {fileID: 12800000, guid: 98a4a11abf7534444b5bcb3b7536520e, type: 3}
+    m_FontSize: 70
+    m_FontStyle: 0
+    m_BestFit: 0
+    m_MinSize: 6
+    m_MaxSize: 70
+    m_Alignment: 4
+    m_AlignByGeometry: 0
+    m_RichText: 1
+    m_HorizontalOverflow: 0
+    m_VerticalOverflow: 1
+    m_LineSpacing: 1
+  m_Text: "\u03A0\u03CC\u03C3\u03BF \u03C7\u03C1\u03AE\u03C3\u03B9\u03BC\u03B7 \u03B2\u03C1\u03AE\u03BA\u03B1\u03C4\u03B5
+    \u03C4\u03B7\u03BD \u03B4\u03AE\u03BB\u03C9\u03C3\u03B7;"
+--- !u!222 &1384041327
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1384041324}
+  m_CullTransparentMesh: 0
 --- !u!1 &1404177936
 GameObject:
   m_ObjectHideFlags: 0
@@ -16417,7 +16505,6 @@ GameObject:
   m_Component:
   - component: {fileID: 1433238507}
   - component: {fileID: 1433238508}
-  - component: {fileID: 1433238506}
   m_Layer: 0
   m_Name: CivilAnti
   m_TagString: Untagged
@@ -16425,54 +16512,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &1433238506
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1433238505}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 98a18e56ee7b7f24cb7521080ea7eb9e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  startCanvas: {fileID: 255141318}
-  themeSelectionCanvas: {fileID: 828039753}
-  themeSelectionContinueButton: {fileID: 1490615297}
-  themeDefinitionCanvas: {fileID: 1116076909}
-  leaverCanvas: {fileID: 1408915861}
-  textDisplay: {fileID: 1940251443}
-  animText: {fileID: 1940251446}
-  sentences:
-  - 'The EU claims to provide rigorous standards for treating its citizens fairly,
-    but this is not the experience of many citizens in my country. '
-  feedbackCanvas: {fileID: 1271130292}
-  scoreCanvas: {fileID: 1810696522}
-  rankingCanvas: {fileID: 732463104}
-  statementText: {fileID: 1120657376}
-  typingSpeed: 0.005
-  continueButton: {fileID: 755120889}
-  socialButton: {fileID: 7988826}
-  environmentButton: {fileID: 184289780}
-  civilButton: {fileID: 2097322452}
-  safetySecurityButton: {fileID: 661218569}
-  emotionalButton: {fileID: 1102278767}
-  economicButton: {fileID: 1877743501}
-  politicalButton: {fileID: 1726907565}
-  historicButton: {fileID: 423659616}
-  cultureButton: {fileID: 1490077195}
-  geographyButton: {fileID: 16737114}
-  interviewCounter: 0
-  secondCounter: 0
-  chosenTextDisplay: {fileID: 1555891835}
-  backgroundClip: {fileID: 8300000, guid: cb8f729cf4890f14190b2c6c7dac96ba, type: 3}
-  backgroundSource: {fileID: 195803032}
-  inputEmail: {fileID: 2063400098}
-  input1: {fileID: 327011388}
-  input2: {fileID: 1151999080}
-  input3: {fileID: 424725275}
-  BASE_URL: https://docs.google.com/forms/u/0/d/e/1FAIpQLSciWjfoLl9ULoMgAoWebwAlU-YCcIDoJYbdforspuAF9iaZ3g/formResponse
 --- !u!4 &1433238507
 Transform:
   m_ObjectHideFlags: 0
@@ -19247,7 +19286,6 @@ GameObject:
   m_Component:
   - component: {fileID: 1683432097}
   - component: {fileID: 1683432098}
-  - component: {fileID: 1683432096}
   m_Layer: 0
   m_Name: SafetySecurityAnti
   m_TagString: Untagged
@@ -19255,53 +19293,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &1683432096
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1683432095}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 98a18e56ee7b7f24cb7521080ea7eb9e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  startCanvas: {fileID: 255141318}
-  themeSelectionCanvas: {fileID: 828039753}
-  themeSelectionContinueButton: {fileID: 1490615297}
-  themeDefinitionCanvas: {fileID: 1116076909}
-  leaverCanvas: {fileID: 1408915861}
-  textDisplay: {fileID: 1940251443}
-  animText: {fileID: 1940251446}
-  sentences:
-  - 'My country will definitely be safer out of Europe. '
-  feedbackCanvas: {fileID: 1271130292}
-  scoreCanvas: {fileID: 1810696522}
-  rankingCanvas: {fileID: 732463104}
-  statementText: {fileID: 1120657376}
-  typingSpeed: 0.005
-  continueButton: {fileID: 1486652019}
-  socialButton: {fileID: 7988826}
-  environmentButton: {fileID: 184289780}
-  civilButton: {fileID: 2097322452}
-  safetySecurityButton: {fileID: 661218569}
-  emotionalButton: {fileID: 1102278767}
-  economicButton: {fileID: 1877743501}
-  politicalButton: {fileID: 1726907565}
-  historicButton: {fileID: 423659616}
-  cultureButton: {fileID: 1490077195}
-  geographyButton: {fileID: 16737114}
-  interviewCounter: 0
-  secondCounter: 0
-  chosenTextDisplay: {fileID: 1555891835}
-  backgroundClip: {fileID: 8300000, guid: cb8f729cf4890f14190b2c6c7dac96ba, type: 3}
-  backgroundSource: {fileID: 195803032}
-  inputEmail: {fileID: 2063400098}
-  input1: {fileID: 327011388}
-  input2: {fileID: 1151999080}
-  input3: {fileID: 424725275}
-  BASE_URL: https://docs.google.com/forms/u/0/d/e/1FAIpQLSciWjfoLl9ULoMgAoWebwAlU-YCcIDoJYbdforspuAF9iaZ3g/formResponse
 --- !u!4 &1683432097
 Transform:
   m_ObjectHideFlags: 0
@@ -19633,6 +19624,7 @@ RectTransform:
   m_Children:
   - {fileID: 1120657375}
   - {fileID: 551002537}
+  - {fileID: 1384041325}
   - {fileID: 659621870}
   m_Father: {fileID: 732463108}
   m_RootOrder: 0
@@ -20526,7 +20518,6 @@ GameObject:
   m_Component:
   - component: {fileID: 1727027247}
   - component: {fileID: 1727027248}
-  - component: {fileID: 1727027246}
   m_Layer: 0
   m_Name: CultureAnti
   m_TagString: Untagged
@@ -20534,54 +20525,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &1727027246
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1727027245}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 98a18e56ee7b7f24cb7521080ea7eb9e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  startCanvas: {fileID: 255141318}
-  themeSelectionCanvas: {fileID: 828039753}
-  themeSelectionContinueButton: {fileID: 1490615297}
-  themeDefinitionCanvas: {fileID: 1116076909}
-  leaverCanvas: {fileID: 1408915861}
-  textDisplay: {fileID: 1940251443}
-  animText: {fileID: 1940251446}
-  sentences:
-  - 'To me, the European Union represents an unattractive homogenisation of European
-    cultures. '
-  feedbackCanvas: {fileID: 1271130292}
-  scoreCanvas: {fileID: 1810696522}
-  rankingCanvas: {fileID: 732463104}
-  statementText: {fileID: 1120657376}
-  typingSpeed: 0.005
-  continueButton: {fileID: 1415236429}
-  socialButton: {fileID: 7988826}
-  environmentButton: {fileID: 184289780}
-  civilButton: {fileID: 2097322452}
-  safetySecurityButton: {fileID: 661218569}
-  emotionalButton: {fileID: 1102278767}
-  economicButton: {fileID: 1877743501}
-  politicalButton: {fileID: 1726907565}
-  historicButton: {fileID: 423659616}
-  cultureButton: {fileID: 1490077195}
-  geographyButton: {fileID: 16737114}
-  interviewCounter: 0
-  secondCounter: 0
-  chosenTextDisplay: {fileID: 1555891835}
-  backgroundClip: {fileID: 8300000, guid: cb8f729cf4890f14190b2c6c7dac96ba, type: 3}
-  backgroundSource: {fileID: 195803032}
-  inputEmail: {fileID: 2063400098}
-  input1: {fileID: 327011388}
-  input2: {fileID: 1151999080}
-  input3: {fileID: 424725275}
-  BASE_URL: https://docs.google.com/forms/u/0/d/e/1FAIpQLSciWjfoLl9ULoMgAoWebwAlU-YCcIDoJYbdforspuAF9iaZ3g/formResponse
 --- !u!4 &1727027247
 Transform:
   m_ObjectHideFlags: 0
@@ -22291,6 +22234,88 @@ MonoBehaviour:
             m_Type: System.String
             m_EnumType: 
     m_Name: Theme Selection
+--- !u!1 &1884432857
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1884432858}
+  - component: {fileID: 1884432860}
+  - component: {fileID: 1884432859}
+  m_Layer: 5
+  m_Name: GRTitle
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1884432858
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1884432857}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 2094336953}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 1, y: 1}
+  m_AnchoredPosition: {x: 0, y: -100}
+  m_SizeDelta: {x: -400, y: 200}
+  m_Pivot: {x: 0.5, y: 1}
+--- !u!114 &1884432859
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1884432857}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 708705254, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
+      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+  m_FontData:
+    m_Font: {fileID: 12800000, guid: 98a4a11abf7534444b5bcb3b7536520e, type: 3}
+    m_FontSize: 64
+    m_FontStyle: 0
+    m_BestFit: 0
+    m_MinSize: 6
+    m_MaxSize: 66
+    m_Alignment: 4
+    m_AlignByGeometry: 0
+    m_RichText: 1
+    m_HorizontalOverflow: 0
+    m_VerticalOverflow: 1
+    m_LineSpacing: 1
+  m_Text: "\u03A3\u03A5\u039D\u0395\u039D\u03A4\u0395\u03A5\u039E\u0397 \u039C\u0395
+    \u03A5\u03A0\u039F\u03A3\u03A4\u0397\u03A1\u0399\u039A\u03A4\u0397 \u03A4\u0397\u03A3
+    \u0395\u039A\u03A3\u03A4\u03A1\u0391\u03A4\u0395\u0399\u0391\u03A3 \u03A0\u0391\u03A1\u0391\u039C\u039F\u039D\u0397\u03A3
+    \u03C0\u03BB\u03AE\u03C1\u03B7\u03C2!"
+--- !u!222 &1884432860
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1884432857}
+  m_CullTransparentMesh: 0
 --- !u!1 &1894523649
 GameObject:
   m_ObjectHideFlags: 0
@@ -22794,7 +22819,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1010829894}
+      - m_Target: {fileID: 1010829895}
         m_MethodName: RankedStatements
         m_Mode: 1
         m_Arguments:
@@ -23989,7 +24014,7 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 2094336953}
-  m_RootOrder: 2
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 0}
   m_AnchorMax: {x: 1, y: 0}
@@ -24073,7 +24098,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1010829894}
+      - m_Target: {fileID: 1010829895}
         m_MethodName: ReturnToMobileWorkplace
         m_Mode: 1
         m_Arguments:
@@ -24277,7 +24302,7 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1057516787}
-  m_RootOrder: 1
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 1, y: 1}
@@ -25249,7 +25274,6 @@ GameObject:
   m_Component:
   - component: {fileID: 2080806671}
   - component: {fileID: 2080806673}
-  - component: {fileID: 2080806672}
   m_Layer: 0
   m_Name: GeographyAnti
   m_TagString: Untagged
@@ -25271,53 +25295,6 @@ Transform:
   m_Father: {fileID: 1203854742}
   m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &2080806672
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2080806670}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 98a18e56ee7b7f24cb7521080ea7eb9e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  startCanvas: {fileID: 255141318}
-  themeSelectionCanvas: {fileID: 828039753}
-  themeSelectionContinueButton: {fileID: 1490615297}
-  themeDefinitionCanvas: {fileID: 1116076909}
-  leaverCanvas: {fileID: 1408915861}
-  textDisplay: {fileID: 1940251443}
-  animText: {fileID: 1940251446}
-  sentences:
-  - 'I think of myself primarily as my own nationality. '
-  feedbackCanvas: {fileID: 1271130292}
-  scoreCanvas: {fileID: 1810696522}
-  rankingCanvas: {fileID: 732463104}
-  statementText: {fileID: 1120657376}
-  typingSpeed: 0.005
-  continueButton: {fileID: 1955119464}
-  socialButton: {fileID: 7988826}
-  environmentButton: {fileID: 184289780}
-  civilButton: {fileID: 2097322452}
-  safetySecurityButton: {fileID: 661218569}
-  emotionalButton: {fileID: 1102278767}
-  economicButton: {fileID: 1877743501}
-  politicalButton: {fileID: 1726907565}
-  historicButton: {fileID: 423659616}
-  cultureButton: {fileID: 1490077195}
-  geographyButton: {fileID: 16737114}
-  interviewCounter: 0
-  secondCounter: 0
-  chosenTextDisplay: {fileID: 1555891835}
-  backgroundClip: {fileID: 8300000, guid: cb8f729cf4890f14190b2c6c7dac96ba, type: 3}
-  backgroundSource: {fileID: 195803032}
-  inputEmail: {fileID: 2063400098}
-  input1: {fileID: 327011388}
-  input2: {fileID: 1151999080}
-  input3: {fileID: 424725275}
-  BASE_URL: https://docs.google.com/forms/u/0/d/e/1FAIpQLSciWjfoLl9ULoMgAoWebwAlU-YCcIDoJYbdforspuAF9iaZ3g/formResponse
 --- !u!114 &2080806673
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -25378,7 +25355,6 @@ GameObject:
   m_Component:
   - component: {fileID: 2092788523}
   - component: {fileID: 2092788524}
-  - component: {fileID: 2092788522}
   m_Layer: 0
   m_Name: EconomicAnti
   m_TagString: Untagged
@@ -25386,53 +25362,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &2092788522
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2092788521}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 98a18e56ee7b7f24cb7521080ea7eb9e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  startCanvas: {fileID: 255141318}
-  themeSelectionCanvas: {fileID: 828039753}
-  themeSelectionContinueButton: {fileID: 1490615297}
-  themeDefinitionCanvas: {fileID: 1116076909}
-  leaverCanvas: {fileID: 1408915861}
-  textDisplay: {fileID: 1940251443}
-  animText: {fileID: 1940251446}
-  sentences:
-  - 'Leaving the EU would allow us to make better trade deals with other countries. '
-  feedbackCanvas: {fileID: 1271130292}
-  scoreCanvas: {fileID: 1810696522}
-  rankingCanvas: {fileID: 732463104}
-  statementText: {fileID: 1120657376}
-  typingSpeed: 0.005
-  continueButton: {fileID: 973780868}
-  socialButton: {fileID: 7988826}
-  environmentButton: {fileID: 184289780}
-  civilButton: {fileID: 2097322452}
-  safetySecurityButton: {fileID: 661218569}
-  emotionalButton: {fileID: 1102278767}
-  economicButton: {fileID: 1877743501}
-  politicalButton: {fileID: 1726907565}
-  historicButton: {fileID: 423659616}
-  cultureButton: {fileID: 1490077195}
-  geographyButton: {fileID: 16737114}
-  interviewCounter: 0
-  secondCounter: 0
-  chosenTextDisplay: {fileID: 1555891835}
-  backgroundClip: {fileID: 8300000, guid: cb8f729cf4890f14190b2c6c7dac96ba, type: 3}
-  backgroundSource: {fileID: 195803032}
-  inputEmail: {fileID: 2063400098}
-  input1: {fileID: 327011388}
-  input2: {fileID: 1151999080}
-  input3: {fileID: 424725275}
-  BASE_URL: https://docs.google.com/forms/u/0/d/e/1FAIpQLSciWjfoLl9ULoMgAoWebwAlU-YCcIDoJYbdforspuAF9iaZ3g/formResponse
 --- !u!4 &2092788523
 Transform:
   m_ObjectHideFlags: 0
@@ -25529,6 +25458,7 @@ RectTransform:
   m_Children:
   - {fileID: 1057516787}
   - {fileID: 884920344}
+  - {fileID: 1884432858}
   - {fileID: 1982597813}
   m_Father: {fileID: 1723350121}
   m_RootOrder: 0
@@ -25890,7 +25820,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1010829894}
+      - m_Target: {fileID: 0}
         m_MethodName: ResetPlayerPrefs
         m_Mode: 1
         m_Arguments:

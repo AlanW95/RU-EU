@@ -105,10 +105,10 @@ EditorBuildSettings:
     path: Assets/Scenes/5 - Immigration/ImmigrationDiscussion.unity
     guid: c082b0332ea3d764caa34ab5b44bec83
   - enabled: 0
-    path: Assets/Scenes/5 - Immigration/ImmigrationInterview1.unity
+    path: Assets/Scenes/5 - Immigration/Old/ImmigrationInterview1Old.unity
     guid: 6d0f213134be3474f96b5121a1f0d244
   - enabled: 0
-    path: Assets/Scenes/5 - Immigration/ImmigrationInterview2.unity
+    path: Assets/Scenes/5 - Immigration/Old/ImmigrationInterview2Old.unity
     guid: 2f37ef82671aa09468880bfee764d7d6
   - enabled: 0
     path: Assets/Scenes/2 - Lorry Truck/DiscussionLorryTruck.unity

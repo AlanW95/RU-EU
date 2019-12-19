@@ -2463,7 +2463,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!114 &255141319
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2906,6 +2906,7 @@ MonoBehaviour:
   themeDefinitionCanvas: {fileID: 1116076909}
   interviewCanvas: {fileID: 1408915861}
   textDisplay: {fileID: 1940251443}
+  animText: {fileID: 0}
   sentences:
   - 'The majority of immigrants are ignorant of our history and this is the problem
     with them. '
@@ -2928,6 +2929,13 @@ MonoBehaviour:
   interviewCounter: 0
   secondCounter: 0
   chosenTextDisplay: {fileID: 1555891835}
+  backgroundClip: {fileID: 0}
+  backgroundSource: {fileID: 0}
+  inputEmail: {fileID: 0}
+  input1: {fileID: 0}
+  input2: {fileID: 0}
+  input3: {fileID: 0}
+  BASE_URL: https://docs.google.com/forms/u/0/d/e/1FAIpQLSc4bRLQT8EAN4o4cwoIytLVoOY4RUQG2GcndfqNngnxaAZSJA/formResponse
 --- !u!4 &290242460
 Transform:
   m_ObjectHideFlags: 0
@@ -3176,6 +3184,7 @@ MonoBehaviour:
   themeDefinitionCanvas: {fileID: 1116076909}
   interviewCanvas: {fileID: 1408915861}
   textDisplay: {fileID: 1940251443}
+  animText: {fileID: 0}
   sentences:
   - '[enter statement on theme of Environment here]'
   feedbackCanvas: {fileID: 1271130292}
@@ -3197,6 +3206,13 @@ MonoBehaviour:
   interviewCounter: 0
   secondCounter: 0
   chosenTextDisplay: {fileID: 1555891835}
+  backgroundClip: {fileID: 0}
+  backgroundSource: {fileID: 0}
+  inputEmail: {fileID: 0}
+  input1: {fileID: 0}
+  input2: {fileID: 0}
+  input3: {fileID: 0}
+  BASE_URL: https://docs.google.com/forms/u/0/d/e/1FAIpQLSc4bRLQT8EAN4o4cwoIytLVoOY4RUQG2GcndfqNngnxaAZSJA/formResponse
 --- !u!4 &325038438
 Transform:
   m_ObjectHideFlags: 0
@@ -3719,6 +3735,7 @@ MonoBehaviour:
   themeDefinitionCanvas: {fileID: 1116076909}
   interviewCanvas: {fileID: 1408915861}
   textDisplay: {fileID: 1940251443}
+  animText: {fileID: 0}
   sentences:
   - 'The EU prevents the national migration policy for the benefit of my countries
     citizens. '
@@ -3741,6 +3758,13 @@ MonoBehaviour:
   interviewCounter: 0
   secondCounter: 0
   chosenTextDisplay: {fileID: 1555891835}
+  backgroundClip: {fileID: 0}
+  backgroundSource: {fileID: 0}
+  inputEmail: {fileID: 0}
+  input1: {fileID: 0}
+  input2: {fileID: 0}
+  input3: {fileID: 0}
+  BASE_URL: https://docs.google.com/forms/u/0/d/e/1FAIpQLSc4bRLQT8EAN4o4cwoIytLVoOY4RUQG2GcndfqNngnxaAZSJA/formResponse
 --- !u!4 &374528314
 Transform:
   m_ObjectHideFlags: 0
@@ -9458,6 +9482,7 @@ MonoBehaviour:
   themeDefinitionCanvas: {fileID: 1116076909}
   interviewCanvas: {fileID: 1408915861}
   textDisplay: {fileID: 1940251443}
+  animText: {fileID: 0}
   sentences:
   - 'The Bureaucrats in Brussels have no idea about the type of migrants we get here.
     We have to live with them, they don''t. '
@@ -9480,6 +9505,13 @@ MonoBehaviour:
   interviewCounter: 0
   secondCounter: 0
   chosenTextDisplay: {fileID: 1555891835}
+  backgroundClip: {fileID: 0}
+  backgroundSource: {fileID: 0}
+  inputEmail: {fileID: 0}
+  input1: {fileID: 0}
+  input2: {fileID: 0}
+  input3: {fileID: 0}
+  BASE_URL: https://docs.google.com/forms/u/0/d/e/1FAIpQLSc4bRLQT8EAN4o4cwoIytLVoOY4RUQG2GcndfqNngnxaAZSJA/formResponse
 --- !u!1 &1028577365
 GameObject:
   m_ObjectHideFlags: 0
@@ -11820,6 +11852,7 @@ MonoBehaviour:
   themeDefinitionCanvas: {fileID: 1116076909}
   interviewCanvas: {fileID: 1408915861}
   textDisplay: {fileID: 1940251443}
+  animText: {fileID: 0}
   sentences:
   - 'Some less wealthy citizens can be resentful of migrants, who they believe take
     their jobs. '
@@ -11842,6 +11875,13 @@ MonoBehaviour:
   interviewCounter: 0
   secondCounter: 0
   chosenTextDisplay: {fileID: 1555891835}
+  backgroundClip: {fileID: 0}
+  backgroundSource: {fileID: 0}
+  inputEmail: {fileID: 0}
+  input1: {fileID: 0}
+  input2: {fileID: 0}
+  input3: {fileID: 0}
+  BASE_URL: https://docs.google.com/forms/u/0/d/e/1FAIpQLSc4bRLQT8EAN4o4cwoIytLVoOY4RUQG2GcndfqNngnxaAZSJA/formResponse
 --- !u!4 &1339411153
 Transform:
   m_ObjectHideFlags: 0
@@ -12741,6 +12781,7 @@ MonoBehaviour:
   themeDefinitionCanvas: {fileID: 1116076909}
   interviewCanvas: {fileID: 1408915861}
   textDisplay: {fileID: 1940251443}
+  animText: {fileID: 0}
   sentences:
   - 'Brussels bureaucrats can sometimes be out of touch - loads of immigrants do not
     obey the laws of the country they are living in. '
@@ -12763,6 +12804,13 @@ MonoBehaviour:
   interviewCounter: 0
   secondCounter: 0
   chosenTextDisplay: {fileID: 1555891835}
+  backgroundClip: {fileID: 0}
+  backgroundSource: {fileID: 0}
+  inputEmail: {fileID: 0}
+  input1: {fileID: 0}
+  input2: {fileID: 0}
+  input3: {fileID: 0}
+  BASE_URL: https://docs.google.com/forms/u/0/d/e/1FAIpQLSc4bRLQT8EAN4o4cwoIytLVoOY4RUQG2GcndfqNngnxaAZSJA/formResponse
 --- !u!4 &1433238507
 Transform:
   m_ObjectHideFlags: 0
@@ -14588,6 +14636,7 @@ MonoBehaviour:
   themeDefinitionCanvas: {fileID: 1116076909}
   interviewCanvas: {fileID: 1408915861}
   textDisplay: {fileID: 1940251443}
+  animText: {fileID: 0}
   sentences:
   - 'But you must admit that the crime rate has definitely increased as a migration
     rate has gone up. '
@@ -14610,6 +14659,13 @@ MonoBehaviour:
   interviewCounter: 0
   secondCounter: 0
   chosenTextDisplay: {fileID: 1555891835}
+  backgroundClip: {fileID: 0}
+  backgroundSource: {fileID: 0}
+  inputEmail: {fileID: 0}
+  input1: {fileID: 0}
+  input2: {fileID: 0}
+  input3: {fileID: 0}
+  BASE_URL: https://docs.google.com/forms/u/0/d/e/1FAIpQLSc4bRLQT8EAN4o4cwoIytLVoOY4RUQG2GcndfqNngnxaAZSJA/formResponse
 --- !u!4 &1683432097
 Transform:
   m_ObjectHideFlags: 0
@@ -15213,6 +15269,7 @@ MonoBehaviour:
   themeDefinitionCanvas: {fileID: 1116076909}
   interviewCanvas: {fileID: 1408915861}
   textDisplay: {fileID: 1940251443}
+  animText: {fileID: 0}
   sentences:
   - 'Many immigrants do not want to understand the common cultural heritage of the
     EU and respect the values of the country they live in. '
@@ -15235,6 +15292,13 @@ MonoBehaviour:
   interviewCounter: 0
   secondCounter: 0
   chosenTextDisplay: {fileID: 1555891835}
+  backgroundClip: {fileID: 0}
+  backgroundSource: {fileID: 0}
+  inputEmail: {fileID: 0}
+  input1: {fileID: 0}
+  input2: {fileID: 0}
+  input3: {fileID: 0}
+  BASE_URL: https://docs.google.com/forms/u/0/d/e/1FAIpQLSc4bRLQT8EAN4o4cwoIytLVoOY4RUQG2GcndfqNngnxaAZSJA/formResponse
 --- !u!4 &1727027247
 Transform:
   m_ObjectHideFlags: 0
@@ -19076,6 +19140,7 @@ MonoBehaviour:
   themeDefinitionCanvas: {fileID: 1116076909}
   interviewCanvas: {fileID: 1408915861}
   textDisplay: {fileID: 1940251443}
+  animText: {fileID: 0}
   sentences:
   - 'The EU borders are open for people to travel and work all over Europe. But no
     one is thinking of the outcomes if so many people will continue to flood into
@@ -19099,6 +19164,13 @@ MonoBehaviour:
   interviewCounter: 0
   secondCounter: 0
   chosenTextDisplay: {fileID: 1555891835}
+  backgroundClip: {fileID: 0}
+  backgroundSource: {fileID: 0}
+  inputEmail: {fileID: 0}
+  input1: {fileID: 0}
+  input2: {fileID: 0}
+  input3: {fileID: 0}
+  BASE_URL: https://docs.google.com/forms/u/0/d/e/1FAIpQLSc4bRLQT8EAN4o4cwoIytLVoOY4RUQG2GcndfqNngnxaAZSJA/formResponse
 --- !u!1 &2092788521
 GameObject:
   m_ObjectHideFlags: 0
@@ -19134,6 +19206,7 @@ MonoBehaviour:
   themeDefinitionCanvas: {fileID: 1116076909}
   interviewCanvas: {fileID: 1408915861}
   textDisplay: {fileID: 1940251443}
+  animText: {fileID: 0}
   sentences:
   - 'Migrant workers have taken all the jobs and kept wages low. Moreover, they send
     all the money home to their country. '
@@ -19156,6 +19229,13 @@ MonoBehaviour:
   interviewCounter: 0
   secondCounter: 0
   chosenTextDisplay: {fileID: 1555891835}
+  backgroundClip: {fileID: 0}
+  backgroundSource: {fileID: 0}
+  inputEmail: {fileID: 0}
+  input1: {fileID: 0}
+  input2: {fileID: 0}
+  input3: {fileID: 0}
+  BASE_URL: https://docs.google.com/forms/u/0/d/e/1FAIpQLSc4bRLQT8EAN4o4cwoIytLVoOY4RUQG2GcndfqNngnxaAZSJA/formResponse
 --- !u!4 &2092788523
 Transform:
   m_ObjectHideFlags: 0

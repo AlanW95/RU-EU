@@ -186,6 +186,7 @@ public class AttitudesInterview2 : MonoBehaviour {
     public void NextSentence() {
 
         continueButton.SetActive(false);
+        index = sentences.Length;//For randomisation statements
 
         if (index < sentences.Length - 1) {
             Debug.Log("Button has been pressed");

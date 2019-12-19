@@ -2585,6 +2585,10 @@ MonoBehaviour:
   textDisplay: {fileID: 1940251443}
   animText: {fileID: 1940251446}
   sentences:
+  - 'Liberal democratic rule of law, freedom of speech, shared history is in the core
+    of European identity. '
+  - 'People''s entire upbringing and thinking is deeply influenced by the European
+    idea when they get to grow up within Europe. '
   - 'Principles of the Enlightenment, French revolution and ancient Greek civilization
     with modern meanings are the main component of European identity. '
   feedbackCanvas: {fileID: 1271130292}
@@ -3522,7 +3526,13 @@ MonoBehaviour:
   textDisplay: {fileID: 1940251443}
   animText: {fileID: 1940251446}
   sentences:
-  - 'Russia is conspiring against EU as they see the advantages of strength and unity. '
+  - 'Europe is an idea for finding common grounds while thriving towards development.
+    There are differences but they should not be big enough that could not be overcomed
+    while a common interest is in place. '
+  - 'Europe and European Union are two separate things to discuss. One is mostly geographical
+    and the other is mostly about distribution of power. '
+  - 'Europe and European Union are hardly two separate idea. Non EU members are also
+    coserving the ideals of EU in one way or another. '
   feedbackCanvas: {fileID: 1271130292}
   scoreCanvas: {fileID: 1810696522}
   rankingCanvas: {fileID: 732463104}
@@ -6162,7 +6172,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: 0}
+  m_AnchoredPosition: {x: -12, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &772513515
@@ -8890,7 +8900,11 @@ MonoBehaviour:
   textDisplay: {fileID: 1940251443}
   animText: {fileID: 1940251446}
   sentences:
+  - 'Citizens of EU should be more open and tolerant towards their neighbour countries. '
   - Open borders makes it easy to plan and go on vacations and/or work.
+  - 'EU gives the opportunity to work in an international environment while respecting
+    similarities and differences, provides relations and connection in a common context
+    and also the feeling of being together. '
   feedbackCanvas: {fileID: 1271130292}
   scoreCanvas: {fileID: 1810696522}
   rankingCanvas: {fileID: 732463104}
@@ -10905,6 +10919,8 @@ MonoBehaviour:
   animText: {fileID: 1940251446}
   sentences:
   - 'Perhaps Greeks do not feel European. '
+  - 'EU is good enough as people do not feel the urge to leave it yet. '
+  - 'It is possible to be pro-EU while being Eurosceptic on different issues. '
   feedbackCanvas: {fileID: 1271130292}
   scoreCanvas: {fileID: 1810696522}
   rankingCanvas: {fileID: 732463104}
@@ -11755,8 +11771,13 @@ MonoBehaviour:
   textDisplay: {fileID: 1940251443}
   animText: {fileID: 1940251446}
   sentences:
-  - 'People feel less positive about EU because of the conservative and neoliberal
-    policies. '
+  - 'People get defensive when laws say that many completely different factors must
+    function as one. '
+  - 'Europe is facing the biggest problem which are related to democratic, economic
+    and monetary deficit and these should be sufficiently comprehended and directed
+    to a strategy of integration, unificaiton and even greater empowerment. '
+  - 'The EU policies are too generalized. Every country is different in capabilities
+    and infrastructure facilities. The policies should be tailor made for each country. '
   feedbackCanvas: {fileID: 1271130292}
   scoreCanvas: {fileID: 1810696522}
   rankingCanvas: {fileID: 732463104}
@@ -14311,9 +14332,13 @@ MonoBehaviour:
   textDisplay: {fileID: 1940251443}
   animText: {fileID: 1940251446}
   sentences:
+  - 'Preservation of peace, help for poor member states in traning and education has
+    been very helpful. '
   - 'Europe has done a lot for the respect for different nations but there are more
     possibilities to make things better in terms of stability and preservence of peace
     in the region. '
+  - 'Topics like human rights should be generalized for all members and it is not
+    wrong to enforce it on every member state. '
   feedbackCanvas: {fileID: 1271130292}
   scoreCanvas: {fileID: 1810696522}
   rankingCanvas: {fileID: 732463104}
@@ -14868,6 +14893,9 @@ MonoBehaviour:
   textDisplay: {fileID: 1940251443}
   animText: {fileID: 1940251446}
   sentences:
+  - 'EU gives the freedom to act internationally and gain international understanding. '
+  - 'Citizens of EU should enjoy the cultural diversity it offers and take advantages
+    that comes with it. '
   - 'EU related initiatives has enormously enriched the life of a lot of students
     who has participated in different programs funded and hosted by the EU. '
   feedbackCanvas: {fileID: 1271130292}
@@ -18389,6 +18417,9 @@ MonoBehaviour:
   textDisplay: {fileID: 1940251443}
   animText: {fileID: 1940251446}
   sentences:
+  - 'Europe is a great benefit for most participating countries. '
+  - 'With unemployment and economic crisis, Greek people do not see much strategies
+    planned towards the betterment of the citizens. '
   - 'It is absolutely important to have EU to economically thrive against other big
     economically powerful countries. '
   feedbackCanvas: {fileID: 1271130292}

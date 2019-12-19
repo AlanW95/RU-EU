@@ -92,8 +92,8 @@ public class AttitudesInterview1 : MonoBehaviour
         interviewCounter = 6;
         secondCounter = 3;
         //Random.seed = System.DateTime.Now.Millisecond;
-        index = Random.Range(0, sentences.Length);
-        Debug.Log("index" + index.ToString());
+        //index = Random.Range(0, sentences.Length);
+        // Debug.Log("index" + index.ToString());
         //currentIndexSentence = sentences[index];
         FloatingTextController.Initialize();
 
@@ -115,7 +115,7 @@ public class AttitudesInterview1 : MonoBehaviour
         PlayerPrefs.GetInt("CurrentAttitudesCultureScore");
         PlayerPrefs.GetInt("CurrentAttitudesGeographyScore");
 
-        //index = Random.Range(0, sentences.Length);
+        index = Random.Range(0, sentences.Length);
 
         //currentIndexSentence = sentences[index];
 
@@ -225,7 +225,7 @@ public class AttitudesInterview1 : MonoBehaviour
     {
 
         continueButton.SetActive(false);
-
+        index = sentences.Length;//For randomisation statements
         if (index < sentences.Length - 1)
         {
             Debug.Log("Button has been pressed");

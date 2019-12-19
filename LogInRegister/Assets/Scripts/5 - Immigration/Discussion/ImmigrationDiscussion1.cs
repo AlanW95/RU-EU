@@ -135,7 +135,7 @@ public class ImmigrationDiscussion1 : MonoBehaviour
         antiCharacter.SetActive(false);
         undecidedCharacter.SetActive(false);
 
-        responseBox.SetActive(false);
+        responseBox.SetActive(true);
 
         playerSelection.SetActive(false);
 
@@ -284,6 +284,7 @@ public class ImmigrationDiscussion1 : MonoBehaviour
             //put into Unity Analytics when available
 
             contextTheme2.SetActive(true);
+            responseBox.SetActive(true);
         }
     }
 
@@ -376,6 +377,7 @@ public class ImmigrationDiscussion1 : MonoBehaviour
             //store data
             //put into Unity Analytics when available
             contextTheme3.SetActive(true);
+            responseBox.SetActive(true);
         }
     }
 
@@ -467,6 +469,7 @@ public class ImmigrationDiscussion1 : MonoBehaviour
             //store data
             //put into Unity Analytics when available
             contextTheme4.SetActive(true);
+            responseBox.SetActive(true);
         }
     }
 
@@ -560,6 +563,7 @@ public class ImmigrationDiscussion1 : MonoBehaviour
 
             //instead of moving on to the next area, we will give the player feedback at this stage, with a final tool feedback screen.
             contextTheme5.SetActive(true);
+            responseBox.SetActive(true);
         }
     }
 
@@ -655,6 +659,7 @@ public class ImmigrationDiscussion1 : MonoBehaviour
 
             //instead of moving on to the next area, we will give the player feedback at this stage, with a final tool feedback screen.
             contextTheme6.SetActive(true);
+            responseBox.SetActive(true);
         }
     }
 
@@ -749,6 +754,7 @@ public class ImmigrationDiscussion1 : MonoBehaviour
             //store data
             //put into Unity Analytics when available
             contextTheme7.SetActive(true);
+            responseBox.SetActive(true);
         }
     }
 
@@ -843,6 +849,7 @@ public class ImmigrationDiscussion1 : MonoBehaviour
             //store data
             //put into Unity Analytics when available
             contextTheme8.SetActive(true);
+            responseBox.SetActive(true);
         }
     }
 
@@ -937,6 +944,7 @@ public class ImmigrationDiscussion1 : MonoBehaviour
             //store data
             //put into Unity Analytics when available
             contextTheme9.SetActive(true);
+            responseBox.SetActive(true);
         }
     }
 
@@ -1031,6 +1039,7 @@ public class ImmigrationDiscussion1 : MonoBehaviour
             //store data
             //put into Unity Analytics when available
             contextTheme10.SetActive(true);
+            responseBox.SetActive(true);
         }
     }
 

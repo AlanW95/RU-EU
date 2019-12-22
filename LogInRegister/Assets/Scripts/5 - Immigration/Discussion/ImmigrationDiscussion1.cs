@@ -1278,7 +1278,7 @@ public class ImmigrationDiscussion1 : MonoBehaviour
 
     //-------------------------------------------------------------------
 
-        //Discussion THeme 1 - SOCIAL
+        //Discussion Theme 1 - SOCIAL
 
     //Add these to the Continue button then it takes
     public void ProTheme1Selected() {

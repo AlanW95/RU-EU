@@ -16,6 +16,7 @@ public class LoadWorkplace : MonoBehaviour
     }
 
     public void LoadMobileWorkplace() {
-        SceneManager.LoadScene("GRJournalist");
+        SceneManager.LoadScene("Journalist");
+        //SceneManager.LoadScene("GRJournalist");
     }
 }

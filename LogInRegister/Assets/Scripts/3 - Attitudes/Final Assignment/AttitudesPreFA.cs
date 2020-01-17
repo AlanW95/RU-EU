@@ -401,18 +401,26 @@ public class AttitudesPreFA : MonoBehaviour
     public void Send() {
         emailAnswer = inputEmail.GetComponent<InputField>().text;
         Debug.Log(emailAnswer);
+
         pro1Answer = input1.GetComponent<InputField>().text;
         Debug.Log(pro1Answer);
+
         pro2Answer = input2.GetComponent<InputField>().text;
         Debug.Log(pro2Answer);
+
         pro3Answer = input3.GetComponent<InputField>().text;
         Debug.Log(pro3Answer);
+
         anti1Answer = input4.GetComponent<InputField>().text;
         Debug.Log(anti1Answer);
+
         anti2Answer = input5.GetComponent<InputField>().text;
         Debug.Log(anti2Answer);
+
         anti3Answer = input6.GetComponent<InputField>().text;
         Debug.Log(anti3Answer);
+
+        Debug.Log("All data for Attitudes Pre-Final Assignment has been sent");
 
         StartCoroutine(Post(emailAnswer, pro1Answer, pro2Answer, pro3Answer, anti1Answer, anti2Answer, anti3Answer));
     }

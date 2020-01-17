@@ -20,11 +20,11 @@ public class DiscussionTask3 : MonoBehaviour
     private int predictorCounter = 4; //help with decided which slot the new statement goes to
 
     //Data for Google Forms
-    public InputField inputEmail, input1, input2, input3, input4;
-    private string emailAnswer, selection1Answer, selection2Answer, selection3Answer, selection4Answer;
+    //public InputField inputEmail, input1, input2, input3, input4;
+    //private string emailAnswer, selection1Answer, selection2Answer, selection3Answer, selection4Answer;
 
-    [SerializeField]
-    private string BASE_URL = "https://docs.google.com/forms/u/0/d/e/1FAIpQLSeyIYwJ_cVPvTiX0r8gAKDqVHGMTL6RYfpQg5LVNlpRZ3lZYQ/formResponse";
+    //[SerializeField]
+    //private string BASE_URL = "https://docs.google.com/forms/u/0/d/e/1FAIpQLSeyIYwJ_cVPvTiX0r8gAKDqVHGMTL6RYfpQg5LVNlpRZ3lZYQ/formResponse";
 
     // Start is called before the first frame update
     void Start()
@@ -339,7 +339,7 @@ public class DiscussionTask3 : MonoBehaviour
         }
     }
 
-    IEnumerator Post (string emailAnswer, string selection1, string selection2, string selection3, string selection4) {
+    /*IEnumerator Post (string emailAnswer, string selection1, string selection2, string selection3, string selection4) {
         WWWForm form = new WWWForm();
 
         form.AddField("entry.1718955303", emailAnswer);
@@ -367,5 +367,5 @@ public class DiscussionTask3 : MonoBehaviour
         Debug.Log(selection4Answer);
 
         StartCoroutine(Post(emailAnswer, selection1Answer, selection2Answer, selection3Answer, selection4Answer));
-    }
+    }*/
 }

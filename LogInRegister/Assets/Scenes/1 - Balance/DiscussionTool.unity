@@ -1773,7 +1773,7 @@ MonoBehaviour:
     lineCount: 1
     pageCount: 1
     materialCount: 1
-  m_havePropertiesChanged: 0
+  m_havePropertiesChanged: 1
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_spriteAnimator: {fileID: 0}
@@ -3073,7 +3073,7 @@ RectTransform:
   m_Children:
   - {fileID: 1651853231}
   m_Father: {fileID: 0}
-  m_RootOrder: 5
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
@@ -5397,7 +5397,7 @@ MonoBehaviour:
     lineCount: 2
     pageCount: 1
     materialCount: 1
-  m_havePropertiesChanged: 0
+  m_havePropertiesChanged: 1
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_spriteAnimator: {fileID: 0}
@@ -6366,7 +6366,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &489378494
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6440,7 +6440,7 @@ RectTransform:
   m_Children:
   - {fileID: 1294672652}
   m_Father: {fileID: 0}
-  m_RootOrder: 6
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
@@ -21876,12 +21876,6 @@ MonoBehaviour:
   btnS9: {fileID: 715621819}
   btnS10: {fileID: 1271311775}
   feedbackCanvas: {fileID: 489378493}
-  inputEmail: {fileID: 0}
-  input1: {fileID: 0}
-  input2: {fileID: 0}
-  input3: {fileID: 0}
-  input4: {fileID: 0}
-  BASE_URL: https://docs.google.com/forms/u/0/d/e/1FAIpQLSeyIYwJ_cVPvTiX0r8gAKDqVHGMTL6RYfpQg5LVNlpRZ3lZYQ/formResponse
 --- !u!1 &1653582728
 GameObject:
   m_ObjectHideFlags: 0
@@ -26627,7 +26621,7 @@ MonoBehaviour:
     lineCount: 1
     pageCount: 1
     materialCount: 1
-  m_havePropertiesChanged: 0
+  m_havePropertiesChanged: 1
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_spriteAnimator: {fileID: 0}

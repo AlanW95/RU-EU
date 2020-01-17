@@ -594,5 +594,9 @@ public class AttitudesInterview1 : MonoBehaviour
 
         selection3Answer = input3.GetComponent<InputField>().text;
         Debug.Log(selection3Answer);
+
+        Debug.Log("All data for Attitudes Interview 1 has been sent");
+
+        StartCoroutine(Post(emailAnswer, selection1Answer, selection2Answer, selection3Answer));
     }
 }

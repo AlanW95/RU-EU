@@ -131,6 +131,9 @@ public class ProInterview : MonoBehaviour {
         /*if (Input.GetKeyDown(KeyCode.Escape)) {
             SceneManager.LoadScene("Journalist");
         }*/
+
+        Debug.Log(PlayerPrefs.GetString("TopTheme"));
+        Debug.Log(PlayerPrefs.GetString("SecondTheme"));
     }
 
     public void ResetPlayerPrefs() {

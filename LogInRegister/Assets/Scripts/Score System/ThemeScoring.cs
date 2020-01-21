@@ -95,7 +95,7 @@ public class ThemeScoring : MonoBehaviour
     public void AddEnvironmentPoints() {
         environmentScore += 10;
         PlayerPrefs.SetInt("CurrentEnvironmentScore", environmentScore);
-        Debug.Log("+10 to Social. You currently have " + environmentScore + " for the theme of Environment.");
+        Debug.Log("+10 to Environment. You currently have " + environmentScore + " for the theme of Environment.");
     }
 
     public void AddRightsResponsibilitiesPoints() {

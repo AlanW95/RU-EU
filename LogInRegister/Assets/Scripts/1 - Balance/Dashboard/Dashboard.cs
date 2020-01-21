@@ -45,6 +45,9 @@ public class Dashboard : MonoBehaviour
         TopThemeSliderValue();
         SecondThemeSliderValue();
 
+        Debug.Log(PlayerPrefs.GetString("TopTheme"));
+        Debug.Log(PlayerPrefs.GetString("SecondTheme"));
+
         /*if (Input.GetKeyDown(KeyCode.Escape)) {
             SceneManager.LoadScene("Journalist");
         }*/

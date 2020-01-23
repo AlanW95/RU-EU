@@ -56,7 +56,7 @@ public class DirectorInterview : MonoBehaviour
         rankingCanvas.SetActive(false);
         feedbackCanvas.SetActive(false);
 
-        interviewCounter = 10;
+        interviewCounter = 6;
         secondCounter = 3;
     }
 

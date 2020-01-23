@@ -53,7 +53,7 @@ public class LorryDriverInterview : MonoBehaviour
         rankingCanvas.SetActive(false);
         feedbackCanvas.SetActive(false);
 
-        interviewCounter = 10;
+        interviewCounter = 6;
         secondCounter = 3;
     }
 
@@ -74,7 +74,8 @@ public class LorryDriverInterview : MonoBehaviour
 
         if (secondCounter <= 0) {
             Debug.Log("You have answered 3 questions! If you wish, you may proceed and collect more statements but this will not affect your score.");
-            questionSelectionContinueButton.SetActive(true);
+            //questionSelectionContinueButton.SetActive(true);
+            feedbackCanvas.SetActive(true);
         }
     }
 

@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.44657868, g: 0.49641263, b: 0.57481706, a: 1}
+  m_IndirectSpecularColor: {r: 0.44657898, g: 0.4964133, b: 0.5748178, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -2409,7 +2409,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0}
   m_AnchorMax: {x: 0.5, y: 0}
-  m_AnchoredPosition: {x: -484.59, y: -26.8}
+  m_AnchoredPosition: {x: -484.59, y: -26.800049}
   m_SizeDelta: {x: 850, y: 1102.7}
   m_Pivot: {x: 0.5, y: 0}
 --- !u!114 &230649570
@@ -3066,7 +3066,7 @@ GameObject:
   - component: {fileID: 290242460}
   - component: {fileID: 290242459}
   m_Layer: 0
-  m_Name: Question8
+  m_Name: Question8Safety&Security
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3189,8 +3189,8 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_Sprite: {fileID: 0}
-  m_Type: 1
+  m_Sprite: {fileID: 21300000, guid: 27395959ec68e5746b168b43b5e40f38, type: 3}
+  m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
   m_FillMethod: 4
@@ -3293,7 +3293,7 @@ GameObject:
   - component: {fileID: 325038438}
   - component: {fileID: 325038437}
   m_Layer: 0
-  m_Name: Question2
+  m_Name: Question2Rights&Responsibilities
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3803,7 +3803,7 @@ GameObject:
   - component: {fileID: 374528314}
   - component: {fileID: 374528313}
   m_Layer: 0
-  m_Name: Question7
+  m_Name: Question7Economic
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -6213,7 +6213,7 @@ GameObject:
   - component: {fileID: 688658198}
   - component: {fileID: 688658199}
   m_Layer: 0
-  m_Name: Question11
+  m_Name: Question11Rights&Responsibilities
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -6543,7 +6543,7 @@ GameObject:
   - component: {fileID: 752168703}
   - component: {fileID: 752168704}
   m_Layer: 0
-  m_Name: Question15
+  m_Name: Question15Decoy
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -6774,15 +6774,15 @@ RectTransform:
   m_GameObject: {fileID: 772513513}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.38542002, y: 0.38542002, z: 0.38542002}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1408915862}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0.001953125, y: 0.0009765625}
-  m_SizeDelta: {x: 3061.6, y: 1721.1}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &772513515
 MonoBehaviour:
@@ -8133,7 +8133,7 @@ RectTransform:
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 1, y: 1}
   m_AnchoredPosition: {x: 0, y: -50}
-  m_SizeDelta: {x: -400, y: 100}
+  m_SizeDelta: {x: -200, y: 250}
   m_Pivot: {x: 0.5, y: 1}
 --- !u!114 &884920345
 MonoBehaviour:
@@ -8155,7 +8155,9 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_text: Tool Feedback
+  m_text: 'Interview with Director
+
+    Complete!'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: bf071a21c75d5984182ca2896c24ba39, type: 2}
   m_sharedMaterial: {fileID: 21445493198866178, guid: bf071a21c75d5984182ca2896c24ba39,
@@ -8184,10 +8186,10 @@ MonoBehaviour:
   m_outlineColor:
     serializedVersion: 2
     rgba: 4278190080
-  m_fontSize: 72
-  m_fontSizeBase: 36
+  m_fontSize: 90
+  m_fontSizeBase: 90
   m_fontWeight: 400
-  m_enableAutoSizing: 1
+  m_enableAutoSizing: 0
   m_fontSizeMin: 18
   m_fontSizeMax: 72
   m_fontStyle: 5
@@ -8225,19 +8227,19 @@ MonoBehaviour:
   m_margin: {x: 0, y: 0, z: 0, w: 0}
   m_textInfo:
     textComponent: {fileID: 884920345}
-    characterCount: 13
+    characterCount: 33
     spriteCount: 0
-    spaceCount: 1
-    wordCount: 2
+    spaceCount: 3
+    wordCount: 4
     linkCount: 0
-    lineCount: 1
+    lineCount: 2
     pageCount: 1
     materialCount: 1
-  m_havePropertiesChanged: 1
+  m_havePropertiesChanged: 0
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_spriteAnimator: {fileID: 0}
-  m_isInputParsingRequired: 1
+  m_isInputParsingRequired: 0
   m_inputSource: 0
   m_hasFontAssetChanged: 0
   m_subTextObjects:
@@ -8851,7 +8853,7 @@ GameObject:
   - component: {fileID: 971165863}
   - component: {fileID: 971165864}
   m_Layer: 0
-  m_Name: Question12
+  m_Name: Question12Social
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -9091,7 +9093,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0}
   m_AnchorMax: {x: 0.5, y: 0}
-  m_AnchoredPosition: {x: 0, y: 100}
+  m_AnchoredPosition: {x: 0, y: 150}
   m_SizeDelta: {x: 800, y: 100}
   m_Pivot: {x: 0.5, y: 0}
 --- !u!114 &984417225
@@ -9245,11 +9247,11 @@ MonoBehaviour:
     lineCount: 1
     pageCount: 1
     materialCount: 1
-  m_havePropertiesChanged: 1
+  m_havePropertiesChanged: 0
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_spriteAnimator: {fileID: 0}
-  m_isInputParsingRequired: 1
+  m_isInputParsingRequired: 0
   m_inputSource: 0
   m_hasFontAssetChanged: 0
   m_subTextObjects:
@@ -9531,7 +9533,7 @@ RectTransform:
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 1, y: 1}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: -300, y: 150}
+  m_SizeDelta: {x: -100, y: 390}
   m_Pivot: {x: 0.5, y: 1}
 --- !u!114 &992911034
 MonoBehaviour:
@@ -9553,7 +9555,11 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_text: Well done! Your chosen statements have been transferred to you Notebook!
+  m_text: 'Well done! You have successfully asked three questions but the director
+    must go now...
+
+
+    All statements have been transferred to your notebook.'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: bf071a21c75d5984182ca2896c24ba39, type: 2}
   m_sharedMaterial: {fileID: 21445493198866178, guid: bf071a21c75d5984182ca2896c24ba39,
@@ -9582,10 +9588,10 @@ MonoBehaviour:
   m_outlineColor:
     serializedVersion: 2
     rgba: 4278190080
-  m_fontSize: 67.1
-  m_fontSizeBase: 75
+  m_fontSize: 52
+  m_fontSizeBase: 52
   m_fontWeight: 400
-  m_enableAutoSizing: 1
+  m_enableAutoSizing: 0
   m_fontSizeMin: 18
   m_fontSizeMax: 72
   m_fontStyle: 0
@@ -9623,19 +9629,19 @@ MonoBehaviour:
   m_margin: {x: 0, y: 0, z: 0, w: 0}
   m_textInfo:
     textComponent: {fileID: 992911034}
-    characterCount: 72
+    characterCount: 142
     spriteCount: 0
-    spaceCount: 10
-    wordCount: 11
+    spaceCount: 22
+    wordCount: 22
     linkCount: 0
-    lineCount: 2
+    lineCount: 4
     pageCount: 1
     materialCount: 1
-  m_havePropertiesChanged: 1
+  m_havePropertiesChanged: 0
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_spriteAnimator: {fileID: 0}
-  m_isInputParsingRequired: 1
+  m_isInputParsingRequired: 0
   m_inputSource: 0
   m_hasFontAssetChanged: 0
   m_subTextObjects:
@@ -9829,7 +9835,7 @@ GameObject:
   - component: {fileID: 1010829893}
   - component: {fileID: 1010829894}
   m_Layer: 0
-  m_Name: Question1
+  m_Name: Question1Decoy
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -10405,8 +10411,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: -50}
-  m_SizeDelta: {x: -200, y: -300}
+  m_AnchoredPosition: {x: 0, y: -77.3}
+  m_SizeDelta: {x: -200, y: -492.2}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1057516788
 MonoBehaviour:
@@ -10421,7 +10427,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.03297436, g: 0.15887758, b: 0.3679245, a: 1}
+  m_Color: {r: 0.03297436, g: 0.15887758, b: 0.3679245, a: 0}
   m_RaycastTarget: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
@@ -11634,7 +11640,7 @@ GameObject:
   - component: {fileID: 1250269910}
   - component: {fileID: 1250269911}
   m_Layer: 0
-  m_Name: Question14
+  m_Name: Question14Rights&Responsibilities
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -12588,7 +12594,7 @@ GameObject:
   - component: {fileID: 1339411153}
   - component: {fileID: 1339411152}
   m_Layer: 0
-  m_Name: Question5
+  m_Name: Question5Decoy
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -13347,7 +13353,7 @@ GameObject:
   - component: {fileID: 1433238507}
   - component: {fileID: 1433238506}
   m_Layer: 0
-  m_Name: Question3
+  m_Name: Question3Social
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -15308,7 +15314,7 @@ GameObject:
   - component: {fileID: 1683432097}
   - component: {fileID: 1683432096}
   m_Layer: 0
-  m_Name: Question4
+  m_Name: Question4Economic
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -15717,7 +15723,7 @@ RectTransform:
   m_GameObject: {fileID: 1723350120}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1.0001525, y: 1.0001525, z: 1.0001525}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 2094336953}
   - {fileID: 984417224}
@@ -15729,7 +15735,7 @@ RectTransform:
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: -0.29260254, y: -0.16455078}
+  m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1723350122
 MonoBehaviour:
@@ -15744,14 +15750,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.03529412, g: 0.24705884, b: 0.5921569, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_Sprite: {fileID: 0}
+  m_Sprite: {fileID: 21300000, guid: 4c268ddd62823724088e6ab6fd46985a, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -15918,7 +15924,7 @@ GameObject:
   - component: {fileID: 1727027247}
   - component: {fileID: 1727027246}
   m_Layer: 0
-  m_Name: Question9
+  m_Name: Question9Social
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -18703,7 +18709,7 @@ GameObject:
   - component: {fileID: 1895476852}
   - component: {fileID: 1895476853}
   m_Layer: 0
-  m_Name: Question13
+  m_Name: Question13Decoy
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -19206,7 +19212,7 @@ MonoBehaviour:
   m_fontColor32:
     serializedVersion: 2
     rgba: 4278190080
-  m_fontColor: {r: 0, g: 0, b: 0, a: 1}
+  m_fontColor: {r: 1, g: 1, b: 1, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -19315,8 +19321,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 0.5}
   m_AnchorMax: {x: 1, y: 0.5}
-  m_AnchoredPosition: {x: -123.3, y: 36.5}
-  m_SizeDelta: {x: 817.3, y: 464.2}
+  m_AnchoredPosition: {x: -125, y: 0}
+  m_SizeDelta: {x: 815, y: 580}
   m_Pivot: {x: 1, y: 0.5}
 --- !u!95 &1940251446
 Animator:
@@ -20312,7 +20318,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1988771150
 RectTransform:
   m_ObjectHideFlags: 0
@@ -20430,11 +20436,11 @@ MonoBehaviour:
     lineCount: 1
     pageCount: 1
     materialCount: 1
-  m_havePropertiesChanged: 1
+  m_havePropertiesChanged: 0
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_spriteAnimator: {fileID: 0}
-  m_isInputParsingRequired: 1
+  m_isInputParsingRequired: 0
   m_inputSource: 0
   m_hasFontAssetChanged: 0
   m_subTextObjects:
@@ -21274,7 +21280,7 @@ GameObject:
   - component: {fileID: 2080806671}
   - component: {fileID: 2080806672}
   m_Layer: 0
-  m_Name: Question10
+  m_Name: Question10Social
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -21352,7 +21358,7 @@ GameObject:
   - component: {fileID: 2092788523}
   - component: {fileID: 2092788522}
   m_Layer: 0
-  m_Name: Question6
+  m_Name: Question6Decoy
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -21469,15 +21475,15 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.121840514, g: 0.34098646, b: 0.6981132, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_Sprite: {fileID: 10911, guid: 0000000000000000f000000000000000, type: 0}
-  m_Type: 1
+  m_Sprite: {fileID: 21300000, guid: 27395959ec68e5746b168b43b5e40f38, type: 3}
+  m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
   m_FillMethod: 4

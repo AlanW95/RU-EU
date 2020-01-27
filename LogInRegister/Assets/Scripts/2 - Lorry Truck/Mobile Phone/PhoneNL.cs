@@ -9,7 +9,7 @@ public class PhoneNL : MonoBehaviour
 {
     public GameObject startCanvas, mainCanvas;
     public GameObject c1, c2, c3, c4, c5, c6, c7; //continue buttons
-    public GameObject b1, b2, b3, b4, b5, b6; //back buttons
+    public GameObject b1, b2, b3, b4, b5, b6, b7; //back buttons
     public GameObject finishedButton;
 
     public GameObject[] text;
@@ -194,6 +194,7 @@ public class PhoneNL : MonoBehaviour
         text[22].SetActive(false);
         text[23].SetActive(false);
         finishedButton.SetActive(false);
+        b7.SetActive(false);
     }
 
     public void Set8() {
@@ -207,6 +208,7 @@ public class PhoneNL : MonoBehaviour
         text[22].SetActive(true);
         text[23].SetActive(true);
         finishedButton.SetActive(true);
+        b7.SetActive(true);
     }
 
     public void Finished() {

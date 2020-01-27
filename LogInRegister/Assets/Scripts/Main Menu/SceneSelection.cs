@@ -10,7 +10,7 @@ public class SceneSelection : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        backToJournalistDesk.SetActive(true);
+        //backToJournalistDesk.SetActive(true);
     }
 
     // Update is called once per frame

@@ -77,7 +77,11 @@ public class DirectorInterview : MonoBehaviour
 
         if (secondCounter <= 0) {
             Debug.Log("You have answered 3 questions! If you wish, you may proceed and collect more statements but this will not affect your score.");
-            themeSelectionContinueButton.SetActive(true);
+            //themeSelectionContinueButton.SetActive(true);
+            themeSelectionCanvas.SetActive(false);
+
+            //scoreCanvas.SetActive(true);
+            feedbackCanvas.SetActive(true);
         }
     }
 
@@ -95,7 +99,7 @@ public class DirectorInterview : MonoBehaviour
     }*/
 
     public void ReturnToMobileWorkplace() {
-        SceneManager.LoadScene("Journalist");
+        SceneManager.LoadScene("JournalistNL");
     }
 
     public void RankedStatements() {

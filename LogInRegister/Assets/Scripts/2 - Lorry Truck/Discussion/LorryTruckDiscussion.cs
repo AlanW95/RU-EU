@@ -132,6 +132,7 @@ public class LorryTruckDiscussion : MonoBehaviour {
         //set false as they don't appear straight away
         //contextTheme1 is first, after each dialogue and selection, it goes to the next one
         contextTheme1.SetActive(true);
+        responseBox.SetActive(true);
         contextTheme2.SetActive(false);
         contextTheme3.SetActive(false);
         contextTheme4.SetActive(false);
@@ -230,6 +231,7 @@ public class LorryTruckDiscussion : MonoBehaviour {
 
             if (isTheme1Finished == true) {
                 contextTheme1.SetActive(false);
+                responseBox.SetActive(false);
 
                 //contextEnvironment.SetActive(true); //move this to SocialSelected()
 
@@ -269,6 +271,7 @@ public class LorryTruckDiscussion : MonoBehaviour {
             //put into Unity Analytics when available
 
             contextTheme2.SetActive(true);
+            responseBox.SetActive(true);
         }
     }
 
@@ -335,6 +338,7 @@ public class LorryTruckDiscussion : MonoBehaviour {
 
             if (isTheme2Finished == true) {
                 contextTheme2.SetActive(false);
+                responseBox.SetActive(false);
 
                 //we want to give the player the option to choose between options
                 playerSelection.SetActive(true);
@@ -368,6 +372,7 @@ public class LorryTruckDiscussion : MonoBehaviour {
             //store data
             //put into Unity Analytics when available
             contextTheme3.SetActive(true);
+            responseBox.SetActive(true);
         }
     }
 
@@ -433,6 +438,7 @@ public class LorryTruckDiscussion : MonoBehaviour {
 
             if (isTheme3Finished == true) {
                 contextTheme3.SetActive(false);
+                responseBox.SetActive(false);
 
                 //we want to give the player the option to choose between options
                 playerSelection.SetActive(true);
@@ -466,6 +472,7 @@ public class LorryTruckDiscussion : MonoBehaviour {
             //store data
             //put into Unity Analytics when available
             contextTheme4.SetActive(true);
+            responseBox.SetActive(true);
         }
     }
 
@@ -531,6 +538,7 @@ public class LorryTruckDiscussion : MonoBehaviour {
 
             if (isTheme4Finished == true) {
                 contextTheme4.SetActive(false);
+                responseBox.SetActive(false);
 
                 //we want to give the player the option to choose between options
                 playerSelection.SetActive(true);
@@ -566,6 +574,7 @@ public class LorryTruckDiscussion : MonoBehaviour {
 
             //instead of moving on to the next area, we will give the player feedback at this stage, with a final tool feedback screen.
             contextTheme5.SetActive(true);
+            responseBox.SetActive(true);
         }
     }
 
@@ -631,6 +640,7 @@ public class LorryTruckDiscussion : MonoBehaviour {
 
             if (isTheme5Finished == true) {
                 contextTheme5.SetActive(false);
+                responseBox.SetActive(false);
 
                 //we want to give the player the option to choose between options
                 playerSelection.SetActive(true);

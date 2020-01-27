@@ -75,6 +75,8 @@ public class LorryDriverInterview : MonoBehaviour
         if (secondCounter <= 0) {
             Debug.Log("You have answered 3 questions! If you wish, you may proceed and collect more statements but this will not affect your score.");
             //questionSelectionContinueButton.SetActive(true);
+            questionSelectionCanvas.SetActive(false);
+
             feedbackCanvas.SetActive(true);
         }
     }
@@ -93,7 +95,7 @@ public class LorryDriverInterview : MonoBehaviour
     }*/
 
     public void ReturnToMobileWorkplace() {
-        SceneManager.LoadScene("Journalist");
+        SceneManager.LoadScene("JournalistNL");
     }
 
     public void RankedStatements() {

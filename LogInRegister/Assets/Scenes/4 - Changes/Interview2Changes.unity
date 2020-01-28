@@ -190,7 +190,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 374528313}
+      - m_Target: {fileID: 374528315}
         m_MethodName: NextSentence
         m_Mode: 1
         m_Arguments:
@@ -201,7 +201,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 1010829894}
+      - m_Target: {fileID: 1010829895}
         m_MethodName: CounterDown
         m_Mode: 1
         m_Arguments:
@@ -212,7 +212,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 1010829894}
+      - m_Target: {fileID: 1010829895}
         m_MethodName: Question7Selected
         m_Mode: 1
         m_Arguments:
@@ -342,7 +342,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1010829894}
+      - m_Target: {fileID: 1010829895}
         m_MethodName: QuestionsAppear
         m_Mode: 1
         m_Arguments:
@@ -689,7 +689,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1010829894}
+      - m_Target: {fileID: 1010829895}
         m_MethodName: RankedStatements
         m_Mode: 1
         m_Arguments:
@@ -1635,7 +1635,8 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_text: " \t1. What are the main social impacts of EU \n\t\tmigrations in Croatia?\n"
+  m_text: " \t1. Please identify 3 main social changes in Croatia \t\twhich took place
+    since joining the EU.\n"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: bf071a21c75d5984182ca2896c24ba39, type: 2}
   m_sharedMaterial: {fileID: 21445493198866178, guid: bf071a21c75d5984182ca2896c24ba39,
@@ -1682,7 +1683,7 @@ MonoBehaviour:
   m_enableWordWrapping: 1
   m_wordWrappingRatios: 0.4
   m_overflowMode: 0
-  m_firstOverflowCharacterIndex: 45
+  m_firstOverflowCharacterIndex: 54
   m_linkedTextComponent: {fileID: 0}
   m_isLinkedTextComponent: 0
   m_isTextTruncated: 0
@@ -1705,10 +1706,10 @@ MonoBehaviour:
   m_margin: {x: 0, y: 0, z: 0, w: 0}
   m_textInfo:
     textComponent: {fileID: 96868732}
-    characterCount: 70
+    characterCount: 95
     spriteCount: 0
-    spaceCount: 17
-    wordCount: 13
+    spaceCount: 20
+    wordCount: 17
     linkCount: 0
     lineCount: 2
     pageCount: 1
@@ -1717,7 +1718,7 @@ MonoBehaviour:
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_spriteAnimator: {fileID: 0}
-  m_isInputParsingRequired: 1
+  m_isInputParsingRequired: 0
   m_inputSource: 0
   m_hasFontAssetChanged: 0
   m_subTextObjects:
@@ -1779,7 +1780,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1010829894}
+      - m_Target: {fileID: 1010829895}
         m_MethodName: CounterDown
         m_Mode: 1
         m_Arguments:
@@ -1790,7 +1791,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 1010829894}
+      - m_Target: {fileID: 1010829895}
         m_MethodName: Question1
         m_Mode: 1
         m_Arguments:
@@ -1893,7 +1894,7 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_Sprite: {fileID: 21300000, guid: 67d1d5a8b69c44d42aa01c49df058c84, type: 3}
+  m_Sprite: {fileID: 21300000, guid: d6b9d2da5f1d4b7458a62f3db6a29c84, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -2225,7 +2226,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 703946509}
+      - m_Target: {fileID: 703946508}
         m_MethodName: CounterDown
         m_Mode: 1
         m_Arguments:
@@ -2236,7 +2237,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 703946509}
+      - m_Target: {fileID: 703946508}
         m_MethodName: Question9
         m_Mode: 1
         m_Arguments:
@@ -2302,8 +2303,8 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_text: "\t9. What is the status of Croatian culture\n\t\tEurope? Has it changed
-    since\n\t\tCroatia joined the EU?"
+  m_text: "\t9. How do you feel about the status of Croatian \t\t\tlanguage in the
+    EU?"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: bf071a21c75d5984182ca2896c24ba39, type: 2}
   m_sharedMaterial: {fileID: 21445493198866178, guid: bf071a21c75d5984182ca2896c24ba39,
@@ -2350,7 +2351,7 @@ MonoBehaviour:
   m_enableWordWrapping: 1
   m_wordWrappingRatios: 0.4
   m_overflowMode: 0
-  m_firstOverflowCharacterIndex: 43
+  m_firstOverflowCharacterIndex: 50
   m_linkedTextComponent: {fileID: 0}
   m_isLinkedTextComponent: 0
   m_isTextTruncated: 0
@@ -2373,19 +2374,19 @@ MonoBehaviour:
   m_margin: {x: 0, y: 0, z: 0, w: 0}
   m_textInfo:
     textComponent: {fileID: 210010521}
-    characterCount: 98
+    characterCount: 71
     spriteCount: 0
-    spaceCount: 21
-    wordCount: 18
+    spaceCount: 17
+    wordCount: 15
     linkCount: 0
-    lineCount: 3
+    lineCount: 2
     pageCount: 1
     materialCount: 1
   m_havePropertiesChanged: 1
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_spriteAnimator: {fileID: 0}
-  m_isInputParsingRequired: 1
+  m_isInputParsingRequired: 0
   m_inputSource: 0
   m_hasFontAssetChanged: 0
   m_subTextObjects:
@@ -2702,8 +2703,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0}
   m_AnchorMax: {x: 0.5, y: 0}
-  m_AnchoredPosition: {x: -496, y: 0.000022888}
-  m_SizeDelta: {x: 1050, y: 1019}
+  m_AnchoredPosition: {x: -447.7501, y: 0}
+  m_SizeDelta: {x: 640.5, y: 1046}
   m_Pivot: {x: 0.5, y: 0}
 --- !u!114 &230649570
 MonoBehaviour:
@@ -2725,7 +2726,7 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_Sprite: {fileID: 21300000, guid: 11b5d3c2229a301408a0677afdc1e9c2, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 8b5d531d12747b14cab99a46782384f2, type: 3}
   m_Type: 0
   m_PreserveAspect: 1
   m_FillCenter: 1
@@ -3357,6 +3358,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 290242460}
+  - component: {fileID: 290242461}
   - component: {fileID: 290242459}
   m_Layer: 0
   m_Name: Question8Historic
@@ -3422,6 +3424,51 @@ Transform:
   m_Father: {fileID: 1203854742}
   m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &290242461
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 290242458}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9e0b9ace3106fa24090c4ef2f160cf35, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  startCanvas: {fileID: 255141318}
+  questionSelectionCanvas: {fileID: 828039753}
+  questionSelectionContinueButton: {fileID: 1490615297}
+  interviewCanvas: {fileID: 1408915861}
+  textDisplay: {fileID: 1940251443}
+  sentences:
+  - Yugoslavia cannot be compared to the EU, and Croatia is too small to be on its
+    own. I believe that joining the EU was a logical step and I am sorry that Croatia
+    joined so late.
+  feedbackCanvas: {fileID: 1271130292}
+  scoreCanvas: {fileID: 1810696522}
+  rankingCanvas: {fileID: 732463104}
+  statementText: {fileID: 1555891835}
+  typingSpeed: 0.005
+  continueButton: {fileID: 1871030971}
+  question1Button: {fileID: 96868734}
+  question2Button: {fileID: 870610512}
+  question3Button: {fileID: 1878668776}
+  question4Button: {fileID: 1875583670}
+  question5Button: {fileID: 2104440248}
+  question6Button: {fileID: 1953812739}
+  question7Button: {fileID: 1649281996}
+  question8Button: {fileID: 1025128747}
+  question9Button: {fileID: 210010520}
+  question10Button: {fileID: 1958334924}
+  interviewCounter: 0
+  secondCounter: 0
+  chosenTextDisplay: {fileID: 1555891835}
+  inputEmail: {fileID: 534395214}
+  input1: {fileID: 1594866796}
+  input2: {fileID: 1996253113}
+  input3: {fileID: 1210716178}
+  BASE_URL: https://docs.google.com/forms/u/0/d/e/1FAIpQLScXWz7UzsXdAXz6mgpxoZo-EHKPA5olBFVSKBsd8v1AYalKQA/formResponse
 --- !u!1 &293156011
 GameObject:
   m_ObjectHideFlags: 0
@@ -3581,6 +3628,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 325038438}
+  - component: {fileID: 325038439}
   - component: {fileID: 325038437}
   m_Layer: 0
   m_Name: Question2Environment
@@ -3648,6 +3696,50 @@ Transform:
   m_Father: {fileID: 1203854742}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &325038439
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 325038436}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9e0b9ace3106fa24090c4ef2f160cf35, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  startCanvas: {fileID: 255141318}
+  questionSelectionCanvas: {fileID: 828039753}
+  questionSelectionContinueButton: {fileID: 1490615297}
+  interviewCanvas: {fileID: 1408915861}
+  textDisplay: {fileID: 1940251443}
+  sentences:
+  - I think that Croatia is much less ambitious in that regard than it should be -
+    and the EU can help us do even better.
+  feedbackCanvas: {fileID: 1271130292}
+  scoreCanvas: {fileID: 1810696522}
+  rankingCanvas: {fileID: 732463104}
+  statementText: {fileID: 1555891835}
+  typingSpeed: 0.005
+  continueButton: {fileID: 2049551424}
+  question1Button: {fileID: 96868734}
+  question2Button: {fileID: 870610512}
+  question3Button: {fileID: 1878668776}
+  question4Button: {fileID: 1875583670}
+  question5Button: {fileID: 2104440248}
+  question6Button: {fileID: 1953812739}
+  question7Button: {fileID: 1649281996}
+  question8Button: {fileID: 1025128747}
+  question9Button: {fileID: 210010520}
+  question10Button: {fileID: 1958334924}
+  interviewCounter: 0
+  secondCounter: 0
+  chosenTextDisplay: {fileID: 1555891835}
+  inputEmail: {fileID: 534395214}
+  input1: {fileID: 1594866796}
+  input2: {fileID: 1996253113}
+  input3: {fileID: 1210716178}
+  BASE_URL: https://docs.google.com/forms/u/0/d/e/1FAIpQLScXWz7UzsXdAXz6mgpxoZo-EHKPA5olBFVSKBsd8v1AYalKQA/formResponse
 --- !u!1 &336447177
 GameObject:
   m_ObjectHideFlags: 0
@@ -3886,7 +3978,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1010829894}
+      - m_Target: {fileID: 1010829895}
         m_MethodName: RankedStatements
         m_Mode: 1
         m_Arguments:
@@ -4102,6 +4194,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 374528314}
+  - component: {fileID: 374528315}
   - component: {fileID: 374528313}
   m_Layer: 0
   m_Name: Question7Political
@@ -4168,6 +4261,52 @@ Transform:
   m_Father: {fileID: 1203854742}
   m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &374528315
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 374528312}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9e0b9ace3106fa24090c4ef2f160cf35, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  startCanvas: {fileID: 255141318}
+  questionSelectionCanvas: {fileID: 828039753}
+  questionSelectionContinueButton: {fileID: 1490615297}
+  interviewCanvas: {fileID: 1408915861}
+  textDisplay: {fileID: 1940251443}
+  sentences:
+  - Unfortunately, I cannot see many substantial changes - I think that local politics
+    has more or less continued to work in the same way. Having said that, I do notice
+    two major improvements. Public discourse has become much more polite, and rights
+    of minorities are on the rise.
+  feedbackCanvas: {fileID: 1271130292}
+  scoreCanvas: {fileID: 1810696522}
+  rankingCanvas: {fileID: 732463104}
+  statementText: {fileID: 1555891835}
+  typingSpeed: 0.005
+  continueButton: {fileID: 4924064}
+  question1Button: {fileID: 96868734}
+  question2Button: {fileID: 870610512}
+  question3Button: {fileID: 1878668776}
+  question4Button: {fileID: 1875583670}
+  question5Button: {fileID: 2104440248}
+  question6Button: {fileID: 1953812739}
+  question7Button: {fileID: 1649281996}
+  question8Button: {fileID: 1025128747}
+  question9Button: {fileID: 210010520}
+  question10Button: {fileID: 1958334924}
+  interviewCounter: 0
+  secondCounter: 0
+  chosenTextDisplay: {fileID: 1555891835}
+  inputEmail: {fileID: 534395214}
+  input1: {fileID: 1594866796}
+  input2: {fileID: 1996253113}
+  input3: {fileID: 1210716178}
+  BASE_URL: https://docs.google.com/forms/u/0/d/e/1FAIpQLScXWz7UzsXdAXz6mgpxoZo-EHKPA5olBFVSKBsd8v1AYalKQA/formResponse
 --- !u!1 &384764074
 GameObject:
   m_ObjectHideFlags: 0
@@ -4445,7 +4584,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1010829894}
+      - m_Target: {fileID: 1010829895}
         m_MethodName: RankedStatements
         m_Mode: 1
         m_Arguments:
@@ -4706,7 +4845,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1339411152}
+      - m_Target: {fileID: 1339411154}
         m_MethodName: NextSentence
         m_Mode: 1
         m_Arguments:
@@ -4717,7 +4856,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 1010829894}
+      - m_Target: {fileID: 1010829895}
         m_MethodName: CounterDown
         m_Mode: 1
         m_Arguments:
@@ -4728,7 +4867,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 1010829894}
+      - m_Target: {fileID: 1010829895}
         m_MethodName: Question5Selected
         m_Mode: 1
         m_Arguments:
@@ -6025,6 +6164,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 703946507}
+  - component: {fileID: 703946508}
   - component: {fileID: 703946509}
   m_Layer: 0
   m_Name: Question9Culture
@@ -6047,6 +6187,53 @@ Transform:
   m_Father: {fileID: 1203854742}
   m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &703946508
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 703946506}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9e0b9ace3106fa24090c4ef2f160cf35, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  startCanvas: {fileID: 255141318}
+  questionSelectionCanvas: {fileID: 828039753}
+  questionSelectionContinueButton: {fileID: 1490615297}
+  interviewCanvas: {fileID: 1408915861}
+  textDisplay: {fileID: 1940251443}
+  sentences:
+  - Croatian language is quite small; in order to participate at an international
+    level, each Croatian needs to speak at least one foreign language. These days,
+    in our era of globalization, this is the problem with all small languages. However,
+    the EU has amazing language protection laws, and I believe that Croatian language
+    has a much better chance of preservation within the EU.
+  feedbackCanvas: {fileID: 1271130292}
+  scoreCanvas: {fileID: 1810696522}
+  rankingCanvas: {fileID: 732463104}
+  statementText: {fileID: 1555891835}
+  typingSpeed: 0.005
+  continueButton: {fileID: 1003055810}
+  question1Button: {fileID: 96868734}
+  question2Button: {fileID: 870610512}
+  question3Button: {fileID: 1878668776}
+  question4Button: {fileID: 1875583670}
+  question5Button: {fileID: 2104440248}
+  question6Button: {fileID: 1953812739}
+  question7Button: {fileID: 1649281996}
+  question8Button: {fileID: 1025128747}
+  question9Button: {fileID: 210010520}
+  question10Button: {fileID: 1958334924}
+  interviewCounter: 0
+  secondCounter: 0
+  chosenTextDisplay: {fileID: 1555891835}
+  inputEmail: {fileID: 534395214}
+  input1: {fileID: 1594866796}
+  input2: {fileID: 1996253113}
+  input3: {fileID: 1210716178}
+  BASE_URL: https://docs.google.com/forms/u/0/d/e/1FAIpQLScXWz7UzsXdAXz6mgpxoZo-EHKPA5olBFVSKBsd8v1AYalKQA/formResponse
 --- !u!114 &703946509
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6126,8 +6313,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0}
   m_AnchorMax: {x: 0.5, y: 0}
-  m_AnchoredPosition: {x: -435.38, y: 0}
-  m_SizeDelta: {x: 1050, y: 1019}
+  m_AnchoredPosition: {x: -433.77975, y: 0}
+  m_SizeDelta: {x: 653.2, y: 1066.9}
   m_Pivot: {x: 0.5, y: 0}
 --- !u!114 &708613211
 MonoBehaviour:
@@ -6149,7 +6336,7 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_Sprite: {fileID: 21300000, guid: 11b5d3c2229a301408a0677afdc1e9c2, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 8b5d531d12747b14cab99a46782384f2, type: 3}
   m_Type: 0
   m_PreserveAspect: 1
   m_FillCenter: 1
@@ -6421,7 +6608,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1433238506}
+      - m_Target: {fileID: 1433238508}
         m_MethodName: NextSentence
         m_Mode: 1
         m_Arguments:
@@ -6432,7 +6619,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 1010829894}
+      - m_Target: {fileID: 1010829895}
         m_MethodName: CounterDown
         m_Mode: 1
         m_Arguments:
@@ -6443,7 +6630,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 1010829894}
+      - m_Target: {fileID: 1010829895}
         m_MethodName: Question3Selected
         m_Mode: 1
         m_Arguments:
@@ -6550,7 +6737,7 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_Sprite: {fileID: 21300000, guid: 67d1d5a8b69c44d42aa01c49df058c84, type: 3}
+  m_Sprite: {fileID: 21300000, guid: d6b9d2da5f1d4b7458a62f3db6a29c84, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -7478,7 +7665,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1010829894}
+      - m_Target: {fileID: 1010829895}
         m_MethodName: RankedStatements
         m_Mode: 1
         m_Arguments:
@@ -7582,8 +7769,8 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_text: "\t2. Do you agree with European measures for\n\t\tenvironmental protection?
-    How do they\n\t\tcompare to measures Croatia had before\n\t\tjoining the EU?"
+  m_text: "\t2. What do you think about Croatia's environmental \t\ttargets for the
+    next decade?"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: bf071a21c75d5984182ca2896c24ba39, type: 2}
   m_sharedMaterial: {fileID: 21445493198866178, guid: bf071a21c75d5984182ca2896c24ba39,
@@ -7630,7 +7817,7 @@ MonoBehaviour:
   m_enableWordWrapping: 1
   m_wordWrappingRatios: 0.4
   m_overflowMode: 0
-  m_firstOverflowCharacterIndex: 44
+  m_firstOverflowCharacterIndex: 52
   m_linkedTextComponent: {fileID: 0}
   m_isLinkedTextComponent: 0
   m_isTextTruncated: 0
@@ -7653,19 +7840,19 @@ MonoBehaviour:
   m_margin: {x: 0, y: 0, z: 0, w: 0}
   m_textInfo:
     textComponent: {fileID: 870610510}
-    characterCount: 142
+    characterCount: 82
     spriteCount: 0
-    spaceCount: 28
-    wordCount: 23
+    spaceCount: 15
+    wordCount: 14
     linkCount: 0
-    lineCount: 4
+    lineCount: 2
     pageCount: 1
     materialCount: 1
   m_havePropertiesChanged: 1
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_spriteAnimator: {fileID: 0}
-  m_isInputParsingRequired: 1
+  m_isInputParsingRequired: 0
   m_inputSource: 0
   m_hasFontAssetChanged: 0
   m_subTextObjects:
@@ -7727,7 +7914,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 325038437}
+      - m_Target: {fileID: 325038439}
         m_MethodName: CounterDown
         m_Mode: 1
         m_Arguments:
@@ -7738,7 +7925,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 325038437}
+      - m_Target: {fileID: 325038439}
         m_MethodName: Question2
         m_Mode: 1
         m_Arguments:
@@ -8423,7 +8610,7 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_Sprite: {fileID: 21300000, guid: 67d1d5a8b69c44d42aa01c49df058c84, type: 3}
+  m_Sprite: {fileID: 21300000, guid: d6b9d2da5f1d4b7458a62f3db6a29c84, type: 3}
   m_Type: 0
   m_PreserveAspect: 1
   m_FillCenter: 1
@@ -8765,7 +8952,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 2092788522}
+      - m_Target: {fileID: 2092788524}
         m_MethodName: NextSentence
         m_Mode: 1
         m_Arguments:
@@ -8776,7 +8963,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 1010829894}
+      - m_Target: {fileID: 1010829895}
         m_MethodName: CounterDown
         m_Mode: 1
         m_Arguments:
@@ -8787,7 +8974,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 1010829894}
+      - m_Target: {fileID: 1010829895}
         m_MethodName: Question6Selected
         m_Mode: 1
         m_Arguments:
@@ -8915,7 +9102,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1010829894}
+      - m_Target: {fileID: 1010829895}
         m_MethodName: ReturnToMobileWorkplace
         m_Mode: 1
         m_Arguments:
@@ -8926,7 +9113,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 1010829894}
+      - m_Target: {fileID: 1010829895}
         m_MethodName: Send
         m_Mode: 1
         m_Arguments:
@@ -9345,7 +9532,7 @@ MonoBehaviour:
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_spriteAnimator: {fileID: 0}
-  m_isInputParsingRequired: 1
+  m_isInputParsingRequired: 0
   m_inputSource: 0
   m_hasFontAssetChanged: 0
   m_subTextObjects:
@@ -9771,7 +9958,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 703946509}
+      - m_Target: {fileID: 703946508}
         m_MethodName: NextSentence
         m_Mode: 1
         m_Arguments:
@@ -9782,7 +9969,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 1010829894}
+      - m_Target: {fileID: 1010829895}
         m_MethodName: CounterDown
         m_Mode: 1
         m_Arguments:
@@ -9793,7 +9980,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 1010829894}
+      - m_Target: {fileID: 1010829895}
         m_MethodName: Question9Selected
         m_Mode: 1
         m_Arguments:
@@ -9852,6 +10039,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1010829893}
+  - component: {fileID: 1010829895}
   - component: {fileID: 1010829894}
   m_Layer: 0
   m_Name: Question1Social
@@ -9918,6 +10106,51 @@ MonoBehaviour:
   input2: {fileID: 1996253113}
   input3: {fileID: 1210716178}
   BASE_URL: https://docs.google.com/forms/u/0/d/e/1FAIpQLSdrHnDk3QC8RQGqfLq3u8fGqlgzfWRsSHvabmGrGi3iycOPFw/formResponse
+--- !u!114 &1010829895
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1010829892}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9e0b9ace3106fa24090c4ef2f160cf35, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  startCanvas: {fileID: 255141318}
+  questionSelectionCanvas: {fileID: 828039753}
+  questionSelectionContinueButton: {fileID: 1490615297}
+  interviewCanvas: {fileID: 1408915861}
+  textDisplay: {fileID: 1940251443}
+  sentences:
+  - Since Croatia joined the EU, we gained a lot of optimism regarding out future.
+    However, this optimism is tamed by a sharp rise of immigration and by increasing
+    privatization of public goods such as schooling and healthcare.
+  feedbackCanvas: {fileID: 1271130292}
+  scoreCanvas: {fileID: 1810696522}
+  rankingCanvas: {fileID: 732463104}
+  statementText: {fileID: 1555891835}
+  typingSpeed: 0.005
+  continueButton: {fileID: 1894523649}
+  question1Button: {fileID: 96868734}
+  question2Button: {fileID: 870610512}
+  question3Button: {fileID: 1878668776}
+  question4Button: {fileID: 1875583670}
+  question5Button: {fileID: 2104440248}
+  question6Button: {fileID: 1953812739}
+  question7Button: {fileID: 1649281996}
+  question8Button: {fileID: 1025128747}
+  question9Button: {fileID: 210010520}
+  question10Button: {fileID: 1958334924}
+  interviewCounter: 0
+  secondCounter: 0
+  chosenTextDisplay: {fileID: 1555891835}
+  inputEmail: {fileID: 534395214}
+  input1: {fileID: 1594866796}
+  input2: {fileID: 1996253113}
+  input3: {fileID: 1210716178}
+  BASE_URL: https://docs.google.com/forms/u/0/d/e/1FAIpQLScXWz7UzsXdAXz6mgpxoZo-EHKPA5olBFVSKBsd8v1AYalKQA/formResponse
 --- !u!1 &1025128743
 GameObject:
   m_ObjectHideFlags: 0
@@ -9976,7 +10209,9 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_text: "\t8. Can you describe Croatia's historical\n\t\trelationships with Europe?"
+  m_text: "\t8. After more than half a century of membership in \t\tYugoslavia, and
+    a brief period of independence, \n\t\tCroatia is now again a part of a larger
+    union. \t\tWhat is your take on that?"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: bf071a21c75d5984182ca2896c24ba39, type: 2}
   m_sharedMaterial: {fileID: 21445493198866178, guid: bf071a21c75d5984182ca2896c24ba39,
@@ -10023,7 +10258,7 @@ MonoBehaviour:
   m_enableWordWrapping: 1
   m_wordWrappingRatios: 0.4
   m_overflowMode: 0
-  m_firstOverflowCharacterIndex: 42
+  m_firstOverflowCharacterIndex: 52
   m_linkedTextComponent: {fileID: 0}
   m_isLinkedTextComponent: 0
   m_isTextTruncated: 0
@@ -10046,19 +10281,19 @@ MonoBehaviour:
   m_margin: {x: 0, y: 0, z: 0, w: 0}
   m_textInfo:
     textComponent: {fileID: 1025128745}
-    characterCount: 70
+    characterCount: 180
     spriteCount: 0
-    spaceCount: 11
-    wordCount: 10
+    spaceCount: 40
+    wordCount: 34
     linkCount: 0
-    lineCount: 2
+    lineCount: 4
     pageCount: 1
     materialCount: 1
   m_havePropertiesChanged: 1
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_spriteAnimator: {fileID: 0}
-  m_isInputParsingRequired: 1
+  m_isInputParsingRequired: 0
   m_inputSource: 0
   m_hasFontAssetChanged: 0
   m_subTextObjects:
@@ -10120,7 +10355,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 290242459}
+      - m_Target: {fileID: 290242461}
         m_MethodName: CounterDown
         m_Mode: 1
         m_Arguments:
@@ -10131,7 +10366,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 290242459}
+      - m_Target: {fileID: 290242461}
         m_MethodName: Question8
         m_Mode: 1
         m_Arguments:
@@ -11133,6 +11368,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1185187205}
+  - component: {fileID: 1185187206}
   - component: {fileID: 1185187207}
   m_Layer: 0
   m_Name: Question10Geography
@@ -11155,6 +11391,50 @@ Transform:
   m_Father: {fileID: 1203854742}
   m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1185187206
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1185187204}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9e0b9ace3106fa24090c4ef2f160cf35, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  startCanvas: {fileID: 255141318}
+  questionSelectionCanvas: {fileID: 828039753}
+  questionSelectionContinueButton: {fileID: 1490615297}
+  interviewCanvas: {fileID: 1408915861}
+  textDisplay: {fileID: 1940251443}
+  sentences:
+  - Croatia has always had an important geo-strategical position, and the EU invests
+    a lot of effort into helping us to cope with it.
+  feedbackCanvas: {fileID: 1271130292}
+  scoreCanvas: {fileID: 1810696522}
+  rankingCanvas: {fileID: 732463104}
+  statementText: {fileID: 1555891835}
+  typingSpeed: 0.005
+  continueButton: {fileID: 2114160048}
+  question1Button: {fileID: 96868734}
+  question2Button: {fileID: 870610512}
+  question3Button: {fileID: 1878668776}
+  question4Button: {fileID: 1875583670}
+  question5Button: {fileID: 2104440248}
+  question6Button: {fileID: 1953812739}
+  question7Button: {fileID: 1649281996}
+  question8Button: {fileID: 1025128747}
+  question9Button: {fileID: 210010520}
+  question10Button: {fileID: 1958334924}
+  interviewCounter: 0
+  secondCounter: 0
+  chosenTextDisplay: {fileID: 1555891835}
+  inputEmail: {fileID: 534395214}
+  input1: {fileID: 1594866796}
+  input2: {fileID: 1996253113}
+  input3: {fileID: 1210716178}
+  BASE_URL: https://docs.google.com/forms/u/0/d/e/1FAIpQLScXWz7UzsXdAXz6mgpxoZo-EHKPA5olBFVSKBsd8v1AYalKQA/formResponse
 --- !u!114 &1185187207
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -12330,8 +12610,8 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 2035240352}
   m_HandleRect: {fileID: 2035240351}
   m_Direction: 2
-  m_Value: 1
-  m_Size: 0.25602064
+  m_Value: 0.9999999
+  m_Size: 0.24293847
   m_NumberOfSteps: 0
   m_OnValueChanged:
     m_PersistentCalls:
@@ -12384,6 +12664,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1339411153}
+  - component: {fileID: 1339411154}
   - component: {fileID: 1339411152}
   m_Layer: 0
   m_Name: Question5Emotional
@@ -12450,6 +12731,50 @@ Transform:
   m_Father: {fileID: 1203854742}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1339411154
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1339411151}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9e0b9ace3106fa24090c4ef2f160cf35, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  startCanvas: {fileID: 255141318}
+  questionSelectionCanvas: {fileID: 828039753}
+  questionSelectionContinueButton: {fileID: 1490615297}
+  interviewCanvas: {fileID: 1408915861}
+  textDisplay: {fileID: 1940251443}
+  sentences:
+  - Not really. I always felt both European and Croatian, and I don't see a conflict
+    between the two identities.
+  feedbackCanvas: {fileID: 1271130292}
+  scoreCanvas: {fileID: 1810696522}
+  rankingCanvas: {fileID: 732463104}
+  statementText: {fileID: 1555891835}
+  typingSpeed: 0.005
+  continueButton: {fileID: 417092195}
+  question1Button: {fileID: 96868734}
+  question2Button: {fileID: 870610512}
+  question3Button: {fileID: 1878668776}
+  question4Button: {fileID: 1875583670}
+  question5Button: {fileID: 2104440248}
+  question6Button: {fileID: 1953812739}
+  question7Button: {fileID: 1649281996}
+  question8Button: {fileID: 1025128747}
+  question9Button: {fileID: 210010520}
+  question10Button: {fileID: 1958334924}
+  interviewCounter: 0
+  secondCounter: 0
+  chosenTextDisplay: {fileID: 1555891835}
+  inputEmail: {fileID: 534395214}
+  input1: {fileID: 1594866796}
+  input2: {fileID: 1996253113}
+  input3: {fileID: 1210716178}
+  BASE_URL: https://docs.google.com/forms/u/0/d/e/1FAIpQLScXWz7UzsXdAXz6mgpxoZo-EHKPA5olBFVSKBsd8v1AYalKQA/formResponse
 --- !u!1 &1349107784
 GameObject:
   m_ObjectHideFlags: 0
@@ -13001,6 +13326,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1433238507}
+  - component: {fileID: 1433238508}
   - component: {fileID: 1433238506}
   m_Layer: 0
   m_Name: Question3Rights&Responsibilities
@@ -13066,6 +13392,52 @@ Transform:
   m_Father: {fileID: 1203854742}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1433238508
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1433238505}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9e0b9ace3106fa24090c4ef2f160cf35, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  startCanvas: {fileID: 255141318}
+  questionSelectionCanvas: {fileID: 828039753}
+  questionSelectionContinueButton: {fileID: 1490615297}
+  interviewCanvas: {fileID: 1408915861}
+  textDisplay: {fileID: 1940251443}
+  sentences:
+  - I think that the right to work in any European country is one of the greatest
+    achievements of the EU. Some people are afraid of immigration, but I think that
+    we will soon also have many migrants from other European countries who will come
+    to live and work in Croatia.
+  feedbackCanvas: {fileID: 1271130292}
+  scoreCanvas: {fileID: 1810696522}
+  rankingCanvas: {fileID: 732463104}
+  statementText: {fileID: 1555891835}
+  typingSpeed: 0.005
+  continueButton: {fileID: 755120889}
+  question1Button: {fileID: 96868734}
+  question2Button: {fileID: 870610512}
+  question3Button: {fileID: 1878668776}
+  question4Button: {fileID: 1875583670}
+  question5Button: {fileID: 2104440248}
+  question6Button: {fileID: 1953812739}
+  question7Button: {fileID: 1649281996}
+  question8Button: {fileID: 1025128747}
+  question9Button: {fileID: 210010520}
+  question10Button: {fileID: 1958334924}
+  interviewCounter: 0
+  secondCounter: 0
+  chosenTextDisplay: {fileID: 1555891835}
+  inputEmail: {fileID: 534395214}
+  input1: {fileID: 1594866796}
+  input2: {fileID: 1996253113}
+  input3: {fileID: 1210716178}
+  BASE_URL: https://docs.google.com/forms/u/0/d/e/1FAIpQLScXWz7UzsXdAXz6mgpxoZo-EHKPA5olBFVSKBsd8v1AYalKQA/formResponse
 --- !u!1 &1463422281
 GameObject:
   m_ObjectHideFlags: 0
@@ -13283,7 +13655,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1683432096}
+      - m_Target: {fileID: 1683432098}
         m_MethodName: NextSentence
         m_Mode: 1
         m_Arguments:
@@ -13294,7 +13666,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 1010829894}
+      - m_Target: {fileID: 1010829895}
         m_MethodName: CounterDown
         m_Mode: 1
         m_Arguments:
@@ -13305,7 +13677,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 1010829894}
+      - m_Target: {fileID: 1010829895}
         m_MethodName: Question4Selected
         m_Mode: 1
         m_Arguments:
@@ -14589,8 +14961,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0}
   m_AnchorMax: {x: 0.5, y: 0}
-  m_AnchoredPosition: {x: -435.38, y: 0}
-  m_SizeDelta: {x: 1050, y: 1019}
+  m_AnchoredPosition: {x: -549, y: 0}
+  m_SizeDelta: {x: 656.15, y: 1071.7}
   m_Pivot: {x: 0.5, y: 0}
 --- !u!114 &1629213303
 MonoBehaviour:
@@ -14612,7 +14984,7 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_Sprite: {fileID: 21300000, guid: 11b5d3c2229a301408a0677afdc1e9c2, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 8b5d531d12747b14cab99a46782384f2, type: 3}
   m_Type: 0
   m_PreserveAspect: 1
   m_FillCenter: 1
@@ -14687,7 +15059,8 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_text: "\t7. Do you agree with European foreign\n\t\tpolicy?"
+  m_text: "\t7. Which main political changes took place since \t\t\tCroatia joined
+    the EU?"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: bf071a21c75d5984182ca2896c24ba39, type: 2}
   m_sharedMaterial: {fileID: 21445493198866178, guid: bf071a21c75d5984182ca2896c24ba39,
@@ -14734,7 +15107,7 @@ MonoBehaviour:
   m_enableWordWrapping: 1
   m_wordWrappingRatios: 0.4
   m_overflowMode: 0
-  m_firstOverflowCharacterIndex: 39
+  m_firstOverflowCharacterIndex: 51
   m_linkedTextComponent: {fileID: 0}
   m_isLinkedTextComponent: 0
   m_isTextTruncated: 0
@@ -14757,10 +15130,10 @@ MonoBehaviour:
   m_margin: {x: 0, y: 0, z: 0, w: 0}
   m_textInfo:
     textComponent: {fileID: 1649281994}
-    characterCount: 48
+    characterCount: 75
     spriteCount: 0
-    spaceCount: 10
-    wordCount: 9
+    spaceCount: 15
+    wordCount: 13
     linkCount: 0
     lineCount: 2
     pageCount: 1
@@ -14769,7 +15142,7 @@ MonoBehaviour:
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_spriteAnimator: {fileID: 0}
-  m_isInputParsingRequired: 1
+  m_isInputParsingRequired: 0
   m_inputSource: 0
   m_hasFontAssetChanged: 0
   m_subTextObjects:
@@ -14831,7 +15204,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 374528313}
+      - m_Target: {fileID: 374528315}
         m_MethodName: CounterDown
         m_Mode: 1
         m_Arguments:
@@ -14842,7 +15215,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 374528313}
+      - m_Target: {fileID: 374528315}
         m_MethodName: Question7
         m_Mode: 1
         m_Arguments:
@@ -15127,6 +15500,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1683432097}
+  - component: {fileID: 1683432098}
   - component: {fileID: 1683432096}
   m_Layer: 0
   m_Name: Question4Security
@@ -15193,6 +15567,50 @@ Transform:
   m_Father: {fileID: 1203854742}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1683432098
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1683432095}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9e0b9ace3106fa24090c4ef2f160cf35, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  startCanvas: {fileID: 255141318}
+  questionSelectionCanvas: {fileID: 828039753}
+  questionSelectionContinueButton: {fileID: 1490615297}
+  interviewCanvas: {fileID: 1408915861}
+  textDisplay: {fileID: 1940251443}
+  sentences:
+  - I think that the EU, despite its internal conflicts, reacted to migrant crisis
+    very well.
+  feedbackCanvas: {fileID: 1271130292}
+  scoreCanvas: {fileID: 1810696522}
+  rankingCanvas: {fileID: 732463104}
+  statementText: {fileID: 1555891835}
+  typingSpeed: 0.005
+  continueButton: {fileID: 1486652019}
+  question1Button: {fileID: 96868734}
+  question2Button: {fileID: 870610512}
+  question3Button: {fileID: 1878668776}
+  question4Button: {fileID: 1875583670}
+  question5Button: {fileID: 2104440248}
+  question6Button: {fileID: 1953812739}
+  question7Button: {fileID: 1649281996}
+  question8Button: {fileID: 1025128747}
+  question9Button: {fileID: 210010520}
+  question10Button: {fileID: 1958334924}
+  interviewCounter: 0
+  secondCounter: 0
+  chosenTextDisplay: {fileID: 1555891835}
+  inputEmail: {fileID: 534395214}
+  input1: {fileID: 1594866796}
+  input2: {fileID: 1996253113}
+  input3: {fileID: 1210716178}
+  BASE_URL: https://docs.google.com/forms/u/0/d/e/1FAIpQLScXWz7UzsXdAXz6mgpxoZo-EHKPA5olBFVSKBsd8v1AYalKQA/formResponse
 --- !u!1 &1691396454
 GameObject:
   m_ObjectHideFlags: 0
@@ -16888,7 +17306,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 290242459}
+      - m_Target: {fileID: 290242461}
         m_MethodName: NextSentence
         m_Mode: 1
         m_Arguments:
@@ -16899,7 +17317,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 1010829894}
+      - m_Target: {fileID: 1010829895}
         m_MethodName: CounterDown
         m_Mode: 1
         m_Arguments:
@@ -16910,7 +17328,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 1010829894}
+      - m_Target: {fileID: 1010829895}
         m_MethodName: Question8Selected
         m_Mode: 1
         m_Arguments:
@@ -17179,7 +17597,7 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_text: "\t4. What do you think about European \n\t\tno-border politics?"
+  m_text: "\t4. What is your take on the recent migrant crisis?"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: bf071a21c75d5984182ca2896c24ba39, type: 2}
   m_sharedMaterial: {fileID: 21445493198866178, guid: bf071a21c75d5984182ca2896c24ba39,
@@ -17226,7 +17644,7 @@ MonoBehaviour:
   m_enableWordWrapping: 1
   m_wordWrappingRatios: 0.4
   m_overflowMode: 0
-  m_firstOverflowCharacterIndex: 38
+  m_firstOverflowCharacterIndex: -1
   m_linkedTextComponent: {fileID: 0}
   m_isLinkedTextComponent: 0
   m_isTextTruncated: 0
@@ -17249,19 +17667,19 @@ MonoBehaviour:
   m_margin: {x: 0, y: 0, z: 0, w: 0}
   m_textInfo:
     textComponent: {fileID: 1875583668}
-    characterCount: 59
+    characterCount: 51
     spriteCount: 0
-    spaceCount: 12
-    wordCount: 10
+    spaceCount: 10
+    wordCount: 11
     linkCount: 0
-    lineCount: 2
+    lineCount: 1
     pageCount: 1
     materialCount: 1
   m_havePropertiesChanged: 1
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_spriteAnimator: {fileID: 0}
-  m_isInputParsingRequired: 1
+  m_isInputParsingRequired: 0
   m_inputSource: 0
   m_hasFontAssetChanged: 0
   m_subTextObjects:
@@ -17323,7 +17741,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1683432096}
+      - m_Target: {fileID: 1683432098}
         m_MethodName: CounterDown
         m_Mode: 1
         m_Arguments:
@@ -17334,7 +17752,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 1683432096}
+      - m_Target: {fileID: 1683432098}
         m_MethodName: Question4
         m_Mode: 1
         m_Arguments:
@@ -17438,7 +17856,7 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_text: "\t3. How do you feel about your rights and\n\t\tresponsibilities as a European\n\t\tcitizen?"
+  m_text: "\t3. How do you feel about the right to work \n\t\tanywhere in the EU?"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: bf071a21c75d5984182ca2896c24ba39, type: 2}
   m_sharedMaterial: {fileID: 21445493198866178, guid: bf071a21c75d5984182ca2896c24ba39,
@@ -17485,7 +17903,7 @@ MonoBehaviour:
   m_enableWordWrapping: 1
   m_wordWrappingRatios: 0.4
   m_overflowMode: 0
-  m_firstOverflowCharacterIndex: 42
+  m_firstOverflowCharacterIndex: 45
   m_linkedTextComponent: {fileID: 0}
   m_isLinkedTextComponent: 0
   m_isTextTruncated: 0
@@ -17508,19 +17926,19 @@ MonoBehaviour:
   m_margin: {x: 0, y: 0, z: 0, w: 0}
   m_textInfo:
     textComponent: {fileID: 1878668774}
-    characterCount: 85
+    characterCount: 66
     spriteCount: 0
-    spaceCount: 18
+    spaceCount: 17
     wordCount: 15
     linkCount: 0
-    lineCount: 3
+    lineCount: 2
     pageCount: 1
     materialCount: 1
   m_havePropertiesChanged: 1
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_spriteAnimator: {fileID: 0}
-  m_isInputParsingRequired: 1
+  m_isInputParsingRequired: 0
   m_inputSource: 0
   m_hasFontAssetChanged: 0
   m_subTextObjects:
@@ -17582,7 +18000,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1433238506}
+      - m_Target: {fileID: 1433238508}
         m_MethodName: CounterDown
         m_Mode: 1
         m_Arguments:
@@ -17593,7 +18011,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 1433238506}
+      - m_Target: {fileID: 1433238508}
         m_MethodName: Question3
         m_Mode: 1
         m_Arguments:
@@ -17686,7 +18104,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0.5}
   m_AnchorMax: {x: 0, y: 0.5}
-  m_AnchoredPosition: {x: 0.75958, y: -1787.1499}
+  m_AnchoredPosition: {x: 0.75946, y: -1787.1494}
   m_SizeDelta: {x: 2720, y: 4804.3}
   m_Pivot: {x: 0, y: 0.5}
 --- !u!114 &1883176077
@@ -17841,7 +18259,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1010829894}
+      - m_Target: {fileID: 1010829895}
         m_MethodName: NextSentence
         m_Mode: 1
         m_Arguments:
@@ -17852,7 +18270,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 1010829894}
+      - m_Target: {fileID: 1010829895}
         m_MethodName: CounterDown
         m_Mode: 1
         m_Arguments:
@@ -17863,7 +18281,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 1010829894}
+      - m_Target: {fileID: 1010829895}
         m_MethodName: Question1Selected
         m_Mode: 1
         m_Arguments:
@@ -18029,7 +18447,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1010829894}
+      - m_Target: {fileID: 1010829895}
         m_MethodName: RankedStatements
         m_Mode: 1
         m_Arguments:
@@ -18692,7 +19110,8 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_text: "\t6. Should Croatia accept the Euro?"
+  m_text: "\t6. What changes in employment and citizen \n\t\tstandard did you notice
+    since Croatia joined \n\t\tthe EU?"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: bf071a21c75d5984182ca2896c24ba39, type: 2}
   m_sharedMaterial: {fileID: 21445493198866178, guid: bf071a21c75d5984182ca2896c24ba39,
@@ -18739,7 +19158,7 @@ MonoBehaviour:
   m_enableWordWrapping: 1
   m_wordWrappingRatios: 0.4
   m_overflowMode: 0
-  m_firstOverflowCharacterIndex: -1
+  m_firstOverflowCharacterIndex: 44
   m_linkedTextComponent: {fileID: 0}
   m_isLinkedTextComponent: 0
   m_isTextTruncated: 0
@@ -18762,19 +19181,19 @@ MonoBehaviour:
   m_margin: {x: 0, y: 0, z: 0, w: 0}
   m_textInfo:
     textComponent: {fileID: 1953812737}
-    characterCount: 35
+    characterCount: 101
     spriteCount: 0
-    spaceCount: 6
-    wordCount: 7
+    spaceCount: 22
+    wordCount: 17
     linkCount: 0
-    lineCount: 1
+    lineCount: 3
     pageCount: 1
     materialCount: 1
   m_havePropertiesChanged: 1
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_spriteAnimator: {fileID: 0}
-  m_isInputParsingRequired: 1
+  m_isInputParsingRequired: 0
   m_inputSource: 0
   m_hasFontAssetChanged: 0
   m_subTextObjects:
@@ -18836,7 +19255,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 2092788522}
+      - m_Target: {fileID: 2092788524}
         m_MethodName: CounterDown
         m_Mode: 1
         m_Arguments:
@@ -18847,7 +19266,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 2092788522}
+      - m_Target: {fileID: 2092788524}
         m_MethodName: Question6
         m_Mode: 1
         m_Arguments:
@@ -18971,7 +19390,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1185187207}
+      - m_Target: {fileID: 1185187206}
         m_MethodName: CounterDown
         m_Mode: 1
         m_Arguments:
@@ -18982,7 +19401,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 1185187207}
+      - m_Target: {fileID: 1185187206}
         m_MethodName: Question10
         m_Mode: 1
         m_Arguments:
@@ -19048,7 +19467,7 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_text: "\t10. What do you think about Croatia's\n\t\tgeographical and geopolitical\n\t\tposition
+  m_text: "\t10. What is your take on strategic geographical \t\t\timportance of Croatia
     within the EU?"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: bf071a21c75d5984182ca2896c24ba39, type: 2}
@@ -19119,19 +19538,19 @@ MonoBehaviour:
   m_margin: {x: 0, y: 0, z: 0, w: 0}
   m_textInfo:
     textComponent: {fileID: 1958334925}
-    characterCount: 96
+    characterCount: 88
     spriteCount: 0
-    spaceCount: 18
+    spaceCount: 17
     wordCount: 15
     linkCount: 0
-    lineCount: 3
+    lineCount: 2
     pageCount: 1
     materialCount: 1
   m_havePropertiesChanged: 1
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_spriteAnimator: {fileID: 0}
-  m_isInputParsingRequired: 1
+  m_isInputParsingRequired: 0
   m_inputSource: 0
   m_hasFontAssetChanged: 0
   m_subTextObjects:
@@ -19684,7 +20103,7 @@ RectTransform:
   m_Father: {fileID: 688341765}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0.74397933}
+  m_AnchorMin: {x: 0, y: 0.75706154}
   m_AnchorMax: {x: 1, y: 1}
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 20, y: 20}
@@ -20062,7 +20481,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 325038437}
+      - m_Target: {fileID: 325038439}
         m_MethodName: NextSentence
         m_Mode: 1
         m_Arguments:
@@ -20073,7 +20492,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 1010829894}
+      - m_Target: {fileID: 1010829895}
         m_MethodName: CounterDown
         m_Mode: 1
         m_Arguments:
@@ -20084,7 +20503,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 1010829894}
+      - m_Target: {fileID: 1010829895}
         m_MethodName: Question2Selected
         m_Mode: 1
         m_Arguments:
@@ -20383,6 +20802,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2092788523}
+  - component: {fileID: 2092788524}
   - component: {fileID: 2092788522}
   m_Layer: 0
   m_Name: Question6Economy
@@ -20449,6 +20869,51 @@ Transform:
   m_Father: {fileID: 1203854742}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2092788524
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2092788521}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9e0b9ace3106fa24090c4ef2f160cf35, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  startCanvas: {fileID: 255141318}
+  questionSelectionCanvas: {fileID: 828039753}
+  questionSelectionContinueButton: {fileID: 1490615297}
+  interviewCanvas: {fileID: 1408915861}
+  textDisplay: {fileID: 1940251443}
+  sentences:
+  - Unemployment rate is much lower, and life standard seems to be on the rise. While
+    these changes can be attributed to an extent to large immigration, I do believe
+    that Croatia is on a good track.
+  feedbackCanvas: {fileID: 1271130292}
+  scoreCanvas: {fileID: 1810696522}
+  rankingCanvas: {fileID: 732463104}
+  statementText: {fileID: 1555891835}
+  typingSpeed: 0.005
+  continueButton: {fileID: 973780868}
+  question1Button: {fileID: 96868734}
+  question2Button: {fileID: 870610512}
+  question3Button: {fileID: 1878668776}
+  question4Button: {fileID: 1875583670}
+  question5Button: {fileID: 2104440248}
+  question6Button: {fileID: 1953812739}
+  question7Button: {fileID: 1649281996}
+  question8Button: {fileID: 1025128747}
+  question9Button: {fileID: 210010520}
+  question10Button: {fileID: 1958334924}
+  interviewCounter: 0
+  secondCounter: 0
+  chosenTextDisplay: {fileID: 1555891835}
+  inputEmail: {fileID: 534395214}
+  input1: {fileID: 1594866796}
+  input2: {fileID: 1996253113}
+  input3: {fileID: 1210716178}
+  BASE_URL: https://docs.google.com/forms/u/0/d/e/1FAIpQLScXWz7UzsXdAXz6mgpxoZo-EHKPA5olBFVSKBsd8v1AYalKQA/formResponse
 --- !u!1 &2094336952
 GameObject:
   m_ObjectHideFlags: 0
@@ -20938,7 +21403,7 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_text: "\t5. Do you feel more European or more\n\t\tCroatian?"
+  m_text: "\t5. Has your national identity changes since Croatia \t\tjoined the EU?"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: bf071a21c75d5984182ca2896c24ba39, type: 2}
   m_sharedMaterial: {fileID: 21445493198866178, guid: bf071a21c75d5984182ca2896c24ba39,
@@ -20985,7 +21450,7 @@ MonoBehaviour:
   m_enableWordWrapping: 1
   m_wordWrappingRatios: 0.4
   m_overflowMode: 0
-  m_firstOverflowCharacterIndex: 38
+  m_firstOverflowCharacterIndex: 53
   m_linkedTextComponent: {fileID: 0}
   m_isLinkedTextComponent: 0
   m_isTextTruncated: 0
@@ -21008,10 +21473,10 @@ MonoBehaviour:
   m_margin: {x: 0, y: 0, z: 0, w: 0}
   m_textInfo:
     textComponent: {fileID: 2104440246}
-    characterCount: 49
+    characterCount: 69
     spriteCount: 0
-    spaceCount: 11
-    wordCount: 10
+    spaceCount: 13
+    wordCount: 12
     linkCount: 0
     lineCount: 2
     pageCount: 1
@@ -21020,7 +21485,7 @@ MonoBehaviour:
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_spriteAnimator: {fileID: 0}
-  m_isInputParsingRequired: 1
+  m_isInputParsingRequired: 0
   m_inputSource: 0
   m_hasFontAssetChanged: 0
   m_subTextObjects:
@@ -21082,7 +21547,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1339411152}
+      - m_Target: {fileID: 1339411154}
         m_MethodName: CounterDown
         m_Mode: 1
         m_Arguments:
@@ -21093,7 +21558,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 1339411152}
+      - m_Target: {fileID: 1339411154}
         m_MethodName: Question5
         m_Mode: 1
         m_Arguments:
@@ -21304,7 +21769,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1185187207}
+      - m_Target: {fileID: 1185187206}
         m_MethodName: NextSentence
         m_Mode: 1
         m_Arguments:
@@ -21315,7 +21780,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 1010829894}
+      - m_Target: {fileID: 1010829895}
         m_MethodName: CounterDown
         m_Mode: 1
         m_Arguments:
@@ -21326,7 +21791,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 1010829894}
+      - m_Target: {fileID: 1010829895}
         m_MethodName: Question10Selected
         m_Mode: 1
         m_Arguments:

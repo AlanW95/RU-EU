@@ -77,13 +77,13 @@ public class LorryTruckDiscussion : MonoBehaviour {
             continueButton.SetActive(true);
         }
 
-        if (Input.GetKeyDown(KeyCode.Escape)) {
-            SceneManager.LoadScene("Journalist");
-        }
+        /*if (Input.GetKeyDown(KeyCode.Escape)) {
+            SceneManager.LoadScene("LorryTruckJournalist");
+        }*/
 
         //StatementsSelected();
 
-        if (countdown == 0) {
+        if (countdown == 1) {
             //give feedback
             //this is placement at the moment
             //task2FullCanvas.SetActive(false);
@@ -103,7 +103,7 @@ public class LorryTruckDiscussion : MonoBehaviour {
     }
 
     public void ReturnToTheMobileWorkplace() {
-        SceneManager.LoadScene("Journalist");
+        SceneManager.LoadScene("LorryTruckJournalist");
     }
 
     //Task 2 is relatively the same as the original way we had the Discussion tool but this time after each one, 

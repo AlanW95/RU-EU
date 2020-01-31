@@ -23,9 +23,9 @@ public class PhoneNL : MonoBehaviour
 
     // Update is called once per frame
     void Update() {
-        if (Input.GetKeyDown(KeyCode.Escape)) {
-            SceneManager.LoadScene("MobileWorkplaceNL");
-        }
+        /*if (Input.GetKeyDown(KeyCode.Escape)) {
+            SceneManager.LoadScene("LorryTruckJournalist");
+        }*/
     }
 
     //after clicking the button to pick up the phone... the start canvas disappears and the text appears.

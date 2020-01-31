@@ -124,20 +124,7 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 1305475513}
   m_PrefabAsset: {fileID: 0}
---- !u!65 &22638018
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 22638015}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 0.2674464, y: 0.4081009, z: 0.053892}
-  m_Center: {x: 0.0022560502, y: -0.00035121918, z: 0.011572839}
---- !u!114 &22638019
+--- !u!114 &22638017
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -146,7 +133,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 22638015}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b6a8867334f7c6e4596144d4b338774e, type: 3}
+  m_Script: {fileID: 11500000, guid: b8abb9c6f8053134f95cd57ba4c0e433, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   interview1: {fileID: 927768664}
@@ -163,6 +150,19 @@ MonoBehaviour:
   toolCompletionText: {fileID: 1175204525}
   toolObjectiveCountdown: 8
   interviewTool: {fileID: 1057987902}
+--- !u!65 &22638018
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 22638015}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.2674464, y: 0.4081009, z: 0.053892}
+  m_Center: {x: 0.0022560502, y: -0.00035121918, z: 0.011572839}
 --- !u!1 &24980382
 GameObject:
   m_ObjectHideFlags: 0
@@ -221,7 +221,7 @@ MonoBehaviour:
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   m_text: Using this tool, you can interview an anti EU campaigner about their views
-    about immigration.
+    about lorry truck drivers.
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: bf071a21c75d5984182ca2896c24ba39, type: 2}
   m_sharedMaterial: {fileID: 21445493198866178, guid: bf071a21c75d5984182ca2896c24ba39,
@@ -299,11 +299,11 @@ MonoBehaviour:
     lineCount: 3
     pageCount: 1
     materialCount: 1
-  m_havePropertiesChanged: 0
+  m_havePropertiesChanged: 1
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_spriteAnimator: {fileID: 0}
-  m_isInputParsingRequired: 0
+  m_isInputParsingRequired: 1
   m_inputSource: 0
   m_hasFontAssetChanged: 0
   m_subTextObjects:
@@ -1393,13 +1393,7 @@ GameObject:
     type: 3}
   m_PrefabInstance: {fileID: 617982929}
   m_PrefabAsset: {fileID: 0}
---- !u!64 &617982933 stripped
-MeshCollider:
-  m_CorrespondingSourceObject: {fileID: 64078956708921608, guid: 1a5a73e93b869204898d14ba1945e0a9,
-    type: 3}
-  m_PrefabInstance: {fileID: 617982929}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &617982934
+--- !u!114 &617982932
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1408,7 +1402,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 617982931}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 334d131d63fd8ca4589ccb6ca365a89d, type: 3}
+  m_Script: {fileID: 11500000, guid: 5d076375eb295444883018bb0cdff34a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   interview1: {fileID: 927768664}
@@ -1425,6 +1419,12 @@ MonoBehaviour:
   toolCompletionText: {fileID: 1175204525}
   toolObjectiveCountdown: 8
   discussionAnimationTool: {fileID: 1263190809}
+--- !u!64 &617982933 stripped
+MeshCollider:
+  m_CorrespondingSourceObject: {fileID: 64078956708921608, guid: 1a5a73e93b869204898d14ba1945e0a9,
+    type: 3}
+  m_PrefabInstance: {fileID: 617982929}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &626349102
 GameObject:
   m_ObjectHideFlags: 0
@@ -1594,7 +1594,7 @@ PrefabInstance:
     - target: {fileID: 2389776, guid: 2f1666ad9b7fdd7459a360619d6ccffd, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
-      objectReference: {fileID: 2100000, guid: b387c0601cb44d845b13f2cc95cb5ac9, type: 2}
+      objectReference: {fileID: 2100000, guid: e51b17cf87ab5b04fb04705e6b773dab, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2f1666ad9b7fdd7459a360619d6ccffd, type: 3}
 --- !u!4 &661291950 stripped
@@ -2511,20 +2511,7 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 1833414992}
   m_PrefabAsset: {fileID: 0}
---- !u!65 &927768667
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 927768664}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 0.2674464, y: 0.4081009, z: 0.053892}
-  m_Center: {x: 0.0022560502, y: -0.00035121918, z: 0.011572839}
---- !u!114 &927768668
+--- !u!114 &927768666
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -2533,7 +2520,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 927768664}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d1757aa6f74ba5444a1bd3cf2b8163af, type: 3}
+  m_Script: {fileID: 11500000, guid: 0a303871bb234584c9a1a134b76ed6cb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   interview1: {fileID: 927768664}
@@ -2550,6 +2537,19 @@ MonoBehaviour:
   toolCompletionText: {fileID: 1175204525}
   toolObjectiveCountdown: 8
   interviewTool: {fileID: 828502426}
+--- !u!65 &927768667
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 927768664}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.2674464, y: 0.4081009, z: 0.053892}
+  m_Center: {x: 0.0022560502, y: -0.00035121918, z: 0.011572839}
 --- !u!1 &942330960
 GameObject:
   m_ObjectHideFlags: 0
@@ -3498,24 +3498,20 @@ MonoBehaviour:
   fillerItems:
   - 
   - 
-  - 'Scotland''s First Minister has spoken of the coutnry''s reputation for being
-    open, warm-hearted, and hospitable: ''hundreds of thousands of nationals from
-    other EU countries, choose Scotland as their home''.'
-  - '"I hope there will be a change in the European public arena in favour of these
-    political parties who would like to stop immigration," said the Hungarian Prime
-    Minister.'
-  - At least 34 Syrian migrants, among them 15 young children, have drowned this morning
-    after falling into the Aegean sea, according to the Greek coastguards.
-  - A study conducted by the London School of Economics in 2016 concluded that EU
-    immigrants pay more in taxes than they use public services and therefore they
-    help to reduce the budget deficit.
-  - The leader of the local union of the industry workers said that immigrants work
-    for less money and increase locals' unemployment.
-  - A recent research by Oxford University showed that immigrants that adopted a cultural
-    background similar to Europe's are likely to commit fewer crimes than the native
-    population.
-  - The leader of the German far-right party AfD said that the number of murders and
-    rapes increased 15% since Europe's huge 2015 influx of migrants and refugees more.
+  - No equal treatment for everybody, Dutch transportation employers are being discriminated.
+  - They are talking about non-Dutch drivers as modern slaves, but we like them to
+    keep their right to export cheap labor.
+  - Better postpone introduction of environmental zones until we have a uniform system,
+    because now employers are being victimized.
+  - "The social dump is most visible in the transport sector, look at all these parking
+    places where foreign drivers have to live and cook food next to their cabin day
+    in day out\u2026 in our own country no one wants to become a trucker anymore."
+  - Virtually no transport company working with foreign drivers complies with European
+    rules on rest periods and driving times. These have been in place since 2006,
+    but are virtually unenforceable.
+  - It will be some time before all European countries are on the same page. Our minister
+    has tried it before, but he found the Eastern European member states opposing
+    him, who are happy that at least part of their population can work somewhere.
 --- !u!114 &1366833986
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3824,7 +3820,7 @@ PrefabInstance:
     - target: {fileID: 2310044, guid: 074728566132335428608c1b7e7f1f14, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
-      objectReference: {fileID: 2100000, guid: 431ef5074331aa8439350e5dc9747e4d, type: 2}
+      objectReference: {fileID: 2100000, guid: 52139ad2165870442947aeab382a01bd, type: 2}
     - target: {fileID: 470908, guid: 074728566132335428608c1b7e7f1f14, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -3990,7 +3986,7 @@ MonoBehaviour:
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   m_text: Using this tool, you can interview a pro EU campaigner on their views about
-    immigration.
+    lorry truck drivers.
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: bf071a21c75d5984182ca2896c24ba39, type: 2}
   m_sharedMaterial: {fileID: 21445493198866178, guid: bf071a21c75d5984182ca2896c24ba39,
@@ -4109,7 +4105,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1510091876}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d2f333769fefda84fb87f557952569a5, type: 3}
+  m_Script: {fileID: 11500000, guid: d43338a9e505c6c458dba41d467c8ce0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   interview1: {fileID: 927768664}
@@ -4467,7 +4463,7 @@ GameObject:
     type: 3}
   m_PrefabInstance: {fileID: 236049646}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &1641170706
+--- !u!114 &1641170705
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -4476,7 +4472,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1641170704}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0761b460cc6ce914182b3dcd8f4da63e, type: 3}
+  m_Script: {fileID: 11500000, guid: b6804a040862cd04697ffb2e237a07cf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   interview1: {fileID: 927768664}
@@ -4719,7 +4715,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1707301738}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: bce3c90ea2445dd44a591d1210138cc7, type: 3}
+  m_Script: {fileID: 11500000, guid: 5fe746e881cbbd84296219eb4d756d6c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   interview1: {fileID: 927768664}
@@ -4746,7 +4742,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1707301738}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 72ff4f30a11e3964b9089ee69e53660c, type: 3}
+  m_Script: {fileID: 11500000, guid: 8f754fc2ffa0d1145bf4d23b9cf867d0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   interview1: {fileID: 927768664}
@@ -4911,7 +4907,7 @@ MonoBehaviour:
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   m_text: Using this tool, you have access to informal comments from the man on the
-    street to see what is being said about immigration.
+    street to see what is being said about lorry truck drivers.
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: bf071a21c75d5984182ca2896c24ba39, type: 2}
   m_sharedMaterial: {fileID: 21445493198866178, guid: bf071a21c75d5984182ca2896c24ba39,
@@ -4989,11 +4985,11 @@ MonoBehaviour:
     lineCount: 4
     pageCount: 1
     materialCount: 1
-  m_havePropertiesChanged: 0
+  m_havePropertiesChanged: 1
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_spriteAnimator: {fileID: 0}
-  m_isInputParsingRequired: 0
+  m_isInputParsingRequired: 1
   m_inputSource: 0
   m_hasFontAssetChanged: 0
   m_subTextObjects:
@@ -6353,6 +6349,32 @@ PrefabInstance:
         type: 3}
       propertyPath: m_isInputParsingRequired
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5612929028387287776, guid: 0fa706e078304d64f8112e27721cb72d,
+        type: 3}
+      propertyPath: m_text
+      value: 'Interview 1 complete
+
+        Interview 2 complete
+
+        Public Discussion complete
+
+        Newsflash complete'
+      objectReference: {fileID: 0}
+    - target: {fileID: 5612929028387287776, guid: 0fa706e078304d64f8112e27721cb72d,
+        type: 3}
+      propertyPath: m_textInfo.characterCount
+      value: 87
+      objectReference: {fileID: 0}
+    - target: {fileID: 5612929028387287776, guid: 0fa706e078304d64f8112e27721cb72d,
+        type: 3}
+      propertyPath: m_textInfo.spaceCount
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 5612929028387287776, guid: 0fa706e078304d64f8112e27721cb72d,
+        type: 3}
+      propertyPath: m_textInfo.wordCount
+      value: 11
       objectReference: {fileID: 0}
     - target: {fileID: 5612929027511700687, guid: 0fa706e078304d64f8112e27721cb72d,
         type: 3}

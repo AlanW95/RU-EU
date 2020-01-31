@@ -50,7 +50,7 @@ public class NLNewsflash : MonoBehaviour
 
     public void ReturnToJournalist() {
         //Application.Quit();
-        SceneManager.LoadScene("NLJournalist");
+        SceneManager.LoadScene("LorryTruckJournalist");
     }
 
     public void Statement1() { //this will appear when the start button is selected to start the tool

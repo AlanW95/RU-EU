@@ -101,9 +101,42 @@ EditorBuildSettings:
   - enabled: 0
     path: Assets/Scenes/DragDrop.unity
     guid: 53a04475d5c2e9a46aec96168a58831c
-  - enabled: 0
-    path: Assets/Scenes/2 - Lorry Truck/DiscussionLorryTruck.unity
+  - enabled: 1
+    path: Assets/Scenes/2 - Lorry Truck/MobilePhoneNL.unity
+    guid: 1a9b39fe5d45740448066388b374f226
+  - enabled: 1
+    path: Assets/Scenes/2 - Lorry Truck/OpeningJournalistNL.unity
+    guid: 2013870cea5271f4395a25fbbf1183bb
+  - enabled: 1
+    path: Assets/Scenes/2 - Lorry Truck/LorryTruckJournalist.unity
+    guid: 29969e4dfdeecff4eac92055623e106a
+  - enabled: 1
+    path: Assets/Scenes/2 - Lorry Truck/InterviewDirector.unity
+    guid: a17a2a2ad93d3644b80a47b1d6a141d5
+  - enabled: 1
+    path: Assets/Scenes/2 - Lorry Truck/InterviewLorryDriver.unity
+    guid: 6ea87db712ae1bc4cb54970304a5290a
+  - enabled: 1
+    path: Assets/Scenes/2 - Lorry Truck/DiscussionNL.unity
     guid: fa4976436b48bae46bc6733d3749a2b5
+  - enabled: 1
+    path: Assets/Scenes/2 - Lorry Truck/NewsflashNL.unity
+    guid: a527b973b97f7b34ab7c931651dc57df
+  - enabled: 1
+    path: Assets/Scenes/2 - Lorry Truck/NotebookNL.unity
+    guid: e0b176068ac7b1b4a9dbfe9f9deb7aa4
+  - enabled: 1
+    path: Assets/Scenes/2 - Lorry Truck/PreFANL.unity
+    guid: 8e149e862b0d2e04ab88ae1d23141e7d
+  - enabled: 1
+    path: Assets/Scenes/2 - Lorry Truck/OpeningFANL.unity
+    guid: 8efe0c49fea7ac24090245e9c62c362c
+  - enabled: 1
+    path: Assets/Scenes/2 - Lorry Truck/FinalAssignmentNL.unity
+    guid: 2810bc378760b9244b8aa6d414e821d0
+  - enabled: 1
+    path: Assets/Scenes/2 - Lorry Truck/DashboardNL.unity
+    guid: b500ce165c6f767419c630702ed84ff8
   - enabled: 1
     path: Assets/Scenes/3 - Attitudes/MobilePhoneAttitudes.unity
     guid: 4949aa10e705c3248b7fc9e1136025c7

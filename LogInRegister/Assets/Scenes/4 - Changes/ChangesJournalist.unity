@@ -124,20 +124,7 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 1305475513}
   m_PrefabAsset: {fileID: 0}
---- !u!65 &22638018
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 22638015}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 0.2674464, y: 0.4081009, z: 0.053892}
-  m_Center: {x: 0.0022560502, y: -0.00035121918, z: 0.011572839}
---- !u!114 &22638019
+--- !u!114 &22638017
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -146,7 +133,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 22638015}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b6a8867334f7c6e4596144d4b338774e, type: 3}
+  m_Script: {fileID: 11500000, guid: b7fc3e40145f7744385938faa547edf2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   interview1: {fileID: 927768664}
@@ -163,6 +150,19 @@ MonoBehaviour:
   toolCompletionText: {fileID: 1175204525}
   toolObjectiveCountdown: 8
   interviewTool: {fileID: 1057987902}
+--- !u!65 &22638018
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 22638015}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.2674464, y: 0.4081009, z: 0.053892}
+  m_Center: {x: 0.0022560502, y: -0.00035121918, z: 0.011572839}
 --- !u!1 &24980382
 GameObject:
   m_ObjectHideFlags: 0
@@ -1393,13 +1393,7 @@ GameObject:
     type: 3}
   m_PrefabInstance: {fileID: 617982929}
   m_PrefabAsset: {fileID: 0}
---- !u!64 &617982933 stripped
-MeshCollider:
-  m_CorrespondingSourceObject: {fileID: 64078956708921608, guid: 1a5a73e93b869204898d14ba1945e0a9,
-    type: 3}
-  m_PrefabInstance: {fileID: 617982929}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &617982934
+--- !u!114 &617982932
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1408,7 +1402,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 617982931}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 334d131d63fd8ca4589ccb6ca365a89d, type: 3}
+  m_Script: {fileID: 11500000, guid: 6231c5e698d993140993575ed11454fc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   interview1: {fileID: 927768664}
@@ -1425,6 +1419,12 @@ MonoBehaviour:
   toolCompletionText: {fileID: 1175204525}
   toolObjectiveCountdown: 8
   discussionAnimationTool: {fileID: 1263190809}
+--- !u!64 &617982933 stripped
+MeshCollider:
+  m_CorrespondingSourceObject: {fileID: 64078956708921608, guid: 1a5a73e93b869204898d14ba1945e0a9,
+    type: 3}
+  m_PrefabInstance: {fileID: 617982929}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &626349102
 GameObject:
   m_ObjectHideFlags: 0
@@ -1594,7 +1594,7 @@ PrefabInstance:
     - target: {fileID: 2389776, guid: 2f1666ad9b7fdd7459a360619d6ccffd, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
-      objectReference: {fileID: 2100000, guid: f5dde43125aa2b64aa86e1ea564b8b2d, type: 2}
+      objectReference: {fileID: 2100000, guid: b32d248b27b82314a8953402e2cef3b6, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2f1666ad9b7fdd7459a360619d6ccffd, type: 3}
 --- !u!4 &661291950 stripped
@@ -2511,20 +2511,7 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 1833414992}
   m_PrefabAsset: {fileID: 0}
---- !u!65 &927768667
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 927768664}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 0.2674464, y: 0.4081009, z: 0.053892}
-  m_Center: {x: 0.0022560502, y: -0.00035121918, z: 0.011572839}
---- !u!114 &927768668
+--- !u!114 &927768666
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -2533,7 +2520,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 927768664}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d1757aa6f74ba5444a1bd3cf2b8163af, type: 3}
+  m_Script: {fileID: 11500000, guid: 6a9102d170ec2e94c95ad0cfd2b69023, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   interview1: {fileID: 927768664}
@@ -2550,6 +2537,19 @@ MonoBehaviour:
   toolCompletionText: {fileID: 1175204525}
   toolObjectiveCountdown: 8
   interviewTool: {fileID: 828502426}
+--- !u!65 &927768667
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 927768664}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.2674464, y: 0.4081009, z: 0.053892}
+  m_Center: {x: 0.0022560502, y: -0.00035121918, z: 0.011572839}
 --- !u!1 &942330960
 GameObject:
   m_ObjectHideFlags: 0
@@ -3498,24 +3498,24 @@ MonoBehaviour:
   fillerItems:
   - 
   - 
-  - 'Scotland''s First Minister has spoken of the coutnry''s reputation for being
-    open, warm-hearted, and hospitable: ''hundreds of thousands of nationals from
-    other EU countries, choose Scotland as their home''.'
-  - '"I hope there will be a change in the European public arena in favour of these
-    political parties who would like to stop immigration," said the Hungarian Prime
-    Minister.'
-  - At least 34 Syrian migrants, among them 15 young children, have drowned this morning
-    after falling into the Aegean sea, according to the Greek coastguards.
-  - A study conducted by the London School of Economics in 2016 concluded that EU
-    immigrants pay more in taxes than they use public services and therefore they
-    help to reduce the budget deficit.
-  - The leader of the local union of the industry workers said that immigrants work
-    for less money and increase locals' unemployment.
-  - A recent research by Oxford University showed that immigrants that adopted a cultural
-    background similar to Europe's are likely to commit fewer crimes than the native
-    population.
-  - The leader of the German far-right party AfD said that the number of murders and
-    rapes increased 15% since Europe's huge 2015 influx of migrants and refugees more.
+  - While few citizens on the European continent are eager to see their own country
+    depart the EU, many want the chance to have their voice heard through their own
+    referendum on EU membership.
+  - Most Europeans judge Brexit as bad for EU and UK.
+  - There is strong support for a common defence and security policy, but Europeans
+    do not regard it as a priority.
+  - Despite fluctuating support over the past decade, Europeans are generally resistant
+    to further enlargement (of the EU).
+  - 'Sympathy for the frequently Euroskeptic parties to the right of the political
+    spectrum is limited: In no country surveyed does more than about a quarter of
+    the adult population hold a favorable view of parties such as France''s National
+    Front, the Netherlands'' Party for Freedom (PVV) or Britain''s UK Independence
+    Party (UKIP).'
+  - For the first time ever, the EU is shrinking. Since the 1957 Treaty of Rome, "ever
+    closer union" has gone hand-in-hand with ever larger union. From an initial club
+    of six members, the ranks of the European community have swelled to include 28
+    states. The prospective loss of the UK, however, will see that number fall for
+    the first time.
 --- !u!114 &1366833986
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3593,7 +3593,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1707301746}
+      - m_Target: {fileID: 1707301743}
         m_MethodName: DisplayNewsflash
         m_Mode: 1
         m_Arguments:
@@ -3824,7 +3824,7 @@ PrefabInstance:
     - target: {fileID: 2310044, guid: 074728566132335428608c1b7e7f1f14, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
-      objectReference: {fileID: 2100000, guid: 431ef5074331aa8439350e5dc9747e4d, type: 2}
+      objectReference: {fileID: 2100000, guid: ed471ec722022ac469cd167f34911662, type: 2}
     - target: {fileID: 470908, guid: 074728566132335428608c1b7e7f1f14, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -4109,7 +4109,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1510091876}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d2f333769fefda84fb87f557952569a5, type: 3}
+  m_Script: {fileID: 11500000, guid: a955dbc11829f0e498f2d04461587189, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   interview1: {fileID: 927768664}
@@ -4467,7 +4467,7 @@ GameObject:
     type: 3}
   m_PrefabInstance: {fileID: 236049646}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &1641170706
+--- !u!114 &1641170705
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -4476,7 +4476,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1641170704}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0761b460cc6ce914182b3dcd8f4da63e, type: 3}
+  m_Script: {fileID: 11500000, guid: d5bbcf647cf058d46a8860df43967647, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   interview1: {fileID: 927768664}
@@ -4598,8 +4598,8 @@ GameObject:
   - component: {fileID: 1707301740}
   - component: {fileID: 1707301739}
   - component: {fileID: 1707301745}
-  - component: {fileID: 1707301747}
-  - component: {fileID: 1707301746}
+  - component: {fileID: 1707301744}
+  - component: {fileID: 1707301743}
   m_Layer: 5
   m_Name: Canvas
   m_TagString: Untagged
@@ -4696,7 +4696,7 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 0}
---- !u!114 &1707301745
+--- !u!114 &1707301743
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -4705,21 +4705,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1707301738}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5a36c46ab42ee7b45bfa51a0d43c1850, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  pauseMenu: {fileID: 783115908}
-  confirmationMenu: {fileID: 1998484599}
---- !u!114 &1707301746
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1707301738}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: bce3c90ea2445dd44a591d1210138cc7, type: 3}
+  m_Script: {fileID: 11500000, guid: f2f35124427e21a429da1c1c92922e9d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   interview1: {fileID: 927768664}
@@ -4737,7 +4723,7 @@ MonoBehaviour:
   toolObjectiveCountdown: 8
   newsflashBar: {fileID: 1366833983}
   newsflashText: {fileID: 1561676810}
---- !u!114 &1707301747
+--- !u!114 &1707301744
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -4746,7 +4732,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1707301738}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 72ff4f30a11e3964b9089ee69e53660c, type: 3}
+  m_Script: {fileID: 11500000, guid: 8fef4099b0110e343af315ba0cc9d2a6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   interview1: {fileID: 927768664}
@@ -4762,6 +4748,20 @@ MonoBehaviour:
   textDisplay: {fileID: 1839532273}
   toolCompletionText: {fileID: 1175204525}
   toolObjectiveCountdown: 8
+--- !u!114 &1707301745
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1707301738}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5a36c46ab42ee7b45bfa51a0d43c1850, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  pauseMenu: {fileID: 783115908}
+  confirmationMenu: {fileID: 1998484599}
 --- !u!1001 &1730849370
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -6277,7 +6277,7 @@ PrefabInstance:
     - target: {fileID: 5612929027436110306, guid: 0fa706e078304d64f8112e27721cb72d,
         type: 3}
       propertyPath: m_RootOrder
-      value: 23
+      value: 9
       objectReference: {fileID: 0}
     - target: {fileID: 5612929027436110306, guid: 0fa706e078304d64f8112e27721cb72d,
         type: 3}
@@ -6353,6 +6353,32 @@ PrefabInstance:
         type: 3}
       propertyPath: m_isInputParsingRequired
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5612929028387287776, guid: 0fa706e078304d64f8112e27721cb72d,
+        type: 3}
+      propertyPath: m_text
+      value: 'Interview 1 complete
+
+        Interview 2 complete
+
+        Public Discussion complete
+
+        Newsflash complete'
+      objectReference: {fileID: 0}
+    - target: {fileID: 5612929028387287776, guid: 0fa706e078304d64f8112e27721cb72d,
+        type: 3}
+      propertyPath: m_textInfo.characterCount
+      value: 87
+      objectReference: {fileID: 0}
+    - target: {fileID: 5612929028387287776, guid: 0fa706e078304d64f8112e27721cb72d,
+        type: 3}
+      propertyPath: m_textInfo.spaceCount
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 5612929028387287776, guid: 0fa706e078304d64f8112e27721cb72d,
+        type: 3}
+      propertyPath: m_textInfo.wordCount
+      value: 11
       objectReference: {fileID: 0}
     - target: {fileID: 5612929027511700687, guid: 0fa706e078304d64f8112e27721cb72d,
         type: 3}

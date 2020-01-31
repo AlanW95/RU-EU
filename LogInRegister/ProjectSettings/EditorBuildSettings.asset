@@ -102,15 +102,6 @@ EditorBuildSettings:
     path: Assets/Scenes/DragDrop.unity
     guid: 53a04475d5c2e9a46aec96168a58831c
   - enabled: 0
-    path: Assets/Scenes/5 - Immigration/ImmigrationDiscussion.unity
-    guid: c082b0332ea3d764caa34ab5b44bec83
-  - enabled: 0
-    path: Assets/Scenes/5 - Immigration/Old/ImmigrationInterview1Old.unity
-    guid: 6d0f213134be3474f96b5121a1f0d244
-  - enabled: 0
-    path: Assets/Scenes/5 - Immigration/Old/ImmigrationInterview2Old.unity
-    guid: 2f37ef82671aa09468880bfee764d7d6
-  - enabled: 0
     path: Assets/Scenes/2 - Lorry Truck/DiscussionLorryTruck.unity
     guid: fa4976436b48bae46bc6733d3749a2b5
   - enabled: 1
@@ -149,6 +140,78 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/3 - Attitudes/DashboardAttitudes.unity
     guid: b264cd859e6c4f548a07282bbabdc190
+  - enabled: 1
+    path: Assets/Scenes/4 - Changes/MobilePhoneChanges.unity
+    guid: 193c014445e8f2249ba2188ed735c48f
+  - enabled: 1
+    path: Assets/Scenes/4 - Changes/OpeningJournalistChanges.unity
+    guid: 1183207d8417ff64ebf69d4c843a93d0
+  - enabled: 1
+    path: Assets/Scenes/4 - Changes/ChangesJournalist.unity
+    guid: 9e952e9dbf80a9542bb2e41f27855af7
+  - enabled: 1
+    path: Assets/Scenes/4 - Changes/Interview1Changes.unity
+    guid: bc12cbe4300c8c44c9476b4798330eba
+  - enabled: 1
+    path: Assets/Scenes/4 - Changes/Interview2Changes.unity
+    guid: f3c4e0f05554eb34d83708959c495add
+  - enabled: 1
+    path: Assets/Scenes/4 - Changes/DiscussionChanges.unity
+    guid: fc085a6f1318e8a4fa9bdc8f8132b66d
+  - enabled: 1
+    path: Assets/Scenes/4 - Changes/NewsflashChanges.unity
+    guid: e59686ae635bcfa49bf58a40ff908bd5
+  - enabled: 1
+    path: Assets/Scenes/4 - Changes/NotebookChanges.unity
+    guid: 6df63f726446f154882e2840034ef6f1
+  - enabled: 1
+    path: Assets/Scenes/4 - Changes/OpeningFAChanges.unity
+    guid: d03d6156eeba2de4f95dd84d764586ba
+  - enabled: 1
+    path: Assets/Scenes/4 - Changes/PreFAChanges.unity
+    guid: 90dccd9a4bf85a848aba90623ac00afd
+  - enabled: 1
+    path: Assets/Scenes/4 - Changes/FinalAssignmentChanges.unity
+    guid: 9f2a78753c688a54ca82683fece445cc
+  - enabled: 1
+    path: Assets/Scenes/4 - Changes/DashboardChanges.unity
+    guid: aff360d7359ff914899784c21b4f972e
+  - enabled: 1
+    path: Assets/Scenes/5 - Immigration/MobilePhoneImmigration.unity
+    guid: c28babb22c2b48646bda6d60da464d6b
+  - enabled: 1
+    path: Assets/Scenes/5 - Immigration/OpeningJournalistImmigration.unity
+    guid: 830432a0691da82479fe1bd006a734cb
+  - enabled: 1
+    path: Assets/Scenes/5 - Immigration/ImmigrationJournalist.unity
+    guid: 106b7654e6e3d1e409a4e25d9b159bae
+  - enabled: 1
+    path: Assets/Scenes/5 - Immigration/ImmigrationInterview1.unity
+    guid: 5961b74a63a3b484e88d30d4da9e0ddf
+  - enabled: 1
+    path: Assets/Scenes/5 - Immigration/ImmigrationInterview2.unity
+    guid: 5e7c9153a23526945af61f47272e4653
+  - enabled: 1
+    path: Assets/Scenes/5 - Immigration/ImmigrationDiscussion.unity
+    guid: c082b0332ea3d764caa34ab5b44bec83
+  - enabled: 1
+    path: Assets/Scenes/5 - Immigration/ImmigrationNewsflash.unity
+    guid: 7ad405bf1bf1cb14ba9ceb9f27cc79b6
+  - enabled: 1
+    path: Assets/Scenes/5 - Immigration/NotebookImmigration.unity
+    guid: f4d14c73d66b7614fa6e03b9bf5f1880
+  - enabled: 1
+    path: Assets/Scenes/5 - Immigration/PreFAImmigration.unity
+    guid: 4dd7de4c34502ac4f9963e95c64b64a5
+  - enabled: 1
+    path: Assets/Scenes/5 - Immigration/OpeningFAImmigration.unity
+    guid: 784f5e1f868c7364f92afacdf7bdd097
+  - enabled: 1
+    path: Assets/Scenes/5 - Immigration/FinalAssignmentImmigration.unity
+    guid: b77f8aaeac809b34992684b4facb22bd
+  - enabled: 1
+    path: Assets/Scenes/5 - Immigration/DashboardImmigration.unity
+    guid: 39852b32d83123049be832f4d462ba11
   - enabled: 1
     path: Assets/Scenes/PostQuestions.unity
     guid: c753322edc596cb418d7550f47fcc607

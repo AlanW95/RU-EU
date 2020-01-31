@@ -19,6 +19,9 @@ public class ScenarioSelection : MonoBehaviour {
 
     private bool ukScenarioComplete = false;
     private bool germanyScenarioComplete = false;
+    private bool greeceScenarioComplete = false;
+    private bool croatiaScenarioComplete = false;
+    private bool netherlandsScenarioComplete = false;
 
     public GameObject[] scenarioInformation;
     
@@ -29,6 +32,9 @@ public class ScenarioSelection : MonoBehaviour {
 
         ukScenarioComplete = intToBool(PlayerPrefs.GetInt("UKScenarioComplete"));
         germanyScenarioComplete = intToBool(PlayerPrefs.GetInt("GermanyScenarioComplete"));
+        greeceScenarioComplete = intToBool(PlayerPrefs.GetInt("GreeceScenarioComplete"));
+        croatiaScenarioComplete = intToBool(PlayerPrefs.GetInt("CroatiaScenarioComplete"));
+        netherlandsScenarioComplete = intToBool(PlayerPrefs.GetInt("NetherlandsScenarioComplete"));
     }
 
     void Update() {
@@ -42,7 +48,22 @@ public class ScenarioSelection : MonoBehaviour {
             germany.interactable = false;
         }
 
-        if (ukScenarioComplete == true && germanyScenarioComplete == true) {
+        if (greeceScenarioComplete == true) {
+            PlayerPrefs.SetInt("GreeceScenarioComplete", boolToInt(greeceScenarioComplete));
+            greece.interactable = false;
+        }
+
+        if (croatiaScenarioComplete == true) {
+            PlayerPrefs.SetInt("CroatiaScenarioComplete", boolToInt(croatiaScenarioComplete));
+            croatia.interactable = false;
+        }
+
+        if (netherlandsScenarioComplete == true) {
+            PlayerPrefs.SetInt("NetherlandsScenarioComplete", boolToInt(netherlandsScenarioComplete));
+            netherlands.interactable = false;
+        }
+
+        if (ukScenarioComplete == true && germanyScenarioComplete == true && greeceScenarioComplete == true && croatiaScenarioComplete == true && netherlandsScenarioComplete == true) {
             //this might change to have a thank you for playing screen
             SceneManager.LoadScene("PostQuestions");
         }
@@ -73,15 +94,15 @@ public class ScenarioSelection : MonoBehaviour {
     }
 
     public void WorkingPartnerCountriesScenario() {
-        Debug.Log("This will go to the Netherlands themed Journalist's Desk!");
+        SceneManager.LoadScene("MobilePhoneNL");
     }
 
     public void EuropeanIdentityScenario() {
-        Debug.Log("This will go to the Croatia themed Journalist's Desk!");
+        SceneManager.LoadScene("MobilePhoneChanges");
     }
 
     public void ImmigrationScenario() {
-        Debug.Log("This will go to the Greece themed Journalist's Desk!");
+        SceneManager.LoadScene("MobilePhoneImmigration");
     }
 
     //When a Scenario is selected on the map, the box to accept or decline appears. When the user presses the 'X' the box will disappear

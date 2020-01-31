@@ -3359,7 +3359,6 @@ GameObject:
   m_Component:
   - component: {fileID: 290242460}
   - component: {fileID: 290242461}
-  - component: {fileID: 290242459}
   m_Layer: 0
   m_Name: Question8Historic
   m_TagString: Untagged
@@ -3367,49 +3366,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &290242459
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 290242458}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1006ab441338e6d42a2071b265a0df3f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  startCanvas: {fileID: 255141318}
-  questionSelectionCanvas: {fileID: 828039753}
-  questionSelectionContinueButton: {fileID: 1490615297}
-  interviewCanvas: {fileID: 1408915861}
-  textDisplay: {fileID: 1940251443}
-  sentences:
-  - Croatia has always been, culturally and geographically, a part of Europe.
-  feedbackCanvas: {fileID: 1271130292}
-  scoreCanvas: {fileID: 1810696522}
-  rankingCanvas: {fileID: 732463104}
-  statementText: {fileID: 1555891835}
-  typingSpeed: 0.005
-  continueButton: {fileID: 1871030971}
-  question1Button: {fileID: 96868734}
-  question2Button: {fileID: 870610512}
-  question3Button: {fileID: 1878668776}
-  question4Button: {fileID: 1875583670}
-  question5Button: {fileID: 2104440248}
-  question6Button: {fileID: 1953812739}
-  question7Button: {fileID: 1649281996}
-  question8Button: {fileID: 1025128747}
-  question9Button: {fileID: 210010520}
-  question10Button: {fileID: 1958334924}
-  interviewCounter: 0
-  secondCounter: 0
-  chosenTextDisplay: {fileID: 1555891835}
-  inputEmail: {fileID: 534395214}
-  input1: {fileID: 1594866796}
-  input2: {fileID: 1996253113}
-  input3: {fileID: 1210716178}
-  BASE_URL: https://docs.google.com/forms/u/0/d/e/1FAIpQLSdrHnDk3QC8RQGqfLq3u8fGqlgzfWRsSHvabmGrGi3iycOPFw/formResponse
 --- !u!4 &290242460
 Transform:
   m_ObjectHideFlags: 0
@@ -3629,7 +3585,6 @@ GameObject:
   m_Component:
   - component: {fileID: 325038438}
   - component: {fileID: 325038439}
-  - component: {fileID: 325038437}
   m_Layer: 0
   m_Name: Question2Environment
   m_TagString: Untagged
@@ -3637,51 +3592,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &325038437
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 325038436}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1006ab441338e6d42a2071b265a0df3f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  startCanvas: {fileID: 255141318}
-  questionSelectionCanvas: {fileID: 828039753}
-  questionSelectionContinueButton: {fileID: 1490615297}
-  interviewCanvas: {fileID: 1408915861}
-  textDisplay: {fileID: 1940251443}
-  sentences:
-  - I generally agree with protecting the environment, but EU regulations have placed
-    negative restrictions to our economy. Whole industries, such as fishing, have
-    been impacted.
-  feedbackCanvas: {fileID: 1271130292}
-  scoreCanvas: {fileID: 1810696522}
-  rankingCanvas: {fileID: 732463104}
-  statementText: {fileID: 1555891835}
-  typingSpeed: 0.005
-  continueButton: {fileID: 2049551424}
-  question1Button: {fileID: 96868734}
-  question2Button: {fileID: 870610512}
-  question3Button: {fileID: 1878668776}
-  question4Button: {fileID: 1875583670}
-  question5Button: {fileID: 2104440248}
-  question6Button: {fileID: 1953812739}
-  question7Button: {fileID: 1649281996}
-  question8Button: {fileID: 1025128747}
-  question9Button: {fileID: 210010520}
-  question10Button: {fileID: 1958334924}
-  interviewCounter: 0
-  secondCounter: 0
-  chosenTextDisplay: {fileID: 1555891835}
-  inputEmail: {fileID: 534395214}
-  input1: {fileID: 1594866796}
-  input2: {fileID: 1996253113}
-  input3: {fileID: 1210716178}
-  BASE_URL: https://docs.google.com/forms/u/0/d/e/1FAIpQLSdrHnDk3QC8RQGqfLq3u8fGqlgzfWRsSHvabmGrGi3iycOPFw/formResponse
 --- !u!4 &325038438
 Transform:
   m_ObjectHideFlags: 0
@@ -4195,7 +4105,6 @@ GameObject:
   m_Component:
   - component: {fileID: 374528314}
   - component: {fileID: 374528315}
-  - component: {fileID: 374528313}
   m_Layer: 0
   m_Name: Question7Political
   m_TagString: Untagged
@@ -4203,50 +4112,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &374528313
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 374528312}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1006ab441338e6d42a2071b265a0df3f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  startCanvas: {fileID: 255141318}
-  questionSelectionCanvas: {fileID: 828039753}
-  questionSelectionContinueButton: {fileID: 1490615297}
-  interviewCanvas: {fileID: 1408915861}
-  textDisplay: {fileID: 1940251443}
-  sentences:
-  - Sometimes I do, sometimes I don't - but I would definitely want Croatia to have
-    more independence in foreign policy affairs.
-  feedbackCanvas: {fileID: 1271130292}
-  scoreCanvas: {fileID: 1810696522}
-  rankingCanvas: {fileID: 732463104}
-  statementText: {fileID: 1555891835}
-  typingSpeed: 0.005
-  continueButton: {fileID: 4924064}
-  question1Button: {fileID: 96868734}
-  question2Button: {fileID: 870610512}
-  question3Button: {fileID: 1878668776}
-  question4Button: {fileID: 1875583670}
-  question5Button: {fileID: 2104440248}
-  question6Button: {fileID: 1953812739}
-  question7Button: {fileID: 1649281996}
-  question8Button: {fileID: 1025128747}
-  question9Button: {fileID: 210010520}
-  question10Button: {fileID: 1958334924}
-  interviewCounter: 0
-  secondCounter: 0
-  chosenTextDisplay: {fileID: 1555891835}
-  inputEmail: {fileID: 534395214}
-  input1: {fileID: 1594866796}
-  input2: {fileID: 1996253113}
-  input3: {fileID: 1210716178}
-  BASE_URL: https://docs.google.com/forms/u/0/d/e/1FAIpQLSdrHnDk3QC8RQGqfLq3u8fGqlgzfWRsSHvabmGrGi3iycOPFw/formResponse
 --- !u!4 &374528314
 Transform:
   m_ObjectHideFlags: 0
@@ -6165,7 +6030,6 @@ GameObject:
   m_Component:
   - component: {fileID: 703946507}
   - component: {fileID: 703946508}
-  - component: {fileID: 703946509}
   m_Layer: 0
   m_Name: Question9Culture
   m_TagString: Untagged
@@ -6234,51 +6098,6 @@ MonoBehaviour:
   input2: {fileID: 1996253113}
   input3: {fileID: 1210716178}
   BASE_URL: https://docs.google.com/forms/u/0/d/e/1FAIpQLScXWz7UzsXdAXz6mgpxoZo-EHKPA5olBFVSKBsd8v1AYalKQA/formResponse
---- !u!114 &703946509
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 703946506}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1006ab441338e6d42a2071b265a0df3f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  startCanvas: {fileID: 255141318}
-  questionSelectionCanvas: {fileID: 828039753}
-  questionSelectionContinueButton: {fileID: 1490615297}
-  interviewCanvas: {fileID: 1408915861}
-  textDisplay: {fileID: 1940251443}
-  sentences:
-  - Croatian culture is not recognised enough in Europe - there are still too many
-    people who associate it to Yugoslavia. Joining the EU changes that perception,
-    but the rate of change is far too slow.
-  feedbackCanvas: {fileID: 1271130292}
-  scoreCanvas: {fileID: 1810696522}
-  rankingCanvas: {fileID: 732463104}
-  statementText: {fileID: 1555891835}
-  typingSpeed: 0.005
-  continueButton: {fileID: 1003055810}
-  question1Button: {fileID: 96868734}
-  question2Button: {fileID: 870610512}
-  question3Button: {fileID: 1878668776}
-  question4Button: {fileID: 1875583670}
-  question5Button: {fileID: 2104440248}
-  question6Button: {fileID: 1953812739}
-  question7Button: {fileID: 1649281996}
-  question8Button: {fileID: 1025128747}
-  question9Button: {fileID: 210010520}
-  question10Button: {fileID: 1958334924}
-  interviewCounter: 0
-  secondCounter: 0
-  chosenTextDisplay: {fileID: 1555891835}
-  inputEmail: {fileID: 534395214}
-  input1: {fileID: 1594866796}
-  input2: {fileID: 1996253113}
-  input3: {fileID: 1210716178}
-  BASE_URL: https://docs.google.com/forms/u/0/d/e/1FAIpQLSdrHnDk3QC8RQGqfLq3u8fGqlgzfWRsSHvabmGrGi3iycOPFw/formResponse
 --- !u!1 &708613209
 GameObject:
   m_ObjectHideFlags: 0
@@ -10040,7 +9859,6 @@ GameObject:
   m_Component:
   - component: {fileID: 1010829893}
   - component: {fileID: 1010829895}
-  - component: {fileID: 1010829894}
   m_Layer: 0
   m_Name: Question1Social
   m_TagString: Untagged
@@ -10062,50 +9880,6 @@ Transform:
   m_Father: {fileID: 1203854742}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1010829894
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1010829892}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1006ab441338e6d42a2071b265a0df3f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  startCanvas: {fileID: 255141318}
-  questionSelectionCanvas: {fileID: 828039753}
-  questionSelectionContinueButton: {fileID: 1490615297}
-  interviewCanvas: {fileID: 1408915861}
-  textDisplay: {fileID: 1940251443}
-  sentences:
-  - Emigration of educated people, combined with immigration of non-educated people,
-    leaves my country in deep problems.
-  feedbackCanvas: {fileID: 1271130292}
-  scoreCanvas: {fileID: 1810696522}
-  rankingCanvas: {fileID: 732463104}
-  statementText: {fileID: 1555891835}
-  typingSpeed: 0.005
-  continueButton: {fileID: 1894523649}
-  question1Button: {fileID: 96868734}
-  question2Button: {fileID: 870610512}
-  question3Button: {fileID: 1878668776}
-  question4Button: {fileID: 1875583670}
-  question5Button: {fileID: 2104440248}
-  question6Button: {fileID: 1953812739}
-  question7Button: {fileID: 1649281996}
-  question8Button: {fileID: 1025128747}
-  question9Button: {fileID: 210010520}
-  question10Button: {fileID: 1958334924}
-  interviewCounter: 0
-  secondCounter: 0
-  chosenTextDisplay: {fileID: 1555891835}
-  inputEmail: {fileID: 534395214}
-  input1: {fileID: 1594866796}
-  input2: {fileID: 1996253113}
-  input3: {fileID: 1210716178}
-  BASE_URL: https://docs.google.com/forms/u/0/d/e/1FAIpQLSdrHnDk3QC8RQGqfLq3u8fGqlgzfWRsSHvabmGrGi3iycOPFw/formResponse
 --- !u!114 &1010829895
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -11369,7 +11143,6 @@ GameObject:
   m_Component:
   - component: {fileID: 1185187205}
   - component: {fileID: 1185187206}
-  - component: {fileID: 1185187207}
   m_Layer: 0
   m_Name: Question10Geography
   m_TagString: Untagged
@@ -11435,51 +11208,6 @@ MonoBehaviour:
   input2: {fileID: 1996253113}
   input3: {fileID: 1210716178}
   BASE_URL: https://docs.google.com/forms/u/0/d/e/1FAIpQLScXWz7UzsXdAXz6mgpxoZo-EHKPA5olBFVSKBsd8v1AYalKQA/formResponse
---- !u!114 &1185187207
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1185187204}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1006ab441338e6d42a2071b265a0df3f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  startCanvas: {fileID: 255141318}
-  questionSelectionCanvas: {fileID: 828039753}
-  questionSelectionContinueButton: {fileID: 1490615297}
-  interviewCanvas: {fileID: 1408915861}
-  textDisplay: {fileID: 1940251443}
-  sentences:
-  - Situated at the border of the EU, Croatia has an important geostrategic position.
-    Historically, this has always been the case. I don't think that the EU pays enough
-    attention to importance of Croatia's geographical position.
-  feedbackCanvas: {fileID: 1271130292}
-  scoreCanvas: {fileID: 1810696522}
-  rankingCanvas: {fileID: 732463104}
-  statementText: {fileID: 1555891835}
-  typingSpeed: 0.005
-  continueButton: {fileID: 2114160048}
-  question1Button: {fileID: 96868734}
-  question2Button: {fileID: 870610512}
-  question3Button: {fileID: 1878668776}
-  question4Button: {fileID: 1875583670}
-  question5Button: {fileID: 2104440248}
-  question6Button: {fileID: 1953812739}
-  question7Button: {fileID: 1649281996}
-  question8Button: {fileID: 1025128747}
-  question9Button: {fileID: 210010520}
-  question10Button: {fileID: 1958334924}
-  interviewCounter: 0
-  secondCounter: 0
-  chosenTextDisplay: {fileID: 1555891835}
-  inputEmail: {fileID: 534395214}
-  input1: {fileID: 1594866796}
-  input2: {fileID: 1996253113}
-  input3: {fileID: 1210716178}
-  BASE_URL: https://docs.google.com/forms/u/0/d/e/1FAIpQLSdrHnDk3QC8RQGqfLq3u8fGqlgzfWRsSHvabmGrGi3iycOPFw/formResponse
 --- !u!1 &1203854741
 GameObject:
   m_ObjectHideFlags: 0
@@ -12665,7 +12393,6 @@ GameObject:
   m_Component:
   - component: {fileID: 1339411153}
   - component: {fileID: 1339411154}
-  - component: {fileID: 1339411152}
   m_Layer: 0
   m_Name: Question5Emotional
   m_TagString: Untagged
@@ -12673,50 +12400,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &1339411152
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1339411151}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1006ab441338e6d42a2071b265a0df3f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  startCanvas: {fileID: 255141318}
-  questionSelectionCanvas: {fileID: 828039753}
-  questionSelectionContinueButton: {fileID: 1490615297}
-  interviewCanvas: {fileID: 1408915861}
-  textDisplay: {fileID: 1940251443}
-  sentences:
-  - I definitely feel more Croatian than European. I feel that it will take many generations
-    before Croatian people start feeling truly European.
-  feedbackCanvas: {fileID: 1271130292}
-  scoreCanvas: {fileID: 1810696522}
-  rankingCanvas: {fileID: 732463104}
-  statementText: {fileID: 1555891835}
-  typingSpeed: 0.005
-  continueButton: {fileID: 417092195}
-  question1Button: {fileID: 96868734}
-  question2Button: {fileID: 870610512}
-  question3Button: {fileID: 1878668776}
-  question4Button: {fileID: 1875583670}
-  question5Button: {fileID: 2104440248}
-  question6Button: {fileID: 1953812739}
-  question7Button: {fileID: 1649281996}
-  question8Button: {fileID: 1025128747}
-  question9Button: {fileID: 210010520}
-  question10Button: {fileID: 1958334924}
-  interviewCounter: 0
-  secondCounter: 0
-  chosenTextDisplay: {fileID: 1555891835}
-  inputEmail: {fileID: 534395214}
-  input1: {fileID: 1594866796}
-  input2: {fileID: 1996253113}
-  input3: {fileID: 1210716178}
-  BASE_URL: https://docs.google.com/forms/u/0/d/e/1FAIpQLSdrHnDk3QC8RQGqfLq3u8fGqlgzfWRsSHvabmGrGi3iycOPFw/formResponse
 --- !u!4 &1339411153
 Transform:
   m_ObjectHideFlags: 0
@@ -13327,7 +13010,6 @@ GameObject:
   m_Component:
   - component: {fileID: 1433238507}
   - component: {fileID: 1433238508}
-  - component: {fileID: 1433238506}
   m_Layer: 0
   m_Name: Question3Rights&Responsibilities
   m_TagString: Untagged
@@ -13335,49 +13017,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &1433238506
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1433238505}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1006ab441338e6d42a2071b265a0df3f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  startCanvas: {fileID: 255141318}
-  questionSelectionCanvas: {fileID: 828039753}
-  questionSelectionContinueButton: {fileID: 1490615297}
-  interviewCanvas: {fileID: 1408915861}
-  textDisplay: {fileID: 1940251443}
-  sentences:
-  - I think that Croatia pays more money to the EU than it gets back.
-  feedbackCanvas: {fileID: 1271130292}
-  scoreCanvas: {fileID: 1810696522}
-  rankingCanvas: {fileID: 732463104}
-  statementText: {fileID: 1555891835}
-  typingSpeed: 0.005
-  continueButton: {fileID: 755120889}
-  question1Button: {fileID: 96868734}
-  question2Button: {fileID: 870610512}
-  question3Button: {fileID: 1878668776}
-  question4Button: {fileID: 1875583670}
-  question5Button: {fileID: 2104440248}
-  question6Button: {fileID: 1953812739}
-  question7Button: {fileID: 1649281996}
-  question8Button: {fileID: 1025128747}
-  question9Button: {fileID: 210010520}
-  question10Button: {fileID: 1958334924}
-  interviewCounter: 0
-  secondCounter: 0
-  chosenTextDisplay: {fileID: 1555891835}
-  inputEmail: {fileID: 534395214}
-  input1: {fileID: 1594866796}
-  input2: {fileID: 1996253113}
-  input3: {fileID: 1210716178}
-  BASE_URL: https://docs.google.com/forms/u/0/d/e/1FAIpQLSdrHnDk3QC8RQGqfLq3u8fGqlgzfWRsSHvabmGrGi3iycOPFw/formResponse
 --- !u!4 &1433238507
 Transform:
   m_ObjectHideFlags: 0
@@ -15501,7 +15140,6 @@ GameObject:
   m_Component:
   - component: {fileID: 1683432097}
   - component: {fileID: 1683432098}
-  - component: {fileID: 1683432096}
   m_Layer: 0
   m_Name: Question4Security
   m_TagString: Untagged
@@ -15509,50 +15147,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &1683432096
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1683432095}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1006ab441338e6d42a2071b265a0df3f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  startCanvas: {fileID: 255141318}
-  questionSelectionCanvas: {fileID: 828039753}
-  questionSelectionContinueButton: {fileID: 1490615297}
-  interviewCanvas: {fileID: 1408915861}
-  textDisplay: {fileID: 1940251443}
-  sentences:
-  - That politics is great, but living in Croatia - which is outside the Schengen
-    zone - I do not feel the same level of protection as in for instance, Germany.
-  feedbackCanvas: {fileID: 1271130292}
-  scoreCanvas: {fileID: 1810696522}
-  rankingCanvas: {fileID: 732463104}
-  statementText: {fileID: 1555891835}
-  typingSpeed: 0.005
-  continueButton: {fileID: 1486652019}
-  question1Button: {fileID: 96868734}
-  question2Button: {fileID: 870610512}
-  question3Button: {fileID: 1878668776}
-  question4Button: {fileID: 1875583670}
-  question5Button: {fileID: 2104440248}
-  question6Button: {fileID: 1953812739}
-  question7Button: {fileID: 1649281996}
-  question8Button: {fileID: 1025128747}
-  question9Button: {fileID: 210010520}
-  question10Button: {fileID: 1958334924}
-  interviewCounter: 0
-  secondCounter: 0
-  chosenTextDisplay: {fileID: 1555891835}
-  inputEmail: {fileID: 534395214}
-  input1: {fileID: 1594866796}
-  input2: {fileID: 1996253113}
-  input3: {fileID: 1210716178}
-  BASE_URL: https://docs.google.com/forms/u/0/d/e/1FAIpQLSdrHnDk3QC8RQGqfLq3u8fGqlgzfWRsSHvabmGrGi3iycOPFw/formResponse
 --- !u!4 &1683432097
 Transform:
   m_ObjectHideFlags: 0
@@ -20803,7 +20397,6 @@ GameObject:
   m_Component:
   - component: {fileID: 2092788523}
   - component: {fileID: 2092788524}
-  - component: {fileID: 2092788522}
   m_Layer: 0
   m_Name: Question6Economy
   m_TagString: Untagged
@@ -20811,50 +20404,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &2092788522
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2092788521}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1006ab441338e6d42a2071b265a0df3f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  startCanvas: {fileID: 255141318}
-  questionSelectionCanvas: {fileID: 828039753}
-  questionSelectionContinueButton: {fileID: 1490615297}
-  interviewCanvas: {fileID: 1408915861}
-  textDisplay: {fileID: 1940251443}
-  sentences:
-  - I think that Croatia is too small and vulnerable to get rid of fiscal sovereignty.
-    I do not want Croatia to enter the eurozone.
-  feedbackCanvas: {fileID: 1271130292}
-  scoreCanvas: {fileID: 1810696522}
-  rankingCanvas: {fileID: 732463104}
-  statementText: {fileID: 1555891835}
-  typingSpeed: 0.005
-  continueButton: {fileID: 973780868}
-  question1Button: {fileID: 96868734}
-  question2Button: {fileID: 870610512}
-  question3Button: {fileID: 1878668776}
-  question4Button: {fileID: 1875583670}
-  question5Button: {fileID: 2104440248}
-  question6Button: {fileID: 1953812739}
-  question7Button: {fileID: 1649281996}
-  question8Button: {fileID: 1025128747}
-  question9Button: {fileID: 210010520}
-  question10Button: {fileID: 1958334924}
-  interviewCounter: 0
-  secondCounter: 0
-  chosenTextDisplay: {fileID: 1555891835}
-  inputEmail: {fileID: 534395214}
-  input1: {fileID: 1594866796}
-  input2: {fileID: 1996253113}
-  input3: {fileID: 1210716178}
-  BASE_URL: https://docs.google.com/forms/u/0/d/e/1FAIpQLSdrHnDk3QC8RQGqfLq3u8fGqlgzfWRsSHvabmGrGi3iycOPFw/formResponse
 --- !u!4 &2092788523
 Transform:
   m_ObjectHideFlags: 0

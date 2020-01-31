@@ -113,7 +113,7 @@ public class Interview1Changes : MonoBehaviour
         }
 
         /*if (Input.GetKeyDown(KeyCode.Escape)) {
-            SceneManager.LoadScene("JournalistCR");
+            SceneManager.LoadScene("ChangesJournalist");
         }*/
 
         Debug.Log(PlayerPrefs.GetString("ChangesTopTheme"));
@@ -134,7 +134,7 @@ public class Interview1Changes : MonoBehaviour
     }*/
 
     public void ReturnToMobileWorkplace() {
-        SceneManager.LoadScene("JournalistCR"); //CR for Croatia
+        SceneManager.LoadScene("ChangesJournalist"); //CR for Croatia
     }
 
     public void RankedStatements() {

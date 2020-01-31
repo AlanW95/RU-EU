@@ -21,13 +21,13 @@ public class ImmigrationNewsflash : MonoBehaviour
     public GameObject correct, incorrect;
 
     public TextMeshProUGUI headlineText;
-    public GameObject geography, political, culture, environment, rightsResponsibilities, economy, social, security, emotions, history;
-    public GameObject geographyEmpty, politicalEmpty, cultureEmpty, environmentEmpty, rightsResponsibilitiesEmpty, economyEmpty, socialEmpty, securityEmpty, emotionsEmpty, historyEmpty;
-    Vector2 geographyInitialPos, politicalInitialPos, cultureInitialPos, environmentInitialPos, rightsResponsibilitiesInitialPos, economyInitialPos, socialInitialPos, securityInitialPos, emotionsInitialPos, historyInitialPos;
+    public GameObject geography, political, culture, environment, rightsResponsibilities, economy, social, security, emotions, history, political2, economy2, security2;
+    public GameObject geographyEmpty, politicalEmpty, cultureEmpty, environmentEmpty, rightsResponsibilitiesEmpty, economyEmpty, socialEmpty, securityEmpty, emotionsEmpty, historyEmpty, political2Empty, economy2Empty, security2Empty;
+    Vector2 geographyInitialPos, politicalInitialPos, cultureInitialPos, environmentInitialPos, rightsResponsibilitiesInitialPos, economyInitialPos, socialInitialPos, securityInitialPos, emotionsInitialPos, historyInitialPos, political2InitialPos, economy2InitialPos, security2InitialPos;
 
     public GameObject pro1, anti1, neutral1, pro2, anti2, neutral2, pro3, anti3, neutral3;
-    public GameObject proEmpty1, antiEmpty1, neutralEmpty1, proEmpty2, antiEmpty2, neutralEmpty2;
-    Vector2 pro1InitialPos, anti1InitialPos, neutral1InitialPos, pro2InitialPos, anti2InitialPos, neutral2InitialPos;
+    public GameObject proEmpty1, antiEmpty1, neutralEmpty1, proEmpty2, antiEmpty2, neutralEmpty2, proEmpty3, antiEmpty3, neutralEmpty3;
+    Vector2 pro1InitialPos, anti1InitialPos, neutral1InitialPos, pro2InitialPos, anti2InitialPos, neutral2InitialPos, pro3InitialPos, anti3InitialPos, neutral3InitialPos;
     public GameObject answerCorrect, answerIncorrect;
 
     public GameObject nullTheme, nullView;
@@ -77,59 +77,62 @@ public class ImmigrationNewsflash : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        PlayerPrefs.GetInt("CurrentSocialScore");
-        PlayerPrefs.GetInt("CurrentEnvironmentScore");
-        PlayerPrefs.GetInt("CurrentRightsAndResponsibilitiesScore");
-        PlayerPrefs.GetInt("CurrentSafetyAndSecurityScore");
-        PlayerPrefs.GetInt("CurrentEmotionalScore");
-        PlayerPrefs.GetInt("CurrentEconomyScore");
-        PlayerPrefs.GetInt("CurrentPoliticalScore");
-        PlayerPrefs.GetInt("CurrentHistoricScore");
-        PlayerPrefs.GetInt("CurrentCultureScore");
-        PlayerPrefs.GetInt("CurrentGeographyScore");
+        PlayerPrefs.GetInt("CurrentSocialImmigrationScore");
+        PlayerPrefs.GetInt("CurrentEnvironmentImmigrationScore");
+        PlayerPrefs.GetInt("CurrentRightsAndResponsibilitiesImmigrationScore");
+        PlayerPrefs.GetInt("CurrentSafetyAndSecurityImmigrationScore");
+        PlayerPrefs.GetInt("CurrentEmotionalImmigrationScore");
+        PlayerPrefs.GetInt("CurrentEconomyImmigrationScore");
+        PlayerPrefs.GetInt("CurrentPoliticalImmigrationScore");
+        PlayerPrefs.GetInt("CurrentHistoricImmigrationScore");
+        PlayerPrefs.GetInt("CurrentCultureImmigrationScore");
+        PlayerPrefs.GetInt("CurrentGeographyImmigrationScore");
 
-        if (geography.transform.position == geographyEmpty.transform.position && neutral1.transform.position == neutralEmpty1.transform.position) {
-            //finishCanvas.SetActive(true);
-            geography.SetActive(false);
-            //off screen
-            geographyEmpty.transform.position = new Vector2(-1164, -48);
-            neutralEmpty1.transform.position = new Vector2(-1111, -296);
-            //on screen
-            politicalEmpty.transform.position = nullTheme.transform.position;
-            proEmpty1.transform.position = nullView.transform.position;
-
-            neutral1.SetActive(false);
-            neutral2.SetActive(true);
-            Statement2();
-        }
-
+        //Q1
         if (political.transform.position == politicalEmpty.transform.position && pro1.transform.position == proEmpty1.transform.position) {
-
+            //finishCanvas.SetActive(true);
             political.SetActive(false);
             //off screen
             politicalEmpty.transform.position = new Vector2(-1164, -48);
             proEmpty1.transform.position = new Vector2(-1111, -296);
             //on screen
-            cultureEmpty.transform.position = nullThemeInitialPos;
-            antiEmpty1.transform.position = nullViewInitialPos;
+            emotionsEmpty.transform.position = nullTheme.transform.position;
+            neutralEmpty1.transform.position = nullView.transform.position;
 
+            political2.SetActive(true);
             pro1.SetActive(false);
             pro2.SetActive(true);
+            Statement2();
+        }
+        //Q2
+        if (emotions.transform.position == emotionsEmpty.transform.position && neutral1.transform.position == neutralEmpty1.transform.position) {
+
+            emotions.SetActive(false);
+            //off screen
+            emotionsEmpty.transform.position = new Vector2(-1164, -48);
+            neutralEmpty1.transform.position = new Vector2(-1111, -296);
+            //on screen
+            economyEmpty.transform.position = nullThemeInitialPos;
+            antiEmpty1.transform.position = nullViewInitialPos;
+
+            neutral1.SetActive(false);
+            neutral2.SetActive(true);
             Statement3();
 
             //finishCanvas.SetActive(true);
         }
+        //Q3
+        if (economy.transform.position == economyEmpty.transform.position && anti1.transform.position == antiEmpty1.transform.position) {
 
-        if (culture.transform.position == cultureEmpty.transform.position && anti1.transform.position == antiEmpty1.transform.position) {
-
-            culture.SetActive(false);
+            economy.SetActive(false);
             //off screen
-            cultureEmpty.transform.position = new Vector2(-1164, -48);
+            economyEmpty.transform.position = new Vector2(-1164, -48);
             antiEmpty1.transform.position = new Vector2(-1111, -296);
             //on screen
-            environmentEmpty.transform.position = nullThemeInitialPos;
-            neutralEmpty2.transform.position = nullViewInitialPos;
+            economy2Empty.transform.position = nullThemeInitialPos;
+            proEmpty2.transform.position = nullViewInitialPos;
 
+            economy2.SetActive(true);
             anti1.SetActive(false);
             anti2.SetActive(true);
             Statement4();
@@ -137,41 +140,60 @@ public class ImmigrationNewsflash : MonoBehaviour
             //finishCanvas.SetActive(true);
         }
 
-        if (environment.transform.position == environmentEmpty.transform.position && neutral2.transform.position == neutralEmpty2.transform.position) {
+        //Q4
+        if (economy2.transform.position == economy2Empty.transform.position && pro2.transform.position == proEmpty2.transform.position) {
 
-            environment.SetActive(false);
+            economy2.SetActive(false);
             //off screen
-            environmentEmpty.transform.position = new Vector2(-1164, -48);
-            neutralEmpty2.transform.position = new Vector2(-1111, -296);
+            economy2Empty.transform.position = new Vector2(-1164, -48);
+            proEmpty2.transform.position = new Vector2(-1111, -296);
             //on screen
-            rightsResponsibilitiesEmpty.transform.position = nullThemeInitialPos;
-            antiEmpty2.transform.position = nullViewInitialPos;
+            securityEmpty.transform.position = nullThemeInitialPos;
+            proEmpty3.transform.position = nullViewInitialPos;
 
-            neutral2.SetActive(false);
-            neutral3.SetActive(true);
+            pro2.SetActive(false);
+            pro3.SetActive(true);
             Statement5();
 
             //finishCanvas.SetActive(true);
         }
 
-        if (rightsResponsibilities.transform.position == rightsResponsibilitiesEmpty.transform.position && anti2.transform.position == antiEmpty2.transform.position) {
+        if (security.transform.position == securityEmpty.transform.position && pro3.transform.position == proEmpty3.transform.position) {
 
-            rightsResponsibilities.SetActive(false);
+            security.SetActive(false);
             //off screen
-            rightsResponsibilitiesEmpty.transform.position = new Vector2(-1164, -48);
-            antiEmpty2.transform.position = new Vector2(-1111, -296);
+            securityEmpty.transform.position = new Vector2(-1164, -48);
+            proEmpty3.transform.position = new Vector2(-1111, -296);
             //on screen
-            economyEmpty.transform.position = nullThemeInitialPos;
-            proEmpty2.transform.position = nullViewInitialPos;
+            political2Empty.transform.position = nullThemeInitialPos;
+            antiEmpty2.transform.position = nullViewInitialPos;
 
-            anti2.SetActive(false);
-            anti3.SetActive(true);
+            security2.SetActive(true);
+            pro3.SetActive(false);
+            //anti3.SetActive(true);
             Statement6();
 
             //finishCanvas.SetActive(true);
         }
 
-        if (economy.transform.position == economyEmpty.transform.position && pro2.transform.position == proEmpty2.transform.position) {
+        if (political2.transform.position == political2Empty.transform.position && anti2.transform.position == antiEmpty2.transform.position) {
+
+            political2.SetActive(false);
+            //off screen
+            political2Empty.transform.position = new Vector2(-1164, -48);
+            antiEmpty2.transform.position = new Vector2(-1111, -296);
+            //on screen
+            security2Empty.transform.position = nullThemeInitialPos;
+            antiEmpty3.transform.position = nullViewInitialPos;
+
+            anti2.SetActive(false);
+            anti3.SetActive(true);
+            Statement7();
+
+            //finishCanvas.SetActive(true);
+        }
+
+        if (security2.transform.position == security2Empty.transform.position && anti3.transform.position == antiEmpty3.transform.position) {
 
             finishCanvas.SetActive(true);
         }
@@ -179,14 +201,14 @@ public class ImmigrationNewsflash : MonoBehaviour
 
     public void ReturnToJournalist() {
         //Application.Quit();
-        SceneManager.LoadScene("Journalist");
+        SceneManager.LoadScene("ImmigrationJournalist");
     }
 
     public void FeedbackGone() {
         feedbackCanvas.SetActive(false);
     }
 
-    //NEW STATEMENT 1 - GEOGRAPHY   
+    //ANSWER IS POLITICAL PRO
     public void Statement1() { //this will appear when the start button is selected to start the tool
         //in addition to it show this, we must make the canvas visible and have the Start Canvas when availble, to SetActive(false).
         startCanvas.SetActive(false);
@@ -195,8 +217,9 @@ public class ImmigrationNewsflash : MonoBehaviour
         selection++;
     }
 
+    //ANSWER IS EMOTIONS NEUTRAL
     public void Statement2() {
-        headlineText.text = "The separate sovereign nations of the past cannot solve the problems of the present. We must go forward together in Europe.";
+        headlineText.text = "At least 34 Syrian migrants, among them 15 young children, have drowned this morning after falling into the Aegean sea, according to the Greek coastguards.";
 
         //statement1Continue.SetActive(false);
         feedbackCanvas.SetActive(false);
@@ -205,17 +228,18 @@ public class ImmigrationNewsflash : MonoBehaviour
         selection++; //adds one each time the continue button from feedback is clicked.
     }
 
+    //ANSWER IS ECONOMY ANTI
     public void Statement3() {
-        headlineText.text = "Most EU citizens are more aware of the culture of their own country than of European culture generally.";
+        headlineText.text = "The leader of the local union of the industry workers said that immigrants work for less money and increase locals' unemployment.";
 
         feedbackCanvas.SetActive(false);
         newsflashCanvas.SetActive(true);
         selection++;
     }
 
-    //NEW STATEMENT 2 - POLITICAL
+    //ANSWER IS ECONOMY PRO
     public void Statement4() {
-        headlineText.text = "Young people are very concerned with environmental issues.";
+        headlineText.text = "A study conducted by the London School of Economics in 2016 concluded that EU immigrants pay more in taxes than they use public services and therefore they help to reduce the budget deficit.";
 
         //statement3Continue.SetActive(false);
         feedbackCanvas.SetActive(false);
@@ -225,8 +249,9 @@ public class ImmigrationNewsflash : MonoBehaviour
         selection++;
     }
 
+    //ANSWER IS SECURITY PRO
     public void Statement5() {
-        headlineText.text = "European laws can never be fair to all.";
+        headlineText.text = "A recent research by Oxford University showed that immigrants that adopted a cultural background similar to Europe's are likely to commit fewer crimes than the native population.";
 
         //statement4Continue.SetActive(false);
         feedbackCanvas.SetActive(false);
@@ -236,9 +261,9 @@ public class ImmigrationNewsflash : MonoBehaviour
         selection++;
     }
 
-    //NEW STATEMENT 3 - CULTURE
+    //ANSWER IS POLITICAL ANTI
     public void Statement6() {
-        headlineText.text = "Leaving the EU will allow the UK to strike trade deals with the rest of the world.";
+        headlineText.text = "'I hope there will be a change in the European public arena in favour of these political parties who would like to stop immigration,' said the Hungarian Prime Minister.";
 
         //statement5Continue.SetActive(false);
         feedbackCanvas.SetActive(false);
@@ -248,13 +273,25 @@ public class ImmigrationNewsflash : MonoBehaviour
         selection++;
     }
 
+    //ANSWER IS SECURITY ANTI
+    public void Statement7() {
+        headlineText.text = "The leader of the German far-right party AfD said that the number of murders and rapes increased 15% since Europe's huge 2015 influx of migrants and refugees more.";
+
+        //statement6Continue.SetActive(false);
+        feedbackCanvas.SetActive(false);
+        newsflashCanvas.SetActive(true);
+        //statement6.SetActive(false);
+        //statement7.SetActive(false);
+        selection++;
+    }
+
     //---------------------------------------------------------------------------------------------
     /*
      * Going to simplify this down at a later date, for the moment this way has been taken
      */
 
     public void Statement1Correct() {
-        //Geography
+        //Political Pro
         //newsflashCanvas.SetActive(false);
         feedbackCanvas.SetActive(true);
         correct.SetActive(true);
@@ -271,7 +308,7 @@ public class ImmigrationNewsflash : MonoBehaviour
     }*/
 
     public void Statement2Correct() {
-        //Political
+        //Emotions Neutral
         //newsflashCanvas.SetActive(false);
         feedbackCanvas.SetActive(true);
         correct.SetActive(true);
@@ -288,7 +325,7 @@ public class ImmigrationNewsflash : MonoBehaviour
     }*/
 
     public void Statement3Correct() {
-        //Economy
+        //Economy Anti
         //newsflashCanvas.SetActive(false);
         feedbackCanvas.SetActive(true);
         correct.SetActive(true);
@@ -305,7 +342,7 @@ public class ImmigrationNewsflash : MonoBehaviour
     }*/
 
     public void Statement4Correct() {
-        //Political
+        //Economy Pro
         //newsflashCanvas.SetActive(false);
         feedbackCanvas.SetActive(true);
         correct.SetActive(true);
@@ -322,7 +359,7 @@ public class ImmigrationNewsflash : MonoBehaviour
     }*/
 
     public void Statement5Correct() {
-        //Emotions
+        //Security Pro
         //newsflashCanvas.SetActive(false);
         feedbackCanvas.SetActive(true);
         correct.SetActive(true);
@@ -339,7 +376,7 @@ public class ImmigrationNewsflash : MonoBehaviour
     }*/
 
     public void Statement6Correct() {
-        //Culture
+        //Political Anti
         //newsflashCanvas.SetActive(false);
         feedbackCanvas.SetActive(true);
         correct.SetActive(true);
@@ -355,12 +392,33 @@ public class ImmigrationNewsflash : MonoBehaviour
         statement6Continue.SetActive(true);
     }*/
 
+    public void Statement7Correct() {
+        //Security Anti
+        //newsflashCanvas.SetActive(false);
+        feedbackCanvas.SetActive(true);
+        correct.SetActive(true);
+        incorrect.SetActive(false);
+        //statement6Continue.SetActive(true);
+    }
+
+    /*public void Statement7Incorrect() {
+        //newsflashCanvas.SetActive(false);
+        feedbackCanvas.SetActive(true);
+        correct.SetActive(false);
+        incorrect.SetActive(true);
+        statement6Continue.SetActive(true);
+    }*/
+
     public void DragGeography() {
         geography.transform.position = Input.mousePosition;
     }
 
     public void DragPolitical() {
         political.transform.position = Input.mousePosition;
+    }
+
+    public void DragPolitical2() {
+        political2.transform.position = Input.mousePosition;
     }
 
     public void DragCulture() {
@@ -379,12 +437,20 @@ public class ImmigrationNewsflash : MonoBehaviour
         economy.transform.position = Input.mousePosition;
     }
 
+    public void DragEconomy2() {
+        economy2.transform.position = Input.mousePosition;
+    }
+
     public void DragSocial() {
         social.transform.position = Input.mousePosition;
     }
 
     public void DragSecurity() {
         security.transform.position = Input.mousePosition;
+    }
+
+    public void DragSecurity2() {
+        security2.transform.position = Input.mousePosition;
     }
 
     public void DragEmotions() {
@@ -419,6 +485,18 @@ public class ImmigrationNewsflash : MonoBehaviour
         neutral2.transform.position = Input.mousePosition;
     }
 
+    public void DragPro3() {
+        pro3.transform.position = Input.mousePosition;
+    }
+
+    public void DragAnti3() {
+        anti3.transform.position = Input.mousePosition;
+    }
+
+    public void DragNeutral3() {
+        neutral3.transform.position = Input.mousePosition;
+    }
+
     public void DropGeography() {
         float distance = Vector3.Distance(geography.transform.position, geographyEmpty.transform.position);
 
@@ -444,6 +522,22 @@ public class ImmigrationNewsflash : MonoBehaviour
             TextNotActive();
         } else {
             political.transform.position = politicalInitialPos;
+            answerIncorrect.SetActive(true);
+            TextNotActive();
+        }
+    }
+
+    public void DropPolitical2() {
+        float distance = Vector3.Distance(political2.transform.position, political2Empty.transform.position);
+
+        if (distance < 50) {
+            political2.transform.position = political2Empty.transform.position;
+            //politicalCorrect = true;
+            answerCorrect.SetActive(true);
+            TextNotActive();
+        }
+        else {
+            political2.transform.position = political2InitialPos;
             answerIncorrect.SetActive(true);
             TextNotActive();
         }
@@ -509,6 +603,22 @@ public class ImmigrationNewsflash : MonoBehaviour
         }
     }
 
+    public void DropEconomy2() {
+        float distance = Vector3.Distance(economy2.transform.position, economy2Empty.transform.position);
+
+        if (distance < 50) {
+            economy2.transform.position = economy2Empty.transform.position;
+            //economyCorrect = true;
+            answerCorrect.SetActive(true);
+            TextNotActive();
+        }
+        else {
+            economy2.transform.position = economy2InitialPos;
+            answerIncorrect.SetActive(true);
+            TextNotActive();
+        }
+    }
+
     public void DropSocial() {
         float distance = Vector3.Distance(social.transform.position, socialEmpty.transform.position);
 
@@ -534,6 +644,22 @@ public class ImmigrationNewsflash : MonoBehaviour
             TextNotActive();
         } else {
             security.transform.position = securityInitialPos;
+            answerIncorrect.SetActive(true);
+            TextNotActive();
+        }
+    }
+
+    public void DropSecurity2() {
+        float distance = Vector3.Distance(security2.transform.position, security2Empty.transform.position);
+
+        if (distance < 50) {
+            security2.transform.position = security2Empty.transform.position;
+            //securityCorrect = true;
+            answerCorrect.SetActive(true);
+            TextNotActive();
+        }
+        else {
+            security2.transform.position = security2InitialPos;
             answerIncorrect.SetActive(true);
             TextNotActive();
         }
@@ -654,6 +780,54 @@ public class ImmigrationNewsflash : MonoBehaviour
             TextNotActive();
         } else {
             neutral2.transform.position = neutral2InitialPos;
+            answerIncorrect.SetActive(true);
+            TextNotActive();
+        }
+    }
+
+    public void DropPro3() {
+        float distance = Vector3.Distance(pro3.transform.position, proEmpty3.transform.position);
+
+        if (distance < 50) {
+            pro3.transform.position = proEmpty3.transform.position;
+            //proCorrect = true;
+            answerCorrect.SetActive(true);
+            TextNotActive();
+        }
+        else {
+            pro3.transform.position = pro3InitialPos;
+            answerIncorrect.SetActive(true);
+            TextNotActive();
+        }
+    }
+
+    public void DropAnti3() {
+        float distance = Vector3.Distance(anti3.transform.position, antiEmpty3.transform.position);
+
+        if (distance < 50) {
+            anti3.transform.position = antiEmpty3.transform.position;
+            //antiCorrect = true;
+            answerCorrect.SetActive(true);
+            TextNotActive();
+        }
+        else {
+            anti3.transform.position = anti3InitialPos;
+            answerIncorrect.SetActive(true);
+            TextNotActive();
+        }
+    }
+
+    public void DropNeutral3() {
+        float distance = Vector3.Distance(neutral3.transform.position, neutralEmpty3.transform.position);
+
+        if (distance < 50) {
+            neutral3.transform.position = neutralEmpty3.transform.position;
+            //neutralCorrect = true;
+            answerCorrect.SetActive(true);
+            TextNotActive();
+        }
+        else {
+            neutral3.transform.position = neutral3InitialPos;
             answerIncorrect.SetActive(true);
             TextNotActive();
         }

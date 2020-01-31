@@ -96,16 +96,16 @@ public class ImmigrationInterview1 : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        PlayerPrefs.GetInt("CurrentSocialScore");
-        PlayerPrefs.GetInt("CurrentEnvironmentScore");
-        PlayerPrefs.GetInt("CurrentRightsAndResponsibilitiesScore");
-        PlayerPrefs.GetInt("CurrentSafetyAndSecurityScore");
-        PlayerPrefs.GetInt("CurrentEmotionalScore");
-        PlayerPrefs.GetInt("CurrentEconomyScore");
-        PlayerPrefs.GetInt("CurrentPoliticalScore");
-        PlayerPrefs.GetInt("CurrentHistoricScore");
-        PlayerPrefs.GetInt("CurrentCultureScore");
-        PlayerPrefs.GetInt("CurrentGeographyScore");
+        PlayerPrefs.GetInt("CurrentImmigrationSocialScore");
+        PlayerPrefs.GetInt("CurrentImmigrationEnvironmentScore");
+        PlayerPrefs.GetInt("CurrentImmigrationRightsAndResponsibilitiesScore");
+        PlayerPrefs.GetInt("CurrentImmigrationSafetyAndSecurityScore");
+        PlayerPrefs.GetInt("CurrentImmigrationEmotionalScore");
+        PlayerPrefs.GetInt("CurrentImmigrationEconomyScore");
+        PlayerPrefs.GetInt("CurrentImmigrationPoliticalScore");
+        PlayerPrefs.GetInt("CurrentImmigrationHistoricScore");
+        PlayerPrefs.GetInt("CurrentImmigrationCultureScore");
+        PlayerPrefs.GetInt("CurrentImmigrationGeographyScore");
 
         if (textDisplay.text == sentences[index]) {
             continueButton.SetActive(true);
